@@ -1,0 +1,10 @@
+C:\Users\cjsol\OneDrive\Documents\GitHub\DCTBFightingSimulator\DCTBFightingSimulator\bin\Debug\DCTBFightingSimulator.exe.config
+C:\Users\cjsol\OneDrive\Documents\GitHub\DCTBFightingSimulator\DCTBFightingSimulator\bin\Debug\DCTBFightingSimulator.exe
+C:\Users\cjsol\OneDrive\Documents\GitHub\DCTBFightingSimulator\DCTBFightingSimulator\bin\Debug\DCTBFightingSimulator.pdb
+C:\Users\cjsol\OneDrive\Documents\GitHub\DCTBFightingSimulator\DCTBFightingSimulator\obj\Debug\DCTBFightingSimulator.csprojAssemblyReference.cache
+C:\Users\cjsol\OneDrive\Documents\GitHub\DCTBFightingSimulator\DCTBFightingSimulator\obj\Debug\DCTBFightingSimulator.Form1.resources
+C:\Users\cjsol\OneDrive\Documents\GitHub\DCTBFightingSimulator\DCTBFightingSimulator\obj\Debug\DCTBFightingSimulator.Properties.Resources.resources
+C:\Users\cjsol\OneDrive\Documents\GitHub\DCTBFightingSimulator\DCTBFightingSimulator\obj\Debug\DCTBFightingSimulator.csproj.GenerateResource.cache
+C:\Users\cjsol\OneDrive\Documents\GitHub\DCTBFightingSimulator\DCTBFightingSimulator\obj\Debug\DCTBFightingSimulator.csproj.CoreCompileInputs.cache
+C:\Users\cjsol\OneDrive\Documents\GitHub\DCTBFightingSimulator\DCTBFightingSimulator\obj\Debug\DCTBFightingSimulator.exe
+C:\Users\cjsol\OneDrive\Documents\GitHub\DCTBFightingSimulator\DCTBFightingSimulator\obj\Debug\DCTBFightingSimulator.pdb
