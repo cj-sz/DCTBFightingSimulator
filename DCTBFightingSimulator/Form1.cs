@@ -57,6 +57,19 @@ namespace DCTBFightingSimulator
             string n = CCT1.Text;
             string d = CCT2.Text;
             string t = CCc1.Text;
+            string[] ndt = new string[3];
+            ndt[0] = n;
+            ndt[1] = d;
+            ndt[2] = t;
+            for(int i = 0; i < ndt.Length; i++)
+            {
+                bool able = checkStringRestrictions(ndt[i]);
+                if(able == false)
+                {
+                    System.Windows.Forms.MessageBox.Show("Error: Invalid name, description, or type.");
+                    return;
+                }
+            }
             int atk = (int)CCN1.Value;
             int def = (int)CCN2.Value;
             int acc = (int)CCN3.Value;
@@ -91,6 +104,304 @@ namespace DCTBFightingSimulator
                 }
             }
             importExportString.generateImmunitiesStringPart(immunities);
+            //Move 1 Attr
+            string m1n = CCT3.Text;
+            string m1d = CCT4.Text;
+            string m1t = CCc11.Text;
+            string[] m1s = new string[3];
+            m1s[0] = m1n;
+            m1s[1] = m1d;
+            m1s[2] = m1t;
+            for (int i = 0; i < m1s.Length; i++)
+            {
+                bool able = checkStringRestrictions(m1s[i]);
+                if (able == false)
+                {
+                    System.Windows.Forms.MessageBox.Show("Error: Invalid name, description, or type for Move 1.");
+                    return;
+                }
+            }
+            float m1atkmm = (float)CCN5.Value;
+            int m1acc = (int)CCN6.Value;
+            int m1h = (int)CCN7.Value;
+            int m1atkM = (int)CCN8.Value;
+            int m1defM = (int)CCN9.Value;
+            int m1accM = (int)CCN10.Value;
+            int m1dgeM = (int)CCN11.Value;
+            bool[] move1InducesBools = new bool[9];
+            string[] move1InducesSelections = new string[9];
+            move1InducesSelections[0] = CCc12.Text;
+            move1InducesSelections[1] = CCc13.Text;
+            move1InducesSelections[2] = CCc14.Text;
+            move1InducesSelections[3] = CCc15.Text;
+            move1InducesSelections[4] = CCc16.Text;
+            move1InducesSelections[5] = CCc17.Text;
+            move1InducesSelections[6] = CCc18.Text;
+            move1InducesSelections[7] = CCc19.Text;
+            move1InducesSelections[8] = CCc20.Text;
+            for(int i = 0; i < move1InducesSelections.Length; i++)
+            {
+                if(move1InducesSelections[i] == "YES")
+                {
+                    move1InducesBools[i] = true;
+                }else if(move1InducesSelections[i] == "NO")
+                {
+                    move1InducesBools[i] = false;
+                }
+                else
+                {
+                    System.Windows.Forms.MessageBox.Show("ERROR: invalid value assigned to a character's Move 1 induced status effects.");
+                    return;
+                }
+            }
+            importExportString.generateMoveOneStringPart(m1n, m1d, m1t, m1atkmm, m1acc, m1h, m1atkM, m1defM, m1accM, m1dgeM, move1InducesBools);
+            //Move 2
+            string m2n = CCT5.Text;
+            string m2d = CCT6.Text;
+            string m2t = CCc21.Text;
+            string[] m2s = new string[3];
+            m2s[0] = m2n;
+            m2s[1] = m2d;
+            m2s[2] = m2t;
+            for (int i = 0; i < m2s.Length; i++)
+            {
+                bool able = checkStringRestrictions(m2s[i]);
+                if (able == false)
+                {
+                    System.Windows.Forms.MessageBox.Show("Error: Invalid name, description, or type for Move 2.");
+                    return;
+                }
+            }
+            float m2atkmm = (float)CCN12.Value;
+            int m2acc = (int)CCN13.Value;
+            int m2h = (int)CCN14.Value;
+            int m2atkM = (int)CCN15.Value;
+            int m2defM = (int)CCN16.Value;
+            int m2accM = (int)CCN17.Value;
+            int m2dgeM = (int)CCN18.Value;
+            bool[] move2InducesBools = new bool[9];
+            string[] move2InducesSelections = new string[9];
+            move2InducesSelections[0] = CCc22.Text;
+            move2InducesSelections[1] = CCc23.Text;
+            move2InducesSelections[2] = CCc24.Text;
+            move2InducesSelections[3] = CCc30.Text;
+            move2InducesSelections[4] = CCc25.Text;
+            move2InducesSelections[5] = CCc26.Text;
+            move2InducesSelections[6] = CCc27.Text;
+            move2InducesSelections[7] = CCc28.Text;
+            move2InducesSelections[8] = CCc29.Text;
+            for (int i = 0; i < move2InducesSelections.Length; i++)
+            {
+                if (move2InducesSelections[i] == "YES")
+                {
+                    move2InducesBools[i] = true;
+                }
+                else if (move2InducesSelections[i] == "NO")
+                {
+                    move2InducesBools[i] = false;
+                }
+                else
+                {
+                    System.Windows.Forms.MessageBox.Show("ERROR: invalid value assigned to a character's Move 2 induced status effects.");
+                    return;
+                }
+            }
+            importExportString.generateMoveTwoStringPart(m2n, m2d, m2t, m2atkmm, m2acc, m2h, m2atkM, m2defM, m2accM, m2dgeM, move2InducesBools);
+            //Move 3
+            string m3n = CCT7.Text;
+            string m3d = CCT8.Text;
+            string m3t = CCc31.Text;
+            string[] m3s = new string[3];
+            m3s[0] = m3n;
+            m3s[1] = m3d;
+            m3s[2] = m3t;
+            for (int i = 0; i < m3s.Length; i++)
+            {
+                bool able = checkStringRestrictions(m3s[i]);
+                if (able == false)
+                {
+                    System.Windows.Forms.MessageBox.Show("Error: Invalid name, description, or type for Move 3.");
+                    return;
+                }
+            }
+            float m3atkmm = (float)CCN19.Value;
+            int m3acc = (int)CCN20.Value;
+            int m3h = (int)CCN21.Value;
+            int m3atkM = (int)CCN22.Value;
+            int m3defM = (int)CCN23.Value;
+            int m3accM = (int)CCN24.Value;
+            int m3dgeM = (int)CCN25.Value;
+            bool[] move3InducesBools = new bool[9];
+            string[] move3InducesSelections = new string[9];
+            move3InducesSelections[0] = CCc32.Text;
+            move3InducesSelections[1] = CCc33.Text;
+            move3InducesSelections[2] = CCc34.Text;
+            move3InducesSelections[3] = CCc35.Text;
+            move3InducesSelections[4] = CCc36.Text;
+            move3InducesSelections[5] = CCc37.Text;
+            move3InducesSelections[6] = CCc38.Text;
+            move3InducesSelections[7] = CCc39.Text;
+            move3InducesSelections[8] = CCc40.Text;
+            for (int i = 0; i < move3InducesSelections.Length; i++)
+            {
+                if (move3InducesSelections[i] == "YES")
+                {
+                    move3InducesBools[i] = true;
+                }
+                else if (move3InducesSelections[i] == "NO")
+                {
+                    move3InducesBools[i] = false;
+                }
+                else
+                {
+                    System.Windows.Forms.MessageBox.Show("ERROR: invalid value assigned to a character's Move 3 induced status effects.");
+                    return;
+                }
+            }
+            importExportString.generateMoveTwoStringPart(m3n, m3d, m3t, m3atkmm, m3acc, m3h, m3atkM, m3defM, m3accM, m3dgeM, move3InducesBools);
+            //Move 4
+            string m4n = CCT9.Text;
+            string m4d = CCT10.Text;
+            string m4t = CCc41.Text;
+            string[] m4s = new string[3];
+            m4s[0] = m4n;
+            m4s[1] = m4d;
+            m4s[2] = m4t;
+            for (int i = 0; i < m4s.Length; i++)
+            {
+                bool able = checkStringRestrictions(m4s[i]);
+                if (able == false)
+                {
+                    System.Windows.Forms.MessageBox.Show("Error: Invalid name, description, or type for Move 4.");
+                    return;
+                }
+            }
+            float m4atkmm = (float)CCN26.Value;
+            int m4acc = (int)CCN27.Value;
+            int m4h = (int)CCN28.Value;
+            int m4atkM = (int)CCN29.Value;
+            int m4defM = (int)CCN30.Value;
+            int m4accM = (int)CCN31.Value;
+            int m4dgeM = (int)CCN32.Value;
+            bool[] move4InducesBools = new bool[9];
+            string[] move4InducesSelections = new string[9];
+            move4InducesSelections[0] = CCc42.Text;
+            move4InducesSelections[1] = CCc43.Text;
+            move4InducesSelections[2] = CCc44.Text;
+            move4InducesSelections[3] = CCc45.Text;
+            move4InducesSelections[4] = CCc46.Text;
+            move4InducesSelections[5] = CCc47.Text;
+            move4InducesSelections[6] = CCc48.Text;
+            move4InducesSelections[7] = CCc49.Text;
+            move4InducesSelections[8] = CCc50.Text;
+            for (int i = 0; i < move4InducesSelections.Length; i++)
+            {
+                if (move4InducesSelections[i] == "YES")
+                {
+                    move4InducesBools[i] = true;
+                }
+                else if (move4InducesSelections[i] == "NO")
+                {
+                    move4InducesBools[i] = false;
+                }
+                else
+                {
+                    System.Windows.Forms.MessageBox.Show("ERROR: invalid value assigned to a character's Move 4 induced status effects.");
+                    return;
+                }
+            }
+            importExportString.generateMoveTwoStringPart(m4n, m4d, m4t, m4atkmm, m4acc, m4h, m4atkM, m4defM, m4accM, m4dgeM, move4InducesBools);
+            //Move 5
+            string m5n = CCT11.Text;
+            string m5d = CCT12.Text;
+            string m5t = CCc51.Text;
+            string[] m5s = new string[3];
+            m5s[0] = m5n;
+            m5s[1] = m5d;
+            m5s[2] = m5t;
+            for (int i = 0; i < m5s.Length; i++)
+            {
+                bool able = checkStringRestrictions(m5s[i]);
+                if (able == false)
+                {
+                    System.Windows.Forms.MessageBox.Show("Error: Invalid name, description, or type for Move 5.");
+                    return;
+                }
+            }
+            float m5atkmm = (float)CCN33.Value;
+            int m5acc = (int)CCN34.Value;
+            int m5h = (int)CCN35.Value;
+            int m5atkM = (int)CCN36.Value;
+            int m5defM = (int)CCN37.Value;
+            int m5accM = (int)CCN38.Value;
+            int m5dgeM = (int)CCN39.Value;
+            bool[] move5InducesBools = new bool[9];
+            string[] move5InducesSelections = new string[9];
+            move5InducesSelections[0] = CCc52.Text;
+            move5InducesSelections[1] = CCc53.Text;
+            move5InducesSelections[2] = CCc54.Text;
+            move5InducesSelections[3] = CCc55.Text;
+            move5InducesSelections[4] = CCc56.Text;
+            move5InducesSelections[5] = CCc57.Text;
+            move5InducesSelections[6] = CCc58.Text;
+            move5InducesSelections[7] = CCc59.Text;
+            move5InducesSelections[8] = CCc60.Text;
+            for (int i = 0; i < move5InducesSelections.Length; i++)
+            {
+                if (move5InducesSelections[i] == "YES")
+                {
+                    move5InducesBools[i] = true;
+                }
+                else if (move5InducesSelections[i] == "NO")
+                {
+                    move5InducesBools[i] = false;
+                }
+                else
+                {
+                    System.Windows.Forms.MessageBox.Show("ERROR: invalid value assigned to a character's Move 5 induced status effects.");
+                    return;
+                }
+            }
+            importExportString.generateMoveTwoStringPart(m5n, m5d, m5t, m5atkmm, m5acc, m5h, m5atkM, m5defM, m5accM, m5dgeM, move5InducesBools);
+            //Get
+            exportStringTextBox.Text = importExportString.getImportExportString();
+        }
+        private bool checkStringRestrictions(string s)
+        {
+            //General parameter checks
+            if(s == null || s == "" || s == "nX!wj@am!E" || s == "d@3MDMe#SC" || s == "t192y!@:PE22" || s == "at1!@!W0k" || s == "d%%23eFF" || s == "a1;c';c" || s == "dj1g><e" || s == "imnSTRT@@_!" || s == "imnEND@@_!")
+            {
+                return false;
+            }
+            //Move 1 checks
+            else if(s == "nDCMmv1@@" || s == "dDCMv1@@" || s == "tDCMmv1@@" || s == "atmDCMmv1@@" || s == "accDCMmv1@@" || s == "hDCMmv1@@" || s == "atkDCMmv1@@" || s == "defDCMmv1@@" || s == "acmDCMmv1@@" || s == "dgeDCMmv1@@" || s == "indSTRTMmv1@@_!" || s == "indENDMmv1@@_!")
+            {
+                return false;
+            }
+            //Move 2 checks
+            else if (s == "nDCMmv2@@" || s == "dDCMv2@@" || s == "tDCMmv2@@" || s == "atmDCMmv2@@" || s == "accDCMmv2@@" || s == "hDCMmv2@@" || s == "atkDCMmv2@@" || s == "defDCMmv2@@" || s == "acmDCMmv2@@" || s == "dgeDCMmv2@@" || s == "indSTRTMmv2@@_!" || s == "indENDMmv2@@_!")
+            {
+                return false;
+            }
+            //Move 3 checks
+            else if (s == "nDCMmv3@@" || s == "dDCMv3@@" || s == "tDCMmv3@@" || s == "atmDCMmv3@@" || s == "accDCMmv3@@" || s == "hDCMmv3@@" || s == "atkDCMmv3@@" || s == "defDCMmv3@@" || s == "acmDCMmv3@@" || s == "dgeDCMmv3@@" || s == "indSTRTMmv3@@_!" || s == "indENDMmv3@@_!")
+            {
+                return false;
+            }
+            //Move 4 checks
+            else if (s == "nDCMmv4@@" || s == "dDCMv4@@" || s == "tDCMmv4@@" || s == "atmDCMmv4@@" || s == "accDCMmv4@@" || s == "hDCMmv4@@" || s == "atkDCMmv4@@" || s == "defDCMmv4@@" || s == "acmDCMmv4@@" || s == "dgeDCMmv4@@" || s == "indSTRTMmv4@@_!" || s == "indENDMmv4@@_!")
+            {
+                return false;
+            }
+            //Move 5 checks
+            else if (s == "nDCMmv5@@" || s == "dDCMv5@@" || s == "tDCMmv5@@" || s == "atmDCMmv5@@" || s == "accDCMmv5@@" || s == "hDCMmv5@@" || s == "atkDCMmv5@@" || s == "defDCMmv5@@" || s == "acmDCMmv5@@" || s == "dgeDCMmv5@@" || s == "indSTRTMmv5@@_!" || s == "indENDMmv5@@_!")
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
         }
 
         //Elemental UI methods
@@ -112,6 +423,8 @@ namespace DCTBFightingSimulator
             characterCreationDesc.Hide();
             horizCharCreationBar.Enabled = false;
             horizCharCreationBar.Hide();
+            exportStringDescription.Enabled = false;
+            exportStringDescription.Hide();
             CCL1.Enabled = false;
             CCL1.Hide();
             CCL2.Enabled = false;
@@ -601,6 +914,8 @@ namespace DCTBFightingSimulator
             exportCharStringButton.Show();
             exportStringTextBox.Enabled = true;
             exportStringTextBox.Show();
+            exportStringDescription.Enabled = true;
+            exportStringDescription.Show();
             //Gen Attributes
             CCL1.Enabled = true;
             CCL1.Show();

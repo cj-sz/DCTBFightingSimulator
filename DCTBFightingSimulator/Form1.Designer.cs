@@ -285,6 +285,7 @@ namespace DCTBFightingSimulator
             this.CCL100 = new System.Windows.Forms.Label();
             this.exportCharStringButton = new System.Windows.Forms.Button();
             this.exportStringTextBox = new System.Windows.Forms.TextBox();
+            this.exportStringDescription = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.SeparationBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -3231,12 +3232,24 @@ namespace DCTBFightingSimulator
             this.exportStringTextBox.Size = new System.Drawing.Size(100, 20);
             this.exportStringTextBox.TabIndex = 255;
             // 
+            // exportStringDescription
+            // 
+            this.exportStringDescription.AutoSize = true;
+            this.exportStringDescription.Location = new System.Drawing.Point(159, 650);
+            this.exportStringDescription.Name = "exportStringDescription";
+            this.exportStringDescription.Size = new System.Drawing.Size(832, 13);
+            this.exportStringDescription.TabIndex = 256;
+            this.exportStringDescription.Text = "Use CTRL-A and then CTRL-V to copy your export string. Click export again if you " +
+    "believe you accidentally edited it. Please DO NOT edit the string, or it will no" +
+    "t correctly import.";
+            // 
             // DCTBFightingSimulator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1451, 845);
+            this.Controls.Add(this.exportStringDescription);
             this.Controls.Add(this.exportStringTextBox);
             this.Controls.Add(this.exportCharStringButton);
             this.Controls.Add(this.CCP6);
@@ -3805,6 +3818,7 @@ namespace DCTBFightingSimulator
         private System.Windows.Forms.Label CCL100;
         private System.Windows.Forms.Button exportCharStringButton;
         private System.Windows.Forms.TextBox exportStringTextBox;
+        private System.Windows.Forms.Label exportStringDescription;
     }
 }
 
