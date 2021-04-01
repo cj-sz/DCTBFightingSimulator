@@ -25,15 +25,9 @@ namespace DCTBFightingSimulator
              * ACC: "a1;c';c"
              * DGE: "dj1g><e"
              * Immunities:
-             *      Stun: "i!n!d!STN99@"
-             *      Poison: "i!n!d!PSN99@"
-             *      Burn: "i!n!d!BRN99@"
-             *      Cripple: "i!n!d!CRP99@"
-             *      Frozen: "i!n!d!FRZ99@"
-             *      Bleeding: "i!n!d!BLD99@"
-             *      Stupefied: "i!n!d!STP99@"
-             *      Weak: "i!n!d!WAK99@"
-             *      Dizzy: "i!n!d!DZY99@"
+             *      y/n for all
+             *      Start indicated by "imnSTRT@@_!"
+             *      end indicated by "imnEND@@_!"
              * Move 1:
              *      Name: "nDCMmv1@@" (restriction check)
              *      Desc: "dDCMv1@@" (restriction check)
@@ -46,15 +40,9 @@ namespace DCTBFightingSimulator
              *      ACC Mod: "acmDCMmv1@@"
              *      DGE Mod: "dgeDCMmv1@@"
              *      Induces:
-             *          Stun: "stnDCMmv1@@"
-             *          Poison: "psnDCMmv1@@"
-             *          Burn: "brnDCMmv1@@"
-             *          Cripple: "crplDCMmv1@@"
-             *          Frozen: "frznDCMmv1@@"
-             *          Bleeding: "bldDCMmv1@@"
-             *          Stupefied: "stpfDCMmv1@@"
-             *          Weak: "wkDCMmv1@@"
-             *          Dizzy: "dzyDCMmv1@@"
+             *          y/n for all
+             *          start indicated by "indSTRTMmv1@@_!"
+             *          end indicated by indENDMmv1@@_!"
              * All other moves are the same, but with the number changed to the number of the respective move.
              * Generate string based on given values.
              */
@@ -67,7 +55,23 @@ namespace DCTBFightingSimulator
 
         public void generateAttributesStringPart(string n, string d, string t, int atk, int def, int acc, int dge)
         {
-            
+            importExportString = "";
+            importExportString = importExportString + "nX!wj@am!E" + n + "d@3MDMe#SC" + d + "t192y!@:PE22" + t + "at1!@!W0k" + atk.ToString() + "d%%23eFF" + def.ToString() + "a1;c';c" + acc.ToString() + "dj1g><e" + dge.ToString();
+        }
+        public void generateImmunitiesStringPart(bool[] immunities)
+        {
+            importExportString = importExportString + "imnSTRT@@_!";
+            for(int index = 0; index < immunities.Length; index++)
+            {
+                if(immunities[index] == true)
+                {
+                    importExportString = importExportString + "y";
+                }
+                else
+                {
+                    importExportString = importExportString + "n";
+                }
+            }
         }
         public string getImportExportString()
         {

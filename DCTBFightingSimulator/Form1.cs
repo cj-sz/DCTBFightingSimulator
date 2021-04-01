@@ -51,10 +51,46 @@ namespace DCTBFightingSimulator
         }
         private void exportCharStringButton_Click(object sender, EventArgs e)
         {
+            //Generate the string
             ImportExportString importExportString = new ImportExportString();
+            //General Attr
             string n = CCT1.Text;
             string d = CCT2.Text;
-            importExportString.generateAttributesStringPart();
+            string t = CCc1.Text;
+            int atk = (int)CCN1.Value;
+            int def = (int)CCN2.Value;
+            int acc = (int)CCN3.Value;
+            int dge = (int)CCN4.Value;
+            importExportString.generateAttributesStringPart(n, d, t, atk, def, acc, dge);
+            //Immunities Attr
+            bool[] immunities = new bool[9];
+            string[] imnSel = new string[9];
+            imnSel[0] = CCc2.Text;
+            imnSel[1] = CCc3.Text;
+            imnSel[2] = CCc4.Text;
+            imnSel[3] = CCc5.Text;
+            imnSel[4] = CCc6.Text;
+            imnSel[5] = CCc7.Text;
+            imnSel[6] = CCc8.Text;
+            imnSel[7] = CCc9.Text;
+            imnSel[8] = CCc10.Text;
+            for(int i = 0; i < imnSel.Length; i++)
+            {
+                if(imnSel[i] == "YES")
+                {
+                    immunities[i] = true;
+                }
+                else if(imnSel[i] == "NO")
+                {
+                    immunities[i] = false;
+                }
+                else
+                {
+                    System.Windows.Forms.MessageBox.Show("ERROR: invalid value assigned to a character's immunity. Please check immunities and try again.");
+                    return;
+                }
+            }
+            importExportString.generateImmunitiesStringPart(immunities);
         }
 
         //Elemental UI methods
