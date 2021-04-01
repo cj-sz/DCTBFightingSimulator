@@ -40,6 +40,7 @@ namespace DCTBFightingSimulator
         //Constructor (takes an input string)
         public Character(ImportExportString importString)
         {
+            //String interpreter
 
         }
 
