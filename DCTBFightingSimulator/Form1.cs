@@ -744,6 +744,161 @@ namespace DCTBFightingSimulator
                 return false;
             }
                 //Move 1 Healing
+            int mv1atkMLocatorStartIndex = importString.IndexOf("atkDCMmv1@@");
+            if (mv1atkMLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 1 Attack Modifier' indicator.");
+                return false;
+            }
+            int mv1hLocatorEndIndex = importString.IndexOf("hDCMmv1@@");
+            if (mv1hLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 1 Healing' indicator.");
+                return false;
+            }
+            mv1hLocatorEndIndex = importString.IndexOf("hDCMmv1@@") + "hDCMmv1@@".Length - 1;
+            if (mv1atkMLocatorStartIndex - mv1hLocatorEndIndex <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 1 Healing value.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(mv1hLocatorEndIndex + 1, mv1atkMLocatorStartIndex - mv1hLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 1 Healing value.");
+                return false;
+            }
+                //Move 1 Attack Modifier
+            int mv1defMLocatorStartIndex = importString.IndexOf("defDCMmv1@@");
+            if (mv1defMLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 1 Defense Modifier' indicator.");
+                return false;
+            }
+            int mv1atkMLocatorEndIndex = importString.IndexOf("atkDCMmv1@@");
+            if (mv1atkMLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 1 Attack Modifier' indicator.");
+                return false;
+            }
+            mv1atkMLocatorEndIndex = importString.IndexOf("atkDCMmv1@@") + "atkDCMmv1@@".Length - 1;
+            if (mv1defMLocatorStartIndex - mv1atkMLocatorEndIndex <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 1 Attack Modifier value.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(mv1atkMLocatorEndIndex + 1, mv1defMLocatorStartIndex - mv1atkMLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 1 Attack Modifier value.");
+                return false;
+            }
+                //Move 1 Defense Modifier
+            int mv1accMLocatorStartIndex = importString.IndexOf("acmDCMmv1@@");
+            if (mv1accMLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 1 Accuracy Modifier' indicator.");
+                return false;
+            }
+            int mv1defMLocatorEndIndex = importString.IndexOf("defDCMmv1@@");
+            if (mv1defMLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 1 Defense Modifier' indicator.");
+                return false;
+            }
+            mv1defMLocatorEndIndex = importString.IndexOf("defDCMmv1@@") + "defDCMmv1@@".Length - 1;
+            if (mv1accMLocatorStartIndex - mv1defMLocatorEndIndex <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 1 Defense Modifier value.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(mv1defMLocatorEndIndex + 1, mv1accMLocatorStartIndex - mv1defMLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 1 Defense Modifier value.");
+                return false;
+            }
+                //Move 1 Accuracy Modifier
+            int mv1dgeMLocatorStartIndex = importString.IndexOf("dgeDCMmv1@@");
+            if (mv1dgeMLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 1 Dodge Modifier' indicator.");
+                return false;
+            }
+            int mv1accMLocatorEndIndex = importString.IndexOf("acmDCMmv1@@");
+            if (mv1accMLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 1 Accuracy Modifier' indicator.");
+                return false;
+            }
+            mv1accMLocatorEndIndex = importString.IndexOf("acmDCMmv1@@") + "acmDCMmv1@@".Length - 1;
+            if (mv1dgeMLocatorStartIndex - mv1accMLocatorEndIndex <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 1 Accuracy Modifier value.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(mv1accMLocatorEndIndex + 1, mv1dgeMLocatorStartIndex - mv1accMLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 1 Accuracy Modifier value.");
+                return false;
+            }
+                //Move 1 Dodge Modifier
+            int mv1indMLocatorStartIndex = importString.IndexOf("indSTRTMmv1@@_!");
+            if (mv1indMLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 1 Induces Start' indicator.");
+                return false;
+            }
+            int mv1dgeMLocatorEndIndex = importString.IndexOf("dgeDCMmv1@@");
+            if (mv1dgeMLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 1 Dodge Modifier' indicator.");
+                return false;
+            }
+            mv1dgeMLocatorEndIndex = importString.IndexOf("dgeDCMmv1@@") + "dgeDCMmv1@@".Length - 1;
+            if (mv1indMLocatorStartIndex - mv1dgeMLocatorEndIndex <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 1 Dodge Modifier value.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(mv1dgeMLocatorEndIndex + 1, mv1indMLocatorStartIndex - mv1dgeMLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 1 Dodge Modifier value.");
+                return false;
+            }
+            //Move 1 Induces
+            int mv1ind2LocatorStartIndex = importString.IndexOf("indENDMmv1@@_!");
+            if (mv1ind2LocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Induces End' indicator.");
+                return false;
+            }
+            int mv1indLocatorEndIndex = importString.IndexOf("indSTRTMmv1@@_!");
+            if (mv1indLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Induces Start' indicator.");
+                return false;
+            }
+            mv1indLocatorEndIndex = importString.IndexOf("indSTRTMmv1@@_!") + "indSTRTMmv1@@_!".Length - 1;
+            if (mv1ind2LocatorStartIndex - mv1indLocatorEndIndex != 10)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with Move 1 Induces data.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(mv1indLocatorEndIndex + 1, mv1ind2LocatorStartIndex - mv1indLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with Move 1 Induces data.");
+                return false;
+            }
+            else
+            {
+                string check = importString.Substring(mv1indLocatorEndIndex + 1, 9);
+                for (int i = 0; i < check.Length; i++)
+                {
+                    if (check.Substring(i, 1) != "y" && check.Substring(i, 1) != "n")
+                    {
+                        System.Windows.Forms.MessageBox.Show("Error with Move 1 Induces data.");
+                        return false;
+                    }
+                }
+            }
             //Valid!
             return true;
         }
