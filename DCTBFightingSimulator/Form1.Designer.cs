@@ -3308,6 +3308,7 @@ namespace DCTBFightingSimulator
             // loadBuildTextBox
             // 
             this.loadBuildTextBox.Location = new System.Drawing.Point(241, 683);
+            this.loadBuildTextBox.MaxLength = 100000000;
             this.loadBuildTextBox.Name = "loadBuildTextBox";
             this.loadBuildTextBox.Size = new System.Drawing.Size(100, 20);
             this.loadBuildTextBox.TabIndex = 258;

@@ -259,7 +259,7 @@ namespace DCTBFightingSimulator
                     return;
                 }
             }
-            importExportString.generateMoveTwoStringPart(m3n, m3d, m3t, m3atkmm, m3acc, m3h, m3atkM, m3defM, m3accM, m3dgeM, move3InducesBools);
+            importExportString.generateMoveThreeStringPart(m3n, m3d, m3t, m3atkmm, m3acc, m3h, m3atkM, m3defM, m3accM, m3dgeM, move3InducesBools);
             //Move 4
             string m4n = CCT9.Text;
             string m4d = CCT10.Text;
@@ -311,7 +311,7 @@ namespace DCTBFightingSimulator
                     return;
                 }
             }
-            importExportString.generateMoveTwoStringPart(m4n, m4d, m4t, m4atkmm, m4acc, m4h, m4atkM, m4defM, m4accM, m4dgeM, move4InducesBools);
+            importExportString.generateMoveFourStringPart(m4n, m4d, m4t, m4atkmm, m4acc, m4h, m4atkM, m4defM, m4accM, m4dgeM, move4InducesBools);
             //Move 5
             string m5n = CCT11.Text;
             string m5d = CCT12.Text;
@@ -363,7 +363,7 @@ namespace DCTBFightingSimulator
                     return;
                 }
             }
-            importExportString.generateMoveTwoStringPart(m5n, m5d, m5t, m5atkmm, m5acc, m5h, m5atkM, m5defM, m5accM, m5dgeM, move5InducesBools);
+            importExportString.generateMoveFiveStringPart(m5n, m5d, m5t, m5atkmm, m5acc, m5h, m5atkM, m5defM, m5accM, m5dgeM, move5InducesBools);
             //Get
             exportStringTextBox.Text = importExportString.getImportExportString();
         }
@@ -863,7 +863,7 @@ namespace DCTBFightingSimulator
                 System.Windows.Forms.MessageBox.Show("Error with character Move 1 Dodge Modifier value.");
                 return false;
             }
-            //Move 1 Induces
+                //Move 1 Induces
             int mv1ind2LocatorStartIndex = importString.IndexOf("indENDMmv1@@_!");
             if (mv1ind2LocatorStartIndex == -1)
             {
@@ -895,6 +895,1110 @@ namespace DCTBFightingSimulator
                     if (check.Substring(i, 1) != "y" && check.Substring(i, 1) != "n")
                     {
                         System.Windows.Forms.MessageBox.Show("Error with Move 1 Induces data.");
+                        return false;
+                    }
+                }
+            }
+                //Move 2 Name
+            int mv2dLocatorStartIndex = importString.IndexOf("dDCMv2@@");
+            if (mv2dLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 2 Description' indicator.");
+                return false;
+            }
+            int mv2nLocatorEndIndex = importString.IndexOf("nDCMmv2@@");
+            if (mv2nLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 2 Name' indicator.");
+                return false;
+            }
+            mv2nLocatorEndIndex = importString.IndexOf("nDCMmv2@@") + "nDCMmv2@@".Length - 1;
+            if (mv2dLocatorStartIndex - mv2nLocatorEndIndex <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 2 Name value.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(mv2nLocatorEndIndex + 1, mv2dLocatorStartIndex - mv2nLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 2 Name value.");
+                return false;
+            }
+                //Move 2 Desc
+            int mv2tLocatorStartIndex = importString.IndexOf("tDCMmv2@@");
+            if (mv2tLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 2 Type' indicator.");
+                return false;
+            }
+            int mv2dLocatorEndIndex = importString.IndexOf("dDCMv2@@");
+            if (mv2dLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 2 Description' indicator.");
+                return false;
+            }
+            mv2dLocatorEndIndex = importString.IndexOf("dDCMv2@@") + "dDCMv2@@".Length - 1;
+            if (mv2tLocatorStartIndex - mv2dLocatorEndIndex <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 2 Description value.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(mv2dLocatorEndIndex + 1, mv2tLocatorStartIndex - mv2dLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 2 Description value.");
+                return false;
+            }
+                //Move 2 Type
+            int mv2atmLocatorStartIndex = importString.IndexOf("atmDCMmv2@@");
+            if (mv2atmLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 2 Attack' indicator.");
+                return false;
+            }
+            int mv2tLocatorEndIndex = importString.IndexOf("tDCMmv2@@");
+            if (mv2tLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 2 Type' indicator.");
+                return false;
+            }
+            mv2tLocatorEndIndex = importString.IndexOf("tDCMmv2@@") + "tDCMmv2@@".Length - 1;
+            if (mv2atmLocatorStartIndex - mv2tLocatorEndIndex <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 2 Type value.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(mv2tLocatorEndIndex + 1, mv2atmLocatorStartIndex - mv2tLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 2 Type value.");
+                return false;
+            }
+                //Move 2 Atk Multiplier
+            int mv2accLocatorStartIndex = importString.IndexOf("accDCMmv2@@");
+            if (mv2accLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 2 Accuracy' indicator.");
+                return false;
+            }
+            int mv2atmLocatorEndIndex = importString.IndexOf("atmDCMmv2@@");
+            if (mv2atmLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 2 Attack' indicator.");
+                return false;
+            }
+            mv2atmLocatorEndIndex = importString.IndexOf("atmDCMmv2@@") + "atmDCMmv2@@".Length - 1;
+            if (mv2accLocatorStartIndex - mv2atmLocatorEndIndex <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 2 Attack value.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(mv2atmLocatorEndIndex + 1, mv2accLocatorStartIndex - mv2atmLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 2 Attack value.");
+                return false;
+            }
+                //Move 2 Accuracy
+            int mv2hLocatorStartIndex = importString.IndexOf("hDCMmv2@@");
+            if (mv2hLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 2 Healing' indicator.");
+                return false;
+            }
+            int mv2accLocatorEndIndex = importString.IndexOf("accDCMmv2@@");
+            if (mv2accLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 2 Accuracy' indicator.");
+                return false;
+            }
+            mv2accLocatorEndIndex = importString.IndexOf("accDCMmv2@@") + "accDCMmv2@@".Length - 1;
+            if (mv2hLocatorStartIndex - mv2accLocatorEndIndex <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 2 Accuracy value.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(mv2accLocatorEndIndex + 1, mv2hLocatorStartIndex - mv2accLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 2 Accuracy value.");
+                return false;
+            }
+                //Move 2 Healing
+            int mv2atkMLocatorStartIndex = importString.IndexOf("atkDCMmv2@@");
+            if (mv2atkMLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 2 Attack Modifier' indicator.");
+                return false;
+            }
+            int mv2hLocatorEndIndex = importString.IndexOf("hDCMmv2@@");
+            if (mv2hLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 2 Healing' indicator.");
+                return false;
+            }
+            mv2hLocatorEndIndex = importString.IndexOf("hDCMmv2@@") + "hDCMmv2@@".Length - 1;
+            if (mv2atkMLocatorStartIndex - mv2hLocatorEndIndex <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 2 Healing value.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(mv2hLocatorEndIndex + 1, mv2atkMLocatorStartIndex - mv2hLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 2 Healing value.");
+                return false;
+            }
+                //Move 2 Attack Modifier
+            int mv2defMLocatorStartIndex = importString.IndexOf("defDCMmv2@@");
+            if (mv2defMLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 2 Defense Modifier' indicator.");
+                return false;
+            }
+            int mv2atkMLocatorEndIndex = importString.IndexOf("atkDCMmv2@@");
+            if (mv2atkMLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 2 Attack Modifier' indicator.");
+                return false;
+            }
+            mv2atkMLocatorEndIndex = importString.IndexOf("atkDCMmv2@@") + "atkDCMmv2@@".Length - 1;
+            if (mv2defMLocatorStartIndex - mv2atkMLocatorEndIndex <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 2 Attack Modifier value.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(mv2atkMLocatorEndIndex + 1, mv2defMLocatorStartIndex - mv2atkMLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 2 Attack Modifier value.");
+                return false;
+            }
+                //Move 2 Defense Modifier
+            int mv2accMLocatorStartIndex = importString.IndexOf("acmDCMmv2@@");
+            if (mv2accMLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 2 Accuracy Modifier' indicator.");
+                return false;
+            }
+            int mv2defMLocatorEndIndex = importString.IndexOf("defDCMmv2@@");
+            if (mv2defMLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 2 Defense Modifier' indicator.");
+                return false;
+            }
+            mv2defMLocatorEndIndex = importString.IndexOf("defDCMmv2@@") + "defDCMmv2@@".Length - 1;
+            if (mv2accMLocatorStartIndex - mv2defMLocatorEndIndex <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 2 Defense Modifier value.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(mv2defMLocatorEndIndex + 1, mv2accMLocatorStartIndex - mv2defMLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 2 Defense Modifier value.");
+                return false;
+            }
+                //Move 2 Accuracy Modifier
+            int mv2dgeMLocatorStartIndex = importString.IndexOf("dgeDCMmv2@@");
+            if (mv2dgeMLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 2 Dodge Modifier' indicator.");
+                return false;
+            }
+            int mv2accMLocatorEndIndex = importString.IndexOf("acmDCMmv2@@");
+            if (mv2accMLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 2 Accuracy Modifier' indicator.");
+                return false;
+            }
+            mv2accMLocatorEndIndex = importString.IndexOf("acmDCMmv2@@") + "acmDCMmv2@@".Length - 1;
+            if (mv2dgeMLocatorStartIndex - mv2accMLocatorEndIndex <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 2 Accuracy Modifier value.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(mv2accMLocatorEndIndex + 1, mv2dgeMLocatorStartIndex - mv2accMLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 2 Accuracy Modifier value.");
+                return false;
+            }
+                //Move 2 Dodge Modifier
+            int mv2indMLocatorStartIndex = importString.IndexOf("indSTRTMmv2@@_!");
+            if (mv2indMLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 2 Induces Start' indicator.");
+                return false;
+            }
+            int mv2dgeMLocatorEndIndex = importString.IndexOf("dgeDCMmv2@@");
+            if (mv2dgeMLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 2 Dodge Modifier' indicator.");
+                return false;
+            }
+            mv2dgeMLocatorEndIndex = importString.IndexOf("dgeDCMmv2@@") + "dgeDCMmv2@@".Length - 1;
+            if (mv2indMLocatorStartIndex - mv2dgeMLocatorEndIndex <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 2 Dodge Modifier value.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(mv2dgeMLocatorEndIndex + 1, mv2indMLocatorStartIndex - mv2dgeMLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 2 Dodge Modifier value.");
+                return false;
+            }
+                //Move 2 Induces
+            int mv2ind2LocatorStartIndex = importString.IndexOf("indENDMmv2@@_!");
+            if (mv2ind2LocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Induces End' indicator.");
+                return false;
+            }
+            int mv2indLocatorEndIndex = importString.IndexOf("indSTRTMmv2@@_!");
+            if (mv2indLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Induces Start' indicator.");
+                return false;
+            }
+            mv2indLocatorEndIndex = importString.IndexOf("indSTRTMmv2@@_!") + "indSTRTMmv2@@_!".Length - 1;
+            if (mv2ind2LocatorStartIndex - mv2indLocatorEndIndex != 10)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with Move 2 Induces data.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(mv2indLocatorEndIndex + 1, mv2ind2LocatorStartIndex - mv2indLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with Move 2 Induces data.");
+                return false;
+            }
+            else
+            {
+                string check = importString.Substring(mv2indLocatorEndIndex + 1, 9);
+                for (int i = 0; i < check.Length; i++)
+                {
+                    if (check.Substring(i, 1) != "y" && check.Substring(i, 1) != "n")
+                    {
+                        System.Windows.Forms.MessageBox.Show("Error with Move 2 Induces data.");
+                        return false;
+                    }
+                }
+            }
+                //Move 3 Name
+            int mv3dLocatorStartIndex = importString.IndexOf("dDCMv3@@");
+            if (mv3dLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 3 Description' indicator.");
+                return false;
+            }
+            int mv3nLocatorEndIndex = importString.IndexOf("nDCMmv3@@");
+            if (mv3nLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 3 Name' indicator.");
+                return false;
+            }
+            mv3nLocatorEndIndex = importString.IndexOf("nDCMmv3@@") + "nDCMmv3@@".Length - 1;
+            if (mv3dLocatorStartIndex - mv3nLocatorEndIndex <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 3 Name value.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(mv3nLocatorEndIndex + 1, mv3dLocatorStartIndex - mv3nLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 3 Name value.");
+                return false;
+            }
+                //Move 3 Desc
+            int mv3tLocatorStartIndex = importString.IndexOf("tDCMmv3@@");
+            if (mv3tLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 3 Type' indicator.");
+                return false;
+            }
+            int mv3dLocatorEndIndex = importString.IndexOf("dDCMv3@@");
+            if (mv3dLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 3 Description' indicator.");
+                return false;
+            }
+            mv3dLocatorEndIndex = importString.IndexOf("dDCMv3@@") + "dDCMv3@@".Length - 1;
+            if (mv3tLocatorStartIndex - mv3dLocatorEndIndex <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 3 Description value.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(mv3dLocatorEndIndex + 1, mv3tLocatorStartIndex - mv3dLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 3 Description value.");
+                return false;
+            }
+                //Move 3 Type
+            int mv3atmLocatorStartIndex = importString.IndexOf("atmDCMmv3@@");
+            if (mv3atmLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 3 Attack' indicator.");
+                return false;
+            }
+            int mv3tLocatorEndIndex = importString.IndexOf("tDCMmv3@@");
+            if (mv3tLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 3 Type' indicator.");
+                return false;
+            }
+            mv3tLocatorEndIndex = importString.IndexOf("tDCMmv3@@") + "tDCMmv3@@".Length - 1;
+            if (mv3atmLocatorStartIndex - mv3tLocatorEndIndex <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 3 Type value.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(mv3tLocatorEndIndex + 1, mv3atmLocatorStartIndex - mv3tLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 3 Type value.");
+                return false;
+            }
+                //Move 3 Atk Multiplier
+            int mv3accLocatorStartIndex = importString.IndexOf("accDCMmv3@@");
+            if (mv3accLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 3 Accuracy' indicator.");
+                return false;
+            }
+            int mv3atmLocatorEndIndex = importString.IndexOf("atmDCMmv3@@");
+            if (mv3atmLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 3 Attack' indicator.");
+                return false;
+            }
+            mv3atmLocatorEndIndex = importString.IndexOf("atmDCMmv3@@") + "atmDCMmv3@@".Length - 1;
+            if (mv3accLocatorStartIndex - mv3atmLocatorEndIndex <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 3 Attack value.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(mv3atmLocatorEndIndex + 1, mv3accLocatorStartIndex - mv3atmLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 3 Attack value.");
+                return false;
+            }
+                //Move 3 Accuracy
+            int mv3hLocatorStartIndex = importString.IndexOf("hDCMmv3@@");
+            if (mv3hLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 3 Healing' indicator.");
+                return false;
+            }
+            int mv3accLocatorEndIndex = importString.IndexOf("accDCMmv3@@");
+            if (mv3accLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 3 Accuracy' indicator.");
+                return false;
+            }
+            mv3accLocatorEndIndex = importString.IndexOf("accDCMmv3@@") + "accDCMmv3@@".Length - 1;
+            if (mv3hLocatorStartIndex - mv3accLocatorEndIndex <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 3 Accuracy value.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(mv3accLocatorEndIndex + 1, mv3hLocatorStartIndex - mv3accLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 3 Accuracy value.");
+                return false;
+            }
+                //Move 3 Healing
+            int mv3atkMLocatorStartIndex = importString.IndexOf("atkDCMmv3@@");
+            if (mv3atkMLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 3 Attack Modifier' indicator.");
+                return false;
+            }
+            int mv3hLocatorEndIndex = importString.IndexOf("hDCMmv3@@");
+            if (mv3hLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 3 Healing' indicator.");
+                return false;
+            }
+            mv3hLocatorEndIndex = importString.IndexOf("hDCMmv3@@") + "hDCMmv3@@".Length - 1;
+            if (mv3atkMLocatorStartIndex - mv3hLocatorEndIndex <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 3 Healing value.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(mv3hLocatorEndIndex + 1, mv3atkMLocatorStartIndex - mv3hLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 3 Healing value.");
+                return false;
+            }
+                //Move 3 Attack Modifier
+            int mv3defMLocatorStartIndex = importString.IndexOf("defDCMmv3@@");
+            if (mv3defMLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 3 Defense Modifier' indicator.");
+                return false;
+            }
+            int mv3atkMLocatorEndIndex = importString.IndexOf("atkDCMmv3@@");
+            if (mv3atkMLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 3 Attack Modifier' indicator.");
+                return false;
+            }
+            mv3atkMLocatorEndIndex = importString.IndexOf("atkDCMmv3@@") + "atkDCMmv3@@".Length - 1;
+            if (mv3defMLocatorStartIndex - mv3atkMLocatorEndIndex <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 3 Attack Modifier value.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(mv3atkMLocatorEndIndex + 1, mv3defMLocatorStartIndex - mv3atkMLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 3 Attack Modifier value.");
+                return false;
+            }
+                //Move 3 Defense Modifier
+            int mv3accMLocatorStartIndex = importString.IndexOf("acmDCMmv3@@");
+            if (mv3accMLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 3 Accuracy Modifier' indicator.");
+                return false;
+            }
+            int mv3defMLocatorEndIndex = importString.IndexOf("defDCMmv3@@");
+            if (mv3defMLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 3 Defense Modifier' indicator.");
+                return false;
+            }
+            mv3defMLocatorEndIndex = importString.IndexOf("defDCMmv3@@") + "defDCMmv3@@".Length - 1;
+            if (mv3accMLocatorStartIndex - mv3defMLocatorEndIndex <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 3 Defense Modifier value.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(mv3defMLocatorEndIndex + 1, mv3accMLocatorStartIndex - mv3defMLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 3 Defense Modifier value.");
+                return false;
+            }
+                //Move 3 Accuracy Modifier
+            int mv3dgeMLocatorStartIndex = importString.IndexOf("dgeDCMmv3@@");
+            if (mv3dgeMLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 3 Dodge Modifier' indicator.");
+                return false;
+            }
+            int mv3accMLocatorEndIndex = importString.IndexOf("acmDCMmv3@@");
+            if (mv3accMLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 3 Accuracy Modifier' indicator.");
+                return false;
+            }
+            mv3accMLocatorEndIndex = importString.IndexOf("acmDCMmv3@@") + "acmDCMmv3@@".Length - 1;
+            if (mv3dgeMLocatorStartIndex - mv3accMLocatorEndIndex <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 3 Accuracy Modifier value.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(mv3accMLocatorEndIndex + 1, mv3dgeMLocatorStartIndex - mv3accMLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 3 Accuracy Modifier value.");
+                return false;
+            }
+                //Move 3 Dodge Modifier
+            int mv3indMLocatorStartIndex = importString.IndexOf("indSTRTMmv3@@_!");
+            if (mv3indMLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 3 Induces Start' indicator.");
+                return false;
+            }
+            int mv3dgeMLocatorEndIndex = importString.IndexOf("dgeDCMmv3@@");
+            if (mv3dgeMLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 3 Dodge Modifier' indicator.");
+                return false;
+            }
+            mv3dgeMLocatorEndIndex = importString.IndexOf("dgeDCMmv3@@") + "dgeDCMmv3@@".Length - 1;
+            if (mv3indMLocatorStartIndex - mv3dgeMLocatorEndIndex <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 3 Dodge Modifier value.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(mv3dgeMLocatorEndIndex + 1, mv3indMLocatorStartIndex - mv3dgeMLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 3 Dodge Modifier value.");
+                return false;
+            }
+                //Move 3 Induces
+            int mv3ind2LocatorStartIndex = importString.IndexOf("indENDMmv3@@_!");
+            if (mv3ind2LocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Induces End' indicator.");
+                return false;
+            }
+            int mv3indLocatorEndIndex = importString.IndexOf("indSTRTMmv3@@_!");
+            if (mv3indLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Induces Start' indicator.");
+                return false;
+            }
+            mv3indLocatorEndIndex = importString.IndexOf("indSTRTMmv3@@_!") + "indSTRTMmv3@@_!".Length - 1;
+            if (mv3ind2LocatorStartIndex - mv3indLocatorEndIndex != 10)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with Move 3 Induces data.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(mv3indLocatorEndIndex + 1, mv3ind2LocatorStartIndex - mv3indLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with Move 3 Induces data.");
+                return false;
+            }
+            else
+            {
+                string check = importString.Substring(mv3indLocatorEndIndex + 1, 9);
+                for (int i = 0; i < check.Length; i++)
+                {
+                    if (check.Substring(i, 1) != "y" && check.Substring(i, 1) != "n")
+                    {
+                        System.Windows.Forms.MessageBox.Show("Error with Move 3 Induces data.");
+                        return false;
+                    }
+                }
+            }
+                //Move 4 Name
+            int mv4dLocatorStartIndex = importString.IndexOf("dDCMv4@@");
+            if (mv4dLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 4 Description' indicator.");
+                return false;
+            }
+            int mv4nLocatorEndIndex = importString.IndexOf("nDCMmv4@@");
+            if (mv4nLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 4 Name' indicator.");
+                return false;
+            }
+            mv4nLocatorEndIndex = importString.IndexOf("nDCMmv4@@") + "nDCMmv4@@".Length - 1;
+            if (mv4dLocatorStartIndex - mv4nLocatorEndIndex <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 4 Name value.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(mv4nLocatorEndIndex + 1, mv4dLocatorStartIndex - mv4nLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 4 Name value.");
+                return false;
+            }
+                //Move 4 Desc
+            int mv4tLocatorStartIndex = importString.IndexOf("tDCMmv4@@");
+            if (mv4tLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 4 Type' indicator.");
+                return false;
+            }
+            int mv4dLocatorEndIndex = importString.IndexOf("dDCMv4@@");
+            if (mv4dLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 4 Description' indicator.");
+                return false;
+            }
+            mv4dLocatorEndIndex = importString.IndexOf("dDCMv4@@") + "dDCMv4@@".Length - 1;
+            if (mv4tLocatorStartIndex - mv4dLocatorEndIndex <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 4 Description value.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(mv4dLocatorEndIndex + 1, mv4tLocatorStartIndex - mv4dLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 4 Description value.");
+                return false;
+            }
+                //Move 4 Type
+            int mv4atmLocatorStartIndex = importString.IndexOf("atmDCMmv4@@");
+            if (mv4atmLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 4 Attack' indicator.");
+                return false;
+            }
+            int mv4tLocatorEndIndex = importString.IndexOf("tDCMmv4@@");
+            if (mv4tLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 4 Type' indicator.");
+                return false;
+            }
+            mv4tLocatorEndIndex = importString.IndexOf("tDCMmv4@@") + "tDCMmv4@@".Length - 1;
+            if (mv4atmLocatorStartIndex - mv4tLocatorEndIndex <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 4 Type value.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(mv4tLocatorEndIndex + 1, mv4atmLocatorStartIndex - mv4tLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 4 Type value.");
+                return false;
+            }
+                //Move 4 Atk Multiplier
+            int mv4accLocatorStartIndex = importString.IndexOf("accDCMmv4@@");
+            if (mv4accLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 4 Accuracy' indicator.");
+                return false;
+            }
+            int mv4atmLocatorEndIndex = importString.IndexOf("atmDCMmv4@@");
+            if (mv4atmLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 4 Attack' indicator.");
+                return false;
+            }
+            mv4atmLocatorEndIndex = importString.IndexOf("atmDCMmv4@@") + "atmDCMmv4@@".Length - 1;
+            if (mv4accLocatorStartIndex - mv4atmLocatorEndIndex <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 4 Attack value.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(mv4atmLocatorEndIndex + 1, mv4accLocatorStartIndex - mv4atmLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 4 Attack value.");
+                return false;
+            }
+                //Move 4 Accuracy
+            int mv4hLocatorStartIndex = importString.IndexOf("hDCMmv4@@");
+            if (mv4hLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 4 Healing' indicator.");
+                return false;
+            }
+            int mv4accLocatorEndIndex = importString.IndexOf("accDCMmv4@@");
+            if (mv4accLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 4 Accuracy' indicator.");
+                return false;
+            }
+            mv4accLocatorEndIndex = importString.IndexOf("accDCMmv4@@") + "accDCMmv4@@".Length - 1;
+            if (mv4hLocatorStartIndex - mv4accLocatorEndIndex <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 4 Accuracy value.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(mv4accLocatorEndIndex + 1, mv4hLocatorStartIndex - mv4accLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 4 Accuracy value.");
+                return false;
+            }
+                //Move 4 Healing
+            int mv4atkMLocatorStartIndex = importString.IndexOf("atkDCMmv4@@");
+            if (mv4atkMLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 4 Attack Modifier' indicator.");
+                return false;
+            }
+            int mv4hLocatorEndIndex = importString.IndexOf("hDCMmv4@@");
+            if (mv4hLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 4 Healing' indicator.");
+                return false;
+            }
+            mv4hLocatorEndIndex = importString.IndexOf("hDCMmv4@@") + "hDCMmv4@@".Length - 1;
+            if (mv4atkMLocatorStartIndex - mv4hLocatorEndIndex <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 4 Healing value.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(mv4hLocatorEndIndex + 1, mv4atkMLocatorStartIndex - mv4hLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 4 Healing value.");
+                return false;
+            }
+                //Move 4 Attack Modifier
+            int mv4defMLocatorStartIndex = importString.IndexOf("defDCMmv4@@");
+            if (mv4defMLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 4 Defense Modifier' indicator.");
+                return false;
+            }
+            int mv4atkMLocatorEndIndex = importString.IndexOf("atkDCMmv4@@");
+            if (mv4atkMLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 4 Attack Modifier' indicator.");
+                return false;
+            }
+            mv4atkMLocatorEndIndex = importString.IndexOf("atkDCMmv4@@") + "atkDCMmv4@@".Length - 1;
+            if (mv4defMLocatorStartIndex - mv4atkMLocatorEndIndex <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 4 Attack Modifier value.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(mv4atkMLocatorEndIndex + 1, mv4defMLocatorStartIndex - mv4atkMLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 4 Attack Modifier value.");
+                return false;
+            }
+                //Move 4 Defense Modifier
+            int mv4accMLocatorStartIndex = importString.IndexOf("acmDCMmv4@@");
+            if (mv4accMLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 4 Accuracy Modifier' indicator.");
+                return false;
+            }
+            int mv4defMLocatorEndIndex = importString.IndexOf("defDCMmv4@@");
+            if (mv4defMLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 4 Defense Modifier' indicator.");
+                return false;
+            }
+            mv4defMLocatorEndIndex = importString.IndexOf("defDCMmv4@@") + "defDCMmv4@@".Length - 1;
+            if (mv4accMLocatorStartIndex - mv4defMLocatorEndIndex <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 4 Defense Modifier value.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(mv4defMLocatorEndIndex + 1, mv4accMLocatorStartIndex - mv4defMLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 4 Defense Modifier value.");
+                return false;
+            }
+                //Move 4 Accuracy Modifier
+            int mv4dgeMLocatorStartIndex = importString.IndexOf("dgeDCMmv4@@");
+            if (mv4dgeMLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 4 Dodge Modifier' indicator.");
+                return false;
+            }
+            int mv4accMLocatorEndIndex = importString.IndexOf("acmDCMmv4@@");
+            if (mv4accMLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 4 Accuracy Modifier' indicator.");
+                return false;
+            }
+            mv4accMLocatorEndIndex = importString.IndexOf("acmDCMmv4@@") + "acmDCMmv4@@".Length - 1;
+            if (mv4dgeMLocatorStartIndex - mv4accMLocatorEndIndex <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 4 Accuracy Modifier value.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(mv4accMLocatorEndIndex + 1, mv4dgeMLocatorStartIndex - mv4accMLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 4 Accuracy Modifier value.");
+                return false;
+            }
+                //Move 4 Dodge Modifier
+            int mv4indMLocatorStartIndex = importString.IndexOf("indSTRTMmv4@@_!");
+            if (mv4indMLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 4 Induces Start' indicator.");
+                return false;
+            }
+            int mv4dgeMLocatorEndIndex = importString.IndexOf("dgeDCMmv4@@");
+            if (mv4dgeMLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 4 Dodge Modifier' indicator.");
+                return false;
+            }
+            mv4dgeMLocatorEndIndex = importString.IndexOf("dgeDCMmv4@@") + "dgeDCMmv4@@".Length - 1;
+            if (mv4indMLocatorStartIndex - mv4dgeMLocatorEndIndex <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 4 Dodge Modifier value.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(mv4dgeMLocatorEndIndex + 1, mv4indMLocatorStartIndex - mv4dgeMLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 4 Dodge Modifier value.");
+                return false;
+            }
+                //Move 4 Induces
+            int mv4ind2LocatorStartIndex = importString.IndexOf("indENDMmv4@@_!");
+            if (mv4ind2LocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Induces End' indicator.");
+                return false;
+            }
+            int mv4indLocatorEndIndex = importString.IndexOf("indSTRTMmv4@@_!");
+            if (mv4indLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Induces Start' indicator.");
+                return false;
+            }
+            mv4indLocatorEndIndex = importString.IndexOf("indSTRTMmv4@@_!") + "indSTRTMmv4@@_!".Length - 1;
+            if (mv4ind2LocatorStartIndex - mv4indLocatorEndIndex != 10)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with Move 4 Induces data.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(mv4indLocatorEndIndex + 1, mv4ind2LocatorStartIndex - mv4indLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with Move 4 Induces data.");
+                return false;
+            }
+            else
+            {
+                string check = importString.Substring(mv4indLocatorEndIndex + 1, 9);
+                for (int i = 0; i < check.Length; i++)
+                {
+                    if (check.Substring(i, 1) != "y" && check.Substring(i, 1) != "n")
+                    {
+                        System.Windows.Forms.MessageBox.Show("Error with Move 4 Induces data.");
+                        return false;
+                    }
+                }
+            }
+                //Move 5 Name
+            int mv5dLocatorStartIndex = importString.IndexOf("dDCMv5@@");
+            if (mv5dLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 5 Description' indicator.");
+                return false;
+            }
+            int mv5nLocatorEndIndex = importString.IndexOf("nDCMmv5@@");
+            if (mv5nLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 5 Name' indicator.");
+                return false;
+            }
+            mv5nLocatorEndIndex = importString.IndexOf("nDCMmv5@@") + "nDCMmv5@@".Length - 1;
+            if (mv5dLocatorStartIndex - mv5nLocatorEndIndex <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 5 Name value.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(mv5nLocatorEndIndex + 1, mv5dLocatorStartIndex - mv5nLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 5 Name value.");
+                return false;
+            }
+                //Move 5 Desc
+            int mv5tLocatorStartIndex = importString.IndexOf("tDCMmv5@@");
+            if (mv5tLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 5 Type' indicator.");
+                return false;
+            }
+            int mv5dLocatorEndIndex = importString.IndexOf("dDCMv5@@");
+            if (mv5dLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 5 Description' indicator.");
+                return false;
+            }
+            mv5dLocatorEndIndex = importString.IndexOf("dDCMv5@@") + "dDCMv5@@".Length - 1;
+            if (mv5tLocatorStartIndex - mv5dLocatorEndIndex <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 5 Description value.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(mv5dLocatorEndIndex + 1, mv5tLocatorStartIndex - mv5dLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 5 Description value.");
+                return false;
+            }
+                //Move 5 Type
+            int mv5atmLocatorStartIndex = importString.IndexOf("atmDCMmv5@@");
+            if (mv5atmLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 5 Attack' indicator.");
+                return false;
+            }
+            int mv5tLocatorEndIndex = importString.IndexOf("tDCMmv5@@");
+            if (mv5tLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 5 Type' indicator.");
+                return false;
+            }
+            mv5tLocatorEndIndex = importString.IndexOf("tDCMmv5@@") + "tDCMmv5@@".Length - 1;
+            if (mv5atmLocatorStartIndex - mv5tLocatorEndIndex <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 5 Type value.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(mv5tLocatorEndIndex + 1, mv5atmLocatorStartIndex - mv5tLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 5 Type value.");
+                return false;
+            }
+                //Move 5 Atk Multiplier
+            int mv5accLocatorStartIndex = importString.IndexOf("accDCMmv5@@");
+            if (mv5accLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 5 Accuracy' indicator.");
+                return false;
+            }
+            int mv5atmLocatorEndIndex = importString.IndexOf("atmDCMmv5@@");
+            if (mv5atmLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 5 Attack' indicator.");
+                return false;
+            }
+            mv5atmLocatorEndIndex = importString.IndexOf("atmDCMmv5@@") + "atmDCMmv5@@".Length - 1;
+            if (mv5accLocatorStartIndex - mv5atmLocatorEndIndex <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 5 Attack value.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(mv5atmLocatorEndIndex + 1, mv5accLocatorStartIndex - mv5atmLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 5 Attack value.");
+                return false;
+            }
+                //Move 5 Accuracy
+            int mv5hLocatorStartIndex = importString.IndexOf("hDCMmv5@@");
+            if (mv5hLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 5 Healing' indicator.");
+                return false;
+            }
+            int mv5accLocatorEndIndex = importString.IndexOf("accDCMmv5@@");
+            if (mv5accLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 5 Accuracy' indicator.");
+                return false;
+            }
+            mv5accLocatorEndIndex = importString.IndexOf("accDCMmv5@@") + "accDCMmv5@@".Length - 1;
+            if (mv5hLocatorStartIndex - mv5accLocatorEndIndex <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 5 Accuracy value.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(mv5accLocatorEndIndex + 1, mv5hLocatorStartIndex - mv5accLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 5 Accuracy value.");
+                return false;
+            }
+                //Move 5 Healing
+            int mv5atkMLocatorStartIndex = importString.IndexOf("atkDCMmv5@@");
+            if (mv5atkMLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 5 Attack Modifier' indicator.");
+                return false;
+            }
+            int mv5hLocatorEndIndex = importString.IndexOf("hDCMmv5@@");
+            if (mv5hLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 5 Healing' indicator.");
+                return false;
+            }
+            mv5hLocatorEndIndex = importString.IndexOf("hDCMmv5@@") + "hDCMmv5@@".Length - 1;
+            if (mv5atkMLocatorStartIndex - mv5hLocatorEndIndex <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 5 Healing value.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(mv5hLocatorEndIndex + 1, mv5atkMLocatorStartIndex - mv5hLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 5 Healing value.");
+                return false;
+            }
+                //Move 5 Attack Modifier
+            int mv5defMLocatorStartIndex = importString.IndexOf("defDCMmv5@@");
+            if (mv5defMLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 5 Defense Modifier' indicator.");
+                return false;
+            }
+            int mv5atkMLocatorEndIndex = importString.IndexOf("atkDCMmv5@@");
+            if (mv5atkMLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 5 Attack Modifier' indicator.");
+                return false;
+            }
+            mv5atkMLocatorEndIndex = importString.IndexOf("atkDCMmv5@@") + "atkDCMmv5@@".Length - 1;
+            if (mv5defMLocatorStartIndex - mv5atkMLocatorEndIndex <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 5 Attack Modifier value.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(mv5atkMLocatorEndIndex + 1, mv5defMLocatorStartIndex - mv5atkMLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 5 Attack Modifier value.");
+                return false;
+            }
+                //Move 5 Defense Modifier
+            int mv5accMLocatorStartIndex = importString.IndexOf("acmDCMmv5@@");
+            if (mv5accMLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 5 Accuracy Modifier' indicator.");
+                return false;
+            }
+            int mv5defMLocatorEndIndex = importString.IndexOf("defDCMmv5@@");
+            if (mv5defMLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 5 Defense Modifier' indicator.");
+                return false;
+            }
+            mv5defMLocatorEndIndex = importString.IndexOf("defDCMmv5@@") + "defDCMmv5@@".Length - 1;
+            if (mv5accMLocatorStartIndex - mv5defMLocatorEndIndex <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 5 Defense Modifier value.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(mv5defMLocatorEndIndex + 1, mv5accMLocatorStartIndex - mv5defMLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 5 Defense Modifier value.");
+                return false;
+            }
+                //Move 5 Accuracy Modifier
+            int mv5dgeMLocatorStartIndex = importString.IndexOf("dgeDCMmv5@@");
+            if (mv5dgeMLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 5 Dodge Modifier' indicator.");
+                return false;
+            }
+            int mv5accMLocatorEndIndex = importString.IndexOf("acmDCMmv5@@");
+            if (mv5accMLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 5 Accuracy Modifier' indicator.");
+                return false;
+            }
+            mv5accMLocatorEndIndex = importString.IndexOf("acmDCMmv5@@") + "acmDCMmv5@@".Length - 1;
+            if (mv5dgeMLocatorStartIndex - mv5accMLocatorEndIndex <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 5 Accuracy Modifier value.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(mv5accMLocatorEndIndex + 1, mv5dgeMLocatorStartIndex - mv5accMLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 5 Accuracy Modifier value.");
+                return false;
+            }
+                //Move 5 Dodge Modifier
+            int mv5indMLocatorStartIndex = importString.IndexOf("indSTRTMmv5@@_!");
+            if (mv5indMLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 5 Induces Start' indicator.");
+                return false;
+            }
+            int mv5dgeMLocatorEndIndex = importString.IndexOf("dgeDCMmv5@@");
+            if (mv5dgeMLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 5 Dodge Modifier' indicator.");
+                return false;
+            }
+            mv5dgeMLocatorEndIndex = importString.IndexOf("dgeDCMmv5@@") + "dgeDCMmv5@@".Length - 1;
+            if (mv5indMLocatorStartIndex - mv5dgeMLocatorEndIndex <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 5 Dodge Modifier value.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(mv5dgeMLocatorEndIndex + 1, mv5indMLocatorStartIndex - mv5dgeMLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 5 Dodge Modifier value.");
+                return false;
+            }
+                //Move 5 Induces
+            int mv5ind2LocatorStartIndex = importString.IndexOf("indENDMmv5@@_!");
+            if (mv5ind2LocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Induces End' indicator.");
+                return false;
+            }
+            int mv5indLocatorEndIndex = importString.IndexOf("indSTRTMmv5@@_!");
+            if (mv5indLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Induces Start' indicator.");
+                return false;
+            }
+            mv5indLocatorEndIndex = importString.IndexOf("indSTRTMmv5@@_!") + "indSTRTMmv5@@_!".Length - 1;
+            if (mv5ind2LocatorStartIndex - mv5indLocatorEndIndex != 10)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with Move 5 Induces data.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(mv5indLocatorEndIndex + 1, mv5ind2LocatorStartIndex - mv5indLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with Move 5 Induces data.");
+                return false;
+            }
+            else
+            {
+                string check = importString.Substring(mv5indLocatorEndIndex + 1, 9);
+                for (int i = 0; i < check.Length; i++)
+                {
+                    if (check.Substring(i, 1) != "y" && check.Substring(i, 1) != "n")
+                    {
+                        System.Windows.Forms.MessageBox.Show("Error with Move 5 Induces data.");
                         return false;
                     }
                 }
