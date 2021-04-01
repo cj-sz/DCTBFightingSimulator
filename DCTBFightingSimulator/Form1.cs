@@ -43,10 +43,18 @@ namespace DCTBFightingSimulator
             System.Windows.Forms.MessageBox.Show("Roadmap:" + Environment.NewLine + "- Updated UI and UI cleanup" + Environment.NewLine + "- New, unique characters and movesets" + Environment.NewLine + "- Tutorial and further explanation of mechanics and functions");
         }
 
+        //Character Creation Methods
         private void createCharButton_Click(object sender, EventArgs e)
         {
             disableAllElementalUI();
             enableCharButtonElementalUI();
+        }
+        private void exportCharStringButton_Click(object sender, EventArgs e)
+        {
+            ImportExportString importExportString = new ImportExportString();
+            string n = CCT1.Text;
+            string d = CCT2.Text;
+            importExportString.generateAttributesStringPart();
         }
 
         //Elemental UI methods
@@ -224,6 +232,86 @@ namespace DCTBFightingSimulator
             CCL78.Hide();
             CCL79.Enabled = false;
             CCL79.Hide();
+            CCL80.Enabled = false;
+            CCL80.Hide();
+            CCL81.Enabled = false;
+            CCL81.Hide();
+            CCL82.Enabled = false;
+            CCL82.Hide();
+            CCL83.Enabled = false;
+            CCL83.Hide();
+            CCL84.Enabled = false;
+            CCL84.Hide();
+            CCL85.Enabled = false;
+            CCL85.Hide();
+            CCL86.Enabled = false;
+            CCL86.Hide();
+            CCL87.Enabled = false;
+            CCL87.Hide();
+            CCL88.Enabled = false;
+            CCL88.Hide();
+            CCL89.Enabled = false;
+            CCL89.Hide();
+            CCL90.Enabled = false;
+            CCL90.Hide();
+            CCL91.Enabled = false;
+            CCL91.Hide();
+            CCL92.Enabled = false;
+            CCL92.Hide();
+            CCL93.Enabled = false;
+            CCL93.Hide();
+            CCL94.Enabled = false;
+            CCL94.Hide();
+            CCL95.Enabled = false;
+            CCL95.Hide();
+            CCL96.Enabled = false;
+            CCL96.Hide();
+            CCL97.Enabled = false;
+            CCL97.Hide();
+            CCL98.Enabled = false;
+            CCL98.Hide();
+            CCL99.Enabled = false;
+            CCL99.Hide();
+            CCL100.Enabled = false;
+            CCL100.Hide();
+            CCL101.Enabled = false;
+            CCL101.Hide();
+            CCL102.Enabled = false;
+            CCL102.Hide();
+            CCL103.Enabled = false;
+            CCL103.Hide();
+            CCL104.Enabled = false;
+            CCL104.Hide();
+            CCL105.Enabled = false;
+            CCL105.Hide();
+            CCL106.Enabled = false;
+            CCL106.Hide();
+            CCL107.Enabled = false;
+            CCL107.Hide();
+            CCL108.Enabled = false;
+            CCL108.Hide();
+            CCL109.Enabled = false;
+            CCL109.Hide();
+            CCL110.Enabled = false;
+            CCL110.Hide();
+            CCL111.Enabled = false;
+            CCL111.Hide();
+            CCL112.Enabled = false;
+            CCL112.Hide();
+            CCL113.Enabled = false;
+            CCL113.Hide();
+            CCL114.Enabled = false;
+            CCL114.Hide();
+            CCL115.Enabled = false;
+            CCL115.Hide();
+            CCL116.Enabled = false;
+            CCL116.Hide();
+            CCL117.Enabled = false;
+            CCL117.Hide();
+            CCL118.Enabled = false;
+            CCL118.Hide();
+            CCL119.Enabled = false;
+            CCL119.Hide();
             CCT1.Enabled = false;
             CCT1.Hide();
             CCT2.Enabled = false;
@@ -240,6 +328,14 @@ namespace DCTBFightingSimulator
             CCT7.Hide();
             CCT8.Enabled = false;
             CCT8.Hide();
+            CCT9.Enabled = false;
+            CCT9.Hide();
+            CCT10.Enabled = false;
+            CCT10.Hide();
+            CCT11.Enabled = false;
+            CCT11.Hide();
+            CCT12.Enabled = false;
+            CCT12.Hide();
             CCN1.Enabled = false;
             CCN1.Hide();
             CCN2.Enabled = false;
@@ -290,6 +386,34 @@ namespace DCTBFightingSimulator
             CCN24.Hide();
             CCN25.Enabled = false;
             CCN25.Hide();
+            CCN26.Enabled = false;
+            CCN26.Hide();
+            CCN27.Enabled = false;
+            CCN27.Hide();
+            CCN28.Enabled = false;
+            CCN28.Hide();
+            CCN29.Enabled = false;
+            CCN29.Hide();
+            CCN30.Enabled = false;
+            CCN30.Hide();
+            CCN31.Enabled = false;
+            CCN31.Hide();
+            CCN32.Enabled = false;
+            CCN32.Hide();
+            CCN33.Enabled = false;
+            CCN33.Hide();
+            CCN34.Enabled = false;
+            CCN34.Hide();
+            CCN35.Enabled = false;
+            CCN35.Hide();
+            CCN36.Enabled = false;
+            CCN36.Hide();
+            CCN37.Enabled = false;
+            CCN37.Hide();
+            CCN38.Enabled = false;
+            CCN38.Hide();
+            CCN39.Enabled = false;
+            CCN39.Hide();
             CCc1.Enabled = false;
             CCc1.Hide();
             CCc2.Enabled = false;
@@ -370,6 +494,46 @@ namespace DCTBFightingSimulator
             CCc39.Hide();
             CCc40.Enabled = false;
             CCc40.Hide();
+            CCc41.Enabled = false;
+            CCc41.Hide();
+            CCc42.Enabled = false;
+            CCc42.Hide();
+            CCc43.Enabled = false;
+            CCc43.Hide();
+            CCc44.Enabled = false;
+            CCc44.Hide();
+            CCc45.Enabled = false;
+            CCc45.Hide();
+            CCc46.Enabled = false;
+            CCc46.Hide();
+            CCc47.Enabled = false;
+            CCc47.Hide();
+            CCc48.Enabled = false;
+            CCc48.Hide();
+            CCc49.Enabled = false;
+            CCc49.Hide();
+            CCc50.Enabled = false;
+            CCc50.Hide();
+            CCc51.Enabled = false;
+            CCc51.Hide();
+            CCc52.Enabled = false;
+            CCc52.Hide();
+            CCc53.Enabled = false;
+            CCc53.Hide();
+            CCc54.Enabled = false;
+            CCc54.Hide();
+            CCc55.Enabled = false;
+            CCc55.Hide();
+            CCc56.Enabled = false;
+            CCc56.Hide();
+            CCc57.Enabled = false;
+            CCc57.Hide();
+            CCc58.Enabled = false;
+            CCc58.Hide();
+            CCc59.Enabled = false;
+            CCc59.Hide();
+            CCc60.Enabled = false;
+            CCc60.Hide();
             CCP1.Enabled = false;
             CCP1.Hide();
             CCP2.Enabled = false;
@@ -378,6 +542,14 @@ namespace DCTBFightingSimulator
             CCP3.Hide();
             CCP4.Enabled = false;
             CCP4.Hide();
+            CCP5.Enabled = false;
+            CCP5.Hide();
+            CCP6.Enabled = false;
+            CCP6.Hide();
+            exportCharStringButton.Enabled = false;
+            exportCharStringButton.Hide();
+            exportStringTextBox.Enabled = false;
+            exportStringTextBox.Hide();
         }
         public void enableCharButtonElementalUI()
         {
@@ -388,6 +560,11 @@ namespace DCTBFightingSimulator
             characterCreationDesc.Show();
             horizCharCreationBar.Enabled = true;
             horizCharCreationBar.Show();
+            //Export UI
+            exportCharStringButton.Enabled = true;
+            exportCharStringButton.Show();
+            exportStringTextBox.Enabled = true;
+            exportStringTextBox.Show();
             //Gen Attributes
             CCL1.Enabled = true;
             CCL1.Show();
@@ -702,6 +879,168 @@ namespace DCTBFightingSimulator
             CCc40.Show();
             CCP4.Enabled = true;
             CCP4.Show();
+            //Move 4
+            CCL80.Enabled = true;
+            CCL80.Show();
+            CCL81.Enabled = true;
+            CCL81.Show();
+            CCL82.Enabled = true;
+            CCL82.Show();
+            CCL83.Enabled = true;
+            CCL83.Show();
+            CCL84.Enabled = true;
+            CCL84.Show();
+            CCL85.Enabled = true;
+            CCL85.Show();
+            CCL86.Enabled = true;
+            CCL86.Show();
+            CCL87.Enabled = true;
+            CCL87.Show();
+            CCL88.Enabled = true;
+            CCL88.Show();
+            CCL89.Enabled = true;
+            CCL89.Show();
+            CCL90.Enabled = true;
+            CCL90.Show();
+            CCL91.Enabled = true;
+            CCL91.Show();
+            CCL92.Enabled = true;
+            CCL92.Show();
+            CCL93.Enabled = true;
+            CCL93.Show();
+            CCL94.Enabled = true;
+            CCL94.Show();
+            CCL95.Enabled = true;
+            CCL95.Show();
+            CCL96.Enabled = true;
+            CCL96.Show();
+            CCL97.Enabled = true;
+            CCL97.Show();
+            CCL98.Enabled = true;
+            CCL98.Show();
+            CCL99.Enabled = true;
+            CCL99.Show();
+            CCT9.Enabled = true;
+            CCT9.Show();
+            CCT10.Enabled = true;
+            CCT10.Show();
+            CCN26.Enabled = true;
+            CCN26.Show();
+            CCN27.Enabled = true;
+            CCN27.Show();
+            CCN28.Enabled = true;
+            CCN28.Show();
+            CCN29.Enabled = true;
+            CCN29.Show();
+            CCN30.Enabled = true;
+            CCN30.Show();
+            CCN31.Enabled = true;
+            CCN31.Show();
+            CCN32.Enabled = true;
+            CCN32.Show();
+            CCc41.Enabled = true;
+            CCc41.Show();
+            CCc42.Enabled = true;
+            CCc42.Show();
+            CCc43.Enabled = true;
+            CCc43.Show();
+            CCc44.Enabled = true;
+            CCc44.Show();
+            CCc45.Enabled = true;
+            CCc45.Show();
+            CCc46.Enabled = true;
+            CCc46.Show();
+            CCc47.Enabled = true;
+            CCc47.Show();
+            CCc48.Enabled = true;
+            CCc48.Show();
+            CCc49.Enabled = true;
+            CCc49.Show();
+            CCc50.Enabled = true;
+            CCc50.Show();
+            CCP5.Enabled = true;
+            CCP5.Show();
+            //Move 5
+            CCL100.Enabled = true;
+            CCL100.Show();
+            CCL101.Enabled = true;
+            CCL101.Show();
+            CCL102.Enabled = true;
+            CCL102.Show();
+            CCL103.Enabled = true;
+            CCL103.Show();
+            CCL104.Enabled = true;
+            CCL104.Show();
+            CCL105.Enabled = true;
+            CCL105.Show();
+            CCL106.Enabled = true;
+            CCL106.Show();
+            CCL107.Enabled = true;
+            CCL107.Show();
+            CCL108.Enabled = true;
+            CCL108.Show();
+            CCL109.Enabled = true;
+            CCL109.Show();
+            CCL110.Enabled = true;
+            CCL110.Show();
+            CCL111.Enabled = true;
+            CCL111.Show();
+            CCL112.Enabled = true;
+            CCL112.Show();
+            CCL113.Enabled = true;
+            CCL113.Show();
+            CCL114.Enabled = true;
+            CCL114.Show();
+            CCL115.Enabled = true;
+            CCL115.Show();
+            CCL116.Enabled = true;
+            CCL116.Show();
+            CCL117.Enabled = true;
+            CCL117.Show();
+            CCL118.Enabled = true;
+            CCL118.Show();
+            CCL119.Enabled = true;
+            CCL119.Show();
+            CCT11.Enabled = true;
+            CCT11.Show();
+            CCT12.Enabled = true;
+            CCT12.Show();
+            CCN33.Enabled = true;
+            CCN33.Show();
+            CCN34.Enabled = true;
+            CCN34.Show();
+            CCN35.Enabled = true;
+            CCN35.Show();
+            CCN36.Enabled = true;
+            CCN36.Show();
+            CCN37.Enabled = true;
+            CCN37.Show();
+            CCN38.Enabled = true;
+            CCN38.Show();
+            CCN39.Enabled = true;
+            CCN39.Show();
+            CCc51.Enabled = true;
+            CCc51.Show();
+            CCc52.Enabled = true;
+            CCc52.Show();
+            CCc53.Enabled = true;
+            CCc53.Show();
+            CCc54.Enabled = true;
+            CCc54.Show();
+            CCc55.Enabled = true;
+            CCc55.Show();
+            CCc56.Enabled = true;
+            CCc56.Show();
+            CCc57.Enabled = true;
+            CCc57.Show();
+            CCc58.Enabled = true;
+            CCc58.Show();
+            CCc59.Enabled = true;
+            CCc59.Show();
+            CCc60.Enabled = true;
+            CCc60.Show();
+            CCP6.Enabled = true;
+            CCP6.Show();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -713,5 +1052,12 @@ namespace DCTBFightingSimulator
         {
 
         }
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }

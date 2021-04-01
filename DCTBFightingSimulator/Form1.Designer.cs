@@ -203,6 +203,88 @@ namespace DCTBFightingSimulator
             this.CCT7 = new System.Windows.Forms.TextBox();
             this.CCL61 = new System.Windows.Forms.Label();
             this.CCL60 = new System.Windows.Forms.Label();
+            this.CCP5 = new System.Windows.Forms.PictureBox();
+            this.CCL99 = new System.Windows.Forms.Label();
+            this.CCL98 = new System.Windows.Forms.Label();
+            this.CCL97 = new System.Windows.Forms.Label();
+            this.CCL96 = new System.Windows.Forms.Label();
+            this.CCL95 = new System.Windows.Forms.Label();
+            this.CCL94 = new System.Windows.Forms.Label();
+            this.CCL93 = new System.Windows.Forms.Label();
+            this.CCL92 = new System.Windows.Forms.Label();
+            this.CCL91 = new System.Windows.Forms.Label();
+            this.CCc50 = new System.Windows.Forms.ComboBox();
+            this.CCc49 = new System.Windows.Forms.ComboBox();
+            this.CCc48 = new System.Windows.Forms.ComboBox();
+            this.CCc47 = new System.Windows.Forms.ComboBox();
+            this.CCc46 = new System.Windows.Forms.ComboBox();
+            this.CCc45 = new System.Windows.Forms.ComboBox();
+            this.CCc44 = new System.Windows.Forms.ComboBox();
+            this.CCc43 = new System.Windows.Forms.ComboBox();
+            this.CCc42 = new System.Windows.Forms.ComboBox();
+            this.CCL90 = new System.Windows.Forms.Label();
+            this.CCL89 = new System.Windows.Forms.Label();
+            this.CCL88 = new System.Windows.Forms.Label();
+            this.CCL87 = new System.Windows.Forms.Label();
+            this.CCN32 = new System.Windows.Forms.NumericUpDown();
+            this.CCN31 = new System.Windows.Forms.NumericUpDown();
+            this.CCN30 = new System.Windows.Forms.NumericUpDown();
+            this.CCN29 = new System.Windows.Forms.NumericUpDown();
+            this.CCN28 = new System.Windows.Forms.NumericUpDown();
+            this.CCL86 = new System.Windows.Forms.Label();
+            this.CCN27 = new System.Windows.Forms.NumericUpDown();
+            this.CCL85 = new System.Windows.Forms.Label();
+            this.CCL84 = new System.Windows.Forms.Label();
+            this.CCN26 = new System.Windows.Forms.NumericUpDown();
+            this.CCc41 = new System.Windows.Forms.ComboBox();
+            this.CCL83 = new System.Windows.Forms.Label();
+            this.CCT10 = new System.Windows.Forms.TextBox();
+            this.CCL82 = new System.Windows.Forms.Label();
+            this.CCT9 = new System.Windows.Forms.TextBox();
+            this.CCL81 = new System.Windows.Forms.Label();
+            this.CCL80 = new System.Windows.Forms.Label();
+            this.CCP6 = new System.Windows.Forms.PictureBox();
+            this.CCL119 = new System.Windows.Forms.Label();
+            this.CCL118 = new System.Windows.Forms.Label();
+            this.CCL117 = new System.Windows.Forms.Label();
+            this.CCL116 = new System.Windows.Forms.Label();
+            this.CCL115 = new System.Windows.Forms.Label();
+            this.CCL114 = new System.Windows.Forms.Label();
+            this.CCL113 = new System.Windows.Forms.Label();
+            this.CCL112 = new System.Windows.Forms.Label();
+            this.CCL111 = new System.Windows.Forms.Label();
+            this.CCc60 = new System.Windows.Forms.ComboBox();
+            this.CCc59 = new System.Windows.Forms.ComboBox();
+            this.CCc58 = new System.Windows.Forms.ComboBox();
+            this.CCc57 = new System.Windows.Forms.ComboBox();
+            this.CCc56 = new System.Windows.Forms.ComboBox();
+            this.CCc55 = new System.Windows.Forms.ComboBox();
+            this.CCc54 = new System.Windows.Forms.ComboBox();
+            this.CCc53 = new System.Windows.Forms.ComboBox();
+            this.CCc52 = new System.Windows.Forms.ComboBox();
+            this.CCL110 = new System.Windows.Forms.Label();
+            this.CCL109 = new System.Windows.Forms.Label();
+            this.CCL108 = new System.Windows.Forms.Label();
+            this.CCL107 = new System.Windows.Forms.Label();
+            this.CCN39 = new System.Windows.Forms.NumericUpDown();
+            this.CCN38 = new System.Windows.Forms.NumericUpDown();
+            this.CCN37 = new System.Windows.Forms.NumericUpDown();
+            this.CCN36 = new System.Windows.Forms.NumericUpDown();
+            this.CCN35 = new System.Windows.Forms.NumericUpDown();
+            this.CCL106 = new System.Windows.Forms.Label();
+            this.CCN34 = new System.Windows.Forms.NumericUpDown();
+            this.CCL105 = new System.Windows.Forms.Label();
+            this.CCL104 = new System.Windows.Forms.Label();
+            this.CCN33 = new System.Windows.Forms.NumericUpDown();
+            this.CCc51 = new System.Windows.Forms.ComboBox();
+            this.CCL103 = new System.Windows.Forms.Label();
+            this.CCT12 = new System.Windows.Forms.TextBox();
+            this.CCL102 = new System.Windows.Forms.Label();
+            this.CCT11 = new System.Windows.Forms.TextBox();
+            this.CCL101 = new System.Windows.Forms.Label();
+            this.CCL100 = new System.Windows.Forms.Label();
+            this.exportCharStringButton = new System.Windows.Forms.Button();
+            this.exportStringTextBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.SeparationBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -236,6 +318,22 @@ namespace DCTBFightingSimulator
             ((System.ComponentModel.ISupportInitialize)(this.CCN21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CCN20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CCN19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CCP5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CCN32)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CCN31)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CCN30)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CCN29)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CCN28)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CCN27)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CCN26)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CCP6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CCN39)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CCN38)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CCN37)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CCN36)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CCN35)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CCN34)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CCN33)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -407,7 +505,7 @@ namespace DCTBFightingSimulator
             this.horizCharCreationBar.Image = ((System.Drawing.Image)(resources.GetObject("horizCharCreationBar.Image")));
             this.horizCharCreationBar.Location = new System.Drawing.Point(159, 63);
             this.horizCharCreationBar.Name = "horizCharCreationBar";
-            this.horizCharCreationBar.Size = new System.Drawing.Size(1047, 10);
+            this.horizCharCreationBar.Size = new System.Drawing.Size(1026, 10);
             this.horizCharCreationBar.TabIndex = 17;
             this.horizCharCreationBar.TabStop = false;
             // 
@@ -2193,12 +2291,1034 @@ namespace DCTBFightingSimulator
             this.CCL60.TabIndex = 134;
             this.CCL60.Text = "MOVE 3";
             // 
+            // CCP5
+            // 
+            this.CCP5.Image = ((System.Drawing.Image)(resources.GetObject("CCP5.Image")));
+            this.CCP5.InitialImage = null;
+            this.CCP5.Location = new System.Drawing.Point(1143, 80);
+            this.CCP5.Name = "CCP5";
+            this.CCP5.Size = new System.Drawing.Size(10, 564);
+            this.CCP5.TabIndex = 213;
+            this.CCP5.TabStop = false;
+            // 
+            // CCL99
+            // 
+            this.CCL99.AutoSize = true;
+            this.CCL99.Location = new System.Drawing.Point(960, 580);
+            this.CCL99.Name = "CCL99";
+            this.CCL99.Size = new System.Drawing.Size(32, 13);
+            this.CCL99.TabIndex = 212;
+            this.CCL99.Text = "Daze";
+            // 
+            // CCL98
+            // 
+            this.CCL98.AutoSize = true;
+            this.CCL98.Location = new System.Drawing.Point(960, 553);
+            this.CCL98.Name = "CCL98";
+            this.CCL98.Size = new System.Drawing.Size(48, 13);
+            this.CCL98.TabIndex = 211;
+            this.CCL98.Text = "Weaken";
+            // 
+            // CCL97
+            // 
+            this.CCL97.AutoSize = true;
+            this.CCL97.Location = new System.Drawing.Point(960, 526);
+            this.CCL97.Name = "CCL97";
+            this.CCL97.Size = new System.Drawing.Size(43, 13);
+            this.CCL97.TabIndex = 210;
+            this.CCL97.Text = "Stupefy";
+            // 
+            // CCL96
+            // 
+            this.CCL96.AutoSize = true;
+            this.CCL96.Location = new System.Drawing.Point(960, 499);
+            this.CCL96.Name = "CCL96";
+            this.CCL96.Size = new System.Drawing.Size(34, 13);
+            this.CCL96.TabIndex = 209;
+            this.CCL96.Text = "Bleed";
+            // 
+            // CCL95
+            // 
+            this.CCL95.AutoSize = true;
+            this.CCL95.Location = new System.Drawing.Point(960, 472);
+            this.CCL95.Name = "CCL95";
+            this.CCL95.Size = new System.Drawing.Size(39, 13);
+            this.CCL95.TabIndex = 208;
+            this.CCL95.Text = "Freeze";
+            // 
+            // CCL94
+            // 
+            this.CCL94.AutoSize = true;
+            this.CCL94.Location = new System.Drawing.Point(960, 445);
+            this.CCL94.Name = "CCL94";
+            this.CCL94.Size = new System.Drawing.Size(39, 13);
+            this.CCL94.TabIndex = 207;
+            this.CCL94.Text = "Cripple";
+            // 
+            // CCL93
+            // 
+            this.CCL93.AutoSize = true;
+            this.CCL93.Location = new System.Drawing.Point(960, 418);
+            this.CCL93.Name = "CCL93";
+            this.CCL93.Size = new System.Drawing.Size(29, 13);
+            this.CCL93.TabIndex = 206;
+            this.CCL93.Text = "Burn";
+            // 
+            // CCL92
+            // 
+            this.CCL92.AutoSize = true;
+            this.CCL92.Location = new System.Drawing.Point(960, 391);
+            this.CCL92.Name = "CCL92";
+            this.CCL92.Size = new System.Drawing.Size(39, 13);
+            this.CCL92.TabIndex = 205;
+            this.CCL92.Text = "Poison";
+            // 
+            // CCL91
+            // 
+            this.CCL91.AutoSize = true;
+            this.CCL91.Location = new System.Drawing.Point(960, 364);
+            this.CCL91.Name = "CCL91";
+            this.CCL91.Size = new System.Drawing.Size(29, 13);
+            this.CCL91.TabIndex = 204;
+            this.CCL91.Text = "Stun";
+            // 
+            // CCc50
+            // 
+            this.CCc50.AutoCompleteCustomSource.AddRange(new string[] {
+            "NO",
+            "YES"});
+            this.CCc50.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CCc50.FormattingEnabled = true;
+            this.CCc50.Items.AddRange(new object[] {
+            "NO",
+            "YES"});
+            this.CCc50.Location = new System.Drawing.Point(1028, 577);
+            this.CCc50.Name = "CCc50";
+            this.CCc50.Size = new System.Drawing.Size(100, 21);
+            this.CCc50.TabIndex = 203;
+            // 
+            // CCc49
+            // 
+            this.CCc49.AutoCompleteCustomSource.AddRange(new string[] {
+            "NO",
+            "YES"});
+            this.CCc49.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CCc49.FormattingEnabled = true;
+            this.CCc49.Items.AddRange(new object[] {
+            "NO",
+            "YES"});
+            this.CCc49.Location = new System.Drawing.Point(1028, 550);
+            this.CCc49.Name = "CCc49";
+            this.CCc49.Size = new System.Drawing.Size(100, 21);
+            this.CCc49.TabIndex = 202;
+            // 
+            // CCc48
+            // 
+            this.CCc48.AutoCompleteCustomSource.AddRange(new string[] {
+            "NO",
+            "YES"});
+            this.CCc48.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CCc48.FormattingEnabled = true;
+            this.CCc48.Items.AddRange(new object[] {
+            "NO",
+            "YES"});
+            this.CCc48.Location = new System.Drawing.Point(1028, 523);
+            this.CCc48.Name = "CCc48";
+            this.CCc48.Size = new System.Drawing.Size(100, 21);
+            this.CCc48.TabIndex = 201;
+            // 
+            // CCc47
+            // 
+            this.CCc47.AutoCompleteCustomSource.AddRange(new string[] {
+            "NO",
+            "YES"});
+            this.CCc47.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CCc47.FormattingEnabled = true;
+            this.CCc47.Items.AddRange(new object[] {
+            "NO",
+            "YES"});
+            this.CCc47.Location = new System.Drawing.Point(1028, 496);
+            this.CCc47.Name = "CCc47";
+            this.CCc47.Size = new System.Drawing.Size(100, 21);
+            this.CCc47.TabIndex = 200;
+            // 
+            // CCc46
+            // 
+            this.CCc46.AutoCompleteCustomSource.AddRange(new string[] {
+            "NO",
+            "YES"});
+            this.CCc46.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CCc46.FormattingEnabled = true;
+            this.CCc46.Items.AddRange(new object[] {
+            "NO",
+            "YES"});
+            this.CCc46.Location = new System.Drawing.Point(1028, 469);
+            this.CCc46.Name = "CCc46";
+            this.CCc46.Size = new System.Drawing.Size(100, 21);
+            this.CCc46.TabIndex = 199;
+            // 
+            // CCc45
+            // 
+            this.CCc45.AutoCompleteCustomSource.AddRange(new string[] {
+            "NO",
+            "YES"});
+            this.CCc45.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CCc45.FormattingEnabled = true;
+            this.CCc45.Items.AddRange(new object[] {
+            "NO",
+            "YES"});
+            this.CCc45.Location = new System.Drawing.Point(1028, 442);
+            this.CCc45.Name = "CCc45";
+            this.CCc45.Size = new System.Drawing.Size(100, 21);
+            this.CCc45.TabIndex = 198;
+            // 
+            // CCc44
+            // 
+            this.CCc44.AutoCompleteCustomSource.AddRange(new string[] {
+            "NO",
+            "YES"});
+            this.CCc44.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CCc44.FormattingEnabled = true;
+            this.CCc44.Items.AddRange(new object[] {
+            "NO",
+            "YES"});
+            this.CCc44.Location = new System.Drawing.Point(1028, 415);
+            this.CCc44.Name = "CCc44";
+            this.CCc44.Size = new System.Drawing.Size(100, 21);
+            this.CCc44.TabIndex = 197;
+            // 
+            // CCc43
+            // 
+            this.CCc43.AutoCompleteCustomSource.AddRange(new string[] {
+            "NO",
+            "YES"});
+            this.CCc43.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CCc43.FormattingEnabled = true;
+            this.CCc43.Items.AddRange(new object[] {
+            "NO",
+            "YES"});
+            this.CCc43.Location = new System.Drawing.Point(1028, 388);
+            this.CCc43.Name = "CCc43";
+            this.CCc43.Size = new System.Drawing.Size(100, 21);
+            this.CCc43.TabIndex = 196;
+            // 
+            // CCc42
+            // 
+            this.CCc42.AutoCompleteCustomSource.AddRange(new string[] {
+            "NO",
+            "YES"});
+            this.CCc42.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CCc42.FormattingEnabled = true;
+            this.CCc42.Items.AddRange(new object[] {
+            "NO",
+            "YES"});
+            this.CCc42.Location = new System.Drawing.Point(1028, 361);
+            this.CCc42.Name = "CCc42";
+            this.CCc42.Size = new System.Drawing.Size(100, 21);
+            this.CCc42.TabIndex = 195;
+            // 
+            // CCL90
+            // 
+            this.CCL90.AutoSize = true;
+            this.CCL90.Location = new System.Drawing.Point(960, 337);
+            this.CCL90.Name = "CCL90";
+            this.CCL90.Size = new System.Drawing.Size(57, 13);
+            this.CCL90.TabIndex = 194;
+            this.CCL90.Text = "DGE Mod.";
+            // 
+            // CCL89
+            // 
+            this.CCL89.AutoSize = true;
+            this.CCL89.Location = new System.Drawing.Point(960, 311);
+            this.CCL89.Name = "CCL89";
+            this.CCL89.Size = new System.Drawing.Size(55, 13);
+            this.CCL89.TabIndex = 193;
+            this.CCL89.Text = "ACC Mod.";
+            // 
+            // CCL88
+            // 
+            this.CCL88.AutoSize = true;
+            this.CCL88.Location = new System.Drawing.Point(960, 285);
+            this.CCL88.Name = "CCL88";
+            this.CCL88.Size = new System.Drawing.Size(55, 13);
+            this.CCL88.TabIndex = 192;
+            this.CCL88.Text = "DEF Mod.";
+            // 
+            // CCL87
+            // 
+            this.CCL87.AutoSize = true;
+            this.CCL87.Location = new System.Drawing.Point(960, 259);
+            this.CCL87.Name = "CCL87";
+            this.CCL87.Size = new System.Drawing.Size(55, 13);
+            this.CCL87.TabIndex = 191;
+            this.CCL87.Text = "ATK Mod.";
+            // 
+            // CCN32
+            // 
+            this.CCN32.Location = new System.Drawing.Point(1028, 335);
+            this.CCN32.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.CCN32.Minimum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            -2147483648});
+            this.CCN32.Name = "CCN32";
+            this.CCN32.Size = new System.Drawing.Size(100, 20);
+            this.CCN32.TabIndex = 190;
+            // 
+            // CCN31
+            // 
+            this.CCN31.Location = new System.Drawing.Point(1028, 309);
+            this.CCN31.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.CCN31.Minimum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            -2147483648});
+            this.CCN31.Name = "CCN31";
+            this.CCN31.Size = new System.Drawing.Size(100, 20);
+            this.CCN31.TabIndex = 189;
+            // 
+            // CCN30
+            // 
+            this.CCN30.Location = new System.Drawing.Point(1028, 283);
+            this.CCN30.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.CCN30.Minimum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            -2147483648});
+            this.CCN30.Name = "CCN30";
+            this.CCN30.Size = new System.Drawing.Size(100, 20);
+            this.CCN30.TabIndex = 188;
+            // 
+            // CCN29
+            // 
+            this.CCN29.Location = new System.Drawing.Point(1028, 257);
+            this.CCN29.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.CCN29.Minimum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            -2147483648});
+            this.CCN29.Name = "CCN29";
+            this.CCN29.Size = new System.Drawing.Size(100, 20);
+            this.CCN29.TabIndex = 187;
+            // 
+            // CCN28
+            // 
+            this.CCN28.Location = new System.Drawing.Point(1028, 231);
+            this.CCN28.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.CCN28.Name = "CCN28";
+            this.CCN28.Size = new System.Drawing.Size(100, 20);
+            this.CCN28.TabIndex = 186;
+            // 
+            // CCL86
+            // 
+            this.CCL86.AutoSize = true;
+            this.CCL86.Location = new System.Drawing.Point(960, 232);
+            this.CCL86.Name = "CCL86";
+            this.CCL86.Size = new System.Drawing.Size(43, 13);
+            this.CCL86.TabIndex = 185;
+            this.CCL86.Text = "Healing";
+            // 
+            // CCN27
+            // 
+            this.CCN27.Location = new System.Drawing.Point(1028, 205);
+            this.CCN27.Name = "CCN27";
+            this.CCN27.Size = new System.Drawing.Size(100, 20);
+            this.CCN27.TabIndex = 184;
+            // 
+            // CCL85
+            // 
+            this.CCL85.AutoSize = true;
+            this.CCL85.Location = new System.Drawing.Point(960, 207);
+            this.CCL85.Name = "CCL85";
+            this.CCL85.Size = new System.Drawing.Size(28, 13);
+            this.CCL85.TabIndex = 183;
+            this.CCL85.Text = "ACC";
+            // 
+            // CCL84
+            // 
+            this.CCL84.AutoSize = true;
+            this.CCL84.Location = new System.Drawing.Point(960, 181);
+            this.CCL84.Name = "CCL84";
+            this.CCL84.Size = new System.Drawing.Size(54, 13);
+            this.CCL84.TabIndex = 182;
+            this.CCL84.Text = "ATK Mult.";
+            // 
+            // CCN26
+            // 
+            this.CCN26.DecimalPlaces = 2;
+            this.CCN26.Location = new System.Drawing.Point(1028, 179);
+            this.CCN26.Name = "CCN26";
+            this.CCN26.Size = new System.Drawing.Size(100, 20);
+            this.CCN26.TabIndex = 181;
+            // 
+            // CCc41
+            // 
+            this.CCc41.BackColor = System.Drawing.SystemColors.Window;
+            this.CCc41.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CCc41.FormattingEnabled = true;
+            this.CCc41.Items.AddRange(new object[] {
+            "NONE",
+            "VOID",
+            "EARTHLY",
+            "AIR",
+            "GROUND",
+            "ELECTRIC",
+            "METAL",
+            "INTELLIGENT",
+            "FORCE",
+            "ICE",
+            "FIRE",
+            "NATURAL",
+            "PSYCHIC",
+            "MORTAL",
+            "GHOST"});
+            this.CCc41.Location = new System.Drawing.Point(1028, 152);
+            this.CCc41.Name = "CCc41";
+            this.CCc41.Size = new System.Drawing.Size(100, 21);
+            this.CCc41.TabIndex = 180;
+            // 
+            // CCL83
+            // 
+            this.CCL83.AutoSize = true;
+            this.CCL83.Location = new System.Drawing.Point(960, 153);
+            this.CCL83.Name = "CCL83";
+            this.CCL83.Size = new System.Drawing.Size(31, 13);
+            this.CCL83.TabIndex = 179;
+            this.CCL83.Text = "Type";
+            // 
+            // CCT10
+            // 
+            this.CCT10.Location = new System.Drawing.Point(1028, 126);
+            this.CCT10.Name = "CCT10";
+            this.CCT10.Size = new System.Drawing.Size(100, 20);
+            this.CCT10.TabIndex = 178;
+            this.CCT10.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
+            // 
+            // CCL82
+            // 
+            this.CCL82.AutoSize = true;
+            this.CCL82.Location = new System.Drawing.Point(960, 128);
+            this.CCL82.Name = "CCL82";
+            this.CCL82.Size = new System.Drawing.Size(60, 13);
+            this.CCL82.TabIndex = 177;
+            this.CCL82.Text = "Description";
+            // 
+            // CCT9
+            // 
+            this.CCT9.Location = new System.Drawing.Point(1028, 100);
+            this.CCT9.Name = "CCT9";
+            this.CCT9.Size = new System.Drawing.Size(100, 20);
+            this.CCT9.TabIndex = 176;
+            // 
+            // CCL81
+            // 
+            this.CCL81.AutoSize = true;
+            this.CCL81.Location = new System.Drawing.Point(960, 103);
+            this.CCL81.Name = "CCL81";
+            this.CCL81.Size = new System.Drawing.Size(35, 13);
+            this.CCL81.TabIndex = 175;
+            this.CCL81.Text = "Name";
+            // 
+            // CCL80
+            // 
+            this.CCL80.AutoSize = true;
+            this.CCL80.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.CCL80.Location = new System.Drawing.Point(960, 80);
+            this.CCL80.Name = "CCL80";
+            this.CCL80.Size = new System.Drawing.Size(60, 17);
+            this.CCL80.TabIndex = 174;
+            this.CCL80.Text = "MOVE 4";
+            // 
+            // CCP6
+            // 
+            this.CCP6.Image = ((System.Drawing.Image)(resources.GetObject("CCP6.Image")));
+            this.CCP6.InitialImage = null;
+            this.CCP6.Location = new System.Drawing.Point(1346, 80);
+            this.CCP6.Name = "CCP6";
+            this.CCP6.Size = new System.Drawing.Size(10, 564);
+            this.CCP6.TabIndex = 253;
+            this.CCP6.TabStop = false;
+            // 
+            // CCL119
+            // 
+            this.CCL119.AutoSize = true;
+            this.CCL119.Location = new System.Drawing.Point(1163, 580);
+            this.CCL119.Name = "CCL119";
+            this.CCL119.Size = new System.Drawing.Size(32, 13);
+            this.CCL119.TabIndex = 252;
+            this.CCL119.Text = "Daze";
+            // 
+            // CCL118
+            // 
+            this.CCL118.AutoSize = true;
+            this.CCL118.Location = new System.Drawing.Point(1163, 553);
+            this.CCL118.Name = "CCL118";
+            this.CCL118.Size = new System.Drawing.Size(48, 13);
+            this.CCL118.TabIndex = 251;
+            this.CCL118.Text = "Weaken";
+            // 
+            // CCL117
+            // 
+            this.CCL117.AutoSize = true;
+            this.CCL117.Location = new System.Drawing.Point(1163, 526);
+            this.CCL117.Name = "CCL117";
+            this.CCL117.Size = new System.Drawing.Size(43, 13);
+            this.CCL117.TabIndex = 250;
+            this.CCL117.Text = "Stupefy";
+            // 
+            // CCL116
+            // 
+            this.CCL116.AutoSize = true;
+            this.CCL116.Location = new System.Drawing.Point(1163, 499);
+            this.CCL116.Name = "CCL116";
+            this.CCL116.Size = new System.Drawing.Size(34, 13);
+            this.CCL116.TabIndex = 249;
+            this.CCL116.Text = "Bleed";
+            // 
+            // CCL115
+            // 
+            this.CCL115.AutoSize = true;
+            this.CCL115.Location = new System.Drawing.Point(1163, 472);
+            this.CCL115.Name = "CCL115";
+            this.CCL115.Size = new System.Drawing.Size(39, 13);
+            this.CCL115.TabIndex = 248;
+            this.CCL115.Text = "Freeze";
+            // 
+            // CCL114
+            // 
+            this.CCL114.AutoSize = true;
+            this.CCL114.Location = new System.Drawing.Point(1163, 445);
+            this.CCL114.Name = "CCL114";
+            this.CCL114.Size = new System.Drawing.Size(39, 13);
+            this.CCL114.TabIndex = 247;
+            this.CCL114.Text = "Cripple";
+            // 
+            // CCL113
+            // 
+            this.CCL113.AutoSize = true;
+            this.CCL113.Location = new System.Drawing.Point(1163, 418);
+            this.CCL113.Name = "CCL113";
+            this.CCL113.Size = new System.Drawing.Size(29, 13);
+            this.CCL113.TabIndex = 246;
+            this.CCL113.Text = "Burn";
+            // 
+            // CCL112
+            // 
+            this.CCL112.AutoSize = true;
+            this.CCL112.Location = new System.Drawing.Point(1163, 391);
+            this.CCL112.Name = "CCL112";
+            this.CCL112.Size = new System.Drawing.Size(39, 13);
+            this.CCL112.TabIndex = 245;
+            this.CCL112.Text = "Poison";
+            // 
+            // CCL111
+            // 
+            this.CCL111.AutoSize = true;
+            this.CCL111.Location = new System.Drawing.Point(1163, 364);
+            this.CCL111.Name = "CCL111";
+            this.CCL111.Size = new System.Drawing.Size(29, 13);
+            this.CCL111.TabIndex = 244;
+            this.CCL111.Text = "Stun";
+            // 
+            // CCc60
+            // 
+            this.CCc60.AutoCompleteCustomSource.AddRange(new string[] {
+            "NO",
+            "YES"});
+            this.CCc60.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CCc60.FormattingEnabled = true;
+            this.CCc60.Items.AddRange(new object[] {
+            "NO",
+            "YES"});
+            this.CCc60.Location = new System.Drawing.Point(1231, 577);
+            this.CCc60.Name = "CCc60";
+            this.CCc60.Size = new System.Drawing.Size(100, 21);
+            this.CCc60.TabIndex = 243;
+            // 
+            // CCc59
+            // 
+            this.CCc59.AutoCompleteCustomSource.AddRange(new string[] {
+            "NO",
+            "YES"});
+            this.CCc59.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CCc59.FormattingEnabled = true;
+            this.CCc59.Items.AddRange(new object[] {
+            "NO",
+            "YES"});
+            this.CCc59.Location = new System.Drawing.Point(1231, 550);
+            this.CCc59.Name = "CCc59";
+            this.CCc59.Size = new System.Drawing.Size(100, 21);
+            this.CCc59.TabIndex = 242;
+            // 
+            // CCc58
+            // 
+            this.CCc58.AutoCompleteCustomSource.AddRange(new string[] {
+            "NO",
+            "YES"});
+            this.CCc58.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CCc58.FormattingEnabled = true;
+            this.CCc58.Items.AddRange(new object[] {
+            "NO",
+            "YES"});
+            this.CCc58.Location = new System.Drawing.Point(1231, 523);
+            this.CCc58.Name = "CCc58";
+            this.CCc58.Size = new System.Drawing.Size(100, 21);
+            this.CCc58.TabIndex = 241;
+            // 
+            // CCc57
+            // 
+            this.CCc57.AutoCompleteCustomSource.AddRange(new string[] {
+            "NO",
+            "YES"});
+            this.CCc57.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CCc57.FormattingEnabled = true;
+            this.CCc57.Items.AddRange(new object[] {
+            "NO",
+            "YES"});
+            this.CCc57.Location = new System.Drawing.Point(1231, 496);
+            this.CCc57.Name = "CCc57";
+            this.CCc57.Size = new System.Drawing.Size(100, 21);
+            this.CCc57.TabIndex = 240;
+            // 
+            // CCc56
+            // 
+            this.CCc56.AutoCompleteCustomSource.AddRange(new string[] {
+            "NO",
+            "YES"});
+            this.CCc56.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CCc56.FormattingEnabled = true;
+            this.CCc56.Items.AddRange(new object[] {
+            "NO",
+            "YES"});
+            this.CCc56.Location = new System.Drawing.Point(1231, 469);
+            this.CCc56.Name = "CCc56";
+            this.CCc56.Size = new System.Drawing.Size(100, 21);
+            this.CCc56.TabIndex = 239;
+            // 
+            // CCc55
+            // 
+            this.CCc55.AutoCompleteCustomSource.AddRange(new string[] {
+            "NO",
+            "YES"});
+            this.CCc55.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CCc55.FormattingEnabled = true;
+            this.CCc55.Items.AddRange(new object[] {
+            "NO",
+            "YES"});
+            this.CCc55.Location = new System.Drawing.Point(1231, 442);
+            this.CCc55.Name = "CCc55";
+            this.CCc55.Size = new System.Drawing.Size(100, 21);
+            this.CCc55.TabIndex = 238;
+            // 
+            // CCc54
+            // 
+            this.CCc54.AutoCompleteCustomSource.AddRange(new string[] {
+            "NO",
+            "YES"});
+            this.CCc54.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CCc54.FormattingEnabled = true;
+            this.CCc54.Items.AddRange(new object[] {
+            "NO",
+            "YES"});
+            this.CCc54.Location = new System.Drawing.Point(1231, 415);
+            this.CCc54.Name = "CCc54";
+            this.CCc54.Size = new System.Drawing.Size(100, 21);
+            this.CCc54.TabIndex = 237;
+            // 
+            // CCc53
+            // 
+            this.CCc53.AutoCompleteCustomSource.AddRange(new string[] {
+            "NO",
+            "YES"});
+            this.CCc53.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CCc53.FormattingEnabled = true;
+            this.CCc53.Items.AddRange(new object[] {
+            "NO",
+            "YES"});
+            this.CCc53.Location = new System.Drawing.Point(1231, 388);
+            this.CCc53.Name = "CCc53";
+            this.CCc53.Size = new System.Drawing.Size(100, 21);
+            this.CCc53.TabIndex = 236;
+            // 
+            // CCc52
+            // 
+            this.CCc52.AutoCompleteCustomSource.AddRange(new string[] {
+            "NO",
+            "YES"});
+            this.CCc52.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CCc52.FormattingEnabled = true;
+            this.CCc52.Items.AddRange(new object[] {
+            "NO",
+            "YES"});
+            this.CCc52.Location = new System.Drawing.Point(1231, 361);
+            this.CCc52.Name = "CCc52";
+            this.CCc52.Size = new System.Drawing.Size(100, 21);
+            this.CCc52.TabIndex = 235;
+            // 
+            // CCL110
+            // 
+            this.CCL110.AutoSize = true;
+            this.CCL110.Location = new System.Drawing.Point(1163, 337);
+            this.CCL110.Name = "CCL110";
+            this.CCL110.Size = new System.Drawing.Size(57, 13);
+            this.CCL110.TabIndex = 234;
+            this.CCL110.Text = "DGE Mod.";
+            // 
+            // CCL109
+            // 
+            this.CCL109.AutoSize = true;
+            this.CCL109.Location = new System.Drawing.Point(1163, 311);
+            this.CCL109.Name = "CCL109";
+            this.CCL109.Size = new System.Drawing.Size(55, 13);
+            this.CCL109.TabIndex = 233;
+            this.CCL109.Text = "ACC Mod.";
+            // 
+            // CCL108
+            // 
+            this.CCL108.AutoSize = true;
+            this.CCL108.Location = new System.Drawing.Point(1163, 285);
+            this.CCL108.Name = "CCL108";
+            this.CCL108.Size = new System.Drawing.Size(55, 13);
+            this.CCL108.TabIndex = 232;
+            this.CCL108.Text = "DEF Mod.";
+            // 
+            // CCL107
+            // 
+            this.CCL107.AutoSize = true;
+            this.CCL107.Location = new System.Drawing.Point(1163, 259);
+            this.CCL107.Name = "CCL107";
+            this.CCL107.Size = new System.Drawing.Size(55, 13);
+            this.CCL107.TabIndex = 231;
+            this.CCL107.Text = "ATK Mod.";
+            // 
+            // CCN39
+            // 
+            this.CCN39.Location = new System.Drawing.Point(1231, 335);
+            this.CCN39.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.CCN39.Minimum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            -2147483648});
+            this.CCN39.Name = "CCN39";
+            this.CCN39.Size = new System.Drawing.Size(100, 20);
+            this.CCN39.TabIndex = 230;
+            // 
+            // CCN38
+            // 
+            this.CCN38.Location = new System.Drawing.Point(1231, 309);
+            this.CCN38.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.CCN38.Minimum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            -2147483648});
+            this.CCN38.Name = "CCN38";
+            this.CCN38.Size = new System.Drawing.Size(100, 20);
+            this.CCN38.TabIndex = 229;
+            // 
+            // CCN37
+            // 
+            this.CCN37.Location = new System.Drawing.Point(1231, 283);
+            this.CCN37.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.CCN37.Minimum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            -2147483648});
+            this.CCN37.Name = "CCN37";
+            this.CCN37.Size = new System.Drawing.Size(100, 20);
+            this.CCN37.TabIndex = 228;
+            // 
+            // CCN36
+            // 
+            this.CCN36.Location = new System.Drawing.Point(1231, 257);
+            this.CCN36.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.CCN36.Minimum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            -2147483648});
+            this.CCN36.Name = "CCN36";
+            this.CCN36.Size = new System.Drawing.Size(100, 20);
+            this.CCN36.TabIndex = 227;
+            // 
+            // CCN35
+            // 
+            this.CCN35.Location = new System.Drawing.Point(1231, 231);
+            this.CCN35.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.CCN35.Name = "CCN35";
+            this.CCN35.Size = new System.Drawing.Size(100, 20);
+            this.CCN35.TabIndex = 226;
+            // 
+            // CCL106
+            // 
+            this.CCL106.AutoSize = true;
+            this.CCL106.Location = new System.Drawing.Point(1163, 232);
+            this.CCL106.Name = "CCL106";
+            this.CCL106.Size = new System.Drawing.Size(43, 13);
+            this.CCL106.TabIndex = 225;
+            this.CCL106.Text = "Healing";
+            // 
+            // CCN34
+            // 
+            this.CCN34.Location = new System.Drawing.Point(1231, 205);
+            this.CCN34.Name = "CCN34";
+            this.CCN34.Size = new System.Drawing.Size(100, 20);
+            this.CCN34.TabIndex = 224;
+            // 
+            // CCL105
+            // 
+            this.CCL105.AutoSize = true;
+            this.CCL105.Location = new System.Drawing.Point(1163, 207);
+            this.CCL105.Name = "CCL105";
+            this.CCL105.Size = new System.Drawing.Size(28, 13);
+            this.CCL105.TabIndex = 223;
+            this.CCL105.Text = "ACC";
+            // 
+            // CCL104
+            // 
+            this.CCL104.AutoSize = true;
+            this.CCL104.Location = new System.Drawing.Point(1163, 181);
+            this.CCL104.Name = "CCL104";
+            this.CCL104.Size = new System.Drawing.Size(54, 13);
+            this.CCL104.TabIndex = 222;
+            this.CCL104.Text = "ATK Mult.";
+            // 
+            // CCN33
+            // 
+            this.CCN33.DecimalPlaces = 2;
+            this.CCN33.Location = new System.Drawing.Point(1231, 179);
+            this.CCN33.Name = "CCN33";
+            this.CCN33.Size = new System.Drawing.Size(100, 20);
+            this.CCN33.TabIndex = 221;
+            // 
+            // CCc51
+            // 
+            this.CCc51.BackColor = System.Drawing.SystemColors.Window;
+            this.CCc51.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CCc51.FormattingEnabled = true;
+            this.CCc51.Items.AddRange(new object[] {
+            "NONE",
+            "VOID",
+            "EARTHLY",
+            "AIR",
+            "GROUND",
+            "ELECTRIC",
+            "METAL",
+            "INTELLIGENT",
+            "FORCE",
+            "ICE",
+            "FIRE",
+            "NATURAL",
+            "PSYCHIC",
+            "MORTAL",
+            "GHOST"});
+            this.CCc51.Location = new System.Drawing.Point(1231, 152);
+            this.CCc51.Name = "CCc51";
+            this.CCc51.Size = new System.Drawing.Size(100, 21);
+            this.CCc51.TabIndex = 220;
+            // 
+            // CCL103
+            // 
+            this.CCL103.AutoSize = true;
+            this.CCL103.Location = new System.Drawing.Point(1163, 153);
+            this.CCL103.Name = "CCL103";
+            this.CCL103.Size = new System.Drawing.Size(31, 13);
+            this.CCL103.TabIndex = 219;
+            this.CCL103.Text = "Type";
+            // 
+            // CCT12
+            // 
+            this.CCT12.Location = new System.Drawing.Point(1231, 126);
+            this.CCT12.Name = "CCT12";
+            this.CCT12.Size = new System.Drawing.Size(100, 20);
+            this.CCT12.TabIndex = 218;
+            // 
+            // CCL102
+            // 
+            this.CCL102.AutoSize = true;
+            this.CCL102.Location = new System.Drawing.Point(1163, 128);
+            this.CCL102.Name = "CCL102";
+            this.CCL102.Size = new System.Drawing.Size(60, 13);
+            this.CCL102.TabIndex = 217;
+            this.CCL102.Text = "Description";
+            // 
+            // CCT11
+            // 
+            this.CCT11.Location = new System.Drawing.Point(1231, 100);
+            this.CCT11.Name = "CCT11";
+            this.CCT11.Size = new System.Drawing.Size(100, 20);
+            this.CCT11.TabIndex = 216;
+            // 
+            // CCL101
+            // 
+            this.CCL101.AutoSize = true;
+            this.CCL101.Location = new System.Drawing.Point(1163, 103);
+            this.CCL101.Name = "CCL101";
+            this.CCL101.Size = new System.Drawing.Size(35, 13);
+            this.CCL101.TabIndex = 215;
+            this.CCL101.Text = "Name";
+            // 
+            // CCL100
+            // 
+            this.CCL100.AutoSize = true;
+            this.CCL100.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.CCL100.Location = new System.Drawing.Point(1163, 80);
+            this.CCL100.Name = "CCL100";
+            this.CCL100.Size = new System.Drawing.Size(60, 17);
+            this.CCL100.TabIndex = 214;
+            this.CCL100.Text = "MOVE 5";
+            // 
+            // exportCharStringButton
+            // 
+            this.exportCharStringButton.Location = new System.Drawing.Point(159, 591);
+            this.exportCharStringButton.Name = "exportCharStringButton";
+            this.exportCharStringButton.Size = new System.Drawing.Size(76, 52);
+            this.exportCharStringButton.TabIndex = 254;
+            this.exportCharStringButton.Text = "EXPORT";
+            this.exportCharStringButton.UseVisualStyleBackColor = true;
+            this.exportCharStringButton.Click += new System.EventHandler(this.exportCharStringButton_Click);
+            // 
+            // exportStringTextBox
+            // 
+            this.exportStringTextBox.Location = new System.Drawing.Point(242, 607);
+            this.exportStringTextBox.Name = "exportStringTextBox";
+            this.exportStringTextBox.Size = new System.Drawing.Size(100, 20);
+            this.exportStringTextBox.TabIndex = 255;
+            // 
             // DCTBFightingSimulator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1451, 845);
+            this.Controls.Add(this.exportStringTextBox);
+            this.Controls.Add(this.exportCharStringButton);
+            this.Controls.Add(this.CCP6);
+            this.Controls.Add(this.CCL119);
+            this.Controls.Add(this.CCL118);
+            this.Controls.Add(this.CCL117);
+            this.Controls.Add(this.CCL116);
+            this.Controls.Add(this.CCL115);
+            this.Controls.Add(this.CCL114);
+            this.Controls.Add(this.CCL113);
+            this.Controls.Add(this.CCL112);
+            this.Controls.Add(this.CCL111);
+            this.Controls.Add(this.CCc60);
+            this.Controls.Add(this.CCc59);
+            this.Controls.Add(this.CCc58);
+            this.Controls.Add(this.CCc57);
+            this.Controls.Add(this.CCc56);
+            this.Controls.Add(this.CCc55);
+            this.Controls.Add(this.CCc54);
+            this.Controls.Add(this.CCc53);
+            this.Controls.Add(this.CCc52);
+            this.Controls.Add(this.CCL110);
+            this.Controls.Add(this.CCL109);
+            this.Controls.Add(this.CCL108);
+            this.Controls.Add(this.CCL107);
+            this.Controls.Add(this.CCN39);
+            this.Controls.Add(this.CCN38);
+            this.Controls.Add(this.CCN37);
+            this.Controls.Add(this.CCN36);
+            this.Controls.Add(this.CCN35);
+            this.Controls.Add(this.CCL106);
+            this.Controls.Add(this.CCN34);
+            this.Controls.Add(this.CCL105);
+            this.Controls.Add(this.CCL104);
+            this.Controls.Add(this.CCN33);
+            this.Controls.Add(this.CCc51);
+            this.Controls.Add(this.CCL103);
+            this.Controls.Add(this.CCT12);
+            this.Controls.Add(this.CCL102);
+            this.Controls.Add(this.CCT11);
+            this.Controls.Add(this.CCL101);
+            this.Controls.Add(this.CCL100);
+            this.Controls.Add(this.CCP5);
+            this.Controls.Add(this.CCL99);
+            this.Controls.Add(this.CCL98);
+            this.Controls.Add(this.CCL97);
+            this.Controls.Add(this.CCL96);
+            this.Controls.Add(this.CCL95);
+            this.Controls.Add(this.CCL94);
+            this.Controls.Add(this.CCL93);
+            this.Controls.Add(this.CCL92);
+            this.Controls.Add(this.CCL91);
+            this.Controls.Add(this.CCc50);
+            this.Controls.Add(this.CCc49);
+            this.Controls.Add(this.CCc48);
+            this.Controls.Add(this.CCc47);
+            this.Controls.Add(this.CCc46);
+            this.Controls.Add(this.CCc45);
+            this.Controls.Add(this.CCc44);
+            this.Controls.Add(this.CCc43);
+            this.Controls.Add(this.CCc42);
+            this.Controls.Add(this.CCL90);
+            this.Controls.Add(this.CCL89);
+            this.Controls.Add(this.CCL88);
+            this.Controls.Add(this.CCL87);
+            this.Controls.Add(this.CCN32);
+            this.Controls.Add(this.CCN31);
+            this.Controls.Add(this.CCN30);
+            this.Controls.Add(this.CCN29);
+            this.Controls.Add(this.CCN28);
+            this.Controls.Add(this.CCL86);
+            this.Controls.Add(this.CCN27);
+            this.Controls.Add(this.CCL85);
+            this.Controls.Add(this.CCL84);
+            this.Controls.Add(this.CCN26);
+            this.Controls.Add(this.CCc41);
+            this.Controls.Add(this.CCL83);
+            this.Controls.Add(this.CCT10);
+            this.Controls.Add(this.CCL82);
+            this.Controls.Add(this.CCT9);
+            this.Controls.Add(this.CCL81);
+            this.Controls.Add(this.CCL80);
             this.Controls.Add(this.CCP4);
             this.Controls.Add(this.CCL79);
             this.Controls.Add(this.CCL78);
@@ -2407,6 +3527,22 @@ namespace DCTBFightingSimulator
             ((System.ComponentModel.ISupportInitialize)(this.CCN21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CCN20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CCN19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CCP5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CCN32)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CCN31)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CCN30)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CCN29)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CCN28)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CCN27)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CCN26)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CCP6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CCN39)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CCN38)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CCN37)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CCN36)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CCN35)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CCN34)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CCN33)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2587,6 +3723,88 @@ namespace DCTBFightingSimulator
         private System.Windows.Forms.TextBox CCT7;
         private System.Windows.Forms.Label CCL61;
         private System.Windows.Forms.Label CCL60;
+        private System.Windows.Forms.PictureBox CCP5;
+        private System.Windows.Forms.Label CCL99;
+        private System.Windows.Forms.Label CCL98;
+        private System.Windows.Forms.Label CCL97;
+        private System.Windows.Forms.Label CCL96;
+        private System.Windows.Forms.Label CCL95;
+        private System.Windows.Forms.Label CCL94;
+        private System.Windows.Forms.Label CCL93;
+        private System.Windows.Forms.Label CCL92;
+        private System.Windows.Forms.Label CCL91;
+        private System.Windows.Forms.ComboBox CCc50;
+        private System.Windows.Forms.ComboBox CCc49;
+        private System.Windows.Forms.ComboBox CCc48;
+        private System.Windows.Forms.ComboBox CCc47;
+        private System.Windows.Forms.ComboBox CCc46;
+        private System.Windows.Forms.ComboBox CCc45;
+        private System.Windows.Forms.ComboBox CCc44;
+        private System.Windows.Forms.ComboBox CCc43;
+        private System.Windows.Forms.ComboBox CCc42;
+        private System.Windows.Forms.Label CCL90;
+        private System.Windows.Forms.Label CCL89;
+        private System.Windows.Forms.Label CCL88;
+        private System.Windows.Forms.Label CCL87;
+        private System.Windows.Forms.NumericUpDown CCN32;
+        private System.Windows.Forms.NumericUpDown CCN31;
+        private System.Windows.Forms.NumericUpDown CCN30;
+        private System.Windows.Forms.NumericUpDown CCN29;
+        private System.Windows.Forms.NumericUpDown CCN28;
+        private System.Windows.Forms.Label CCL86;
+        private System.Windows.Forms.NumericUpDown CCN27;
+        private System.Windows.Forms.Label CCL85;
+        private System.Windows.Forms.Label CCL84;
+        private System.Windows.Forms.NumericUpDown CCN26;
+        private System.Windows.Forms.ComboBox CCc41;
+        private System.Windows.Forms.Label CCL83;
+        private System.Windows.Forms.TextBox CCT10;
+        private System.Windows.Forms.Label CCL82;
+        private System.Windows.Forms.TextBox CCT9;
+        private System.Windows.Forms.Label CCL81;
+        private System.Windows.Forms.Label CCL80;
+        private System.Windows.Forms.PictureBox CCP6;
+        private System.Windows.Forms.Label CCL119;
+        private System.Windows.Forms.Label CCL118;
+        private System.Windows.Forms.Label CCL117;
+        private System.Windows.Forms.Label CCL116;
+        private System.Windows.Forms.Label CCL115;
+        private System.Windows.Forms.Label CCL114;
+        private System.Windows.Forms.Label CCL113;
+        private System.Windows.Forms.Label CCL112;
+        private System.Windows.Forms.Label CCL111;
+        private System.Windows.Forms.ComboBox CCc60;
+        private System.Windows.Forms.ComboBox CCc59;
+        private System.Windows.Forms.ComboBox CCc58;
+        private System.Windows.Forms.ComboBox CCc57;
+        private System.Windows.Forms.ComboBox CCc56;
+        private System.Windows.Forms.ComboBox CCc55;
+        private System.Windows.Forms.ComboBox CCc54;
+        private System.Windows.Forms.ComboBox CCc53;
+        private System.Windows.Forms.ComboBox CCc52;
+        private System.Windows.Forms.Label CCL110;
+        private System.Windows.Forms.Label CCL109;
+        private System.Windows.Forms.Label CCL108;
+        private System.Windows.Forms.Label CCL107;
+        private System.Windows.Forms.NumericUpDown CCN39;
+        private System.Windows.Forms.NumericUpDown CCN38;
+        private System.Windows.Forms.NumericUpDown CCN37;
+        private System.Windows.Forms.NumericUpDown CCN36;
+        private System.Windows.Forms.NumericUpDown CCN35;
+        private System.Windows.Forms.Label CCL106;
+        private System.Windows.Forms.NumericUpDown CCN34;
+        private System.Windows.Forms.Label CCL105;
+        private System.Windows.Forms.Label CCL104;
+        private System.Windows.Forms.NumericUpDown CCN33;
+        private System.Windows.Forms.ComboBox CCc51;
+        private System.Windows.Forms.Label CCL103;
+        private System.Windows.Forms.TextBox CCT12;
+        private System.Windows.Forms.Label CCL102;
+        private System.Windows.Forms.TextBox CCT11;
+        private System.Windows.Forms.Label CCL101;
+        private System.Windows.Forms.Label CCL100;
+        private System.Windows.Forms.Button exportCharStringButton;
+        private System.Windows.Forms.TextBox exportStringTextBox;
     }
 }
 
