@@ -160,6 +160,11 @@ namespace DCTBFightingSimulator
             importExportString = importExportString + "indENDMmv5@@_!";
         }
 
+        public void setString(string s)
+        {
+            //for setting the string from an import string
+            importExportString = s;
+        }
         public string getImportExportString()
         {
             return importExportString;

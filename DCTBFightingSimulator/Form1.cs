@@ -49,6 +49,7 @@ namespace DCTBFightingSimulator
             disableAllElementalUI();
             enableCharButtonElementalUI();
         }
+            //Export a Build
         private void exportCharStringButton_Click(object sender, EventArgs e)
         {
             //Generate the string
@@ -402,6 +403,349 @@ namespace DCTBFightingSimulator
             {
                 return true;
             }
+        }
+            //Import a Build
+        private void loadBuildButton_Click(object sender, EventArgs e)
+        {
+            string importString = loadBuildTextBox.Text;
+            //Perform Checks first
+            if(checkImportString(importString) == true)
+            {
+                Character loadedBuild = new Character(importString);
+                //Code to load it into all the boxes
+                System.Windows.Forms.MessageBox.Show("Build successfully loaded!");
+            }
+        }
+        private bool checkImportString(string importString)
+        {
+            //Main attributes
+                //Name
+            int descriptionLocatorStartIndex = importString.IndexOf("d@3MDMe#SC");
+            if(descriptionLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'description' indicator.");
+                return false;
+            }
+            int nameLocatorEndIndex = importString.IndexOf("nX!wj@am!E");
+            if (nameLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'character name' indicator.");
+                return false;
+            }
+            nameLocatorEndIndex = 9;
+            if(descriptionLocatorStartIndex - 9 <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character name.");
+                return false;
+            }
+            else if(checkStringRestrictions(importString.Substring(10, descriptionLocatorStartIndex - 9)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character name.");
+                return false;
+            }
+                //Description
+            int typeLocatorStartIndex = importString.IndexOf("t192y!@:PE22");
+            if (typeLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'type' indicator.");
+                return false;
+            }
+            int descriptionLocatorEndIndex = importString.IndexOf("d@3MDMe#SC");
+            if (descriptionLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'description' indicator.");
+                return false;
+            }
+            descriptionLocatorEndIndex = importString.IndexOf("d@3MDMe#SC") + "d@3MDMe#SC".Length - 1;
+            if (typeLocatorStartIndex - descriptionLocatorEndIndex <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character description.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(descriptionLocatorEndIndex + 1, typeLocatorStartIndex - descriptionLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character description.");
+                return false;
+            }
+                //TYPE
+            int atkLocatorStartIndex = importString.IndexOf("at1!@!W0k");
+            if (atkLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Attack' indicator.");
+                return false;
+            }
+            int typeLocatorEndIndex = importString.IndexOf("t192y!@:PE22");
+            if (typeLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Type' indicator.");
+                return false;
+            }
+            typeLocatorEndIndex = importString.IndexOf("t192y!@:PE22") + "t192y!@:PE22".Length - 1;
+            if (atkLocatorStartIndex - typeLocatorEndIndex <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character type.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(typeLocatorEndIndex + 1, atkLocatorStartIndex - typeLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character type.");
+                return false;
+            }
+                //ATK
+            int defLocatorStartIndex = importString.IndexOf("d%%23eFF");
+            if (defLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Defense' indicator.");
+                return false;
+            }
+            int atkLocatorEndIndex = importString.IndexOf("at1!@!W0k");
+            if (atkLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Attack' indicator.");
+                return false;
+            }
+            atkLocatorEndIndex = importString.IndexOf("at1!@!W0k") + "at1!@!W0k".Length - 1;
+            if (defLocatorStartIndex - atkLocatorEndIndex <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character attack value.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(atkLocatorEndIndex + 1, defLocatorStartIndex - atkLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character attack value.");
+                return false;
+            }
+                //DEF
+            int accLocatorStartIndex = importString.IndexOf("a1;c';c");
+            if (accLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Accuracy' indicator.");
+                return false;
+            }
+            int defLocatorEndIndex = importString.IndexOf("d%%23eFF");
+            if (defLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Defense' indicator.");
+                return false;
+            }
+            defLocatorEndIndex = importString.IndexOf("d%%23eFF") + "d%%23eFF".Length - 1;
+            if (accLocatorStartIndex - defLocatorEndIndex <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character defense value.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(defLocatorEndIndex + 1, accLocatorStartIndex - defLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character defense value.");
+                return false;
+            }
+                //ACC
+            int dgeLocatorStartIndex = importString.IndexOf("dj1g><e");
+            if (dgeLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Dodge' indicator.");
+                return false;
+            }
+            int accLocatorEndIndex = importString.IndexOf("a1;c';c");
+            if (accLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Accuracy' indicator.");
+                return false;
+            }
+            accLocatorEndIndex = importString.IndexOf("a1;c';c") + "a1;c';c".Length - 1;
+            if (dgeLocatorStartIndex - accLocatorEndIndex <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character accuracy value.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(accLocatorEndIndex + 1, dgeLocatorStartIndex - accLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character accuracy value.");
+                return false;
+            }
+                //DGE
+            int imnLocatorStartIndex = importString.IndexOf("imnSTRT@@_!");
+            if (imnLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Immunities Start' indicator.");
+                return false;
+            }
+            int dgeLocatorEndIndex = importString.IndexOf("dj1g><e");
+            if (dgeLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Dodge' indicator.");
+                return false;
+            }
+            dgeLocatorEndIndex = importString.IndexOf("dj1g><e") + "dj1g><e".Length - 1;
+            if (imnLocatorStartIndex - dgeLocatorEndIndex <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Dodge value.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(dgeLocatorEndIndex + 1, imnLocatorStartIndex - dgeLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Dodge value.");
+                return false;
+            }
+                //IMMUNITIES
+            int imn2LocatorStartIndex = importString.IndexOf("imnEND@@_!");
+            if (imn2LocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Immunities End' indicator.");
+                return false;
+            }
+            int imnLocatorEndIndex = importString.IndexOf("imnSTRT@@_!");
+            if (imnLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Immunities Start' indicator.");
+                return false;
+            }
+            imnLocatorEndIndex = importString.IndexOf("imnSTRT@@_!") + "imnSTRT@@_!".Length - 1;
+            if (imn2LocatorStartIndex - imnLocatorEndIndex !=10)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character immunities data 1.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(imnLocatorEndIndex + 1, imn2LocatorStartIndex - imnLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character immunities data 2.");
+                return false;
+            }
+            else
+            {
+                string check = importString.Substring(imnLocatorEndIndex + 1, 9);
+                for(int i = 0; i < check.Length; i++)
+                {
+                    if(check.Substring(i, 1) != "y" && check.Substring(i, 1) != "n")
+                    {
+                        System.Windows.Forms.MessageBox.Show("Error with character immunities data 3.");
+                        return false;
+                    }
+                }
+            }
+                //Move 1 Name
+            int mv1dLocatorStartIndex = importString.IndexOf("dDCMv1@@");
+            if (mv1dLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 1 Description' indicator.");
+                return false;
+            }
+            int mv1nLocatorEndIndex = importString.IndexOf("nDCMmv1@@");
+            if (mv1nLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 1 Name' indicator.");
+                return false;
+            }
+            mv1nLocatorEndIndex = importString.IndexOf("nDCMmv1@@") + "nDCMmv1@@".Length - 1;
+            if (mv1dLocatorStartIndex - mv1nLocatorEndIndex <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 1 Name value.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(mv1nLocatorEndIndex + 1, mv1dLocatorStartIndex - mv1nLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 1 Name value.");
+                return false;
+            }
+                //Move 1 Desc
+            int mv1tLocatorStartIndex = importString.IndexOf("tDCMmv1@@");
+            if (mv1tLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 1 Type' indicator.");
+                return false;
+            }
+            int mv1dLocatorEndIndex = importString.IndexOf("dDCMv1@@");
+            if (mv1dLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 1 Description' indicator.");
+                return false;
+            }
+            mv1dLocatorEndIndex = importString.IndexOf("dDCMv1@@") + "dDCMv1@@".Length - 1;
+            if (mv1tLocatorStartIndex - mv1dLocatorEndIndex <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 1 Description value.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(mv1dLocatorEndIndex + 1, mv1tLocatorStartIndex - mv1dLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 1 Description value.");
+                return false;
+            }
+                //Move 1 Type
+            int mv1atmLocatorStartIndex = importString.IndexOf("atmDCMmv1@@");
+            if (mv1atmLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 1 Attack' indicator.");
+                return false;
+            }
+            int mv1tLocatorEndIndex = importString.IndexOf("tDCMmv1@@");
+            if (mv1tLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 1 Type' indicator.");
+                return false;
+            }
+            mv1tLocatorEndIndex = importString.IndexOf("tDCMmv1@@") + "tDCMmv1@@".Length - 1;
+            if (mv1atmLocatorStartIndex - mv1tLocatorEndIndex <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 1 Type value.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(mv1tLocatorEndIndex + 1, mv1atmLocatorStartIndex - mv1tLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 1 Type value.");
+                return false;
+            }
+                //Move 1 Atk Multiplier
+            int mv1accLocatorStartIndex = importString.IndexOf("accDCMmv1@@");
+            if (mv1accLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 1 Accuracy' indicator.");
+                return false;
+            }
+            int mv1atmLocatorEndIndex = importString.IndexOf("atmDCMmv1@@");
+            if (mv1atmLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 1 Attack' indicator.");
+                return false;
+            }
+            mv1atmLocatorEndIndex = importString.IndexOf("atmDCMmv1@@") + "atmDCMmv1@@".Length - 1;
+            if (mv1accLocatorStartIndex - mv1atmLocatorEndIndex <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 1 Attack value.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(mv1atmLocatorEndIndex + 1, mv1accLocatorStartIndex - mv1atmLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 1 Attack value.");
+                return false;
+            }
+                //Move 1 Accuracy
+            int mv1hLocatorStartIndex = importString.IndexOf("hDCMmv1@@");
+            if (mv1hLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 1 Healing' indicator.");
+                return false;
+            }
+            int mv1accLocatorEndIndex = importString.IndexOf("accDCMmv1@@");
+            if (mv1accLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Move 1 Accuracy' indicator.");
+                return false;
+            }
+            mv1accLocatorEndIndex = importString.IndexOf("accDCMmv1@@") + "accDCMmv1@@".Length - 1;
+            if (mv1hLocatorStartIndex - mv1accLocatorEndIndex <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 1 Accuracy value.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(mv1accLocatorEndIndex + 1, mv1hLocatorStartIndex - mv1accLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character Move 1 Accuracy value.");
+                return false;
+            }
+                //Move 1 Healing
+            //Valid!
+            return true;
         }
 
         //Elemental UI methods
@@ -899,6 +1243,10 @@ namespace DCTBFightingSimulator
             exportCharStringButton.Hide();
             exportStringTextBox.Enabled = false;
             exportStringTextBox.Hide();
+            loadBuildButton.Enabled = false;
+            loadBuildButton.Hide();
+            loadBuildTextBox.Enabled = false;
+            loadBuildTextBox.Hide();
         }
         public void enableCharButtonElementalUI()
         {
@@ -916,6 +1264,10 @@ namespace DCTBFightingSimulator
             exportStringTextBox.Show();
             exportStringDescription.Enabled = true;
             exportStringDescription.Show();
+            loadBuildButton.Enabled = true;
+            loadBuildButton.Show();
+            loadBuildTextBox.Enabled = true;
+            loadBuildTextBox.Show();
             //Gen Attributes
             CCL1.Enabled = true;
             CCL1.Show();

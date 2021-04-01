@@ -286,6 +286,8 @@ namespace DCTBFightingSimulator
             this.exportCharStringButton = new System.Windows.Forms.Button();
             this.exportStringTextBox = new System.Windows.Forms.TextBox();
             this.exportStringDescription = new System.Windows.Forms.Label();
+            this.loadBuildButton = new System.Windows.Forms.Button();
+            this.loadBuildTextBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.SeparationBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -497,7 +499,7 @@ namespace DCTBFightingSimulator
             this.characterCreationDesc.AutoSize = true;
             this.characterCreationDesc.Location = new System.Drawing.Point(159, 46);
             this.characterCreationDesc.Name = "characterCreationDesc";
-            this.characterCreationDesc.Size = new System.Drawing.Size(996, 13);
+            this.characterCreationDesc.Size = new System.Drawing.Size(1260, 13);
             this.characterCreationDesc.TabIndex = 16;
             this.characterCreationDesc.Text = resources.GetString("characterCreationDesc.Text");
             // 
@@ -1015,6 +1017,11 @@ namespace DCTBFightingSimulator
             // CCN6
             // 
             this.CCN6.Location = new System.Drawing.Point(431, 205);
+            this.CCN6.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
             this.CCN6.Name = "CCN6";
             this.CCN6.Size = new System.Drawing.Size(100, 20);
             this.CCN6.TabIndex = 64;
@@ -1036,6 +1043,11 @@ namespace DCTBFightingSimulator
             0,
             0,
             0});
+            this.CCN7.Minimum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            -2147483648});
             this.CCN7.Name = "CCN7";
             this.CCN7.Size = new System.Drawing.Size(100, 20);
             this.CCN7.TabIndex = 66;
@@ -1708,6 +1720,11 @@ namespace DCTBFightingSimulator
             0,
             0,
             0});
+            this.CCN14.Minimum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            -2147483648});
             this.CCN14.Name = "CCN14";
             this.CCN14.Size = new System.Drawing.Size(100, 20);
             this.CCN14.TabIndex = 106;
@@ -1724,6 +1741,11 @@ namespace DCTBFightingSimulator
             // CCN13
             // 
             this.CCN13.Location = new System.Drawing.Point(628, 205);
+            this.CCN13.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
             this.CCN13.Name = "CCN13";
             this.CCN13.Size = new System.Drawing.Size(100, 20);
             this.CCN13.TabIndex = 104;
@@ -2169,6 +2191,11 @@ namespace DCTBFightingSimulator
             0,
             0,
             0});
+            this.CCN21.Minimum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            -2147483648});
             this.CCN21.Name = "CCN21";
             this.CCN21.Size = new System.Drawing.Size(100, 20);
             this.CCN21.TabIndex = 146;
@@ -2185,6 +2212,11 @@ namespace DCTBFightingSimulator
             // CCN20
             // 
             this.CCN20.Location = new System.Drawing.Point(827, 205);
+            this.CCN20.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
             this.CCN20.Name = "CCN20";
             this.CCN20.Size = new System.Drawing.Size(100, 20);
             this.CCN20.TabIndex = 144;
@@ -2630,6 +2662,11 @@ namespace DCTBFightingSimulator
             0,
             0,
             0});
+            this.CCN28.Minimum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            -2147483648});
             this.CCN28.Name = "CCN28";
             this.CCN28.Size = new System.Drawing.Size(100, 20);
             this.CCN28.TabIndex = 186;
@@ -2646,6 +2683,11 @@ namespace DCTBFightingSimulator
             // CCN27
             // 
             this.CCN27.Location = new System.Drawing.Point(1028, 205);
+            this.CCN27.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
             this.CCN27.Name = "CCN27";
             this.CCN27.Size = new System.Drawing.Size(100, 20);
             this.CCN27.TabIndex = 184;
@@ -3092,6 +3134,11 @@ namespace DCTBFightingSimulator
             0,
             0,
             0});
+            this.CCN35.Minimum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            -2147483648});
             this.CCN35.Name = "CCN35";
             this.CCN35.Size = new System.Drawing.Size(100, 20);
             this.CCN35.TabIndex = 226;
@@ -3108,6 +3155,11 @@ namespace DCTBFightingSimulator
             // CCN34
             // 
             this.CCN34.Location = new System.Drawing.Point(1231, 205);
+            this.CCN34.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
             this.CCN34.Name = "CCN34";
             this.CCN34.Size = new System.Drawing.Size(100, 20);
             this.CCN34.TabIndex = 224;
@@ -3243,12 +3295,31 @@ namespace DCTBFightingSimulator
     "believe you accidentally edited it. Please DO NOT edit the string, or it will no" +
     "t correctly import.";
             // 
+            // loadBuildButton
+            // 
+            this.loadBuildButton.Location = new System.Drawing.Point(159, 666);
+            this.loadBuildButton.Name = "loadBuildButton";
+            this.loadBuildButton.Size = new System.Drawing.Size(76, 52);
+            this.loadBuildButton.TabIndex = 257;
+            this.loadBuildButton.Text = "LOAD BUILD";
+            this.loadBuildButton.UseVisualStyleBackColor = true;
+            this.loadBuildButton.Click += new System.EventHandler(this.loadBuildButton_Click);
+            // 
+            // loadBuildTextBox
+            // 
+            this.loadBuildTextBox.Location = new System.Drawing.Point(241, 683);
+            this.loadBuildTextBox.Name = "loadBuildTextBox";
+            this.loadBuildTextBox.Size = new System.Drawing.Size(100, 20);
+            this.loadBuildTextBox.TabIndex = 258;
+            // 
             // DCTBFightingSimulator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1451, 845);
+            this.Controls.Add(this.loadBuildTextBox);
+            this.Controls.Add(this.loadBuildButton);
             this.Controls.Add(this.exportStringDescription);
             this.Controls.Add(this.exportStringTextBox);
             this.Controls.Add(this.exportCharStringButton);
@@ -3819,6 +3890,8 @@ namespace DCTBFightingSimulator
         private System.Windows.Forms.Button exportCharStringButton;
         private System.Windows.Forms.TextBox exportStringTextBox;
         private System.Windows.Forms.Label exportStringDescription;
+        private System.Windows.Forms.Button loadBuildButton;
+        private System.Windows.Forms.TextBox loadBuildTextBox;
     }
 }
 

@@ -176,7 +176,7 @@
 </value>
   </data>
   <data name="characterCreationDesc.Text" xml:space="preserve">
-    <value>Welcome to Character Creation! Here, you can enter all of the stats and data for your character. Tooltips with additional information coming soon. Please note that creating export strings may take a few moments.</value>
+    <value>Welcome to Character Creation! Here, you can enter all of the stats and data for your character. Tooltips with additional information coming soon. Please note that creating export strings may take a few moments. You can also import a build to begin working from there.</value>
   </data>
   <data name="horizCharCreationBar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

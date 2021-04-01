@@ -40,8 +40,12 @@ namespace DCTBFightingSimulator
         //Constructor (takes an input string)
         public Character(ImportExportString importString)
         {
-            //String interpreter
+            //Import-export string interpreter after checks (see Form1 class)
 
+        }
+        public Character(string importString)
+        {
+            //String interpreter after checks (see Form1 class)
         }
 
         //OVERARCHING VALUES - Note that these are imported to the PlayingCharacter class during battle, which contains real-time stats. These are just base values.
