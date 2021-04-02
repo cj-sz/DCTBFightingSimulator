@@ -71,11 +71,12 @@ namespace DCTBFightingSimulator
                     return;
                 }
             }
+            int hp = (int)CCN40.Value;
             int atk = (int)CCN1.Value;
             int def = (int)CCN2.Value;
             int acc = (int)CCN3.Value;
             int dge = (int)CCN4.Value;
-            importExportString.generateAttributesStringPart(n, d, t, atk, def, acc, dge);
+            importExportString.generateAttributesStringPart(n, d, t, hp, atk, def, acc, dge);
             //Immunities Attr
             bool[] immunities = new bool[9];
             string[] imnSel = new string[9];
@@ -412,8 +413,521 @@ namespace DCTBFightingSimulator
             if(checkImportString(importString) == true)
             {
                 Character loadedBuild = new Character(importString);
-                //Code to load it into all the boxes
+                loadBuildVisually(loadedBuild);
                 System.Windows.Forms.MessageBox.Show("Build successfully loaded!");
+            }
+        }
+        private void loadBuildVisually(Character character)
+        {
+            //Character Attr
+            CCT1.Text = character.getName();
+            CCT2.Text = character.getDesc();
+            CCc1.Text = character.getType();
+            CCN40.Value = character.getHP();
+            CCN1.Value = character.getAtk();
+            CCN2.Value = character.getDef();
+            CCN3.Value = character.getAcc();
+            CCN4.Value = character.getDge();
+            //Immunities
+            if(character.getimnStun() == true)
+            {
+                CCc2.Text = "YES";
+            }
+            else
+            {
+                CCc2.Text = "NO";
+            }
+            if (character.getimnPsn() == true)
+            {
+                CCc3.Text = "YES";
+            }
+            else
+            {
+                CCc3.Text = "NO";
+            }
+            if (character.getimnBrn() == true)
+            {
+                CCc4.Text = "YES";
+            }
+            else
+            {
+                CCc4.Text = "NO";
+            }
+            if (character.getimnCrpl() == true)
+            {
+                CCc5.Text = "YES";
+            }
+            else
+            {
+                CCc5.Text = "NO";
+            }
+            if (character.getimnFrzn() == true)
+            {
+                CCc6.Text = "YES";
+            }
+            else
+            {
+                CCc6.Text = "NO";
+            }
+            if (character.getimnFrzn() == true)
+            {
+                CCc7.Text = "YES";
+            }
+            else
+            {
+                CCc7.Text = "NO";
+            }
+            if (character.getimnBld() == true)
+            {
+                CCc8.Text = "YES";
+            }
+            else
+            {
+                CCc8.Text = "NO";
+            }
+            if (character.getimnStpf() == true)
+            {
+                CCc9.Text = "YES";
+            }
+            else
+            {
+                CCc9.Text = "NO";
+            }
+            if (character.getimnWk() == true)
+            {
+                CCc10.Text = "YES";
+            }
+            else
+            {
+                CCc10.Text = "NO";
+            }
+            if (character.getimnDzz() == true)
+            {
+                CCc11.Text = "YES";
+            }
+            else
+            {
+                CCc11.Text = "NO";
+            }
+            //Move 1 Attr
+            CCT3.Text = character.getMv1Name();
+            CCT4.Text = character.getMv1Desc();
+            CCc11.Text = character.getMv1Type();
+            CCN5.Value = (decimal)character.getMv1M();
+            CCN6.Value = character.getMv1Acc();
+            CCN7.Value = character.getMv1Heal();
+            CCN8.Value = character.getMv1AtkMod();
+            CCN9.Value = character.getMv1DefMod();
+            CCN10.Value = character.getMv1AccMod();
+            CCN11.Value = character.getMv1DgeMod();
+            //Move 1 Induces
+            if(character.getMv1indStun() == true)
+            {
+                CCc12.Text = "YES";
+            }
+            else
+            {
+                CCc12.Text = "NO";
+            }
+            if (character.getMv1indPsn() == true)
+            {
+                CCc13.Text = "YES";
+            }
+            else
+            {
+                CCc13.Text = "NO";
+            }
+            if (character.getMv1indBrn() == true)
+            {
+                CCc14.Text = "YES";
+            }
+            else
+            {
+                CCc14.Text = "NO";
+            }
+            if (character.getMv1indCrpl() == true)
+            {
+                CCc15.Text = "YES";
+            }
+            else
+            {
+                CCc15.Text = "NO";
+            }
+            if (character.getMv1indFrzn() == true)
+            {
+                CCc16.Text = "YES";
+            }
+            else
+            {
+                CCc16.Text = "NO";
+            }
+            if (character.getMv1indBld() == true)
+            {
+                CCc17.Text = "YES";
+            }
+            else
+            {
+                CCc17.Text = "NO";
+            }
+            if (character.getMv1indStpf() == true)
+            {
+                CCc18.Text = "YES";
+            }
+            else
+            {
+                CCc18.Text = "NO";
+            }
+            if (character.getMv1indWk() == true)
+            {
+                CCc19.Text = "YES";
+            }
+            else
+            {
+                CCc19.Text = "NO";
+            }
+            if (character.getMv1indDzz() == true)
+            {
+                CCc20.Text = "YES";
+            }
+            else
+            {
+                CCc20.Text = "NO";
+            }
+            //Move 2 Attr
+            CCT5.Text = character.getMv2Name();
+            CCT6.Text = character.getMv2Desc();
+            CCc21.Text = character.getMv2Type();
+            CCN12.Value = (decimal)character.getMv2M();
+            CCN13.Value = character.getMv2Acc();
+            CCN14.Value = character.getMv2Heal();
+            CCN15.Value = character.getMv2AtkMod();
+            CCN16.Value = character.getMv2DefMod();
+            CCN17.Value = character.getMv2AccMod();
+            CCN18.Value = character.getMv2DgeMod();
+            //Move 2 Induces
+            if (character.getMv2indStun() == true)
+            {
+                CCc22.Text = "YES";
+            }
+            else
+            {
+                CCc22.Text = "NO";
+            }
+            if (character.getMv2indPsn() == true)
+            {
+                CCc23.Text = "YES";
+            }
+            else
+            {
+                CCc23.Text = "NO";
+            }
+            if (character.getMv2indBrn() == true)
+            {
+                CCc24.Text = "YES";
+            }
+            else
+            {
+                CCc24.Text = "NO";
+            }
+            if (character.getMv2indCrpl() == true)
+            {
+                CCc30.Text = "YES";
+            }
+            else
+            {
+                CCc30.Text = "NO";
+            }
+            if (character.getMv2indFrzn() == true)
+            {
+                CCc25.Text = "YES";
+            }
+            else
+            {
+                CCc25.Text = "NO";
+            }
+            if (character.getMv2indBld() == true)
+            {
+                CCc26.Text = "YES";
+            }
+            else
+            {
+                CCc26.Text = "NO";
+            }
+            if (character.getMv2indStpf() == true)
+            {
+                CCc27.Text = "YES";
+            }
+            else
+            {
+                CCc27.Text = "NO";
+            }
+            if (character.getMv2indWk() == true)
+            {
+                CCc28.Text = "YES";
+            }
+            else
+            {
+                CCc28.Text = "NO";
+            }
+            if (character.getMv2indDzz() == true)
+            {
+                CCc29.Text = "YES";
+            }
+            else
+            {
+                CCc29.Text = "NO";
+            }
+            //Move 3 Attr
+            CCT7.Text = character.getMv3Name();
+            CCT8.Text = character.getMv3Desc();
+            CCc31.Text = character.getMv3Type();
+            CCN19.Value = (decimal)character.getMv3M();
+            CCN20.Value = character.getMv3Acc();
+            CCN21.Value = character.getMv3Heal();
+            CCN22.Value = character.getMv3AtkMod();
+            CCN23.Value = character.getMv3DefMod();
+            CCN24.Value = character.getMv3AccMod();
+            CCN25.Value = character.getMv3DgeMod();
+            //Move 3 Induces
+            if (character.getMv3indStun() == true)
+            {
+                CCc32.Text = "YES";
+            }
+            else
+            {
+                CCc32.Text = "NO";
+            }
+            if (character.getMv3indPsn() == true)
+            {
+                CCc33.Text = "YES";
+            }
+            else
+            {
+                CCc33.Text = "NO";
+            }
+            if (character.getMv3indBrn() == true)
+            {
+                CCc34.Text = "YES";
+            }
+            else
+            {
+                CCc34.Text = "NO";
+            }
+            if (character.getMv3indCrpl() == true)
+            {
+                CCc35.Text = "YES";
+            }
+            else
+            {
+                CCc35.Text = "NO";
+            }
+            if (character.getMv3indFrzn() == true)
+            {
+                CCc36.Text = "YES";
+            }
+            else
+            {
+                CCc36.Text = "NO";
+            }
+            if (character.getMv3indBld() == true)
+            {
+                CCc37.Text = "YES";
+            }
+            else
+            {
+                CCc37.Text = "NO";
+            }
+            if (character.getMv3indStpf() == true)
+            {
+                CCc38.Text = "YES";
+            }
+            else
+            {
+                CCc38.Text = "NO";
+            }
+            if (character.getMv3indWk() == true)
+            {
+                CCc39.Text = "YES";
+            }
+            else
+            {
+                CCc39.Text = "NO";
+            }
+            if (character.getMv3indDzz() == true)
+            {
+                CCc40.Text = "YES";
+            }
+            else
+            {
+                CCc40.Text = "NO";
+            }
+            //Move 4 Attr
+            CCT9.Text = character.getMv4Name();
+            CCT10.Text = character.getMv4Desc();
+            CCc41.Text = character.getMv4Type();
+            CCN26.Value = (decimal)character.getMv4M();
+            CCN27.Value = character.getMv4Acc();
+            CCN28.Value = character.getMv4Heal();
+            CCN29.Value = character.getMv4AtkMod();
+            CCN30.Value = character.getMv4DefMod();
+            CCN31.Value = character.getMv4AccMod();
+            CCN32.Value = character.getMv4DgeMod();
+            //Move 4 Induces
+            if (character.getMv4indStun() == true)
+            {
+                CCc42.Text = "YES";
+            }
+            else
+            {
+                CCc42.Text = "NO";
+            }
+            if (character.getMv4indPsn() == true)
+            {
+                CCc43.Text = "YES";
+            }
+            else
+            {
+                CCc43.Text = "NO";
+            }
+            if (character.getMv4indBrn() == true)
+            {
+                CCc44.Text = "YES";
+            }
+            else
+            {
+                CCc44.Text = "NO";
+            }
+            if (character.getMv4indCrpl() == true)
+            {
+                CCc45.Text = "YES";
+            }
+            else
+            {
+                CCc45.Text = "NO";
+            }
+            if (character.getMv4indFrzn() == true)
+            {
+                CCc46.Text = "YES";
+            }
+            else
+            {
+                CCc46.Text = "NO";
+            }
+            if (character.getMv4indBld() == true)
+            {
+                CCc47.Text = "YES";
+            }
+            else
+            {
+                CCc47.Text = "NO";
+            }
+            if (character.getMv4indStpf() == true)
+            {
+                CCc48.Text = "YES";
+            }
+            else
+            {
+                CCc48.Text = "NO";
+            }
+            if (character.getMv4indWk() == true)
+            {
+                CCc49.Text = "YES";
+            }
+            else
+            {
+                CCc49.Text = "NO";
+            }
+            if (character.getMv4indDzz() == true)
+            {
+                CCc50.Text = "YES";
+            }
+            else
+            {
+                CCc50.Text = "NO";
+            }
+            //Move 5 Attr
+            CCT11.Text = character.getMv5Name();
+            CCT12.Text = character.getMv5Desc();
+            CCc51.Text = character.getMv5Type();
+            CCN33.Value = (decimal)character.getMv5M();
+            CCN34.Value = character.getMv5Acc();
+            CCN35.Value = character.getMv5Heal();
+            CCN36.Value = character.getMv5AtkMod();
+            CCN37.Value = character.getMv5DefMod();
+            CCN38.Value = character.getMv5AccMod();
+            CCN39.Value = character.getMv5DgeMod();
+            //Move 5 Induces
+            if (character.getMv5indStun() == true)
+            {
+                CCc52.Text = "YES";
+            }
+            else
+            {
+                CCc52.Text = "NO";
+            }
+            if (character.getMv5indPsn() == true)
+            {
+                CCc53.Text = "YES";
+            }
+            else
+            {
+                CCc53.Text = "NO";
+            }
+            if (character.getMv5indBrn() == true)
+            {
+                CCc54.Text = "YES";
+            }
+            else
+            {
+                CCc54.Text = "NO";
+            }
+            if (character.getMv5indCrpl() == true)
+            {
+                CCc55.Text = "YES";
+            }
+            else
+            {
+                CCc55.Text = "NO";
+            }
+            if (character.getMv5indFrzn() == true)
+            {
+                CCc56.Text = "YES";
+            }
+            else
+            {
+                CCc56.Text = "NO";
+            }
+            if (character.getMv5indBld() == true)
+            {
+                CCc57.Text = "YES";
+            }
+            else
+            {
+                CCc57.Text = "NO";
+            }
+            if (character.getMv5indStpf() == true)
+            {
+                CCc58.Text = "YES";
+            }
+            else
+            {
+                CCc58.Text = "NO";
+            }
+            if (character.getMv5indWk() == true)
+            {
+                CCc59.Text = "YES";
+            }
+            else
+            {
+                CCc59.Text = "NO";
+            }
+            if (character.getMv5indDzz() == true)
+            {
+                CCc60.Text = "YES";
+            }
+            else
+            {
+                CCc60.Text = "NO";
             }
         }
         private bool checkImportString(string importString)
@@ -468,10 +982,10 @@ namespace DCTBFightingSimulator
                 return false;
             }
                 //TYPE
-            int atkLocatorStartIndex = importString.IndexOf("at1!@!W0k");
-            if (atkLocatorStartIndex == -1)
+            int hpLocatorStartIndex = importString.IndexOf("h!*##p2@<#");
+            if (hpLocatorStartIndex == -1)
             {
-                System.Windows.Forms.MessageBox.Show("Error with 'Attack' indicator.");
+                System.Windows.Forms.MessageBox.Show("Error with 'HP' indicator 1.");
                 return false;
             }
             int typeLocatorEndIndex = importString.IndexOf("t192y!@:PE22");
@@ -481,17 +995,41 @@ namespace DCTBFightingSimulator
                 return false;
             }
             typeLocatorEndIndex = importString.IndexOf("t192y!@:PE22") + "t192y!@:PE22".Length - 1;
-            if (atkLocatorStartIndex - typeLocatorEndIndex <= 1)
+            if (hpLocatorStartIndex - typeLocatorEndIndex <= 1)
             {
                 System.Windows.Forms.MessageBox.Show("Error with character type.");
                 return false;
             }
-            else if (checkStringRestrictions(importString.Substring(typeLocatorEndIndex + 1, atkLocatorStartIndex - typeLocatorEndIndex)) == false)
+            else if (checkStringRestrictions(importString.Substring(typeLocatorEndIndex + 1, hpLocatorStartIndex - typeLocatorEndIndex)) == false)
             {
                 System.Windows.Forms.MessageBox.Show("Error with character type.");
                 return false;
             }
-                //ATK
+                //HP
+            int atkLocatorStartIndex = importString.IndexOf("at1!@!W0k");
+            if (atkLocatorStartIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'Attack' indicator.");
+                return false;
+            }
+            int hpLocatorEndIndex = importString.IndexOf("h!*##p2@<#");
+            if (hpLocatorEndIndex == -1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with 'HP' indicator. 2");
+                return false;
+            }
+            hpLocatorEndIndex = importString.IndexOf("h!*##p2@<#") + "h!*##p2@<#".Length - 1;
+            if (atkLocatorStartIndex - hpLocatorEndIndex <= 1)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character HP.");
+                return false;
+            }
+            else if (checkStringRestrictions(importString.Substring(hpLocatorEndIndex + 1, atkLocatorStartIndex - hpLocatorEndIndex)) == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with character HP.");
+                return false;
+            }
+            //ATK
             int defLocatorStartIndex = importString.IndexOf("d%%23eFF");
             if (defLocatorStartIndex == -1)
             {
@@ -2020,6 +2558,10 @@ namespace DCTBFightingSimulator
         }
         public void hideAllCharacterCreation()
         {
+            CCL120.Enabled = false;
+            CCL120.Hide();
+            CCN40.Enabled = false;
+            CCN40.Hide();
             characterCreationTitle.Enabled = false;
             characterCreationTitle.Hide();
             characterCreationDesc.Enabled = false;
@@ -2528,6 +3070,10 @@ namespace DCTBFightingSimulator
             loadBuildTextBox.Enabled = true;
             loadBuildTextBox.Show();
             //Gen Attributes
+            CCL120.Enabled = true;
+            CCN40.Show();
+            CCN40.Enabled = true;
+            CCN40.Show();
             CCL1.Enabled = true;
             CCL1.Show();
             CCL2.Enabled = true;

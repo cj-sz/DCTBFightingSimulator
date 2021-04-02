@@ -20,6 +20,7 @@ namespace DCTBFightingSimulator
              * Name: "nX!wj@am!E" (restriction check)
              * Desc: "d@3MDMe#SC" (restriction check)
              * Type: "t192y!@:PE22"
+             * HP: "h!*##p2@<#"
              * ATK: "at1!@!W0k"
              * DEF: "d%%23eFF"
              * ACC: "a1;c';c"
@@ -53,10 +54,10 @@ namespace DCTBFightingSimulator
             //Empty constructor, done by methods below.
         }
 
-        public void generateAttributesStringPart(string n, string d, string t, int atk, int def, int acc, int dge)
+        public void generateAttributesStringPart(string n, string d, string t, int hp, int atk, int def, int acc, int dge)
         {
             importExportString = "";
-            importExportString = importExportString + "nX!wj@am!E" + n + "d@3MDMe#SC" + d + "t192y!@:PE22" + t + "at1!@!W0k" + atk.ToString() + "d%%23eFF" + def.ToString() + "a1;c';c" + acc.ToString() + "dj1g><e" + dge.ToString();
+            importExportString = importExportString + "nX!wj@am!E" + n + "d@3MDMe#SC" + d + "t192y!@:PE22" + t + "h!*##p2@<#" + hp.ToString() + "at1!@!W0k" + atk.ToString() + "d%%23eFF" + def.ToString() + "a1;c';c" + acc.ToString() + "dj1g><e" + dge.ToString();
         }
         public void generateImmunitiesStringPart(bool[] immunities)
         {
