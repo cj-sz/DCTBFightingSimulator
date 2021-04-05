@@ -290,6 +290,8 @@ namespace DCTBFightingSimulator
             this.loadBuildTextBox = new System.Windows.Forms.TextBox();
             this.CCN40 = new System.Windows.Forms.NumericUpDown();
             this.CCL120 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.startingPanel = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.SeparationBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -340,6 +342,8 @@ namespace DCTBFightingSimulator
             ((System.ComponentModel.ISupportInitialize)(this.CCN34)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CCN33)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CCN40)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.startingPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -441,7 +445,7 @@ namespace DCTBFightingSimulator
             this.welcomeLabel1.AllowDrop = true;
             this.welcomeLabel1.Enabled = false;
             this.welcomeLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F);
-            this.welcomeLabel1.Location = new System.Drawing.Point(294, 744);
+            this.welcomeLabel1.Location = new System.Drawing.Point(8, 3);
             this.welcomeLabel1.Name = "welcomeLabel1";
             this.welcomeLabel1.Size = new System.Drawing.Size(856, 51);
             this.welcomeLabel1.TabIndex = 10;
@@ -452,7 +456,7 @@ namespace DCTBFightingSimulator
             this.welcomeLabel2.AutoSize = true;
             this.welcomeLabel2.Enabled = false;
             this.welcomeLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
-            this.welcomeLabel2.Location = new System.Drawing.Point(340, 795);
+            this.welcomeLabel2.Location = new System.Drawing.Point(10, 50);
             this.welcomeLabel2.Name = "welcomeLabel2";
             this.welcomeLabel2.Size = new System.Drawing.Size(693, 37);
             this.welcomeLabel2.TabIndex = 11;
@@ -491,7 +495,7 @@ namespace DCTBFightingSimulator
             // 
             this.characterCreationTitle.AutoSize = true;
             this.characterCreationTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.characterCreationTitle.Location = new System.Drawing.Point(154, 13);
+            this.characterCreationTitle.Location = new System.Drawing.Point(18, 3);
             this.characterCreationTitle.Name = "characterCreationTitle";
             this.characterCreationTitle.Size = new System.Drawing.Size(290, 29);
             this.characterCreationTitle.TabIndex = 15;
@@ -500,7 +504,7 @@ namespace DCTBFightingSimulator
             // characterCreationDesc
             // 
             this.characterCreationDesc.AutoSize = true;
-            this.characterCreationDesc.Location = new System.Drawing.Point(159, 46);
+            this.characterCreationDesc.Location = new System.Drawing.Point(20, 32);
             this.characterCreationDesc.Name = "characterCreationDesc";
             this.characterCreationDesc.Size = new System.Drawing.Size(1260, 13);
             this.characterCreationDesc.TabIndex = 16;
@@ -509,7 +513,7 @@ namespace DCTBFightingSimulator
             // horizCharCreationBar
             // 
             this.horizCharCreationBar.Image = ((System.Drawing.Image)(resources.GetObject("horizCharCreationBar.Image")));
-            this.horizCharCreationBar.Location = new System.Drawing.Point(159, 63);
+            this.horizCharCreationBar.Location = new System.Drawing.Point(20, 49);
             this.horizCharCreationBar.Name = "horizCharCreationBar";
             this.horizCharCreationBar.Size = new System.Drawing.Size(1026, 10);
             this.horizCharCreationBar.TabIndex = 17;
@@ -519,7 +523,7 @@ namespace DCTBFightingSimulator
             // 
             this.CCL1.AutoSize = true;
             this.CCL1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.CCL1.Location = new System.Drawing.Point(162, 80);
+            this.CCL1.Location = new System.Drawing.Point(20, 60);
             this.CCL1.Name = "CCL1";
             this.CCL1.Size = new System.Drawing.Size(164, 17);
             this.CCL1.TabIndex = 18;
@@ -527,7 +531,7 @@ namespace DCTBFightingSimulator
             // 
             // CCT1
             // 
-            this.CCT1.Location = new System.Drawing.Point(231, 100);
+            this.CCT1.Location = new System.Drawing.Point(89, 80);
             this.CCT1.Name = "CCT1";
             this.CCT1.Size = new System.Drawing.Size(100, 20);
             this.CCT1.TabIndex = 19;
@@ -535,7 +539,7 @@ namespace DCTBFightingSimulator
             // CCL2
             // 
             this.CCL2.AutoSize = true;
-            this.CCL2.Location = new System.Drawing.Point(165, 102);
+            this.CCL2.Location = new System.Drawing.Point(23, 82);
             this.CCL2.Name = "CCL2";
             this.CCL2.Size = new System.Drawing.Size(35, 13);
             this.CCL2.TabIndex = 20;
@@ -543,7 +547,7 @@ namespace DCTBFightingSimulator
             // 
             // CCT2
             // 
-            this.CCT2.Location = new System.Drawing.Point(231, 125);
+            this.CCT2.Location = new System.Drawing.Point(89, 105);
             this.CCT2.Name = "CCT2";
             this.CCT2.Size = new System.Drawing.Size(100, 20);
             this.CCT2.TabIndex = 21;
@@ -552,7 +556,7 @@ namespace DCTBFightingSimulator
             // CCL3
             // 
             this.CCL3.AutoSize = true;
-            this.CCL3.Location = new System.Drawing.Point(165, 128);
+            this.CCL3.Location = new System.Drawing.Point(23, 108);
             this.CCL3.Name = "CCL3";
             this.CCL3.Size = new System.Drawing.Size(60, 13);
             this.CCL3.TabIndex = 22;
@@ -579,7 +583,7 @@ namespace DCTBFightingSimulator
             "PSYCHIC",
             "MORTAL",
             "GHOST"});
-            this.CCc1.Location = new System.Drawing.Point(231, 150);
+            this.CCc1.Location = new System.Drawing.Point(89, 130);
             this.CCc1.Name = "CCc1";
             this.CCc1.Size = new System.Drawing.Size(100, 21);
             this.CCc1.TabIndex = 23;
@@ -587,7 +591,7 @@ namespace DCTBFightingSimulator
             // CCL4
             // 
             this.CCL4.AutoSize = true;
-            this.CCL4.Location = new System.Drawing.Point(165, 153);
+            this.CCL4.Location = new System.Drawing.Point(23, 133);
             this.CCL4.Name = "CCL4";
             this.CCL4.Size = new System.Drawing.Size(31, 13);
             this.CCL4.TabIndex = 24;
@@ -595,7 +599,7 @@ namespace DCTBFightingSimulator
             // 
             // CCN1
             // 
-            this.CCN1.Location = new System.Drawing.Point(231, 203);
+            this.CCN1.Location = new System.Drawing.Point(89, 183);
             this.CCN1.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -608,7 +612,7 @@ namespace DCTBFightingSimulator
             // CCL5
             // 
             this.CCL5.AutoSize = true;
-            this.CCL5.Location = new System.Drawing.Point(165, 205);
+            this.CCL5.Location = new System.Drawing.Point(23, 185);
             this.CCL5.Name = "CCL5";
             this.CCL5.Size = new System.Drawing.Size(28, 13);
             this.CCL5.TabIndex = 26;
@@ -616,7 +620,7 @@ namespace DCTBFightingSimulator
             // 
             // CCN2
             // 
-            this.CCN2.Location = new System.Drawing.Point(231, 229);
+            this.CCN2.Location = new System.Drawing.Point(89, 209);
             this.CCN2.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -628,7 +632,7 @@ namespace DCTBFightingSimulator
             // 
             // CCN3
             // 
-            this.CCN3.Location = new System.Drawing.Point(231, 255);
+            this.CCN3.Location = new System.Drawing.Point(89, 235);
             this.CCN3.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -640,7 +644,7 @@ namespace DCTBFightingSimulator
             // 
             // CCN4
             // 
-            this.CCN4.Location = new System.Drawing.Point(231, 281);
+            this.CCN4.Location = new System.Drawing.Point(89, 261);
             this.CCN4.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -653,7 +657,7 @@ namespace DCTBFightingSimulator
             // CCL6
             // 
             this.CCL6.AutoSize = true;
-            this.CCL6.Location = new System.Drawing.Point(165, 231);
+            this.CCL6.Location = new System.Drawing.Point(23, 211);
             this.CCL6.Name = "CCL6";
             this.CCL6.Size = new System.Drawing.Size(28, 13);
             this.CCL6.TabIndex = 30;
@@ -662,7 +666,7 @@ namespace DCTBFightingSimulator
             // CCL7
             // 
             this.CCL7.AutoSize = true;
-            this.CCL7.Location = new System.Drawing.Point(165, 257);
+            this.CCL7.Location = new System.Drawing.Point(23, 237);
             this.CCL7.Name = "CCL7";
             this.CCL7.Size = new System.Drawing.Size(28, 13);
             this.CCL7.TabIndex = 31;
@@ -671,7 +675,7 @@ namespace DCTBFightingSimulator
             // CCL8
             // 
             this.CCL8.AutoSize = true;
-            this.CCL8.Location = new System.Drawing.Point(165, 283);
+            this.CCL8.Location = new System.Drawing.Point(23, 263);
             this.CCL8.Name = "CCL8";
             this.CCL8.Size = new System.Drawing.Size(30, 13);
             this.CCL8.TabIndex = 32;
@@ -681,7 +685,7 @@ namespace DCTBFightingSimulator
             // 
             this.CCL9.AutoSize = true;
             this.CCL9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.CCL9.Location = new System.Drawing.Point(162, 304);
+            this.CCL9.Location = new System.Drawing.Point(20, 284);
             this.CCL9.Name = "CCL9";
             this.CCL9.Size = new System.Drawing.Size(86, 17);
             this.CCL9.TabIndex = 33;
@@ -690,7 +694,7 @@ namespace DCTBFightingSimulator
             // CCL10
             // 
             this.CCL10.AutoSize = true;
-            this.CCL10.Location = new System.Drawing.Point(162, 327);
+            this.CCL10.Location = new System.Drawing.Point(20, 307);
             this.CCL10.Name = "CCL10";
             this.CCL10.Size = new System.Drawing.Size(47, 13);
             this.CCL10.TabIndex = 34;
@@ -706,7 +710,7 @@ namespace DCTBFightingSimulator
             this.CCc2.Items.AddRange(new object[] {
             "NO",
             "YES"});
-            this.CCc2.Location = new System.Drawing.Point(231, 324);
+            this.CCc2.Location = new System.Drawing.Point(89, 304);
             this.CCc2.Name = "CCc2";
             this.CCc2.Size = new System.Drawing.Size(100, 21);
             this.CCc2.TabIndex = 35;
@@ -721,7 +725,7 @@ namespace DCTBFightingSimulator
             this.CCc3.Items.AddRange(new object[] {
             "NO",
             "YES"});
-            this.CCc3.Location = new System.Drawing.Point(231, 351);
+            this.CCc3.Location = new System.Drawing.Point(89, 331);
             this.CCc3.Name = "CCc3";
             this.CCc3.Size = new System.Drawing.Size(100, 21);
             this.CCc3.TabIndex = 36;
@@ -729,7 +733,7 @@ namespace DCTBFightingSimulator
             // CCL11
             // 
             this.CCL11.AutoSize = true;
-            this.CCL11.Location = new System.Drawing.Point(162, 354);
+            this.CCL11.Location = new System.Drawing.Point(20, 334);
             this.CCL11.Name = "CCL11";
             this.CCL11.Size = new System.Drawing.Size(51, 13);
             this.CCL11.TabIndex = 37;
@@ -745,7 +749,7 @@ namespace DCTBFightingSimulator
             this.CCc4.Items.AddRange(new object[] {
             "NO",
             "YES"});
-            this.CCc4.Location = new System.Drawing.Point(231, 378);
+            this.CCc4.Location = new System.Drawing.Point(89, 358);
             this.CCc4.Name = "CCc4";
             this.CCc4.Size = new System.Drawing.Size(100, 21);
             this.CCc4.TabIndex = 38;
@@ -760,7 +764,7 @@ namespace DCTBFightingSimulator
             this.CCc5.Items.AddRange(new object[] {
             "NO",
             "YES"});
-            this.CCc5.Location = new System.Drawing.Point(231, 405);
+            this.CCc5.Location = new System.Drawing.Point(89, 385);
             this.CCc5.Name = "CCc5";
             this.CCc5.Size = new System.Drawing.Size(100, 21);
             this.CCc5.TabIndex = 39;
@@ -775,7 +779,7 @@ namespace DCTBFightingSimulator
             this.CCc6.Items.AddRange(new object[] {
             "NO",
             "YES"});
-            this.CCc6.Location = new System.Drawing.Point(231, 432);
+            this.CCc6.Location = new System.Drawing.Point(89, 412);
             this.CCc6.Name = "CCc6";
             this.CCc6.Size = new System.Drawing.Size(100, 21);
             this.CCc6.TabIndex = 40;
@@ -790,7 +794,7 @@ namespace DCTBFightingSimulator
             this.CCc7.Items.AddRange(new object[] {
             "NO",
             "YES"});
-            this.CCc7.Location = new System.Drawing.Point(231, 459);
+            this.CCc7.Location = new System.Drawing.Point(89, 439);
             this.CCc7.Name = "CCc7";
             this.CCc7.Size = new System.Drawing.Size(100, 21);
             this.CCc7.TabIndex = 41;
@@ -805,7 +809,7 @@ namespace DCTBFightingSimulator
             this.CCc8.Items.AddRange(new object[] {
             "NO",
             "YES"});
-            this.CCc8.Location = new System.Drawing.Point(231, 486);
+            this.CCc8.Location = new System.Drawing.Point(89, 466);
             this.CCc8.Name = "CCc8";
             this.CCc8.Size = new System.Drawing.Size(100, 21);
             this.CCc8.TabIndex = 42;
@@ -820,7 +824,7 @@ namespace DCTBFightingSimulator
             this.CCc9.Items.AddRange(new object[] {
             "NO",
             "YES"});
-            this.CCc9.Location = new System.Drawing.Point(231, 513);
+            this.CCc9.Location = new System.Drawing.Point(89, 493);
             this.CCc9.Name = "CCc9";
             this.CCc9.Size = new System.Drawing.Size(100, 21);
             this.CCc9.TabIndex = 43;
@@ -835,7 +839,7 @@ namespace DCTBFightingSimulator
             this.CCc10.Items.AddRange(new object[] {
             "NO",
             "YES"});
-            this.CCc10.Location = new System.Drawing.Point(231, 540);
+            this.CCc10.Location = new System.Drawing.Point(89, 520);
             this.CCc10.Name = "CCc10";
             this.CCc10.Size = new System.Drawing.Size(100, 21);
             this.CCc10.TabIndex = 44;
@@ -843,7 +847,7 @@ namespace DCTBFightingSimulator
             // CCL12
             // 
             this.CCL12.AutoSize = true;
-            this.CCL12.Location = new System.Drawing.Point(162, 381);
+            this.CCL12.Location = new System.Drawing.Point(20, 361);
             this.CCL12.Name = "CCL12";
             this.CCL12.Size = new System.Drawing.Size(41, 13);
             this.CCL12.TabIndex = 46;
@@ -852,7 +856,7 @@ namespace DCTBFightingSimulator
             // CCL13
             // 
             this.CCL13.AutoSize = true;
-            this.CCL13.Location = new System.Drawing.Point(162, 408);
+            this.CCL13.Location = new System.Drawing.Point(20, 388);
             this.CCL13.Name = "CCL13";
             this.CCL13.Size = new System.Drawing.Size(45, 13);
             this.CCL13.TabIndex = 47;
@@ -861,7 +865,7 @@ namespace DCTBFightingSimulator
             // CCL14
             // 
             this.CCL14.AutoSize = true;
-            this.CCL14.Location = new System.Drawing.Point(165, 435);
+            this.CCL14.Location = new System.Drawing.Point(23, 415);
             this.CCL14.Name = "CCL14";
             this.CCL14.Size = new System.Drawing.Size(39, 13);
             this.CCL14.TabIndex = 48;
@@ -871,7 +875,7 @@ namespace DCTBFightingSimulator
             // CCL15
             // 
             this.CCL15.AutoSize = true;
-            this.CCL15.Location = new System.Drawing.Point(162, 462);
+            this.CCL15.Location = new System.Drawing.Point(20, 442);
             this.CCL15.Name = "CCL15";
             this.CCL15.Size = new System.Drawing.Size(48, 13);
             this.CCL15.TabIndex = 49;
@@ -880,7 +884,7 @@ namespace DCTBFightingSimulator
             // CCL16
             // 
             this.CCL16.AutoSize = true;
-            this.CCL16.Location = new System.Drawing.Point(162, 489);
+            this.CCL16.Location = new System.Drawing.Point(20, 469);
             this.CCL16.Name = "CCL16";
             this.CCL16.Size = new System.Drawing.Size(52, 13);
             this.CCL16.TabIndex = 50;
@@ -889,7 +893,7 @@ namespace DCTBFightingSimulator
             // CCL17
             // 
             this.CCL17.AutoSize = true;
-            this.CCL17.Location = new System.Drawing.Point(162, 516);
+            this.CCL17.Location = new System.Drawing.Point(20, 496);
             this.CCL17.Name = "CCL17";
             this.CCL17.Size = new System.Drawing.Size(36, 13);
             this.CCL17.TabIndex = 51;
@@ -898,7 +902,7 @@ namespace DCTBFightingSimulator
             // CCL18
             // 
             this.CCL18.AutoSize = true;
-            this.CCL18.Location = new System.Drawing.Point(161, 543);
+            this.CCL18.Location = new System.Drawing.Point(19, 523);
             this.CCL18.Name = "CCL18";
             this.CCL18.Size = new System.Drawing.Size(32, 13);
             this.CCL18.TabIndex = 52;
@@ -908,7 +912,7 @@ namespace DCTBFightingSimulator
             // 
             this.CCP1.Image = ((System.Drawing.Image)(resources.GetObject("CCP1.Image")));
             this.CCP1.InitialImage = null;
-            this.CCP1.Location = new System.Drawing.Point(347, 80);
+            this.CCP1.Location = new System.Drawing.Point(204, 60);
             this.CCP1.Name = "CCP1";
             this.CCP1.Size = new System.Drawing.Size(10, 564);
             this.CCP1.TabIndex = 53;
@@ -918,7 +922,7 @@ namespace DCTBFightingSimulator
             // 
             this.CCL19.AutoSize = true;
             this.CCL19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.CCL19.Location = new System.Drawing.Point(363, 80);
+            this.CCL19.Location = new System.Drawing.Point(220, 60);
             this.CCL19.Name = "CCL19";
             this.CCL19.Size = new System.Drawing.Size(60, 17);
             this.CCL19.TabIndex = 54;
@@ -927,7 +931,7 @@ namespace DCTBFightingSimulator
             // CCL20
             // 
             this.CCL20.AutoSize = true;
-            this.CCL20.Location = new System.Drawing.Point(363, 103);
+            this.CCL20.Location = new System.Drawing.Point(220, 83);
             this.CCL20.Name = "CCL20";
             this.CCL20.Size = new System.Drawing.Size(35, 13);
             this.CCL20.TabIndex = 55;
@@ -935,7 +939,7 @@ namespace DCTBFightingSimulator
             // 
             // CCT3
             // 
-            this.CCT3.Location = new System.Drawing.Point(431, 100);
+            this.CCT3.Location = new System.Drawing.Point(288, 80);
             this.CCT3.Name = "CCT3";
             this.CCT3.Size = new System.Drawing.Size(100, 20);
             this.CCT3.TabIndex = 56;
@@ -943,7 +947,7 @@ namespace DCTBFightingSimulator
             // CCL21
             // 
             this.CCL21.AutoSize = true;
-            this.CCL21.Location = new System.Drawing.Point(363, 128);
+            this.CCL21.Location = new System.Drawing.Point(220, 108);
             this.CCL21.Name = "CCL21";
             this.CCL21.Size = new System.Drawing.Size(60, 13);
             this.CCL21.TabIndex = 57;
@@ -951,7 +955,7 @@ namespace DCTBFightingSimulator
             // 
             // CCT4
             // 
-            this.CCT4.Location = new System.Drawing.Point(431, 126);
+            this.CCT4.Location = new System.Drawing.Point(288, 106);
             this.CCT4.Name = "CCT4";
             this.CCT4.Size = new System.Drawing.Size(100, 20);
             this.CCT4.TabIndex = 58;
@@ -959,7 +963,7 @@ namespace DCTBFightingSimulator
             // CCL22
             // 
             this.CCL22.AutoSize = true;
-            this.CCL22.Location = new System.Drawing.Point(363, 153);
+            this.CCL22.Location = new System.Drawing.Point(220, 133);
             this.CCL22.Name = "CCL22";
             this.CCL22.Size = new System.Drawing.Size(31, 13);
             this.CCL22.TabIndex = 59;
@@ -986,7 +990,7 @@ namespace DCTBFightingSimulator
             "PSYCHIC",
             "MORTAL",
             "GHOST"});
-            this.CCc11.Location = new System.Drawing.Point(431, 152);
+            this.CCc11.Location = new System.Drawing.Point(288, 132);
             this.CCc11.Name = "CCc11";
             this.CCc11.Size = new System.Drawing.Size(100, 21);
             this.CCc11.TabIndex = 60;
@@ -994,7 +998,7 @@ namespace DCTBFightingSimulator
             // CCN5
             // 
             this.CCN5.DecimalPlaces = 2;
-            this.CCN5.Location = new System.Drawing.Point(431, 179);
+            this.CCN5.Location = new System.Drawing.Point(288, 159);
             this.CCN5.Name = "CCN5";
             this.CCN5.Size = new System.Drawing.Size(100, 20);
             this.CCN5.TabIndex = 61;
@@ -1002,7 +1006,7 @@ namespace DCTBFightingSimulator
             // CCL23
             // 
             this.CCL23.AutoSize = true;
-            this.CCL23.Location = new System.Drawing.Point(363, 181);
+            this.CCL23.Location = new System.Drawing.Point(220, 161);
             this.CCL23.Name = "CCL23";
             this.CCL23.Size = new System.Drawing.Size(54, 13);
             this.CCL23.TabIndex = 62;
@@ -1011,7 +1015,7 @@ namespace DCTBFightingSimulator
             // CCL24
             // 
             this.CCL24.AutoSize = true;
-            this.CCL24.Location = new System.Drawing.Point(363, 207);
+            this.CCL24.Location = new System.Drawing.Point(220, 187);
             this.CCL24.Name = "CCL24";
             this.CCL24.Size = new System.Drawing.Size(28, 13);
             this.CCL24.TabIndex = 63;
@@ -1019,7 +1023,7 @@ namespace DCTBFightingSimulator
             // 
             // CCN6
             // 
-            this.CCN6.Location = new System.Drawing.Point(431, 205);
+            this.CCN6.Location = new System.Drawing.Point(288, 185);
             this.CCN6.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -1032,7 +1036,7 @@ namespace DCTBFightingSimulator
             // CCL25
             // 
             this.CCL25.AutoSize = true;
-            this.CCL25.Location = new System.Drawing.Point(363, 232);
+            this.CCL25.Location = new System.Drawing.Point(220, 212);
             this.CCL25.Name = "CCL25";
             this.CCL25.Size = new System.Drawing.Size(43, 13);
             this.CCL25.TabIndex = 65;
@@ -1040,7 +1044,7 @@ namespace DCTBFightingSimulator
             // 
             // CCN7
             // 
-            this.CCN7.Location = new System.Drawing.Point(431, 231);
+            this.CCN7.Location = new System.Drawing.Point(288, 211);
             this.CCN7.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -1057,7 +1061,7 @@ namespace DCTBFightingSimulator
             // 
             // CCN8
             // 
-            this.CCN8.Location = new System.Drawing.Point(431, 257);
+            this.CCN8.Location = new System.Drawing.Point(288, 237);
             this.CCN8.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -1074,7 +1078,7 @@ namespace DCTBFightingSimulator
             // 
             // CCN9
             // 
-            this.CCN9.Location = new System.Drawing.Point(431, 283);
+            this.CCN9.Location = new System.Drawing.Point(288, 263);
             this.CCN9.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -1091,7 +1095,7 @@ namespace DCTBFightingSimulator
             // 
             // CCN10
             // 
-            this.CCN10.Location = new System.Drawing.Point(431, 309);
+            this.CCN10.Location = new System.Drawing.Point(288, 289);
             this.CCN10.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -1108,7 +1112,7 @@ namespace DCTBFightingSimulator
             // 
             // CCN11
             // 
-            this.CCN11.Location = new System.Drawing.Point(431, 335);
+            this.CCN11.Location = new System.Drawing.Point(288, 315);
             this.CCN11.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -1126,7 +1130,7 @@ namespace DCTBFightingSimulator
             // CCL26
             // 
             this.CCL26.AutoSize = true;
-            this.CCL26.Location = new System.Drawing.Point(363, 259);
+            this.CCL26.Location = new System.Drawing.Point(220, 239);
             this.CCL26.Name = "CCL26";
             this.CCL26.Size = new System.Drawing.Size(55, 13);
             this.CCL26.TabIndex = 71;
@@ -1135,7 +1139,7 @@ namespace DCTBFightingSimulator
             // CCL27
             // 
             this.CCL27.AutoSize = true;
-            this.CCL27.Location = new System.Drawing.Point(363, 285);
+            this.CCL27.Location = new System.Drawing.Point(220, 265);
             this.CCL27.Name = "CCL27";
             this.CCL27.Size = new System.Drawing.Size(55, 13);
             this.CCL27.TabIndex = 72;
@@ -1144,7 +1148,7 @@ namespace DCTBFightingSimulator
             // CCL29
             // 
             this.CCL29.AutoSize = true;
-            this.CCL29.Location = new System.Drawing.Point(363, 311);
+            this.CCL29.Location = new System.Drawing.Point(220, 291);
             this.CCL29.Name = "CCL29";
             this.CCL29.Size = new System.Drawing.Size(55, 13);
             this.CCL29.TabIndex = 73;
@@ -1153,7 +1157,7 @@ namespace DCTBFightingSimulator
             // CCL30
             // 
             this.CCL30.AutoSize = true;
-            this.CCL30.Location = new System.Drawing.Point(363, 337);
+            this.CCL30.Location = new System.Drawing.Point(220, 317);
             this.CCL30.Name = "CCL30";
             this.CCL30.Size = new System.Drawing.Size(57, 13);
             this.CCL30.TabIndex = 74;
@@ -1169,7 +1173,7 @@ namespace DCTBFightingSimulator
             this.CCc12.Items.AddRange(new object[] {
             "NO",
             "YES"});
-            this.CCc12.Location = new System.Drawing.Point(431, 361);
+            this.CCc12.Location = new System.Drawing.Point(288, 341);
             this.CCc12.Name = "CCc12";
             this.CCc12.Size = new System.Drawing.Size(100, 21);
             this.CCc12.TabIndex = 75;
@@ -1184,7 +1188,7 @@ namespace DCTBFightingSimulator
             this.CCc13.Items.AddRange(new object[] {
             "NO",
             "YES"});
-            this.CCc13.Location = new System.Drawing.Point(431, 388);
+            this.CCc13.Location = new System.Drawing.Point(288, 368);
             this.CCc13.Name = "CCc13";
             this.CCc13.Size = new System.Drawing.Size(100, 21);
             this.CCc13.TabIndex = 76;
@@ -1199,7 +1203,7 @@ namespace DCTBFightingSimulator
             this.CCc14.Items.AddRange(new object[] {
             "NO",
             "YES"});
-            this.CCc14.Location = new System.Drawing.Point(431, 415);
+            this.CCc14.Location = new System.Drawing.Point(288, 395);
             this.CCc14.Name = "CCc14";
             this.CCc14.Size = new System.Drawing.Size(100, 21);
             this.CCc14.TabIndex = 77;
@@ -1214,7 +1218,7 @@ namespace DCTBFightingSimulator
             this.CCc15.Items.AddRange(new object[] {
             "NO",
             "YES"});
-            this.CCc15.Location = new System.Drawing.Point(431, 442);
+            this.CCc15.Location = new System.Drawing.Point(288, 422);
             this.CCc15.Name = "CCc15";
             this.CCc15.Size = new System.Drawing.Size(100, 21);
             this.CCc15.TabIndex = 78;
@@ -1229,7 +1233,7 @@ namespace DCTBFightingSimulator
             this.CCc16.Items.AddRange(new object[] {
             "NO",
             "YES"});
-            this.CCc16.Location = new System.Drawing.Point(431, 469);
+            this.CCc16.Location = new System.Drawing.Point(288, 449);
             this.CCc16.Name = "CCc16";
             this.CCc16.Size = new System.Drawing.Size(100, 21);
             this.CCc16.TabIndex = 79;
@@ -1244,7 +1248,7 @@ namespace DCTBFightingSimulator
             this.CCc17.Items.AddRange(new object[] {
             "NO",
             "YES"});
-            this.CCc17.Location = new System.Drawing.Point(431, 496);
+            this.CCc17.Location = new System.Drawing.Point(288, 476);
             this.CCc17.Name = "CCc17";
             this.CCc17.Size = new System.Drawing.Size(100, 21);
             this.CCc17.TabIndex = 80;
@@ -1259,7 +1263,7 @@ namespace DCTBFightingSimulator
             this.CCc18.Items.AddRange(new object[] {
             "NO",
             "YES"});
-            this.CCc18.Location = new System.Drawing.Point(431, 523);
+            this.CCc18.Location = new System.Drawing.Point(288, 503);
             this.CCc18.Name = "CCc18";
             this.CCc18.Size = new System.Drawing.Size(100, 21);
             this.CCc18.TabIndex = 81;
@@ -1274,7 +1278,7 @@ namespace DCTBFightingSimulator
             this.CCc19.Items.AddRange(new object[] {
             "NO",
             "YES"});
-            this.CCc19.Location = new System.Drawing.Point(431, 550);
+            this.CCc19.Location = new System.Drawing.Point(288, 530);
             this.CCc19.Name = "CCc19";
             this.CCc19.Size = new System.Drawing.Size(100, 21);
             this.CCc19.TabIndex = 82;
@@ -1289,7 +1293,7 @@ namespace DCTBFightingSimulator
             this.CCc20.Items.AddRange(new object[] {
             "NO",
             "YES"});
-            this.CCc20.Location = new System.Drawing.Point(431, 577);
+            this.CCc20.Location = new System.Drawing.Point(288, 557);
             this.CCc20.Name = "CCc20";
             this.CCc20.Size = new System.Drawing.Size(100, 21);
             this.CCc20.TabIndex = 83;
@@ -1297,7 +1301,7 @@ namespace DCTBFightingSimulator
             // CCL31
             // 
             this.CCL31.AutoSize = true;
-            this.CCL31.Location = new System.Drawing.Point(363, 364);
+            this.CCL31.Location = new System.Drawing.Point(220, 344);
             this.CCL31.Name = "CCL31";
             this.CCL31.Size = new System.Drawing.Size(29, 13);
             this.CCL31.TabIndex = 84;
@@ -1306,7 +1310,7 @@ namespace DCTBFightingSimulator
             // CCL32
             // 
             this.CCL32.AutoSize = true;
-            this.CCL32.Location = new System.Drawing.Point(363, 391);
+            this.CCL32.Location = new System.Drawing.Point(220, 371);
             this.CCL32.Name = "CCL32";
             this.CCL32.Size = new System.Drawing.Size(39, 13);
             this.CCL32.TabIndex = 85;
@@ -1315,7 +1319,7 @@ namespace DCTBFightingSimulator
             // CCL33
             // 
             this.CCL33.AutoSize = true;
-            this.CCL33.Location = new System.Drawing.Point(363, 418);
+            this.CCL33.Location = new System.Drawing.Point(220, 398);
             this.CCL33.Name = "CCL33";
             this.CCL33.Size = new System.Drawing.Size(29, 13);
             this.CCL33.TabIndex = 86;
@@ -1324,7 +1328,7 @@ namespace DCTBFightingSimulator
             // CCL34
             // 
             this.CCL34.AutoSize = true;
-            this.CCL34.Location = new System.Drawing.Point(363, 445);
+            this.CCL34.Location = new System.Drawing.Point(220, 425);
             this.CCL34.Name = "CCL34";
             this.CCL34.Size = new System.Drawing.Size(39, 13);
             this.CCL34.TabIndex = 87;
@@ -1333,7 +1337,7 @@ namespace DCTBFightingSimulator
             // CCL35
             // 
             this.CCL35.AutoSize = true;
-            this.CCL35.Location = new System.Drawing.Point(363, 472);
+            this.CCL35.Location = new System.Drawing.Point(220, 452);
             this.CCL35.Name = "CCL35";
             this.CCL35.Size = new System.Drawing.Size(39, 13);
             this.CCL35.TabIndex = 88;
@@ -1342,7 +1346,7 @@ namespace DCTBFightingSimulator
             // CCL36
             // 
             this.CCL36.AutoSize = true;
-            this.CCL36.Location = new System.Drawing.Point(363, 499);
+            this.CCL36.Location = new System.Drawing.Point(220, 479);
             this.CCL36.Name = "CCL36";
             this.CCL36.Size = new System.Drawing.Size(34, 13);
             this.CCL36.TabIndex = 89;
@@ -1351,7 +1355,7 @@ namespace DCTBFightingSimulator
             // CCL37
             // 
             this.CCL37.AutoSize = true;
-            this.CCL37.Location = new System.Drawing.Point(363, 526);
+            this.CCL37.Location = new System.Drawing.Point(220, 506);
             this.CCL37.Name = "CCL37";
             this.CCL37.Size = new System.Drawing.Size(43, 13);
             this.CCL37.TabIndex = 90;
@@ -1360,7 +1364,7 @@ namespace DCTBFightingSimulator
             // CCL38
             // 
             this.CCL38.AutoSize = true;
-            this.CCL38.Location = new System.Drawing.Point(363, 553);
+            this.CCL38.Location = new System.Drawing.Point(220, 533);
             this.CCL38.Name = "CCL38";
             this.CCL38.Size = new System.Drawing.Size(48, 13);
             this.CCL38.TabIndex = 91;
@@ -1369,7 +1373,7 @@ namespace DCTBFightingSimulator
             // CCL39
             // 
             this.CCL39.AutoSize = true;
-            this.CCL39.Location = new System.Drawing.Point(363, 580);
+            this.CCL39.Location = new System.Drawing.Point(220, 560);
             this.CCL39.Name = "CCL39";
             this.CCL39.Size = new System.Drawing.Size(32, 13);
             this.CCL39.TabIndex = 92;
@@ -1379,102 +1383,113 @@ namespace DCTBFightingSimulator
             // 
             this.CCP2.Image = ((System.Drawing.Image)(resources.GetObject("CCP2.Image")));
             this.CCP2.InitialImage = null;
-            this.CCP2.Location = new System.Drawing.Point(546, 79);
+            this.CCP2.Location = new System.Drawing.Point(404, 59);
             this.CCP2.Name = "CCP2";
             this.CCP2.Size = new System.Drawing.Size(10, 564);
             this.CCP2.TabIndex = 93;
             this.CCP2.TabStop = false;
+            this.CCP2.Click += new System.EventHandler(this.CCP2_Click);
             // 
             // CCL40
             // 
             this.CCL40.AutoSize = true;
             this.CCL40.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.CCL40.Location = new System.Drawing.Point(562, 80);
+            this.CCL40.Location = new System.Drawing.Point(420, 60);
             this.CCL40.Name = "CCL40";
             this.CCL40.Size = new System.Drawing.Size(60, 17);
             this.CCL40.TabIndex = 94;
             this.CCL40.Text = "MOVE 2";
+            this.CCL40.Click += new System.EventHandler(this.CCL40_Click);
             // 
             // CCL59
             // 
             this.CCL59.AutoSize = true;
-            this.CCL59.Location = new System.Drawing.Point(560, 580);
+            this.CCL59.Location = new System.Drawing.Point(418, 560);
             this.CCL59.Name = "CCL59";
             this.CCL59.Size = new System.Drawing.Size(32, 13);
             this.CCL59.TabIndex = 132;
             this.CCL59.Text = "Daze";
+            this.CCL59.Click += new System.EventHandler(this.CCL59_Click);
             // 
             // CCL58
             // 
             this.CCL58.AutoSize = true;
-            this.CCL58.Location = new System.Drawing.Point(560, 553);
+            this.CCL58.Location = new System.Drawing.Point(418, 533);
             this.CCL58.Name = "CCL58";
             this.CCL58.Size = new System.Drawing.Size(48, 13);
             this.CCL58.TabIndex = 131;
             this.CCL58.Text = "Weaken";
+            this.CCL58.Click += new System.EventHandler(this.CCL58_Click);
             // 
             // CCL57
             // 
             this.CCL57.AutoSize = true;
-            this.CCL57.Location = new System.Drawing.Point(560, 526);
+            this.CCL57.Location = new System.Drawing.Point(418, 506);
             this.CCL57.Name = "CCL57";
             this.CCL57.Size = new System.Drawing.Size(43, 13);
             this.CCL57.TabIndex = 130;
             this.CCL57.Text = "Stupefy";
+            this.CCL57.Click += new System.EventHandler(this.CCL57_Click);
             // 
             // CCL56
             // 
             this.CCL56.AutoSize = true;
-            this.CCL56.Location = new System.Drawing.Point(560, 499);
+            this.CCL56.Location = new System.Drawing.Point(418, 479);
             this.CCL56.Name = "CCL56";
             this.CCL56.Size = new System.Drawing.Size(34, 13);
             this.CCL56.TabIndex = 129;
             this.CCL56.Text = "Bleed";
+            this.CCL56.Click += new System.EventHandler(this.CCL56_Click);
             // 
             // CCL55
             // 
             this.CCL55.AutoSize = true;
-            this.CCL55.Location = new System.Drawing.Point(560, 472);
+            this.CCL55.Location = new System.Drawing.Point(418, 452);
             this.CCL55.Name = "CCL55";
             this.CCL55.Size = new System.Drawing.Size(39, 13);
             this.CCL55.TabIndex = 128;
             this.CCL55.Text = "Freeze";
+            this.CCL55.Click += new System.EventHandler(this.CCL55_Click);
             // 
             // CCL54
             // 
             this.CCL54.AutoSize = true;
-            this.CCL54.Location = new System.Drawing.Point(560, 445);
+            this.CCL54.Location = new System.Drawing.Point(418, 425);
             this.CCL54.Name = "CCL54";
             this.CCL54.Size = new System.Drawing.Size(39, 13);
             this.CCL54.TabIndex = 127;
             this.CCL54.Text = "Cripple";
+            this.CCL54.Click += new System.EventHandler(this.CCL54_Click);
             // 
             // CCL53
             // 
             this.CCL53.AutoSize = true;
-            this.CCL53.Location = new System.Drawing.Point(560, 418);
+            this.CCL53.Location = new System.Drawing.Point(418, 398);
             this.CCL53.Name = "CCL53";
             this.CCL53.Size = new System.Drawing.Size(29, 13);
             this.CCL53.TabIndex = 126;
             this.CCL53.Text = "Burn";
+            this.CCL53.Click += new System.EventHandler(this.CCL53_Click);
             // 
             // CCL52
             // 
             this.CCL52.AutoSize = true;
-            this.CCL52.Location = new System.Drawing.Point(560, 391);
+            this.CCL52.Location = new System.Drawing.Point(418, 371);
             this.CCL52.Name = "CCL52";
             this.CCL52.Size = new System.Drawing.Size(39, 13);
             this.CCL52.TabIndex = 125;
             this.CCL52.Text = "Poison";
+            this.CCL52.Click += new System.EventHandler(this.CCL52_Click);
             // 
             // CCL51
             // 
             this.CCL51.AutoSize = true;
-            this.CCL51.Location = new System.Drawing.Point(560, 364);
+            this.CCL51.Location = new System.Drawing.Point(418, 344);
             this.CCL51.Name = "CCL51";
             this.CCL51.Size = new System.Drawing.Size(29, 13);
             this.CCL51.TabIndex = 124;
             this.CCL51.Text = "Stun";
+            this.CCL51.Click += new System.EventHandler(this.CCL51_Click);
             // 
             // CCc29
             // 
@@ -1486,10 +1501,11 @@ namespace DCTBFightingSimulator
             this.CCc29.Items.AddRange(new object[] {
             "NO",
             "YES"});
-            this.CCc29.Location = new System.Drawing.Point(628, 577);
+            this.CCc29.Location = new System.Drawing.Point(486, 557);
             this.CCc29.Name = "CCc29";
             this.CCc29.Size = new System.Drawing.Size(100, 21);
             this.CCc29.TabIndex = 123;
+            this.CCc29.SelectedIndexChanged += new System.EventHandler(this.CCc29_SelectedIndexChanged);
             // 
             // CCc28
             // 
@@ -1501,10 +1517,11 @@ namespace DCTBFightingSimulator
             this.CCc28.Items.AddRange(new object[] {
             "NO",
             "YES"});
-            this.CCc28.Location = new System.Drawing.Point(628, 550);
+            this.CCc28.Location = new System.Drawing.Point(486, 530);
             this.CCc28.Name = "CCc28";
             this.CCc28.Size = new System.Drawing.Size(100, 21);
             this.CCc28.TabIndex = 122;
+            this.CCc28.SelectedIndexChanged += new System.EventHandler(this.CCc28_SelectedIndexChanged);
             // 
             // CCc27
             // 
@@ -1516,10 +1533,11 @@ namespace DCTBFightingSimulator
             this.CCc27.Items.AddRange(new object[] {
             "NO",
             "YES"});
-            this.CCc27.Location = new System.Drawing.Point(628, 523);
+            this.CCc27.Location = new System.Drawing.Point(486, 503);
             this.CCc27.Name = "CCc27";
             this.CCc27.Size = new System.Drawing.Size(100, 21);
             this.CCc27.TabIndex = 121;
+            this.CCc27.SelectedIndexChanged += new System.EventHandler(this.CCc27_SelectedIndexChanged);
             // 
             // CCc26
             // 
@@ -1531,10 +1549,11 @@ namespace DCTBFightingSimulator
             this.CCc26.Items.AddRange(new object[] {
             "NO",
             "YES"});
-            this.CCc26.Location = new System.Drawing.Point(628, 496);
+            this.CCc26.Location = new System.Drawing.Point(486, 476);
             this.CCc26.Name = "CCc26";
             this.CCc26.Size = new System.Drawing.Size(100, 21);
             this.CCc26.TabIndex = 120;
+            this.CCc26.SelectedIndexChanged += new System.EventHandler(this.CCc26_SelectedIndexChanged);
             // 
             // CCc25
             // 
@@ -1546,10 +1565,11 @@ namespace DCTBFightingSimulator
             this.CCc25.Items.AddRange(new object[] {
             "NO",
             "YES"});
-            this.CCc25.Location = new System.Drawing.Point(628, 469);
+            this.CCc25.Location = new System.Drawing.Point(486, 449);
             this.CCc25.Name = "CCc25";
             this.CCc25.Size = new System.Drawing.Size(100, 21);
             this.CCc25.TabIndex = 119;
+            this.CCc25.SelectedIndexChanged += new System.EventHandler(this.CCc25_SelectedIndexChanged);
             // 
             // CCc30
             // 
@@ -1561,10 +1581,11 @@ namespace DCTBFightingSimulator
             this.CCc30.Items.AddRange(new object[] {
             "NO",
             "YES"});
-            this.CCc30.Location = new System.Drawing.Point(628, 442);
+            this.CCc30.Location = new System.Drawing.Point(486, 422);
             this.CCc30.Name = "CCc30";
             this.CCc30.Size = new System.Drawing.Size(100, 21);
             this.CCc30.TabIndex = 118;
+            this.CCc30.SelectedIndexChanged += new System.EventHandler(this.CCc30_SelectedIndexChanged);
             // 
             // CCc24
             // 
@@ -1576,10 +1597,11 @@ namespace DCTBFightingSimulator
             this.CCc24.Items.AddRange(new object[] {
             "NO",
             "YES"});
-            this.CCc24.Location = new System.Drawing.Point(628, 415);
+            this.CCc24.Location = new System.Drawing.Point(486, 395);
             this.CCc24.Name = "CCc24";
             this.CCc24.Size = new System.Drawing.Size(100, 21);
             this.CCc24.TabIndex = 117;
+            this.CCc24.SelectedIndexChanged += new System.EventHandler(this.CCc24_SelectedIndexChanged);
             // 
             // CCc23
             // 
@@ -1591,10 +1613,11 @@ namespace DCTBFightingSimulator
             this.CCc23.Items.AddRange(new object[] {
             "NO",
             "YES"});
-            this.CCc23.Location = new System.Drawing.Point(628, 388);
+            this.CCc23.Location = new System.Drawing.Point(486, 368);
             this.CCc23.Name = "CCc23";
             this.CCc23.Size = new System.Drawing.Size(100, 21);
             this.CCc23.TabIndex = 116;
+            this.CCc23.SelectedIndexChanged += new System.EventHandler(this.CCc23_SelectedIndexChanged);
             // 
             // CCc22
             // 
@@ -1606,50 +1629,55 @@ namespace DCTBFightingSimulator
             this.CCc22.Items.AddRange(new object[] {
             "NO",
             "YES"});
-            this.CCc22.Location = new System.Drawing.Point(628, 361);
+            this.CCc22.Location = new System.Drawing.Point(486, 341);
             this.CCc22.Name = "CCc22";
             this.CCc22.Size = new System.Drawing.Size(100, 21);
             this.CCc22.TabIndex = 115;
+            this.CCc22.SelectedIndexChanged += new System.EventHandler(this.CCc22_SelectedIndexChanged);
             // 
             // CCL50
             // 
             this.CCL50.AutoSize = true;
-            this.CCL50.Location = new System.Drawing.Point(560, 337);
+            this.CCL50.Location = new System.Drawing.Point(418, 317);
             this.CCL50.Name = "CCL50";
             this.CCL50.Size = new System.Drawing.Size(57, 13);
             this.CCL50.TabIndex = 114;
             this.CCL50.Text = "DGE Mod.";
+            this.CCL50.Click += new System.EventHandler(this.CCL50_Click);
             // 
             // CCL49
             // 
             this.CCL49.AutoSize = true;
-            this.CCL49.Location = new System.Drawing.Point(560, 311);
+            this.CCL49.Location = new System.Drawing.Point(418, 291);
             this.CCL49.Name = "CCL49";
             this.CCL49.Size = new System.Drawing.Size(55, 13);
             this.CCL49.TabIndex = 113;
             this.CCL49.Text = "ACC Mod.";
+            this.CCL49.Click += new System.EventHandler(this.CCL49_Click);
             // 
             // CCL48
             // 
             this.CCL48.AutoSize = true;
-            this.CCL48.Location = new System.Drawing.Point(560, 285);
+            this.CCL48.Location = new System.Drawing.Point(418, 265);
             this.CCL48.Name = "CCL48";
             this.CCL48.Size = new System.Drawing.Size(55, 13);
             this.CCL48.TabIndex = 112;
             this.CCL48.Text = "DEF Mod.";
+            this.CCL48.Click += new System.EventHandler(this.CCL48_Click);
             // 
             // CCL47
             // 
             this.CCL47.AutoSize = true;
-            this.CCL47.Location = new System.Drawing.Point(560, 259);
+            this.CCL47.Location = new System.Drawing.Point(418, 239);
             this.CCL47.Name = "CCL47";
             this.CCL47.Size = new System.Drawing.Size(55, 13);
             this.CCL47.TabIndex = 111;
             this.CCL47.Text = "ATK Mod.";
+            this.CCL47.Click += new System.EventHandler(this.CCL47_Click);
             // 
             // CCN18
             // 
-            this.CCN18.Location = new System.Drawing.Point(628, 335);
+            this.CCN18.Location = new System.Drawing.Point(486, 315);
             this.CCN18.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -1663,10 +1691,11 @@ namespace DCTBFightingSimulator
             this.CCN18.Name = "CCN18";
             this.CCN18.Size = new System.Drawing.Size(100, 20);
             this.CCN18.TabIndex = 110;
+            this.CCN18.ValueChanged += new System.EventHandler(this.CCN18_ValueChanged);
             // 
             // CCN17
             // 
-            this.CCN17.Location = new System.Drawing.Point(628, 309);
+            this.CCN17.Location = new System.Drawing.Point(486, 289);
             this.CCN17.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -1680,10 +1709,11 @@ namespace DCTBFightingSimulator
             this.CCN17.Name = "CCN17";
             this.CCN17.Size = new System.Drawing.Size(100, 20);
             this.CCN17.TabIndex = 109;
+            this.CCN17.ValueChanged += new System.EventHandler(this.CCN17_ValueChanged);
             // 
             // CCN16
             // 
-            this.CCN16.Location = new System.Drawing.Point(628, 283);
+            this.CCN16.Location = new System.Drawing.Point(486, 263);
             this.CCN16.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -1697,10 +1727,11 @@ namespace DCTBFightingSimulator
             this.CCN16.Name = "CCN16";
             this.CCN16.Size = new System.Drawing.Size(100, 20);
             this.CCN16.TabIndex = 108;
+            this.CCN16.ValueChanged += new System.EventHandler(this.CCN16_ValueChanged);
             // 
             // CCN15
             // 
-            this.CCN15.Location = new System.Drawing.Point(628, 257);
+            this.CCN15.Location = new System.Drawing.Point(486, 237);
             this.CCN15.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -1714,10 +1745,11 @@ namespace DCTBFightingSimulator
             this.CCN15.Name = "CCN15";
             this.CCN15.Size = new System.Drawing.Size(100, 20);
             this.CCN15.TabIndex = 107;
+            this.CCN15.ValueChanged += new System.EventHandler(this.CCN15_ValueChanged);
             // 
             // CCN14
             // 
-            this.CCN14.Location = new System.Drawing.Point(628, 231);
+            this.CCN14.Location = new System.Drawing.Point(486, 211);
             this.CCN14.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -1731,19 +1763,21 @@ namespace DCTBFightingSimulator
             this.CCN14.Name = "CCN14";
             this.CCN14.Size = new System.Drawing.Size(100, 20);
             this.CCN14.TabIndex = 106;
+            this.CCN14.ValueChanged += new System.EventHandler(this.CCN14_ValueChanged);
             // 
             // CCL46
             // 
             this.CCL46.AutoSize = true;
-            this.CCL46.Location = new System.Drawing.Point(560, 232);
+            this.CCL46.Location = new System.Drawing.Point(418, 212);
             this.CCL46.Name = "CCL46";
             this.CCL46.Size = new System.Drawing.Size(43, 13);
             this.CCL46.TabIndex = 105;
             this.CCL46.Text = "Healing";
+            this.CCL46.Click += new System.EventHandler(this.CCL46_Click);
             // 
             // CCN13
             // 
-            this.CCN13.Location = new System.Drawing.Point(628, 205);
+            this.CCN13.Location = new System.Drawing.Point(486, 185);
             this.CCN13.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -1752,32 +1786,36 @@ namespace DCTBFightingSimulator
             this.CCN13.Name = "CCN13";
             this.CCN13.Size = new System.Drawing.Size(100, 20);
             this.CCN13.TabIndex = 104;
+            this.CCN13.ValueChanged += new System.EventHandler(this.CCN13_ValueChanged);
             // 
             // CCL45
             // 
             this.CCL45.AutoSize = true;
-            this.CCL45.Location = new System.Drawing.Point(560, 207);
+            this.CCL45.Location = new System.Drawing.Point(418, 187);
             this.CCL45.Name = "CCL45";
             this.CCL45.Size = new System.Drawing.Size(28, 13);
             this.CCL45.TabIndex = 103;
             this.CCL45.Text = "ACC";
+            this.CCL45.Click += new System.EventHandler(this.CCL45_Click);
             // 
             // CCL44
             // 
             this.CCL44.AutoSize = true;
-            this.CCL44.Location = new System.Drawing.Point(560, 181);
+            this.CCL44.Location = new System.Drawing.Point(418, 161);
             this.CCL44.Name = "CCL44";
             this.CCL44.Size = new System.Drawing.Size(54, 13);
             this.CCL44.TabIndex = 102;
             this.CCL44.Text = "ATK Mult.";
+            this.CCL44.Click += new System.EventHandler(this.CCL44_Click);
             // 
             // CCN12
             // 
             this.CCN12.DecimalPlaces = 2;
-            this.CCN12.Location = new System.Drawing.Point(628, 179);
+            this.CCN12.Location = new System.Drawing.Point(486, 159);
             this.CCN12.Name = "CCN12";
             this.CCN12.Size = new System.Drawing.Size(100, 20);
             this.CCN12.TabIndex = 101;
+            this.CCN12.ValueChanged += new System.EventHandler(this.CCN12_ValueChanged);
             // 
             // CCc21
             // 
@@ -1800,57 +1838,63 @@ namespace DCTBFightingSimulator
             "PSYCHIC",
             "MORTAL",
             "GHOST"});
-            this.CCc21.Location = new System.Drawing.Point(628, 152);
+            this.CCc21.Location = new System.Drawing.Point(486, 132);
             this.CCc21.Name = "CCc21";
             this.CCc21.Size = new System.Drawing.Size(100, 21);
             this.CCc21.TabIndex = 100;
+            this.CCc21.SelectedIndexChanged += new System.EventHandler(this.CCc21_SelectedIndexChanged);
             // 
             // CCL43
             // 
             this.CCL43.AutoSize = true;
-            this.CCL43.Location = new System.Drawing.Point(560, 153);
+            this.CCL43.Location = new System.Drawing.Point(418, 133);
             this.CCL43.Name = "CCL43";
             this.CCL43.Size = new System.Drawing.Size(31, 13);
             this.CCL43.TabIndex = 99;
             this.CCL43.Text = "Type";
+            this.CCL43.Click += new System.EventHandler(this.CCL43_Click);
             // 
             // CCT6
             // 
-            this.CCT6.Location = new System.Drawing.Point(628, 126);
+            this.CCT6.Location = new System.Drawing.Point(486, 106);
             this.CCT6.Name = "CCT6";
             this.CCT6.Size = new System.Drawing.Size(100, 20);
             this.CCT6.TabIndex = 98;
+            this.CCT6.TextChanged += new System.EventHandler(this.CCT6_TextChanged);
             // 
             // CCL42
             // 
             this.CCL42.AutoSize = true;
-            this.CCL42.Location = new System.Drawing.Point(560, 128);
+            this.CCL42.Location = new System.Drawing.Point(418, 108);
             this.CCL42.Name = "CCL42";
             this.CCL42.Size = new System.Drawing.Size(60, 13);
             this.CCL42.TabIndex = 97;
             this.CCL42.Text = "Description";
+            this.CCL42.Click += new System.EventHandler(this.CCL42_Click);
             // 
             // CCT5
             // 
-            this.CCT5.Location = new System.Drawing.Point(628, 100);
+            this.CCT5.Location = new System.Drawing.Point(486, 80);
             this.CCT5.Name = "CCT5";
             this.CCT5.Size = new System.Drawing.Size(100, 20);
             this.CCT5.TabIndex = 96;
+            this.CCT5.TextChanged += new System.EventHandler(this.CCT5_TextChanged);
             // 
             // CCL41
             // 
             this.CCL41.AutoSize = true;
-            this.CCL41.Location = new System.Drawing.Point(560, 103);
+            this.CCL41.Location = new System.Drawing.Point(418, 83);
             this.CCL41.Name = "CCL41";
             this.CCL41.Size = new System.Drawing.Size(35, 13);
             this.CCL41.TabIndex = 95;
             this.CCL41.Text = "Name";
+            this.CCL41.Click += new System.EventHandler(this.CCL41_Click);
             // 
             // CCP3
             // 
             this.CCP3.Image = ((System.Drawing.Image)(resources.GetObject("CCP3.Image")));
             this.CCP3.InitialImage = null;
-            this.CCP3.Location = new System.Drawing.Point(743, 80);
+            this.CCP3.Location = new System.Drawing.Point(602, 60);
             this.CCP3.Name = "CCP3";
             this.CCP3.Size = new System.Drawing.Size(10, 564);
             this.CCP3.TabIndex = 133;
@@ -1860,7 +1904,7 @@ namespace DCTBFightingSimulator
             // 
             this.CCP4.Image = ((System.Drawing.Image)(resources.GetObject("CCP4.Image")));
             this.CCP4.InitialImage = null;
-            this.CCP4.Location = new System.Drawing.Point(942, 80);
+            this.CCP4.Location = new System.Drawing.Point(801, 60);
             this.CCP4.Name = "CCP4";
             this.CCP4.Size = new System.Drawing.Size(10, 564);
             this.CCP4.TabIndex = 173;
@@ -1869,7 +1913,7 @@ namespace DCTBFightingSimulator
             // CCL79
             // 
             this.CCL79.AutoSize = true;
-            this.CCL79.Location = new System.Drawing.Point(759, 580);
+            this.CCL79.Location = new System.Drawing.Point(618, 560);
             this.CCL79.Name = "CCL79";
             this.CCL79.Size = new System.Drawing.Size(32, 13);
             this.CCL79.TabIndex = 172;
@@ -1878,7 +1922,7 @@ namespace DCTBFightingSimulator
             // CCL78
             // 
             this.CCL78.AutoSize = true;
-            this.CCL78.Location = new System.Drawing.Point(759, 553);
+            this.CCL78.Location = new System.Drawing.Point(618, 533);
             this.CCL78.Name = "CCL78";
             this.CCL78.Size = new System.Drawing.Size(48, 13);
             this.CCL78.TabIndex = 171;
@@ -1887,7 +1931,7 @@ namespace DCTBFightingSimulator
             // CCL77
             // 
             this.CCL77.AutoSize = true;
-            this.CCL77.Location = new System.Drawing.Point(759, 526);
+            this.CCL77.Location = new System.Drawing.Point(618, 506);
             this.CCL77.Name = "CCL77";
             this.CCL77.Size = new System.Drawing.Size(43, 13);
             this.CCL77.TabIndex = 170;
@@ -1896,7 +1940,7 @@ namespace DCTBFightingSimulator
             // CCL76
             // 
             this.CCL76.AutoSize = true;
-            this.CCL76.Location = new System.Drawing.Point(759, 499);
+            this.CCL76.Location = new System.Drawing.Point(618, 479);
             this.CCL76.Name = "CCL76";
             this.CCL76.Size = new System.Drawing.Size(34, 13);
             this.CCL76.TabIndex = 169;
@@ -1905,7 +1949,7 @@ namespace DCTBFightingSimulator
             // CCL75
             // 
             this.CCL75.AutoSize = true;
-            this.CCL75.Location = new System.Drawing.Point(759, 472);
+            this.CCL75.Location = new System.Drawing.Point(618, 452);
             this.CCL75.Name = "CCL75";
             this.CCL75.Size = new System.Drawing.Size(39, 13);
             this.CCL75.TabIndex = 168;
@@ -1914,7 +1958,7 @@ namespace DCTBFightingSimulator
             // CCL74
             // 
             this.CCL74.AutoSize = true;
-            this.CCL74.Location = new System.Drawing.Point(759, 445);
+            this.CCL74.Location = new System.Drawing.Point(618, 425);
             this.CCL74.Name = "CCL74";
             this.CCL74.Size = new System.Drawing.Size(39, 13);
             this.CCL74.TabIndex = 167;
@@ -1923,7 +1967,7 @@ namespace DCTBFightingSimulator
             // CCL73
             // 
             this.CCL73.AutoSize = true;
-            this.CCL73.Location = new System.Drawing.Point(759, 418);
+            this.CCL73.Location = new System.Drawing.Point(618, 398);
             this.CCL73.Name = "CCL73";
             this.CCL73.Size = new System.Drawing.Size(29, 13);
             this.CCL73.TabIndex = 166;
@@ -1932,7 +1976,7 @@ namespace DCTBFightingSimulator
             // CCL72
             // 
             this.CCL72.AutoSize = true;
-            this.CCL72.Location = new System.Drawing.Point(759, 391);
+            this.CCL72.Location = new System.Drawing.Point(618, 371);
             this.CCL72.Name = "CCL72";
             this.CCL72.Size = new System.Drawing.Size(39, 13);
             this.CCL72.TabIndex = 165;
@@ -1941,7 +1985,7 @@ namespace DCTBFightingSimulator
             // CCL71
             // 
             this.CCL71.AutoSize = true;
-            this.CCL71.Location = new System.Drawing.Point(759, 364);
+            this.CCL71.Location = new System.Drawing.Point(618, 344);
             this.CCL71.Name = "CCL71";
             this.CCL71.Size = new System.Drawing.Size(29, 13);
             this.CCL71.TabIndex = 164;
@@ -1957,7 +2001,7 @@ namespace DCTBFightingSimulator
             this.CCc40.Items.AddRange(new object[] {
             "NO",
             "YES"});
-            this.CCc40.Location = new System.Drawing.Point(827, 577);
+            this.CCc40.Location = new System.Drawing.Point(685, 557);
             this.CCc40.Name = "CCc40";
             this.CCc40.Size = new System.Drawing.Size(100, 21);
             this.CCc40.TabIndex = 163;
@@ -1972,7 +2016,7 @@ namespace DCTBFightingSimulator
             this.CCc39.Items.AddRange(new object[] {
             "NO",
             "YES"});
-            this.CCc39.Location = new System.Drawing.Point(827, 550);
+            this.CCc39.Location = new System.Drawing.Point(685, 530);
             this.CCc39.Name = "CCc39";
             this.CCc39.Size = new System.Drawing.Size(100, 21);
             this.CCc39.TabIndex = 162;
@@ -1987,7 +2031,7 @@ namespace DCTBFightingSimulator
             this.CCc38.Items.AddRange(new object[] {
             "NO",
             "YES"});
-            this.CCc38.Location = new System.Drawing.Point(827, 523);
+            this.CCc38.Location = new System.Drawing.Point(685, 503);
             this.CCc38.Name = "CCc38";
             this.CCc38.Size = new System.Drawing.Size(100, 21);
             this.CCc38.TabIndex = 161;
@@ -2002,7 +2046,7 @@ namespace DCTBFightingSimulator
             this.CCc37.Items.AddRange(new object[] {
             "NO",
             "YES"});
-            this.CCc37.Location = new System.Drawing.Point(827, 496);
+            this.CCc37.Location = new System.Drawing.Point(685, 476);
             this.CCc37.Name = "CCc37";
             this.CCc37.Size = new System.Drawing.Size(100, 21);
             this.CCc37.TabIndex = 160;
@@ -2017,7 +2061,7 @@ namespace DCTBFightingSimulator
             this.CCc36.Items.AddRange(new object[] {
             "NO",
             "YES"});
-            this.CCc36.Location = new System.Drawing.Point(827, 469);
+            this.CCc36.Location = new System.Drawing.Point(685, 449);
             this.CCc36.Name = "CCc36";
             this.CCc36.Size = new System.Drawing.Size(100, 21);
             this.CCc36.TabIndex = 159;
@@ -2032,7 +2076,7 @@ namespace DCTBFightingSimulator
             this.CCc35.Items.AddRange(new object[] {
             "NO",
             "YES"});
-            this.CCc35.Location = new System.Drawing.Point(827, 442);
+            this.CCc35.Location = new System.Drawing.Point(685, 422);
             this.CCc35.Name = "CCc35";
             this.CCc35.Size = new System.Drawing.Size(100, 21);
             this.CCc35.TabIndex = 158;
@@ -2047,7 +2091,7 @@ namespace DCTBFightingSimulator
             this.CCc34.Items.AddRange(new object[] {
             "NO",
             "YES"});
-            this.CCc34.Location = new System.Drawing.Point(827, 415);
+            this.CCc34.Location = new System.Drawing.Point(685, 395);
             this.CCc34.Name = "CCc34";
             this.CCc34.Size = new System.Drawing.Size(100, 21);
             this.CCc34.TabIndex = 157;
@@ -2062,7 +2106,7 @@ namespace DCTBFightingSimulator
             this.CCc33.Items.AddRange(new object[] {
             "NO",
             "YES"});
-            this.CCc33.Location = new System.Drawing.Point(827, 388);
+            this.CCc33.Location = new System.Drawing.Point(685, 368);
             this.CCc33.Name = "CCc33";
             this.CCc33.Size = new System.Drawing.Size(100, 21);
             this.CCc33.TabIndex = 156;
@@ -2077,7 +2121,7 @@ namespace DCTBFightingSimulator
             this.CCc32.Items.AddRange(new object[] {
             "NO",
             "YES"});
-            this.CCc32.Location = new System.Drawing.Point(827, 361);
+            this.CCc32.Location = new System.Drawing.Point(685, 341);
             this.CCc32.Name = "CCc32";
             this.CCc32.Size = new System.Drawing.Size(100, 21);
             this.CCc32.TabIndex = 155;
@@ -2085,7 +2129,7 @@ namespace DCTBFightingSimulator
             // CCL70
             // 
             this.CCL70.AutoSize = true;
-            this.CCL70.Location = new System.Drawing.Point(759, 337);
+            this.CCL70.Location = new System.Drawing.Point(618, 317);
             this.CCL70.Name = "CCL70";
             this.CCL70.Size = new System.Drawing.Size(57, 13);
             this.CCL70.TabIndex = 154;
@@ -2094,7 +2138,7 @@ namespace DCTBFightingSimulator
             // CCL69
             // 
             this.CCL69.AutoSize = true;
-            this.CCL69.Location = new System.Drawing.Point(759, 311);
+            this.CCL69.Location = new System.Drawing.Point(618, 291);
             this.CCL69.Name = "CCL69";
             this.CCL69.Size = new System.Drawing.Size(55, 13);
             this.CCL69.TabIndex = 153;
@@ -2103,7 +2147,7 @@ namespace DCTBFightingSimulator
             // CCL68
             // 
             this.CCL68.AutoSize = true;
-            this.CCL68.Location = new System.Drawing.Point(759, 285);
+            this.CCL68.Location = new System.Drawing.Point(618, 265);
             this.CCL68.Name = "CCL68";
             this.CCL68.Size = new System.Drawing.Size(55, 13);
             this.CCL68.TabIndex = 152;
@@ -2112,7 +2156,7 @@ namespace DCTBFightingSimulator
             // CCL67
             // 
             this.CCL67.AutoSize = true;
-            this.CCL67.Location = new System.Drawing.Point(759, 259);
+            this.CCL67.Location = new System.Drawing.Point(618, 239);
             this.CCL67.Name = "CCL67";
             this.CCL67.Size = new System.Drawing.Size(55, 13);
             this.CCL67.TabIndex = 151;
@@ -2120,7 +2164,7 @@ namespace DCTBFightingSimulator
             // 
             // CCN25
             // 
-            this.CCN25.Location = new System.Drawing.Point(827, 335);
+            this.CCN25.Location = new System.Drawing.Point(685, 315);
             this.CCN25.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -2137,7 +2181,7 @@ namespace DCTBFightingSimulator
             // 
             // CCN24
             // 
-            this.CCN24.Location = new System.Drawing.Point(827, 309);
+            this.CCN24.Location = new System.Drawing.Point(685, 289);
             this.CCN24.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -2154,7 +2198,7 @@ namespace DCTBFightingSimulator
             // 
             // CCN23
             // 
-            this.CCN23.Location = new System.Drawing.Point(827, 283);
+            this.CCN23.Location = new System.Drawing.Point(685, 263);
             this.CCN23.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -2171,7 +2215,7 @@ namespace DCTBFightingSimulator
             // 
             // CCN22
             // 
-            this.CCN22.Location = new System.Drawing.Point(827, 257);
+            this.CCN22.Location = new System.Drawing.Point(685, 237);
             this.CCN22.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -2188,7 +2232,7 @@ namespace DCTBFightingSimulator
             // 
             // CCN21
             // 
-            this.CCN21.Location = new System.Drawing.Point(827, 231);
+            this.CCN21.Location = new System.Drawing.Point(685, 211);
             this.CCN21.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -2206,7 +2250,7 @@ namespace DCTBFightingSimulator
             // CCL66
             // 
             this.CCL66.AutoSize = true;
-            this.CCL66.Location = new System.Drawing.Point(759, 232);
+            this.CCL66.Location = new System.Drawing.Point(618, 212);
             this.CCL66.Name = "CCL66";
             this.CCL66.Size = new System.Drawing.Size(43, 13);
             this.CCL66.TabIndex = 145;
@@ -2214,7 +2258,7 @@ namespace DCTBFightingSimulator
             // 
             // CCN20
             // 
-            this.CCN20.Location = new System.Drawing.Point(827, 205);
+            this.CCN20.Location = new System.Drawing.Point(685, 185);
             this.CCN20.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -2227,7 +2271,7 @@ namespace DCTBFightingSimulator
             // CCL65
             // 
             this.CCL65.AutoSize = true;
-            this.CCL65.Location = new System.Drawing.Point(759, 207);
+            this.CCL65.Location = new System.Drawing.Point(618, 187);
             this.CCL65.Name = "CCL65";
             this.CCL65.Size = new System.Drawing.Size(28, 13);
             this.CCL65.TabIndex = 143;
@@ -2236,7 +2280,7 @@ namespace DCTBFightingSimulator
             // CCL64
             // 
             this.CCL64.AutoSize = true;
-            this.CCL64.Location = new System.Drawing.Point(759, 181);
+            this.CCL64.Location = new System.Drawing.Point(618, 161);
             this.CCL64.Name = "CCL64";
             this.CCL64.Size = new System.Drawing.Size(54, 13);
             this.CCL64.TabIndex = 142;
@@ -2245,7 +2289,7 @@ namespace DCTBFightingSimulator
             // CCN19
             // 
             this.CCN19.DecimalPlaces = 2;
-            this.CCN19.Location = new System.Drawing.Point(827, 179);
+            this.CCN19.Location = new System.Drawing.Point(685, 159);
             this.CCN19.Name = "CCN19";
             this.CCN19.Size = new System.Drawing.Size(100, 20);
             this.CCN19.TabIndex = 141;
@@ -2271,7 +2315,7 @@ namespace DCTBFightingSimulator
             "PSYCHIC",
             "MORTAL",
             "GHOST"});
-            this.CCc31.Location = new System.Drawing.Point(827, 152);
+            this.CCc31.Location = new System.Drawing.Point(685, 132);
             this.CCc31.Name = "CCc31";
             this.CCc31.Size = new System.Drawing.Size(100, 21);
             this.CCc31.TabIndex = 140;
@@ -2279,7 +2323,7 @@ namespace DCTBFightingSimulator
             // CCL63
             // 
             this.CCL63.AutoSize = true;
-            this.CCL63.Location = new System.Drawing.Point(759, 153);
+            this.CCL63.Location = new System.Drawing.Point(618, 133);
             this.CCL63.Name = "CCL63";
             this.CCL63.Size = new System.Drawing.Size(31, 13);
             this.CCL63.TabIndex = 139;
@@ -2287,7 +2331,7 @@ namespace DCTBFightingSimulator
             // 
             // CCT8
             // 
-            this.CCT8.Location = new System.Drawing.Point(827, 126);
+            this.CCT8.Location = new System.Drawing.Point(685, 106);
             this.CCT8.Name = "CCT8";
             this.CCT8.Size = new System.Drawing.Size(100, 20);
             this.CCT8.TabIndex = 138;
@@ -2295,7 +2339,7 @@ namespace DCTBFightingSimulator
             // CCL62
             // 
             this.CCL62.AutoSize = true;
-            this.CCL62.Location = new System.Drawing.Point(759, 128);
+            this.CCL62.Location = new System.Drawing.Point(618, 108);
             this.CCL62.Name = "CCL62";
             this.CCL62.Size = new System.Drawing.Size(60, 13);
             this.CCL62.TabIndex = 137;
@@ -2303,7 +2347,7 @@ namespace DCTBFightingSimulator
             // 
             // CCT7
             // 
-            this.CCT7.Location = new System.Drawing.Point(827, 100);
+            this.CCT7.Location = new System.Drawing.Point(685, 80);
             this.CCT7.Name = "CCT7";
             this.CCT7.Size = new System.Drawing.Size(100, 20);
             this.CCT7.TabIndex = 136;
@@ -2311,7 +2355,7 @@ namespace DCTBFightingSimulator
             // CCL61
             // 
             this.CCL61.AutoSize = true;
-            this.CCL61.Location = new System.Drawing.Point(759, 103);
+            this.CCL61.Location = new System.Drawing.Point(618, 83);
             this.CCL61.Name = "CCL61";
             this.CCL61.Size = new System.Drawing.Size(35, 13);
             this.CCL61.TabIndex = 135;
@@ -2321,7 +2365,7 @@ namespace DCTBFightingSimulator
             // 
             this.CCL60.AutoSize = true;
             this.CCL60.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.CCL60.Location = new System.Drawing.Point(759, 80);
+            this.CCL60.Location = new System.Drawing.Point(618, 60);
             this.CCL60.Name = "CCL60";
             this.CCL60.Size = new System.Drawing.Size(60, 17);
             this.CCL60.TabIndex = 134;
@@ -2331,7 +2375,7 @@ namespace DCTBFightingSimulator
             // 
             this.CCP5.Image = ((System.Drawing.Image)(resources.GetObject("CCP5.Image")));
             this.CCP5.InitialImage = null;
-            this.CCP5.Location = new System.Drawing.Point(1143, 80);
+            this.CCP5.Location = new System.Drawing.Point(1002, 60);
             this.CCP5.Name = "CCP5";
             this.CCP5.Size = new System.Drawing.Size(10, 564);
             this.CCP5.TabIndex = 213;
@@ -2340,7 +2384,7 @@ namespace DCTBFightingSimulator
             // CCL99
             // 
             this.CCL99.AutoSize = true;
-            this.CCL99.Location = new System.Drawing.Point(960, 580);
+            this.CCL99.Location = new System.Drawing.Point(819, 560);
             this.CCL99.Name = "CCL99";
             this.CCL99.Size = new System.Drawing.Size(32, 13);
             this.CCL99.TabIndex = 212;
@@ -2349,7 +2393,7 @@ namespace DCTBFightingSimulator
             // CCL98
             // 
             this.CCL98.AutoSize = true;
-            this.CCL98.Location = new System.Drawing.Point(960, 553);
+            this.CCL98.Location = new System.Drawing.Point(819, 533);
             this.CCL98.Name = "CCL98";
             this.CCL98.Size = new System.Drawing.Size(48, 13);
             this.CCL98.TabIndex = 211;
@@ -2358,7 +2402,7 @@ namespace DCTBFightingSimulator
             // CCL97
             // 
             this.CCL97.AutoSize = true;
-            this.CCL97.Location = new System.Drawing.Point(960, 526);
+            this.CCL97.Location = new System.Drawing.Point(819, 506);
             this.CCL97.Name = "CCL97";
             this.CCL97.Size = new System.Drawing.Size(43, 13);
             this.CCL97.TabIndex = 210;
@@ -2367,7 +2411,7 @@ namespace DCTBFightingSimulator
             // CCL96
             // 
             this.CCL96.AutoSize = true;
-            this.CCL96.Location = new System.Drawing.Point(960, 499);
+            this.CCL96.Location = new System.Drawing.Point(819, 479);
             this.CCL96.Name = "CCL96";
             this.CCL96.Size = new System.Drawing.Size(34, 13);
             this.CCL96.TabIndex = 209;
@@ -2376,7 +2420,7 @@ namespace DCTBFightingSimulator
             // CCL95
             // 
             this.CCL95.AutoSize = true;
-            this.CCL95.Location = new System.Drawing.Point(960, 472);
+            this.CCL95.Location = new System.Drawing.Point(819, 452);
             this.CCL95.Name = "CCL95";
             this.CCL95.Size = new System.Drawing.Size(39, 13);
             this.CCL95.TabIndex = 208;
@@ -2385,7 +2429,7 @@ namespace DCTBFightingSimulator
             // CCL94
             // 
             this.CCL94.AutoSize = true;
-            this.CCL94.Location = new System.Drawing.Point(960, 445);
+            this.CCL94.Location = new System.Drawing.Point(819, 425);
             this.CCL94.Name = "CCL94";
             this.CCL94.Size = new System.Drawing.Size(39, 13);
             this.CCL94.TabIndex = 207;
@@ -2394,7 +2438,7 @@ namespace DCTBFightingSimulator
             // CCL93
             // 
             this.CCL93.AutoSize = true;
-            this.CCL93.Location = new System.Drawing.Point(960, 418);
+            this.CCL93.Location = new System.Drawing.Point(819, 398);
             this.CCL93.Name = "CCL93";
             this.CCL93.Size = new System.Drawing.Size(29, 13);
             this.CCL93.TabIndex = 206;
@@ -2403,7 +2447,7 @@ namespace DCTBFightingSimulator
             // CCL92
             // 
             this.CCL92.AutoSize = true;
-            this.CCL92.Location = new System.Drawing.Point(960, 391);
+            this.CCL92.Location = new System.Drawing.Point(819, 371);
             this.CCL92.Name = "CCL92";
             this.CCL92.Size = new System.Drawing.Size(39, 13);
             this.CCL92.TabIndex = 205;
@@ -2412,7 +2456,7 @@ namespace DCTBFightingSimulator
             // CCL91
             // 
             this.CCL91.AutoSize = true;
-            this.CCL91.Location = new System.Drawing.Point(960, 364);
+            this.CCL91.Location = new System.Drawing.Point(819, 344);
             this.CCL91.Name = "CCL91";
             this.CCL91.Size = new System.Drawing.Size(29, 13);
             this.CCL91.TabIndex = 204;
@@ -2428,7 +2472,7 @@ namespace DCTBFightingSimulator
             this.CCc50.Items.AddRange(new object[] {
             "NO",
             "YES"});
-            this.CCc50.Location = new System.Drawing.Point(1028, 577);
+            this.CCc50.Location = new System.Drawing.Point(888, 556);
             this.CCc50.Name = "CCc50";
             this.CCc50.Size = new System.Drawing.Size(100, 21);
             this.CCc50.TabIndex = 203;
@@ -2443,7 +2487,7 @@ namespace DCTBFightingSimulator
             this.CCc49.Items.AddRange(new object[] {
             "NO",
             "YES"});
-            this.CCc49.Location = new System.Drawing.Point(1028, 550);
+            this.CCc49.Location = new System.Drawing.Point(888, 529);
             this.CCc49.Name = "CCc49";
             this.CCc49.Size = new System.Drawing.Size(100, 21);
             this.CCc49.TabIndex = 202;
@@ -2458,7 +2502,7 @@ namespace DCTBFightingSimulator
             this.CCc48.Items.AddRange(new object[] {
             "NO",
             "YES"});
-            this.CCc48.Location = new System.Drawing.Point(1028, 523);
+            this.CCc48.Location = new System.Drawing.Point(888, 502);
             this.CCc48.Name = "CCc48";
             this.CCc48.Size = new System.Drawing.Size(100, 21);
             this.CCc48.TabIndex = 201;
@@ -2473,7 +2517,7 @@ namespace DCTBFightingSimulator
             this.CCc47.Items.AddRange(new object[] {
             "NO",
             "YES"});
-            this.CCc47.Location = new System.Drawing.Point(1028, 496);
+            this.CCc47.Location = new System.Drawing.Point(888, 475);
             this.CCc47.Name = "CCc47";
             this.CCc47.Size = new System.Drawing.Size(100, 21);
             this.CCc47.TabIndex = 200;
@@ -2488,7 +2532,7 @@ namespace DCTBFightingSimulator
             this.CCc46.Items.AddRange(new object[] {
             "NO",
             "YES"});
-            this.CCc46.Location = new System.Drawing.Point(1028, 469);
+            this.CCc46.Location = new System.Drawing.Point(888, 448);
             this.CCc46.Name = "CCc46";
             this.CCc46.Size = new System.Drawing.Size(100, 21);
             this.CCc46.TabIndex = 199;
@@ -2503,7 +2547,7 @@ namespace DCTBFightingSimulator
             this.CCc45.Items.AddRange(new object[] {
             "NO",
             "YES"});
-            this.CCc45.Location = new System.Drawing.Point(1028, 442);
+            this.CCc45.Location = new System.Drawing.Point(888, 421);
             this.CCc45.Name = "CCc45";
             this.CCc45.Size = new System.Drawing.Size(100, 21);
             this.CCc45.TabIndex = 198;
@@ -2518,7 +2562,7 @@ namespace DCTBFightingSimulator
             this.CCc44.Items.AddRange(new object[] {
             "NO",
             "YES"});
-            this.CCc44.Location = new System.Drawing.Point(1028, 415);
+            this.CCc44.Location = new System.Drawing.Point(888, 394);
             this.CCc44.Name = "CCc44";
             this.CCc44.Size = new System.Drawing.Size(100, 21);
             this.CCc44.TabIndex = 197;
@@ -2533,7 +2577,7 @@ namespace DCTBFightingSimulator
             this.CCc43.Items.AddRange(new object[] {
             "NO",
             "YES"});
-            this.CCc43.Location = new System.Drawing.Point(1028, 388);
+            this.CCc43.Location = new System.Drawing.Point(888, 367);
             this.CCc43.Name = "CCc43";
             this.CCc43.Size = new System.Drawing.Size(100, 21);
             this.CCc43.TabIndex = 196;
@@ -2548,7 +2592,7 @@ namespace DCTBFightingSimulator
             this.CCc42.Items.AddRange(new object[] {
             "NO",
             "YES"});
-            this.CCc42.Location = new System.Drawing.Point(1028, 361);
+            this.CCc42.Location = new System.Drawing.Point(888, 340);
             this.CCc42.Name = "CCc42";
             this.CCc42.Size = new System.Drawing.Size(100, 21);
             this.CCc42.TabIndex = 195;
@@ -2556,7 +2600,7 @@ namespace DCTBFightingSimulator
             // CCL90
             // 
             this.CCL90.AutoSize = true;
-            this.CCL90.Location = new System.Drawing.Point(960, 337);
+            this.CCL90.Location = new System.Drawing.Point(819, 317);
             this.CCL90.Name = "CCL90";
             this.CCL90.Size = new System.Drawing.Size(57, 13);
             this.CCL90.TabIndex = 194;
@@ -2565,7 +2609,7 @@ namespace DCTBFightingSimulator
             // CCL89
             // 
             this.CCL89.AutoSize = true;
-            this.CCL89.Location = new System.Drawing.Point(960, 311);
+            this.CCL89.Location = new System.Drawing.Point(819, 291);
             this.CCL89.Name = "CCL89";
             this.CCL89.Size = new System.Drawing.Size(55, 13);
             this.CCL89.TabIndex = 193;
@@ -2574,7 +2618,7 @@ namespace DCTBFightingSimulator
             // CCL88
             // 
             this.CCL88.AutoSize = true;
-            this.CCL88.Location = new System.Drawing.Point(960, 285);
+            this.CCL88.Location = new System.Drawing.Point(819, 265);
             this.CCL88.Name = "CCL88";
             this.CCL88.Size = new System.Drawing.Size(55, 13);
             this.CCL88.TabIndex = 192;
@@ -2583,7 +2627,7 @@ namespace DCTBFightingSimulator
             // CCL87
             // 
             this.CCL87.AutoSize = true;
-            this.CCL87.Location = new System.Drawing.Point(960, 259);
+            this.CCL87.Location = new System.Drawing.Point(819, 239);
             this.CCL87.Name = "CCL87";
             this.CCL87.Size = new System.Drawing.Size(55, 13);
             this.CCL87.TabIndex = 191;
@@ -2591,7 +2635,7 @@ namespace DCTBFightingSimulator
             // 
             // CCN32
             // 
-            this.CCN32.Location = new System.Drawing.Point(1028, 335);
+            this.CCN32.Location = new System.Drawing.Point(888, 314);
             this.CCN32.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -2608,7 +2652,7 @@ namespace DCTBFightingSimulator
             // 
             // CCN31
             // 
-            this.CCN31.Location = new System.Drawing.Point(1028, 309);
+            this.CCN31.Location = new System.Drawing.Point(888, 288);
             this.CCN31.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -2625,7 +2669,7 @@ namespace DCTBFightingSimulator
             // 
             // CCN30
             // 
-            this.CCN30.Location = new System.Drawing.Point(1028, 283);
+            this.CCN30.Location = new System.Drawing.Point(888, 262);
             this.CCN30.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -2642,7 +2686,7 @@ namespace DCTBFightingSimulator
             // 
             // CCN29
             // 
-            this.CCN29.Location = new System.Drawing.Point(1028, 257);
+            this.CCN29.Location = new System.Drawing.Point(888, 236);
             this.CCN29.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -2659,7 +2703,7 @@ namespace DCTBFightingSimulator
             // 
             // CCN28
             // 
-            this.CCN28.Location = new System.Drawing.Point(1028, 231);
+            this.CCN28.Location = new System.Drawing.Point(888, 210);
             this.CCN28.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -2677,7 +2721,7 @@ namespace DCTBFightingSimulator
             // CCL86
             // 
             this.CCL86.AutoSize = true;
-            this.CCL86.Location = new System.Drawing.Point(960, 232);
+            this.CCL86.Location = new System.Drawing.Point(819, 212);
             this.CCL86.Name = "CCL86";
             this.CCL86.Size = new System.Drawing.Size(43, 13);
             this.CCL86.TabIndex = 185;
@@ -2685,7 +2729,7 @@ namespace DCTBFightingSimulator
             // 
             // CCN27
             // 
-            this.CCN27.Location = new System.Drawing.Point(1028, 205);
+            this.CCN27.Location = new System.Drawing.Point(888, 184);
             this.CCN27.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -2698,7 +2742,7 @@ namespace DCTBFightingSimulator
             // CCL85
             // 
             this.CCL85.AutoSize = true;
-            this.CCL85.Location = new System.Drawing.Point(960, 207);
+            this.CCL85.Location = new System.Drawing.Point(819, 187);
             this.CCL85.Name = "CCL85";
             this.CCL85.Size = new System.Drawing.Size(28, 13);
             this.CCL85.TabIndex = 183;
@@ -2707,7 +2751,7 @@ namespace DCTBFightingSimulator
             // CCL84
             // 
             this.CCL84.AutoSize = true;
-            this.CCL84.Location = new System.Drawing.Point(960, 181);
+            this.CCL84.Location = new System.Drawing.Point(819, 161);
             this.CCL84.Name = "CCL84";
             this.CCL84.Size = new System.Drawing.Size(54, 13);
             this.CCL84.TabIndex = 182;
@@ -2716,7 +2760,7 @@ namespace DCTBFightingSimulator
             // CCN26
             // 
             this.CCN26.DecimalPlaces = 2;
-            this.CCN26.Location = new System.Drawing.Point(1028, 179);
+            this.CCN26.Location = new System.Drawing.Point(888, 158);
             this.CCN26.Name = "CCN26";
             this.CCN26.Size = new System.Drawing.Size(100, 20);
             this.CCN26.TabIndex = 181;
@@ -2742,7 +2786,7 @@ namespace DCTBFightingSimulator
             "PSYCHIC",
             "MORTAL",
             "GHOST"});
-            this.CCc41.Location = new System.Drawing.Point(1028, 152);
+            this.CCc41.Location = new System.Drawing.Point(888, 131);
             this.CCc41.Name = "CCc41";
             this.CCc41.Size = new System.Drawing.Size(100, 21);
             this.CCc41.TabIndex = 180;
@@ -2750,7 +2794,7 @@ namespace DCTBFightingSimulator
             // CCL83
             // 
             this.CCL83.AutoSize = true;
-            this.CCL83.Location = new System.Drawing.Point(960, 153);
+            this.CCL83.Location = new System.Drawing.Point(819, 133);
             this.CCL83.Name = "CCL83";
             this.CCL83.Size = new System.Drawing.Size(31, 13);
             this.CCL83.TabIndex = 179;
@@ -2758,7 +2802,7 @@ namespace DCTBFightingSimulator
             // 
             // CCT10
             // 
-            this.CCT10.Location = new System.Drawing.Point(1028, 126);
+            this.CCT10.Location = new System.Drawing.Point(888, 105);
             this.CCT10.Name = "CCT10";
             this.CCT10.Size = new System.Drawing.Size(100, 20);
             this.CCT10.TabIndex = 178;
@@ -2767,7 +2811,7 @@ namespace DCTBFightingSimulator
             // CCL82
             // 
             this.CCL82.AutoSize = true;
-            this.CCL82.Location = new System.Drawing.Point(960, 128);
+            this.CCL82.Location = new System.Drawing.Point(819, 108);
             this.CCL82.Name = "CCL82";
             this.CCL82.Size = new System.Drawing.Size(60, 13);
             this.CCL82.TabIndex = 177;
@@ -2775,7 +2819,7 @@ namespace DCTBFightingSimulator
             // 
             // CCT9
             // 
-            this.CCT9.Location = new System.Drawing.Point(1028, 100);
+            this.CCT9.Location = new System.Drawing.Point(888, 79);
             this.CCT9.Name = "CCT9";
             this.CCT9.Size = new System.Drawing.Size(100, 20);
             this.CCT9.TabIndex = 176;
@@ -2783,7 +2827,7 @@ namespace DCTBFightingSimulator
             // CCL81
             // 
             this.CCL81.AutoSize = true;
-            this.CCL81.Location = new System.Drawing.Point(960, 103);
+            this.CCL81.Location = new System.Drawing.Point(819, 83);
             this.CCL81.Name = "CCL81";
             this.CCL81.Size = new System.Drawing.Size(35, 13);
             this.CCL81.TabIndex = 175;
@@ -2793,7 +2837,7 @@ namespace DCTBFightingSimulator
             // 
             this.CCL80.AutoSize = true;
             this.CCL80.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.CCL80.Location = new System.Drawing.Point(960, 80);
+            this.CCL80.Location = new System.Drawing.Point(819, 60);
             this.CCL80.Name = "CCL80";
             this.CCL80.Size = new System.Drawing.Size(60, 17);
             this.CCL80.TabIndex = 174;
@@ -2803,7 +2847,7 @@ namespace DCTBFightingSimulator
             // 
             this.CCP6.Image = ((System.Drawing.Image)(resources.GetObject("CCP6.Image")));
             this.CCP6.InitialImage = null;
-            this.CCP6.Location = new System.Drawing.Point(1346, 80);
+            this.CCP6.Location = new System.Drawing.Point(1206, 59);
             this.CCP6.Name = "CCP6";
             this.CCP6.Size = new System.Drawing.Size(10, 564);
             this.CCP6.TabIndex = 253;
@@ -2812,7 +2856,7 @@ namespace DCTBFightingSimulator
             // CCL119
             // 
             this.CCL119.AutoSize = true;
-            this.CCL119.Location = new System.Drawing.Point(1163, 580);
+            this.CCL119.Location = new System.Drawing.Point(1022, 560);
             this.CCL119.Name = "CCL119";
             this.CCL119.Size = new System.Drawing.Size(32, 13);
             this.CCL119.TabIndex = 252;
@@ -2821,7 +2865,7 @@ namespace DCTBFightingSimulator
             // CCL118
             // 
             this.CCL118.AutoSize = true;
-            this.CCL118.Location = new System.Drawing.Point(1163, 553);
+            this.CCL118.Location = new System.Drawing.Point(1022, 533);
             this.CCL118.Name = "CCL118";
             this.CCL118.Size = new System.Drawing.Size(48, 13);
             this.CCL118.TabIndex = 251;
@@ -2830,7 +2874,7 @@ namespace DCTBFightingSimulator
             // CCL117
             // 
             this.CCL117.AutoSize = true;
-            this.CCL117.Location = new System.Drawing.Point(1163, 526);
+            this.CCL117.Location = new System.Drawing.Point(1022, 506);
             this.CCL117.Name = "CCL117";
             this.CCL117.Size = new System.Drawing.Size(43, 13);
             this.CCL117.TabIndex = 250;
@@ -2839,7 +2883,7 @@ namespace DCTBFightingSimulator
             // CCL116
             // 
             this.CCL116.AutoSize = true;
-            this.CCL116.Location = new System.Drawing.Point(1163, 499);
+            this.CCL116.Location = new System.Drawing.Point(1022, 479);
             this.CCL116.Name = "CCL116";
             this.CCL116.Size = new System.Drawing.Size(34, 13);
             this.CCL116.TabIndex = 249;
@@ -2848,7 +2892,7 @@ namespace DCTBFightingSimulator
             // CCL115
             // 
             this.CCL115.AutoSize = true;
-            this.CCL115.Location = new System.Drawing.Point(1163, 472);
+            this.CCL115.Location = new System.Drawing.Point(1022, 452);
             this.CCL115.Name = "CCL115";
             this.CCL115.Size = new System.Drawing.Size(39, 13);
             this.CCL115.TabIndex = 248;
@@ -2857,7 +2901,7 @@ namespace DCTBFightingSimulator
             // CCL114
             // 
             this.CCL114.AutoSize = true;
-            this.CCL114.Location = new System.Drawing.Point(1163, 445);
+            this.CCL114.Location = new System.Drawing.Point(1022, 425);
             this.CCL114.Name = "CCL114";
             this.CCL114.Size = new System.Drawing.Size(39, 13);
             this.CCL114.TabIndex = 247;
@@ -2866,7 +2910,7 @@ namespace DCTBFightingSimulator
             // CCL113
             // 
             this.CCL113.AutoSize = true;
-            this.CCL113.Location = new System.Drawing.Point(1163, 418);
+            this.CCL113.Location = new System.Drawing.Point(1022, 398);
             this.CCL113.Name = "CCL113";
             this.CCL113.Size = new System.Drawing.Size(29, 13);
             this.CCL113.TabIndex = 246;
@@ -2875,7 +2919,7 @@ namespace DCTBFightingSimulator
             // CCL112
             // 
             this.CCL112.AutoSize = true;
-            this.CCL112.Location = new System.Drawing.Point(1163, 391);
+            this.CCL112.Location = new System.Drawing.Point(1022, 371);
             this.CCL112.Name = "CCL112";
             this.CCL112.Size = new System.Drawing.Size(39, 13);
             this.CCL112.TabIndex = 245;
@@ -2884,7 +2928,7 @@ namespace DCTBFightingSimulator
             // CCL111
             // 
             this.CCL111.AutoSize = true;
-            this.CCL111.Location = new System.Drawing.Point(1163, 364);
+            this.CCL111.Location = new System.Drawing.Point(1022, 344);
             this.CCL111.Name = "CCL111";
             this.CCL111.Size = new System.Drawing.Size(29, 13);
             this.CCL111.TabIndex = 244;
@@ -2900,7 +2944,7 @@ namespace DCTBFightingSimulator
             this.CCc60.Items.AddRange(new object[] {
             "NO",
             "YES"});
-            this.CCc60.Location = new System.Drawing.Point(1231, 577);
+            this.CCc60.Location = new System.Drawing.Point(1091, 556);
             this.CCc60.Name = "CCc60";
             this.CCc60.Size = new System.Drawing.Size(100, 21);
             this.CCc60.TabIndex = 243;
@@ -2915,7 +2959,7 @@ namespace DCTBFightingSimulator
             this.CCc59.Items.AddRange(new object[] {
             "NO",
             "YES"});
-            this.CCc59.Location = new System.Drawing.Point(1231, 550);
+            this.CCc59.Location = new System.Drawing.Point(1091, 529);
             this.CCc59.Name = "CCc59";
             this.CCc59.Size = new System.Drawing.Size(100, 21);
             this.CCc59.TabIndex = 242;
@@ -2930,7 +2974,7 @@ namespace DCTBFightingSimulator
             this.CCc58.Items.AddRange(new object[] {
             "NO",
             "YES"});
-            this.CCc58.Location = new System.Drawing.Point(1231, 523);
+            this.CCc58.Location = new System.Drawing.Point(1091, 502);
             this.CCc58.Name = "CCc58";
             this.CCc58.Size = new System.Drawing.Size(100, 21);
             this.CCc58.TabIndex = 241;
@@ -2945,7 +2989,7 @@ namespace DCTBFightingSimulator
             this.CCc57.Items.AddRange(new object[] {
             "NO",
             "YES"});
-            this.CCc57.Location = new System.Drawing.Point(1231, 496);
+            this.CCc57.Location = new System.Drawing.Point(1091, 475);
             this.CCc57.Name = "CCc57";
             this.CCc57.Size = new System.Drawing.Size(100, 21);
             this.CCc57.TabIndex = 240;
@@ -2960,7 +3004,7 @@ namespace DCTBFightingSimulator
             this.CCc56.Items.AddRange(new object[] {
             "NO",
             "YES"});
-            this.CCc56.Location = new System.Drawing.Point(1231, 469);
+            this.CCc56.Location = new System.Drawing.Point(1091, 448);
             this.CCc56.Name = "CCc56";
             this.CCc56.Size = new System.Drawing.Size(100, 21);
             this.CCc56.TabIndex = 239;
@@ -2975,7 +3019,7 @@ namespace DCTBFightingSimulator
             this.CCc55.Items.AddRange(new object[] {
             "NO",
             "YES"});
-            this.CCc55.Location = new System.Drawing.Point(1231, 442);
+            this.CCc55.Location = new System.Drawing.Point(1091, 421);
             this.CCc55.Name = "CCc55";
             this.CCc55.Size = new System.Drawing.Size(100, 21);
             this.CCc55.TabIndex = 238;
@@ -2990,7 +3034,7 @@ namespace DCTBFightingSimulator
             this.CCc54.Items.AddRange(new object[] {
             "NO",
             "YES"});
-            this.CCc54.Location = new System.Drawing.Point(1231, 415);
+            this.CCc54.Location = new System.Drawing.Point(1091, 394);
             this.CCc54.Name = "CCc54";
             this.CCc54.Size = new System.Drawing.Size(100, 21);
             this.CCc54.TabIndex = 237;
@@ -3005,7 +3049,7 @@ namespace DCTBFightingSimulator
             this.CCc53.Items.AddRange(new object[] {
             "NO",
             "YES"});
-            this.CCc53.Location = new System.Drawing.Point(1231, 388);
+            this.CCc53.Location = new System.Drawing.Point(1091, 367);
             this.CCc53.Name = "CCc53";
             this.CCc53.Size = new System.Drawing.Size(100, 21);
             this.CCc53.TabIndex = 236;
@@ -3020,7 +3064,7 @@ namespace DCTBFightingSimulator
             this.CCc52.Items.AddRange(new object[] {
             "NO",
             "YES"});
-            this.CCc52.Location = new System.Drawing.Point(1231, 361);
+            this.CCc52.Location = new System.Drawing.Point(1091, 340);
             this.CCc52.Name = "CCc52";
             this.CCc52.Size = new System.Drawing.Size(100, 21);
             this.CCc52.TabIndex = 235;
@@ -3028,7 +3072,7 @@ namespace DCTBFightingSimulator
             // CCL110
             // 
             this.CCL110.AutoSize = true;
-            this.CCL110.Location = new System.Drawing.Point(1163, 337);
+            this.CCL110.Location = new System.Drawing.Point(1022, 317);
             this.CCL110.Name = "CCL110";
             this.CCL110.Size = new System.Drawing.Size(57, 13);
             this.CCL110.TabIndex = 234;
@@ -3037,7 +3081,7 @@ namespace DCTBFightingSimulator
             // CCL109
             // 
             this.CCL109.AutoSize = true;
-            this.CCL109.Location = new System.Drawing.Point(1163, 311);
+            this.CCL109.Location = new System.Drawing.Point(1022, 291);
             this.CCL109.Name = "CCL109";
             this.CCL109.Size = new System.Drawing.Size(55, 13);
             this.CCL109.TabIndex = 233;
@@ -3046,7 +3090,7 @@ namespace DCTBFightingSimulator
             // CCL108
             // 
             this.CCL108.AutoSize = true;
-            this.CCL108.Location = new System.Drawing.Point(1163, 285);
+            this.CCL108.Location = new System.Drawing.Point(1022, 265);
             this.CCL108.Name = "CCL108";
             this.CCL108.Size = new System.Drawing.Size(55, 13);
             this.CCL108.TabIndex = 232;
@@ -3055,7 +3099,7 @@ namespace DCTBFightingSimulator
             // CCL107
             // 
             this.CCL107.AutoSize = true;
-            this.CCL107.Location = new System.Drawing.Point(1163, 259);
+            this.CCL107.Location = new System.Drawing.Point(1022, 239);
             this.CCL107.Name = "CCL107";
             this.CCL107.Size = new System.Drawing.Size(55, 13);
             this.CCL107.TabIndex = 231;
@@ -3063,7 +3107,7 @@ namespace DCTBFightingSimulator
             // 
             // CCN39
             // 
-            this.CCN39.Location = new System.Drawing.Point(1231, 335);
+            this.CCN39.Location = new System.Drawing.Point(1091, 314);
             this.CCN39.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -3080,7 +3124,7 @@ namespace DCTBFightingSimulator
             // 
             // CCN38
             // 
-            this.CCN38.Location = new System.Drawing.Point(1231, 309);
+            this.CCN38.Location = new System.Drawing.Point(1091, 288);
             this.CCN38.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -3097,7 +3141,7 @@ namespace DCTBFightingSimulator
             // 
             // CCN37
             // 
-            this.CCN37.Location = new System.Drawing.Point(1231, 283);
+            this.CCN37.Location = new System.Drawing.Point(1091, 262);
             this.CCN37.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -3114,7 +3158,7 @@ namespace DCTBFightingSimulator
             // 
             // CCN36
             // 
-            this.CCN36.Location = new System.Drawing.Point(1231, 257);
+            this.CCN36.Location = new System.Drawing.Point(1091, 236);
             this.CCN36.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -3131,7 +3175,7 @@ namespace DCTBFightingSimulator
             // 
             // CCN35
             // 
-            this.CCN35.Location = new System.Drawing.Point(1231, 231);
+            this.CCN35.Location = new System.Drawing.Point(1091, 210);
             this.CCN35.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -3149,7 +3193,7 @@ namespace DCTBFightingSimulator
             // CCL106
             // 
             this.CCL106.AutoSize = true;
-            this.CCL106.Location = new System.Drawing.Point(1163, 232);
+            this.CCL106.Location = new System.Drawing.Point(1022, 212);
             this.CCL106.Name = "CCL106";
             this.CCL106.Size = new System.Drawing.Size(43, 13);
             this.CCL106.TabIndex = 225;
@@ -3157,7 +3201,7 @@ namespace DCTBFightingSimulator
             // 
             // CCN34
             // 
-            this.CCN34.Location = new System.Drawing.Point(1231, 205);
+            this.CCN34.Location = new System.Drawing.Point(1091, 184);
             this.CCN34.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -3170,7 +3214,7 @@ namespace DCTBFightingSimulator
             // CCL105
             // 
             this.CCL105.AutoSize = true;
-            this.CCL105.Location = new System.Drawing.Point(1163, 207);
+            this.CCL105.Location = new System.Drawing.Point(1022, 187);
             this.CCL105.Name = "CCL105";
             this.CCL105.Size = new System.Drawing.Size(28, 13);
             this.CCL105.TabIndex = 223;
@@ -3179,7 +3223,7 @@ namespace DCTBFightingSimulator
             // CCL104
             // 
             this.CCL104.AutoSize = true;
-            this.CCL104.Location = new System.Drawing.Point(1163, 181);
+            this.CCL104.Location = new System.Drawing.Point(1022, 161);
             this.CCL104.Name = "CCL104";
             this.CCL104.Size = new System.Drawing.Size(54, 13);
             this.CCL104.TabIndex = 222;
@@ -3188,7 +3232,7 @@ namespace DCTBFightingSimulator
             // CCN33
             // 
             this.CCN33.DecimalPlaces = 2;
-            this.CCN33.Location = new System.Drawing.Point(1231, 179);
+            this.CCN33.Location = new System.Drawing.Point(1091, 158);
             this.CCN33.Name = "CCN33";
             this.CCN33.Size = new System.Drawing.Size(100, 20);
             this.CCN33.TabIndex = 221;
@@ -3214,7 +3258,7 @@ namespace DCTBFightingSimulator
             "PSYCHIC",
             "MORTAL",
             "GHOST"});
-            this.CCc51.Location = new System.Drawing.Point(1231, 152);
+            this.CCc51.Location = new System.Drawing.Point(1091, 131);
             this.CCc51.Name = "CCc51";
             this.CCc51.Size = new System.Drawing.Size(100, 21);
             this.CCc51.TabIndex = 220;
@@ -3222,7 +3266,7 @@ namespace DCTBFightingSimulator
             // CCL103
             // 
             this.CCL103.AutoSize = true;
-            this.CCL103.Location = new System.Drawing.Point(1163, 153);
+            this.CCL103.Location = new System.Drawing.Point(1022, 133);
             this.CCL103.Name = "CCL103";
             this.CCL103.Size = new System.Drawing.Size(31, 13);
             this.CCL103.TabIndex = 219;
@@ -3230,7 +3274,7 @@ namespace DCTBFightingSimulator
             // 
             // CCT12
             // 
-            this.CCT12.Location = new System.Drawing.Point(1231, 126);
+            this.CCT12.Location = new System.Drawing.Point(1091, 105);
             this.CCT12.Name = "CCT12";
             this.CCT12.Size = new System.Drawing.Size(100, 20);
             this.CCT12.TabIndex = 218;
@@ -3238,7 +3282,7 @@ namespace DCTBFightingSimulator
             // CCL102
             // 
             this.CCL102.AutoSize = true;
-            this.CCL102.Location = new System.Drawing.Point(1163, 128);
+            this.CCL102.Location = new System.Drawing.Point(1022, 108);
             this.CCL102.Name = "CCL102";
             this.CCL102.Size = new System.Drawing.Size(60, 13);
             this.CCL102.TabIndex = 217;
@@ -3246,7 +3290,7 @@ namespace DCTBFightingSimulator
             // 
             // CCT11
             // 
-            this.CCT11.Location = new System.Drawing.Point(1231, 100);
+            this.CCT11.Location = new System.Drawing.Point(1091, 79);
             this.CCT11.Name = "CCT11";
             this.CCT11.Size = new System.Drawing.Size(100, 20);
             this.CCT11.TabIndex = 216;
@@ -3254,7 +3298,7 @@ namespace DCTBFightingSimulator
             // CCL101
             // 
             this.CCL101.AutoSize = true;
-            this.CCL101.Location = new System.Drawing.Point(1163, 103);
+            this.CCL101.Location = new System.Drawing.Point(1022, 83);
             this.CCL101.Name = "CCL101";
             this.CCL101.Size = new System.Drawing.Size(35, 13);
             this.CCL101.TabIndex = 215;
@@ -3264,7 +3308,7 @@ namespace DCTBFightingSimulator
             // 
             this.CCL100.AutoSize = true;
             this.CCL100.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.CCL100.Location = new System.Drawing.Point(1163, 80);
+            this.CCL100.Location = new System.Drawing.Point(1022, 60);
             this.CCL100.Name = "CCL100";
             this.CCL100.Size = new System.Drawing.Size(60, 17);
             this.CCL100.TabIndex = 214;
@@ -3272,7 +3316,7 @@ namespace DCTBFightingSimulator
             // 
             // exportCharStringButton
             // 
-            this.exportCharStringButton.Location = new System.Drawing.Point(159, 591);
+            this.exportCharStringButton.Location = new System.Drawing.Point(17, 571);
             this.exportCharStringButton.Name = "exportCharStringButton";
             this.exportCharStringButton.Size = new System.Drawing.Size(76, 52);
             this.exportCharStringButton.TabIndex = 254;
@@ -3282,7 +3326,7 @@ namespace DCTBFightingSimulator
             // 
             // exportStringTextBox
             // 
-            this.exportStringTextBox.Location = new System.Drawing.Point(242, 607);
+            this.exportStringTextBox.Location = new System.Drawing.Point(100, 587);
             this.exportStringTextBox.Name = "exportStringTextBox";
             this.exportStringTextBox.Size = new System.Drawing.Size(100, 20);
             this.exportStringTextBox.TabIndex = 255;
@@ -3290,7 +3334,7 @@ namespace DCTBFightingSimulator
             // exportStringDescription
             // 
             this.exportStringDescription.AutoSize = true;
-            this.exportStringDescription.Location = new System.Drawing.Point(159, 650);
+            this.exportStringDescription.Location = new System.Drawing.Point(14, 627);
             this.exportStringDescription.Name = "exportStringDescription";
             this.exportStringDescription.Size = new System.Drawing.Size(832, 13);
             this.exportStringDescription.TabIndex = 256;
@@ -3300,7 +3344,7 @@ namespace DCTBFightingSimulator
             // 
             // loadBuildButton
             // 
-            this.loadBuildButton.Location = new System.Drawing.Point(159, 666);
+            this.loadBuildButton.Location = new System.Drawing.Point(14, 643);
             this.loadBuildButton.Name = "loadBuildButton";
             this.loadBuildButton.Size = new System.Drawing.Size(76, 52);
             this.loadBuildButton.TabIndex = 257;
@@ -3310,7 +3354,7 @@ namespace DCTBFightingSimulator
             // 
             // loadBuildTextBox
             // 
-            this.loadBuildTextBox.Location = new System.Drawing.Point(241, 683);
+            this.loadBuildTextBox.Location = new System.Drawing.Point(96, 660);
             this.loadBuildTextBox.MaxLength = 100000000;
             this.loadBuildTextBox.Name = "loadBuildTextBox";
             this.loadBuildTextBox.Size = new System.Drawing.Size(100, 20);
@@ -3318,7 +3362,7 @@ namespace DCTBFightingSimulator
             // 
             // CCN40
             // 
-            this.CCN40.Location = new System.Drawing.Point(231, 177);
+            this.CCN40.Location = new System.Drawing.Point(89, 157);
             this.CCN40.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -3331,268 +3375,284 @@ namespace DCTBFightingSimulator
             // CCL120
             // 
             this.CCL120.AutoSize = true;
-            this.CCL120.Location = new System.Drawing.Point(165, 181);
+            this.CCL120.Location = new System.Drawing.Point(23, 161);
             this.CCL120.Name = "CCL120";
             this.CCL120.Size = new System.Drawing.Size(22, 13);
             this.CCL120.TabIndex = 260;
             this.CCL120.Text = "HP";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.exportCharStringButton);
+            this.panel1.Controls.Add(this.loadBuildTextBox);
+            this.panel1.Controls.Add(this.CCL120);
+            this.panel1.Controls.Add(this.loadBuildButton);
+            this.panel1.Controls.Add(this.CCL1);
+            this.panel1.Controls.Add(this.exportStringDescription);
+            this.panel1.Controls.Add(this.CCN40);
+            this.panel1.Controls.Add(this.horizCharCreationBar);
+            this.panel1.Controls.Add(this.CCP6);
+            this.panel1.Controls.Add(this.characterCreationDesc);
+            this.panel1.Controls.Add(this.CCT1);
+            this.panel1.Controls.Add(this.characterCreationTitle);
+            this.panel1.Controls.Add(this.CCc60);
+            this.panel1.Controls.Add(this.CCL119);
+            this.panel1.Controls.Add(this.CCc59);
+            this.panel1.Controls.Add(this.CCL2);
+            this.panel1.Controls.Add(this.CCc58);
+            this.panel1.Controls.Add(this.CCL118);
+            this.panel1.Controls.Add(this.CCc57);
+            this.panel1.Controls.Add(this.CCT2);
+            this.panel1.Controls.Add(this.CCc56);
+            this.panel1.Controls.Add(this.CCL117);
+            this.panel1.Controls.Add(this.CCc55);
+            this.panel1.Controls.Add(this.CCL3);
+            this.panel1.Controls.Add(this.CCc54);
+            this.panel1.Controls.Add(this.CCL116);
+            this.panel1.Controls.Add(this.CCc53);
+            this.panel1.Controls.Add(this.exportStringTextBox);
+            this.panel1.Controls.Add(this.CCc52);
+            this.panel1.Controls.Add(this.CCL115);
+            this.panel1.Controls.Add(this.CCN39);
+            this.panel1.Controls.Add(this.CCc1);
+            this.panel1.Controls.Add(this.CCN38);
+            this.panel1.Controls.Add(this.CCL114);
+            this.panel1.Controls.Add(this.CCN37);
+            this.panel1.Controls.Add(this.CCL4);
+            this.panel1.Controls.Add(this.CCN36);
+            this.panel1.Controls.Add(this.CCL113);
+            this.panel1.Controls.Add(this.CCN35);
+            this.panel1.Controls.Add(this.CCN1);
+            this.panel1.Controls.Add(this.CCN34);
+            this.panel1.Controls.Add(this.CCL112);
+            this.panel1.Controls.Add(this.CCN33);
+            this.panel1.Controls.Add(this.CCL5);
+            this.panel1.Controls.Add(this.CCc51);
+            this.panel1.Controls.Add(this.CCL111);
+            this.panel1.Controls.Add(this.CCT12);
+            this.panel1.Controls.Add(this.CCN2);
+            this.panel1.Controls.Add(this.CCT11);
+            this.panel1.Controls.Add(this.CCN3);
+            this.panel1.Controls.Add(this.CCN4);
+            this.panel1.Controls.Add(this.CCL6);
+            this.panel1.Controls.Add(this.CCL7);
+            this.panel1.Controls.Add(this.CCL8);
+            this.panel1.Controls.Add(this.CCL9);
+            this.panel1.Controls.Add(this.CCL10);
+            this.panel1.Controls.Add(this.CCc2);
+            this.panel1.Controls.Add(this.CCc3);
+            this.panel1.Controls.Add(this.CCL110);
+            this.panel1.Controls.Add(this.CCL11);
+            this.panel1.Controls.Add(this.CCL109);
+            this.panel1.Controls.Add(this.CCc4);
+            this.panel1.Controls.Add(this.CCL108);
+            this.panel1.Controls.Add(this.CCc5);
+            this.panel1.Controls.Add(this.CCL107);
+            this.panel1.Controls.Add(this.CCc6);
+            this.panel1.Controls.Add(this.CCc7);
+            this.panel1.Controls.Add(this.CCc8);
+            this.panel1.Controls.Add(this.CCc9);
+            this.panel1.Controls.Add(this.CCc10);
+            this.panel1.Controls.Add(this.CCL12);
+            this.panel1.Controls.Add(this.CCL106);
+            this.panel1.Controls.Add(this.CCL13);
+            this.panel1.Controls.Add(this.CCL14);
+            this.panel1.Controls.Add(this.CCL105);
+            this.panel1.Controls.Add(this.CCL15);
+            this.panel1.Controls.Add(this.CCL104);
+            this.panel1.Controls.Add(this.CCL16);
+            this.panel1.Controls.Add(this.CCL17);
+            this.panel1.Controls.Add(this.CCL18);
+            this.panel1.Controls.Add(this.CCL103);
+            this.panel1.Controls.Add(this.CCL19);
+            this.panel1.Controls.Add(this.CCP1);
+            this.panel1.Controls.Add(this.CCL102);
+            this.panel1.Controls.Add(this.CCL20);
+            this.panel1.Controls.Add(this.CCT3);
+            this.panel1.Controls.Add(this.CCL101);
+            this.panel1.Controls.Add(this.CCL21);
+            this.panel1.Controls.Add(this.CCL100);
+            this.panel1.Controls.Add(this.CCP5);
+            this.panel1.Controls.Add(this.CCT4);
+            this.panel1.Controls.Add(this.CCL22);
+            this.panel1.Controls.Add(this.CCc50);
+            this.panel1.Controls.Add(this.CCL99);
+            this.panel1.Controls.Add(this.CCc49);
+            this.panel1.Controls.Add(this.CCc11);
+            this.panel1.Controls.Add(this.CCc48);
+            this.panel1.Controls.Add(this.CCL98);
+            this.panel1.Controls.Add(this.CCc47);
+            this.panel1.Controls.Add(this.CCN5);
+            this.panel1.Controls.Add(this.CCc46);
+            this.panel1.Controls.Add(this.CCL97);
+            this.panel1.Controls.Add(this.CCc45);
+            this.panel1.Controls.Add(this.CCL23);
+            this.panel1.Controls.Add(this.CCc44);
+            this.panel1.Controls.Add(this.CCL96);
+            this.panel1.Controls.Add(this.CCc43);
+            this.panel1.Controls.Add(this.CCL24);
+            this.panel1.Controls.Add(this.CCc42);
+            this.panel1.Controls.Add(this.CCL95);
+            this.panel1.Controls.Add(this.CCN32);
+            this.panel1.Controls.Add(this.CCN6);
+            this.panel1.Controls.Add(this.CCN31);
+            this.panel1.Controls.Add(this.CCL94);
+            this.panel1.Controls.Add(this.CCN30);
+            this.panel1.Controls.Add(this.CCL25);
+            this.panel1.Controls.Add(this.CCN29);
+            this.panel1.Controls.Add(this.CCL93);
+            this.panel1.Controls.Add(this.CCN28);
+            this.panel1.Controls.Add(this.CCN7);
+            this.panel1.Controls.Add(this.CCN27);
+            this.panel1.Controls.Add(this.CCL92);
+            this.panel1.Controls.Add(this.CCN26);
+            this.panel1.Controls.Add(this.CCN8);
+            this.panel1.Controls.Add(this.CCc41);
+            this.panel1.Controls.Add(this.CCL91);
+            this.panel1.Controls.Add(this.CCT10);
+            this.panel1.Controls.Add(this.CCN9);
+            this.panel1.Controls.Add(this.CCT9);
+            this.panel1.Controls.Add(this.CCN10);
+            this.panel1.Controls.Add(this.CCN11);
+            this.panel1.Controls.Add(this.CCL26);
+            this.panel1.Controls.Add(this.CCL27);
+            this.panel1.Controls.Add(this.CCL29);
+            this.panel1.Controls.Add(this.CCL30);
+            this.panel1.Controls.Add(this.CCc12);
+            this.panel1.Controls.Add(this.CCc13);
+            this.panel1.Controls.Add(this.CCc14);
+            this.panel1.Controls.Add(this.CCL90);
+            this.panel1.Controls.Add(this.CCc15);
+            this.panel1.Controls.Add(this.CCL89);
+            this.panel1.Controls.Add(this.CCc16);
+            this.panel1.Controls.Add(this.CCL88);
+            this.panel1.Controls.Add(this.CCc17);
+            this.panel1.Controls.Add(this.CCL87);
+            this.panel1.Controls.Add(this.CCc18);
+            this.panel1.Controls.Add(this.CCc19);
+            this.panel1.Controls.Add(this.CCc20);
+            this.panel1.Controls.Add(this.CCL31);
+            this.panel1.Controls.Add(this.CCL32);
+            this.panel1.Controls.Add(this.CCL33);
+            this.panel1.Controls.Add(this.CCL86);
+            this.panel1.Controls.Add(this.CCL34);
+            this.panel1.Controls.Add(this.CCL35);
+            this.panel1.Controls.Add(this.CCL85);
+            this.panel1.Controls.Add(this.CCL36);
+            this.panel1.Controls.Add(this.CCL84);
+            this.panel1.Controls.Add(this.CCL37);
+            this.panel1.Controls.Add(this.CCL38);
+            this.panel1.Controls.Add(this.CCL39);
+            this.panel1.Controls.Add(this.CCL83);
+            this.panel1.Controls.Add(this.CCL40);
+            this.panel1.Controls.Add(this.CCP2);
+            this.panel1.Controls.Add(this.CCL82);
+            this.panel1.Controls.Add(this.CCL41);
+            this.panel1.Controls.Add(this.CCT5);
+            this.panel1.Controls.Add(this.CCL81);
+            this.panel1.Controls.Add(this.CCL42);
+            this.panel1.Controls.Add(this.CCL80);
+            this.panel1.Controls.Add(this.CCP4);
+            this.panel1.Controls.Add(this.CCT6);
+            this.panel1.Controls.Add(this.CCL43);
+            this.panel1.Controls.Add(this.CCc40);
+            this.panel1.Controls.Add(this.CCL79);
+            this.panel1.Controls.Add(this.CCc39);
+            this.panel1.Controls.Add(this.CCc21);
+            this.panel1.Controls.Add(this.CCc38);
+            this.panel1.Controls.Add(this.CCL78);
+            this.panel1.Controls.Add(this.CCc37);
+            this.panel1.Controls.Add(this.CCN12);
+            this.panel1.Controls.Add(this.CCc36);
+            this.panel1.Controls.Add(this.CCL77);
+            this.panel1.Controls.Add(this.CCc35);
+            this.panel1.Controls.Add(this.CCL44);
+            this.panel1.Controls.Add(this.CCc34);
+            this.panel1.Controls.Add(this.CCL76);
+            this.panel1.Controls.Add(this.CCc33);
+            this.panel1.Controls.Add(this.CCL45);
+            this.panel1.Controls.Add(this.CCc32);
+            this.panel1.Controls.Add(this.CCL75);
+            this.panel1.Controls.Add(this.CCN25);
+            this.panel1.Controls.Add(this.CCN13);
+            this.panel1.Controls.Add(this.CCN24);
+            this.panel1.Controls.Add(this.CCL74);
+            this.panel1.Controls.Add(this.CCN23);
+            this.panel1.Controls.Add(this.CCL46);
+            this.panel1.Controls.Add(this.CCN22);
+            this.panel1.Controls.Add(this.CCL73);
+            this.panel1.Controls.Add(this.CCN21);
+            this.panel1.Controls.Add(this.CCN14);
+            this.panel1.Controls.Add(this.CCN20);
+            this.panel1.Controls.Add(this.CCL72);
+            this.panel1.Controls.Add(this.CCN19);
+            this.panel1.Controls.Add(this.CCN15);
+            this.panel1.Controls.Add(this.CCc31);
+            this.panel1.Controls.Add(this.CCL71);
+            this.panel1.Controls.Add(this.CCT8);
+            this.panel1.Controls.Add(this.CCN16);
+            this.panel1.Controls.Add(this.CCT7);
+            this.panel1.Controls.Add(this.CCN17);
+            this.panel1.Controls.Add(this.CCN18);
+            this.panel1.Controls.Add(this.CCL47);
+            this.panel1.Controls.Add(this.CCL48);
+            this.panel1.Controls.Add(this.CCL49);
+            this.panel1.Controls.Add(this.CCL50);
+            this.panel1.Controls.Add(this.CCc22);
+            this.panel1.Controls.Add(this.CCc23);
+            this.panel1.Controls.Add(this.CCc24);
+            this.panel1.Controls.Add(this.CCL70);
+            this.panel1.Controls.Add(this.CCc30);
+            this.panel1.Controls.Add(this.CCL69);
+            this.panel1.Controls.Add(this.CCc25);
+            this.panel1.Controls.Add(this.CCL68);
+            this.panel1.Controls.Add(this.CCc26);
+            this.panel1.Controls.Add(this.CCL67);
+            this.panel1.Controls.Add(this.CCc27);
+            this.panel1.Controls.Add(this.CCc28);
+            this.panel1.Controls.Add(this.CCc29);
+            this.panel1.Controls.Add(this.CCL51);
+            this.panel1.Controls.Add(this.CCL52);
+            this.panel1.Controls.Add(this.CCL53);
+            this.panel1.Controls.Add(this.CCL66);
+            this.panel1.Controls.Add(this.CCL54);
+            this.panel1.Controls.Add(this.CCL55);
+            this.panel1.Controls.Add(this.CCL65);
+            this.panel1.Controls.Add(this.CCL56);
+            this.panel1.Controls.Add(this.CCL64);
+            this.panel1.Controls.Add(this.CCL57);
+            this.panel1.Controls.Add(this.CCL58);
+            this.panel1.Controls.Add(this.CCL59);
+            this.panel1.Controls.Add(this.CCL63);
+            this.panel1.Controls.Add(this.CCL60);
+            this.panel1.Controls.Add(this.CCP3);
+            this.panel1.Controls.Add(this.CCL62);
+            this.panel1.Controls.Add(this.CCL61);
+            this.panel1.Location = new System.Drawing.Point(153, 9);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1225, 710);
+            this.panel1.TabIndex = 261;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // startingPanel
+            // 
+            this.startingPanel.Controls.Add(this.welcomeLabel1);
+            this.startingPanel.Controls.Add(this.welcomeLabel2);
+            this.startingPanel.Location = new System.Drawing.Point(153, 8);
+            this.startingPanel.Name = "startingPanel";
+            this.startingPanel.Size = new System.Drawing.Size(900, 466);
+            this.startingPanel.TabIndex = 261;
             // 
             // DCTBFightingSimulator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1451, 845);
-            this.Controls.Add(this.CCL120);
-            this.Controls.Add(this.CCN40);
-            this.Controls.Add(this.loadBuildTextBox);
-            this.Controls.Add(this.loadBuildButton);
-            this.Controls.Add(this.exportStringDescription);
-            this.Controls.Add(this.exportStringTextBox);
-            this.Controls.Add(this.exportCharStringButton);
-            this.Controls.Add(this.CCP6);
-            this.Controls.Add(this.CCL119);
-            this.Controls.Add(this.CCL118);
-            this.Controls.Add(this.CCL117);
-            this.Controls.Add(this.CCL116);
-            this.Controls.Add(this.CCL115);
-            this.Controls.Add(this.CCL114);
-            this.Controls.Add(this.CCL113);
-            this.Controls.Add(this.CCL112);
-            this.Controls.Add(this.CCL111);
-            this.Controls.Add(this.CCc60);
-            this.Controls.Add(this.CCc59);
-            this.Controls.Add(this.CCc58);
-            this.Controls.Add(this.CCc57);
-            this.Controls.Add(this.CCc56);
-            this.Controls.Add(this.CCc55);
-            this.Controls.Add(this.CCc54);
-            this.Controls.Add(this.CCc53);
-            this.Controls.Add(this.CCc52);
-            this.Controls.Add(this.CCL110);
-            this.Controls.Add(this.CCL109);
-            this.Controls.Add(this.CCL108);
-            this.Controls.Add(this.CCL107);
-            this.Controls.Add(this.CCN39);
-            this.Controls.Add(this.CCN38);
-            this.Controls.Add(this.CCN37);
-            this.Controls.Add(this.CCN36);
-            this.Controls.Add(this.CCN35);
-            this.Controls.Add(this.CCL106);
-            this.Controls.Add(this.CCN34);
-            this.Controls.Add(this.CCL105);
-            this.Controls.Add(this.CCL104);
-            this.Controls.Add(this.CCN33);
-            this.Controls.Add(this.CCc51);
-            this.Controls.Add(this.CCL103);
-            this.Controls.Add(this.CCT12);
-            this.Controls.Add(this.CCL102);
-            this.Controls.Add(this.CCT11);
-            this.Controls.Add(this.CCL101);
-            this.Controls.Add(this.CCL100);
-            this.Controls.Add(this.CCP5);
-            this.Controls.Add(this.CCL99);
-            this.Controls.Add(this.CCL98);
-            this.Controls.Add(this.CCL97);
-            this.Controls.Add(this.CCL96);
-            this.Controls.Add(this.CCL95);
-            this.Controls.Add(this.CCL94);
-            this.Controls.Add(this.CCL93);
-            this.Controls.Add(this.CCL92);
-            this.Controls.Add(this.CCL91);
-            this.Controls.Add(this.CCc50);
-            this.Controls.Add(this.CCc49);
-            this.Controls.Add(this.CCc48);
-            this.Controls.Add(this.CCc47);
-            this.Controls.Add(this.CCc46);
-            this.Controls.Add(this.CCc45);
-            this.Controls.Add(this.CCc44);
-            this.Controls.Add(this.CCc43);
-            this.Controls.Add(this.CCc42);
-            this.Controls.Add(this.CCL90);
-            this.Controls.Add(this.CCL89);
-            this.Controls.Add(this.CCL88);
-            this.Controls.Add(this.CCL87);
-            this.Controls.Add(this.CCN32);
-            this.Controls.Add(this.CCN31);
-            this.Controls.Add(this.CCN30);
-            this.Controls.Add(this.CCN29);
-            this.Controls.Add(this.CCN28);
-            this.Controls.Add(this.CCL86);
-            this.Controls.Add(this.CCN27);
-            this.Controls.Add(this.CCL85);
-            this.Controls.Add(this.CCL84);
-            this.Controls.Add(this.CCN26);
-            this.Controls.Add(this.CCc41);
-            this.Controls.Add(this.CCL83);
-            this.Controls.Add(this.CCT10);
-            this.Controls.Add(this.CCL82);
-            this.Controls.Add(this.CCT9);
-            this.Controls.Add(this.CCL81);
-            this.Controls.Add(this.CCL80);
-            this.Controls.Add(this.CCP4);
-            this.Controls.Add(this.CCL79);
-            this.Controls.Add(this.CCL78);
-            this.Controls.Add(this.CCL77);
-            this.Controls.Add(this.CCL76);
-            this.Controls.Add(this.CCL75);
-            this.Controls.Add(this.CCL74);
-            this.Controls.Add(this.CCL73);
-            this.Controls.Add(this.CCL72);
-            this.Controls.Add(this.CCL71);
-            this.Controls.Add(this.CCc40);
-            this.Controls.Add(this.CCc39);
-            this.Controls.Add(this.CCc38);
-            this.Controls.Add(this.CCc37);
-            this.Controls.Add(this.CCc36);
-            this.Controls.Add(this.CCc35);
-            this.Controls.Add(this.CCc34);
-            this.Controls.Add(this.CCc33);
-            this.Controls.Add(this.CCc32);
-            this.Controls.Add(this.CCL70);
-            this.Controls.Add(this.CCL69);
-            this.Controls.Add(this.CCL68);
-            this.Controls.Add(this.CCL67);
-            this.Controls.Add(this.CCN25);
-            this.Controls.Add(this.CCN24);
-            this.Controls.Add(this.CCN23);
-            this.Controls.Add(this.CCN22);
-            this.Controls.Add(this.CCN21);
-            this.Controls.Add(this.CCL66);
-            this.Controls.Add(this.CCN20);
-            this.Controls.Add(this.CCL65);
-            this.Controls.Add(this.CCL64);
-            this.Controls.Add(this.CCN19);
-            this.Controls.Add(this.CCc31);
-            this.Controls.Add(this.CCL63);
-            this.Controls.Add(this.CCT8);
-            this.Controls.Add(this.CCL62);
-            this.Controls.Add(this.CCT7);
-            this.Controls.Add(this.CCL61);
-            this.Controls.Add(this.CCL60);
-            this.Controls.Add(this.CCP3);
-            this.Controls.Add(this.CCL59);
-            this.Controls.Add(this.CCL58);
-            this.Controls.Add(this.CCL57);
-            this.Controls.Add(this.CCL56);
-            this.Controls.Add(this.CCL55);
-            this.Controls.Add(this.CCL54);
-            this.Controls.Add(this.CCL53);
-            this.Controls.Add(this.CCL52);
-            this.Controls.Add(this.CCL51);
-            this.Controls.Add(this.CCc29);
-            this.Controls.Add(this.CCc28);
-            this.Controls.Add(this.CCc27);
-            this.Controls.Add(this.CCc26);
-            this.Controls.Add(this.CCc25);
-            this.Controls.Add(this.CCc30);
-            this.Controls.Add(this.CCc24);
-            this.Controls.Add(this.CCc23);
-            this.Controls.Add(this.CCc22);
-            this.Controls.Add(this.CCL50);
-            this.Controls.Add(this.CCL49);
-            this.Controls.Add(this.CCL48);
-            this.Controls.Add(this.CCL47);
-            this.Controls.Add(this.CCN18);
-            this.Controls.Add(this.CCN17);
-            this.Controls.Add(this.CCN16);
-            this.Controls.Add(this.CCN15);
-            this.Controls.Add(this.CCN14);
-            this.Controls.Add(this.CCL46);
-            this.Controls.Add(this.CCN13);
-            this.Controls.Add(this.CCL45);
-            this.Controls.Add(this.CCL44);
-            this.Controls.Add(this.CCN12);
-            this.Controls.Add(this.CCc21);
-            this.Controls.Add(this.CCL43);
-            this.Controls.Add(this.CCT6);
-            this.Controls.Add(this.CCL42);
-            this.Controls.Add(this.CCT5);
-            this.Controls.Add(this.CCL41);
-            this.Controls.Add(this.CCL40);
-            this.Controls.Add(this.CCP2);
-            this.Controls.Add(this.CCL39);
-            this.Controls.Add(this.CCL38);
-            this.Controls.Add(this.CCL37);
-            this.Controls.Add(this.CCL36);
-            this.Controls.Add(this.CCL35);
-            this.Controls.Add(this.CCL34);
-            this.Controls.Add(this.CCL33);
-            this.Controls.Add(this.CCL32);
-            this.Controls.Add(this.CCL31);
-            this.Controls.Add(this.CCc20);
-            this.Controls.Add(this.CCc19);
-            this.Controls.Add(this.CCc18);
-            this.Controls.Add(this.CCc17);
-            this.Controls.Add(this.CCc16);
-            this.Controls.Add(this.CCc15);
-            this.Controls.Add(this.CCc14);
-            this.Controls.Add(this.CCc13);
-            this.Controls.Add(this.CCc12);
-            this.Controls.Add(this.CCL30);
-            this.Controls.Add(this.CCL29);
-            this.Controls.Add(this.CCL27);
-            this.Controls.Add(this.CCL26);
-            this.Controls.Add(this.CCN11);
-            this.Controls.Add(this.CCN10);
-            this.Controls.Add(this.CCN9);
-            this.Controls.Add(this.CCN8);
-            this.Controls.Add(this.CCN7);
-            this.Controls.Add(this.CCL25);
-            this.Controls.Add(this.CCN6);
-            this.Controls.Add(this.CCL24);
-            this.Controls.Add(this.CCL23);
-            this.Controls.Add(this.CCN5);
-            this.Controls.Add(this.CCc11);
-            this.Controls.Add(this.CCL22);
-            this.Controls.Add(this.CCT4);
-            this.Controls.Add(this.CCL21);
-            this.Controls.Add(this.CCT3);
-            this.Controls.Add(this.CCL20);
-            this.Controls.Add(this.CCL19);
-            this.Controls.Add(this.CCP1);
-            this.Controls.Add(this.CCL18);
-            this.Controls.Add(this.CCL17);
-            this.Controls.Add(this.CCL16);
-            this.Controls.Add(this.CCL15);
-            this.Controls.Add(this.CCL14);
-            this.Controls.Add(this.CCL13);
-            this.Controls.Add(this.CCL12);
-            this.Controls.Add(this.CCc10);
-            this.Controls.Add(this.CCc9);
-            this.Controls.Add(this.CCc8);
-            this.Controls.Add(this.CCc7);
-            this.Controls.Add(this.CCc6);
-            this.Controls.Add(this.CCc5);
-            this.Controls.Add(this.CCc4);
-            this.Controls.Add(this.CCL11);
-            this.Controls.Add(this.CCc3);
-            this.Controls.Add(this.CCc2);
-            this.Controls.Add(this.CCL10);
-            this.Controls.Add(this.CCL9);
-            this.Controls.Add(this.CCL8);
-            this.Controls.Add(this.CCL7);
-            this.Controls.Add(this.CCL6);
-            this.Controls.Add(this.CCN4);
-            this.Controls.Add(this.CCN3);
-            this.Controls.Add(this.CCN2);
-            this.Controls.Add(this.CCL5);
-            this.Controls.Add(this.CCN1);
-            this.Controls.Add(this.CCL4);
-            this.Controls.Add(this.CCc1);
-            this.Controls.Add(this.CCL3);
-            this.Controls.Add(this.CCT2);
-            this.Controls.Add(this.CCL2);
-            this.Controls.Add(this.CCT1);
-            this.Controls.Add(this.CCL1);
-            this.Controls.Add(this.horizCharCreationBar);
-            this.Controls.Add(this.characterCreationDesc);
-            this.Controls.Add(this.characterCreationTitle);
+            this.ClientSize = new System.Drawing.Size(1432, 853);
+            this.Controls.Add(this.startingPanel);
             this.Controls.Add(this.changelogButton);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.roadmapButton);
-            this.Controls.Add(this.welcomeLabel2);
-            this.Controls.Add(this.welcomeLabel1);
             this.Controls.Add(this.charDatabaseButton);
             this.Controls.Add(this.createCharButton);
             this.Controls.Add(this.pvpButton);
@@ -3603,6 +3663,7 @@ namespace DCTBFightingSimulator
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.panel1);
             this.Name = "DCTBFightingSimulator";
             this.Text = "DCTBFightingSimulator v0.0.1";
             ((System.ComponentModel.ISupportInitialize)(this.SeparationBar)).EndInit();
@@ -3655,6 +3716,10 @@ namespace DCTBFightingSimulator
             ((System.ComponentModel.ISupportInitialize)(this.CCN34)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CCN33)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CCN40)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.startingPanel.ResumeLayout(false);
+            this.startingPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3922,6 +3987,8 @@ namespace DCTBFightingSimulator
         private System.Windows.Forms.TextBox loadBuildTextBox;
         private System.Windows.Forms.NumericUpDown CCN40;
         private System.Windows.Forms.Label CCL120;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel startingPanel;
     }
 }
 
