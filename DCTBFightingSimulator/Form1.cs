@@ -12,6 +12,13 @@ namespace DCTBFightingSimulator
 {
     public partial class DCTBFightingSimulator : Form
     {
+        /*Character Strings Database Here:
+        */
+
+        //For use in-simulation:
+        private Character player1;
+        private Character player2;
+
         public DCTBFightingSimulator()
         {
             InitializeComponent();
@@ -42,6 +49,343 @@ namespace DCTBFightingSimulator
             System.Windows.Forms.MessageBox.Show("Roadmap:" + Environment.NewLine + "- Updated UI and UI cleanup" + Environment.NewLine + "- New, unique characters and movesets" + Environment.NewLine + "- Tutorial and further explanation of mechanics and functions");
         }
 
+        //Elemental UI methods
+        public void disableAllElementalUI()
+        {
+            //Welcome
+            startingPanel.SendToBack();
+            startingPanel.Hide();
+            startingPanel.Enabled = false;
+            //EvE
+            hideEvEUI();
+            //Character Creation
+            hideAllCharacterCreation();
+            //Character Database
+            hideCharDatabaseUI();
+        }
+        public void hideAllCharacterCreation()
+        {
+            panel1.SendToBack();
+            panel1.Hide();
+            panel1.Enabled = false;
+        }
+        public void enableCharButtonElementalUI()
+        {
+            disableAllElementalUI();
+            panel1.Enabled = true;
+            panel1.BringToFront();
+            panel1.Show();
+        }
+        public void enableCharDatabaseUI()
+        {
+            disableAllElementalUI();
+            characterDatabasePanel.Enabled = true;
+            characterDatabasePanel.BringToFront();
+            characterDatabasePanel.Show();
+        }
+        public void hideCharDatabaseUI()
+        {
+            characterDatabasePanel.SendToBack();
+            characterDatabasePanel.Hide();
+            characterDatabasePanel.Enabled = false;
+        }
+        public void enableEvEUI()
+        {
+            disableAllElementalUI();
+            EvEPanel.Enabled = true;
+            EvEPanel.BringToFront();
+            EvEPanel.Show();
+        }
+        public void hideEvEUI()
+        {
+            EvEPanel.SendToBack();
+            EvEPanel.Hide();
+            EvEPanel.Enabled = false;
+        }
+
+        //EvE Methods
+        private void simulateEveButton_Click(object sender, EventArgs e)
+        {
+            enableEvEUI();
+        }
+        private void EvEStartButton_Click(object sender, EventArgs e)
+        {
+            //Perform checks - player 1
+            if(player1SelectionEvE.Text == null && player1ImportEvE.Text == null)
+            {
+                System.Windows.Forms.MessageBox.Show("Invalid: Character not selected for either player 1, player 2, or both.");
+                return;
+            }
+            if (player2SelectionEvE.Text == null && player2ImportEvE.Text == null)
+            {
+                System.Windows.Forms.MessageBox.Show("Invalid: Character not selected for either player 1, player 2, or both.");
+                return;
+            }
+            if (player1SelectionEvE == null)
+            {
+                if(checkImportString(player1ImportEvE.Text) == true)
+                {
+                    //Perform player 1 Imports based on the import string
+                    player1ImportStringImports(player1ImportEvE.Text);
+                }
+                else
+                {
+                    return;
+                }
+            }
+            else
+            {
+                //Perform player 1 Imports based on the selected dropdown
+                player1DropdownImports();
+            }
+            //Perform checks - player 2
+            if (player2SelectionEvE == null)
+            {
+                if (checkImportString(player2ImportEvE.Text) == true)
+                {
+                    //Perform player 2 Imports based on the import string
+                    player2ImportStringImports(player2ImportEvE.Text);
+                }
+                else
+                {
+                    return;
+                }
+            }
+            else
+            {
+                //Perform player 2 Imports based on the selected dropdown
+                player2DropdownImports();
+            }
+            EvESimulation();
+        }
+            //Player Imports
+                //Player 1
+        private void player1ImportStringImports(string importString)
+        {
+            player1 = new Character(importString);
+            //Load in to all values visually
+            loadPlayer1VisualStats();
+        }
+        private void player1DropdownImports()
+        {
+
+        }
+                //Player 2
+        private void player2ImportStringImports(string importString)
+        {
+            player2 = new Character(importString);
+            //Load in to all values visually
+            loadPlayer2VisualStats();
+        }
+        private void player2DropdownImports()
+        {
+
+        }
+            //Visual Stats
+                //Player 1
+        private void loadPlayer1VisualStats()
+        {
+            p1Name.Text = player1.getName();
+            p1Desc.Text = player1.getDesc();
+            p1Hp.Value = player1.getHP();
+            p1Atk.Value = player1.getAtk();
+            p1Def.Value = player1.getDef();
+            p1Acc.Value = player1.getAcc();
+            p1Dge.Value = player1.getDge();
+            p1Mv1.Text = player1.getMv1Name();
+            p1Mv1Desc.Text = player1.getMv1Desc();
+            p1Mv1AtkM.Value = (decimal)player1.getMv1M();
+            p1Mv1Acc.Value = player1.getMv1Acc();
+            p1Mv2.Text = player1.getMv2Name();
+            p1Mv2Desc.Text = player1.getMv2Desc();
+            p1Mv2AtkM.Value = (decimal)player1.getMv2M();
+            p1Mv2Acc.Value = player1.getMv2Acc();
+            p1Mv3.Text = player1.getMv3Name();
+            p1Mv3Desc.Text = player1.getMv3Desc();
+            p1Mv3AtkM.Value = (decimal)player1.getMv3M();
+            p1Mv3Acc.Value = player1.getMv3Acc();
+            p1Mv4.Text = player1.getMv4Name();
+            p1Mv4Desc.Text = player1.getMv4Desc();
+            p1Mv4AtkM.Value = (decimal)player1.getMv4M();
+            p1Mv4Acc.Value = player1.getMv4Acc();
+            if (player1.getIsStunned() == true)
+            {
+                p1Stunned.Text = "YES";
+            }
+            else
+            {
+                p1Stunned.Text = "NO";
+            }
+            if (player1.getIsPoisoned() == true)
+            {
+                p1Poisoned.Text = "YES";
+            }
+            else
+            {
+                p1Poisoned.Text = "NO";
+            }
+            if (player1.getIsBurned() == true)
+            {
+                p1Burned.Text = "YES";
+            }
+            else
+            {
+                p1Burned.Text = "NO";
+            }
+            if (player1.getIsCrippled() == true)
+            {
+                p1Crippled.Text = "YES";
+            }
+            else
+            {
+                p1Crippled.Text = "NO";
+            }
+            if (player1.getIsFrozen() == true)
+            {
+                p1Frozen.Text = "YES";
+            }
+            else
+            {
+                p1Frozen.Text = "NO";
+            }
+            if (player1.getIsBleeding() == true)
+            {
+                p1Bleeding.Text = "YES";
+            }
+            else
+            {
+                p1Bleeding.Text = "NO";
+            }
+            if (player1.getIsStupefied() == true)
+            {
+                p1Stupefied.Text = "YES";
+            }
+            else
+            {
+                p1Stupefied.Text = "NO";
+            }
+            if (player1.getIsWeak() == true)
+            {
+                p1Weak.Text = "YES";
+            }
+            else
+            {
+                p1Weak.Text = "NO";
+            }
+            if (player1.getIsDizzy() == true)
+            {
+                p1Dizzy.Text = "YES";
+            }
+            else
+            {
+                p1Dizzy.Text = "NO";
+            }
+        }
+                //Player 2
+        private void loadPlayer2VisualStats()
+        {
+            p2Name.Text = player2.getName();
+            p2Desc.Text = player2.getDesc();
+            p2Hp.Value = player2.getHP();
+            p2Atk.Value = player2.getAtk();
+            p2Def.Value = player2.getDef();
+            p2Acc.Value = player2.getAcc();
+            p2Dge.Value = player2.getDge();
+            p2Mv1.Text = player2.getMv1Name();
+            p2Mv1Desc.Text = player2.getMv1Desc();
+            p2Mv1AtkM.Value = (decimal)player2.getMv1M();
+            p2Mv1Acc.Value = player2.getMv1Acc();
+            p2Mv2.Text = player2.getMv2Name();
+            p2Mv2Desc.Text = player2.getMv2Desc();
+            p2Mv2AtkM.Value = (decimal)player2.getMv2M();
+            p2Mv2Acc.Value = player2.getMv2Acc();
+            p2Mv3.Text = player2.getMv3Name();
+            p2Mv3Desc.Text = player2.getMv3Desc();
+            p2Mv3AtkM.Value = (decimal)player2.getMv3M();
+            p2Mv3Acc.Value = player2.getMv3Acc();
+            p2Mv4.Text = player2.getMv4Name();
+            p2Mv4Desc.Text = player2.getMv4Desc();
+            p2Mv4AtkM.Value = (decimal)player2.getMv4M();
+            p2Mv4Acc.Value = player2.getMv4Acc();
+            if (player2.getIsStunned() == true)
+            {
+                p2Stunned.Text = "YES";
+            }
+            else
+            {
+                p2Stunned.Text = "NO";
+            }
+            if (player2.getIsPoisoned() == true)
+            {
+                p2Poisoned.Text = "YES";
+            }
+            else
+            {
+                p2Poisoned.Text = "NO";
+            }
+            if (player2.getIsBurned() == true)
+            {
+                p2Burned.Text = "YES";
+            }
+            else
+            {
+                p2Burned.Text = "NO";
+            }
+            if (player2.getIsCrippled() == true)
+            {
+                p2Crippled.Text = "YES";
+            }
+            else
+            {
+                p2Crippled.Text = "NO";
+            }
+            if (player2.getIsFrozen() == true)
+            {
+                p2Frozen.Text = "YES";
+            }
+            else
+            {
+                p2Frozen.Text = "NO";
+            }
+            if (player2.getIsBleeding() == true)
+            {
+                p2Bleeding.Text = "YES";
+            }
+            else
+            {
+                p2Bleeding.Text = "NO";
+            }
+            if (player2.getIsStupefied() == true)
+            {
+                p2Stupefied.Text = "YES";
+            }
+            else
+            {
+                p2Stupefied.Text = "NO";
+            }
+            if (player2.getIsWeak() == true)
+            {
+                p2Weak.Text = "YES";
+            }
+            else
+            {
+                p2Weak.Text = "NO";
+            }
+            if (player2.getIsDizzy() == true)
+            {
+                p2Dizzy.Text = "YES";
+            }
+            else
+            {
+                p2Dizzy.Text = "NO";
+            }
+        }
+        //EvE Simulation
+        private void EvESimulation()
+        {
+
+        }
+        
         //Character Creation Methods
         private void createCharButton_Click(object sender, EventArgs e)
         {
@@ -2544,29 +2888,13 @@ namespace DCTBFightingSimulator
             return true;
         }
 
-        //Elemental UI methods
-        public void disableAllElementalUI()
+        //Character Database Methods
+        private void charDatabaseButton_Click(object sender, EventArgs e)
         {
-            //Welcome
-            startingPanel.SendToBack();
-            startingPanel.Hide();
-            startingPanel.Enabled = false;
-            //Character Creation
-            hideAllCharacterCreation();
-        }
-        public void hideAllCharacterCreation()
-        {
-            panel1.SendToBack();
-            panel1.Hide();
-            panel1.Enabled = false;
-        }
-        public void enableCharButtonElementalUI()
-        {
-            panel1.Enabled = true;
-            panel1.BringToFront();
-            panel1.Show();
+            enableCharDatabaseUI();
         }
 
+        //UNEDITABLE/NON-REMOVABLE METHODS
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
@@ -2786,5 +3114,7 @@ namespace DCTBFightingSimulator
         {
             
         }
+
+       
     }
 }

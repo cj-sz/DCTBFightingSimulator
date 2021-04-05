@@ -36,6 +36,9 @@ namespace DCTBFightingSimulator
          *              if 0 < ans < 100, randomized (ex. if 80, 80% chance)
          *              if <= 0, misses
          *          ATK, DEF, ACC, and DGE chances modified by multipliers, not raw values.
+         *          
+         *  At the bottom is all of the methods for in-match modifications. A character is imported with a string build, then the data is moved visually, and then
+         *  temporary edits are made until the match is complete, upon which the object is terminated.
          */
 
         //Constructor (takes an input string)
@@ -1342,6 +1345,218 @@ namespace DCTBFightingSimulator
         public int getMv5DgeMod()
         {
             return mv5dgeMod;
+        }
+
+        //In-match modifications
+            /*Status effects and turns
+             * Stuns: 1 turn, can't attack
+             * Poisoned: 3 turns, -3% HP and ATK x 0.9
+             * Burned: 5 turns, -3% HP
+             * Crippled: 3 turns, DEF x 0.75
+             * Frozen: 1 turn, can't attack
+             * Bleeding: 5 turns, -3% HP and ACC - 20
+             * Stupefied: 2 turns, 50% chance to not attack
+             * Weak: 3 turns, ATK x 0.75
+             * Dizzy: 3 turns, ACC - 25
+             */
+        private bool isStunned = false;
+        private int stunTurns = 0;
+        private bool isPoisoned = false;
+        private int poisonTurns = 0;
+        private bool isBurned = false;
+        private int burnTurns = 0;
+        private bool isCrippled = false;
+        private int crippleTurns = 0;
+        private bool isFrozen = false;
+        private int frozenTurns = 0;
+        private bool isBleeding = false;
+        private int bleedingTurns = 0;
+        private bool isStupefied = false;
+        private int stupefiedTurns = 0;
+        private bool isWeak = false;
+        private int weakTurns = 0;
+        private bool isDizzy = false;
+        private int dizzyTurns = 0;
+
+        public void modifyHP(int HPMod)
+        {
+            hp += HPMod;
+        }
+        public void modifyATK(int atkMod)
+        {
+            atk += atkMod;
+        }
+        public void modifyDEF(int defMod)
+        {
+            def += defMod;
+        }
+        public void modifyACC(int accMod)
+        {
+            acc += accMod;
+        }
+        public void modifyDGE(int dgeMod)
+        {
+            dge += dgeMod;
+        }
+            //Get statuses
+        public bool getIsStunned()
+        {
+            return isStunned;
+        }
+        public bool getIsPoisoned()
+        {
+            return isPoisoned;
+        }
+        public bool getIsBurned()
+        {
+            return isBurned;
+        }
+        public bool getIsCrippled()
+        {
+            return isCrippled;
+        }
+        public bool getIsFrozen()
+        {
+            return isFrozen;
+        }
+        public bool getIsBleeding()
+        {
+            return isBleeding;
+        }
+        public bool getIsStupefied()
+        {
+            return isStupefied;
+        }
+        public bool getIsWeak()
+        {
+            return isWeak;
+        }
+        public bool getIsDizzy()
+        {
+            return isDizzy;
+        }
+
+        public void induceStun()
+        {
+            isStunned = true;
+            stunTurns = 1;
+        }
+        public void inducePoison()
+        {
+            isPoisoned = true;
+            poisonTurns = 3;
+        }
+        public void induceBurn()
+        {
+            isBurned = true;
+            burnTurns = 5;
+        }
+        public void induceCripple()
+        {
+            isCrippled = true;
+            crippleTurns = 3;
+        }
+        public void induceFrozen()
+        {
+            isFrozen = true;
+            frozenTurns = 1;
+        }
+        public void induceBleeding()
+        {
+            isBleeding = true;
+            bleedingTurns = 5;
+        }
+        public void induceStupefy()
+        {
+            isStupefied = true;
+            stupefiedTurns = 2;
+        }
+        public void induceWeak()
+        {
+            isWeak = true;
+            weakTurns = 3;
+        }
+        public void induceDizzy()
+        {
+            isDizzy = true;
+            dizzyTurns = 3;
+        }
+
+            //Modify turns - THIS IS ALWAYS DONE AFTER THE MOVE IS OVER
+        public void modifyStatusTurns()
+        {
+            if(stunTurns != 0)
+            {
+                stunTurns--;
+                if(stunTurns == 0)
+                {
+                    isStunned = false;
+                }
+            }
+            if(poisonTurns != 0)
+            {
+                poisonTurns--;
+                if(poisonTurns == 0)
+                {
+                    isPoisoned = false;
+                }
+            }
+            if (burnTurns != 0)
+            {
+                burnTurns--;
+                if (burnTurns == 0)
+                {
+                    isBurned = false;
+                }
+            }
+            if(crippleTurns != 0)
+            {
+                crippleTurns--;
+                if(crippleTurns == 0)
+                {
+                    isCrippled = false;
+                }
+            }
+            if(frozenTurns != 0)
+            {
+                frozenTurns--;
+                if(frozenTurns == 0)
+                {
+                    isFrozen = false;
+                }
+            }
+            if(bleedingTurns != 0)
+            {
+                bleedingTurns--;
+                if(bleedingTurns == 0)
+                {
+                    isBleeding = false;
+                }
+            }
+            if(stupefiedTurns != 0)
+            {
+                stupefiedTurns--;
+                if(stupefiedTurns == 0)
+                {
+                    isStupefied = false;
+                }
+            }
+            if(weakTurns != 0)
+            {
+                weakTurns--;
+                if(weakTurns == 0)
+                {
+                    isWeak = false;
+                }
+            }
+            if(dizzyTurns != 0)
+            {
+                dizzyTurns--;
+                if(dizzyTurns == 0)
+                {
+                    isDizzy = false;
+                }
+            }
         }
     }
 }
