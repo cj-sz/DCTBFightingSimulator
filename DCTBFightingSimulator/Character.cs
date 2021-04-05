@@ -1398,6 +1398,12 @@ namespace DCTBFightingSimulator
         {
             dge += dgeMod;
         }
+
+        //If vals are zero
+        public void setHp(int set)
+        {
+            hp = set;
+        }
             //Get statuses
         public bool getIsStunned()
         {

@@ -18,6 +18,8 @@ namespace DCTBFightingSimulator
         //For use in-simulation:
         private Character player1;
         private Character player2;
+        int lastP1Move = 0;
+        int lastP2Move = 0;
 
         public DCTBFightingSimulator()
         {
@@ -62,6 +64,32 @@ namespace DCTBFightingSimulator
             hideAllCharacterCreation();
             //Character Database
             hideCharDatabaseUI();
+        }
+        public void disableAllButtons()
+        {
+            EvEStartButton.Enabled = false;
+            button1.Enabled = false;
+            button2.Enabled = false;
+            simulateEveButton.Enabled = false;
+            pveButton.Enabled = false;
+            pvpButton.Enabled = false;
+            createCharButton.Enabled = false;
+            charDatabaseButton.Enabled = false;
+            changelogButton.Enabled = false;
+            roadmapButton.Enabled = false;
+        }
+        public void enableAllButtons()
+        {
+            EvEStartButton.Enabled = true;
+            button1.Enabled = true;
+            button2.Enabled = true;
+            simulateEveButton.Enabled = true;
+            pveButton.Enabled = true;
+            pvpButton.Enabled = true;
+            createCharButton.Enabled = true;
+            charDatabaseButton.Enabled = true;
+            changelogButton.Enabled = true;
+            roadmapButton.Enabled = true;
         }
         public void hideAllCharacterCreation()
         {
@@ -111,19 +139,19 @@ namespace DCTBFightingSimulator
         private void EvEStartButton_Click(object sender, EventArgs e)
         {
             //Perform checks - player 1
-            if(player1SelectionEvE.Text == null && player1ImportEvE.Text == null)
+            if(player1SelectionEvE.Text == "" && player1ImportEvE.Text == "")
             {
                 System.Windows.Forms.MessageBox.Show("Invalid: Character not selected for either player 1, player 2, or both.");
                 return;
             }
-            if (player2SelectionEvE.Text == null && player2ImportEvE.Text == null)
+            if (player2SelectionEvE.Text == "" && player2ImportEvE.Text == "")
             {
                 System.Windows.Forms.MessageBox.Show("Invalid: Character not selected for either player 1, player 2, or both.");
                 return;
             }
-            if (player1SelectionEvE == null)
+            if (player1SelectionEvE.Text == "")
             {
-                if(checkImportString(player1ImportEvE.Text) == true)
+                if(checkImportString(player1ImportEvE.Text) != false)
                 {
                     //Perform player 1 Imports based on the import string
                     player1ImportStringImports(player1ImportEvE.Text);
@@ -139,9 +167,9 @@ namespace DCTBFightingSimulator
                 player1DropdownImports();
             }
             //Perform checks - player 2
-            if (player2SelectionEvE == null)
+            if (player2SelectionEvE.Text == "")
             {
-                if (checkImportString(player2ImportEvE.Text) == true)
+                if (checkImportString(player2ImportEvE.Text) != false)
                 {
                     //Perform player 2 Imports based on the import string
                     player2ImportStringImports(player2ImportEvE.Text);
@@ -383,9 +411,1078 @@ namespace DCTBFightingSimulator
         //EvE Simulation
         private void EvESimulation()
         {
-
+            disableAllButtons();
+            eveSimText.Text = "";
+            lastP1Move = 0;
+            lastP2Move = 0;
+            eveSimText.Text = "";
+            while (player1.getHP() > 0 && player2.getHP() > 0)
+            {
+                EvERandomAI1(player1);
+                EvERandomAI2(player2);
+            }
+            enableAllButtons();
         }
-        
+            //EvE AIs
+        private void EvERandomAI1(Character player1)
+        {
+                //PLAYER 1
+                //First, check if the player 1 is stunned or frozen
+                bool p1Skipped = stunFrozenChecksP1(player1);
+                if (p1Skipped == true)
+                {
+                    //If they are, see if they take damage from statuses, and then see if they are dead
+                    if (damageStatusChecksP1(player1) == true)
+                    {
+                        eveSimText.AppendText(Environment.NewLine + "Player 1 has died. Player 2 wins!");
+                        enableAllButtons();
+                        return;
+                    }
+                    else
+                    {
+                        //If they don't die, modify their status turns if applicable
+                        player1.modifyStatusTurns();
+                        return;
+                    }
+                }
+                //If they are not stunned or frozen
+                else
+                {
+                    //Check to see if they are stupefied (chance to not attack)
+                    if (player1.getIsStupefied() == true)
+                    {
+                        //If they are, chance to not attack
+                        Random rand1 = new Random();
+                        int notHit = rand1.Next(0, 2);
+                        //If 50% chance is 0, don't hit
+                        if(notHit == 0)
+                        {
+                            eveSimText.AppendText(Environment.NewLine + "Player 1 is stupefied and was not able to attack!");
+                            //Finish the turn with status checks and modifications
+                            if (damageStatusChecksP1(player1) == true)
+                            {
+                                eveSimText.AppendText(Environment.NewLine + "Player 1 has died. Player 2 wins!");
+                                enableAllButtons();
+                                return;
+                            }
+                            else
+                            {
+                                //If they don't die, modify their status turns if applicable
+                                player1.modifyStatusTurns();
+                                return;
+                            }
+                        }
+                        else
+                        {
+                            //Perform a random move
+                            Random rand = new Random();
+                            int randMove = rand.Next(1, 6);
+                            while (randMove == lastP1Move)
+                            {
+                                randMove = rand.Next(1, 6);
+                            }
+                            //Peform the move based on the rand
+                            p1Moves(randMove);
+                            if(player2DeathChecks(player2) == true)
+                            {
+                                loadPlayer2VisualStats();
+                                eveSimText.AppendText(Environment.NewLine + "Player 2 has died. Player 1 wins!");
+                                enableAllButtons();
+                                return;
+                            }
+                            else if(player1DeathChecks(player1) == true)
+                            {
+                                loadPlayer2VisualStats();
+                                loadPlayer1VisualStats();
+                                eveSimText.AppendText(Environment.NewLine + "Player 1 has died. Player 2 wins!");
+                                enableAllButtons();
+                                return;
+                            }
+                            else
+                            {
+                                loadPlayer2VisualStats();
+                                loadPlayer1VisualStats();
+                                return;
+                            }
+                        }
+                    }
+                    //Perform a random move
+                    else
+                    {
+                        Random rand = new Random();
+                        int randMove = rand.Next(1, 6);
+                        while (randMove == lastP1Move)
+                        {
+                            randMove = rand.Next(1, 6);
+                        }
+                        //Peform the move based on the rand
+                        p1Moves(randMove);
+                        if (player2DeathChecks(player2) == true)
+                        {
+                            loadPlayer2VisualStats();
+                            eveSimText.AppendText(Environment.NewLine + "Player 2 has died. Player 1 wins!");
+                            enableAllButtons();
+                            return;
+                        }
+                        else if (player1DeathChecks(player1) == true)
+                        {
+                            loadPlayer2VisualStats();
+                            loadPlayer1VisualStats();
+                            eveSimText.AppendText(Environment.NewLine + "Player 1 has died. Player 2 wins!");
+                            enableAllButtons();
+                            return;
+                        }
+                        else
+                        {
+                            loadPlayer2VisualStats();
+                            loadPlayer1VisualStats();
+                            return;
+                        }
+                    }
+                }
+        }
+        private void EvERandomAI2(Character player2)
+        {
+                //PLAYER 2
+                //First, check if the player 2 is stunned or frozen
+                bool p2Skipped = stunFrozenChecksP2(player2);
+                if (p2Skipped == true)
+                {
+                    //If they are, see if they take damage from statuses, and then see if they are dead
+                    if (damageStatusChecksP2(player2) == true)
+                    {
+                        eveSimText.AppendText(Environment.NewLine + "Player 2 has died. Player 1 wins!");
+                        enableAllButtons();
+                        return;
+                    }
+                    else
+                    {
+                        //If they don't die, modify their status turns if applicable
+                        player2.modifyStatusTurns();
+                        return;
+                    }
+                }
+                //If they are not stunned or frozen
+                else
+                {
+                    //Check to see if they are stupefied (chance to not attack)
+                    if (player2.getIsStupefied() == true)
+                    {
+                        //If they are, chance to not attack
+                        Random rand1 = new Random();
+                        int notHit = rand1.Next(0, 2);
+                        //If 50% chance is 0, don't hit
+                        if (notHit == 0)
+                        {
+                            eveSimText.AppendText(Environment.NewLine + "Player 2 is stupefied and was not able to attack!");
+                            //Finish the turn with status checks and modifications
+                            if (damageStatusChecksP1(player1) == true)
+                            {
+                                eveSimText.AppendText(Environment.NewLine + "Player 2 has died. Player 2 wins!");
+                                enableAllButtons();
+                                return;
+                            }
+                            else
+                            {
+                                //If they don't die, modify their status turns if applicable
+                                player2.modifyStatusTurns();
+                                return;
+                            }
+                        }
+                        else
+                        {
+                            //Perform a random move
+                            Random rand = new Random();
+                            int randMove = rand.Next(1, 6);
+                            while (randMove == lastP1Move)
+                            {
+                                randMove = rand.Next(1, 6);
+                            }
+                            //Peform the move based on the rand
+                            p2Moves(randMove);
+                            if (player1DeathChecks(player1) == true)
+                            {
+                                eveSimText.AppendText(Environment.NewLine + "Player 1 has died. Player 2 wins!");
+                                enableAllButtons();
+                                return;
+                            }
+                            else if (player2DeathChecks(player2) == true)
+                            {
+                                eveSimText.AppendText(Environment.NewLine + "Player 2 has died. Player 1 wins!");
+                                enableAllButtons();
+                                return;
+                            }
+                            else
+                            {
+                                loadPlayer2VisualStats();
+                                loadPlayer1VisualStats();
+                                return;
+                            }
+                        }
+                    }
+                    //Perform a random move
+                    else
+                    {
+                        Random rand = new Random();
+                        int randMove = rand.Next(1, 6);
+                        while (randMove == lastP1Move)
+                        {
+                            randMove = rand.Next(1, 6);
+                        }
+                        //Peform the move based on the rand
+                        p2Moves(randMove);
+                        if (player1DeathChecks(player1) == true)
+                        {
+                            loadPlayer1VisualStats();
+                            eveSimText.AppendText(Environment.NewLine + "Player 1 has died. Player 2 wins!");
+                            enableAllButtons();
+                            return;
+                        }
+                        else if (player2DeathChecks(player2) == true)
+                        {
+                            loadPlayer1VisualStats();
+                            loadPlayer2VisualStats();
+                            eveSimText.AppendText(Environment.NewLine + "Player 2 has died. Player 1 wins!");
+                            enableAllButtons();
+                            return;
+                        }
+                        else
+                        {
+                            loadPlayer2VisualStats();
+                            loadPlayer1VisualStats();
+                            return;
+                        }
+                    }
+                }
+        }
+
+        //General Simulation Methods
+            //Player 1 Checks and Methods
+        private bool stunFrozenChecksP1(Character player1)
+        {
+            //Bool returns if cannot move, true is yes, false is no
+            if(player1.getIsStunned() == true)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 1 is stunned and cannot move!");
+                return true;
+            }else if(player1.getIsFrozen() == true)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 1 is frozen and cannot move!");
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        private bool damageStatusChecksP1(Character player1)
+        {
+            //Bool returns if is dead (true is yes, false is no)
+            //Poison
+            if(player1.getIsPoisoned() == true)
+            {
+                if(player1.getHP() < 30)
+                {
+                    eveSimText.AppendText(Environment.NewLine + "Player 1 takes 1 damage from poison.");
+                    player1.modifyHP(-1);
+                }
+                else
+                {
+                    eveSimText.AppendText(Environment.NewLine + "Player 1 takes " + (player1.getHP() * 0.03).ToString() + " damage from poison.");
+                    player1.modifyHP(-(int)(player1.getHP() * 0.03));
+                }
+                if(player1DeathChecks(player1) == true)
+                {
+                    return true;
+                }
+                else
+                {
+                    loadPlayer1VisualStats();
+                }
+            }
+            //Burn
+            if (player1.getIsBurned() == true)
+            {
+                if (player1.getHP() < 30)
+                {
+                    eveSimText.AppendText(Environment.NewLine + "Player 1 takes 1 damage from burn.");
+                    player1.modifyHP(-1);
+                }
+                else
+                {
+                    eveSimText.AppendText(Environment.NewLine + "Player 1 takes " + (player1.getHP() * 0.03).ToString() + " damage from burn.");
+                    player1.modifyHP(-(int)(player1.getHP() * 0.03));
+                }
+                if (player1DeathChecks(player1) == true)
+                {
+                    return true;
+                }
+                else
+                {
+                    loadPlayer1VisualStats();
+                }
+            }
+            //Bleed
+            if (player1.getIsBleeding() == true)
+            {
+                if (player1.getHP() < 30)
+                {
+                    eveSimText.AppendText(Environment.NewLine + "Player 1 takes 1 damage from bleeding.");
+                    player1.modifyHP(-1);
+                }
+                else
+                {
+                    eveSimText.AppendText(Environment.NewLine + "Player 1 takes " + (player1.getHP() * 0.03).ToString() + " damage from bleeding.");
+                    player1.modifyHP(-(int)(player1.getHP() * 0.03));
+                }
+                if (player1DeathChecks(player1) == true)
+                {
+                    return true;
+                }
+                else
+                {
+                    loadPlayer1VisualStats();
+                }
+            }
+            return false;
+        }
+        private bool player1DeathChecks(Character player1)
+        {
+            if(player1.getHP() <= 0)
+            {
+                player1.setHp(0);
+                loadPlayer1VisualStats();
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        private void p1Moves(int move)
+        {
+            int totalAcc1;
+            //Modifiers
+            float atkStatModValPsn = 1f;
+            float atkStatModValWk = 1f;
+            if(player1.getIsPoisoned() == true)
+            {
+                atkStatModValPsn = 0.9f;
+            }
+            if(player1.getIsWeak() == true)
+            {
+                atkStatModValWk = 0.75f;
+            }
+            //Move 1
+            if(move == 1)
+            {
+                totalAcc1 = player1.getAcc() + player1.getMv1Acc() - player2.getDge();
+                //Check if it was dodged
+                if (totalAcc1 >= 100)
+                {
+                    //The move lands
+                    eveSimText.AppendText(Environment.NewLine + "Player 1 lands their Move 1!");
+                    int totalAtk = (int)(player1.getAtk() * player1.getMv1M() * atkStatModValPsn * atkStatModValWk);
+                    int damageDealt = totalAtk ^ 2 / player2.getDef();
+                    eveSimText.AppendText(Environment.NewLine + "Player 1 deals " + damageDealt.ToString() + " damage to Player 2.");
+                    player2.modifyHP(-damageDealt);
+                    eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own HP by " + player1.getMv1Heal().ToString());
+                    player1.modifyHP(player1.getMv1Heal());
+                    eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own ATK by " + player1.getMv1AtkMod().ToString());
+                    player1.modifyATK(player1.getMv1AtkMod());
+                    eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own DEF by " + player1.getMv1DefMod().ToString());
+                    player1.modifyDEF(player1.getMv1DefMod());
+                    eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own ACC by " + player1.getMv1AccMod().ToString());
+                    player1.modifyACC(player1.getMv1AccMod());
+                    eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own DGE by " + player1.getMv1DgeMod().ToString());
+                    player1.modifyDGE(player1.getMv1DgeMod());
+                }
+                else if(totalAcc1 > 0 && totalAcc1 < 100)
+                {
+                    Random chanceRand = new Random();
+                    int chance = chanceRand.Next(0, totalAcc1);
+                    if(chance <= totalAcc1)
+                    {
+                        //The move lands
+                        eveSimText.AppendText(Environment.NewLine + "Player 1 lands their Move 1!");
+                        int totalAtk = (int)(player1.getAtk() * player1.getMv1M() * atkStatModValPsn * atkStatModValWk);
+                        int damageDealt = totalAtk ^ 2 / player2.getDef();
+                        eveSimText.AppendText(Environment.NewLine + "Player 1 deals " + damageDealt.ToString() + " damage to Player 2.");
+                        player2.modifyHP(-damageDealt);
+                        eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own HP by " + player1.getMv1Heal().ToString());
+                        player1.modifyHP(player1.getMv1Heal());
+                        eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own ATK by " + player1.getMv1AtkMod().ToString());
+                        player1.modifyATK(player1.getMv1AtkMod());
+                        eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own DEF by " + player1.getMv1DefMod().ToString());
+                        player1.modifyDEF(player1.getMv1DefMod());
+                        eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own ACC by " + player1.getMv1AccMod().ToString());
+                        player1.modifyACC(player1.getMv1AccMod());
+                        eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own DGE by " + player1.getMv1DgeMod().ToString());
+                        player1.modifyDGE(player1.getMv1DgeMod());
+                    }
+                    else
+                    {
+                        //The move doesn't hit
+                        eveSimText.AppendText(Environment.NewLine + "Player 2 dodges the attack.");
+                    }
+                }
+                else
+                {
+                    //The move doesn't hit
+                    eveSimText.AppendText(Environment.NewLine + "Player 2 dodges the attack.");
+                }
+            }
+            //Move 2
+            if (move == 2)
+            {
+                totalAcc1 = player1.getAcc() + player1.getMv2Acc() - player2.getDge();
+                //Check if it was dodged
+                if (totalAcc1 >= 100)
+                {
+                    //The move lands
+                    eveSimText.AppendText(Environment.NewLine + "Player 1 lands their Move 2!");
+                    int totalAtk = (int)(player1.getAtk() * player1.getMv2M() * atkStatModValPsn * atkStatModValWk);
+                    int damageDealt = totalAtk ^ 2 / player2.getDef();
+                    eveSimText.AppendText(Environment.NewLine + "Player 1 deals " + damageDealt.ToString() + " damage to Player 2.");
+                    player2.modifyHP(-damageDealt);
+                    eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own HP by " + player1.getMv2Heal().ToString());
+                    player1.modifyHP(player1.getMv2Heal());
+                    eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own ATK by " + player1.getMv2AtkMod().ToString());
+                    player1.modifyATK(player1.getMv2AtkMod());
+                    eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own DEF by " + player1.getMv2DefMod().ToString());
+                    player1.modifyDEF(player1.getMv2DefMod());
+                    eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own ACC by " + player1.getMv2AccMod().ToString());
+                    player1.modifyACC(player1.getMv2AccMod());
+                    eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own DGE by " + player1.getMv2DgeMod().ToString());
+                    player1.modifyDGE(player1.getMv2DgeMod());
+                }
+                else if (totalAcc1 > 0 && totalAcc1 < 100)
+                {
+                    Random chanceRand = new Random();
+                    int chance = chanceRand.Next(0, totalAcc1);
+                    if (chance <= totalAcc1)
+                    {
+                        //The move lands
+                        eveSimText.AppendText(Environment.NewLine + "Player 1 lands their Move 2!");
+                        int totalAtk = (int)(player1.getAtk() * player1.getMv2M() * atkStatModValPsn * atkStatModValWk);
+                        int damageDealt = totalAtk ^ 2 / player2.getDef();
+                        eveSimText.AppendText(Environment.NewLine + "Player 1 deals " + damageDealt.ToString() + " damage to Player 2.");
+                        player2.modifyHP(-damageDealt);
+                        eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own HP by " + player1.getMv2Heal().ToString());
+                        player1.modifyHP(player1.getMv2Heal());
+                        eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own ATK by " + player1.getMv2AtkMod().ToString());
+                        player1.modifyATK(player1.getMv2AtkMod());
+                        eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own DEF by " + player1.getMv2DefMod().ToString());
+                        player1.modifyDEF(player1.getMv2DefMod());
+                        eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own ACC by " + player1.getMv2AccMod().ToString());
+                        player1.modifyACC(player1.getMv2AccMod());
+                        eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own DGE by " + player1.getMv2DgeMod().ToString());
+                        player1.modifyDGE(player1.getMv2DgeMod());
+                    }
+                    else
+                    {
+                        //The move doesn't hit
+                        eveSimText.AppendText(Environment.NewLine + "Player 2 dodges the attack.");
+                    }
+                }
+                else
+                {
+                    //The move doesn't hit
+                    eveSimText.AppendText(Environment.NewLine + "Player 2 dodges the attack.");
+                }
+            }
+            //Move 3
+            if (move == 3)
+            {
+                totalAcc1 = player1.getAcc() + player1.getMv3Acc() - player2.getDge();
+                //Check if it was dodged
+                if (totalAcc1 >= 100)
+                {
+                    //The move lands
+                    eveSimText.AppendText(Environment.NewLine + "Player 1 lands their Move 3!");
+                    int totalAtk = (int)(player1.getAtk() * player1.getMv3M() * atkStatModValPsn * atkStatModValWk);
+                    int damageDealt = totalAtk ^ 2 / player2.getDef();
+                    eveSimText.AppendText(Environment.NewLine + "Player 1 deals " + damageDealt.ToString() + " damage to Player 2.");
+                    player2.modifyHP(-damageDealt);
+                    eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own HP by " + player1.getMv3Heal().ToString());
+                    player1.modifyHP(player1.getMv3Heal());
+                    eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own ATK by " + player1.getMv3AtkMod().ToString());
+                    player1.modifyATK(player1.getMv3AtkMod());
+                    eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own DEF by " + player1.getMv3DefMod().ToString());
+                    player1.modifyDEF(player1.getMv3DefMod());
+                    eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own ACC by " + player1.getMv3AccMod().ToString());
+                    player1.modifyACC(player1.getMv3AccMod());
+                    eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own DGE by " + player1.getMv3DgeMod().ToString());
+                    player1.modifyDGE(player1.getMv3DgeMod());
+                }
+                else if (totalAcc1 > 0 && totalAcc1 < 100)
+                {
+                    Random chanceRand = new Random();
+                    int chance = chanceRand.Next(0, totalAcc1);
+                    if (chance <= totalAcc1)
+                    {
+                        //The move lands
+                        eveSimText.AppendText(Environment.NewLine + "Player 1 lands their Move 3!");
+                        int totalAtk = (int)(player1.getAtk() * player1.getMv3M() * atkStatModValPsn * atkStatModValWk);
+                        int damageDealt = totalAtk ^ 2 / player2.getDef();
+                        eveSimText.AppendText(Environment.NewLine + "Player 1 deals " + damageDealt.ToString() + " damage to Player 2.");
+                        player2.modifyHP(-damageDealt);
+                        eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own HP by " + player1.getMv3Heal().ToString());
+                        player1.modifyHP(player1.getMv3Heal());
+                        eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own ATK by " + player1.getMv3AtkMod().ToString());
+                        player1.modifyATK(player1.getMv3AtkMod());
+                        eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own DEF by " + player1.getMv3DefMod().ToString());
+                        player1.modifyDEF(player1.getMv3DefMod());
+                        eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own ACC by " + player1.getMv3AccMod().ToString());
+                        player1.modifyACC(player1.getMv3AccMod());
+                        eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own DGE by " + player1.getMv3DgeMod().ToString());
+                        player1.modifyDGE(player1.getMv3DgeMod());
+                    }
+                    else
+                    {
+                        //The move doesn't hit
+                        eveSimText.AppendText(Environment.NewLine + "Player 2 dodges the attack.");
+                    }
+                }
+                else
+                {
+                    //The move doesn't hit
+                    eveSimText.AppendText(Environment.NewLine + "Player 2 dodges the attack.");
+                }
+            }
+            //Move 4
+            if (move == 4)
+            {
+                totalAcc1 = player1.getAcc() + player1.getMv4Acc() - player2.getDge();
+                //Check if it was dodged
+                if (totalAcc1 >= 100)
+                {
+                    //The move lands
+                    eveSimText.AppendText(Environment.NewLine + "Player 1 lands their Move 4!");
+                    int totalAtk = (int)(player1.getAtk() * player1.getMv4M() * atkStatModValPsn * atkStatModValWk);
+                    int damageDealt = totalAtk ^ 2 / player2.getDef();
+                    eveSimText.AppendText(Environment.NewLine + "Player 1 deals " + damageDealt.ToString() + " damage to Player 2.");
+                    player2.modifyHP(-damageDealt);
+                    eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own HP by " + player1.getMv4Heal().ToString());
+                    player1.modifyHP(player1.getMv4Heal());
+                    eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own ATK by " + player1.getMv4AtkMod().ToString());
+                    player1.modifyATK(player1.getMv4AtkMod());
+                    eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own DEF by " + player1.getMv4DefMod().ToString());
+                    player1.modifyDEF(player1.getMv4DefMod());
+                    eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own ACC by " + player1.getMv4AccMod().ToString());
+                    player1.modifyACC(player1.getMv4AccMod());
+                    eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own DGE by " + player1.getMv4DgeMod().ToString());
+                    player1.modifyDGE(player1.getMv4DgeMod());
+                }
+                else if (totalAcc1 > 0 && totalAcc1 < 100)
+                {
+                    Random chanceRand = new Random();
+                    int chance = chanceRand.Next(0, totalAcc1);
+                    if (chance <= totalAcc1)
+                    {
+                        //The move lands
+                        eveSimText.AppendText(Environment.NewLine + "Player 1 lands their Move 4!");
+                        int totalAtk = (int)(player1.getAtk() * player1.getMv4M() * atkStatModValPsn * atkStatModValWk);
+                        int damageDealt = totalAtk ^ 2 / player2.getDef();
+                        eveSimText.AppendText(Environment.NewLine + "Player 1 deals " + damageDealt.ToString() + " damage to Player 2.");
+                        player2.modifyHP(-damageDealt);
+                        eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own HP by " + player1.getMv4Heal().ToString());
+                        player1.modifyHP(player1.getMv4Heal());
+                        eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own ATK by " + player1.getMv4AtkMod().ToString());
+                        player1.modifyATK(player1.getMv4AtkMod());
+                        eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own DEF by " + player1.getMv4DefMod().ToString());
+                        player1.modifyDEF(player1.getMv4DefMod());
+                        eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own ACC by " + player1.getMv4AccMod().ToString());
+                        player1.modifyACC(player1.getMv4AccMod());
+                        eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own DGE by " + player1.getMv4DgeMod().ToString());
+                        player1.modifyDGE(player1.getMv4DgeMod());
+                    }
+                    else
+                    {
+                        //The move doesn't hit
+                        eveSimText.AppendText(Environment.NewLine + "Player 2 dodges the attack.");
+                    }
+                }
+                else
+                {
+                    //The move doesn't hit
+                    eveSimText.AppendText(Environment.NewLine + "Player 2 dodges the attack.");
+                }
+            }
+            //Move 5
+            if (move == 5)
+            {
+                totalAcc1 = player1.getAcc() + player1.getMv5Acc() - player2.getDge();
+                //Check if it was dodged
+                if (totalAcc1 >= 100)
+                {
+                    //The move lands
+                    eveSimText.AppendText(Environment.NewLine + "Player 1 lands their Move 5!");
+                    int totalAtk = (int)(player1.getAtk() * player1.getMv4M() * atkStatModValPsn * atkStatModValWk);
+                    int damageDealt = totalAtk ^ 2 / player2.getDef();
+                    eveSimText.AppendText(Environment.NewLine + "Player 1 deals " + damageDealt.ToString() + " damage to Player 2.");
+                    player2.modifyHP(-damageDealt);
+                    eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own HP by " + player1.getMv5Heal().ToString());
+                    player1.modifyHP(player1.getMv5Heal());
+                    eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own ATK by " + player1.getMv5AtkMod().ToString());
+                    player1.modifyATK(player1.getMv5AtkMod());
+                    eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own DEF by " + player1.getMv5DefMod().ToString());
+                    player1.modifyDEF(player1.getMv5DefMod());
+                    eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own ACC by " + player1.getMv5AccMod().ToString());
+                    player1.modifyACC(player1.getMv5AccMod());
+                    eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own DGE by " + player1.getMv5DgeMod().ToString());
+                    player1.modifyDGE(player1.getMv5DgeMod());
+                }
+                else if (totalAcc1 > 0 && totalAcc1 < 100)
+                {
+                    Random chanceRand = new Random();
+                    int chance = chanceRand.Next(0, totalAcc1);
+                    if (chance <= totalAcc1)
+                    {
+                        //The move lands
+                        eveSimText.AppendText(Environment.NewLine + "Player 1 lands their Move 5!");
+                        int totalAtk = (int)(player1.getAtk() * player1.getMv4M() * atkStatModValPsn * atkStatModValWk);
+                        int damageDealt = totalAtk ^ 2 / player2.getDef();
+                        eveSimText.AppendText(Environment.NewLine + "Player 1 deals " + damageDealt.ToString() + " damage to Player 2.");
+                        player2.modifyHP(-damageDealt);
+                        eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own HP by " + player1.getMv5Heal().ToString());
+                        player1.modifyHP(player1.getMv5Heal());
+                        eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own ATK by " + player1.getMv5AtkMod().ToString());
+                        player1.modifyATK(player1.getMv5AtkMod());
+                        eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own DEF by " + player1.getMv5DefMod().ToString());
+                        player1.modifyDEF(player1.getMv5DefMod());
+                        eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own ACC by " + player1.getMv5AccMod().ToString());
+                        player1.modifyACC(player1.getMv5AccMod());
+                        eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own DGE by " + player1.getMv5DgeMod().ToString());
+                        player1.modifyDGE(player1.getMv5DgeMod());
+                    }
+                    else
+                    {
+                        //The move doesn't hit
+                        eveSimText.AppendText(Environment.NewLine + "Player 2 dodges the attack.");
+                    }
+                }
+                else
+                {
+                    //The move doesn't hit
+                    eveSimText.AppendText(Environment.NewLine + "Player 2 dodges the attack.");
+                }
+            }
+        }
+            //Player 2 Checks and Methods
+        private bool stunFrozenChecksP2(Character player2)
+        {
+            //Bool returns if cannot move, true is yes, false is no
+            if (player2.getIsStunned() == true)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 2 is stunned and cannot move!");
+                return true;
+            }
+            else if (player2.getIsFrozen() == true)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 2 is frozen and cannot move!");
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        private bool damageStatusChecksP2(Character player2)
+        {
+            //Bool returns if is dead (true is yes, false is no)
+            //Poison
+            if (player2.getIsPoisoned() == true)
+            {
+                if (player2.getHP() < 30)
+                {
+                    eveSimText.AppendText(Environment.NewLine + "Player 2 takes 1 damage from poison.");
+                    player2.modifyHP(-1);
+                }
+                else
+                {
+                    eveSimText.AppendText(Environment.NewLine + "Player 2 takes " + (player2.getHP() * 0.03).ToString() + " damage from poison.");
+                    player2.modifyHP(-(int)(player2.getHP() * 0.03));
+                }
+                if (player2DeathChecks(player2) == true)
+                {
+                    return true;
+                }
+                else
+                {
+                    loadPlayer2VisualStats();
+                }
+            }
+            //Burn
+            if (player2.getIsBurned() == true)
+            {
+                if (player2.getHP() < 30)
+                {
+                    eveSimText.AppendText(Environment.NewLine + "Player 2 takes 1 damage from burn.");
+                    player2.modifyHP(-1);
+                }
+                else
+                {
+                    eveSimText.AppendText(Environment.NewLine + "Player 2 takes " + (player2.getHP() * 0.03).ToString() + " damage from burn.");
+                    player2.modifyHP(-(int)(player2.getHP() * 0.03));
+                }
+                if (player2DeathChecks(player2) == true)
+                {
+                    return true;
+                }
+                else
+                {
+                    loadPlayer2VisualStats();
+                }
+            }
+            //Bleed
+            if (player2.getIsBleeding() == true)
+            {
+                if (player2.getHP() < 30)
+                {
+                    eveSimText.AppendText(Environment.NewLine + "Player 2 takes 1 damage from bleeding.");
+                    player2.modifyHP(-1);
+                }
+                else
+                {
+                    eveSimText.AppendText(Environment.NewLine + "Player 2 takes " + (player2.getHP() * 0.03).ToString() + " damage from bleeding.");
+                    player2.modifyHP(-(int)(player2.getHP() * 0.03));
+                }
+                if (player2DeathChecks(player2) == true)
+                {
+                    return true;
+                }
+                else
+                {
+                    loadPlayer2VisualStats();
+                }
+            }
+            return false;
+        }
+        private bool player2DeathChecks(Character player2)
+        {
+            if (player2.getHP() <= 0)
+            {
+                player2.setHp(0);
+                loadPlayer2VisualStats();
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        private void p2Moves(int move)
+        {
+            int totalAcc1;
+            //Modifiers
+            float atkStatModValPsn = 1f;
+            float atkStatModValWk = 1f;
+            if (player2.getIsPoisoned() == true)
+            {
+                atkStatModValPsn = 0.9f;
+            }
+            if (player2.getIsWeak() == true)
+            {
+                atkStatModValWk = 0.75f;
+            }
+            //Move 1
+            if (move == 1)
+            {
+                totalAcc1 = player2.getAcc() + player2.getMv1Acc() - player1.getDge();
+                //Check if it was dodged
+                if (totalAcc1 >= 100)
+                {
+                    //The move lands
+                    eveSimText.AppendText(Environment.NewLine + "Player 2 lands their Move 1!");
+                    int totalAtk = (int)(player2.getAtk() * player2.getMv1M() * atkStatModValPsn * atkStatModValWk);
+                    int damageDealt = totalAtk ^ 2 / player1.getDef();
+                    eveSimText.AppendText(Environment.NewLine + "Player 2 deals " + damageDealt.ToString() + " damage to Player 1.");
+                    player1.modifyHP(-damageDealt);
+                    eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own HP by " + player2.getMv1Heal().ToString());
+                    player2.modifyHP(player2.getMv1Heal());
+                    eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own ATK by " + player2.getMv1AtkMod().ToString());
+                    player2.modifyATK(player2.getMv1AtkMod());
+                    eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own DEF by " + player2.getMv1DefMod().ToString());
+                    player2.modifyDEF(player2.getMv1DefMod());
+                    eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own ACC by " + player2.getMv1AccMod().ToString());
+                    player2.modifyACC(player2.getMv1AccMod());
+                    eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own DGE by " + player2.getMv1DgeMod().ToString());
+                    player2.modifyDGE(player2.getMv1DgeMod());
+                }
+                else if (totalAcc1 > 0 && totalAcc1 < 100)
+                {
+                    Random chanceRand = new Random();
+                    int chance = chanceRand.Next(0, totalAcc1);
+                    if (chance <= totalAcc1)
+                    {
+                        //The move lands
+                        eveSimText.AppendText(Environment.NewLine + "Player 2 lands their Move 1!");
+                        int totalAtk = (int)(player2.getAtk() * player2.getMv1M() * atkStatModValPsn * atkStatModValWk);
+                        int damageDealt = totalAtk ^ 2 / player1.getDef();
+                        eveSimText.AppendText(Environment.NewLine + "Player 2 deals " + damageDealt.ToString() + " damage to Player 1.");
+                        player1.modifyHP(-damageDealt);
+                        eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own HP by " + player2.getMv1Heal().ToString());
+                        player2.modifyHP(player2.getMv1Heal());
+                        eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own ATK by " + player2.getMv1AtkMod().ToString());
+                        player2.modifyATK(player2.getMv1AtkMod());
+                        eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own DEF by " + player2.getMv1DefMod().ToString());
+                        player2.modifyDEF(player2.getMv1DefMod());
+                        eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own ACC by " + player2.getMv1AccMod().ToString());
+                        player2.modifyACC(player2.getMv1AccMod());
+                        eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own DGE by " + player2.getMv1DgeMod().ToString());
+                        player2.modifyDGE(player2.getMv1DgeMod());
+                    }
+                    else
+                    {
+                        //The move doesn't hit
+                        eveSimText.AppendText(Environment.NewLine + "Player 1 dodges the attack.");
+                    }
+                }
+                else
+                {
+                    //The move doesn't hit
+                    eveSimText.AppendText(Environment.NewLine + "Player 1 dodges the attack.");
+                }
+            }
+            //Move 2
+            if (move == 2)
+            {
+                totalAcc1 = player2.getAcc() + player2.getMv2Acc() - player1.getDge();
+                //Check if it was dodged
+                if (totalAcc1 >= 100)
+                {
+                    //The move lands
+                    eveSimText.AppendText(Environment.NewLine + "Player 2 lands their Move 2!");
+                    int totalAtk = (int)(player2.getAtk() * player2.getMv2M() * atkStatModValPsn * atkStatModValWk);
+                    int damageDealt = totalAtk ^ 2 / player1.getDef();
+                    eveSimText.AppendText(Environment.NewLine + "Player 2 deals " + damageDealt.ToString() + " damage to Player 1.");
+                    player1.modifyHP(-damageDealt);
+                    eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own HP by " + player2.getMv2Heal().ToString());
+                    player2.modifyHP(player2.getMv2Heal());
+                    eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own ATK by " + player2.getMv2AtkMod().ToString());
+                    player2.modifyATK(player2.getMv2AtkMod());
+                    eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own DEF by " + player2.getMv2DefMod().ToString());
+                    player2.modifyDEF(player2.getMv2DefMod());
+                    eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own ACC by " + player2.getMv2AccMod().ToString());
+                    player2.modifyACC(player2.getMv2AccMod());
+                    eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own DGE by " + player2.getMv2DgeMod().ToString());
+                    player2.modifyDGE(player2.getMv2DgeMod());
+                }
+                else if (totalAcc1 > 0 && totalAcc1 < 100)
+                {
+                    Random chanceRand = new Random();
+                    int chance = chanceRand.Next(0, totalAcc1);
+                    if (chance <= totalAcc1)
+                    {
+                        //The move lands
+                        eveSimText.AppendText(Environment.NewLine + "Player 2 lands their Move 2!");
+                        int totalAtk = (int)(player2.getAtk() * player2.getMv2M() * atkStatModValPsn * atkStatModValWk);
+                        int damageDealt = totalAtk ^ 2 / player1.getDef();
+                        eveSimText.AppendText(Environment.NewLine + "Player 2 deals " + damageDealt.ToString() + " damage to Player 1.");
+                        player1.modifyHP(-damageDealt);
+                        eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own HP by " + player2.getMv2Heal().ToString());
+                        player2.modifyHP(player2.getMv2Heal());
+                        eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own ATK by " + player2.getMv2AtkMod().ToString());
+                        player2.modifyATK(player2.getMv2AtkMod());
+                        eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own DEF by " + player2.getMv2DefMod().ToString());
+                        player2.modifyDEF(player2.getMv2DefMod());
+                        eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own ACC by " + player2.getMv2AccMod().ToString());
+                        player2.modifyACC(player2.getMv2AccMod());
+                        eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own DGE by " + player2.getMv2DgeMod().ToString());
+                        player2.modifyDGE(player2.getMv2DgeMod());
+                    }
+                    else
+                    {
+                        //The move doesn't hit
+                        eveSimText.AppendText(Environment.NewLine + "Player 1 dodges the attack.");
+                    }
+                }
+                else
+                {
+                    //The move doesn't hit
+                    eveSimText.AppendText(Environment.NewLine + "Player 1 dodges the attack.");
+                }
+            }
+            //Move 3
+            if (move == 3)
+            {
+                totalAcc1 = player2.getAcc() + player2.getMv3Acc() - player1.getDge();
+                //Check if it was dodged
+                if (totalAcc1 >= 100)
+                {
+                    //The move lands
+                    eveSimText.AppendText(Environment.NewLine + "Player 2 lands their Move 3!");
+                    int totalAtk = (int)(player2.getAtk() * player2.getMv3M() * atkStatModValPsn * atkStatModValWk);
+                    int damageDealt = totalAtk ^ 2 / player1.getDef();
+                    eveSimText.AppendText(Environment.NewLine + "Player 2 deals " + damageDealt.ToString() + " damage to Player 1.");
+                    player1.modifyHP(-damageDealt);
+                    eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own HP by " + player2.getMv3Heal().ToString());
+                    player2.modifyHP(player2.getMv3Heal());
+                    eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own ATK by " + player2.getMv3AtkMod().ToString());
+                    player2.modifyATK(player2.getMv3AtkMod());
+                    eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own DEF by " + player2.getMv3DefMod().ToString());
+                    player2.modifyDEF(player2.getMv3DefMod());
+                    eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own ACC by " + player2.getMv3AccMod().ToString());
+                    player2.modifyACC(player2.getMv3AccMod());
+                    eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own DGE by " + player2.getMv3DgeMod().ToString());
+                    player2.modifyDGE(player2.getMv3DgeMod());
+                }
+                else if (totalAcc1 > 0 && totalAcc1 < 100)
+                {
+                    Random chanceRand = new Random();
+                    int chance = chanceRand.Next(0, totalAcc1);
+                    if (chance <= totalAcc1)
+                    {
+                        //The move lands
+                        eveSimText.AppendText(Environment.NewLine + "Player 2 lands their Move 3!");
+                        int totalAtk = (int)(player2.getAtk() * player2.getMv3M() * atkStatModValPsn * atkStatModValWk);
+                        int damageDealt = totalAtk ^ 2 / player1.getDef();
+                        eveSimText.AppendText(Environment.NewLine + "Player 2 deals " + damageDealt.ToString() + " damage to Player 1.");
+                        player1.modifyHP(-damageDealt);
+                        eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own HP by " + player2.getMv3Heal().ToString());
+                        player2.modifyHP(player2.getMv3Heal());
+                        eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own ATK by " + player2.getMv3AtkMod().ToString());
+                        player2.modifyATK(player2.getMv3AtkMod());
+                        eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own DEF by " + player2.getMv3DefMod().ToString());
+                        player2.modifyDEF(player2.getMv3DefMod());
+                        eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own ACC by " + player2.getMv3AccMod().ToString());
+                        player2.modifyACC(player2.getMv3AccMod());
+                        eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own DGE by " + player2.getMv3DgeMod().ToString());
+                        player2.modifyDGE(player2.getMv3DgeMod());
+                    }
+                    else
+                    {
+                        //The move doesn't hit
+                        eveSimText.AppendText(Environment.NewLine + "Player 1 dodges the attack.");
+                    }
+                }
+                else
+                {
+                    //The move doesn't hit
+                    eveSimText.AppendText(Environment.NewLine + "Player 1 dodges the attack.");
+                }
+            }
+            //Move 4
+            if (move == 4)
+            {
+                totalAcc1 = player2.getAcc() + player2.getMv4Acc() - player1.getDge();
+                //Check if it was dodged
+                if (totalAcc1 >= 100)
+                {
+                    //The move lands
+                    eveSimText.AppendText(Environment.NewLine + "Player 2 lands their Move 4!");
+                    int totalAtk = (int)(player2.getAtk() * player2.getMv4M() * atkStatModValPsn * atkStatModValWk);
+                    int damageDealt = totalAtk ^ 2 / player1.getDef();
+                    eveSimText.AppendText(Environment.NewLine + "Player 2 deals " + damageDealt.ToString() + " damage to Player 1.");
+                    player1.modifyHP(-damageDealt);
+                    eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own HP by " + player2.getMv4Heal().ToString());
+                    player2.modifyHP(player2.getMv4Heal());
+                    eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own ATK by " + player2.getMv4AtkMod().ToString());
+                    player2.modifyATK(player2.getMv4AtkMod());
+                    eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own DEF by " + player2.getMv4DefMod().ToString());
+                    player2.modifyDEF(player2.getMv4DefMod());
+                    eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own ACC by " + player2.getMv4AccMod().ToString());
+                    player2.modifyACC(player2.getMv4AccMod());
+                    eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own DGE by " + player2.getMv4DgeMod().ToString());
+                    player2.modifyDGE(player2.getMv4DgeMod());
+                }
+                else if (totalAcc1 > 0 && totalAcc1 < 100)
+                {
+                    Random chanceRand = new Random();
+                    int chance = chanceRand.Next(0, totalAcc1);
+                    if (chance <= totalAcc1)
+                    {
+                        //The move lands
+                        eveSimText.AppendText(Environment.NewLine + "Player 2 lands their Move 4!");
+                        int totalAtk = (int)(player2.getAtk() * player2.getMv4M() * atkStatModValPsn * atkStatModValWk);
+                        int damageDealt = totalAtk ^ 2 / player1.getDef();
+                        eveSimText.AppendText(Environment.NewLine + "Player 2 deals " + damageDealt.ToString() + " damage to Player 1.");
+                        player1.modifyHP(-damageDealt);
+                        eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own HP by " + player2.getMv4Heal().ToString());
+                        player2.modifyHP(player2.getMv4Heal());
+                        eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own ATK by " + player2.getMv4AtkMod().ToString());
+                        player2.modifyATK(player2.getMv4AtkMod());
+                        eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own DEF by " + player2.getMv4DefMod().ToString());
+                        player2.modifyDEF(player2.getMv4DefMod());
+                        eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own ACC by " + player2.getMv4AccMod().ToString());
+                        player2.modifyACC(player2.getMv4AccMod());
+                        eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own DGE by " + player2.getMv4DgeMod().ToString());
+                        player2.modifyDGE(player2.getMv4DgeMod());
+                    }
+                    else
+                    {
+                        //The move doesn't hit
+                        eveSimText.AppendText(Environment.NewLine + "Player 1 dodges the attack.");
+                    }
+                }
+                else
+                {
+                    //The move doesn't hit
+                    eveSimText.AppendText(Environment.NewLine + "Player 1 dodges the attack.");
+                }
+            }
+            //Move 5
+            if (move == 5)
+            {
+                totalAcc1 = player2.getAcc() + player2.getMv5Acc() - player1.getDge();
+                //Check if it was dodged
+                if (totalAcc1 >= 100)
+                {
+                    //The move lands
+                    eveSimText.AppendText(Environment.NewLine + "Player 2 lands their Move 5!");
+                    int totalAtk = (int)(player2.getAtk() * player2.getMv4M() * atkStatModValPsn * atkStatModValWk);
+                    int damageDealt = totalAtk ^ 2 / player1.getDef();
+                    eveSimText.AppendText(Environment.NewLine + "Player 2 deals " + damageDealt.ToString() + " damage to Player 1.");
+                    player1.modifyHP(-damageDealt);
+                    eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own HP by " + player2.getMv5Heal().ToString());
+                    player2.modifyHP(player2.getMv5Heal());
+                    eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own ATK by " + player2.getMv5AtkMod().ToString());
+                    player2.modifyATK(player2.getMv5AtkMod());
+                    eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own DEF by " + player2.getMv5DefMod().ToString());
+                    player2.modifyDEF(player2.getMv5DefMod());
+                    eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own ACC by " + player2.getMv5AccMod().ToString());
+                    player2.modifyACC(player2.getMv5AccMod());
+                    eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own DGE by " + player2.getMv5DgeMod().ToString());
+                    player2.modifyDGE(player2.getMv5DgeMod());
+                }
+                else if (totalAcc1 > 0 && totalAcc1 < 100)
+                {
+                    Random chanceRand = new Random();
+                    int chance = chanceRand.Next(0, totalAcc1);
+                    if (chance <= totalAcc1)
+                    {
+                        //The move lands
+                        eveSimText.AppendText(Environment.NewLine + "Player 2 lands their Move 5!");
+                        int totalAtk = (int)(player2.getAtk() * player2.getMv4M() * atkStatModValPsn * atkStatModValWk);
+                        int damageDealt = totalAtk ^ 2 / player1.getDef();
+                        eveSimText.AppendText(Environment.NewLine + "Player 2 deals " + damageDealt.ToString() + " damage to Player 1.");
+                        player1.modifyHP(-damageDealt);
+                        eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own HP by " + player2.getMv5Heal().ToString());
+                        player2.modifyHP(player2.getMv5Heal());
+                        eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own ATK by " + player2.getMv5AtkMod().ToString());
+                        player2.modifyATK(player2.getMv5AtkMod());
+                        eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own DEF by " + player2.getMv5DefMod().ToString());
+                        player2.modifyDEF(player2.getMv5DefMod());
+                        eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own ACC by " + player2.getMv5AccMod().ToString());
+                        player2.modifyACC(player2.getMv5AccMod());
+                        eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own DGE by " + player2.getMv5DgeMod().ToString());
+                        player2.modifyDGE(player2.getMv5DgeMod());
+                    }
+                    else
+                    {
+                        //The move doesn't hit
+                        eveSimText.AppendText(Environment.NewLine + "Player 1 dodges the attack.");
+                    }
+                }
+                else
+                {
+                    //The move doesn't hit
+                    eveSimText.AppendText(Environment.NewLine + "Player 1 dodges the attack.");
+                }
+            }
+        }
+
         //Character Creation Methods
         private void createCharButton_Click(object sender, EventArgs e)
         {

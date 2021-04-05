@@ -281,17 +281,6 @@ namespace DCTBFightingSimulator
             this.CCN40 = new System.Windows.Forms.NumericUpDown();
             this.CCL120 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.startingPanel = new System.Windows.Forms.Panel();
-            this.characterDatabasePanel = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.vanillaExports = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.horizCharCreationBar = new System.Windows.Forms.PictureBox();
             this.CCP6 = new System.Windows.Forms.PictureBox();
             this.CCP1 = new System.Windows.Forms.PictureBox();
@@ -299,103 +288,114 @@ namespace DCTBFightingSimulator
             this.CCP2 = new System.Windows.Forms.PictureBox();
             this.CCP4 = new System.Windows.Forms.PictureBox();
             this.CCP3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.SeparationBar = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.userCreatedExports = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.utilityExports = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.opExports = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.typeNoneExports = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.typeVoidExports = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.typeEarthlyExports = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.typeAirExports = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.typeGroundExports = new System.Windows.Forms.TextBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.typeElectricExports = new System.Windows.Forms.TextBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.comboBox10 = new System.Windows.Forms.ComboBox();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.typeMetalExports = new System.Windows.Forms.TextBox();
-            this.label24 = new System.Windows.Forms.Label();
-            this.comboBox11 = new System.Windows.Forms.ComboBox();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.label25 = new System.Windows.Forms.Label();
-            this.typeIntelligentExports = new System.Windows.Forms.TextBox();
-            this.label26 = new System.Windows.Forms.Label();
-            this.comboBox12 = new System.Windows.Forms.ComboBox();
-            this.pictureBox16 = new System.Windows.Forms.PictureBox();
-            this.label27 = new System.Windows.Forms.Label();
-            this.typeForceExports = new System.Windows.Forms.TextBox();
-            this.label28 = new System.Windows.Forms.Label();
-            this.comboBox13 = new System.Windows.Forms.ComboBox();
-            this.pictureBox17 = new System.Windows.Forms.PictureBox();
-            this.label29 = new System.Windows.Forms.Label();
-            this.typeIceExports = new System.Windows.Forms.TextBox();
-            this.label30 = new System.Windows.Forms.Label();
-            this.comboBox14 = new System.Windows.Forms.ComboBox();
-            this.pictureBox18 = new System.Windows.Forms.PictureBox();
-            this.label31 = new System.Windows.Forms.Label();
-            this.typeFireExports = new System.Windows.Forms.TextBox();
-            this.label32 = new System.Windows.Forms.Label();
-            this.comboBox15 = new System.Windows.Forms.ComboBox();
-            this.pictureBox19 = new System.Windows.Forms.PictureBox();
-            this.label33 = new System.Windows.Forms.Label();
-            this.typeNaturalExports = new System.Windows.Forms.TextBox();
-            this.label34 = new System.Windows.Forms.Label();
-            this.comboBox16 = new System.Windows.Forms.ComboBox();
-            this.pictureBox20 = new System.Windows.Forms.PictureBox();
-            this.label35 = new System.Windows.Forms.Label();
-            this.typePsychicExports = new System.Windows.Forms.TextBox();
-            this.label36 = new System.Windows.Forms.Label();
-            this.comboBox17 = new System.Windows.Forms.ComboBox();
-            this.pictureBox21 = new System.Windows.Forms.PictureBox();
-            this.label37 = new System.Windows.Forms.Label();
-            this.typeMortalExports = new System.Windows.Forms.TextBox();
-            this.label38 = new System.Windows.Forms.Label();
-            this.comboBox18 = new System.Windows.Forms.ComboBox();
+            this.startingPanel = new System.Windows.Forms.Panel();
+            this.characterDatabasePanel = new System.Windows.Forms.Panel();
             this.pictureBox22 = new System.Windows.Forms.PictureBox();
             this.label39 = new System.Windows.Forms.Label();
             this.typeGhostExports = new System.Windows.Forms.TextBox();
             this.label40 = new System.Windows.Forms.Label();
             this.comboBox19 = new System.Windows.Forms.ComboBox();
+            this.pictureBox21 = new System.Windows.Forms.PictureBox();
+            this.label37 = new System.Windows.Forms.Label();
+            this.typeMortalExports = new System.Windows.Forms.TextBox();
+            this.label38 = new System.Windows.Forms.Label();
+            this.comboBox18 = new System.Windows.Forms.ComboBox();
+            this.pictureBox20 = new System.Windows.Forms.PictureBox();
+            this.label35 = new System.Windows.Forms.Label();
+            this.typePsychicExports = new System.Windows.Forms.TextBox();
+            this.label36 = new System.Windows.Forms.Label();
+            this.comboBox17 = new System.Windows.Forms.ComboBox();
+            this.pictureBox19 = new System.Windows.Forms.PictureBox();
+            this.label33 = new System.Windows.Forms.Label();
+            this.typeNaturalExports = new System.Windows.Forms.TextBox();
+            this.label34 = new System.Windows.Forms.Label();
+            this.comboBox16 = new System.Windows.Forms.ComboBox();
+            this.pictureBox18 = new System.Windows.Forms.PictureBox();
+            this.label31 = new System.Windows.Forms.Label();
+            this.typeFireExports = new System.Windows.Forms.TextBox();
+            this.label32 = new System.Windows.Forms.Label();
+            this.comboBox15 = new System.Windows.Forms.ComboBox();
+            this.pictureBox17 = new System.Windows.Forms.PictureBox();
+            this.label29 = new System.Windows.Forms.Label();
+            this.typeIceExports = new System.Windows.Forms.TextBox();
+            this.label30 = new System.Windows.Forms.Label();
+            this.comboBox14 = new System.Windows.Forms.ComboBox();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            this.label27 = new System.Windows.Forms.Label();
+            this.typeForceExports = new System.Windows.Forms.TextBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.comboBox13 = new System.Windows.Forms.ComboBox();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.typeIntelligentExports = new System.Windows.Forms.TextBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.comboBox12 = new System.Windows.Forms.ComboBox();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.typeMetalExports = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.comboBox11 = new System.Windows.Forms.ComboBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.typeElectricExports = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.comboBox10 = new System.Windows.Forms.ComboBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.typeGroundExports = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.comboBox9 = new System.Windows.Forms.ComboBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.typeAirExports = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.comboBox8 = new System.Windows.Forms.ComboBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.typeEarthlyExports = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.typeVoidExports = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.typeNoneExports = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.opExports = new System.Windows.Forms.Label();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.utilityExports = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.userCreatedExports = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.vanillaExports = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.SeparationBar = new System.Windows.Forms.PictureBox();
             this.label41 = new System.Windows.Forms.Label();
             this.pictureBox23 = new System.Windows.Forms.PictureBox();
             this.label42 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.eveSimText = new System.Windows.Forms.TextBox();
             this.pictureBox24 = new System.Windows.Forms.PictureBox();
             this.label43 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
@@ -418,70 +418,6 @@ namespace DCTBFightingSimulator
             this.label52 = new System.Windows.Forms.Label();
             this.p1Atk = new System.Windows.Forms.NumericUpDown();
             this.EvEPanel = new System.Windows.Forms.Panel();
-            this.p1Def = new System.Windows.Forms.NumericUpDown();
-            this.label53 = new System.Windows.Forms.Label();
-            this.p1Dge = new System.Windows.Forms.NumericUpDown();
-            this.label54 = new System.Windows.Forms.Label();
-            this.p1Acc = new System.Windows.Forms.NumericUpDown();
-            this.label55 = new System.Windows.Forms.Label();
-            this.p1Stunned = new System.Windows.Forms.TextBox();
-            this.label56 = new System.Windows.Forms.Label();
-            this.p1Poisoned = new System.Windows.Forms.TextBox();
-            this.label57 = new System.Windows.Forms.Label();
-            this.p1Crippled = new System.Windows.Forms.TextBox();
-            this.label58 = new System.Windows.Forms.Label();
-            this.p1Burned = new System.Windows.Forms.TextBox();
-            this.label59 = new System.Windows.Forms.Label();
-            this.p1Weak = new System.Windows.Forms.TextBox();
-            this.label60 = new System.Windows.Forms.Label();
-            this.p1Stupefied = new System.Windows.Forms.TextBox();
-            this.label61 = new System.Windows.Forms.Label();
-            this.p1Bleeding = new System.Windows.Forms.TextBox();
-            this.label62 = new System.Windows.Forms.Label();
-            this.p1Frozen = new System.Windows.Forms.TextBox();
-            this.label63 = new System.Windows.Forms.Label();
-            this.p1Dizzy = new System.Windows.Forms.TextBox();
-            this.label64 = new System.Windows.Forms.Label();
-            this.label65 = new System.Windows.Forms.Label();
-            this.p1Mv1 = new System.Windows.Forms.TextBox();
-            this.label66 = new System.Windows.Forms.Label();
-            this.p1Mv1Acc = new System.Windows.Forms.NumericUpDown();
-            this.label67 = new System.Windows.Forms.Label();
-            this.p1Mv1AtkM = new System.Windows.Forms.NumericUpDown();
-            this.label68 = new System.Windows.Forms.Label();
-            this.p1Mv1Desc = new System.Windows.Forms.TextBox();
-            this.p1Mv2Desc = new System.Windows.Forms.TextBox();
-            this.p1Mv2AtkM = new System.Windows.Forms.NumericUpDown();
-            this.label69 = new System.Windows.Forms.Label();
-            this.p1Mv2Acc = new System.Windows.Forms.NumericUpDown();
-            this.label70 = new System.Windows.Forms.Label();
-            this.label71 = new System.Windows.Forms.Label();
-            this.p1Mv2 = new System.Windows.Forms.TextBox();
-            this.label72 = new System.Windows.Forms.Label();
-            this.p1Mv3Desc = new System.Windows.Forms.TextBox();
-            this.p1Mv3AtkM = new System.Windows.Forms.NumericUpDown();
-            this.label73 = new System.Windows.Forms.Label();
-            this.p1Mv3Acc = new System.Windows.Forms.NumericUpDown();
-            this.label74 = new System.Windows.Forms.Label();
-            this.label75 = new System.Windows.Forms.Label();
-            this.p1Mv3 = new System.Windows.Forms.TextBox();
-            this.label76 = new System.Windows.Forms.Label();
-            this.p1Mv4Desc = new System.Windows.Forms.TextBox();
-            this.p1Mv4AtkM = new System.Windows.Forms.NumericUpDown();
-            this.label77 = new System.Windows.Forms.Label();
-            this.p1Mv4Acc = new System.Windows.Forms.NumericUpDown();
-            this.label78 = new System.Windows.Forms.Label();
-            this.label79 = new System.Windows.Forms.Label();
-            this.p1Mv4 = new System.Windows.Forms.TextBox();
-            this.label80 = new System.Windows.Forms.Label();
-            this.p1Mv5Desc = new System.Windows.Forms.TextBox();
-            this.p1Mv5AtkM = new System.Windows.Forms.NumericUpDown();
-            this.label81 = new System.Windows.Forms.Label();
-            this.p1Mv5Acc = new System.Windows.Forms.NumericUpDown();
-            this.label82 = new System.Windows.Forms.Label();
-            this.label83 = new System.Windows.Forms.Label();
-            this.p1Mv5 = new System.Windows.Forms.TextBox();
-            this.label84 = new System.Windows.Forms.Label();
             this.p2Mv5Desc = new System.Windows.Forms.TextBox();
             this.p2Mv5AtkM = new System.Windows.Forms.NumericUpDown();
             this.label85 = new System.Windows.Forms.Label();
@@ -554,6 +490,70 @@ namespace DCTBFightingSimulator
             this.label119 = new System.Windows.Forms.Label();
             this.p2Name = new System.Windows.Forms.TextBox();
             this.label120 = new System.Windows.Forms.Label();
+            this.p1Mv5Desc = new System.Windows.Forms.TextBox();
+            this.p1Mv5AtkM = new System.Windows.Forms.NumericUpDown();
+            this.label81 = new System.Windows.Forms.Label();
+            this.p1Mv5Acc = new System.Windows.Forms.NumericUpDown();
+            this.label82 = new System.Windows.Forms.Label();
+            this.label83 = new System.Windows.Forms.Label();
+            this.p1Mv5 = new System.Windows.Forms.TextBox();
+            this.label84 = new System.Windows.Forms.Label();
+            this.p1Mv4Desc = new System.Windows.Forms.TextBox();
+            this.p1Mv4AtkM = new System.Windows.Forms.NumericUpDown();
+            this.label77 = new System.Windows.Forms.Label();
+            this.p1Mv4Acc = new System.Windows.Forms.NumericUpDown();
+            this.label78 = new System.Windows.Forms.Label();
+            this.label79 = new System.Windows.Forms.Label();
+            this.p1Mv4 = new System.Windows.Forms.TextBox();
+            this.label80 = new System.Windows.Forms.Label();
+            this.p1Mv3Desc = new System.Windows.Forms.TextBox();
+            this.p1Mv3AtkM = new System.Windows.Forms.NumericUpDown();
+            this.label73 = new System.Windows.Forms.Label();
+            this.p1Mv3Acc = new System.Windows.Forms.NumericUpDown();
+            this.label74 = new System.Windows.Forms.Label();
+            this.label75 = new System.Windows.Forms.Label();
+            this.p1Mv3 = new System.Windows.Forms.TextBox();
+            this.label76 = new System.Windows.Forms.Label();
+            this.p1Mv2Desc = new System.Windows.Forms.TextBox();
+            this.p1Mv2AtkM = new System.Windows.Forms.NumericUpDown();
+            this.label69 = new System.Windows.Forms.Label();
+            this.p1Mv2Acc = new System.Windows.Forms.NumericUpDown();
+            this.label70 = new System.Windows.Forms.Label();
+            this.label71 = new System.Windows.Forms.Label();
+            this.p1Mv2 = new System.Windows.Forms.TextBox();
+            this.label72 = new System.Windows.Forms.Label();
+            this.p1Mv1Desc = new System.Windows.Forms.TextBox();
+            this.p1Mv1AtkM = new System.Windows.Forms.NumericUpDown();
+            this.label68 = new System.Windows.Forms.Label();
+            this.p1Mv1Acc = new System.Windows.Forms.NumericUpDown();
+            this.label67 = new System.Windows.Forms.Label();
+            this.label65 = new System.Windows.Forms.Label();
+            this.p1Mv1 = new System.Windows.Forms.TextBox();
+            this.label66 = new System.Windows.Forms.Label();
+            this.p1Dizzy = new System.Windows.Forms.TextBox();
+            this.label64 = new System.Windows.Forms.Label();
+            this.p1Weak = new System.Windows.Forms.TextBox();
+            this.label60 = new System.Windows.Forms.Label();
+            this.p1Stupefied = new System.Windows.Forms.TextBox();
+            this.label61 = new System.Windows.Forms.Label();
+            this.p1Bleeding = new System.Windows.Forms.TextBox();
+            this.label62 = new System.Windows.Forms.Label();
+            this.p1Frozen = new System.Windows.Forms.TextBox();
+            this.label63 = new System.Windows.Forms.Label();
+            this.p1Crippled = new System.Windows.Forms.TextBox();
+            this.label58 = new System.Windows.Forms.Label();
+            this.p1Burned = new System.Windows.Forms.TextBox();
+            this.label59 = new System.Windows.Forms.Label();
+            this.p1Poisoned = new System.Windows.Forms.TextBox();
+            this.label57 = new System.Windows.Forms.Label();
+            this.p1Stunned = new System.Windows.Forms.TextBox();
+            this.label56 = new System.Windows.Forms.Label();
+            this.p1Dge = new System.Windows.Forms.NumericUpDown();
+            this.label54 = new System.Windows.Forms.Label();
+            this.p1Acc = new System.Windows.Forms.NumericUpDown();
+            this.label55 = new System.Windows.Forms.Label();
+            this.p1Def = new System.Windows.Forms.NumericUpDown();
+            this.label53 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.CCN1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CCN2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CCN3)).BeginInit();
@@ -595,10 +595,6 @@ namespace DCTBFightingSimulator
             ((System.ComponentModel.ISupportInitialize)(this.CCN33)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CCN40)).BeginInit();
             this.panel1.SuspendLayout();
-            this.startingPanel.SuspendLayout();
-            this.characterDatabasePanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.horizCharCreationBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CCP6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CCP1)).BeginInit();
@@ -606,45 +602,36 @@ namespace DCTBFightingSimulator
             ((System.ComponentModel.ISupportInitialize)(this.CCP2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CCP4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CCP3)).BeginInit();
+            this.startingPanel.SuspendLayout();
+            this.characterDatabasePanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SeparationBar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.p1Hp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.p1Atk)).BeginInit();
             this.EvEPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.p1Def)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.p1Dge)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.p1Acc)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.p1Mv1Acc)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.p1Mv1AtkM)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.p1Mv2AtkM)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.p1Mv2Acc)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.p1Mv3AtkM)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.p1Mv3Acc)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.p1Mv4AtkM)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.p1Mv4Acc)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.p1Mv5AtkM)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.p1Mv5Acc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.p2Mv5AtkM)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.p2Mv5Acc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.p2Mv4AtkM)).BeginInit();
@@ -660,6 +647,19 @@ namespace DCTBFightingSimulator
             ((System.ComponentModel.ISupportInitialize)(this.p2Def)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.p2Atk)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.p2Hp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p1Mv5AtkM)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p1Mv5Acc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p1Mv4AtkM)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p1Mv4Acc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p1Mv3AtkM)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p1Mv3Acc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p1Mv2AtkM)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p1Mv2Acc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p1Mv1AtkM)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p1Mv1Acc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p1Dge)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p1Acc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p1Def)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -3854,6 +3854,76 @@ namespace DCTBFightingSimulator
             this.panel1.TabIndex = 261;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // horizCharCreationBar
+            // 
+            this.horizCharCreationBar.Image = ((System.Drawing.Image)(resources.GetObject("horizCharCreationBar.Image")));
+            this.horizCharCreationBar.Location = new System.Drawing.Point(20, 49);
+            this.horizCharCreationBar.Name = "horizCharCreationBar";
+            this.horizCharCreationBar.Size = new System.Drawing.Size(1026, 10);
+            this.horizCharCreationBar.TabIndex = 17;
+            this.horizCharCreationBar.TabStop = false;
+            // 
+            // CCP6
+            // 
+            this.CCP6.Image = ((System.Drawing.Image)(resources.GetObject("CCP6.Image")));
+            this.CCP6.InitialImage = null;
+            this.CCP6.Location = new System.Drawing.Point(1206, 59);
+            this.CCP6.Name = "CCP6";
+            this.CCP6.Size = new System.Drawing.Size(10, 564);
+            this.CCP6.TabIndex = 253;
+            this.CCP6.TabStop = false;
+            // 
+            // CCP1
+            // 
+            this.CCP1.Image = ((System.Drawing.Image)(resources.GetObject("CCP1.Image")));
+            this.CCP1.InitialImage = null;
+            this.CCP1.Location = new System.Drawing.Point(204, 60);
+            this.CCP1.Name = "CCP1";
+            this.CCP1.Size = new System.Drawing.Size(10, 564);
+            this.CCP1.TabIndex = 53;
+            this.CCP1.TabStop = false;
+            // 
+            // CCP5
+            // 
+            this.CCP5.Image = ((System.Drawing.Image)(resources.GetObject("CCP5.Image")));
+            this.CCP5.InitialImage = null;
+            this.CCP5.Location = new System.Drawing.Point(1002, 60);
+            this.CCP5.Name = "CCP5";
+            this.CCP5.Size = new System.Drawing.Size(10, 564);
+            this.CCP5.TabIndex = 213;
+            this.CCP5.TabStop = false;
+            // 
+            // CCP2
+            // 
+            this.CCP2.Image = ((System.Drawing.Image)(resources.GetObject("CCP2.Image")));
+            this.CCP2.InitialImage = null;
+            this.CCP2.Location = new System.Drawing.Point(404, 59);
+            this.CCP2.Name = "CCP2";
+            this.CCP2.Size = new System.Drawing.Size(10, 564);
+            this.CCP2.TabIndex = 93;
+            this.CCP2.TabStop = false;
+            this.CCP2.Click += new System.EventHandler(this.CCP2_Click);
+            // 
+            // CCP4
+            // 
+            this.CCP4.Image = ((System.Drawing.Image)(resources.GetObject("CCP4.Image")));
+            this.CCP4.InitialImage = null;
+            this.CCP4.Location = new System.Drawing.Point(801, 60);
+            this.CCP4.Name = "CCP4";
+            this.CCP4.Size = new System.Drawing.Size(10, 564);
+            this.CCP4.TabIndex = 173;
+            this.CCP4.TabStop = false;
+            // 
+            // CCP3
+            // 
+            this.CCP3.Image = ((System.Drawing.Image)(resources.GetObject("CCP3.Image")));
+            this.CCP3.InitialImage = null;
+            this.CCP3.Location = new System.Drawing.Point(602, 60);
+            this.CCP3.Name = "CCP3";
+            this.CCP3.Size = new System.Drawing.Size(10, 564);
+            this.CCP3.TabIndex = 133;
+            this.CCP3.TabStop = false;
+            // 
             // startingPanel
             // 
             this.startingPanel.Controls.Add(this.welcomeLabel2);
@@ -3969,858 +4039,47 @@ namespace DCTBFightingSimulator
             this.characterDatabasePanel.Size = new System.Drawing.Size(1225, 824);
             this.characterDatabasePanel.TabIndex = 261;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.label2.Location = new System.Drawing.Point(3, 4);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(292, 29);
-            this.label2.TabIndex = 16;
-            this.label2.Text = "CHARACTER DATABASE";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 36);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(856, 13);
-            this.label3.TabIndex = 18;
-            this.label3.Text = "Welcome to the character database. Here you can find a list of all characters sor" +
-    "ted by typing, vanilla or user-created, and also by strength. Select a character" +
-    " to get its export string.";
-            // 
-            // label
-            // 
-            this.label.AutoSize = true;
-            this.label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label.Location = new System.Drawing.Point(6, 73);
-            this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(115, 20);
-            this.label.TabIndex = 19;
-            this.label.Text = "CATEGORIES";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(6, 126);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(111, 21);
-            this.comboBox1.TabIndex = 20;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(3, 109);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 13);
-            this.label4.TabIndex = 21;
-            this.label4.Text = "VANILLA";
-            // 
-            // vanillaExports
-            // 
-            this.vanillaExports.Location = new System.Drawing.Point(49, 148);
-            this.vanillaExports.Name = "vanillaExports";
-            this.vanillaExports.Size = new System.Drawing.Size(68, 20);
-            this.vanillaExports.TabIndex = 22;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(3, 151);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(40, 13);
-            this.label5.TabIndex = 23;
-            this.label5.Text = "Export:";
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
-            this.pictureBox4.Location = new System.Drawing.Point(123, 97);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(10, 102);
-            this.pictureBox4.TabIndex = 24;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarHorizontal;
-            this.pictureBox3.InitialImage = global::DCTBFightingSimulator.Properties.Resources.SeparationBarHorizontal;
-            this.pictureBox3.Location = new System.Drawing.Point(3, 55);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(1075, 10);
-            this.pictureBox3.TabIndex = 17;
-            this.pictureBox3.TabStop = false;
-            // 
-            // horizCharCreationBar
-            // 
-            this.horizCharCreationBar.Image = ((System.Drawing.Image)(resources.GetObject("horizCharCreationBar.Image")));
-            this.horizCharCreationBar.Location = new System.Drawing.Point(20, 49);
-            this.horizCharCreationBar.Name = "horizCharCreationBar";
-            this.horizCharCreationBar.Size = new System.Drawing.Size(1026, 10);
-            this.horizCharCreationBar.TabIndex = 17;
-            this.horizCharCreationBar.TabStop = false;
-            // 
-            // CCP6
-            // 
-            this.CCP6.Image = ((System.Drawing.Image)(resources.GetObject("CCP6.Image")));
-            this.CCP6.InitialImage = null;
-            this.CCP6.Location = new System.Drawing.Point(1206, 59);
-            this.CCP6.Name = "CCP6";
-            this.CCP6.Size = new System.Drawing.Size(10, 564);
-            this.CCP6.TabIndex = 253;
-            this.CCP6.TabStop = false;
-            // 
-            // CCP1
-            // 
-            this.CCP1.Image = ((System.Drawing.Image)(resources.GetObject("CCP1.Image")));
-            this.CCP1.InitialImage = null;
-            this.CCP1.Location = new System.Drawing.Point(204, 60);
-            this.CCP1.Name = "CCP1";
-            this.CCP1.Size = new System.Drawing.Size(10, 564);
-            this.CCP1.TabIndex = 53;
-            this.CCP1.TabStop = false;
-            // 
-            // CCP5
-            // 
-            this.CCP5.Image = ((System.Drawing.Image)(resources.GetObject("CCP5.Image")));
-            this.CCP5.InitialImage = null;
-            this.CCP5.Location = new System.Drawing.Point(1002, 60);
-            this.CCP5.Name = "CCP5";
-            this.CCP5.Size = new System.Drawing.Size(10, 564);
-            this.CCP5.TabIndex = 213;
-            this.CCP5.TabStop = false;
-            // 
-            // CCP2
-            // 
-            this.CCP2.Image = ((System.Drawing.Image)(resources.GetObject("CCP2.Image")));
-            this.CCP2.InitialImage = null;
-            this.CCP2.Location = new System.Drawing.Point(404, 59);
-            this.CCP2.Name = "CCP2";
-            this.CCP2.Size = new System.Drawing.Size(10, 564);
-            this.CCP2.TabIndex = 93;
-            this.CCP2.TabStop = false;
-            this.CCP2.Click += new System.EventHandler(this.CCP2_Click);
-            // 
-            // CCP4
-            // 
-            this.CCP4.Image = ((System.Drawing.Image)(resources.GetObject("CCP4.Image")));
-            this.CCP4.InitialImage = null;
-            this.CCP4.Location = new System.Drawing.Point(801, 60);
-            this.CCP4.Name = "CCP4";
-            this.CCP4.Size = new System.Drawing.Size(10, 564);
-            this.CCP4.TabIndex = 173;
-            this.CCP4.TabStop = false;
-            // 
-            // CCP3
-            // 
-            this.CCP3.Image = ((System.Drawing.Image)(resources.GetObject("CCP3.Image")));
-            this.CCP3.InitialImage = null;
-            this.CCP3.Location = new System.Drawing.Point(602, 60);
-            this.CCP3.Name = "CCP3";
-            this.CCP3.Size = new System.Drawing.Size(10, 564);
-            this.CCP3.TabIndex = 133;
-            this.CCP3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(15, 414);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(112, 10);
-            this.pictureBox2.TabIndex = 13;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(15, 102);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(112, 10);
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            // 
-            // SeparationBar
-            // 
-            this.SeparationBar.Image = ((System.Drawing.Image)(resources.GetObject("SeparationBar.Image")));
-            this.SeparationBar.InitialImage = null;
-            this.SeparationBar.Location = new System.Drawing.Point(137, 9);
-            this.SeparationBar.Name = "SeparationBar";
-            this.SeparationBar.Size = new System.Drawing.Size(10, 823);
-            this.SeparationBar.TabIndex = 3;
-            this.SeparationBar.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
-            this.pictureBox5.Location = new System.Drawing.Point(259, 100);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(10, 102);
-            this.pictureBox5.TabIndex = 29;
-            this.pictureBox5.TabStop = false;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(139, 154);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(40, 13);
-            this.label6.TabIndex = 28;
-            this.label6.Text = "Export:";
-            // 
-            // userCreatedExports
-            // 
-            this.userCreatedExports.Location = new System.Drawing.Point(185, 151);
-            this.userCreatedExports.Name = "userCreatedExports";
-            this.userCreatedExports.Size = new System.Drawing.Size(68, 20);
-            this.userCreatedExports.TabIndex = 27;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(139, 113);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(91, 13);
-            this.label7.TabIndex = 26;
-            this.label7.Text = "USER-CREATED";
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(142, 129);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(111, 21);
-            this.comboBox2.TabIndex = 25;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
-            this.pictureBox6.Location = new System.Drawing.Point(395, 100);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(10, 102);
-            this.pictureBox6.TabIndex = 34;
-            this.pictureBox6.TabStop = false;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(275, 154);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(40, 13);
-            this.label8.TabIndex = 33;
-            this.label8.Text = "Export:";
-            // 
-            // utilityExports
-            // 
-            this.utilityExports.Location = new System.Drawing.Point(321, 151);
-            this.utilityExports.Name = "utilityExports";
-            this.utilityExports.Size = new System.Drawing.Size(68, 20);
-            this.utilityExports.TabIndex = 32;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(275, 113);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(48, 13);
-            this.label9.TabIndex = 31;
-            this.label9.Text = "UTILITY";
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(278, 129);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(111, 21);
-            this.comboBox3.TabIndex = 30;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
-            this.pictureBox7.Location = new System.Drawing.Point(531, 96);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(10, 102);
-            this.pictureBox7.TabIndex = 39;
-            this.pictureBox7.TabStop = false;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(411, 150);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(40, 13);
-            this.label10.TabIndex = 38;
-            this.label10.Text = "Export:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(457, 147);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(68, 20);
-            this.textBox1.TabIndex = 37;
-            // 
-            // opExports
-            // 
-            this.opExports.AutoSize = true;
-            this.opExports.Location = new System.Drawing.Point(411, 109);
-            this.opExports.Name = "opExports";
-            this.opExports.Size = new System.Drawing.Size(22, 13);
-            this.opExports.TabIndex = 36;
-            this.opExports.Text = "OP";
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(414, 125);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(111, 21);
-            this.comboBox4.TabIndex = 35;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
-            this.pictureBox8.Location = new System.Drawing.Point(123, 216);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(10, 102);
-            this.pictureBox8.TabIndex = 44;
-            this.pictureBox8.TabStop = false;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(3, 270);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(40, 13);
-            this.label11.TabIndex = 43;
-            this.label11.Text = "Export:";
-            // 
-            // typeNoneExports
-            // 
-            this.typeNoneExports.Location = new System.Drawing.Point(49, 267);
-            this.typeNoneExports.Name = "typeNoneExports";
-            this.typeNoneExports.Size = new System.Drawing.Size(68, 20);
-            this.typeNoneExports.TabIndex = 42;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(3, 229);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(68, 13);
-            this.label12.TabIndex = 41;
-            this.label12.Text = "Type: NONE";
-            // 
-            // comboBox5
-            // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(6, 245);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(111, 21);
-            this.comboBox5.TabIndex = 40;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
-            this.pictureBox9.Location = new System.Drawing.Point(259, 216);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(10, 102);
-            this.pictureBox9.TabIndex = 49;
-            this.pictureBox9.TabStop = false;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(139, 270);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(40, 13);
-            this.label13.TabIndex = 48;
-            this.label13.Text = "Export:";
-            // 
-            // typeVoidExports
-            // 
-            this.typeVoidExports.Location = new System.Drawing.Point(185, 267);
-            this.typeVoidExports.Name = "typeVoidExports";
-            this.typeVoidExports.Size = new System.Drawing.Size(68, 20);
-            this.typeVoidExports.TabIndex = 47;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(139, 229);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(63, 13);
-            this.label14.TabIndex = 46;
-            this.label14.Text = "Type: VOID";
-            // 
-            // comboBox6
-            // 
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(142, 245);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(111, 21);
-            this.comboBox6.TabIndex = 45;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
-            this.pictureBox10.Location = new System.Drawing.Point(395, 216);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(10, 102);
-            this.pictureBox10.TabIndex = 54;
-            this.pictureBox10.TabStop = false;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(275, 270);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(40, 13);
-            this.label15.TabIndex = 53;
-            this.label15.Text = "Export:";
-            // 
-            // typeEarthlyExports
-            // 
-            this.typeEarthlyExports.Location = new System.Drawing.Point(321, 267);
-            this.typeEarthlyExports.Name = "typeEarthlyExports";
-            this.typeEarthlyExports.Size = new System.Drawing.Size(68, 20);
-            this.typeEarthlyExports.TabIndex = 52;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(275, 229);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(87, 13);
-            this.label16.TabIndex = 51;
-            this.label16.Text = "Type: EARTHLY";
-            // 
-            // comboBox7
-            // 
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Location = new System.Drawing.Point(278, 245);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(111, 21);
-            this.comboBox7.TabIndex = 50;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
-            this.pictureBox11.Location = new System.Drawing.Point(531, 216);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(10, 102);
-            this.pictureBox11.TabIndex = 59;
-            this.pictureBox11.TabStop = false;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(411, 270);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(40, 13);
-            this.label17.TabIndex = 58;
-            this.label17.Text = "Export:";
-            // 
-            // typeAirExports
-            // 
-            this.typeAirExports.Location = new System.Drawing.Point(457, 267);
-            this.typeAirExports.Name = "typeAirExports";
-            this.typeAirExports.Size = new System.Drawing.Size(68, 20);
-            this.typeAirExports.TabIndex = 57;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(411, 229);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(55, 13);
-            this.label18.TabIndex = 56;
-            this.label18.Text = "Type: AIR";
-            // 
-            // comboBox8
-            // 
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Location = new System.Drawing.Point(414, 245);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(111, 21);
-            this.comboBox8.TabIndex = 55;
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
-            this.pictureBox12.Location = new System.Drawing.Point(667, 216);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(10, 102);
-            this.pictureBox12.TabIndex = 64;
-            this.pictureBox12.TabStop = false;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(547, 270);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(40, 13);
-            this.label19.TabIndex = 63;
-            this.label19.Text = "Export:";
-            // 
-            // typeGroundExports
-            // 
-            this.typeGroundExports.Location = new System.Drawing.Point(593, 267);
-            this.typeGroundExports.Name = "typeGroundExports";
-            this.typeGroundExports.Size = new System.Drawing.Size(68, 20);
-            this.typeGroundExports.TabIndex = 62;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(547, 229);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(85, 13);
-            this.label20.TabIndex = 61;
-            this.label20.Text = "Type: GROUND";
-            // 
-            // comboBox9
-            // 
-            this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Location = new System.Drawing.Point(550, 245);
-            this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(111, 21);
-            this.comboBox9.TabIndex = 60;
-            // 
-            // pictureBox13
-            // 
-            this.pictureBox13.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
-            this.pictureBox13.Location = new System.Drawing.Point(803, 216);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(10, 102);
-            this.pictureBox13.TabIndex = 69;
-            this.pictureBox13.TabStop = false;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(683, 270);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(40, 13);
-            this.label21.TabIndex = 68;
-            this.label21.Text = "Export:";
-            // 
-            // typeElectricExports
-            // 
-            this.typeElectricExports.Location = new System.Drawing.Point(729, 267);
-            this.typeElectricExports.Name = "typeElectricExports";
-            this.typeElectricExports.Size = new System.Drawing.Size(68, 20);
-            this.typeElectricExports.TabIndex = 67;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(683, 229);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(89, 13);
-            this.label22.TabIndex = 66;
-            this.label22.Text = "Type: ELECTRIC";
-            // 
-            // comboBox10
-            // 
-            this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Location = new System.Drawing.Point(686, 245);
-            this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(111, 21);
-            this.comboBox10.TabIndex = 65;
-            // 
-            // pictureBox14
-            // 
-            this.pictureBox14.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
-            this.pictureBox14.Location = new System.Drawing.Point(939, 216);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(10, 102);
-            this.pictureBox14.TabIndex = 74;
-            this.pictureBox14.TabStop = false;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(819, 270);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(40, 13);
-            this.label23.TabIndex = 73;
-            this.label23.Text = "Export:";
-            // 
-            // typeMetalExports
-            // 
-            this.typeMetalExports.Location = new System.Drawing.Point(865, 267);
-            this.typeMetalExports.Name = "typeMetalExports";
-            this.typeMetalExports.Size = new System.Drawing.Size(68, 20);
-            this.typeMetalExports.TabIndex = 72;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(819, 229);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(73, 13);
-            this.label24.TabIndex = 71;
-            this.label24.Text = "Type: METAL";
-            // 
-            // comboBox11
-            // 
-            this.comboBox11.FormattingEnabled = true;
-            this.comboBox11.Location = new System.Drawing.Point(822, 245);
-            this.comboBox11.Name = "comboBox11";
-            this.comboBox11.Size = new System.Drawing.Size(111, 21);
-            this.comboBox11.TabIndex = 70;
-            // 
-            // pictureBox15
-            // 
-            this.pictureBox15.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
-            this.pictureBox15.Location = new System.Drawing.Point(1075, 216);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(10, 102);
-            this.pictureBox15.TabIndex = 79;
-            this.pictureBox15.TabStop = false;
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(955, 270);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(40, 13);
-            this.label25.TabIndex = 78;
-            this.label25.Text = "Export:";
-            // 
-            // typeIntelligentExports
-            // 
-            this.typeIntelligentExports.Location = new System.Drawing.Point(1001, 267);
-            this.typeIntelligentExports.Name = "typeIntelligentExports";
-            this.typeIntelligentExports.Size = new System.Drawing.Size(68, 20);
-            this.typeIntelligentExports.TabIndex = 77;
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(955, 229);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(107, 13);
-            this.label26.TabIndex = 76;
-            this.label26.Text = "Type: INTELLIGENT";
-            // 
-            // comboBox12
-            // 
-            this.comboBox12.FormattingEnabled = true;
-            this.comboBox12.Location = new System.Drawing.Point(958, 245);
-            this.comboBox12.Name = "comboBox12";
-            this.comboBox12.Size = new System.Drawing.Size(111, 21);
-            this.comboBox12.TabIndex = 75;
-            // 
-            // pictureBox16
-            // 
-            this.pictureBox16.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
-            this.pictureBox16.Location = new System.Drawing.Point(123, 332);
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(10, 102);
-            this.pictureBox16.TabIndex = 84;
-            this.pictureBox16.TabStop = false;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(3, 386);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(40, 13);
-            this.label27.TabIndex = 83;
-            this.label27.Text = "Export:";
-            // 
-            // typeForceExports
-            // 
-            this.typeForceExports.Location = new System.Drawing.Point(49, 383);
-            this.typeForceExports.Name = "typeForceExports";
-            this.typeForceExports.Size = new System.Drawing.Size(68, 20);
-            this.typeForceExports.TabIndex = 82;
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(3, 345);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(73, 13);
-            this.label28.TabIndex = 81;
-            this.label28.Text = "Type: FORCE";
-            // 
-            // comboBox13
-            // 
-            this.comboBox13.FormattingEnabled = true;
-            this.comboBox13.Location = new System.Drawing.Point(6, 361);
-            this.comboBox13.Name = "comboBox13";
-            this.comboBox13.Size = new System.Drawing.Size(111, 21);
-            this.comboBox13.TabIndex = 80;
-            // 
-            // pictureBox17
-            // 
-            this.pictureBox17.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
-            this.pictureBox17.Location = new System.Drawing.Point(259, 332);
-            this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(10, 102);
-            this.pictureBox17.TabIndex = 89;
-            this.pictureBox17.TabStop = false;
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(139, 386);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(40, 13);
-            this.label29.TabIndex = 88;
-            this.label29.Text = "Export:";
-            // 
-            // typeIceExports
-            // 
-            this.typeIceExports.Location = new System.Drawing.Point(185, 383);
-            this.typeIceExports.Name = "typeIceExports";
-            this.typeIceExports.Size = new System.Drawing.Size(68, 20);
-            this.typeIceExports.TabIndex = 87;
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(139, 345);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(54, 13);
-            this.label30.TabIndex = 86;
-            this.label30.Text = "Type: ICE";
-            // 
-            // comboBox14
-            // 
-            this.comboBox14.FormattingEnabled = true;
-            this.comboBox14.Location = new System.Drawing.Point(142, 361);
-            this.comboBox14.Name = "comboBox14";
-            this.comboBox14.Size = new System.Drawing.Size(111, 21);
-            this.comboBox14.TabIndex = 85;
-            // 
-            // pictureBox18
-            // 
-            this.pictureBox18.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
-            this.pictureBox18.Location = new System.Drawing.Point(395, 332);
-            this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(10, 102);
-            this.pictureBox18.TabIndex = 94;
-            this.pictureBox18.TabStop = false;
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(275, 386);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(40, 13);
-            this.label31.TabIndex = 93;
-            this.label31.Text = "Export:";
-            // 
-            // typeFireExports
-            // 
-            this.typeFireExports.Location = new System.Drawing.Point(321, 383);
-            this.typeFireExports.Name = "typeFireExports";
-            this.typeFireExports.Size = new System.Drawing.Size(68, 20);
-            this.typeFireExports.TabIndex = 92;
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(275, 345);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(61, 13);
-            this.label32.TabIndex = 91;
-            this.label32.Text = "Type: FIRE";
-            // 
-            // comboBox15
-            // 
-            this.comboBox15.FormattingEnabled = true;
-            this.comboBox15.Location = new System.Drawing.Point(278, 361);
-            this.comboBox15.Name = "comboBox15";
-            this.comboBox15.Size = new System.Drawing.Size(111, 21);
-            this.comboBox15.TabIndex = 90;
-            // 
-            // pictureBox19
-            // 
-            this.pictureBox19.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
-            this.pictureBox19.Location = new System.Drawing.Point(531, 332);
-            this.pictureBox19.Name = "pictureBox19";
-            this.pictureBox19.Size = new System.Drawing.Size(10, 102);
-            this.pictureBox19.TabIndex = 99;
-            this.pictureBox19.TabStop = false;
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(411, 386);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(40, 13);
-            this.label33.TabIndex = 98;
-            this.label33.Text = "Export:";
-            // 
-            // typeNaturalExports
-            // 
-            this.typeNaturalExports.Location = new System.Drawing.Point(457, 383);
-            this.typeNaturalExports.Name = "typeNaturalExports";
-            this.typeNaturalExports.Size = new System.Drawing.Size(68, 20);
-            this.typeNaturalExports.TabIndex = 97;
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(411, 345);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(88, 13);
-            this.label34.TabIndex = 96;
-            this.label34.Text = "Type: NATURAL";
-            // 
-            // comboBox16
-            // 
-            this.comboBox16.FormattingEnabled = true;
-            this.comboBox16.Location = new System.Drawing.Point(414, 361);
-            this.comboBox16.Name = "comboBox16";
-            this.comboBox16.Size = new System.Drawing.Size(111, 21);
-            this.comboBox16.TabIndex = 95;
-            // 
-            // pictureBox20
-            // 
-            this.pictureBox20.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
-            this.pictureBox20.Location = new System.Drawing.Point(667, 332);
-            this.pictureBox20.Name = "pictureBox20";
-            this.pictureBox20.Size = new System.Drawing.Size(10, 102);
-            this.pictureBox20.TabIndex = 104;
-            this.pictureBox20.TabStop = false;
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(547, 386);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(40, 13);
-            this.label35.TabIndex = 103;
-            this.label35.Text = "Export:";
-            // 
-            // typePsychicExports
-            // 
-            this.typePsychicExports.Location = new System.Drawing.Point(593, 383);
-            this.typePsychicExports.Name = "typePsychicExports";
-            this.typePsychicExports.Size = new System.Drawing.Size(68, 20);
-            this.typePsychicExports.TabIndex = 102;
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(547, 345);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(83, 13);
-            this.label36.TabIndex = 101;
-            this.label36.Text = "Type: PSYCHIC";
-            // 
-            // comboBox17
-            // 
-            this.comboBox17.FormattingEnabled = true;
-            this.comboBox17.Location = new System.Drawing.Point(550, 361);
-            this.comboBox17.Name = "comboBox17";
-            this.comboBox17.Size = new System.Drawing.Size(111, 21);
-            this.comboBox17.TabIndex = 100;
+            // pictureBox22
+            // 
+            this.pictureBox22.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
+            this.pictureBox22.Location = new System.Drawing.Point(939, 332);
+            this.pictureBox22.Name = "pictureBox22";
+            this.pictureBox22.Size = new System.Drawing.Size(10, 102);
+            this.pictureBox22.TabIndex = 114;
+            this.pictureBox22.TabStop = false;
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Location = new System.Drawing.Point(819, 386);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(40, 13);
+            this.label39.TabIndex = 113;
+            this.label39.Text = "Export:";
+            // 
+            // typeGhostExports
+            // 
+            this.typeGhostExports.Location = new System.Drawing.Point(865, 383);
+            this.typeGhostExports.Name = "typeGhostExports";
+            this.typeGhostExports.Size = new System.Drawing.Size(68, 20);
+            this.typeGhostExports.TabIndex = 112;
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Location = new System.Drawing.Point(819, 345);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(75, 13);
+            this.label40.TabIndex = 111;
+            this.label40.Text = "Type: GHOST";
+            // 
+            // comboBox19
+            // 
+            this.comboBox19.FormattingEnabled = true;
+            this.comboBox19.Location = new System.Drawing.Point(822, 361);
+            this.comboBox19.Name = "comboBox19";
+            this.comboBox19.Size = new System.Drawing.Size(111, 21);
+            this.comboBox19.TabIndex = 110;
             // 
             // pictureBox21
             // 
@@ -4864,47 +4123,788 @@ namespace DCTBFightingSimulator
             this.comboBox18.Size = new System.Drawing.Size(111, 21);
             this.comboBox18.TabIndex = 105;
             // 
-            // pictureBox22
+            // pictureBox20
             // 
-            this.pictureBox22.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
-            this.pictureBox22.Location = new System.Drawing.Point(939, 332);
-            this.pictureBox22.Name = "pictureBox22";
-            this.pictureBox22.Size = new System.Drawing.Size(10, 102);
-            this.pictureBox22.TabIndex = 114;
-            this.pictureBox22.TabStop = false;
+            this.pictureBox20.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
+            this.pictureBox20.Location = new System.Drawing.Point(667, 332);
+            this.pictureBox20.Name = "pictureBox20";
+            this.pictureBox20.Size = new System.Drawing.Size(10, 102);
+            this.pictureBox20.TabIndex = 104;
+            this.pictureBox20.TabStop = false;
             // 
-            // label39
+            // label35
             // 
-            this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(819, 386);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(40, 13);
-            this.label39.TabIndex = 113;
-            this.label39.Text = "Export:";
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(547, 386);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(40, 13);
+            this.label35.TabIndex = 103;
+            this.label35.Text = "Export:";
             // 
-            // typeGhostExports
+            // typePsychicExports
             // 
-            this.typeGhostExports.Location = new System.Drawing.Point(865, 383);
-            this.typeGhostExports.Name = "typeGhostExports";
-            this.typeGhostExports.Size = new System.Drawing.Size(68, 20);
-            this.typeGhostExports.TabIndex = 112;
+            this.typePsychicExports.Location = new System.Drawing.Point(593, 383);
+            this.typePsychicExports.Name = "typePsychicExports";
+            this.typePsychicExports.Size = new System.Drawing.Size(68, 20);
+            this.typePsychicExports.TabIndex = 102;
             // 
-            // label40
+            // label36
             // 
-            this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(819, 345);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(75, 13);
-            this.label40.TabIndex = 111;
-            this.label40.Text = "Type: GHOST";
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(547, 345);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(83, 13);
+            this.label36.TabIndex = 101;
+            this.label36.Text = "Type: PSYCHIC";
             // 
-            // comboBox19
+            // comboBox17
             // 
-            this.comboBox19.FormattingEnabled = true;
-            this.comboBox19.Location = new System.Drawing.Point(822, 361);
-            this.comboBox19.Name = "comboBox19";
-            this.comboBox19.Size = new System.Drawing.Size(111, 21);
-            this.comboBox19.TabIndex = 110;
+            this.comboBox17.FormattingEnabled = true;
+            this.comboBox17.Location = new System.Drawing.Point(550, 361);
+            this.comboBox17.Name = "comboBox17";
+            this.comboBox17.Size = new System.Drawing.Size(111, 21);
+            this.comboBox17.TabIndex = 100;
+            // 
+            // pictureBox19
+            // 
+            this.pictureBox19.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
+            this.pictureBox19.Location = new System.Drawing.Point(531, 332);
+            this.pictureBox19.Name = "pictureBox19";
+            this.pictureBox19.Size = new System.Drawing.Size(10, 102);
+            this.pictureBox19.TabIndex = 99;
+            this.pictureBox19.TabStop = false;
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(411, 386);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(40, 13);
+            this.label33.TabIndex = 98;
+            this.label33.Text = "Export:";
+            // 
+            // typeNaturalExports
+            // 
+            this.typeNaturalExports.Location = new System.Drawing.Point(457, 383);
+            this.typeNaturalExports.Name = "typeNaturalExports";
+            this.typeNaturalExports.Size = new System.Drawing.Size(68, 20);
+            this.typeNaturalExports.TabIndex = 97;
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(411, 345);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(88, 13);
+            this.label34.TabIndex = 96;
+            this.label34.Text = "Type: NATURAL";
+            // 
+            // comboBox16
+            // 
+            this.comboBox16.FormattingEnabled = true;
+            this.comboBox16.Location = new System.Drawing.Point(414, 361);
+            this.comboBox16.Name = "comboBox16";
+            this.comboBox16.Size = new System.Drawing.Size(111, 21);
+            this.comboBox16.TabIndex = 95;
+            // 
+            // pictureBox18
+            // 
+            this.pictureBox18.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
+            this.pictureBox18.Location = new System.Drawing.Point(395, 332);
+            this.pictureBox18.Name = "pictureBox18";
+            this.pictureBox18.Size = new System.Drawing.Size(10, 102);
+            this.pictureBox18.TabIndex = 94;
+            this.pictureBox18.TabStop = false;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(275, 386);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(40, 13);
+            this.label31.TabIndex = 93;
+            this.label31.Text = "Export:";
+            // 
+            // typeFireExports
+            // 
+            this.typeFireExports.Location = new System.Drawing.Point(321, 383);
+            this.typeFireExports.Name = "typeFireExports";
+            this.typeFireExports.Size = new System.Drawing.Size(68, 20);
+            this.typeFireExports.TabIndex = 92;
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(275, 345);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(61, 13);
+            this.label32.TabIndex = 91;
+            this.label32.Text = "Type: FIRE";
+            // 
+            // comboBox15
+            // 
+            this.comboBox15.FormattingEnabled = true;
+            this.comboBox15.Location = new System.Drawing.Point(278, 361);
+            this.comboBox15.Name = "comboBox15";
+            this.comboBox15.Size = new System.Drawing.Size(111, 21);
+            this.comboBox15.TabIndex = 90;
+            // 
+            // pictureBox17
+            // 
+            this.pictureBox17.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
+            this.pictureBox17.Location = new System.Drawing.Point(259, 332);
+            this.pictureBox17.Name = "pictureBox17";
+            this.pictureBox17.Size = new System.Drawing.Size(10, 102);
+            this.pictureBox17.TabIndex = 89;
+            this.pictureBox17.TabStop = false;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(139, 386);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(40, 13);
+            this.label29.TabIndex = 88;
+            this.label29.Text = "Export:";
+            // 
+            // typeIceExports
+            // 
+            this.typeIceExports.Location = new System.Drawing.Point(185, 383);
+            this.typeIceExports.Name = "typeIceExports";
+            this.typeIceExports.Size = new System.Drawing.Size(68, 20);
+            this.typeIceExports.TabIndex = 87;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(139, 345);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(54, 13);
+            this.label30.TabIndex = 86;
+            this.label30.Text = "Type: ICE";
+            // 
+            // comboBox14
+            // 
+            this.comboBox14.FormattingEnabled = true;
+            this.comboBox14.Location = new System.Drawing.Point(142, 361);
+            this.comboBox14.Name = "comboBox14";
+            this.comboBox14.Size = new System.Drawing.Size(111, 21);
+            this.comboBox14.TabIndex = 85;
+            // 
+            // pictureBox16
+            // 
+            this.pictureBox16.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
+            this.pictureBox16.Location = new System.Drawing.Point(123, 332);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(10, 102);
+            this.pictureBox16.TabIndex = 84;
+            this.pictureBox16.TabStop = false;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(3, 386);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(40, 13);
+            this.label27.TabIndex = 83;
+            this.label27.Text = "Export:";
+            // 
+            // typeForceExports
+            // 
+            this.typeForceExports.Location = new System.Drawing.Point(49, 383);
+            this.typeForceExports.Name = "typeForceExports";
+            this.typeForceExports.Size = new System.Drawing.Size(68, 20);
+            this.typeForceExports.TabIndex = 82;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(3, 345);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(73, 13);
+            this.label28.TabIndex = 81;
+            this.label28.Text = "Type: FORCE";
+            // 
+            // comboBox13
+            // 
+            this.comboBox13.FormattingEnabled = true;
+            this.comboBox13.Location = new System.Drawing.Point(6, 361);
+            this.comboBox13.Name = "comboBox13";
+            this.comboBox13.Size = new System.Drawing.Size(111, 21);
+            this.comboBox13.TabIndex = 80;
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
+            this.pictureBox15.Location = new System.Drawing.Point(1075, 216);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(10, 102);
+            this.pictureBox15.TabIndex = 79;
+            this.pictureBox15.TabStop = false;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(955, 270);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(40, 13);
+            this.label25.TabIndex = 78;
+            this.label25.Text = "Export:";
+            // 
+            // typeIntelligentExports
+            // 
+            this.typeIntelligentExports.Location = new System.Drawing.Point(1001, 267);
+            this.typeIntelligentExports.Name = "typeIntelligentExports";
+            this.typeIntelligentExports.Size = new System.Drawing.Size(68, 20);
+            this.typeIntelligentExports.TabIndex = 77;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(955, 229);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(107, 13);
+            this.label26.TabIndex = 76;
+            this.label26.Text = "Type: INTELLIGENT";
+            // 
+            // comboBox12
+            // 
+            this.comboBox12.FormattingEnabled = true;
+            this.comboBox12.Location = new System.Drawing.Point(958, 245);
+            this.comboBox12.Name = "comboBox12";
+            this.comboBox12.Size = new System.Drawing.Size(111, 21);
+            this.comboBox12.TabIndex = 75;
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
+            this.pictureBox14.Location = new System.Drawing.Point(939, 216);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(10, 102);
+            this.pictureBox14.TabIndex = 74;
+            this.pictureBox14.TabStop = false;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(819, 270);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(40, 13);
+            this.label23.TabIndex = 73;
+            this.label23.Text = "Export:";
+            // 
+            // typeMetalExports
+            // 
+            this.typeMetalExports.Location = new System.Drawing.Point(865, 267);
+            this.typeMetalExports.Name = "typeMetalExports";
+            this.typeMetalExports.Size = new System.Drawing.Size(68, 20);
+            this.typeMetalExports.TabIndex = 72;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(819, 229);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(73, 13);
+            this.label24.TabIndex = 71;
+            this.label24.Text = "Type: METAL";
+            // 
+            // comboBox11
+            // 
+            this.comboBox11.FormattingEnabled = true;
+            this.comboBox11.Location = new System.Drawing.Point(822, 245);
+            this.comboBox11.Name = "comboBox11";
+            this.comboBox11.Size = new System.Drawing.Size(111, 21);
+            this.comboBox11.TabIndex = 70;
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
+            this.pictureBox13.Location = new System.Drawing.Point(803, 216);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(10, 102);
+            this.pictureBox13.TabIndex = 69;
+            this.pictureBox13.TabStop = false;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(683, 270);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(40, 13);
+            this.label21.TabIndex = 68;
+            this.label21.Text = "Export:";
+            // 
+            // typeElectricExports
+            // 
+            this.typeElectricExports.Location = new System.Drawing.Point(729, 267);
+            this.typeElectricExports.Name = "typeElectricExports";
+            this.typeElectricExports.Size = new System.Drawing.Size(68, 20);
+            this.typeElectricExports.TabIndex = 67;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(683, 229);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(89, 13);
+            this.label22.TabIndex = 66;
+            this.label22.Text = "Type: ELECTRIC";
+            // 
+            // comboBox10
+            // 
+            this.comboBox10.FormattingEnabled = true;
+            this.comboBox10.Location = new System.Drawing.Point(686, 245);
+            this.comboBox10.Name = "comboBox10";
+            this.comboBox10.Size = new System.Drawing.Size(111, 21);
+            this.comboBox10.TabIndex = 65;
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
+            this.pictureBox12.Location = new System.Drawing.Point(667, 216);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(10, 102);
+            this.pictureBox12.TabIndex = 64;
+            this.pictureBox12.TabStop = false;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(547, 270);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(40, 13);
+            this.label19.TabIndex = 63;
+            this.label19.Text = "Export:";
+            // 
+            // typeGroundExports
+            // 
+            this.typeGroundExports.Location = new System.Drawing.Point(593, 267);
+            this.typeGroundExports.Name = "typeGroundExports";
+            this.typeGroundExports.Size = new System.Drawing.Size(68, 20);
+            this.typeGroundExports.TabIndex = 62;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(547, 229);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(85, 13);
+            this.label20.TabIndex = 61;
+            this.label20.Text = "Type: GROUND";
+            // 
+            // comboBox9
+            // 
+            this.comboBox9.FormattingEnabled = true;
+            this.comboBox9.Location = new System.Drawing.Point(550, 245);
+            this.comboBox9.Name = "comboBox9";
+            this.comboBox9.Size = new System.Drawing.Size(111, 21);
+            this.comboBox9.TabIndex = 60;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
+            this.pictureBox11.Location = new System.Drawing.Point(531, 216);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(10, 102);
+            this.pictureBox11.TabIndex = 59;
+            this.pictureBox11.TabStop = false;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(411, 270);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(40, 13);
+            this.label17.TabIndex = 58;
+            this.label17.Text = "Export:";
+            // 
+            // typeAirExports
+            // 
+            this.typeAirExports.Location = new System.Drawing.Point(457, 267);
+            this.typeAirExports.Name = "typeAirExports";
+            this.typeAirExports.Size = new System.Drawing.Size(68, 20);
+            this.typeAirExports.TabIndex = 57;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(411, 229);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(55, 13);
+            this.label18.TabIndex = 56;
+            this.label18.Text = "Type: AIR";
+            // 
+            // comboBox8
+            // 
+            this.comboBox8.FormattingEnabled = true;
+            this.comboBox8.Location = new System.Drawing.Point(414, 245);
+            this.comboBox8.Name = "comboBox8";
+            this.comboBox8.Size = new System.Drawing.Size(111, 21);
+            this.comboBox8.TabIndex = 55;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
+            this.pictureBox10.Location = new System.Drawing.Point(395, 216);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(10, 102);
+            this.pictureBox10.TabIndex = 54;
+            this.pictureBox10.TabStop = false;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(275, 270);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(40, 13);
+            this.label15.TabIndex = 53;
+            this.label15.Text = "Export:";
+            // 
+            // typeEarthlyExports
+            // 
+            this.typeEarthlyExports.Location = new System.Drawing.Point(321, 267);
+            this.typeEarthlyExports.Name = "typeEarthlyExports";
+            this.typeEarthlyExports.Size = new System.Drawing.Size(68, 20);
+            this.typeEarthlyExports.TabIndex = 52;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(275, 229);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(87, 13);
+            this.label16.TabIndex = 51;
+            this.label16.Text = "Type: EARTHLY";
+            // 
+            // comboBox7
+            // 
+            this.comboBox7.FormattingEnabled = true;
+            this.comboBox7.Location = new System.Drawing.Point(278, 245);
+            this.comboBox7.Name = "comboBox7";
+            this.comboBox7.Size = new System.Drawing.Size(111, 21);
+            this.comboBox7.TabIndex = 50;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
+            this.pictureBox9.Location = new System.Drawing.Point(259, 216);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(10, 102);
+            this.pictureBox9.TabIndex = 49;
+            this.pictureBox9.TabStop = false;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(139, 270);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(40, 13);
+            this.label13.TabIndex = 48;
+            this.label13.Text = "Export:";
+            // 
+            // typeVoidExports
+            // 
+            this.typeVoidExports.Location = new System.Drawing.Point(185, 267);
+            this.typeVoidExports.Name = "typeVoidExports";
+            this.typeVoidExports.Size = new System.Drawing.Size(68, 20);
+            this.typeVoidExports.TabIndex = 47;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(139, 229);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(63, 13);
+            this.label14.TabIndex = 46;
+            this.label14.Text = "Type: VOID";
+            // 
+            // comboBox6
+            // 
+            this.comboBox6.FormattingEnabled = true;
+            this.comboBox6.Location = new System.Drawing.Point(142, 245);
+            this.comboBox6.Name = "comboBox6";
+            this.comboBox6.Size = new System.Drawing.Size(111, 21);
+            this.comboBox6.TabIndex = 45;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
+            this.pictureBox8.Location = new System.Drawing.Point(123, 216);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(10, 102);
+            this.pictureBox8.TabIndex = 44;
+            this.pictureBox8.TabStop = false;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(3, 270);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(40, 13);
+            this.label11.TabIndex = 43;
+            this.label11.Text = "Export:";
+            // 
+            // typeNoneExports
+            // 
+            this.typeNoneExports.Location = new System.Drawing.Point(49, 267);
+            this.typeNoneExports.Name = "typeNoneExports";
+            this.typeNoneExports.Size = new System.Drawing.Size(68, 20);
+            this.typeNoneExports.TabIndex = 42;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(3, 229);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(68, 13);
+            this.label12.TabIndex = 41;
+            this.label12.Text = "Type: NONE";
+            // 
+            // comboBox5
+            // 
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Location = new System.Drawing.Point(6, 245);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(111, 21);
+            this.comboBox5.TabIndex = 40;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
+            this.pictureBox7.Location = new System.Drawing.Point(531, 96);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(10, 102);
+            this.pictureBox7.TabIndex = 39;
+            this.pictureBox7.TabStop = false;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(411, 150);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(40, 13);
+            this.label10.TabIndex = 38;
+            this.label10.Text = "Export:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(457, 147);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(68, 20);
+            this.textBox1.TabIndex = 37;
+            // 
+            // opExports
+            // 
+            this.opExports.AutoSize = true;
+            this.opExports.Location = new System.Drawing.Point(411, 109);
+            this.opExports.Name = "opExports";
+            this.opExports.Size = new System.Drawing.Size(22, 13);
+            this.opExports.TabIndex = 36;
+            this.opExports.Text = "OP";
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Location = new System.Drawing.Point(414, 125);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(111, 21);
+            this.comboBox4.TabIndex = 35;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
+            this.pictureBox6.Location = new System.Drawing.Point(395, 100);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(10, 102);
+            this.pictureBox6.TabIndex = 34;
+            this.pictureBox6.TabStop = false;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(275, 154);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(40, 13);
+            this.label8.TabIndex = 33;
+            this.label8.Text = "Export:";
+            // 
+            // utilityExports
+            // 
+            this.utilityExports.Location = new System.Drawing.Point(321, 151);
+            this.utilityExports.Name = "utilityExports";
+            this.utilityExports.Size = new System.Drawing.Size(68, 20);
+            this.utilityExports.TabIndex = 32;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(275, 113);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(48, 13);
+            this.label9.TabIndex = 31;
+            this.label9.Text = "UTILITY";
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(278, 129);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(111, 21);
+            this.comboBox3.TabIndex = 30;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
+            this.pictureBox5.Location = new System.Drawing.Point(259, 100);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(10, 102);
+            this.pictureBox5.TabIndex = 29;
+            this.pictureBox5.TabStop = false;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(139, 154);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(40, 13);
+            this.label6.TabIndex = 28;
+            this.label6.Text = "Export:";
+            // 
+            // userCreatedExports
+            // 
+            this.userCreatedExports.Location = new System.Drawing.Point(185, 151);
+            this.userCreatedExports.Name = "userCreatedExports";
+            this.userCreatedExports.Size = new System.Drawing.Size(68, 20);
+            this.userCreatedExports.TabIndex = 27;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(139, 113);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(91, 13);
+            this.label7.TabIndex = 26;
+            this.label7.Text = "USER-CREATED";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(142, 129);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(111, 21);
+            this.comboBox2.TabIndex = 25;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
+            this.pictureBox4.Location = new System.Drawing.Point(123, 97);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(10, 102);
+            this.pictureBox4.TabIndex = 24;
+            this.pictureBox4.TabStop = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(3, 151);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(40, 13);
+            this.label5.TabIndex = 23;
+            this.label5.Text = "Export:";
+            // 
+            // vanillaExports
+            // 
+            this.vanillaExports.Location = new System.Drawing.Point(49, 148);
+            this.vanillaExports.Name = "vanillaExports";
+            this.vanillaExports.Size = new System.Drawing.Size(68, 20);
+            this.vanillaExports.TabIndex = 22;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(3, 109);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(51, 13);
+            this.label4.TabIndex = 21;
+            this.label4.Text = "VANILLA";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(6, 126);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(111, 21);
+            this.comboBox1.TabIndex = 20;
+            // 
+            // label
+            // 
+            this.label.AutoSize = true;
+            this.label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label.Location = new System.Drawing.Point(6, 73);
+            this.label.Name = "label";
+            this.label.Size = new System.Drawing.Size(115, 20);
+            this.label.TabIndex = 19;
+            this.label.Text = "CATEGORIES";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(3, 36);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(856, 13);
+            this.label3.TabIndex = 18;
+            this.label3.Text = "Welcome to the character database. Here you can find a list of all characters sor" +
+    "ted by typing, vanilla or user-created, and also by strength. Select a character" +
+    " to get its export string.";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarHorizontal;
+            this.pictureBox3.InitialImage = global::DCTBFightingSimulator.Properties.Resources.SeparationBarHorizontal;
+            this.pictureBox3.Location = new System.Drawing.Point(3, 55);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(1075, 10);
+            this.pictureBox3.TabIndex = 17;
+            this.pictureBox3.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.label2.Location = new System.Drawing.Point(3, 4);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(292, 29);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "CHARACTER DATABASE";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(15, 414);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(112, 10);
+            this.pictureBox2.TabIndex = 13;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(15, 102);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(112, 10);
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
+            // SeparationBar
+            // 
+            this.SeparationBar.Image = ((System.Drawing.Image)(resources.GetObject("SeparationBar.Image")));
+            this.SeparationBar.InitialImage = null;
+            this.SeparationBar.Location = new System.Drawing.Point(137, 9);
+            this.SeparationBar.Name = "SeparationBar";
+            this.SeparationBar.Size = new System.Drawing.Size(10, 823);
+            this.SeparationBar.TabIndex = 3;
+            this.SeparationBar.TabStop = false;
             // 
             // label41
             // 
@@ -4934,14 +4934,14 @@ namespace DCTBFightingSimulator
             this.label42.TabIndex = 2;
             this.label42.Text = resources.GetString("label42.Text");
             // 
-            // textBox2
+            // eveSimText
             // 
-            this.textBox2.Location = new System.Drawing.Point(439, 196);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox2.Size = new System.Drawing.Size(356, 411);
-            this.textBox2.TabIndex = 3;
+            this.eveSimText.Location = new System.Drawing.Point(439, 196);
+            this.eveSimText.Multiline = true;
+            this.eveSimText.Name = "eveSimText";
+            this.eveSimText.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.eveSimText.Size = new System.Drawing.Size(356, 411);
+            this.eveSimText.TabIndex = 3;
             // 
             // pictureBox24
             // 
@@ -5306,7 +5306,7 @@ namespace DCTBFightingSimulator
             this.EvEPanel.Controls.Add(this.label44);
             this.EvEPanel.Controls.Add(this.label43);
             this.EvEPanel.Controls.Add(this.pictureBox24);
-            this.EvEPanel.Controls.Add(this.textBox2);
+            this.EvEPanel.Controls.Add(this.eveSimText);
             this.EvEPanel.Controls.Add(this.label42);
             this.EvEPanel.Controls.Add(this.pictureBox23);
             this.EvEPanel.Controls.Add(this.label41);
@@ -5314,695 +5314,6 @@ namespace DCTBFightingSimulator
             this.EvEPanel.Name = "EvEPanel";
             this.EvEPanel.Size = new System.Drawing.Size(1225, 823);
             this.EvEPanel.TabIndex = 115;
-            // 
-            // p1Def
-            // 
-            this.p1Def.Location = new System.Drawing.Point(137, 368);
-            this.p1Def.Maximum = new decimal(new int[] {
-            1215752192,
-            23,
-            0,
-            0});
-            this.p1Def.Minimum = new decimal(new int[] {
-            1215752192,
-            23,
-            0,
-            -2147483648});
-            this.p1Def.Name = "p1Def";
-            this.p1Def.ReadOnly = true;
-            this.p1Def.Size = new System.Drawing.Size(97, 20);
-            this.p1Def.TabIndex = 28;
-            // 
-            // label53
-            // 
-            this.label53.AutoSize = true;
-            this.label53.Location = new System.Drawing.Point(95, 370);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(28, 13);
-            this.label53.TabIndex = 27;
-            this.label53.Text = "DEF";
-            // 
-            // p1Dge
-            // 
-            this.p1Dge.Location = new System.Drawing.Point(137, 422);
-            this.p1Dge.Maximum = new decimal(new int[] {
-            1215752192,
-            23,
-            0,
-            0});
-            this.p1Dge.Minimum = new decimal(new int[] {
-            1215752192,
-            23,
-            0,
-            -2147483648});
-            this.p1Dge.Name = "p1Dge";
-            this.p1Dge.ReadOnly = true;
-            this.p1Dge.Size = new System.Drawing.Size(97, 20);
-            this.p1Dge.TabIndex = 32;
-            // 
-            // label54
-            // 
-            this.label54.AutoSize = true;
-            this.label54.Location = new System.Drawing.Point(95, 424);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(30, 13);
-            this.label54.TabIndex = 31;
-            this.label54.Text = "DGE";
-            // 
-            // p1Acc
-            // 
-            this.p1Acc.Location = new System.Drawing.Point(137, 395);
-            this.p1Acc.Maximum = new decimal(new int[] {
-            1215752192,
-            23,
-            0,
-            0});
-            this.p1Acc.Minimum = new decimal(new int[] {
-            1215752192,
-            23,
-            0,
-            -2147483648});
-            this.p1Acc.Name = "p1Acc";
-            this.p1Acc.ReadOnly = true;
-            this.p1Acc.Size = new System.Drawing.Size(97, 20);
-            this.p1Acc.TabIndex = 30;
-            // 
-            // label55
-            // 
-            this.label55.AutoSize = true;
-            this.label55.Location = new System.Drawing.Point(95, 397);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(28, 13);
-            this.label55.TabIndex = 29;
-            this.label55.Text = "ACC";
-            // 
-            // p1Stunned
-            // 
-            this.p1Stunned.Location = new System.Drawing.Point(377, 196);
-            this.p1Stunned.Name = "p1Stunned";
-            this.p1Stunned.ReadOnly = true;
-            this.p1Stunned.Size = new System.Drawing.Size(51, 20);
-            this.p1Stunned.TabIndex = 34;
-            // 
-            // label56
-            // 
-            this.label56.AutoSize = true;
-            this.label56.Location = new System.Drawing.Point(318, 199);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(53, 13);
-            this.label56.TabIndex = 33;
-            this.label56.Text = "Stunned?";
-            // 
-            // p1Poisoned
-            // 
-            this.p1Poisoned.Location = new System.Drawing.Point(377, 222);
-            this.p1Poisoned.Name = "p1Poisoned";
-            this.p1Poisoned.ReadOnly = true;
-            this.p1Poisoned.Size = new System.Drawing.Size(51, 20);
-            this.p1Poisoned.TabIndex = 36;
-            // 
-            // label57
-            // 
-            this.label57.AutoSize = true;
-            this.label57.Location = new System.Drawing.Point(318, 225);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(57, 13);
-            this.label57.TabIndex = 35;
-            this.label57.Text = "Poisoned?";
-            // 
-            // p1Crippled
-            // 
-            this.p1Crippled.Location = new System.Drawing.Point(377, 274);
-            this.p1Crippled.Name = "p1Crippled";
-            this.p1Crippled.ReadOnly = true;
-            this.p1Crippled.Size = new System.Drawing.Size(51, 20);
-            this.p1Crippled.TabIndex = 40;
-            // 
-            // label58
-            // 
-            this.label58.AutoSize = true;
-            this.label58.Location = new System.Drawing.Point(318, 277);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(51, 13);
-            this.label58.TabIndex = 39;
-            this.label58.Text = "Crippled?";
-            // 
-            // p1Burned
-            // 
-            this.p1Burned.Location = new System.Drawing.Point(377, 248);
-            this.p1Burned.Name = "p1Burned";
-            this.p1Burned.ReadOnly = true;
-            this.p1Burned.Size = new System.Drawing.Size(51, 20);
-            this.p1Burned.TabIndex = 38;
-            // 
-            // label59
-            // 
-            this.label59.AutoSize = true;
-            this.label59.Location = new System.Drawing.Point(318, 251);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(47, 13);
-            this.label59.TabIndex = 37;
-            this.label59.Text = "Burned?";
-            // 
-            // p1Weak
-            // 
-            this.p1Weak.Location = new System.Drawing.Point(377, 378);
-            this.p1Weak.Name = "p1Weak";
-            this.p1Weak.ReadOnly = true;
-            this.p1Weak.Size = new System.Drawing.Size(51, 20);
-            this.p1Weak.TabIndex = 48;
-            // 
-            // label60
-            // 
-            this.label60.AutoSize = true;
-            this.label60.Location = new System.Drawing.Point(318, 381);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(42, 13);
-            this.label60.TabIndex = 47;
-            this.label60.Text = "Weak?";
-            // 
-            // p1Stupefied
-            // 
-            this.p1Stupefied.Location = new System.Drawing.Point(377, 352);
-            this.p1Stupefied.Name = "p1Stupefied";
-            this.p1Stupefied.ReadOnly = true;
-            this.p1Stupefied.Size = new System.Drawing.Size(51, 20);
-            this.p1Stupefied.TabIndex = 46;
-            // 
-            // label61
-            // 
-            this.label61.AutoSize = true;
-            this.label61.Location = new System.Drawing.Point(318, 355);
-            this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(58, 13);
-            this.label61.TabIndex = 45;
-            this.label61.Text = "Stupefied?";
-            // 
-            // p1Bleeding
-            // 
-            this.p1Bleeding.Location = new System.Drawing.Point(377, 326);
-            this.p1Bleeding.Name = "p1Bleeding";
-            this.p1Bleeding.ReadOnly = true;
-            this.p1Bleeding.Size = new System.Drawing.Size(51, 20);
-            this.p1Bleeding.TabIndex = 44;
-            // 
-            // label62
-            // 
-            this.label62.AutoSize = true;
-            this.label62.Location = new System.Drawing.Point(318, 329);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(54, 13);
-            this.label62.TabIndex = 43;
-            this.label62.Text = "Bleeding?";
-            // 
-            // p1Frozen
-            // 
-            this.p1Frozen.Location = new System.Drawing.Point(377, 300);
-            this.p1Frozen.Name = "p1Frozen";
-            this.p1Frozen.ReadOnly = true;
-            this.p1Frozen.Size = new System.Drawing.Size(51, 20);
-            this.p1Frozen.TabIndex = 42;
-            // 
-            // label63
-            // 
-            this.label63.AutoSize = true;
-            this.label63.Location = new System.Drawing.Point(318, 303);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(45, 13);
-            this.label63.TabIndex = 41;
-            this.label63.Text = "Frozen?";
-            // 
-            // p1Dizzy
-            // 
-            this.p1Dizzy.Location = new System.Drawing.Point(377, 404);
-            this.p1Dizzy.Name = "p1Dizzy";
-            this.p1Dizzy.ReadOnly = true;
-            this.p1Dizzy.Size = new System.Drawing.Size(51, 20);
-            this.p1Dizzy.TabIndex = 50;
-            // 
-            // label64
-            // 
-            this.label64.AutoSize = true;
-            this.label64.Location = new System.Drawing.Point(318, 407);
-            this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(38, 13);
-            this.label64.TabIndex = 49;
-            this.label64.Text = "Dizzy?";
-            // 
-            // label65
-            // 
-            this.label65.AutoSize = true;
-            this.label65.Location = new System.Drawing.Point(95, 482);
-            this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(35, 13);
-            this.label65.TabIndex = 53;
-            this.label65.Text = "Desc.";
-            // 
-            // p1Mv1
-            // 
-            this.p1Mv1.Location = new System.Drawing.Point(144, 452);
-            this.p1Mv1.Name = "p1Mv1";
-            this.p1Mv1.ReadOnly = true;
-            this.p1Mv1.Size = new System.Drawing.Size(100, 20);
-            this.p1Mv1.TabIndex = 52;
-            // 
-            // label66
-            // 
-            this.label66.AutoSize = true;
-            this.label66.Location = new System.Drawing.Point(95, 456);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(43, 13);
-            this.label66.TabIndex = 51;
-            this.label66.Text = "Move 1";
-            // 
-            // p1Mv1Acc
-            // 
-            this.p1Mv1Acc.Location = new System.Drawing.Point(292, 478);
-            this.p1Mv1Acc.Maximum = new decimal(new int[] {
-            1215752192,
-            23,
-            0,
-            0});
-            this.p1Mv1Acc.Minimum = new decimal(new int[] {
-            1215752192,
-            23,
-            0,
-            -2147483648});
-            this.p1Mv1Acc.Name = "p1Mv1Acc";
-            this.p1Mv1Acc.ReadOnly = true;
-            this.p1Mv1Acc.Size = new System.Drawing.Size(97, 20);
-            this.p1Mv1Acc.TabIndex = 56;
-            // 
-            // label67
-            // 
-            this.label67.AutoSize = true;
-            this.label67.Location = new System.Drawing.Point(251, 481);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(28, 13);
-            this.label67.TabIndex = 55;
-            this.label67.Text = "ACC";
-            // 
-            // p1Mv1AtkM
-            // 
-            this.p1Mv1AtkM.DecimalPlaces = 2;
-            this.p1Mv1AtkM.Location = new System.Drawing.Point(292, 452);
-            this.p1Mv1AtkM.Maximum = new decimal(new int[] {
-            1215752192,
-            23,
-            0,
-            0});
-            this.p1Mv1AtkM.Minimum = new decimal(new int[] {
-            1215752192,
-            23,
-            0,
-            -2147483648});
-            this.p1Mv1AtkM.Name = "p1Mv1AtkM";
-            this.p1Mv1AtkM.ReadOnly = true;
-            this.p1Mv1AtkM.Size = new System.Drawing.Size(97, 20);
-            this.p1Mv1AtkM.TabIndex = 58;
-            // 
-            // label68
-            // 
-            this.label68.AutoSize = true;
-            this.label68.Location = new System.Drawing.Point(250, 456);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(43, 13);
-            this.label68.TabIndex = 57;
-            this.label68.Text = "ATK M.";
-            // 
-            // p1Mv1Desc
-            // 
-            this.p1Mv1Desc.Location = new System.Drawing.Point(144, 478);
-            this.p1Mv1Desc.Multiline = true;
-            this.p1Mv1Desc.Name = "p1Mv1Desc";
-            this.p1Mv1Desc.ReadOnly = true;
-            this.p1Mv1Desc.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.p1Mv1Desc.Size = new System.Drawing.Size(100, 20);
-            this.p1Mv1Desc.TabIndex = 59;
-            // 
-            // p1Mv2Desc
-            // 
-            this.p1Mv2Desc.Location = new System.Drawing.Point(144, 531);
-            this.p1Mv2Desc.Multiline = true;
-            this.p1Mv2Desc.Name = "p1Mv2Desc";
-            this.p1Mv2Desc.ReadOnly = true;
-            this.p1Mv2Desc.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.p1Mv2Desc.Size = new System.Drawing.Size(100, 20);
-            this.p1Mv2Desc.TabIndex = 67;
-            // 
-            // p1Mv2AtkM
-            // 
-            this.p1Mv2AtkM.DecimalPlaces = 2;
-            this.p1Mv2AtkM.Location = new System.Drawing.Point(292, 505);
-            this.p1Mv2AtkM.Maximum = new decimal(new int[] {
-            1215752192,
-            23,
-            0,
-            0});
-            this.p1Mv2AtkM.Minimum = new decimal(new int[] {
-            1215752192,
-            23,
-            0,
-            -2147483648});
-            this.p1Mv2AtkM.Name = "p1Mv2AtkM";
-            this.p1Mv2AtkM.ReadOnly = true;
-            this.p1Mv2AtkM.Size = new System.Drawing.Size(97, 20);
-            this.p1Mv2AtkM.TabIndex = 66;
-            // 
-            // label69
-            // 
-            this.label69.AutoSize = true;
-            this.label69.Location = new System.Drawing.Point(250, 509);
-            this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(43, 13);
-            this.label69.TabIndex = 65;
-            this.label69.Text = "ATK M.";
-            // 
-            // p1Mv2Acc
-            // 
-            this.p1Mv2Acc.Location = new System.Drawing.Point(292, 531);
-            this.p1Mv2Acc.Maximum = new decimal(new int[] {
-            1215752192,
-            23,
-            0,
-            0});
-            this.p1Mv2Acc.Minimum = new decimal(new int[] {
-            1215752192,
-            23,
-            0,
-            -2147483648});
-            this.p1Mv2Acc.Name = "p1Mv2Acc";
-            this.p1Mv2Acc.ReadOnly = true;
-            this.p1Mv2Acc.Size = new System.Drawing.Size(97, 20);
-            this.p1Mv2Acc.TabIndex = 64;
-            // 
-            // label70
-            // 
-            this.label70.AutoSize = true;
-            this.label70.Location = new System.Drawing.Point(251, 534);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(28, 13);
-            this.label70.TabIndex = 63;
-            this.label70.Text = "ACC";
-            // 
-            // label71
-            // 
-            this.label71.AutoSize = true;
-            this.label71.Location = new System.Drawing.Point(95, 535);
-            this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(35, 13);
-            this.label71.TabIndex = 62;
-            this.label71.Text = "Desc.";
-            // 
-            // p1Mv2
-            // 
-            this.p1Mv2.Location = new System.Drawing.Point(144, 505);
-            this.p1Mv2.Name = "p1Mv2";
-            this.p1Mv2.ReadOnly = true;
-            this.p1Mv2.Size = new System.Drawing.Size(100, 20);
-            this.p1Mv2.TabIndex = 61;
-            // 
-            // label72
-            // 
-            this.label72.AutoSize = true;
-            this.label72.Location = new System.Drawing.Point(95, 509);
-            this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(43, 13);
-            this.label72.TabIndex = 60;
-            this.label72.Text = "Move 2";
-            // 
-            // p1Mv3Desc
-            // 
-            this.p1Mv3Desc.Location = new System.Drawing.Point(144, 583);
-            this.p1Mv3Desc.Multiline = true;
-            this.p1Mv3Desc.Name = "p1Mv3Desc";
-            this.p1Mv3Desc.ReadOnly = true;
-            this.p1Mv3Desc.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.p1Mv3Desc.Size = new System.Drawing.Size(100, 20);
-            this.p1Mv3Desc.TabIndex = 75;
-            // 
-            // p1Mv3AtkM
-            // 
-            this.p1Mv3AtkM.DecimalPlaces = 2;
-            this.p1Mv3AtkM.Location = new System.Drawing.Point(292, 557);
-            this.p1Mv3AtkM.Maximum = new decimal(new int[] {
-            1215752192,
-            23,
-            0,
-            0});
-            this.p1Mv3AtkM.Minimum = new decimal(new int[] {
-            1215752192,
-            23,
-            0,
-            -2147483648});
-            this.p1Mv3AtkM.Name = "p1Mv3AtkM";
-            this.p1Mv3AtkM.ReadOnly = true;
-            this.p1Mv3AtkM.Size = new System.Drawing.Size(97, 20);
-            this.p1Mv3AtkM.TabIndex = 74;
-            // 
-            // label73
-            // 
-            this.label73.AutoSize = true;
-            this.label73.Location = new System.Drawing.Point(250, 561);
-            this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(43, 13);
-            this.label73.TabIndex = 73;
-            this.label73.Text = "ATK M.";
-            // 
-            // p1Mv3Acc
-            // 
-            this.p1Mv3Acc.Location = new System.Drawing.Point(292, 583);
-            this.p1Mv3Acc.Maximum = new decimal(new int[] {
-            1215752192,
-            23,
-            0,
-            0});
-            this.p1Mv3Acc.Minimum = new decimal(new int[] {
-            1215752192,
-            23,
-            0,
-            -2147483648});
-            this.p1Mv3Acc.Name = "p1Mv3Acc";
-            this.p1Mv3Acc.ReadOnly = true;
-            this.p1Mv3Acc.Size = new System.Drawing.Size(97, 20);
-            this.p1Mv3Acc.TabIndex = 72;
-            // 
-            // label74
-            // 
-            this.label74.AutoSize = true;
-            this.label74.Location = new System.Drawing.Point(251, 586);
-            this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(28, 13);
-            this.label74.TabIndex = 71;
-            this.label74.Text = "ACC";
-            // 
-            // label75
-            // 
-            this.label75.AutoSize = true;
-            this.label75.Location = new System.Drawing.Point(95, 587);
-            this.label75.Name = "label75";
-            this.label75.Size = new System.Drawing.Size(35, 13);
-            this.label75.TabIndex = 70;
-            this.label75.Text = "Desc.";
-            // 
-            // p1Mv3
-            // 
-            this.p1Mv3.Location = new System.Drawing.Point(144, 557);
-            this.p1Mv3.Name = "p1Mv3";
-            this.p1Mv3.ReadOnly = true;
-            this.p1Mv3.Size = new System.Drawing.Size(100, 20);
-            this.p1Mv3.TabIndex = 69;
-            // 
-            // label76
-            // 
-            this.label76.AutoSize = true;
-            this.label76.Location = new System.Drawing.Point(95, 561);
-            this.label76.Name = "label76";
-            this.label76.Size = new System.Drawing.Size(43, 13);
-            this.label76.TabIndex = 68;
-            this.label76.Text = "Move 3";
-            // 
-            // p1Mv4Desc
-            // 
-            this.p1Mv4Desc.Location = new System.Drawing.Point(144, 636);
-            this.p1Mv4Desc.Multiline = true;
-            this.p1Mv4Desc.Name = "p1Mv4Desc";
-            this.p1Mv4Desc.ReadOnly = true;
-            this.p1Mv4Desc.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.p1Mv4Desc.Size = new System.Drawing.Size(100, 20);
-            this.p1Mv4Desc.TabIndex = 83;
-            // 
-            // p1Mv4AtkM
-            // 
-            this.p1Mv4AtkM.DecimalPlaces = 2;
-            this.p1Mv4AtkM.Location = new System.Drawing.Point(292, 610);
-            this.p1Mv4AtkM.Maximum = new decimal(new int[] {
-            1215752192,
-            23,
-            0,
-            0});
-            this.p1Mv4AtkM.Minimum = new decimal(new int[] {
-            1215752192,
-            23,
-            0,
-            -2147483648});
-            this.p1Mv4AtkM.Name = "p1Mv4AtkM";
-            this.p1Mv4AtkM.ReadOnly = true;
-            this.p1Mv4AtkM.Size = new System.Drawing.Size(97, 20);
-            this.p1Mv4AtkM.TabIndex = 82;
-            // 
-            // label77
-            // 
-            this.label77.AutoSize = true;
-            this.label77.Location = new System.Drawing.Point(250, 614);
-            this.label77.Name = "label77";
-            this.label77.Size = new System.Drawing.Size(43, 13);
-            this.label77.TabIndex = 81;
-            this.label77.Text = "ATK M.";
-            // 
-            // p1Mv4Acc
-            // 
-            this.p1Mv4Acc.Location = new System.Drawing.Point(292, 636);
-            this.p1Mv4Acc.Maximum = new decimal(new int[] {
-            1215752192,
-            23,
-            0,
-            0});
-            this.p1Mv4Acc.Minimum = new decimal(new int[] {
-            1215752192,
-            23,
-            0,
-            -2147483648});
-            this.p1Mv4Acc.Name = "p1Mv4Acc";
-            this.p1Mv4Acc.ReadOnly = true;
-            this.p1Mv4Acc.Size = new System.Drawing.Size(97, 20);
-            this.p1Mv4Acc.TabIndex = 80;
-            // 
-            // label78
-            // 
-            this.label78.AutoSize = true;
-            this.label78.Location = new System.Drawing.Point(251, 639);
-            this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(28, 13);
-            this.label78.TabIndex = 79;
-            this.label78.Text = "ACC";
-            // 
-            // label79
-            // 
-            this.label79.AutoSize = true;
-            this.label79.Location = new System.Drawing.Point(95, 640);
-            this.label79.Name = "label79";
-            this.label79.Size = new System.Drawing.Size(35, 13);
-            this.label79.TabIndex = 78;
-            this.label79.Text = "Desc.";
-            // 
-            // p1Mv4
-            // 
-            this.p1Mv4.Location = new System.Drawing.Point(144, 610);
-            this.p1Mv4.Name = "p1Mv4";
-            this.p1Mv4.ReadOnly = true;
-            this.p1Mv4.Size = new System.Drawing.Size(100, 20);
-            this.p1Mv4.TabIndex = 77;
-            // 
-            // label80
-            // 
-            this.label80.AutoSize = true;
-            this.label80.Location = new System.Drawing.Point(95, 614);
-            this.label80.Name = "label80";
-            this.label80.Size = new System.Drawing.Size(43, 13);
-            this.label80.TabIndex = 76;
-            this.label80.Text = "Move 4";
-            // 
-            // p1Mv5Desc
-            // 
-            this.p1Mv5Desc.Location = new System.Drawing.Point(144, 689);
-            this.p1Mv5Desc.Multiline = true;
-            this.p1Mv5Desc.Name = "p1Mv5Desc";
-            this.p1Mv5Desc.ReadOnly = true;
-            this.p1Mv5Desc.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.p1Mv5Desc.Size = new System.Drawing.Size(100, 20);
-            this.p1Mv5Desc.TabIndex = 91;
-            // 
-            // p1Mv5AtkM
-            // 
-            this.p1Mv5AtkM.DecimalPlaces = 2;
-            this.p1Mv5AtkM.Location = new System.Drawing.Point(292, 663);
-            this.p1Mv5AtkM.Maximum = new decimal(new int[] {
-            1215752192,
-            23,
-            0,
-            0});
-            this.p1Mv5AtkM.Minimum = new decimal(new int[] {
-            1215752192,
-            23,
-            0,
-            -2147483648});
-            this.p1Mv5AtkM.Name = "p1Mv5AtkM";
-            this.p1Mv5AtkM.ReadOnly = true;
-            this.p1Mv5AtkM.Size = new System.Drawing.Size(97, 20);
-            this.p1Mv5AtkM.TabIndex = 90;
-            // 
-            // label81
-            // 
-            this.label81.AutoSize = true;
-            this.label81.Location = new System.Drawing.Point(250, 667);
-            this.label81.Name = "label81";
-            this.label81.Size = new System.Drawing.Size(43, 13);
-            this.label81.TabIndex = 89;
-            this.label81.Text = "ATK M.";
-            // 
-            // p1Mv5Acc
-            // 
-            this.p1Mv5Acc.Location = new System.Drawing.Point(292, 689);
-            this.p1Mv5Acc.Maximum = new decimal(new int[] {
-            1215752192,
-            23,
-            0,
-            0});
-            this.p1Mv5Acc.Minimum = new decimal(new int[] {
-            1215752192,
-            23,
-            0,
-            -2147483648});
-            this.p1Mv5Acc.Name = "p1Mv5Acc";
-            this.p1Mv5Acc.ReadOnly = true;
-            this.p1Mv5Acc.Size = new System.Drawing.Size(97, 20);
-            this.p1Mv5Acc.TabIndex = 88;
-            // 
-            // label82
-            // 
-            this.label82.AutoSize = true;
-            this.label82.Location = new System.Drawing.Point(251, 692);
-            this.label82.Name = "label82";
-            this.label82.Size = new System.Drawing.Size(28, 13);
-            this.label82.TabIndex = 87;
-            this.label82.Text = "ACC";
-            // 
-            // label83
-            // 
-            this.label83.AutoSize = true;
-            this.label83.Location = new System.Drawing.Point(95, 693);
-            this.label83.Name = "label83";
-            this.label83.Size = new System.Drawing.Size(35, 13);
-            this.label83.TabIndex = 86;
-            this.label83.Text = "Desc.";
-            // 
-            // p1Mv5
-            // 
-            this.p1Mv5.Location = new System.Drawing.Point(144, 663);
-            this.p1Mv5.Name = "p1Mv5";
-            this.p1Mv5.ReadOnly = true;
-            this.p1Mv5.Size = new System.Drawing.Size(100, 20);
-            this.p1Mv5.TabIndex = 85;
-            // 
-            // label84
-            // 
-            this.label84.AutoSize = true;
-            this.label84.Location = new System.Drawing.Point(95, 667);
-            this.label84.Name = "label84";
-            this.label84.Size = new System.Drawing.Size(43, 13);
-            this.label84.TabIndex = 84;
-            this.label84.Text = "Move 5";
             // 
             // p2Mv5Desc
             // 
@@ -6783,6 +6094,695 @@ namespace DCTBFightingSimulator
             this.label120.TabIndex = 92;
             this.label120.Text = "Name";
             // 
+            // p1Mv5Desc
+            // 
+            this.p1Mv5Desc.Location = new System.Drawing.Point(144, 689);
+            this.p1Mv5Desc.Multiline = true;
+            this.p1Mv5Desc.Name = "p1Mv5Desc";
+            this.p1Mv5Desc.ReadOnly = true;
+            this.p1Mv5Desc.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.p1Mv5Desc.Size = new System.Drawing.Size(100, 20);
+            this.p1Mv5Desc.TabIndex = 91;
+            // 
+            // p1Mv5AtkM
+            // 
+            this.p1Mv5AtkM.DecimalPlaces = 2;
+            this.p1Mv5AtkM.Location = new System.Drawing.Point(292, 663);
+            this.p1Mv5AtkM.Maximum = new decimal(new int[] {
+            1215752192,
+            23,
+            0,
+            0});
+            this.p1Mv5AtkM.Minimum = new decimal(new int[] {
+            1215752192,
+            23,
+            0,
+            -2147483648});
+            this.p1Mv5AtkM.Name = "p1Mv5AtkM";
+            this.p1Mv5AtkM.ReadOnly = true;
+            this.p1Mv5AtkM.Size = new System.Drawing.Size(97, 20);
+            this.p1Mv5AtkM.TabIndex = 90;
+            // 
+            // label81
+            // 
+            this.label81.AutoSize = true;
+            this.label81.Location = new System.Drawing.Point(250, 667);
+            this.label81.Name = "label81";
+            this.label81.Size = new System.Drawing.Size(43, 13);
+            this.label81.TabIndex = 89;
+            this.label81.Text = "ATK M.";
+            // 
+            // p1Mv5Acc
+            // 
+            this.p1Mv5Acc.Location = new System.Drawing.Point(292, 689);
+            this.p1Mv5Acc.Maximum = new decimal(new int[] {
+            1215752192,
+            23,
+            0,
+            0});
+            this.p1Mv5Acc.Minimum = new decimal(new int[] {
+            1215752192,
+            23,
+            0,
+            -2147483648});
+            this.p1Mv5Acc.Name = "p1Mv5Acc";
+            this.p1Mv5Acc.ReadOnly = true;
+            this.p1Mv5Acc.Size = new System.Drawing.Size(97, 20);
+            this.p1Mv5Acc.TabIndex = 88;
+            // 
+            // label82
+            // 
+            this.label82.AutoSize = true;
+            this.label82.Location = new System.Drawing.Point(251, 692);
+            this.label82.Name = "label82";
+            this.label82.Size = new System.Drawing.Size(28, 13);
+            this.label82.TabIndex = 87;
+            this.label82.Text = "ACC";
+            // 
+            // label83
+            // 
+            this.label83.AutoSize = true;
+            this.label83.Location = new System.Drawing.Point(95, 693);
+            this.label83.Name = "label83";
+            this.label83.Size = new System.Drawing.Size(35, 13);
+            this.label83.TabIndex = 86;
+            this.label83.Text = "Desc.";
+            // 
+            // p1Mv5
+            // 
+            this.p1Mv5.Location = new System.Drawing.Point(144, 663);
+            this.p1Mv5.Name = "p1Mv5";
+            this.p1Mv5.ReadOnly = true;
+            this.p1Mv5.Size = new System.Drawing.Size(100, 20);
+            this.p1Mv5.TabIndex = 85;
+            // 
+            // label84
+            // 
+            this.label84.AutoSize = true;
+            this.label84.Location = new System.Drawing.Point(95, 667);
+            this.label84.Name = "label84";
+            this.label84.Size = new System.Drawing.Size(43, 13);
+            this.label84.TabIndex = 84;
+            this.label84.Text = "Move 5";
+            // 
+            // p1Mv4Desc
+            // 
+            this.p1Mv4Desc.Location = new System.Drawing.Point(144, 636);
+            this.p1Mv4Desc.Multiline = true;
+            this.p1Mv4Desc.Name = "p1Mv4Desc";
+            this.p1Mv4Desc.ReadOnly = true;
+            this.p1Mv4Desc.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.p1Mv4Desc.Size = new System.Drawing.Size(100, 20);
+            this.p1Mv4Desc.TabIndex = 83;
+            // 
+            // p1Mv4AtkM
+            // 
+            this.p1Mv4AtkM.DecimalPlaces = 2;
+            this.p1Mv4AtkM.Location = new System.Drawing.Point(292, 610);
+            this.p1Mv4AtkM.Maximum = new decimal(new int[] {
+            1215752192,
+            23,
+            0,
+            0});
+            this.p1Mv4AtkM.Minimum = new decimal(new int[] {
+            1215752192,
+            23,
+            0,
+            -2147483648});
+            this.p1Mv4AtkM.Name = "p1Mv4AtkM";
+            this.p1Mv4AtkM.ReadOnly = true;
+            this.p1Mv4AtkM.Size = new System.Drawing.Size(97, 20);
+            this.p1Mv4AtkM.TabIndex = 82;
+            // 
+            // label77
+            // 
+            this.label77.AutoSize = true;
+            this.label77.Location = new System.Drawing.Point(250, 614);
+            this.label77.Name = "label77";
+            this.label77.Size = new System.Drawing.Size(43, 13);
+            this.label77.TabIndex = 81;
+            this.label77.Text = "ATK M.";
+            // 
+            // p1Mv4Acc
+            // 
+            this.p1Mv4Acc.Location = new System.Drawing.Point(292, 636);
+            this.p1Mv4Acc.Maximum = new decimal(new int[] {
+            1215752192,
+            23,
+            0,
+            0});
+            this.p1Mv4Acc.Minimum = new decimal(new int[] {
+            1215752192,
+            23,
+            0,
+            -2147483648});
+            this.p1Mv4Acc.Name = "p1Mv4Acc";
+            this.p1Mv4Acc.ReadOnly = true;
+            this.p1Mv4Acc.Size = new System.Drawing.Size(97, 20);
+            this.p1Mv4Acc.TabIndex = 80;
+            // 
+            // label78
+            // 
+            this.label78.AutoSize = true;
+            this.label78.Location = new System.Drawing.Point(251, 639);
+            this.label78.Name = "label78";
+            this.label78.Size = new System.Drawing.Size(28, 13);
+            this.label78.TabIndex = 79;
+            this.label78.Text = "ACC";
+            // 
+            // label79
+            // 
+            this.label79.AutoSize = true;
+            this.label79.Location = new System.Drawing.Point(95, 640);
+            this.label79.Name = "label79";
+            this.label79.Size = new System.Drawing.Size(35, 13);
+            this.label79.TabIndex = 78;
+            this.label79.Text = "Desc.";
+            // 
+            // p1Mv4
+            // 
+            this.p1Mv4.Location = new System.Drawing.Point(144, 610);
+            this.p1Mv4.Name = "p1Mv4";
+            this.p1Mv4.ReadOnly = true;
+            this.p1Mv4.Size = new System.Drawing.Size(100, 20);
+            this.p1Mv4.TabIndex = 77;
+            // 
+            // label80
+            // 
+            this.label80.AutoSize = true;
+            this.label80.Location = new System.Drawing.Point(95, 614);
+            this.label80.Name = "label80";
+            this.label80.Size = new System.Drawing.Size(43, 13);
+            this.label80.TabIndex = 76;
+            this.label80.Text = "Move 4";
+            // 
+            // p1Mv3Desc
+            // 
+            this.p1Mv3Desc.Location = new System.Drawing.Point(144, 583);
+            this.p1Mv3Desc.Multiline = true;
+            this.p1Mv3Desc.Name = "p1Mv3Desc";
+            this.p1Mv3Desc.ReadOnly = true;
+            this.p1Mv3Desc.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.p1Mv3Desc.Size = new System.Drawing.Size(100, 20);
+            this.p1Mv3Desc.TabIndex = 75;
+            // 
+            // p1Mv3AtkM
+            // 
+            this.p1Mv3AtkM.DecimalPlaces = 2;
+            this.p1Mv3AtkM.Location = new System.Drawing.Point(292, 557);
+            this.p1Mv3AtkM.Maximum = new decimal(new int[] {
+            1215752192,
+            23,
+            0,
+            0});
+            this.p1Mv3AtkM.Minimum = new decimal(new int[] {
+            1215752192,
+            23,
+            0,
+            -2147483648});
+            this.p1Mv3AtkM.Name = "p1Mv3AtkM";
+            this.p1Mv3AtkM.ReadOnly = true;
+            this.p1Mv3AtkM.Size = new System.Drawing.Size(97, 20);
+            this.p1Mv3AtkM.TabIndex = 74;
+            // 
+            // label73
+            // 
+            this.label73.AutoSize = true;
+            this.label73.Location = new System.Drawing.Point(250, 561);
+            this.label73.Name = "label73";
+            this.label73.Size = new System.Drawing.Size(43, 13);
+            this.label73.TabIndex = 73;
+            this.label73.Text = "ATK M.";
+            // 
+            // p1Mv3Acc
+            // 
+            this.p1Mv3Acc.Location = new System.Drawing.Point(292, 583);
+            this.p1Mv3Acc.Maximum = new decimal(new int[] {
+            1215752192,
+            23,
+            0,
+            0});
+            this.p1Mv3Acc.Minimum = new decimal(new int[] {
+            1215752192,
+            23,
+            0,
+            -2147483648});
+            this.p1Mv3Acc.Name = "p1Mv3Acc";
+            this.p1Mv3Acc.ReadOnly = true;
+            this.p1Mv3Acc.Size = new System.Drawing.Size(97, 20);
+            this.p1Mv3Acc.TabIndex = 72;
+            // 
+            // label74
+            // 
+            this.label74.AutoSize = true;
+            this.label74.Location = new System.Drawing.Point(251, 586);
+            this.label74.Name = "label74";
+            this.label74.Size = new System.Drawing.Size(28, 13);
+            this.label74.TabIndex = 71;
+            this.label74.Text = "ACC";
+            // 
+            // label75
+            // 
+            this.label75.AutoSize = true;
+            this.label75.Location = new System.Drawing.Point(95, 587);
+            this.label75.Name = "label75";
+            this.label75.Size = new System.Drawing.Size(35, 13);
+            this.label75.TabIndex = 70;
+            this.label75.Text = "Desc.";
+            // 
+            // p1Mv3
+            // 
+            this.p1Mv3.Location = new System.Drawing.Point(144, 557);
+            this.p1Mv3.Name = "p1Mv3";
+            this.p1Mv3.ReadOnly = true;
+            this.p1Mv3.Size = new System.Drawing.Size(100, 20);
+            this.p1Mv3.TabIndex = 69;
+            // 
+            // label76
+            // 
+            this.label76.AutoSize = true;
+            this.label76.Location = new System.Drawing.Point(95, 561);
+            this.label76.Name = "label76";
+            this.label76.Size = new System.Drawing.Size(43, 13);
+            this.label76.TabIndex = 68;
+            this.label76.Text = "Move 3";
+            // 
+            // p1Mv2Desc
+            // 
+            this.p1Mv2Desc.Location = new System.Drawing.Point(144, 531);
+            this.p1Mv2Desc.Multiline = true;
+            this.p1Mv2Desc.Name = "p1Mv2Desc";
+            this.p1Mv2Desc.ReadOnly = true;
+            this.p1Mv2Desc.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.p1Mv2Desc.Size = new System.Drawing.Size(100, 20);
+            this.p1Mv2Desc.TabIndex = 67;
+            // 
+            // p1Mv2AtkM
+            // 
+            this.p1Mv2AtkM.DecimalPlaces = 2;
+            this.p1Mv2AtkM.Location = new System.Drawing.Point(292, 505);
+            this.p1Mv2AtkM.Maximum = new decimal(new int[] {
+            1215752192,
+            23,
+            0,
+            0});
+            this.p1Mv2AtkM.Minimum = new decimal(new int[] {
+            1215752192,
+            23,
+            0,
+            -2147483648});
+            this.p1Mv2AtkM.Name = "p1Mv2AtkM";
+            this.p1Mv2AtkM.ReadOnly = true;
+            this.p1Mv2AtkM.Size = new System.Drawing.Size(97, 20);
+            this.p1Mv2AtkM.TabIndex = 66;
+            // 
+            // label69
+            // 
+            this.label69.AutoSize = true;
+            this.label69.Location = new System.Drawing.Point(250, 509);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(43, 13);
+            this.label69.TabIndex = 65;
+            this.label69.Text = "ATK M.";
+            // 
+            // p1Mv2Acc
+            // 
+            this.p1Mv2Acc.Location = new System.Drawing.Point(292, 531);
+            this.p1Mv2Acc.Maximum = new decimal(new int[] {
+            1215752192,
+            23,
+            0,
+            0});
+            this.p1Mv2Acc.Minimum = new decimal(new int[] {
+            1215752192,
+            23,
+            0,
+            -2147483648});
+            this.p1Mv2Acc.Name = "p1Mv2Acc";
+            this.p1Mv2Acc.ReadOnly = true;
+            this.p1Mv2Acc.Size = new System.Drawing.Size(97, 20);
+            this.p1Mv2Acc.TabIndex = 64;
+            // 
+            // label70
+            // 
+            this.label70.AutoSize = true;
+            this.label70.Location = new System.Drawing.Point(251, 534);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(28, 13);
+            this.label70.TabIndex = 63;
+            this.label70.Text = "ACC";
+            // 
+            // label71
+            // 
+            this.label71.AutoSize = true;
+            this.label71.Location = new System.Drawing.Point(95, 535);
+            this.label71.Name = "label71";
+            this.label71.Size = new System.Drawing.Size(35, 13);
+            this.label71.TabIndex = 62;
+            this.label71.Text = "Desc.";
+            // 
+            // p1Mv2
+            // 
+            this.p1Mv2.Location = new System.Drawing.Point(144, 505);
+            this.p1Mv2.Name = "p1Mv2";
+            this.p1Mv2.ReadOnly = true;
+            this.p1Mv2.Size = new System.Drawing.Size(100, 20);
+            this.p1Mv2.TabIndex = 61;
+            // 
+            // label72
+            // 
+            this.label72.AutoSize = true;
+            this.label72.Location = new System.Drawing.Point(95, 509);
+            this.label72.Name = "label72";
+            this.label72.Size = new System.Drawing.Size(43, 13);
+            this.label72.TabIndex = 60;
+            this.label72.Text = "Move 2";
+            // 
+            // p1Mv1Desc
+            // 
+            this.p1Mv1Desc.Location = new System.Drawing.Point(144, 478);
+            this.p1Mv1Desc.Multiline = true;
+            this.p1Mv1Desc.Name = "p1Mv1Desc";
+            this.p1Mv1Desc.ReadOnly = true;
+            this.p1Mv1Desc.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.p1Mv1Desc.Size = new System.Drawing.Size(100, 20);
+            this.p1Mv1Desc.TabIndex = 59;
+            // 
+            // p1Mv1AtkM
+            // 
+            this.p1Mv1AtkM.DecimalPlaces = 2;
+            this.p1Mv1AtkM.Location = new System.Drawing.Point(292, 452);
+            this.p1Mv1AtkM.Maximum = new decimal(new int[] {
+            1215752192,
+            23,
+            0,
+            0});
+            this.p1Mv1AtkM.Minimum = new decimal(new int[] {
+            1215752192,
+            23,
+            0,
+            -2147483648});
+            this.p1Mv1AtkM.Name = "p1Mv1AtkM";
+            this.p1Mv1AtkM.ReadOnly = true;
+            this.p1Mv1AtkM.Size = new System.Drawing.Size(97, 20);
+            this.p1Mv1AtkM.TabIndex = 58;
+            // 
+            // label68
+            // 
+            this.label68.AutoSize = true;
+            this.label68.Location = new System.Drawing.Point(250, 456);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(43, 13);
+            this.label68.TabIndex = 57;
+            this.label68.Text = "ATK M.";
+            // 
+            // p1Mv1Acc
+            // 
+            this.p1Mv1Acc.Location = new System.Drawing.Point(292, 478);
+            this.p1Mv1Acc.Maximum = new decimal(new int[] {
+            1215752192,
+            23,
+            0,
+            0});
+            this.p1Mv1Acc.Minimum = new decimal(new int[] {
+            1215752192,
+            23,
+            0,
+            -2147483648});
+            this.p1Mv1Acc.Name = "p1Mv1Acc";
+            this.p1Mv1Acc.ReadOnly = true;
+            this.p1Mv1Acc.Size = new System.Drawing.Size(97, 20);
+            this.p1Mv1Acc.TabIndex = 56;
+            // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.Location = new System.Drawing.Point(251, 481);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(28, 13);
+            this.label67.TabIndex = 55;
+            this.label67.Text = "ACC";
+            // 
+            // label65
+            // 
+            this.label65.AutoSize = true;
+            this.label65.Location = new System.Drawing.Point(95, 482);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(35, 13);
+            this.label65.TabIndex = 53;
+            this.label65.Text = "Desc.";
+            // 
+            // p1Mv1
+            // 
+            this.p1Mv1.Location = new System.Drawing.Point(144, 452);
+            this.p1Mv1.Name = "p1Mv1";
+            this.p1Mv1.ReadOnly = true;
+            this.p1Mv1.Size = new System.Drawing.Size(100, 20);
+            this.p1Mv1.TabIndex = 52;
+            // 
+            // label66
+            // 
+            this.label66.AutoSize = true;
+            this.label66.Location = new System.Drawing.Point(95, 456);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(43, 13);
+            this.label66.TabIndex = 51;
+            this.label66.Text = "Move 1";
+            // 
+            // p1Dizzy
+            // 
+            this.p1Dizzy.Location = new System.Drawing.Point(377, 404);
+            this.p1Dizzy.Name = "p1Dizzy";
+            this.p1Dizzy.ReadOnly = true;
+            this.p1Dizzy.Size = new System.Drawing.Size(51, 20);
+            this.p1Dizzy.TabIndex = 50;
+            // 
+            // label64
+            // 
+            this.label64.AutoSize = true;
+            this.label64.Location = new System.Drawing.Point(318, 407);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(38, 13);
+            this.label64.TabIndex = 49;
+            this.label64.Text = "Dizzy?";
+            // 
+            // p1Weak
+            // 
+            this.p1Weak.Location = new System.Drawing.Point(377, 378);
+            this.p1Weak.Name = "p1Weak";
+            this.p1Weak.ReadOnly = true;
+            this.p1Weak.Size = new System.Drawing.Size(51, 20);
+            this.p1Weak.TabIndex = 48;
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.Location = new System.Drawing.Point(318, 381);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(42, 13);
+            this.label60.TabIndex = 47;
+            this.label60.Text = "Weak?";
+            // 
+            // p1Stupefied
+            // 
+            this.p1Stupefied.Location = new System.Drawing.Point(377, 352);
+            this.p1Stupefied.Name = "p1Stupefied";
+            this.p1Stupefied.ReadOnly = true;
+            this.p1Stupefied.Size = new System.Drawing.Size(51, 20);
+            this.p1Stupefied.TabIndex = 46;
+            // 
+            // label61
+            // 
+            this.label61.AutoSize = true;
+            this.label61.Location = new System.Drawing.Point(318, 355);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(58, 13);
+            this.label61.TabIndex = 45;
+            this.label61.Text = "Stupefied?";
+            // 
+            // p1Bleeding
+            // 
+            this.p1Bleeding.Location = new System.Drawing.Point(377, 326);
+            this.p1Bleeding.Name = "p1Bleeding";
+            this.p1Bleeding.ReadOnly = true;
+            this.p1Bleeding.Size = new System.Drawing.Size(51, 20);
+            this.p1Bleeding.TabIndex = 44;
+            // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.Location = new System.Drawing.Point(318, 329);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(54, 13);
+            this.label62.TabIndex = 43;
+            this.label62.Text = "Bleeding?";
+            // 
+            // p1Frozen
+            // 
+            this.p1Frozen.Location = new System.Drawing.Point(377, 300);
+            this.p1Frozen.Name = "p1Frozen";
+            this.p1Frozen.ReadOnly = true;
+            this.p1Frozen.Size = new System.Drawing.Size(51, 20);
+            this.p1Frozen.TabIndex = 42;
+            // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.Location = new System.Drawing.Point(318, 303);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(45, 13);
+            this.label63.TabIndex = 41;
+            this.label63.Text = "Frozen?";
+            // 
+            // p1Crippled
+            // 
+            this.p1Crippled.Location = new System.Drawing.Point(377, 274);
+            this.p1Crippled.Name = "p1Crippled";
+            this.p1Crippled.ReadOnly = true;
+            this.p1Crippled.Size = new System.Drawing.Size(51, 20);
+            this.p1Crippled.TabIndex = 40;
+            // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.Location = new System.Drawing.Point(318, 277);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(51, 13);
+            this.label58.TabIndex = 39;
+            this.label58.Text = "Crippled?";
+            // 
+            // p1Burned
+            // 
+            this.p1Burned.Location = new System.Drawing.Point(377, 248);
+            this.p1Burned.Name = "p1Burned";
+            this.p1Burned.ReadOnly = true;
+            this.p1Burned.Size = new System.Drawing.Size(51, 20);
+            this.p1Burned.TabIndex = 38;
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Location = new System.Drawing.Point(318, 251);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(47, 13);
+            this.label59.TabIndex = 37;
+            this.label59.Text = "Burned?";
+            // 
+            // p1Poisoned
+            // 
+            this.p1Poisoned.Location = new System.Drawing.Point(377, 222);
+            this.p1Poisoned.Name = "p1Poisoned";
+            this.p1Poisoned.ReadOnly = true;
+            this.p1Poisoned.Size = new System.Drawing.Size(51, 20);
+            this.p1Poisoned.TabIndex = 36;
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Location = new System.Drawing.Point(318, 225);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(57, 13);
+            this.label57.TabIndex = 35;
+            this.label57.Text = "Poisoned?";
+            // 
+            // p1Stunned
+            // 
+            this.p1Stunned.Location = new System.Drawing.Point(377, 196);
+            this.p1Stunned.Name = "p1Stunned";
+            this.p1Stunned.ReadOnly = true;
+            this.p1Stunned.Size = new System.Drawing.Size(51, 20);
+            this.p1Stunned.TabIndex = 34;
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Location = new System.Drawing.Point(318, 199);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(53, 13);
+            this.label56.TabIndex = 33;
+            this.label56.Text = "Stunned?";
+            // 
+            // p1Dge
+            // 
+            this.p1Dge.Location = new System.Drawing.Point(137, 422);
+            this.p1Dge.Maximum = new decimal(new int[] {
+            1215752192,
+            23,
+            0,
+            0});
+            this.p1Dge.Minimum = new decimal(new int[] {
+            1215752192,
+            23,
+            0,
+            -2147483648});
+            this.p1Dge.Name = "p1Dge";
+            this.p1Dge.ReadOnly = true;
+            this.p1Dge.Size = new System.Drawing.Size(97, 20);
+            this.p1Dge.TabIndex = 32;
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Location = new System.Drawing.Point(95, 424);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(30, 13);
+            this.label54.TabIndex = 31;
+            this.label54.Text = "DGE";
+            // 
+            // p1Acc
+            // 
+            this.p1Acc.Location = new System.Drawing.Point(137, 395);
+            this.p1Acc.Maximum = new decimal(new int[] {
+            1215752192,
+            23,
+            0,
+            0});
+            this.p1Acc.Minimum = new decimal(new int[] {
+            1215752192,
+            23,
+            0,
+            -2147483648});
+            this.p1Acc.Name = "p1Acc";
+            this.p1Acc.ReadOnly = true;
+            this.p1Acc.Size = new System.Drawing.Size(97, 20);
+            this.p1Acc.TabIndex = 30;
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Location = new System.Drawing.Point(95, 397);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(28, 13);
+            this.label55.TabIndex = 29;
+            this.label55.Text = "ACC";
+            // 
+            // p1Def
+            // 
+            this.p1Def.Location = new System.Drawing.Point(137, 368);
+            this.p1Def.Maximum = new decimal(new int[] {
+            1215752192,
+            23,
+            0,
+            0});
+            this.p1Def.Minimum = new decimal(new int[] {
+            1215752192,
+            23,
+            0,
+            -2147483648});
+            this.p1Def.Name = "p1Def";
+            this.p1Def.ReadOnly = true;
+            this.p1Def.Size = new System.Drawing.Size(97, 20);
+            this.p1Def.TabIndex = 28;
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Location = new System.Drawing.Point(95, 370);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(28, 13);
+            this.label53.TabIndex = 27;
+            this.label53.Text = "DEF";
+            // 
             // DCTBFightingSimulator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -6850,12 +6850,6 @@ namespace DCTBFightingSimulator
             ((System.ComponentModel.ISupportInitialize)(this.CCN40)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.startingPanel.ResumeLayout(false);
-            this.startingPanel.PerformLayout();
-            this.characterDatabasePanel.ResumeLayout(false);
-            this.characterDatabasePanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.horizCharCreationBar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CCP6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CCP1)).EndInit();
@@ -6863,46 +6857,39 @@ namespace DCTBFightingSimulator
             ((System.ComponentModel.ISupportInitialize)(this.CCP2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CCP4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CCP3)).EndInit();
+            this.startingPanel.ResumeLayout(false);
+            this.startingPanel.PerformLayout();
+            this.characterDatabasePanel.ResumeLayout(false);
+            this.characterDatabasePanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SeparationBar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.p1Hp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.p1Atk)).EndInit();
             this.EvEPanel.ResumeLayout(false);
             this.EvEPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.p1Def)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.p1Dge)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.p1Acc)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.p1Mv1Acc)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.p1Mv1AtkM)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.p1Mv2AtkM)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.p1Mv2Acc)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.p1Mv3AtkM)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.p1Mv3Acc)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.p1Mv4AtkM)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.p1Mv4Acc)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.p1Mv5AtkM)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.p1Mv5Acc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.p2Mv5AtkM)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.p2Mv5Acc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.p2Mv4AtkM)).EndInit();
@@ -6918,6 +6905,19 @@ namespace DCTBFightingSimulator
             ((System.ComponentModel.ISupportInitialize)(this.p2Def)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.p2Atk)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.p2Hp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p1Mv5AtkM)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p1Mv5Acc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p1Mv4AtkM)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p1Mv4Acc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p1Mv3AtkM)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p1Mv3Acc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p1Mv2AtkM)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p1Mv2Acc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p1Mv1AtkM)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p1Mv1Acc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p1Dge)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p1Acc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p1Def)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -7290,7 +7290,7 @@ namespace DCTBFightingSimulator
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.PictureBox pictureBox23;
         private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox eveSimText;
         private System.Windows.Forms.PictureBox pictureBox24;
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Label label44;
