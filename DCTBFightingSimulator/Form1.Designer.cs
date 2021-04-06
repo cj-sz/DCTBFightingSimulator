@@ -554,6 +554,7 @@ namespace DCTBFightingSimulator
             this.label55 = new System.Windows.Forms.Label();
             this.p1Def = new System.Windows.Forms.NumericUpDown();
             this.label53 = new System.Windows.Forms.Label();
+            this.characterCreationResetButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.CCN1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CCN2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CCN3)).BeginInit();
@@ -1300,6 +1301,11 @@ namespace DCTBFightingSimulator
             0,
             0,
             0});
+            this.CCN6.Minimum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            -2147483648});
             this.CCN6.Name = "CCN6";
             this.CCN6.Size = new System.Drawing.Size(100, 20);
             this.CCN6.TabIndex = 64;
@@ -2043,6 +2049,11 @@ namespace DCTBFightingSimulator
             0,
             0,
             0});
+            this.CCN13.Minimum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            -2147483648});
             this.CCN13.Name = "CCN13";
             this.CCN13.Size = new System.Drawing.Size(100, 20);
             this.CCN13.TabIndex = 104;
@@ -2504,6 +2515,11 @@ namespace DCTBFightingSimulator
             0,
             0,
             0});
+            this.CCN20.Minimum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            -2147483648});
             this.CCN20.Name = "CCN20";
             this.CCN20.Size = new System.Drawing.Size(100, 20);
             this.CCN20.TabIndex = 144;
@@ -2965,6 +2981,11 @@ namespace DCTBFightingSimulator
             0,
             0,
             0});
+            this.CCN27.Minimum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            -2147483648});
             this.CCN27.Name = "CCN27";
             this.CCN27.Size = new System.Drawing.Size(100, 20);
             this.CCN27.TabIndex = 184;
@@ -3427,6 +3448,11 @@ namespace DCTBFightingSimulator
             0,
             0,
             0});
+            this.CCN34.Minimum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            -2147483648});
             this.CCN34.Name = "CCN34";
             this.CCN34.Size = new System.Drawing.Size(100, 20);
             this.CCN34.TabIndex = 224;
@@ -3603,6 +3629,7 @@ namespace DCTBFightingSimulator
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.characterCreationResetButton);
             this.panel1.Controls.Add(this.exportCharStringButton);
             this.panel1.Controls.Add(this.loadBuildTextBox);
             this.panel1.Controls.Add(this.CCL120);
@@ -4984,6 +5011,8 @@ namespace DCTBFightingSimulator
             // player1SelectionEvE
             // 
             this.player1SelectionEvE.FormattingEnabled = true;
+            this.player1SelectionEvE.Items.AddRange(new object[] {
+            "Joseph (NONE) (Vanilla)"});
             this.player1SelectionEvE.Location = new System.Drawing.Point(8, 150);
             this.player1SelectionEvE.Name = "player1SelectionEvE";
             this.player1SelectionEvE.Size = new System.Drawing.Size(94, 21);
@@ -5001,6 +5030,8 @@ namespace DCTBFightingSimulator
             // player2SelectionEvE
             // 
             this.player2SelectionEvE.FormattingEnabled = true;
+            this.player2SelectionEvE.Items.AddRange(new object[] {
+            "Joseph (NONE) (Vanilla)"});
             this.player2SelectionEvE.Location = new System.Drawing.Point(1016, 146);
             this.player2SelectionEvE.Name = "player2SelectionEvE";
             this.player2SelectionEvE.Size = new System.Drawing.Size(94, 21);
@@ -6783,16 +6814,26 @@ namespace DCTBFightingSimulator
             this.label53.TabIndex = 27;
             this.label53.Text = "DEF";
             // 
+            // characterCreationResetButton
+            // 
+            this.characterCreationResetButton.Location = new System.Drawing.Point(301, 6);
+            this.characterCreationResetButton.Name = "characterCreationResetButton";
+            this.characterCreationResetButton.Size = new System.Drawing.Size(75, 23);
+            this.characterCreationResetButton.TabIndex = 261;
+            this.characterCreationResetButton.Text = "Reset All";
+            this.characterCreationResetButton.UseVisualStyleBackColor = true;
+            this.characterCreationResetButton.Click += new System.EventHandler(this.characterCreationResetButton_Click);
+            // 
             // DCTBFightingSimulator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1432, 853);
-            this.Controls.Add(this.EvEPanel);
-            this.Controls.Add(this.characterDatabasePanel);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.startingPanel);
+            this.Controls.Add(this.EvEPanel);
+            this.Controls.Add(this.characterDatabasePanel);
             this.Controls.Add(this.changelogButton);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.roadmapButton);
@@ -7449,6 +7490,7 @@ namespace DCTBFightingSimulator
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.NumericUpDown p1Def;
         private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.Button characterCreationResetButton;
     }
 }
 

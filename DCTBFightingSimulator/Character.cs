@@ -58,7 +58,7 @@ namespace DCTBFightingSimulator
         {
             //Name
             int descriptionLocatorStartIndex = importString.IndexOf("d@3MDMe#SC");
-            charName = importString.Substring(10, descriptionLocatorStartIndex - 9);
+            charName = importString.Substring(10, descriptionLocatorStartIndex - 10);
             //Description
             int typeLocatorStartIndex = importString.IndexOf("t192y!@:PE22");
             int descriptionLocatorEndIndex = importString.IndexOf("d@3MDMe#SC") + "d@3MDMe#SC".Length - 1;

@@ -13,8 +13,10 @@ namespace DCTBFightingSimulator
 {
     public partial class DCTBFightingSimulator : Form
     {
-        /*Character Strings Database Here:
-        */
+        //Character Strings Database Here:
+        //Vanilla
+        //None
+        string josephString = "nX!wj@am!EJosephd@3MDMe#SCJoseph is a proficient melee fighter who is able to deal decent damage and adequately defend, but cannot easily dodge.t192y!@:PE22NONEh!*##p2@<#1500at1!@!W0k100d%%23eFF100a1;c';c80dj1g><e20imnSTRT@@_!nnnnnnnnnimnEND@@_!nDCMmv1@@Flurry PunchdDCMv1@@Joseph attacks with a volley of punches. Type:  NONEtDCMmv1@@NONEatmDCMmv1@@1accDCMmv1@@60hDCMmv1@@0atkDCMmv1@@0defDCMmv1@@0acmDCMmv1@@0dgeDCMmv1@@0indSTRTMmv1@@_!nnnnnnnnnindENDMmv1@@_!nDCMmv2@@MegapunchdDCMv2@@Joseph delivers a heavy punch, dealing significant damage. This attack is hard to land.tDCMmv2@@NONEatmDCMmv2@@1.75accDCMmv2@@20hDCMmv2@@0atkDCMmv2@@0defDCMmv2@@0acmDCMmv2@@0dgeDCMmv2@@0indSTRTMmv2@@_!nnnnnnnnnindENDMmv2@@_!nDCMmv3@@Flying KickdDCMv3@@Joseph attacks with a flying kick, dealing damage and raising his own attack.tDCMmv3@@NONEatmDCMmv3@@1.25accDCMmv3@@40hDCMmv3@@0atkDCMmv3@@25defDCMmv3@@0acmDCMmv3@@0dgeDCMmv3@@0indSTRTMmv3@@_!nnnnnnnnnindENDMmv3@@_!nDCMmv4@@RetaliatedDCMv4@@Joseph retaliates with a small amount of damage, but in doing so raises his own defense.tDCMmv4@@NONEatmDCMmv4@@0.8accDCMmv4@@60hDCMmv4@@0atkDCMmv4@@0defDCMmv4@@40acmDCMmv4@@0dgeDCMmv4@@0indSTRTMmv4@@_!nnnnnnnnnindENDMmv4@@_!nDCMmv5@@SkullcrusherdDCMv5@@Joseph crushes his opponent's skull, dealing heavy damage and crippling them. This attack is difficult to land.tDCMmv5@@NONEatmDCMmv5@@3.5accDCMmv5@@-10hDCMmv5@@0atkDCMmv5@@0defDCMmv5@@0acmDCMmv5@@0dgeDCMmv5@@0indSTRTMmv5@@_!nnnynnnnnindENDMmv5@@_!";
 
         //For use in-simulation:
         private Character player1;
@@ -199,7 +201,11 @@ namespace DCTBFightingSimulator
         }
         private void player1DropdownImports()
         {
-
+            if(player1SelectionEvE.Text == "Joseph (NONE) (Vanilla)")
+            {
+                player1 = new Character(josephString);
+                loadPlayer1VisualStats();
+            }
         }
                 //Player 2
         private void player2ImportStringImports(string importString)
@@ -210,218 +216,13 @@ namespace DCTBFightingSimulator
         }
         private void player2DropdownImports()
         {
-
+            if (player2SelectionEvE.Text == "Joseph (NONE) (Vanilla)")
+            {
+                player2 = new Character(josephString);
+                loadPlayer2VisualStats();
+            }
         }
-            //Visual Stats
-                //Player 1
-        private void loadPlayer1VisualStats()
-        {
-            p1Name.Text = player1.getName();
-            p1Desc.Text = player1.getDesc();
-            p1Hp.Value = player1.getHP();
-            p1Atk.Value = player1.getAtk();
-            p1Def.Value = player1.getDef();
-            p1Acc.Value = player1.getAcc();
-            p1Dge.Value = player1.getDge();
-            p1Mv1.Text = player1.getMv1Name();
-            p1Mv1Desc.Text = player1.getMv1Desc();
-            p1Mv1AtkM.Value = (decimal)player1.getMv1M();
-            p1Mv1Acc.Value = player1.getMv1Acc();
-            p1Mv2.Text = player1.getMv2Name();
-            p1Mv2Desc.Text = player1.getMv2Desc();
-            p1Mv2AtkM.Value = (decimal)player1.getMv2M();
-            p1Mv2Acc.Value = player1.getMv2Acc();
-            p1Mv3.Text = player1.getMv3Name();
-            p1Mv3Desc.Text = player1.getMv3Desc();
-            p1Mv3AtkM.Value = (decimal)player1.getMv3M();
-            p1Mv3Acc.Value = player1.getMv3Acc();
-            p1Mv4.Text = player1.getMv4Name();
-            p1Mv4Desc.Text = player1.getMv4Desc();
-            p1Mv4AtkM.Value = (decimal)player1.getMv4M();
-            p1Mv4Acc.Value = player1.getMv4Acc();
-            p1Mv5.Text = player1.getMv5Name();
-            p1Mv5Desc.Text = player1.getMv5Desc();
-            p1Mv5AtkM.Value = (decimal)player1.getMv5M();
-            p1Mv5Acc.Value = player1.getMv5Acc();
-            if (player1.getIsStunned() == true)
-            {
-                p1Stunned.Text = "YES";
-            }
-            else
-            {
-                p1Stunned.Text = "NO";
-            }
-            if (player1.getIsPoisoned() == true)
-            {
-                p1Poisoned.Text = "YES";
-            }
-            else
-            {
-                p1Poisoned.Text = "NO";
-            }
-            if (player1.getIsBurned() == true)
-            {
-                p1Burned.Text = "YES";
-            }
-            else
-            {
-                p1Burned.Text = "NO";
-            }
-            if (player1.getIsCrippled() == true)
-            {
-                p1Crippled.Text = "YES";
-            }
-            else
-            {
-                p1Crippled.Text = "NO";
-            }
-            if (player1.getIsFrozen() == true)
-            {
-                p1Frozen.Text = "YES";
-            }
-            else
-            {
-                p1Frozen.Text = "NO";
-            }
-            if (player1.getIsBleeding() == true)
-            {
-                p1Bleeding.Text = "YES";
-            }
-            else
-            {
-                p1Bleeding.Text = "NO";
-            }
-            if (player1.getIsStupefied() == true)
-            {
-                p1Stupefied.Text = "YES";
-            }
-            else
-            {
-                p1Stupefied.Text = "NO";
-            }
-            if (player1.getIsWeak() == true)
-            {
-                p1Weak.Text = "YES";
-            }
-            else
-            {
-                p1Weak.Text = "NO";
-            }
-            if (player1.getIsDizzy() == true)
-            {
-                p1Dizzy.Text = "YES";
-            }
-            else
-            {
-                p1Dizzy.Text = "NO";
-            }
-            Application.DoEvents();
-        }
-                //Player 2
-        private void loadPlayer2VisualStats()
-        {
-            p2Name.Text = player2.getName();
-            p2Desc.Text = player2.getDesc();
-            p2Hp.Value = player2.getHP();
-            p2Atk.Value = player2.getAtk();
-            p2Def.Value = player2.getDef();
-            p2Acc.Value = player2.getAcc();
-            p2Dge.Value = player2.getDge();
-            p2Mv1.Text = player2.getMv1Name();
-            p2Mv1Desc.Text = player2.getMv1Desc();
-            p2Mv1AtkM.Value = (decimal)player2.getMv1M();
-            p2Mv1Acc.Value = player2.getMv1Acc();
-            p2Mv2.Text = player2.getMv2Name();
-            p2Mv2Desc.Text = player2.getMv2Desc();
-            p2Mv2AtkM.Value = (decimal)player2.getMv2M();
-            p2Mv2Acc.Value = player2.getMv2Acc();
-            p2Mv3.Text = player2.getMv3Name();
-            p2Mv3Desc.Text = player2.getMv3Desc();
-            p2Mv3AtkM.Value = (decimal)player2.getMv3M();
-            p2Mv3Acc.Value = player2.getMv3Acc();
-            p2Mv4.Text = player2.getMv4Name();
-            p2Mv4Desc.Text = player2.getMv4Desc();
-            p2Mv4AtkM.Value = (decimal)player2.getMv4M();
-            p2Mv4Acc.Value = player2.getMv4Acc();
-            p2Mv5.Text = player2.getMv5Name();
-            p2Mv5Desc.Text = player2.getMv5Desc();
-            p2Mv5AtkM.Value = (decimal)player2.getMv5M();
-            p2Mv5Acc.Value = player2.getMv5Acc();
-            if (player2.getIsStunned() == true)
-            {
-                p2Stunned.Text = "YES";
-            }
-            else
-            {
-                p2Stunned.Text = "NO";
-            }
-            if (player2.getIsPoisoned() == true)
-            {
-                p2Poisoned.Text = "YES";
-            }
-            else
-            {
-                p2Poisoned.Text = "NO";
-            }
-            if (player2.getIsBurned() == true)
-            {
-                p2Burned.Text = "YES";
-            }
-            else
-            {
-                p2Burned.Text = "NO";
-            }
-            if (player2.getIsCrippled() == true)
-            {
-                p2Crippled.Text = "YES";
-            }
-            else
-            {
-                p2Crippled.Text = "NO";
-            }
-            if (player2.getIsFrozen() == true)
-            {
-                p2Frozen.Text = "YES";
-            }
-            else
-            {
-                p2Frozen.Text = "NO";
-            }
-            if (player2.getIsBleeding() == true)
-            {
-                p2Bleeding.Text = "YES";
-            }
-            else
-            {
-                p2Bleeding.Text = "NO";
-            }
-            if (player2.getIsStupefied() == true)
-            {
-                p2Stupefied.Text = "YES";
-            }
-            else
-            {
-                p2Stupefied.Text = "NO";
-            }
-            if (player2.getIsWeak() == true)
-            {
-                p2Weak.Text = "YES";
-            }
-            else
-            {
-                p2Weak.Text = "NO";
-            }
-            if (player2.getIsDizzy() == true)
-            {
-                p2Dizzy.Text = "YES";
-            }
-            else
-            {
-                p2Dizzy.Text = "NO";
-            }
-            Application.DoEvents();
-        }
-        //EvE Simulation
+            //EvE Simulation
         private void EvESimulation()
         {
             disableAllButtons();
@@ -456,7 +257,7 @@ namespace DCTBFightingSimulator
             }
             enableAllButtons();
         }
-            //EvE AIs
+                //EvE AIs
         private void EvERandomAI1(Character player1)
         {
                 //PLAYER 1
@@ -777,8 +578,8 @@ namespace DCTBFightingSimulator
                 }
         }
 
-        //General Simulation Methods
-            //Player 1 Checks and Methods
+                //General Simulation Methods
+                    //Player 1 Checks and Methods
         private bool stunFrozenChecksP1(Character player1)
         {
             //Bool returns if cannot move, true is yes, false is no
@@ -1650,7 +1451,7 @@ namespace DCTBFightingSimulator
                 }
             }
         }
-            //Player 2 Checks and Methods
+                //Player 2 Checks and Methods
         private bool stunFrozenChecksP2(Character player2)
         {
             //Bool returns if cannot move, true is yes, false is no
@@ -2523,6 +2324,215 @@ namespace DCTBFightingSimulator
                 }
             }
         }
+                //Visual Stats
+                    //Player 1
+        private void loadPlayer1VisualStats()
+        {
+            p1Name.Text = player1.getName();
+            p1Desc.Text = player1.getDesc();
+            p1Hp.Value = player1.getHP();
+            p1Atk.Value = player1.getAtk();
+            p1Def.Value = player1.getDef();
+            p1Acc.Value = player1.getAcc();
+            p1Dge.Value = player1.getDge();
+            p1Mv1.Text = player1.getMv1Name();
+            p1Mv1Desc.Text = player1.getMv1Desc();
+            p1Mv1AtkM.Value = (decimal)player1.getMv1M();
+            p1Mv1Acc.Value = player1.getMv1Acc();
+            p1Mv2.Text = player1.getMv2Name();
+            p1Mv2Desc.Text = player1.getMv2Desc();
+            p1Mv2AtkM.Value = (decimal)player1.getMv2M();
+            p1Mv2Acc.Value = player1.getMv2Acc();
+            p1Mv3.Text = player1.getMv3Name();
+            p1Mv3Desc.Text = player1.getMv3Desc();
+            p1Mv3AtkM.Value = (decimal)player1.getMv3M();
+            p1Mv3Acc.Value = player1.getMv3Acc();
+            p1Mv4.Text = player1.getMv4Name();
+            p1Mv4Desc.Text = player1.getMv4Desc();
+            p1Mv4AtkM.Value = (decimal)player1.getMv4M();
+            p1Mv4Acc.Value = player1.getMv4Acc();
+            p1Mv5.Text = player1.getMv5Name();
+            p1Mv5Desc.Text = player1.getMv5Desc();
+            p1Mv5AtkM.Value = (decimal)player1.getMv5M();
+            p1Mv5Acc.Value = player1.getMv5Acc();
+            if (player1.getIsStunned() == true)
+            {
+                p1Stunned.Text = "YES";
+            }
+            else
+            {
+                p1Stunned.Text = "NO";
+            }
+            if (player1.getIsPoisoned() == true)
+            {
+                p1Poisoned.Text = "YES";
+            }
+            else
+            {
+                p1Poisoned.Text = "NO";
+            }
+            if (player1.getIsBurned() == true)
+            {
+                p1Burned.Text = "YES";
+            }
+            else
+            {
+                p1Burned.Text = "NO";
+            }
+            if (player1.getIsCrippled() == true)
+            {
+                p1Crippled.Text = "YES";
+            }
+            else
+            {
+                p1Crippled.Text = "NO";
+            }
+            if (player1.getIsFrozen() == true)
+            {
+                p1Frozen.Text = "YES";
+            }
+            else
+            {
+                p1Frozen.Text = "NO";
+            }
+            if (player1.getIsBleeding() == true)
+            {
+                p1Bleeding.Text = "YES";
+            }
+            else
+            {
+                p1Bleeding.Text = "NO";
+            }
+            if (player1.getIsStupefied() == true)
+            {
+                p1Stupefied.Text = "YES";
+            }
+            else
+            {
+                p1Stupefied.Text = "NO";
+            }
+            if (player1.getIsWeak() == true)
+            {
+                p1Weak.Text = "YES";
+            }
+            else
+            {
+                p1Weak.Text = "NO";
+            }
+            if (player1.getIsDizzy() == true)
+            {
+                p1Dizzy.Text = "YES";
+            }
+            else
+            {
+                p1Dizzy.Text = "NO";
+            }
+            Application.DoEvents();
+        }
+                    //Player 2
+        private void loadPlayer2VisualStats()
+        {
+            p2Name.Text = player2.getName();
+            p2Desc.Text = player2.getDesc();
+            p2Hp.Value = player2.getHP();
+            p2Atk.Value = player2.getAtk();
+            p2Def.Value = player2.getDef();
+            p2Acc.Value = player2.getAcc();
+            p2Dge.Value = player2.getDge();
+            p2Mv1.Text = player2.getMv1Name();
+            p2Mv1Desc.Text = player2.getMv1Desc();
+            p2Mv1AtkM.Value = (decimal)player2.getMv1M();
+            p2Mv1Acc.Value = player2.getMv1Acc();
+            p2Mv2.Text = player2.getMv2Name();
+            p2Mv2Desc.Text = player2.getMv2Desc();
+            p2Mv2AtkM.Value = (decimal)player2.getMv2M();
+            p2Mv2Acc.Value = player2.getMv2Acc();
+            p2Mv3.Text = player2.getMv3Name();
+            p2Mv3Desc.Text = player2.getMv3Desc();
+            p2Mv3AtkM.Value = (decimal)player2.getMv3M();
+            p2Mv3Acc.Value = player2.getMv3Acc();
+            p2Mv4.Text = player2.getMv4Name();
+            p2Mv4Desc.Text = player2.getMv4Desc();
+            p2Mv4AtkM.Value = (decimal)player2.getMv4M();
+            p2Mv4Acc.Value = player2.getMv4Acc();
+            p2Mv5.Text = player2.getMv5Name();
+            p2Mv5Desc.Text = player2.getMv5Desc();
+            p2Mv5AtkM.Value = (decimal)player2.getMv5M();
+            p2Mv5Acc.Value = player2.getMv5Acc();
+            if (player2.getIsStunned() == true)
+            {
+                p2Stunned.Text = "YES";
+            }
+            else
+            {
+                p2Stunned.Text = "NO";
+            }
+            if (player2.getIsPoisoned() == true)
+            {
+                p2Poisoned.Text = "YES";
+            }
+            else
+            {
+                p2Poisoned.Text = "NO";
+            }
+            if (player2.getIsBurned() == true)
+            {
+                p2Burned.Text = "YES";
+            }
+            else
+            {
+                p2Burned.Text = "NO";
+            }
+            if (player2.getIsCrippled() == true)
+            {
+                p2Crippled.Text = "YES";
+            }
+            else
+            {
+                p2Crippled.Text = "NO";
+            }
+            if (player2.getIsFrozen() == true)
+            {
+                p2Frozen.Text = "YES";
+            }
+            else
+            {
+                p2Frozen.Text = "NO";
+            }
+            if (player2.getIsBleeding() == true)
+            {
+                p2Bleeding.Text = "YES";
+            }
+            else
+            {
+                p2Bleeding.Text = "NO";
+            }
+            if (player2.getIsStupefied() == true)
+            {
+                p2Stupefied.Text = "YES";
+            }
+            else
+            {
+                p2Stupefied.Text = "NO";
+            }
+            if (player2.getIsWeak() == true)
+            {
+                p2Weak.Text = "YES";
+            }
+            else
+            {
+                p2Weak.Text = "NO";
+            }
+            if (player2.getIsDizzy() == true)
+            {
+                p2Dizzy.Text = "YES";
+            }
+            else
+            {
+                p2Dizzy.Text = "NO";
+            }
+            Application.DoEvents();
+        }
 
         //Character Creation Methods
         private void createCharButton_Click(object sender, EventArgs e)
@@ -2530,7 +2540,135 @@ namespace DCTBFightingSimulator
             disableAllElementalUI();
             enableCharButtonElementalUI();
         }
-            //Export a Build
+        private void characterCreationResetButton_Click(object sender, EventArgs e)
+        {
+            //Character Attr
+            CCT1.Text = "";
+            CCT2.Text = "";
+            CCc1.Text = "";
+            CCN40.Value = 0;
+            CCN1.Value = 0;
+            CCN2.Value = 0;
+            CCN3.Value = 0;
+            CCN4.Value = 0;
+            //Immunities
+            CCc2.Text = "";
+            CCc3.Text = "";
+            CCc4.Text = "";
+            CCc5.Text = "";
+            CCc6.Text = "";
+            CCc7.Text = "";
+            CCc8.Text = "";
+            CCc9.Text = "";
+            CCc10.Text = "";
+            CCc11.Text = "";
+            //Move 1 Attr
+            CCT3.Text = "";
+            CCT4.Text = "";
+            CCc11.Text = "";
+            CCN5.Value = 0;
+            CCN6.Value = 0;
+            CCN7.Value = 0;
+            CCN8.Value = 0;
+            CCN9.Value = 0;
+            CCN10.Value = 0;
+            CCN11.Value = 0;
+            //Move 1 Induces
+            CCc12.Text = "";
+            CCc13.Text = "";
+            CCc14.Text = "";
+            CCc15.Text = "";
+            CCc16.Text = "";
+            CCc17.Text = "";
+            CCc18.Text = "";
+            CCc19.Text = "";
+            CCc20.Text = "";
+            //Move 2 Attr
+            CCT5.Text = "";
+            CCT6.Text = "";
+            CCc21.Text = "";
+            CCN12.Value = 0;
+            CCN13.Value = 0;
+            CCN14.Value = 0;
+            CCN15.Value = 0;
+            CCN16.Value = 0;
+            CCN17.Value = 0;
+            CCN18.Value = 0;
+            //Move 2 Induces
+            CCc22.Text = "";
+            CCc23.Text = "";
+            CCc24.Text = "";
+            CCc30.Text = "";
+            CCc25.Text = "";
+            CCc26.Text = "";
+            CCc27.Text = "";
+            CCc28.Text = "";
+            CCc29.Text = "";
+            //Move 3 Attr
+            CCT7.Text = "";
+            CCT8.Text = "";
+            CCc31.Text = "";
+            CCN19.Value = 0;
+            CCN20.Value = 0;
+            CCN21.Value = 0;
+            CCN22.Value = 0;
+            CCN23.Value = 0;
+            CCN24.Value = 0;
+            CCN25.Value = 0;
+            //Move 3 Induces
+            CCc32.Text = "";
+            CCc33.Text = "";
+            CCc34.Text = "";
+            CCc35.Text = "";
+            CCc36.Text = "";
+            CCc37.Text = "";
+            CCc38.Text = "";
+            CCc39.Text = "";
+            CCc40.Text = "";
+            //Move 4 Attr
+            CCT9.Text = "";
+            CCT10.Text = "";
+            CCc41.Text = "";
+            CCN26.Value = 0;
+            CCN27.Value = 0;
+            CCN28.Value = 0;
+            CCN29.Value = 0;
+            CCN30.Value = 0;
+            CCN31.Value = 0;
+            CCN32.Value = 0;
+            //Move 4 Induces
+            CCc42.Text = "";
+            CCc43.Text = "";
+            CCc44.Text = "";
+            CCc45.Text = "";
+            CCc46.Text = "";
+            CCc47.Text = "";
+            CCc48.Text = "";
+            CCc49.Text = "";
+            CCc50.Text = "";
+            //Move 5 Attr
+            CCT11.Text = "";
+            CCT12.Text = "";
+            CCc51.Text = "";
+            CCN33.Value = 0;
+            CCN34.Value = 0;
+            CCN35.Value = 0;
+            CCN36.Value = 0;
+            CCN37.Value = 0;
+            CCN38.Value = 0;
+            CCN39.Value = 0;
+            //Move 5 Induces
+            CCc52.Text = "";
+            CCc53.Text = "";
+            CCc54.Text = "";
+            CCc55.Text = "";
+            CCc56.Text = "";
+            CCc57.Text = "";
+            CCc58.Text = "";
+            CCc59.Text = "";
+            CCc60.Text = "";
+        }
+        //Export a Build
         private void exportCharStringButton_Click(object sender, EventArgs e)
         {
             //Generate the string
@@ -5253,6 +5391,6 @@ namespace DCTBFightingSimulator
             
         }
 
-       
+
     }
 }
