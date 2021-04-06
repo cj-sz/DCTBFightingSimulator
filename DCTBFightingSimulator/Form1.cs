@@ -217,7 +217,6 @@ namespace DCTBFightingSimulator
         private void loadPlayer1VisualStats()
         {
             p1Name.Text = player1.getName();
-            Debug.WriteLine("Should have updated name!");
             p1Desc.Text = player1.getDesc();
             p1Hp.Value = player1.getHP();
             p1Atk.Value = player1.getAtk();
@@ -420,6 +419,7 @@ namespace DCTBFightingSimulator
             {
                 p2Dizzy.Text = "NO";
             }
+            Application.DoEvents();
         }
         //EvE Simulation
         private void EvESimulation()
@@ -438,12 +438,12 @@ namespace DCTBFightingSimulator
                 EvERandomAI1(player1);
                 loadPlayer1VisualStats();
                 loadPlayer2VisualStats();
-                Debug.WriteLine("Should have updated 1");
                 if(player1.getHP() <= 0 || player2.getHP() <= 0)
                 {
                     break;
                 }
                 System.Threading.Thread.Sleep(1000);
+                eveSimText.AppendText(Environment.NewLine);
                 EvERandomAI2(player2);
                 loadPlayer1VisualStats();
                 loadPlayer2VisualStats();
@@ -452,6 +452,7 @@ namespace DCTBFightingSimulator
                     break;
                 }
                 System.Threading.Thread.Sleep(1000);
+                eveSimText.AppendText(Environment.NewLine);
             }
             enableAllButtons();
         }
@@ -544,9 +545,23 @@ namespace DCTBFightingSimulator
                             }
                             else
                             {
-                                loadPlayer2VisualStats();
-                                loadPlayer1VisualStats();
-                                return;
+                                //Finish the turn with status checks and modifications
+                                if (damageStatusChecksP1(player1) == true)
+                                {
+                                    eveSimText.AppendText(Environment.NewLine + "Player 1 has died. Player 2 wins!");
+                                    enableAllButtons();
+                                    loadPlayer1VisualStats();
+                                    loadPlayer2VisualStats();
+                                    return;
+                                }
+                                else
+                                {
+                                    //If they don't die, modify their status turns if applicable
+                                    player1.modifyStatusTurns();
+                                    loadPlayer1VisualStats();
+                                    loadPlayer2VisualStats();
+                                    return;
+                                }
                             }
                         }
                     }
@@ -582,9 +597,23 @@ namespace DCTBFightingSimulator
                         }
                         else
                         {
-                            loadPlayer2VisualStats();
-                            loadPlayer1VisualStats();
-                            return;
+                            //Finish the turn with status checks and modifications
+                            if (damageStatusChecksP1(player1) == true)
+                            {
+                                eveSimText.AppendText(Environment.NewLine + "Player 1 has died. Player 2 wins!");
+                                enableAllButtons();
+                                loadPlayer1VisualStats();
+                                loadPlayer2VisualStats();
+                                return;
+                            }
+                            else
+                            {
+                                //If they don't die, modify their status turns if applicable
+                                player1.modifyStatusTurns();
+                                loadPlayer1VisualStats();
+                                loadPlayer2VisualStats();
+                                return;
+                            }
                         }
                     }
                 }
@@ -628,9 +657,9 @@ namespace DCTBFightingSimulator
                         {
                             eveSimText.AppendText(Environment.NewLine + "Player 2 is stupefied and was not able to attack!");
                             //Finish the turn with status checks and modifications
-                            if (damageStatusChecksP1(player1) == true)
+                            if (damageStatusChecksP2(player2) == true)
                             {
-                                eveSimText.AppendText(Environment.NewLine + "Player 2 has died. Player 2 wins!");
+                                eveSimText.AppendText(Environment.NewLine + "Player 2 has died. Player 1 wins!");
                                 enableAllButtons();
                                 loadPlayer1VisualStats();
                                 loadPlayer2VisualStats();
@@ -674,9 +703,23 @@ namespace DCTBFightingSimulator
                             }
                             else
                             {
-                                loadPlayer2VisualStats();
-                                loadPlayer1VisualStats();
-                                return;
+                                //Finish the turn with status checks and modifications
+                                if (damageStatusChecksP2(player2) == true)
+                                {
+                                    eveSimText.AppendText(Environment.NewLine + "Player 2 has died. Player 1 wins!");
+                                    enableAllButtons();
+                                    loadPlayer1VisualStats();
+                                    loadPlayer2VisualStats();
+                                    return;
+                                }
+                                else
+                                {
+                                    //If they don't die, modify their status turns if applicable
+                                    player2.modifyStatusTurns();
+                                    loadPlayer1VisualStats();
+                                    loadPlayer2VisualStats();
+                                    return;
+                                }
                             }
                         }
                     }
@@ -712,9 +755,23 @@ namespace DCTBFightingSimulator
                         }
                         else
                         {
-                            loadPlayer2VisualStats();
-                            loadPlayer1VisualStats();
-                            return;
+                            //Finish the turn with status checks and modifications
+                            if (damageStatusChecksP2(player2) == true)
+                            {
+                                eveSimText.AppendText(Environment.NewLine + "Player 2 has died. Player 1 wins!");
+                                enableAllButtons();
+                                loadPlayer1VisualStats();
+                                loadPlayer2VisualStats();
+                                return;
+                            }
+                            else
+                            {
+                                //If they don't die, modify their status turns if applicable
+                                player2.modifyStatusTurns();
+                                loadPlayer1VisualStats();
+                                loadPlayer2VisualStats();
+                                return;
+                            }
                         }
                     }
                 }
