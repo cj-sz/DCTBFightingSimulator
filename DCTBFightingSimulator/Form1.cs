@@ -14,13 +14,27 @@ namespace DCTBFightingSimulator
     public partial class DCTBFightingSimulator : Form
     {
         //Character Strings Database Here:
-        //Vanilla
-        //None
-        string josephString = "nX!wj@am!EJosephd@3MDMe#SCJoseph is a proficient melee fighter who is able to deal decent damage and adequately defend, but cannot easily dodge.t192y!@:PE22NONEh!*##p2@<#1500at1!@!W0k100d%%23eFF100a1;c';c80dj1g><e20imnSTRT@@_!nnnnnnnnnimnEND@@_!nDCMmv1@@Flurry PunchdDCMv1@@Joseph attacks with a volley of punches. Type:  NONEtDCMmv1@@NONEatmDCMmv1@@1accDCMmv1@@60hDCMmv1@@0atkDCMmv1@@0defDCMmv1@@0acmDCMmv1@@0dgeDCMmv1@@0indSTRTMmv1@@_!nnnnnnnnnindENDMmv1@@_!nDCMmv2@@MegapunchdDCMv2@@Joseph delivers a heavy punch, dealing significant damage. This attack is hard to land.tDCMmv2@@NONEatmDCMmv2@@1.75accDCMmv2@@20hDCMmv2@@0atkDCMmv2@@0defDCMmv2@@0acmDCMmv2@@0dgeDCMmv2@@0indSTRTMmv2@@_!nnnnnnnnnindENDMmv2@@_!nDCMmv3@@Flying KickdDCMv3@@Joseph attacks with a flying kick, dealing damage and raising his own attack.tDCMmv3@@NONEatmDCMmv3@@1.25accDCMmv3@@40hDCMmv3@@0atkDCMmv3@@25defDCMmv3@@0acmDCMmv3@@0dgeDCMmv3@@0indSTRTMmv3@@_!nnnnnnnnnindENDMmv3@@_!nDCMmv4@@RetaliatedDCMv4@@Joseph retaliates with a small amount of damage, but in doing so raises his own defense.tDCMmv4@@NONEatmDCMmv4@@0.8accDCMmv4@@60hDCMmv4@@0atkDCMmv4@@0defDCMmv4@@40acmDCMmv4@@0dgeDCMmv4@@0indSTRTMmv4@@_!nnnnnnnnnindENDMmv4@@_!nDCMmv5@@SkullcrusherdDCMv5@@Joseph crushes his opponent's skull, dealing heavy damage and crippling them. This attack is difficult to land.tDCMmv5@@NONEatmDCMmv5@@3.5accDCMmv5@@-10hDCMmv5@@0atkDCMmv5@@0defDCMmv5@@0acmDCMmv5@@0dgeDCMmv5@@0indSTRTMmv5@@_!nnnynnnnnindENDMmv5@@_!";
+            //Vanilla
+                //None
+        string josephString = "nX!wj@am!EJosephd@3MDMe#SCJoseph is a proficient melee fighter who is able to deal decent damage and adequately defend, but cannot easily dodge.t192y!@:PE22NONEh!*##p2@<#1500at1!@!W0k100d%%23eFF100a1;c';c80dj1g><e20imnSTRT@@_!nnnnnnnnnimnEND@@_!nDCMmv1@@Flurry PunchdDCMv1@@Joseph attacks with a volley of punches. Type:  NONEtDCMmv1@@NONEatmDCMmv1@@1accDCMmv1@@60hDCMmv1@@0atkDCMmv1@@0defDCMmv1@@0acmDCMmv1@@0dgeDCMmv1@@0indSTRTMmv1@@_!nnnnnnnnnindENDMmv1@@_!nDCMmv2@@MegapunchdDCMv2@@Joseph delivers a heavy punch, dealing significant damage. This attack is hard to land. Type: NONEtDCMmv2@@NONEatmDCMmv2@@1.75accDCMmv2@@20hDCMmv2@@0atkDCMmv2@@0defDCMmv2@@0acmDCMmv2@@0dgeDCMmv2@@0indSTRTMmv2@@_!nnnnnnnnnindENDMmv2@@_!nDCMmv3@@Flying KickdDCMv3@@Joseph attacks with a flying kick, dealing damage and raising his own attack. Type: NONEtDCMmv3@@NONEatmDCMmv3@@1.25accDCMmv3@@40hDCMmv3@@0atkDCMmv3@@25defDCMmv3@@0acmDCMmv3@@0dgeDCMmv3@@0indSTRTMmv3@@_!nnnnnnnnnindENDMmv3@@_!nDCMmv4@@RetaliatedDCMv4@@Joseph retaliates with a small amount of damage, but in doing so raises his own defense. Type: NONEtDCMmv4@@NONEatmDCMmv4@@1accDCMmv4@@60hDCMmv4@@0atkDCMmv4@@0defDCMmv4@@40acmDCMmv4@@0dgeDCMmv4@@0indSTRTMmv4@@_!nnnnnnnnnindENDMmv4@@_!nDCMmv5@@SkullcrusherdDCMv5@@Joseph crushes his opponent's skull, dealing heavy damage and crippling them. This attack is difficult to land. Type: NONEtDCMmv5@@NONEatmDCMmv5@@3.5accDCMmv5@@-10hDCMmv5@@0atkDCMmv5@@0defDCMmv5@@0acmDCMmv5@@0dgeDCMmv5@@0indSTRTMmv5@@_!nnnynnnnnindENDMmv5@@_!";
+        string davidString = "nX!wj@am!EDavidd@3MDMe#SCDavid is a sword-wielding fighter capable of inflicting bleeding on his opponents. He is strong when attacking but needs to be careful on defense.t192y!@:PE22NONEh!*##p2@<#1350at1!@!W0k150d%%23eFF70a1;c';c90dj1g><e30imnSTRT@@_!nnnnnnnnnimnEND@@_!nDCMmv1@@SlicedDCMv1@@David slices at his opponent, dealing a small amount of damage but inflicting bleeding. Type: NONEtDCMmv1@@NONEatmDCMmv1@@0.6accDCMmv1@@50hDCMmv1@@0atkDCMmv1@@0defDCMmv1@@0acmDCMmv1@@0dgeDCMmv1@@0indSTRTMmv1@@_!nnnnnynnnindENDMmv1@@_!nDCMmv2@@SharpendDCMv2@@David sharpens his swords, increasing his ATK. For this move, opponents' 'dodge' stat represents their ability to prevent him from doing so. Type: NONEtDCMmv2@@NONEatmDCMmv2@@0accDCMmv2@@200hDCMmv2@@0atkDCMmv2@@45defDCMmv2@@0acmDCMmv2@@0dgeDCMmv2@@0indSTRTMmv2@@_!nnnnnnnnnindENDMmv2@@_!nDCMmv3@@Super SlashdDCMv3@@David slashes at his opponent, dealing high amounts of damage. Type: NONEtDCMmv3@@NONEatmDCMmv3@@3accDCMmv3@@50hDCMmv3@@0atkDCMmv3@@0defDCMmv3@@0acmDCMmv3@@0dgeDCMmv3@@0indSTRTMmv3@@_!nnnnnnnnnindENDMmv3@@_!nDCMmv4@@Combo SwordsdDCMv4@@David unleashes a flurry of combos with his swords, dealing damage and slightly raising his own attack. Type: NONEtDCMmv4@@NONEatmDCMmv4@@1.5accDCMmv4@@60hDCMmv4@@0atkDCMmv4@@20defDCMmv4@@0acmDCMmv4@@0dgeDCMmv4@@0indSTRTMmv4@@_!nnnnnnnnnindENDMmv4@@_!nDCMmv5@@Flask AttackdDCMv5@@David uses a dual-utility flask to add attack to his sword and heal himself slightly. Type: NONEtDCMmv5@@NONEatmDCMmv5@@1.3accDCMmv5@@40hDCMmv5@@75atkDCMmv5@@15defDCMmv5@@0acmDCMmv5@@0dgeDCMmv5@@0indSTRTMmv5@@_!nnnnnnnnnindENDMmv5@@_!";
+                //Void
+        string anomalString = "nX!wj@am!EAnomald@3MDMe#SCAnomal is a void-blooded beast resembling a massive jaguar. What he lacks in defense, he makes up for in durability and attack, and is capable of weakening opponents.t192y!@:PE22VOIDh!*##p2@<#2100at1!@!W0k300d%%23eFF40a1;c';c80dj1g><e10imnSTRT@@_!nnnnnnnnnimnEND@@_!nDCMmv1@@Void FangdDCMv1@@Anomal bites his opponent with void-bearing fangs. Type: VOIDtDCMmv1@@VOIDatmDCMmv1@@1.5accDCMmv1@@30hDCMmv1@@0atkDCMmv1@@0defDCMmv1@@0acmDCMmv1@@0dgeDCMmv1@@0indSTRTMmv1@@_!nnnnnnnnnindENDMmv1@@_!nDCMmv2@@PouncedDCMv2@@Anomal pounces on the target, inflicting large damage. This attack also has high accuracy. Type: NONEtDCMmv2@@NONEatmDCMmv2@@2.25accDCMmv2@@80hDCMmv2@@0atkDCMmv2@@0defDCMmv2@@0acmDCMmv2@@0dgeDCMmv2@@0indSTRTMmv2@@_!nnnnnnnnnindENDMmv2@@_!nDCMmv3@@EnshrouddDCMv3@@Anomal encompasses the target in a dark void, dealing a low amount of damage, weakening them, and raising his own ATK. Type: VOIDtDCMmv3@@VOIDatmDCMmv3@@0.4accDCMmv3@@50hDCMmv3@@0atkDCMmv3@@30defDCMmv3@@0acmDCMmv3@@0dgeDCMmv3@@0indSTRTMmv3@@_!nnnnnnnynindENDMmv3@@_!nDCMmv4@@RetreatdDCMv4@@Anomal attacks with a short blow as he retreats backward. This move deals a very small amount of damage while giving Anomal some HP. However, it has a low chance to hit. Type: NONEtDCMmv4@@NONEatmDCMmv4@@0.25accDCMmv4@@20hDCMmv4@@75atkDCMmv4@@0defDCMmv4@@0acmDCMmv4@@0dgeDCMmv4@@0indSTRTMmv4@@_!nnnnnnnnnindENDMmv4@@_!nDCMmv5@@Throne of PredatorsdDCMv5@@If Anomal can manage to land this attack, it deals devastating damage, raises his DEF and ACC and heals him, but at the cost of a little ATK. Type: VOIDtDCMmv5@@VOIDatmDCMmv5@@5accDCMmv5@@-20hDCMmv5@@60atkDCMmv5@@-10defDCMmv5@@10acmDCMmv5@@0dgeDCMmv5@@0indSTRTMmv5@@_!nnnnnnnnnindENDMmv5@@_!";
+        string rigString = "nX!wj@am!ERigd@3MDMe#SCRig is a manifestation of the void itself. It is immune to bleeding and stunning due to its properties.t192y!@:PE22VOIDh!*##p2@<#1900at1!@!W0k100d%%23eFF100a1;c';c90dj1g><e30imnSTRT@@_!ynnnnynnnimnEND@@_!nDCMmv1@@Void RaydDCMv1@@Rig fires a small ray of void, dealing damage. Type: VOIDtDCMmv1@@VOIDatmDCMmv1@@1.5accDCMmv1@@40hDCMmv1@@0atkDCMmv1@@0defDCMmv1@@0acmDCMmv1@@0dgeDCMmv1@@0indSTRTMmv1@@_!nnnnnnnnnindENDMmv1@@_!nDCMmv2@@Void BeamdDCMv2@@Rig fires a thicker version of the Void Ray, dealing more damage but with less accuracy. Type: VOIDtDCMmv2@@VOIDatmDCMmv2@@2.5accDCMmv2@@10hDCMmv2@@0atkDCMmv2@@0defDCMmv2@@0acmDCMmv2@@0dgeDCMmv2@@0indSTRTMmv2@@_!nnnnnnnnnindENDMmv2@@_!nDCMmv3@@ManifestationdDCMv3@@Rig manifests itself in a different form, increasing all of its stats. The opponent's 'dodge' value represents their ability to prevent this. Type: VOIDtDCMmv3@@VOIDatmDCMmv3@@0accDCMmv3@@80hDCMmv3@@0atkDCMmv3@@15defDCMmv3@@25acmDCMmv3@@5dgeDCMmv3@@5indSTRTMmv3@@_!nnnnnnnnnindENDMmv3@@_!nDCMmv4@@OverbeardDCMv4@@Rig uses the powers of the void to overbear its opponent, inflicting a weakened state upon them and dealing some damage. Type: VOIDtDCMmv4@@VOIDatmDCMmv4@@1.5accDCMmv4@@40hDCMmv4@@0atkDCMmv4@@0defDCMmv4@@0acmDCMmv4@@0dgeDCMmv4@@0indSTRTMmv4@@_!nnnnnnnynindENDMmv4@@_!nDCMmv5@@Void KamikazedDCMv5@@Rig flings itself at the opponent, dealing massive damage, raising its DEF, but harming itself. Type: VOIDtDCMmv5@@VOIDatmDCMmv5@@3.25accDCMmv5@@30hDCMmv5@@-50atkDCMmv5@@0defDCMmv5@@20acmDCMmv5@@0dgeDCMmv5@@0indSTRTMmv5@@_!nnnnnnnnnindENDMmv5@@_!";
+                //Earthly
+        string stoneGolemString = "nX!wj@am!EStone Golemd@3MDMe#SCThe Stone Golem is slow to move and light on the attack, but has a large stock of health, a high defense, and is immune to bleeding.t192y!@:PE22EARTHLYh!*##p2@<#4500at1!@!W0k60d%%23eFF315a1;c';c80dj1g><e10imnSTRT@@_!nnnnnynnnimnEND@@_!nDCMmv1@@Boulder TossdDCMv1@@The Stone Golem throws a large boulder at the target, inflicting damage and crippling them. Type: EARTHLYtDCMmv1@@EARTHLYatmDCMmv1@@1accDCMmv1@@60hDCMmv1@@0atkDCMmv1@@0defDCMmv1@@0acmDCMmv1@@0dgeDCMmv1@@0indSTRTMmv1@@_!nnnynnnnnindENDMmv1@@_!nDCMmv2@@Rock PlantdDCMv2@@The Stone Golem plants itself in the ground, raising its own DEF substantially. The 'dodge' value for opponents represents their ability to prevent the plant. Type: NONEtDCMmv2@@NONEatmDCMmv2@@0accDCMmv2@@100hDCMmv2@@0atkDCMmv2@@0defDCMmv2@@25acmDCMmv2@@0dgeDCMmv2@@0indSTRTMmv2@@_!nnnnnnnnnindENDMmv2@@_!nDCMmv3@@Stone SmashdDCMv3@@The Stone Golem smashes a large stone on the target. Type: EARTHLYtDCMmv3@@EARTHLYatmDCMmv3@@1.25accDCMmv3@@60hDCMmv3@@0atkDCMmv3@@0defDCMmv3@@0acmDCMmv3@@0dgeDCMmv3@@0indSTRTMmv3@@_!nnnnnnnnnindENDMmv3@@_!nDCMmv4@@Golem's RagedDCMv4@@The Stone Golem goes into a fit of rage, dealing significant damage, slightly raising ATK, but harming itself in the process. Type: EARTHLYtDCMmv4@@EARTHLYatmDCMmv4@@1.75accDCMmv4@@60hDCMmv4@@-25atkDCMmv4@@5defDCMmv4@@0acmDCMmv4@@0dgeDCMmv4@@0indSTRTMmv4@@_!nnnnnnnnnindENDMmv4@@_!nDCMmv5@@DiscombobulationdDCMv5@@The Stone Golem temporarily splits into multiple pieces, dealing a small amount of damage, slightly raising the DGE value, but lowering its own defense slightly. Type: EARTHLYtDCMmv5@@EARTHLYatmDCMmv5@@0.8accDCMmv5@@60hDCMmv5@@0atkDCMmv5@@0defDCMmv5@@-5acmDCMmv5@@0dgeDCMmv5@@5indSTRTMmv5@@_!nnnnnnnnnindENDMmv5@@_!";
+        string livernString = "nX!wj@am!ELivernd@3MDMe#SCLivern resembles a sentient plant with strong roots.t192y!@:PE22EARTHLYh!*##p2@<#2300at1!@!W0k135d%%23eFF120a1;c';c80dj1g><e20imnSTRT@@_!nnnnnnnnnimnEND@@_!nDCMmv1@@LeechdDCMv1@@Livern extends its roots, leeching off of the opponent's health. Type: EARTHLYtDCMmv1@@EARTHLYatmDCMmv1@@1.1accDCMmv1@@80hDCMmv1@@50atkDCMmv1@@0defDCMmv1@@0acmDCMmv1@@0dgeDCMmv1@@0indSTRTMmv1@@_!nnnnnnnnnindENDMmv1@@_!nDCMmv2@@Disease TransplantdDCMv2@@Livern removes the diseases from itself, raising its own HP, dealing damage to and weakening the opponent. Type: EARTHLYtDCMmv2@@EARTHLYatmDCMmv2@@1.5accDCMmv2@@50hDCMmv2@@30atkDCMmv2@@0defDCMmv2@@0acmDCMmv2@@0dgeDCMmv2@@0indSTRTMmv2@@_!nnnnnnnynindENDMmv2@@_!nDCMmv3@@SeedlingsdDCMv3@@Livern plants multiple versions of itself surrounding itself, raising its own DEF and dealing some damage. Type: NATURALtDCMmv3@@NATURALatmDCMmv3@@0.8accDCMmv3@@60hDCMmv3@@0atkDCMmv3@@0defDCMmv3@@15acmDCMmv3@@0dgeDCMmv3@@0indSTRTMmv3@@_!nnnnnnnnnindENDMmv3@@_!nDCMmv4@@Mineral RushdDCMv4@@Livern gathers a rush of earthly minerals and channels the power into a devastating attack. Type: EARTHLYtDCMmv4@@EARTHLYatmDCMmv4@@2.5accDCMmv4@@50hDCMmv4@@0atkDCMmv4@@0defDCMmv4@@0acmDCMmv4@@0dgeDCMmv4@@0indSTRTMmv4@@_!nnnnnnnnnindENDMmv4@@_!nDCMmv5@@UprootdDCMv5@@Livern uproots the ground around it, reducing its own DEF slightly but dealing massive damage. Type: GROUNDtDCMmv5@@GROUNDatmDCMmv5@@3.5accDCMmv5@@70hDCMmv5@@0atkDCMmv5@@0defDCMmv5@@-10acmDCMmv5@@0dgeDCMmv5@@0indSTRTMmv5@@_!nnnnnnnnnindENDMmv5@@_!";
+                //Air
+        string albatrossString = "nX!wj@am!EAlbatrossd@3MDMe#SCThe Albatross's large body and endurance give it a high, well-rounded durability.t192y!@:PE22AIRh!*##p2@<#2900at1!@!W0k120d%%23eFF115a1;c';c90dj1g><e30imnSTRT@@_!nnnnnnnnnimnEND@@_!nDCMmv1@@Plankton SwoopdDCMv1@@The Albatross swoops down to attack the enemy, as if it was catching food. Type: AIRtDCMmv1@@AIRatmDCMmv1@@0.9accDCMmv1@@30hDCMmv1@@0atkDCMmv1@@0defDCMmv1@@0acmDCMmv1@@0dgeDCMmv1@@0indSTRTMmv1@@_!nnnnnnnnnindENDMmv1@@_!nDCMmv2@@Wing BlastdDCMv2@@The Albatross flaps its wings in a broad radius, blasting the target with a large gust of air. Type: AIRtDCMmv2@@AIRatmDCMmv2@@1.75accDCMmv2@@40hDCMmv2@@0atkDCMmv2@@0defDCMmv2@@0acmDCMmv2@@0dgeDCMmv2@@0indSTRTMmv2@@_!nnnnnnnnnindENDMmv2@@_!nDCMmv3@@SustenancedDCMv3@@The Albatross delivers a quick blow, then soars to the skies, healing itself and raising all of its stats slightly. Type: AIRtDCMmv3@@AIRatmDCMmv3@@0.45accDCMmv3@@40hDCMmv3@@30atkDCMmv3@@5defDCMmv3@@5acmDCMmv3@@5dgeDCMmv3@@5indSTRTMmv3@@_!nnnnnnnnnindENDMmv3@@_!nDCMmv4@@RaindDCMv4@@The Albatross calls upon the rains and swoops down in a combo attack.tDCMmv4@@AIRatmDCMmv4@@2accDCMmv4@@60hDCMmv4@@0atkDCMmv4@@0defDCMmv4@@0acmDCMmv4@@0dgeDCMmv4@@0indSTRTMmv4@@_!nnnnnnnnnindENDMmv4@@_!nDCMmv5@@Great LegenddDCMv5@@The Albatross attacks with a legendary finisher, dealing heavy damage but inflicting a small amount of damage on itself. Type: AIRtDCMmv5@@AIRatmDCMmv5@@4.5accDCMmv5@@50hDCMmv5@@-30atkDCMmv5@@0defDCMmv5@@0acmDCMmv5@@0dgeDCMmv5@@0indSTRTMmv5@@_!nnnnnnnnnindENDMmv5@@_!";
+        string tweedleString = "nX!wj@am!ETweedled@3MDMe#SCTweedle is a tiny bird that has low health and is not capable of inflicting lots of damage, but has a great chance to dodge attacks.t192y!@:PE22AIRh!*##p2@<#1250at1!@!W0k60d%%23eFF90a1;c';c80dj1g><e120imnSTRT@@_!nnnnnnnnnimnEND@@_!nDCMmv1@@PeckdDCMv1@@Tweedle pecks at the opponent. Type: AIRtDCMmv1@@AIRatmDCMmv1@@0.9accDCMmv1@@40hDCMmv1@@0atkDCMmv1@@0defDCMmv1@@0acmDCMmv1@@0dgeDCMmv1@@0indSTRTMmv1@@_!nnnnnnnnnindENDMmv1@@_!nDCMmv2@@FlutterdDCMv2@@Tweedle flutters at the opponent, dealing a small amount of damage but confusing them, raising its DGE. Type: AIRtDCMmv2@@AIRatmDCMmv2@@0.75accDCMmv2@@40hDCMmv2@@0atkDCMmv2@@0defDCMmv2@@0acmDCMmv2@@0dgeDCMmv2@@5indSTRTMmv2@@_!nnnnnnnnnindENDMmv2@@_!nDCMmv3@@BirdsongdDCMv3@@Tweedle sings a birdsong, raising its stats and dealing a small amount of damage. Type: NONEtDCMmv3@@NONEatmDCMmv3@@0.25accDCMmv3@@60hDCMmv3@@0atkDCMmv3@@5defDCMmv3@@5acmDCMmv3@@5dgeDCMmv3@@5indSTRTMmv3@@_!nnnnnnnnnindENDMmv3@@_!nDCMmv4@@CouragedDCMv4@@Tweedle gathers some courage, attacking the target with strength and raising ATK. Type: NONEtDCMmv4@@NONEatmDCMmv4@@2.5accDCMmv4@@50hDCMmv4@@0atkDCMmv4@@10defDCMmv4@@0acmDCMmv4@@0dgeDCMmv4@@0indSTRTMmv4@@_!nnnnnnnnnindENDMmv4@@_!nDCMmv5@@Speed PeckdDCMv5@@Tweedle attacks quickly with its beak, dealing damage and inflicting bleeding.tDCMmv5@@AIRatmDCMmv5@@1accDCMmv5@@40hDCMmv5@@0atkDCMmv5@@0defDCMmv5@@0acmDCMmv5@@0dgeDCMmv5@@0indSTRTMmv5@@_!nnnnnynnnindENDMmv5@@_!";
+                //Ground
+        string quakeString = "nX!wj@am!EQuaked@3MDMe#SCQuake is a ground-dwelling sentient rock structure that manipulated the terrain. As Quake is a rock, it is immune to bleeding.t192y!@:PE22GROUNDh!*##p2@<#2100at1!@!W0k90d%%23eFF200a1;c';c70dj1g><e30imnSTRT@@_!nnnnnynnnimnEND@@_!nDCMmv1@@ShakedDCMv1@@Quake shakes the terrain, loosing rocks and other debris. Type: GROUNDtDCMmv1@@GROUNDatmDCMmv1@@1.25accDCMmv1@@60hDCMmv1@@0atkDCMmv1@@0defDCMmv1@@0acmDCMmv1@@0dgeDCMmv1@@0indSTRTMmv1@@_!nnnnnnnnnindENDMmv1@@_!nDCMmv2@@RebuilddDCMv2@@Quake picks up its broken pieces, making itself stronger than before. HP and DEF are raised. Type: NONEtDCMmv2@@NONEatmDCMmv2@@0accDCMmv2@@100hDCMmv2@@50atkDCMmv2@@0defDCMmv2@@10acmDCMmv2@@0dgeDCMmv2@@0indSTRTMmv2@@_!nnnnnnnnnindENDMmv2@@_!nDCMmv3@@Boulder RushdDCMv3@@Quake throws a volley of boulders, which accelerate and deal massive damage to the target, crippling them as well. Type: GROUNDtDCMmv3@@GROUNDatmDCMmv3@@2.5accDCMmv3@@40hDCMmv3@@0atkDCMmv3@@0defDCMmv3@@0acmDCMmv3@@0dgeDCMmv3@@0indSTRTMmv3@@_!nnnynnnnnindENDMmv3@@_!nDCMmv4@@Terrain SwitchdDCMv4@@Quake switches around the terrain, raising its attack and dealing slight damage. Type: EARTHLYtDCMmv4@@EARTHLYatmDCMmv4@@0.8accDCMmv4@@40hDCMmv4@@0atkDCMmv4@@15defDCMmv4@@0acmDCMmv4@@0dgeDCMmv4@@0indSTRTMmv4@@_!nnnnnnnnnindENDMmv4@@_!nDCMmv5@@Mag 9dDCMv5@@Quake attacks with a devastating earthquake, inflicting massive damage. Recoil is significant. Type: GROUNDtDCMmv5@@GROUNDatmDCMmv5@@7accDCMmv5@@50hDCMmv5@@-75atkDCMmv5@@0defDCMmv5@@0acmDCMmv5@@0dgeDCMmv5@@0indSTRTMmv5@@_!nnnnnnnnnindENDMmv5@@_!";
 
-        //For use in-simulation:
+
+        //For use in-EvE-simulation:
         private Character player1;
         private Character player2;
+        //Possibly deprecated
         int lastP1Move = 0;
         int lastP2Move = 0;
 
@@ -201,9 +215,55 @@ namespace DCTBFightingSimulator
         }
         private void player1DropdownImports()
         {
+            //Vanilla
+                //None
             if(player1SelectionEvE.Text == "Joseph (NONE) (Vanilla)")
             {
                 player1 = new Character(josephString);
+                loadPlayer1VisualStats();
+            }
+            if (player1SelectionEvE.Text == "David (NONE) (Vanilla)")
+            {
+                player1 = new Character(davidString);
+                loadPlayer1VisualStats();
+            }
+                //Void
+            if (player1SelectionEvE.Text == "Anomal (VOID) (Vanilla)")
+            {
+                player1 = new Character(anomalString);
+                loadPlayer1VisualStats();
+            }
+            if (player1SelectionEvE.Text == "Rig (VOID) (Vanilla)")
+            {
+                player1 = new Character(rigString);
+                loadPlayer1VisualStats();
+            }
+                //Earthly
+            if (player1SelectionEvE.Text == "Stone Golem (EARTHLY) (Vanilla)")
+            {
+                player1 = new Character(stoneGolemString);
+                loadPlayer1VisualStats();
+            }
+            if (player1SelectionEvE.Text == "Livern (EARTHLY) (Vanilla)")
+            {
+                player1 = new Character(livernString);
+                loadPlayer1VisualStats();
+            }
+                //Air
+            if (player1SelectionEvE.Text == "Albatross (AIR) (Vanilla)")
+            {
+                player1 = new Character(albatrossString);
+                loadPlayer1VisualStats();
+            }
+            if (player1SelectionEvE.Text == "Tweedle (AIR) (Vanilla)")
+            {
+                player1 = new Character(tweedleString);
+                loadPlayer1VisualStats();
+            }
+                //Ground
+            if (player1SelectionEvE.Text == "Quake (GROUND) (Vanilla)")
+            {
+                player1 = new Character(quakeString);
                 loadPlayer1VisualStats();
             }
         }
@@ -216,10 +276,56 @@ namespace DCTBFightingSimulator
         }
         private void player2DropdownImports()
         {
+            //Vanilla
+                //None
             if (player2SelectionEvE.Text == "Joseph (NONE) (Vanilla)")
             {
                 player2 = new Character(josephString);
                 loadPlayer2VisualStats();
+            }
+            if (player2SelectionEvE.Text == "David (NONE) (Vanilla)")
+            {
+                player2 = new Character(davidString);
+                loadPlayer2VisualStats();
+            }
+                //Void
+            if (player2SelectionEvE.Text == "Anomal (VOID) (Vanilla)")
+            {
+                player2 = new Character(anomalString);
+                loadPlayer2VisualStats();
+            }
+            if (player2SelectionEvE.Text == "Rig (VOID) (Vanilla)")
+            {
+                player2 = new Character(rigString);
+                loadPlayer2VisualStats();
+            }
+                //Earthly
+            if (player2SelectionEvE.Text == "Stone Golem (EARTHLY) (Vanilla)")
+            {
+                player2 = new Character(stoneGolemString);
+                loadPlayer2VisualStats();
+            }
+            if (player2SelectionEvE.Text == "Livern (EARTHLY) (Vanilla)")
+            {
+                player2 = new Character(livernString);
+                loadPlayer2VisualStats();
+            }
+                //Air
+            if (player2SelectionEvE.Text == "Albatross (AIR) (Vanilla)")
+            {
+                player2 = new Character(albatrossString);
+                loadPlayer2VisualStats();
+            }
+            if (player2SelectionEvE.Text == "Tweedle (AIR) (Vanilla)")
+            {
+                player2 = new Character(tweedleString);
+                loadPlayer2VisualStats();
+            }
+                //Ground
+            if (player2SelectionEvE.Text == "Quake (GROUND) (Vanilla)")
+            {
+                player2 = new Character(quakeString);
+                loadPlayer1VisualStats();
             }
         }
             //EvE Simulation
@@ -5168,6 +5274,113 @@ namespace DCTBFightingSimulator
         private void charDatabaseButton_Click(object sender, EventArgs e)
         {
             enableCharDatabaseUI();
+        }
+            //Vanilla
+        private void comboBox1_TextChanged(object sender, EventArgs e)
+        {
+            //VANILLA
+                //None
+            if(comboBox1.Text == "Joseph (NONE)")
+            {
+                vanillaExports.Text = josephString;
+            }
+            if(comboBox1.Text == "David (NONE)")
+            {
+                vanillaExports.Text = davidString;
+            }
+                //Void
+            if(comboBox1.Text == "Anomal (VOID)")
+            {
+                vanillaExports.Text = anomalString;
+            }
+            if (comboBox1.Text == "Rig (VOID)")
+            {
+                vanillaExports.Text = rigString;
+            }
+                //Earthly
+            if (comboBox1.Text == "Stone Golem (EARTHLY)")
+            {
+                vanillaExports.Text = stoneGolemString;
+            }
+            if (comboBox1.Text == "Livern (EARTHLY)")
+            {
+                vanillaExports.Text = livernString;
+            }
+                //Air
+            if (comboBox1.Text == "Albatross (AIR)")
+            {
+                vanillaExports.Text = albatrossString;
+            }
+            if(comboBox1.Text == "Tweedle (AIR)")
+            {
+                vanillaExports.Text = tweedleString;
+            }
+        }
+            //NONE Type
+        private void comboBox5_TextChanged(object sender, EventArgs e)
+        {
+            //NONE
+                //Vanilla
+            if (comboBox5.Text == "Joseph (Vanilla)")
+            {
+                typeNoneExports.Text = josephString;
+            }
+            if (comboBox5.Text == "David (Vanilla)")
+            {
+                typeNoneExports.Text = davidString;
+            }
+        }
+            //VOID Type
+        private void comboBox6_TextChanged(object sender, EventArgs e)
+        {
+            //VOID
+                //Vanilla
+            if (comboBox6.Text == "Anomal (Vanilla)")
+            {
+                typeVoidExports.Text = anomalString;
+            }
+            if (comboBox6.Text == "Rig (Vanilla)")
+            {
+                typeVoidExports.Text = rigString;
+            }
+        }
+            //EARTHLY Type
+        private void comboBox7_TextChanged(object sender, EventArgs e)
+        {
+            //EARTHLY
+                //Vanilla
+            if (comboBox7.Text == "Stone Golem (Vanilla)")
+            {
+                typeEarthlyExports.Text = stoneGolemString;
+            }
+            if (comboBox7.Text == "Livern (Vanilla)")
+            {
+                typeEarthlyExports.Text = livernString;
+            }
+        }
+            //AIR Type
+        private void comboBox8_TextChanged(object sender, EventArgs e)
+        {
+            //AIR
+                //Vanilla
+            if (comboBox8.Text == "Albatross (Vanilla)")
+            {
+                typeAirExports.Text = albatrossString;
+            }
+            if (comboBox8.Text == "Tweedle (Vanilla)")
+            {
+                typeAirExports.Text = tweedleString;
+            }
+        }
+            //GROUND Type
+        private void comboBox9_TextChanged(object sender, EventArgs e)
+        {
+            //GROUND
+                //Vanilla
+            if (comboBox9.Text == "Quake (Vanilla)")
+            {
+                typeGroundExports.Text = quakeString;
+            }
         }
 
         //UNEDITABLE/NON-REMOVABLE METHODS

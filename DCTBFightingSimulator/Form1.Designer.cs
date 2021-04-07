@@ -281,6 +281,7 @@ namespace DCTBFightingSimulator
             this.CCN40 = new System.Windows.Forms.NumericUpDown();
             this.CCL120 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.characterCreationResetButton = new System.Windows.Forms.Button();
             this.horizCharCreationBar = new System.Windows.Forms.PictureBox();
             this.CCP6 = new System.Windows.Forms.PictureBox();
             this.CCP1 = new System.Windows.Forms.PictureBox();
@@ -370,11 +371,6 @@ namespace DCTBFightingSimulator
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.opExports = new System.Windows.Forms.Label();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.utilityExports = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.userCreatedExports = new System.Windows.Forms.TextBox();
@@ -554,7 +550,6 @@ namespace DCTBFightingSimulator
             this.label55 = new System.Windows.Forms.Label();
             this.p1Def = new System.Windows.Forms.NumericUpDown();
             this.label53 = new System.Windows.Forms.Label();
-            this.characterCreationResetButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.CCN1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CCN2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CCN3)).BeginInit();
@@ -621,7 +616,6 @@ namespace DCTBFightingSimulator
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -3881,6 +3875,16 @@ namespace DCTBFightingSimulator
             this.panel1.TabIndex = 261;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // characterCreationResetButton
+            // 
+            this.characterCreationResetButton.Location = new System.Drawing.Point(301, 6);
+            this.characterCreationResetButton.Name = "characterCreationResetButton";
+            this.characterCreationResetButton.Size = new System.Drawing.Size(75, 23);
+            this.characterCreationResetButton.TabIndex = 261;
+            this.characterCreationResetButton.Text = "Reset All";
+            this.characterCreationResetButton.UseVisualStyleBackColor = true;
+            this.characterCreationResetButton.Click += new System.EventHandler(this.characterCreationResetButton_Click);
+            // 
             // horizCharCreationBar
             // 
             this.horizCharCreationBar.Image = ((System.Drawing.Image)(resources.GetObject("horizCharCreationBar.Image")));
@@ -4042,11 +4046,6 @@ namespace DCTBFightingSimulator
             this.characterDatabasePanel.Controls.Add(this.textBox1);
             this.characterDatabasePanel.Controls.Add(this.opExports);
             this.characterDatabasePanel.Controls.Add(this.comboBox4);
-            this.characterDatabasePanel.Controls.Add(this.pictureBox6);
-            this.characterDatabasePanel.Controls.Add(this.label8);
-            this.characterDatabasePanel.Controls.Add(this.utilityExports);
-            this.characterDatabasePanel.Controls.Add(this.label9);
-            this.characterDatabasePanel.Controls.Add(this.comboBox3);
             this.characterDatabasePanel.Controls.Add(this.pictureBox5);
             this.characterDatabasePanel.Controls.Add(this.label6);
             this.characterDatabasePanel.Controls.Add(this.userCreatedExports);
@@ -4523,10 +4522,13 @@ namespace DCTBFightingSimulator
             // comboBox9
             // 
             this.comboBox9.FormattingEnabled = true;
+            this.comboBox9.Items.AddRange(new object[] {
+            "Quake (Vanilla)"});
             this.comboBox9.Location = new System.Drawing.Point(550, 245);
             this.comboBox9.Name = "comboBox9";
             this.comboBox9.Size = new System.Drawing.Size(111, 21);
             this.comboBox9.TabIndex = 60;
+            this.comboBox9.TextChanged += new System.EventHandler(this.comboBox9_TextChanged);
             // 
             // pictureBox11
             // 
@@ -4565,10 +4567,14 @@ namespace DCTBFightingSimulator
             // comboBox8
             // 
             this.comboBox8.FormattingEnabled = true;
+            this.comboBox8.Items.AddRange(new object[] {
+            "Albatross (Vanilla)",
+            "Tweedle (Vanilla)"});
             this.comboBox8.Location = new System.Drawing.Point(414, 245);
             this.comboBox8.Name = "comboBox8";
             this.comboBox8.Size = new System.Drawing.Size(111, 21);
             this.comboBox8.TabIndex = 55;
+            this.comboBox8.TextChanged += new System.EventHandler(this.comboBox8_TextChanged);
             // 
             // pictureBox10
             // 
@@ -4607,10 +4613,14 @@ namespace DCTBFightingSimulator
             // comboBox7
             // 
             this.comboBox7.FormattingEnabled = true;
+            this.comboBox7.Items.AddRange(new object[] {
+            "Stone Golem (Vanilla)",
+            "Livern (Vanilla)"});
             this.comboBox7.Location = new System.Drawing.Point(278, 245);
             this.comboBox7.Name = "comboBox7";
             this.comboBox7.Size = new System.Drawing.Size(111, 21);
             this.comboBox7.TabIndex = 50;
+            this.comboBox7.TextChanged += new System.EventHandler(this.comboBox7_TextChanged);
             // 
             // pictureBox9
             // 
@@ -4649,10 +4659,14 @@ namespace DCTBFightingSimulator
             // comboBox6
             // 
             this.comboBox6.FormattingEnabled = true;
+            this.comboBox6.Items.AddRange(new object[] {
+            "Anomal (Vanilla)",
+            "Rig (Vanilla)"});
             this.comboBox6.Location = new System.Drawing.Point(142, 245);
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(111, 21);
             this.comboBox6.TabIndex = 45;
+            this.comboBox6.TextChanged += new System.EventHandler(this.comboBox6_TextChanged);
             // 
             // pictureBox8
             // 
@@ -4691,15 +4705,19 @@ namespace DCTBFightingSimulator
             // comboBox5
             // 
             this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Items.AddRange(new object[] {
+            "Joseph (Vanilla)",
+            "David (Vanilla)"});
             this.comboBox5.Location = new System.Drawing.Point(6, 245);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(111, 21);
             this.comboBox5.TabIndex = 40;
+            this.comboBox5.TextChanged += new System.EventHandler(this.comboBox5_TextChanged);
             // 
             // pictureBox7
             // 
             this.pictureBox7.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
-            this.pictureBox7.Location = new System.Drawing.Point(531, 96);
+            this.pictureBox7.Location = new System.Drawing.Point(395, 100);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(10, 102);
             this.pictureBox7.TabIndex = 39;
@@ -4708,7 +4726,7 @@ namespace DCTBFightingSimulator
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(411, 150);
+            this.label10.Location = new System.Drawing.Point(275, 154);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(40, 13);
             this.label10.TabIndex = 38;
@@ -4716,7 +4734,7 @@ namespace DCTBFightingSimulator
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(457, 147);
+            this.textBox1.Location = new System.Drawing.Point(321, 151);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(68, 20);
             this.textBox1.TabIndex = 37;
@@ -4724,7 +4742,7 @@ namespace DCTBFightingSimulator
             // opExports
             // 
             this.opExports.AutoSize = true;
-            this.opExports.Location = new System.Drawing.Point(411, 109);
+            this.opExports.Location = new System.Drawing.Point(275, 113);
             this.opExports.Name = "opExports";
             this.opExports.Size = new System.Drawing.Size(22, 13);
             this.opExports.TabIndex = 36;
@@ -4733,52 +4751,10 @@ namespace DCTBFightingSimulator
             // comboBox4
             // 
             this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(414, 125);
+            this.comboBox4.Location = new System.Drawing.Point(278, 129);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(111, 21);
             this.comboBox4.TabIndex = 35;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
-            this.pictureBox6.Location = new System.Drawing.Point(395, 100);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(10, 102);
-            this.pictureBox6.TabIndex = 34;
-            this.pictureBox6.TabStop = false;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(275, 154);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(40, 13);
-            this.label8.TabIndex = 33;
-            this.label8.Text = "Export:";
-            // 
-            // utilityExports
-            // 
-            this.utilityExports.Location = new System.Drawing.Point(321, 151);
-            this.utilityExports.Name = "utilityExports";
-            this.utilityExports.Size = new System.Drawing.Size(68, 20);
-            this.utilityExports.TabIndex = 32;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(275, 113);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(48, 13);
-            this.label9.TabIndex = 31;
-            this.label9.Text = "UTILITY";
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(278, 129);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(111, 21);
-            this.comboBox3.TabIndex = 30;
             // 
             // pictureBox5
             // 
@@ -4859,10 +4835,20 @@ namespace DCTBFightingSimulator
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Joseph (NONE)",
+            "David (NONE)",
+            "Anomal (VOID)",
+            "Rig (VOID)",
+            "Stone Golem (EARTHLY)",
+            "Livern (EARTHLY)",
+            "Albatross (AIR)",
+            "Tweedle (AIR)"});
             this.comboBox1.Location = new System.Drawing.Point(6, 126);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(111, 21);
             this.comboBox1.TabIndex = 20;
+            this.comboBox1.TextChanged += new System.EventHandler(this.comboBox1_TextChanged);
             // 
             // label
             // 
@@ -5012,7 +4998,15 @@ namespace DCTBFightingSimulator
             // 
             this.player1SelectionEvE.FormattingEnabled = true;
             this.player1SelectionEvE.Items.AddRange(new object[] {
-            "Joseph (NONE) (Vanilla)"});
+            "Joseph (NONE) (Vanilla)",
+            "David (NONE) (Vanilla)",
+            "Anomal (VOID) Vanilla)",
+            "Rig (VOID) (Vanilla)",
+            "Stone Golem (EARTHLY) (Vanilla)",
+            "Livern (EARTHLY) (Vanilla)",
+            "Albatross (AIR) (Vanilla)",
+            "Tweedle (AIR) (Vanilla)",
+            "Quake (GROUND) (Vanilla)"});
             this.player1SelectionEvE.Location = new System.Drawing.Point(8, 150);
             this.player1SelectionEvE.Name = "player1SelectionEvE";
             this.player1SelectionEvE.Size = new System.Drawing.Size(94, 21);
@@ -5031,7 +5025,15 @@ namespace DCTBFightingSimulator
             // 
             this.player2SelectionEvE.FormattingEnabled = true;
             this.player2SelectionEvE.Items.AddRange(new object[] {
-            "Joseph (NONE) (Vanilla)"});
+            "Joseph (NONE) (Vanilla)",
+            "David (NONE) (Vanilla)",
+            "Anomal (VOID) Vanilla)",
+            "Rig (VOID) (Vanilla)",
+            "Stone Golem (EARTHLY) (Vanilla)",
+            "Livern (EARTHLY) (Vanilla)",
+            "Albatross (AIR) (Vanilla)",
+            "Tweedle (AIR) (Vanilla)",
+            "Quake (GROUND) (Vanilla)"});
             this.player2SelectionEvE.Location = new System.Drawing.Point(1016, 146);
             this.player2SelectionEvE.Name = "player2SelectionEvE";
             this.player2SelectionEvE.Size = new System.Drawing.Size(94, 21);
@@ -6814,26 +6816,16 @@ namespace DCTBFightingSimulator
             this.label53.TabIndex = 27;
             this.label53.Text = "DEF";
             // 
-            // characterCreationResetButton
-            // 
-            this.characterCreationResetButton.Location = new System.Drawing.Point(301, 6);
-            this.characterCreationResetButton.Name = "characterCreationResetButton";
-            this.characterCreationResetButton.Size = new System.Drawing.Size(75, 23);
-            this.characterCreationResetButton.TabIndex = 261;
-            this.characterCreationResetButton.Text = "Reset All";
-            this.characterCreationResetButton.UseVisualStyleBackColor = true;
-            this.characterCreationResetButton.Click += new System.EventHandler(this.characterCreationResetButton_Click);
-            // 
             // DCTBFightingSimulator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1432, 853);
+            this.Controls.Add(this.characterDatabasePanel);
+            this.Controls.Add(this.EvEPanel);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.startingPanel);
-            this.Controls.Add(this.EvEPanel);
-            this.Controls.Add(this.characterDatabasePanel);
             this.Controls.Add(this.changelogButton);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.roadmapButton);
@@ -6918,7 +6910,6 @@ namespace DCTBFightingSimulator
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -7238,11 +7229,6 @@ namespace DCTBFightingSimulator
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox utilityExports;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox userCreatedExports;
