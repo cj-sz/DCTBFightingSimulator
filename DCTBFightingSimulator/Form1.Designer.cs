@@ -288,6 +288,10 @@ namespace DCTBFightingSimulator
             this.CCP4 = new System.Windows.Forms.PictureBox();
             this.CCP3 = new System.Windows.Forms.PictureBox();
             this.startingPanel = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.changelogText = new System.Windows.Forms.TextBox();
+            this.roadmapLabel = new System.Windows.Forms.Label();
+            this.roadmapText = new System.Windows.Forms.TextBox();
             this.characterDatabasePanel = new System.Windows.Forms.Panel();
             this.pictureBox22 = new System.Windows.Forms.PictureBox();
             this.label39 = new System.Windows.Forms.Label();
@@ -547,10 +551,6 @@ namespace DCTBFightingSimulator
             this.label55 = new System.Windows.Forms.Label();
             this.p1Def = new System.Windows.Forms.NumericUpDown();
             this.label53 = new System.Windows.Forms.Label();
-            this.roadmapLabel = new System.Windows.Forms.Label();
-            this.roadmapText = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.changelogText = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.CCN1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CCN2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CCN3)).BeginInit();
@@ -705,6 +705,7 @@ namespace DCTBFightingSimulator
             this.pveButton.TabIndex = 6;
             this.pveButton.Text = "PvE";
             this.pveButton.UseVisualStyleBackColor = true;
+            this.pveButton.Click += new System.EventHandler(this.pveButton_Click);
             // 
             // pvpButton
             // 
@@ -714,6 +715,7 @@ namespace DCTBFightingSimulator
             this.pvpButton.TabIndex = 7;
             this.pvpButton.Text = "Local PvP";
             this.pvpButton.UseVisualStyleBackColor = true;
+            this.pvpButton.Click += new System.EventHandler(this.pvpButton_Click);
             // 
             // createCharButton
             // 
@@ -3949,6 +3951,44 @@ namespace DCTBFightingSimulator
             this.startingPanel.Size = new System.Drawing.Size(1105, 659);
             this.startingPanel.TabIndex = 261;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.label8.Location = new System.Drawing.Point(80, 136);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(164, 29);
+            this.label8.TabIndex = 17;
+            this.label8.Text = "CHANGELOG";
+            // 
+            // changelogText
+            // 
+            this.changelogText.Location = new System.Drawing.Point(46, 175);
+            this.changelogText.Multiline = true;
+            this.changelogText.Name = "changelogText";
+            this.changelogText.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.changelogText.Size = new System.Drawing.Size(236, 418);
+            this.changelogText.TabIndex = 16;
+            // 
+            // roadmapLabel
+            // 
+            this.roadmapLabel.AutoSize = true;
+            this.roadmapLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.roadmapLabel.Location = new System.Drawing.Point(343, 136);
+            this.roadmapLabel.Name = "roadmapLabel";
+            this.roadmapLabel.Size = new System.Drawing.Size(132, 29);
+            this.roadmapLabel.TabIndex = 15;
+            this.roadmapLabel.Text = "ROADMAP";
+            // 
+            // roadmapText
+            // 
+            this.roadmapText.Location = new System.Drawing.Point(288, 175);
+            this.roadmapText.Multiline = true;
+            this.roadmapText.Name = "roadmapText";
+            this.roadmapText.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.roadmapText.Size = new System.Drawing.Size(236, 418);
+            this.roadmapText.TabIndex = 14;
+            // 
             // characterDatabasePanel
             // 
             this.characterDatabasePanel.Controls.Add(this.pictureBox22);
@@ -6790,44 +6830,6 @@ namespace DCTBFightingSimulator
             this.label53.Size = new System.Drawing.Size(28, 13);
             this.label53.TabIndex = 27;
             this.label53.Text = "DEF";
-            // 
-            // roadmapLabel
-            // 
-            this.roadmapLabel.AutoSize = true;
-            this.roadmapLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.roadmapLabel.Location = new System.Drawing.Point(343, 136);
-            this.roadmapLabel.Name = "roadmapLabel";
-            this.roadmapLabel.Size = new System.Drawing.Size(132, 29);
-            this.roadmapLabel.TabIndex = 15;
-            this.roadmapLabel.Text = "ROADMAP";
-            // 
-            // roadmapText
-            // 
-            this.roadmapText.Location = new System.Drawing.Point(288, 175);
-            this.roadmapText.Multiline = true;
-            this.roadmapText.Name = "roadmapText";
-            this.roadmapText.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.roadmapText.Size = new System.Drawing.Size(236, 418);
-            this.roadmapText.TabIndex = 14;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.label8.Location = new System.Drawing.Point(80, 136);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(164, 29);
-            this.label8.TabIndex = 17;
-            this.label8.Text = "CHANGELOG";
-            // 
-            // changelogText
-            // 
-            this.changelogText.Location = new System.Drawing.Point(46, 175);
-            this.changelogText.Multiline = true;
-            this.changelogText.Name = "changelogText";
-            this.changelogText.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.changelogText.Size = new System.Drawing.Size(236, 418);
-            this.changelogText.TabIndex = 16;
             // 
             // DCTBFightingSimulator
             // 

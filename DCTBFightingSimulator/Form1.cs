@@ -54,7 +54,7 @@ namespace DCTBFightingSimulator
                 //Psychic
         string forseerString = "";
         string zodiumString = "";
-                //Mortal
+                //Mortal - may be changed to mortus/dark/death/etc. in future
         string humanusString = "";
         string thedemonString = "";
                 //Ghost
@@ -84,6 +84,7 @@ namespace DCTBFightingSimulator
         public void fillChangelog()
         {
             //Current version: 0.0.1
+            changelogText.Text = "";
             changelogText.AppendText("VERSON: 0.0.1");
             changelogText.AppendText(Environment.NewLine + "- Initial release of DCTBFightingSimulator!");
             changelogText.AppendText(Environment.NewLine + "- Current features:");
@@ -101,6 +102,7 @@ namespace DCTBFightingSimulator
         }
         public void fillRoadmap()
         {
+            roadmapText.Text = "";
             roadmapText.AppendText("Roadmap (categorized):");
             roadmapText.AppendText(Environment.NewLine + Environment.NewLine + "Overarching Additions:");
             roadmapText.AppendText(Environment.NewLine + "- PvE functionality");
@@ -127,6 +129,8 @@ namespace DCTBFightingSimulator
             startingPanel.Enabled = true;
             startingPanel.BringToFront();
             startingPanel.Show();
+            fillChangelog();
+            fillRoadmap();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -746,8 +750,20 @@ namespace DCTBFightingSimulator
                 }
         }
 
-                //General Simulation Methods
-                    //Player 1 Checks and Methods
+        //PvE Methods
+        private void pveButton_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.MessageBox.Show("Coming Soon!");
+        }
+
+        //PvP Methods
+        private void pvpButton_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.MessageBox.Show("Coming Soon!");
+        }
+
+        //General Simulation Methods
+        //Player 1 Checks and Methods
         private bool stunFrozenChecksP1(Character player1)
         {
             //Bool returns if cannot move, true is yes, false is no
