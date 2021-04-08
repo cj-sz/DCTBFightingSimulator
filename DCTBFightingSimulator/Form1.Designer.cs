@@ -40,8 +40,6 @@ namespace DCTBFightingSimulator
             this.charDatabaseButton = new System.Windows.Forms.Button();
             this.welcomeLabel1 = new System.Windows.Forms.Label();
             this.welcomeLabel2 = new System.Windows.Forms.Label();
-            this.roadmapButton = new System.Windows.Forms.Button();
-            this.changelogButton = new System.Windows.Forms.Button();
             this.characterCreationTitle = new System.Windows.Forms.Label();
             this.characterCreationDesc = new System.Windows.Forms.Label();
             this.CCL1 = new System.Windows.Forms.Label();
@@ -404,7 +402,6 @@ namespace DCTBFightingSimulator
             this.player1ImportEvE = new System.Windows.Forms.TextBox();
             this.label48 = new System.Windows.Forms.Label();
             this.player2ImportEvE = new System.Windows.Forms.TextBox();
-            this.button4 = new System.Windows.Forms.Button();
             this.label49 = new System.Windows.Forms.Label();
             this.p1Name = new System.Windows.Forms.TextBox();
             this.label50 = new System.Windows.Forms.Label();
@@ -550,6 +547,10 @@ namespace DCTBFightingSimulator
             this.label55 = new System.Windows.Forms.Label();
             this.p1Def = new System.Windows.Forms.NumericUpDown();
             this.label53 = new System.Windows.Forms.Label();
+            this.roadmapLabel = new System.Windows.Forms.Label();
+            this.roadmapText = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.changelogText = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.CCN1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CCN2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CCN3)).BeginInit();
@@ -755,26 +756,6 @@ namespace DCTBFightingSimulator
             this.welcomeLabel2.Size = new System.Drawing.Size(693, 37);
             this.welcomeLabel2.TabIndex = 11;
             this.welcomeLabel2.Text = "Use one of the buttons on the left to get started.";
-            // 
-            // roadmapButton
-            // 
-            this.roadmapButton.Location = new System.Drawing.Point(12, 468);
-            this.roadmapButton.Name = "roadmapButton";
-            this.roadmapButton.Size = new System.Drawing.Size(115, 32);
-            this.roadmapButton.TabIndex = 12;
-            this.roadmapButton.Text = "Roadmap";
-            this.roadmapButton.UseVisualStyleBackColor = true;
-            this.roadmapButton.Click += new System.EventHandler(this.roadmapButton_Click);
-            // 
-            // changelogButton
-            // 
-            this.changelogButton.Location = new System.Drawing.Point(12, 430);
-            this.changelogButton.Name = "changelogButton";
-            this.changelogButton.Size = new System.Drawing.Size(115, 32);
-            this.changelogButton.TabIndex = 14;
-            this.changelogButton.Text = "Changelog";
-            this.changelogButton.UseVisualStyleBackColor = true;
-            this.changelogButton.Click += new System.EventHandler(this.changelogButton_Click);
             // 
             // characterCreationTitle
             // 
@@ -3957,11 +3938,15 @@ namespace DCTBFightingSimulator
             // 
             // startingPanel
             // 
+            this.startingPanel.Controls.Add(this.label8);
+            this.startingPanel.Controls.Add(this.changelogText);
+            this.startingPanel.Controls.Add(this.roadmapLabel);
+            this.startingPanel.Controls.Add(this.roadmapText);
             this.startingPanel.Controls.Add(this.welcomeLabel2);
             this.startingPanel.Controls.Add(this.welcomeLabel1);
-            this.startingPanel.Location = new System.Drawing.Point(153, 3);
+            this.startingPanel.Location = new System.Drawing.Point(153, 7);
             this.startingPanel.Name = "startingPanel";
-            this.startingPanel.Size = new System.Drawing.Size(900, 466);
+            this.startingPanel.Size = new System.Drawing.Size(1105, 659);
             this.startingPanel.TabIndex = 261;
             // 
             // characterDatabasePanel
@@ -5081,15 +5066,6 @@ namespace DCTBFightingSimulator
             this.player2ImportEvE.Size = new System.Drawing.Size(100, 20);
             this.player2ImportEvE.TabIndex = 16;
             // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(589, 617);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(72, 23);
-            this.button4.TabIndex = 18;
-            this.button4.Text = "RESET";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
             // label49
             // 
             this.label49.AutoSize = true;
@@ -5326,7 +5302,6 @@ namespace DCTBFightingSimulator
             this.EvEPanel.Controls.Add(this.label50);
             this.EvEPanel.Controls.Add(this.p1Name);
             this.EvEPanel.Controls.Add(this.label49);
-            this.EvEPanel.Controls.Add(this.button4);
             this.EvEPanel.Controls.Add(this.player2ImportEvE);
             this.EvEPanel.Controls.Add(this.label48);
             this.EvEPanel.Controls.Add(this.player1ImportEvE);
@@ -6816,19 +6791,55 @@ namespace DCTBFightingSimulator
             this.label53.TabIndex = 27;
             this.label53.Text = "DEF";
             // 
+            // roadmapLabel
+            // 
+            this.roadmapLabel.AutoSize = true;
+            this.roadmapLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.roadmapLabel.Location = new System.Drawing.Point(343, 136);
+            this.roadmapLabel.Name = "roadmapLabel";
+            this.roadmapLabel.Size = new System.Drawing.Size(132, 29);
+            this.roadmapLabel.TabIndex = 15;
+            this.roadmapLabel.Text = "ROADMAP";
+            // 
+            // roadmapText
+            // 
+            this.roadmapText.Location = new System.Drawing.Point(288, 175);
+            this.roadmapText.Multiline = true;
+            this.roadmapText.Name = "roadmapText";
+            this.roadmapText.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.roadmapText.Size = new System.Drawing.Size(236, 418);
+            this.roadmapText.TabIndex = 14;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.label8.Location = new System.Drawing.Point(80, 136);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(164, 29);
+            this.label8.TabIndex = 17;
+            this.label8.Text = "CHANGELOG";
+            // 
+            // changelogText
+            // 
+            this.changelogText.Location = new System.Drawing.Point(46, 175);
+            this.changelogText.Multiline = true;
+            this.changelogText.Name = "changelogText";
+            this.changelogText.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.changelogText.Size = new System.Drawing.Size(236, 418);
+            this.changelogText.TabIndex = 16;
+            // 
             // DCTBFightingSimulator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1432, 853);
-            this.Controls.Add(this.characterDatabasePanel);
             this.Controls.Add(this.EvEPanel);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.startingPanel);
-            this.Controls.Add(this.changelogButton);
+            this.Controls.Add(this.characterDatabasePanel);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.roadmapButton);
             this.Controls.Add(this.charDatabaseButton);
             this.Controls.Add(this.createCharButton);
             this.Controls.Add(this.pvpButton);
@@ -6969,9 +6980,7 @@ namespace DCTBFightingSimulator
         private System.Windows.Forms.Button charDatabaseButton;
         private System.Windows.Forms.Label welcomeLabel1;
         private System.Windows.Forms.Label welcomeLabel2;
-        private System.Windows.Forms.Button roadmapButton;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button changelogButton;
         private System.Windows.Forms.Label characterCreationTitle;
         private System.Windows.Forms.Label characterCreationDesc;
         private System.Windows.Forms.PictureBox horizCharCreationBar;
@@ -7330,7 +7339,6 @@ namespace DCTBFightingSimulator
         private System.Windows.Forms.TextBox player1ImportEvE;
         private System.Windows.Forms.Label label48;
         private System.Windows.Forms.TextBox player2ImportEvE;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label49;
         private System.Windows.Forms.TextBox p1Name;
         private System.Windows.Forms.Label label50;
@@ -7477,6 +7485,10 @@ namespace DCTBFightingSimulator
         private System.Windows.Forms.NumericUpDown p1Def;
         private System.Windows.Forms.Label label53;
         private System.Windows.Forms.Button characterCreationResetButton;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox changelogText;
+        private System.Windows.Forms.Label roadmapLabel;
+        private System.Windows.Forms.TextBox roadmapText;
     }
 }
 

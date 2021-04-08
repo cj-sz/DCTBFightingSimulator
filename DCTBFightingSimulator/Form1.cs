@@ -29,7 +29,10 @@ namespace DCTBFightingSimulator
         string tweedleString = "nX!wj@am!ETweedled@3MDMe#SCTweedle is a tiny bird that has low health and is not capable of inflicting lots of damage, but has a great chance to dodge attacks.t192y!@:PE22AIRh!*##p2@<#1250at1!@!W0k60d%%23eFF90a1;c';c80dj1g><e120imnSTRT@@_!nnnnnnnnnimnEND@@_!nDCMmv1@@PeckdDCMv1@@Tweedle pecks at the opponent. Type: AIRtDCMmv1@@AIRatmDCMmv1@@0.9accDCMmv1@@40hDCMmv1@@0atkDCMmv1@@0defDCMmv1@@0acmDCMmv1@@0dgeDCMmv1@@0indSTRTMmv1@@_!nnnnnnnnnindENDMmv1@@_!nDCMmv2@@FlutterdDCMv2@@Tweedle flutters at the opponent, dealing a small amount of damage but confusing them, raising its DGE. Type: AIRtDCMmv2@@AIRatmDCMmv2@@0.75accDCMmv2@@40hDCMmv2@@0atkDCMmv2@@0defDCMmv2@@0acmDCMmv2@@0dgeDCMmv2@@5indSTRTMmv2@@_!nnnnnnnnnindENDMmv2@@_!nDCMmv3@@BirdsongdDCMv3@@Tweedle sings a birdsong, raising its stats and dealing a small amount of damage. Type: NONEtDCMmv3@@NONEatmDCMmv3@@0.25accDCMmv3@@60hDCMmv3@@0atkDCMmv3@@5defDCMmv3@@5acmDCMmv3@@5dgeDCMmv3@@5indSTRTMmv3@@_!nnnnnnnnnindENDMmv3@@_!nDCMmv4@@CouragedDCMv4@@Tweedle gathers some courage, attacking the target with strength and raising ATK. Type: NONEtDCMmv4@@NONEatmDCMmv4@@2.5accDCMmv4@@50hDCMmv4@@0atkDCMmv4@@10defDCMmv4@@0acmDCMmv4@@0dgeDCMmv4@@0indSTRTMmv4@@_!nnnnnnnnnindENDMmv4@@_!nDCMmv5@@Speed PeckdDCMv5@@Tweedle attacks quickly with its beak, dealing damage and inflicting bleeding.tDCMmv5@@AIRatmDCMmv5@@1accDCMmv5@@40hDCMmv5@@0atkDCMmv5@@0defDCMmv5@@0acmDCMmv5@@0dgeDCMmv5@@0indSTRTMmv5@@_!nnnnnynnnindENDMmv5@@_!";
                 //Ground
         string quakeString = "nX!wj@am!EQuaked@3MDMe#SCQuake is a ground-dwelling sentient rock structure that manipulated the terrain. As Quake is a rock, it is immune to bleeding.t192y!@:PE22GROUNDh!*##p2@<#2100at1!@!W0k90d%%23eFF200a1;c';c70dj1g><e30imnSTRT@@_!nnnnnynnnimnEND@@_!nDCMmv1@@ShakedDCMv1@@Quake shakes the terrain, loosing rocks and other debris. Type: GROUNDtDCMmv1@@GROUNDatmDCMmv1@@1.25accDCMmv1@@60hDCMmv1@@0atkDCMmv1@@0defDCMmv1@@0acmDCMmv1@@0dgeDCMmv1@@0indSTRTMmv1@@_!nnnnnnnnnindENDMmv1@@_!nDCMmv2@@RebuilddDCMv2@@Quake picks up its broken pieces, making itself stronger than before. HP and DEF are raised. Type: NONEtDCMmv2@@NONEatmDCMmv2@@0accDCMmv2@@100hDCMmv2@@50atkDCMmv2@@0defDCMmv2@@10acmDCMmv2@@0dgeDCMmv2@@0indSTRTMmv2@@_!nnnnnnnnnindENDMmv2@@_!nDCMmv3@@Boulder RushdDCMv3@@Quake throws a volley of boulders, which accelerate and deal massive damage to the target, crippling them as well. Type: GROUNDtDCMmv3@@GROUNDatmDCMmv3@@2.5accDCMmv3@@40hDCMmv3@@0atkDCMmv3@@0defDCMmv3@@0acmDCMmv3@@0dgeDCMmv3@@0indSTRTMmv3@@_!nnnynnnnnindENDMmv3@@_!nDCMmv4@@Terrain SwitchdDCMv4@@Quake switches around the terrain, raising its attack and dealing slight damage. Type: EARTHLYtDCMmv4@@EARTHLYatmDCMmv4@@0.8accDCMmv4@@40hDCMmv4@@0atkDCMmv4@@15defDCMmv4@@0acmDCMmv4@@0dgeDCMmv4@@0indSTRTMmv4@@_!nnnnnnnnnindENDMmv4@@_!nDCMmv5@@Mag 9dDCMv5@@Quake attacks with a devastating earthquake, inflicting massive damage. Recoil is significant. Type: GROUNDtDCMmv5@@GROUNDatmDCMmv5@@7accDCMmv5@@50hDCMmv5@@-75atkDCMmv5@@0defDCMmv5@@0acmDCMmv5@@0dgeDCMmv5@@0indSTRTMmv5@@_!nnnnnnnnnindENDMmv5@@_!";
-
+        string therockString = "nX!wj@am!EThe Rockd@3MDMe#SCNot Dwayne Johnson, but is still very strong. Doesn't dodge well, and accuracy is low.t192y!@:PE22GROUNDh!*##p2@<#3000at1!@!W0k190d%%23eFF200a1;c';c50dj1g><e10imnSTRT@@_!nnnnnnnnnimnEND@@_!nDCMmv1@@StrongholddDCMv1@@The Rock creates a rocky stronghold around itself, raising DEF and knocking the opponent back. Type: GROUNDtDCMmv1@@GROUNDatmDCMmv1@@1.25accDCMmv1@@90hDCMmv1@@0atkDCMmv1@@0defDCMmv1@@10acmDCMmv1@@0dgeDCMmv1@@0indSTRTMmv1@@_!nnnnnnnnnindENDMmv1@@_!nDCMmv2@@Stone DropdDCMv2@@The Rock drops a stone from a tall height onto the target, crippling them, Type: EARTHLYtDCMmv2@@EARTHLYatmDCMmv2@@0.9accDCMmv2@@80hDCMmv2@@0atkDCMmv2@@0defDCMmv2@@0acmDCMmv2@@0dgeDCMmv2@@0indSTRTMmv2@@_!nnnynnnnnindENDMmv2@@_!nDCMmv3@@Rock SmashdDCMv3@@The Rock smashes itself on the opponent, dealing a large amount of damage, but taking recoil. Type: GROUNDtDCMmv3@@GROUNDatmDCMmv3@@2accDCMmv3@@80hDCMmv3@@-10atkDCMmv3@@0defDCMmv3@@0acmDCMmv3@@0dgeDCMmv3@@0indSTRTMmv3@@_!nnnnnnnnnindENDMmv3@@_!nDCMmv4@@HeadhuntdDCMv4@@The Rock flings itself at the opponent's head, dealing high damage. Type: FORCEtDCMmv4@@FORCEatmDCMmv4@@1.9accDCMmv4@@70hDCMmv4@@0atkDCMmv4@@0defDCMmv4@@0acmDCMmv4@@0dgeDCMmv4@@0indSTRTMmv4@@_!nnnnnnnnnindENDMmv4@@_!nDCMmv5@@CrumbledDCMv5@@The Rock crumbles on the opponent, reducing its DEF stat slightly but dealing heavy damage and stupefying the opponent. Type: GROUNDtDCMmv5@@GROUNDatmDCMmv5@@2accDCMmv5@@70hDCMmv5@@0atkDCMmv5@@0defDCMmv5@@-2acmDCMmv5@@0dgeDCMmv5@@0indSTRTMmv5@@_!nnnnnnynnindENDMmv5@@_!";
+                //Electric
+        string zipString = "nX!wj@am!EZipd@3MDMe#SCZip is a fast-moving, small humanoid creature, and what he lacks in ATK and DEF he more than makes up for in ACC and DGE. He is also immune to stuns.t192y!@:PE22ELECTRICh!*##p2@<#1250at1!@!W0k50d%%23eFF50a1;c';c100dj1g><e50imnSTRT@@_!ynnnnnnnnimnEND@@_!nDCMmv1@@LightningSpeeddDCMv1@@Zip attacks faster than lightning, dealing a small amount of damage but with high accuracy. Type: ELECTRICtDCMmv1@@ELECTRICatmDCMmv1@@0.8accDCMmv1@@100hDCMmv1@@0atkDCMmv1@@0defDCMmv1@@0acmDCMmv1@@0dgeDCMmv1@@0indSTRTMmv1@@_!nnnnnnnnnindENDMmv1@@_!nDCMmv2@@Electric PunchdDCMv2@@Zip attacks quickly with a strong, electricity-filled punch. It also stuns the enemy. Type: ELECTRICtDCMmv2@@ELECTRICatmDCMmv2@@1.5accDCMmv2@@100hDCMmv2@@0atkDCMmv2@@0defDCMmv2@@0acmDCMmv2@@0dgeDCMmv2@@0indSTRTMmv2@@_!ynnnnnnnnindENDMmv2@@_!nDCMmv3@@Neuron ZapdDCMv3@@Zip attacks the enemy with a zap to their nervous system, dealing damage and dazing them. Type: ELECTRICtDCMmv3@@ELECTRICatmDCMmv3@@0.9accDCMmv3@@100hDCMmv3@@0atkDCMmv3@@0defDCMmv3@@0acmDCMmv3@@0dgeDCMmv3@@0indSTRTMmv3@@_!nnnnnnnnyindENDMmv3@@_!nDCMmv4@@Vanishing ZapdDCMv4@@Zip quickly zaps the enemy, and then whips out of sight, slightly raising DEF. Type: ELECTRICtDCMmv4@@ELECTRICatmDCMmv4@@0.75accDCMmv4@@90hDCMmv4@@0atkDCMmv4@@0defDCMmv4@@5acmDCMmv4@@0dgeDCMmv4@@0indSTRTMmv4@@_!nnnnnnnnnindENDMmv4@@_!nDCMmv5@@ShortdDCMv5@@Zip shorts his own circuits, releasing a deadly shockwave that deals recoil damage but also a devastating amount of damage, stunning and dazing the enemy. Type: ELECTRICtDCMmv5@@ELECTRICatmDCMmv5@@2accDCMmv5@@90hDCMmv5@@-15atkDCMmv5@@0defDCMmv5@@0acmDCMmv5@@0dgeDCMmv5@@0indSTRTMmv5@@_!ynnnnnnnyindENDMmv5@@_!";
+        string magnaurString = "nX!wj@am!EMagnaurd@3MDMe#SCMagnaur is a magnetic field resembling an ancient dinosaur, and is capable of utilizing both Electric-type and Metal-type moves.t192y!@:PE22ELECTRICh!*##p2@<#1850at1!@!W0k115d%%23eFF140a1;c';c70dj1g><e40imnSTRT@@_!nnnnnnnnnimnEND@@_!nDCMmv1@@AttractdDCMv1@@Magnaur attracts the target to another magnetic object, then zaps the target with an electric current, dealing heavy damage. Type: ELECTRICtDCMmv1@@ELECTRICatmDCMmv1@@2accDCMmv1@@60hDCMmv1@@0atkDCMmv1@@0defDCMmv1@@0acmDCMmv1@@0dgeDCMmv1@@0indSTRTMmv1@@_!nnnnnnnnnindENDMmv1@@_!nDCMmv2@@ChanneldDCMv2@@Magnaur channels electric currents through its body, then expels them, dealing damage and raising ATK and DEF. Type: ELECTRICtDCMmv2@@ELECTRICatmDCMmv2@@1accDCMmv2@@50hDCMmv2@@0atkDCMmv2@@10defDCMmv2@@10acmDCMmv2@@0dgeDCMmv2@@0indSTRTMmv2@@_!nnnnnnnnnindENDMmv2@@_!nDCMmv3@@Magnet TossdDCMv3@@Magnaur tosses a heavy magnet at the target, dealing heavy damage and pinning them to the nearest metal obkect, weakening them. Type: METALtDCMmv3@@METALatmDCMmv3@@1.5accDCMmv3@@50hDCMmv3@@0atkDCMmv3@@0defDCMmv3@@0acmDCMmv3@@0dgeDCMmv3@@0indSTRTMmv3@@_!nnnnnnnynindENDMmv3@@_!nDCMmv4@@Dual ShockdDCMv4@@Magnaur sends shockwaves from two opposing magnets that collide with the target. Type: ELECTRICtDCMmv4@@ELECTRICatmDCMmv4@@1.75accDCMmv4@@40hDCMmv4@@0atkDCMmv4@@0defDCMmv4@@0acmDCMmv4@@0dgeDCMmv4@@0indSTRTMmv4@@_!nnnnnnnnnindENDMmv4@@_!nDCMmv5@@Magnet LeechdDCMv5@@Magnaur uses magnetic force to pull away energy from the opponent and give it to itself, dealing low damage but healing itself. Type: ELECTRICtDCMmv5@@ELECTRICatmDCMmv5@@0.75accDCMmv5@@50hDCMmv5@@25atkDCMmv5@@0defDCMmv5@@0acmDCMmv5@@0dgeDCMmv5@@0indSTRTMmv5@@_!nnnnnnnnnindENDMmv5@@_!";
 
         //For use in-EvE-simulation:
         private Character player1;
@@ -45,27 +48,62 @@ namespace DCTBFightingSimulator
             startingPanel.Enabled = true;
             startingPanel.BringToFront();
             startingPanel.Show();
+            //Fill in Changelog and Roadmap
+            fillChangelog();
+            fillRoadmap();
+        }
+        
+        //Changelog and Roadmap
+        public void fillChangelog()
+        {
+            //Current version: 0.0.1
+            changelogText.AppendText("VERSON: 0.0.1");
+            changelogText.AppendText(Environment.NewLine + "- Initial release of DCTBFightingSimulator!");
+            changelogText.AppendText(Environment.NewLine + "- Current features:");
+            changelogText.AppendText(Environment.NewLine + "-- 30 Characters (2 of each type)");
+            changelogText.AppendText(Environment.NewLine + "-- Computer vs. Computer Simulations");
+            changelogText.AppendText(Environment.NewLine + "--- Randomized AI");
+            changelogText.AppendText(Environment.NewLine + "--- Live stat changes and text window of events");
+            changelogText.AppendText(Environment.NewLine + "-- Character Database");
+            changelogText.AppendText(Environment.NewLine + "-- Create-A-Character feature (please submit builds to the github (use the 'View Page' link))");
+            changelogText.AppendText(Environment.NewLine + Environment.NewLine + "This is only the initial release with baseline simulations working; expect PvE and local PvP features to come soon (see the roadmap for details!) Please bring up any issues, questions, user-submitted builds, etc. on the github page.");
+            changelogText.AppendText(Environment.NewLine + "Additionally, every time there is an updated involving additional characters, new AI, or new gameplay features, an official tournament will be run. The link to view tournament results of the simulation between all characters will be found here. Custom-created, user-submitted builds will also be a part of the competition!");
+            changelogText.AppendText(Environment.NewLine + Environment.NewLine + "View the most recent tournament: https://challonge.com/bz19xyip");
+            changelogText.AppendText(Environment.NewLine + "Tournament Archives:");
+            changelogText.AppendText(Environment.NewLine + "No past tournaments to view.");
+        }
+        public void fillRoadmap()
+        {
+            roadmapText.AppendText("Roadmap (categorized):");
+            roadmapText.AppendText(Environment.NewLine + Environment.NewLine + "Overarching Additions:");
+            roadmapText.AppendText(Environment.NewLine + "- PvE functionality");
+            roadmapText.AppendText(Environment.NewLine + "- PvP functionality");
+            roadmapText.AppendText(Environment.NewLine + "- New Computer AIs");
+            roadmapText.AppendText(Environment.NewLine + Environment.NewLine + "Additions:");
+            roadmapText.AppendText(Environment.NewLine + "- Update EvE UI to show more stats/info at once");
+            roadmapText.AppendText(Environment.NewLine + "- Update EvE to allow multiple game speeds/exiting/resets during play");
+            roadmapText.AppendText(Environment.NewLine + "- Update information displayed when attacking (i.e. mentioning the specific attack, more specific details on effects, etc.");
+            roadmapText.AppendText(Environment.NewLine + "- Balancing changes");
+            roadmapText.AppendText(Environment.NewLine + "- Incorporating any user-sumbitted builds during development");
+            roadmapText.AppendText(Environment.NewLine + "- Tooltips/Additional Info for all aspects of the editor, simulation, etc.");
+            roadmapText.AppendText(Environment.NewLine + Environment.NewLine + "Other/Random Additions:");
+            roadmapText.AppendText(Environment.NewLine + "- Streamlining load times");
+            roadmapText.AppendText(Environment.NewLine + "- Consolidating code / simplifying other events");
+            roadmapText.AppendText(Environment.NewLine + Environment.NewLine + "Don't hesitate to submit your builds! They will be implemented in the very next release after submission, and will show up in the tournament.");
         }
 
         //Button methods
         private void button1_Click(object sender, EventArgs e)
         {
-            System.Windows.Forms.MessageBox.Show("Welcome to DCTBFightingSimulator v0.0.1. Please visit www.github.com/CJ5-Z/DCTBFightingSimulator to view the main page. In this simulator, you can use pre-existing builds or create your own to engage in simulated or interactive 1v1 fights in EvE, PvE, or PvP. You can also submit your own builds by generating an export string for any of your created builds and submitting the string through github. Please see the tooltips for additional information on the different aspects of the simulator; a comprehensive tutorial and instruction will be coming soon in a later version. Feel free to leave any questions, comments, or suggestions on the github page.");
+            disableAllElementalUI();
+            startingPanel.Enabled = true;
+            startingPanel.BringToFront();
+            startingPanel.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("http://www.github.com/CJ5-Z/DCTBFightingSimulator");
-        }
-
-        private void changelogButton_Click(object sender, EventArgs e)
-        {
-            System.Windows.Forms.MessageBox.Show("Changelog (v0.0.1):" + Environment.NewLine + "- Initial version of DCTBFightingSimulator! Contains EvE, PvE, and PvP base functionality with a collection of quite a few different units. Additionally, functionality for creating a character is available.");
-        }
-
-        private void roadmapButton_Click(object sender, EventArgs e)
-        {
-            System.Windows.Forms.MessageBox.Show("Roadmap:" + Environment.NewLine + "- Updated UI and UI cleanup" + Environment.NewLine + "- New, unique characters and movesets" + Environment.NewLine + "- Tutorial and further explanation of mechanics and functions");
         }
 
         //Elemental UI methods
@@ -92,8 +130,6 @@ namespace DCTBFightingSimulator
             pvpButton.Enabled = false;
             createCharButton.Enabled = false;
             charDatabaseButton.Enabled = false;
-            changelogButton.Enabled = false;
-            roadmapButton.Enabled = false;
         }
         public void enableAllButtons()
         {
@@ -105,8 +141,6 @@ namespace DCTBFightingSimulator
             pvpButton.Enabled = true;
             createCharButton.Enabled = true;
             charDatabaseButton.Enabled = true;
-            changelogButton.Enabled = true;
-            roadmapButton.Enabled = true;
         }
         public void hideAllCharacterCreation()
         {
@@ -793,6 +827,7 @@ namespace DCTBFightingSimulator
             //Modifiers
             float atkStatModValPsn = 1f;
             float atkStatModValWk = 1f;
+            float effectivenessModVal = 1f;
             if(player1.getIsPoisoned() == true)
             {
                 atkStatModValPsn = 0.9f;
@@ -805,12 +840,135 @@ namespace DCTBFightingSimulator
             if(move == 1)
             {
                 totalAcc1 = player1.getAcc() + player1.getMv1Acc() - player2.getDge();
+                //Check effectiveness
+                    //Effective
+                if(player1.getMv1Type() == "NONE" && player2.getType() == "VOID")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv1Type() == "VOID" && player2.getType() == "EARTHLY")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv1Type() == "EARTHLY" && player2.getType() == "AIR")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv1Type() == "AIR" && player2.getType() == "GROUND")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv1Type() == "GROUND" && player2.getType() == "ELECTRIC")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv1Type() == "ELECTRIC" && player2.getType() == "METAL")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv1Type() == "METAL" && player2.getType() == "INTELLIGENT")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv1Type() == "INTELLIGENT" && player2.getType() == "FORCE")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv1Type() == "FORCE" && player2.getType() == "ICE")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv1Type() == "ICE" && player2.getType() == "FIRE")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv1Type() == "FIRE" && player2.getType() == "NATURAL")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv1Type() == "NATURAL" && player2.getType() == "PSYCHIC")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv1Type() == "PSYCHIC" && player2.getType() == "MORTAL")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv1Type() == "MORTAL" && player2.getType() == "GHOST")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv1Type() == "GHOST" && player2.getType() == "NONE")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                    //Not effective
+                if (player1.getMv1Type() == "NONE" && player2.getType() == "GHOST")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv1Type() == "VOID" && player2.getType() == "NONE")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv1Type() == "EARTHLY" && player2.getType() == "VOID")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv1Type() == "AIR" && player2.getType() == "EARTHLY")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv1Type() == "GROUND" && player2.getType() == "AIR")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv1Type() == "ELECTRIC" && player2.getType() == "GROUND")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv1Type() == "METAL" && player2.getType() == "ELECTRIC")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv1Type() == "INTELLIGENT" && player2.getType() == "METAL")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv1Type() == "FORCE" && player2.getType() == "INTELLIGENT")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv1Type() == "ICE" && player2.getType() == "FORCE")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv1Type() == "FIRE" && player2.getType() == "ICE")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv1Type() == "NATURAL" && player2.getType() == "FIRE")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv1Type() == "PSYCHIC" && player2.getType() == "NATURAL")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv1Type() == "MORTAL" && player2.getType() == "PSYCHIC")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv1Type() == "GHOST" && player2.getType() == "MORTAL")
+                {
+                    effectivenessModVal = 0.75f;
+                }
                 //Check if it was dodged
                 if (totalAcc1 >= 100)
                 {
                     //The move lands
                     eveSimText.AppendText(Environment.NewLine + "Player 1 lands their Move 1!");
-                    int totalAtk = (int)(player1.getAtk() * player1.getMv1M() * atkStatModValPsn * atkStatModValWk);
+                    int totalAtk = (int)(player1.getAtk() * player1.getMv1M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
                     int damageDealt = totalAtk ^ 2 / player2.getDef();
                     eveSimText.AppendText(Environment.NewLine + "Player 1 deals " + damageDealt.ToString() + " damage to Player 2.");
                     player2.modifyHP(-damageDealt);
@@ -879,7 +1037,7 @@ namespace DCTBFightingSimulator
                     {
                         //The move lands
                         eveSimText.AppendText(Environment.NewLine + "Player 1 lands their Move 1!");
-                        int totalAtk = (int)(player1.getAtk() * player1.getMv1M() * atkStatModValPsn * atkStatModValWk);
+                        int totalAtk = (int)(player1.getAtk() * player1.getMv1M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
                         int damageDealt = totalAtk ^ 2 / player2.getDef();
                         eveSimText.AppendText(Environment.NewLine + "Player 1 deals " + damageDealt.ToString() + " damage to Player 2.");
                         player2.modifyHP(-damageDealt);
@@ -956,12 +1114,135 @@ namespace DCTBFightingSimulator
             if (move == 2)
             {
                 totalAcc1 = player1.getAcc() + player1.getMv2Acc() - player2.getDge();
+                //Check effectiveness
+                //Effective
+                if (player1.getMv2Type() == "NONE" && player2.getType() == "VOID")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv2Type() == "VOID" && player2.getType() == "EARTHLY")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv2Type() == "EARTHLY" && player2.getType() == "AIR")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv2Type() == "AIR" && player2.getType() == "GROUND")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv2Type() == "GROUND" && player2.getType() == "ELECTRIC")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv2Type() == "ELECTRIC" && player2.getType() == "METAL")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv2Type() == "METAL" && player2.getType() == "INTELLIGENT")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv2Type() == "INTELLIGENT" && player2.getType() == "FORCE")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv2Type() == "FORCE" && player2.getType() == "ICE")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv2Type() == "ICE" && player2.getType() == "FIRE")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv2Type() == "FIRE" && player2.getType() == "NATURAL")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv2Type() == "NATURAL" && player2.getType() == "PSYCHIC")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv2Type() == "PSYCHIC" && player2.getType() == "MORTAL")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv2Type() == "MORTAL" && player2.getType() == "GHOST")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv2Type() == "GHOST" && player2.getType() == "NONE")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                //Not effective
+                if (player1.getMv2Type() == "NONE" && player2.getType() == "GHOST")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv2Type() == "VOID" && player2.getType() == "NONE")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv2Type() == "EARTHLY" && player2.getType() == "VOID")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv2Type() == "AIR" && player2.getType() == "EARTHLY")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv2Type() == "GROUND" && player2.getType() == "AIR")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv2Type() == "ELECTRIC" && player2.getType() == "GROUND")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv2Type() == "METAL" && player2.getType() == "ELECTRIC")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv2Type() == "INTELLIGENT" && player2.getType() == "METAL")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv2Type() == "FORCE" && player2.getType() == "INTELLIGENT")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv2Type() == "ICE" && player2.getType() == "FORCE")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv2Type() == "FIRE" && player2.getType() == "ICE")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv2Type() == "NATURAL" && player2.getType() == "FIRE")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv2Type() == "PSYCHIC" && player2.getType() == "NATURAL")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv2Type() == "MORTAL" && player2.getType() == "PSYCHIC")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv2Type() == "GHOST" && player2.getType() == "MORTAL")
+                {
+                    effectivenessModVal = 0.75f;
+                }
                 //Check if it was dodged
                 if (totalAcc1 >= 100)
                 {
                     //The move lands
                     eveSimText.AppendText(Environment.NewLine + "Player 1 lands their Move 2!");
-                    int totalAtk = (int)(player1.getAtk() * player1.getMv2M() * atkStatModValPsn * atkStatModValWk);
+                    int totalAtk = (int)(player1.getAtk() * player1.getMv2M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
                     int damageDealt = totalAtk ^ 2 / player2.getDef();
                     eveSimText.AppendText(Environment.NewLine + "Player 1 deals " + damageDealt.ToString() + " damage to Player 2.");
                     player2.modifyHP(-damageDealt);
@@ -1030,7 +1311,7 @@ namespace DCTBFightingSimulator
                     {
                         //The move lands
                         eveSimText.AppendText(Environment.NewLine + "Player 1 lands their Move 2!");
-                        int totalAtk = (int)(player1.getAtk() * player1.getMv2M() * atkStatModValPsn * atkStatModValWk);
+                        int totalAtk = (int)(player1.getAtk() * player1.getMv2M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
                         int damageDealt = totalAtk ^ 2 / player2.getDef();
                         eveSimText.AppendText(Environment.NewLine + "Player 1 deals " + damageDealt.ToString() + " damage to Player 2.");
                         player2.modifyHP(-damageDealt);
@@ -1107,12 +1388,135 @@ namespace DCTBFightingSimulator
             if (move == 3)
             {
                 totalAcc1 = player1.getAcc() + player1.getMv3Acc() - player2.getDge();
+                //Check effectiveness
+                //Effective
+                if (player1.getMv3Type() == "NONE" && player2.getType() == "VOID")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv3Type() == "VOID" && player2.getType() == "EARTHLY")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv3Type() == "EARTHLY" && player2.getType() == "AIR")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv3Type() == "AIR" && player2.getType() == "GROUND")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv3Type() == "GROUND" && player2.getType() == "ELECTRIC")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv3Type() == "ELECTRIC" && player2.getType() == "METAL")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv3Type() == "METAL" && player2.getType() == "INTELLIGENT")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv3Type() == "INTELLIGENT" && player2.getType() == "FORCE")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv3Type() == "FORCE" && player2.getType() == "ICE")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv3Type() == "ICE" && player2.getType() == "FIRE")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv3Type() == "FIRE" && player2.getType() == "NATURAL")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv3Type() == "NATURAL" && player2.getType() == "PSYCHIC")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv3Type() == "PSYCHIC" && player2.getType() == "MORTAL")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv3Type() == "MORTAL" && player2.getType() == "GHOST")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv3Type() == "GHOST" && player2.getType() == "NONE")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                //Not effective
+                if (player1.getMv3Type() == "NONE" && player2.getType() == "GHOST")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv3Type() == "VOID" && player2.getType() == "NONE")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv3Type() == "EARTHLY" && player2.getType() == "VOID")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv3Type() == "AIR" && player2.getType() == "EARTHLY")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv3Type() == "GROUND" && player2.getType() == "AIR")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv3Type() == "ELECTRIC" && player2.getType() == "GROUND")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv3Type() == "METAL" && player2.getType() == "ELECTRIC")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv3Type() == "INTELLIGENT" && player2.getType() == "METAL")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv3Type() == "FORCE" && player2.getType() == "INTELLIGENT")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv3Type() == "ICE" && player2.getType() == "FORCE")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv3Type() == "FIRE" && player2.getType() == "ICE")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv3Type() == "NATURAL" && player2.getType() == "FIRE")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv3Type() == "PSYCHIC" && player2.getType() == "NATURAL")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv3Type() == "MORTAL" && player2.getType() == "PSYCHIC")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv3Type() == "GHOST" && player2.getType() == "MORTAL")
+                {
+                    effectivenessModVal = 0.75f;
+                }
                 //Check if it was dodged
                 if (totalAcc1 >= 100)
                 {
                     //The move lands
                     eveSimText.AppendText(Environment.NewLine + "Player 1 lands their Move 3!");
-                    int totalAtk = (int)(player1.getAtk() * player1.getMv3M() * atkStatModValPsn * atkStatModValWk);
+                    int totalAtk = (int)(player1.getAtk() * player1.getMv3M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
                     int damageDealt = totalAtk ^ 2 / player2.getDef();
                     eveSimText.AppendText(Environment.NewLine + "Player 1 deals " + damageDealt.ToString() + " damage to Player 2.");
                     player2.modifyHP(-damageDealt);
@@ -1181,7 +1585,7 @@ namespace DCTBFightingSimulator
                     {
                         //The move lands
                         eveSimText.AppendText(Environment.NewLine + "Player 1 lands their Move 3!");
-                        int totalAtk = (int)(player1.getAtk() * player1.getMv3M() * atkStatModValPsn * atkStatModValWk);
+                        int totalAtk = (int)(player1.getAtk() * player1.getMv3M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
                         int damageDealt = totalAtk ^ 2 / player2.getDef();
                         eveSimText.AppendText(Environment.NewLine + "Player 1 deals " + damageDealt.ToString() + " damage to Player 2.");
                         player2.modifyHP(-damageDealt);
@@ -1258,12 +1662,135 @@ namespace DCTBFightingSimulator
             if (move == 4)
             {
                 totalAcc1 = player1.getAcc() + player1.getMv4Acc() - player2.getDge();
+                //Check effectiveness
+                //Effective
+                if (player1.getMv4Type() == "NONE" && player2.getType() == "VOID")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv4Type() == "VOID" && player2.getType() == "EARTHLY")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv4Type() == "EARTHLY" && player2.getType() == "AIR")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv4Type() == "AIR" && player2.getType() == "GROUND")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv4Type() == "GROUND" && player2.getType() == "ELECTRIC")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv4Type() == "ELECTRIC" && player2.getType() == "METAL")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv4Type() == "METAL" && player2.getType() == "INTELLIGENT")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv4Type() == "INTELLIGENT" && player2.getType() == "FORCE")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv4Type() == "FORCE" && player2.getType() == "ICE")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv4Type() == "ICE" && player2.getType() == "FIRE")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv4Type() == "FIRE" && player2.getType() == "NATURAL")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv4Type() == "NATURAL" && player2.getType() == "PSYCHIC")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv4Type() == "PSYCHIC" && player2.getType() == "MORTAL")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv4Type() == "MORTAL" && player2.getType() == "GHOST")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv4Type() == "GHOST" && player2.getType() == "NONE")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                //Not effective
+                if (player1.getMv4Type() == "NONE" && player2.getType() == "GHOST")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv4Type() == "VOID" && player2.getType() == "NONE")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv4Type() == "EARTHLY" && player2.getType() == "VOID")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv4Type() == "AIR" && player2.getType() == "EARTHLY")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv4Type() == "GROUND" && player2.getType() == "AIR")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv4Type() == "ELECTRIC" && player2.getType() == "GROUND")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv4Type() == "METAL" && player2.getType() == "ELECTRIC")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv4Type() == "INTELLIGENT" && player2.getType() == "METAL")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv4Type() == "FORCE" && player2.getType() == "INTELLIGENT")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv4Type() == "ICE" && player2.getType() == "FORCE")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv4Type() == "FIRE" && player2.getType() == "ICE")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv4Type() == "NATURAL" && player2.getType() == "FIRE")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv4Type() == "PSYCHIC" && player2.getType() == "NATURAL")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv4Type() == "MORTAL" && player2.getType() == "PSYCHIC")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv4Type() == "GHOST" && player2.getType() == "MORTAL")
+                {
+                    effectivenessModVal = 0.75f;
+                }
                 //Check if it was dodged
                 if (totalAcc1 >= 100)
                 {
                     //The move lands
                     eveSimText.AppendText(Environment.NewLine + "Player 1 lands their Move 4!");
-                    int totalAtk = (int)(player1.getAtk() * player1.getMv4M() * atkStatModValPsn * atkStatModValWk);
+                    int totalAtk = (int)(player1.getAtk() * player1.getMv4M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
                     int damageDealt = totalAtk ^ 2 / player2.getDef();
                     eveSimText.AppendText(Environment.NewLine + "Player 1 deals " + damageDealt.ToString() + " damage to Player 2.");
                     player2.modifyHP(-damageDealt);
@@ -1332,7 +1859,7 @@ namespace DCTBFightingSimulator
                     {
                         //The move lands
                         eveSimText.AppendText(Environment.NewLine + "Player 1 lands their Move 4!");
-                        int totalAtk = (int)(player1.getAtk() * player1.getMv4M() * atkStatModValPsn * atkStatModValWk);
+                        int totalAtk = (int)(player1.getAtk() * player1.getMv4M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
                         int damageDealt = totalAtk ^ 2 / player2.getDef();
                         eveSimText.AppendText(Environment.NewLine + "Player 1 deals " + damageDealt.ToString() + " damage to Player 2.");
                         player2.modifyHP(-damageDealt);
@@ -1409,12 +1936,135 @@ namespace DCTBFightingSimulator
             if (move == 5)
             {
                 totalAcc1 = player1.getAcc() + player1.getMv5Acc() - player2.getDge();
+                //Check effectiveness
+                //Effective
+                if (player1.getMv5Type() == "NONE" && player2.getType() == "VOID")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv5Type() == "VOID" && player2.getType() == "EARTHLY")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv5Type() == "EARTHLY" && player2.getType() == "AIR")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv5Type() == "AIR" && player2.getType() == "GROUND")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv5Type() == "GROUND" && player2.getType() == "ELECTRIC")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv5Type() == "ELECTRIC" && player2.getType() == "METAL")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv5Type() == "METAL" && player2.getType() == "INTELLIGENT")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv5Type() == "INTELLIGENT" && player2.getType() == "FORCE")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv5Type() == "FORCE" && player2.getType() == "ICE")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv5Type() == "ICE" && player2.getType() == "FIRE")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv5Type() == "FIRE" && player2.getType() == "NATURAL")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv5Type() == "NATURAL" && player2.getType() == "PSYCHIC")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv5Type() == "PSYCHIC" && player2.getType() == "MORTAL")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv5Type() == "MORTAL" && player2.getType() == "GHOST")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player1.getMv5Type() == "GHOST" && player2.getType() == "NONE")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                //Not effective
+                if (player1.getMv5Type() == "NONE" && player2.getType() == "GHOST")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv5Type() == "VOID" && player2.getType() == "NONE")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv5Type() == "EARTHLY" && player2.getType() == "VOID")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv5Type() == "AIR" && player2.getType() == "EARTHLY")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv5Type() == "GROUND" && player2.getType() == "AIR")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv5Type() == "ELECTRIC" && player2.getType() == "GROUND")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv5Type() == "METAL" && player2.getType() == "ELECTRIC")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv5Type() == "INTELLIGENT" && player2.getType() == "METAL")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv5Type() == "FORCE" && player2.getType() == "INTELLIGENT")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv5Type() == "ICE" && player2.getType() == "FORCE")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv5Type() == "FIRE" && player2.getType() == "ICE")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv5Type() == "NATURAL" && player2.getType() == "FIRE")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv5Type() == "PSYCHIC" && player2.getType() == "NATURAL")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv5Type() == "MORTAL" && player2.getType() == "PSYCHIC")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player1.getMv5Type() == "GHOST" && player2.getType() == "MORTAL")
+                {
+                    effectivenessModVal = 0.75f;
+                }
                 //Check if it was dodged
                 if (totalAcc1 >= 100)
                 {
                     //The move lands
                     eveSimText.AppendText(Environment.NewLine + "Player 1 lands their Move 5!");
-                    int totalAtk = (int)(player1.getAtk() * player1.getMv4M() * atkStatModValPsn * atkStatModValWk);
+                    int totalAtk = (int)(player1.getAtk() * player1.getMv4M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
                     int damageDealt = totalAtk ^ 2 / player2.getDef();
                     eveSimText.AppendText(Environment.NewLine + "Player 1 deals " + damageDealt.ToString() + " damage to Player 2.");
                     player2.modifyHP(-damageDealt);
@@ -1483,7 +2133,7 @@ namespace DCTBFightingSimulator
                     {
                         //The move lands
                         eveSimText.AppendText(Environment.NewLine + "Player 1 lands their Move 5!");
-                        int totalAtk = (int)(player1.getAtk() * player1.getMv4M() * atkStatModValPsn * atkStatModValWk);
+                        int totalAtk = (int)(player1.getAtk() * player1.getMv4M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
                         int damageDealt = totalAtk ^ 2 / player2.getDef();
                         eveSimText.AppendText(Environment.NewLine + "Player 1 deals " + damageDealt.ToString() + " damage to Player 2.");
                         player2.modifyHP(-damageDealt);
@@ -1666,6 +2316,7 @@ namespace DCTBFightingSimulator
             //Modifiers
             float atkStatModValPsn = 1f;
             float atkStatModValWk = 1f;
+            float effectivenessModVal = 1f;
             if (player2.getIsPoisoned() == true)
             {
                 atkStatModValPsn = 0.9f;
@@ -1678,12 +2329,135 @@ namespace DCTBFightingSimulator
             if (move == 1)
             {
                 totalAcc1 = player2.getAcc() + player2.getMv1Acc() - player1.getDge();
+                //Check effectiveness
+                //Effective
+                if (player2.getMv1Type() == "NONE" && player1.getType() == "VOID")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv1Type() == "VOID" && player1.getType() == "EARTHLY")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv1Type() == "EARTHLY" && player1.getType() == "AIR")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv1Type() == "AIR" && player1.getType() == "GROUND")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv1Type() == "GROUND" && player1.getType() == "ELECTRIC")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv1Type() == "ELECTRIC" && player1.getType() == "METAL")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv1Type() == "METAL" && player1.getType() == "INTELLIGENT")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv1Type() == "INTELLIGENT" && player1.getType() == "FORCE")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv1Type() == "FORCE" && player1.getType() == "ICE")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv1Type() == "ICE" && player1.getType() == "FIRE")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv1Type() == "FIRE" && player1.getType() == "NATURAL")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv1Type() == "NATURAL" && player1.getType() == "PSYCHIC")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv1Type() == "PSYCHIC" && player1.getType() == "MORTAL")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv1Type() == "MORTAL" && player1.getType() == "GHOST")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv1Type() == "GHOST" && player1.getType() == "NONE")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                //Not Effective
+                if (player2.getMv1Type() == "NONE" && player1.getType() == "GHOST")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv1Type() == "VOID" && player1.getType() == "NONE")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv1Type() == "EARTHLY" && player1.getType() == "VOID")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv1Type() == "AIR" && player1.getType() == "EARTHLY")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv1Type() == "GROUND" && player1.getType() == "AIR")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv1Type() == "ELECTRIC" && player1.getType() == "GROUND")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv1Type() == "METAL" && player1.getType() == "ELECTRIC")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv1Type() == "INTELLIGENT" && player1.getType() == "METAL")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv1Type() == "FORCE" && player1.getType() == "INTELLIGENT")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv1Type() == "ICE" && player1.getType() == "FORCE")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv1Type() == "FIRE" && player1.getType() == "ICE")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv1Type() == "NATURAL" && player1.getType() == "FIRE")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv1Type() == "PSYCHIC" && player1.getType() == "NATURAL")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv1Type() == "MORTAL" && player1.getType() == "PSYCHIC")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv1Type() == "GHOST" && player1.getType() == "MORTAL")
+                {
+                    effectivenessModVal = 0.75f;
+                }
                 //Check if it was dodged
                 if (totalAcc1 >= 100)
                 {
                     //The move lands
                     eveSimText.AppendText(Environment.NewLine + "Player 2 lands their Move 1!");
-                    int totalAtk = (int)(player2.getAtk() * player2.getMv1M() * atkStatModValPsn * atkStatModValWk);
+                    int totalAtk = (int)(player2.getAtk() * player2.getMv1M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
                     int damageDealt = totalAtk ^ 2 / player1.getDef();
                     eveSimText.AppendText(Environment.NewLine + "Player 2 deals " + damageDealt.ToString() + " damage to Player 1.");
                     player1.modifyHP(-damageDealt);
@@ -1752,7 +2526,7 @@ namespace DCTBFightingSimulator
                     {
                         //The move lands
                         eveSimText.AppendText(Environment.NewLine + "Player 2 lands their Move 1!");
-                        int totalAtk = (int)(player2.getAtk() * player2.getMv1M() * atkStatModValPsn * atkStatModValWk);
+                        int totalAtk = (int)(player2.getAtk() * player2.getMv1M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
                         int damageDealt = totalAtk ^ 2 / player1.getDef();
                         eveSimText.AppendText(Environment.NewLine + "Player 2 deals " + damageDealt.ToString() + " damage to Player 1.");
                         player1.modifyHP(-damageDealt);
@@ -1829,12 +2603,135 @@ namespace DCTBFightingSimulator
             if (move == 2)
             {
                 totalAcc1 = player2.getAcc() + player2.getMv2Acc() - player1.getDge();
+                //Check effectiveness
+                //Effective
+                if (player2.getMv2Type() == "NONE" && player1.getType() == "VOID")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv2Type() == "VOID" && player1.getType() == "EARTHLY")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv2Type() == "EARTHLY" && player1.getType() == "AIR")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv2Type() == "AIR" && player1.getType() == "GROUND")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv2Type() == "GROUND" && player1.getType() == "ELECTRIC")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv2Type() == "ELECTRIC" && player1.getType() == "METAL")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv2Type() == "METAL" && player1.getType() == "INTELLIGENT")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv2Type() == "INTELLIGENT" && player1.getType() == "FORCE")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv2Type() == "FORCE" && player1.getType() == "ICE")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv2Type() == "ICE" && player1.getType() == "FIRE")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv2Type() == "FIRE" && player1.getType() == "NATURAL")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv2Type() == "NATURAL" && player1.getType() == "PSYCHIC")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv2Type() == "PSYCHIC" && player1.getType() == "MORTAL")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv2Type() == "MORTAL" && player1.getType() == "GHOST")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv2Type() == "GHOST" && player1.getType() == "NONE")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                //Not Effective
+                if (player2.getMv2Type() == "NONE" && player1.getType() == "GHOST")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv2Type() == "VOID" && player1.getType() == "NONE")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv2Type() == "EARTHLY" && player1.getType() == "VOID")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv2Type() == "AIR" && player1.getType() == "EARTHLY")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv2Type() == "GROUND" && player1.getType() == "AIR")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv2Type() == "ELECTRIC" && player1.getType() == "GROUND")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv2Type() == "METAL" && player1.getType() == "ELECTRIC")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv2Type() == "INTELLIGENT" && player1.getType() == "METAL")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv2Type() == "FORCE" && player1.getType() == "INTELLIGENT")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv2Type() == "ICE" && player1.getType() == "FORCE")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv2Type() == "FIRE" && player1.getType() == "ICE")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv2Type() == "NATURAL" && player1.getType() == "FIRE")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv2Type() == "PSYCHIC" && player1.getType() == "NATURAL")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv2Type() == "MORTAL" && player1.getType() == "PSYCHIC")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv2Type() == "GHOST" && player1.getType() == "MORTAL")
+                {
+                    effectivenessModVal = 0.75f;
+                }
                 //Check if it was dodged
                 if (totalAcc1 >= 100)
                 {
                     //The move lands
                     eveSimText.AppendText(Environment.NewLine + "Player 2 lands their Move 2!");
-                    int totalAtk = (int)(player2.getAtk() * player2.getMv2M() * atkStatModValPsn * atkStatModValWk);
+                    int totalAtk = (int)(player2.getAtk() * player2.getMv2M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
                     int damageDealt = totalAtk ^ 2 / player1.getDef();
                     eveSimText.AppendText(Environment.NewLine + "Player 2 deals " + damageDealt.ToString() + " damage to Player 1.");
                     player1.modifyHP(-damageDealt);
@@ -1903,7 +2800,7 @@ namespace DCTBFightingSimulator
                     {
                         //The move lands
                         eveSimText.AppendText(Environment.NewLine + "Player 2 lands their Move 2!");
-                        int totalAtk = (int)(player2.getAtk() * player2.getMv2M() * atkStatModValPsn * atkStatModValWk);
+                        int totalAtk = (int)(player2.getAtk() * player2.getMv2M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
                         int damageDealt = totalAtk ^ 2 / player1.getDef();
                         eveSimText.AppendText(Environment.NewLine + "Player 2 deals " + damageDealt.ToString() + " damage to Player 1.");
                         player1.modifyHP(-damageDealt);
@@ -1980,12 +2877,135 @@ namespace DCTBFightingSimulator
             if (move == 3)
             {
                 totalAcc1 = player2.getAcc() + player2.getMv3Acc() - player1.getDge();
+                //Check effectiveness
+                //Effective
+                if (player2.getMv3Type() == "NONE" && player1.getType() == "VOID")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv3Type() == "VOID" && player1.getType() == "EARTHLY")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv3Type() == "EARTHLY" && player1.getType() == "AIR")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv3Type() == "AIR" && player1.getType() == "GROUND")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv3Type() == "GROUND" && player1.getType() == "ELECTRIC")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv3Type() == "ELECTRIC" && player1.getType() == "METAL")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv3Type() == "METAL" && player1.getType() == "INTELLIGENT")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv3Type() == "INTELLIGENT" && player1.getType() == "FORCE")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv3Type() == "FORCE" && player1.getType() == "ICE")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv3Type() == "ICE" && player1.getType() == "FIRE")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv3Type() == "FIRE" && player1.getType() == "NATURAL")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv3Type() == "NATURAL" && player1.getType() == "PSYCHIC")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv3Type() == "PSYCHIC" && player1.getType() == "MORTAL")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv3Type() == "MORTAL" && player1.getType() == "GHOST")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv3Type() == "GHOST" && player1.getType() == "NONE")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                //Not Effective
+                if (player2.getMv3Type() == "NONE" && player1.getType() == "GHOST")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv3Type() == "VOID" && player1.getType() == "NONE")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv3Type() == "EARTHLY" && player1.getType() == "VOID")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv3Type() == "AIR" && player1.getType() == "EARTHLY")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv3Type() == "GROUND" && player1.getType() == "AIR")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv3Type() == "ELECTRIC" && player1.getType() == "GROUND")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv3Type() == "METAL" && player1.getType() == "ELECTRIC")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv3Type() == "INTELLIGENT" && player1.getType() == "METAL")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv3Type() == "FORCE" && player1.getType() == "INTELLIGENT")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv3Type() == "ICE" && player1.getType() == "FORCE")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv3Type() == "FIRE" && player1.getType() == "ICE")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv3Type() == "NATURAL" && player1.getType() == "FIRE")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv3Type() == "PSYCHIC" && player1.getType() == "NATURAL")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv3Type() == "MORTAL" && player1.getType() == "PSYCHIC")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv3Type() == "GHOST" && player1.getType() == "MORTAL")
+                {
+                    effectivenessModVal = 0.75f;
+                }
                 //Check if it was dodged
                 if (totalAcc1 >= 100)
                 {
                     //The move lands
                     eveSimText.AppendText(Environment.NewLine + "Player 2 lands their Move 3!");
-                    int totalAtk = (int)(player2.getAtk() * player2.getMv3M() * atkStatModValPsn * atkStatModValWk);
+                    int totalAtk = (int)(player2.getAtk() * player2.getMv3M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
                     int damageDealt = totalAtk ^ 2 / player1.getDef();
                     eveSimText.AppendText(Environment.NewLine + "Player 2 deals " + damageDealt.ToString() + " damage to Player 1.");
                     player1.modifyHP(-damageDealt);
@@ -2054,7 +3074,7 @@ namespace DCTBFightingSimulator
                     {
                         //The move lands
                         eveSimText.AppendText(Environment.NewLine + "Player 2 lands their Move 3!");
-                        int totalAtk = (int)(player2.getAtk() * player2.getMv3M() * atkStatModValPsn * atkStatModValWk);
+                        int totalAtk = (int)(player2.getAtk() * player2.getMv3M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
                         int damageDealt = totalAtk ^ 2 / player1.getDef();
                         eveSimText.AppendText(Environment.NewLine + "Player 2 deals " + damageDealt.ToString() + " damage to Player 1.");
                         player1.modifyHP(-damageDealt);
@@ -2131,12 +3151,135 @@ namespace DCTBFightingSimulator
             if (move == 4)
             {
                 totalAcc1 = player2.getAcc() + player2.getMv4Acc() - player1.getDge();
+                //Check effectiveness
+                //Effective
+                if (player2.getMv4Type() == "NONE" && player1.getType() == "VOID")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv4Type() == "VOID" && player1.getType() == "EARTHLY")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv4Type() == "EARTHLY" && player1.getType() == "AIR")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv4Type() == "AIR" && player1.getType() == "GROUND")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv4Type() == "GROUND" && player1.getType() == "ELECTRIC")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv4Type() == "ELECTRIC" && player1.getType() == "METAL")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv4Type() == "METAL" && player1.getType() == "INTELLIGENT")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv4Type() == "INTELLIGENT" && player1.getType() == "FORCE")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv4Type() == "FORCE" && player1.getType() == "ICE")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv4Type() == "ICE" && player1.getType() == "FIRE")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv4Type() == "FIRE" && player1.getType() == "NATURAL")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv4Type() == "NATURAL" && player1.getType() == "PSYCHIC")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv4Type() == "PSYCHIC" && player1.getType() == "MORTAL")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv4Type() == "MORTAL" && player1.getType() == "GHOST")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv4Type() == "GHOST" && player1.getType() == "NONE")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                //Not Effective
+                if (player2.getMv4Type() == "NONE" && player1.getType() == "GHOST")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv4Type() == "VOID" && player1.getType() == "NONE")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv4Type() == "EARTHLY" && player1.getType() == "VOID")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv4Type() == "AIR" && player1.getType() == "EARTHLY")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv4Type() == "GROUND" && player1.getType() == "AIR")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv4Type() == "ELECTRIC" && player1.getType() == "GROUND")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv4Type() == "METAL" && player1.getType() == "ELECTRIC")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv4Type() == "INTELLIGENT" && player1.getType() == "METAL")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv4Type() == "FORCE" && player1.getType() == "INTELLIGENT")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv4Type() == "ICE" && player1.getType() == "FORCE")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv4Type() == "FIRE" && player1.getType() == "ICE")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv4Type() == "NATURAL" && player1.getType() == "FIRE")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv4Type() == "PSYCHIC" && player1.getType() == "NATURAL")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv4Type() == "MORTAL" && player1.getType() == "PSYCHIC")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv4Type() == "GHOST" && player1.getType() == "MORTAL")
+                {
+                    effectivenessModVal = 0.75f;
+                }
                 //Check if it was dodged
                 if (totalAcc1 >= 100)
                 {
                     //The move lands
                     eveSimText.AppendText(Environment.NewLine + "Player 2 lands their Move 4!");
-                    int totalAtk = (int)(player2.getAtk() * player2.getMv4M() * atkStatModValPsn * atkStatModValWk);
+                    int totalAtk = (int)(player2.getAtk() * player2.getMv4M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
                     int damageDealt = totalAtk ^ 2 / player1.getDef();
                     eveSimText.AppendText(Environment.NewLine + "Player 2 deals " + damageDealt.ToString() + " damage to Player 1.");
                     player1.modifyHP(-damageDealt);
@@ -2205,7 +3348,7 @@ namespace DCTBFightingSimulator
                     {
                         //The move lands
                         eveSimText.AppendText(Environment.NewLine + "Player 2 lands their Move 4!");
-                        int totalAtk = (int)(player2.getAtk() * player2.getMv4M() * atkStatModValPsn * atkStatModValWk);
+                        int totalAtk = (int)(player2.getAtk() * player2.getMv4M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
                         int damageDealt = totalAtk ^ 2 / player1.getDef();
                         eveSimText.AppendText(Environment.NewLine + "Player 2 deals " + damageDealt.ToString() + " damage to Player 1.");
                         player1.modifyHP(-damageDealt);
@@ -2282,12 +3425,135 @@ namespace DCTBFightingSimulator
             if (move == 5)
             {
                 totalAcc1 = player2.getAcc() + player2.getMv5Acc() - player1.getDge();
+                //Check effectiveness
+                //Effective
+                if (player2.getMv5Type() == "NONE" && player1.getType() == "VOID")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv5Type() == "VOID" && player1.getType() == "EARTHLY")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv5Type() == "EARTHLY" && player1.getType() == "AIR")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv5Type() == "AIR" && player1.getType() == "GROUND")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv5Type() == "GROUND" && player1.getType() == "ELECTRIC")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv5Type() == "ELECTRIC" && player1.getType() == "METAL")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv5Type() == "METAL" && player1.getType() == "INTELLIGENT")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv5Type() == "INTELLIGENT" && player1.getType() == "FORCE")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv5Type() == "FORCE" && player1.getType() == "ICE")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv5Type() == "ICE" && player1.getType() == "FIRE")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv5Type() == "FIRE" && player1.getType() == "NATURAL")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv5Type() == "NATURAL" && player1.getType() == "PSYCHIC")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv5Type() == "PSYCHIC" && player1.getType() == "MORTAL")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv5Type() == "MORTAL" && player1.getType() == "GHOST")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                if (player2.getMv5Type() == "GHOST" && player1.getType() == "NONE")
+                {
+                    effectivenessModVal = 1.25f;
+                }
+                //Not Effective
+                if (player2.getMv5Type() == "NONE" && player1.getType() == "GHOST")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv5Type() == "VOID" && player1.getType() == "NONE")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv5Type() == "EARTHLY" && player1.getType() == "VOID")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv5Type() == "AIR" && player1.getType() == "EARTHLY")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv5Type() == "GROUND" && player1.getType() == "AIR")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv5Type() == "ELECTRIC" && player1.getType() == "GROUND")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv5Type() == "METAL" && player1.getType() == "ELECTRIC")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv5Type() == "INTELLIGENT" && player1.getType() == "METAL")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv5Type() == "FORCE" && player1.getType() == "INTELLIGENT")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv5Type() == "ICE" && player1.getType() == "FORCE")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv5Type() == "FIRE" && player1.getType() == "ICE")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv5Type() == "NATURAL" && player1.getType() == "FIRE")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv5Type() == "PSYCHIC" && player1.getType() == "NATURAL")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv5Type() == "MORTAL" && player1.getType() == "PSYCHIC")
+                {
+                    effectivenessModVal = 0.75f;
+                }
+                if (player2.getMv5Type() == "GHOST" && player1.getType() == "MORTAL")
+                {
+                    effectivenessModVal = 0.75f;
+                }
                 //Check if it was dodged
                 if (totalAcc1 >= 100)
                 {
                     //The move lands
                     eveSimText.AppendText(Environment.NewLine + "Player 2 lands their Move 5!");
-                    int totalAtk = (int)(player2.getAtk() * player2.getMv4M() * atkStatModValPsn * atkStatModValWk);
+                    int totalAtk = (int)(player2.getAtk() * player2.getMv4M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
                     int damageDealt = totalAtk ^ 2 / player1.getDef();
                     eveSimText.AppendText(Environment.NewLine + "Player 2 deals " + damageDealt.ToString() + " damage to Player 1.");
                     player1.modifyHP(-damageDealt);
@@ -2356,7 +3622,7 @@ namespace DCTBFightingSimulator
                     {
                         //The move lands
                         eveSimText.AppendText(Environment.NewLine + "Player 2 lands their Move 5!");
-                        int totalAtk = (int)(player2.getAtk() * player2.getMv4M() * atkStatModValPsn * atkStatModValWk);
+                        int totalAtk = (int)(player2.getAtk() * player2.getMv4M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
                         int damageDealt = totalAtk ^ 2 / player1.getDef();
                         eveSimText.AppendText(Environment.NewLine + "Player 2 deals " + damageDealt.ToString() + " damage to Player 1.");
                         player1.modifyHP(-damageDealt);
