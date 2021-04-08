@@ -38,7 +38,28 @@ namespace DCTBFightingSimulator
         string splargString = "nX!wj@am!ESplargd@3MDMe#SCSplarg resembles a large, humanoid spark plug. He is capable of dealing deadly damage and inducing many effects.t192y!@:PE22METALh!*##p2@<#1750at1!@!W0k190d%%23eFF100a1;c';c80dj1g><e30imnSTRT@@_!nnnnnnnnnimnEND@@_!nDCMmv1@@IgnitiondDCMv1@@Splarg attacks, dealing a low amount of damage and raising his attack. Type: METALtDCMmv1@@METALatmDCMmv1@@1.2accDCMmv1@@60hDCMmv1@@0atkDCMmv1@@5defDCMmv1@@0acmDCMmv1@@0dgeDCMmv1@@0indSTRTMmv1@@_!nnnnnnnnnindENDMmv1@@_!nDCMmv2@@SwitchdDCMv2@@Splarg attacks with a small amount of power, but both cripples and weakens the opponent. Type: METALtDCMmv2@@METALatmDCMmv2@@0.4accDCMmv2@@50hDCMmv2@@0atkDCMmv2@@0defDCMmv2@@0acmDCMmv2@@0dgeDCMmv2@@0indSTRTMmv2@@_!nnnynnnynindENDMmv2@@_!nDCMmv3@@CatalyzedDCMv3@@Splarg catalyzes its own metal parts, dealing deadly damage, raising attack, and stunning the opponent. This attack has a low chance to hit. Type: METALtDCMmv3@@METALatmDCMmv3@@1.75accDCMmv3@@30hDCMmv3@@0atkDCMmv3@@0defDCMmv3@@0acmDCMmv3@@0dgeDCMmv3@@0indSTRTMmv3@@_!ynnnnnnnnindENDMmv3@@_!nDCMmv4@@Iron ShatterdDCMv4@@Splarg attacks with the power to shatter metal, but lowers its own attack slightly and takes recoil damage in the process. Type: METALtDCMmv4@@METALatmDCMmv4@@4.5accDCMmv4@@30hDCMmv4@@-10atkDCMmv4@@-5defDCMmv4@@0acmDCMmv4@@0dgeDCMmv4@@0indSTRTMmv4@@_!nnnnnnnnnindENDMmv4@@_!nDCMmv5@@Turbo ShiftdDCMv5@@Splarg shits into turbo mode, attacking rapidly, dazing the opponent and slightly raising attack. Type: METALtDCMmv5@@METALatmDCMmv5@@1.25accDCMmv5@@40hDCMmv5@@0atkDCMmv5@@-5defDCMmv5@@0acmDCMmv5@@0dgeDCMmv5@@0indSTRTMmv5@@_!nnnnnnnnyindENDMmv5@@_!";
                 //Intelligent
         string docString = "nX!wj@am!EDocd@3MDMe#SCDoc is a human that happens to be very well versed in the topic of combat, and combines that with his knowledge of chemical reactions. He is a well-rounded unit, and is immune to poisons.t192y!@:PE22INTELLIGENTh!*##p2@<#2500at1!@!W0k140d%%23eFF140a1;c';c80dj1g><e50imnSTRT@@_!nynnnnnnnimnEND@@_!nDCMmv1@@ConcoctiondDCMv1@@Doc mixes a chemical reaction of deadly proportions, dealing heavy damage and poisoning the opponent. Type: INTELLIGENTtDCMmv1@@INTELLIGENTatmDCMmv1@@2.25accDCMmv1@@60hDCMmv1@@0atkDCMmv1@@0defDCMmv1@@0acmDCMmv1@@0dgeDCMmv1@@0indSTRTMmv1@@_!nynnnnnnnindENDMmv1@@_!nDCMmv2@@Combat TacticsdDCMv2@@Doc thrusts at the opponent with sharp tools while dodging their return blows, raising his DEF and DGE. Type: INTELLIGENTtDCMmv2@@INTELLIGENTatmDCMmv2@@1.25accDCMmv2@@50hDCMmv2@@0atkDCMmv2@@0defDCMmv2@@10acmDCMmv2@@0dgeDCMmv2@@2indSTRTMmv2@@_!nnnnnnnnnindENDMmv2@@_!nDCMmv3@@Scientific BreakthroughdDCMv3@@Doc makes a breakthrough in science. The reaction deals a small amount of damage to the enemy, but Doc raises all of his stats. Type: INTELLIGENTtDCMmv3@@INTELLIGENTatmDCMmv3@@0.75accDCMmv3@@60hDCMmv3@@0atkDCMmv3@@5defDCMmv3@@5acmDCMmv3@@5dgeDCMmv3@@2indSTRTMmv3@@_!nnnnnnnnnindENDMmv3@@_!nDCMmv4@@Healing BlowdDCMv4@@Doc creates a chemical capable of dealing damage to the opponent while healing himself. Type: INTELLIGENTtDCMmv4@@INTELLIGENTatmDCMmv4@@1.2accDCMmv4@@60hDCMmv4@@15atkDCMmv4@@0defDCMmv4@@0acmDCMmv4@@0dgeDCMmv4@@0indSTRTMmv4@@_!nnnnnnnnnindENDMmv4@@_!nDCMmv5@@DoctoratedDCMv5@@Doc's signature move. It deals heavy damage and further raises all of Doc's stats, but only slightly, and deals some slight recoil. Type: INTELLIGENTtDCMmv5@@INTELLIGENTatmDCMmv5@@3.5accDCMmv5@@60hDCMmv5@@-5atkDCMmv5@@5defDCMmv5@@5acmDCMmv5@@2dgeDCMmv5@@1indSTRTMmv5@@_!nnnnnnnnnindENDMmv5@@_!";
-
+        string studentString = "";
+                //Force
+        string martisString = "";
+        string discriniusString = "";
+                //Ice
+        string cicleString = "";
+        string blizerdString = "";
+                //Fire
+        string solcoreString = "";
+        string pyrocitusString = "";
+                //Natural
+        string lyfebudString = "";
+        string elementusString = "";
+                //Psychic
+        string forseerString = "";
+        string zodiumString = "";
+                //Mortal
+        string humanusString = "";
+        string thedemonString = "";
+                //Ghost
+        string spirtuString = "";
+        string duskanString = "";
 
         //For use in-EvE-simulation:
         private Character player1;
@@ -85,6 +106,7 @@ namespace DCTBFightingSimulator
             roadmapText.AppendText(Environment.NewLine + "- PvE functionality");
             roadmapText.AppendText(Environment.NewLine + "- PvP functionality");
             roadmapText.AppendText(Environment.NewLine + "- New Computer AIs");
+            roadmapText.AppendText(Environment.NewLine + "- New Characters and other Features!");
             roadmapText.AppendText(Environment.NewLine + Environment.NewLine + "Additions:");
             roadmapText.AppendText(Environment.NewLine + "- Update EvE UI to show more stats/info at once");
             roadmapText.AppendText(Environment.NewLine + "- Update EvE to allow multiple game speeds/exiting/resets during play");
