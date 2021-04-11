@@ -675,7 +675,7 @@ namespace DCTBFightingSimulator
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(119, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Current Release: v0.0.1";
+            this.label1.Text = "Current Release: v0.1.0";
             // 
             // button2
             // 
@@ -6853,7 +6853,7 @@ namespace DCTBFightingSimulator
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Name = "DCTBFightingSimulator";
-            this.Text = "DCTBFightingSimulator v0.0.1";
+            this.Text = "DCTBFightingSimulator v0.1.0";
             ((System.ComponentModel.ISupportInitialize)(this.CCN1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CCN2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CCN3)).EndInit();
