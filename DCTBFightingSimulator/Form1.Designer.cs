@@ -4134,6 +4134,7 @@ namespace DCTBFightingSimulator
             this.comboBox19.Name = "comboBox19";
             this.comboBox19.Size = new System.Drawing.Size(111, 21);
             this.comboBox19.TabIndex = 110;
+            this.comboBox19.TextChanged += new System.EventHandler(this.comboBox19_TextChanged);
             // 
             // pictureBox21
             // 
@@ -4179,6 +4180,7 @@ namespace DCTBFightingSimulator
             this.comboBox18.Name = "comboBox18";
             this.comboBox18.Size = new System.Drawing.Size(111, 21);
             this.comboBox18.TabIndex = 105;
+            this.comboBox18.TextChanged += new System.EventHandler(this.comboBox18_TextChanged);
             // 
             // pictureBox20
             // 
@@ -4224,6 +4226,7 @@ namespace DCTBFightingSimulator
             this.comboBox17.Name = "comboBox17";
             this.comboBox17.Size = new System.Drawing.Size(111, 21);
             this.comboBox17.TabIndex = 100;
+            this.comboBox17.TextChanged += new System.EventHandler(this.comboBox17_TextChanged);
             // 
             // pictureBox19
             // 
@@ -4269,6 +4272,7 @@ namespace DCTBFightingSimulator
             this.comboBox16.Name = "comboBox16";
             this.comboBox16.Size = new System.Drawing.Size(111, 21);
             this.comboBox16.TabIndex = 95;
+            this.comboBox16.TextChanged += new System.EventHandler(this.comboBox16_TextChanged);
             // 
             // pictureBox18
             // 
@@ -4314,6 +4318,7 @@ namespace DCTBFightingSimulator
             this.comboBox15.Name = "comboBox15";
             this.comboBox15.Size = new System.Drawing.Size(111, 21);
             this.comboBox15.TabIndex = 90;
+            this.comboBox15.TextChanged += new System.EventHandler(this.comboBox15_TextChanged);
             // 
             // pictureBox17
             // 
@@ -4359,6 +4364,7 @@ namespace DCTBFightingSimulator
             this.comboBox14.Name = "comboBox14";
             this.comboBox14.Size = new System.Drawing.Size(111, 21);
             this.comboBox14.TabIndex = 85;
+            this.comboBox14.TextChanged += new System.EventHandler(this.comboBox14_TextChanged);
             // 
             // pictureBox16
             // 
@@ -4404,6 +4410,7 @@ namespace DCTBFightingSimulator
             this.comboBox13.Name = "comboBox13";
             this.comboBox13.Size = new System.Drawing.Size(111, 21);
             this.comboBox13.TabIndex = 80;
+            this.comboBox13.TextChanged += new System.EventHandler(this.comboBox13_TextChanged);
             // 
             // pictureBox15
             // 
@@ -4449,6 +4456,7 @@ namespace DCTBFightingSimulator
             this.comboBox12.Name = "comboBox12";
             this.comboBox12.Size = new System.Drawing.Size(111, 21);
             this.comboBox12.TabIndex = 75;
+            this.comboBox12.TextChanged += new System.EventHandler(this.comboBox12_TextChanged);
             // 
             // pictureBox14
             // 
@@ -4494,6 +4502,7 @@ namespace DCTBFightingSimulator
             this.comboBox11.Name = "comboBox11";
             this.comboBox11.Size = new System.Drawing.Size(111, 21);
             this.comboBox11.TabIndex = 70;
+            this.comboBox11.TextChanged += new System.EventHandler(this.comboBox11_TextChanged);
             // 
             // pictureBox13
             // 
@@ -4539,6 +4548,7 @@ namespace DCTBFightingSimulator
             this.comboBox10.Name = "comboBox10";
             this.comboBox10.Size = new System.Drawing.Size(111, 21);
             this.comboBox10.TabIndex = 65;
+            this.comboBox10.TextChanged += new System.EventHandler(this.comboBox10_TextChanged);
             // 
             // pictureBox12
             // 
@@ -6932,8 +6942,8 @@ namespace DCTBFightingSimulator
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1432, 853);
-            this.Controls.Add(this.EvEPanel);
             this.Controls.Add(this.characterDatabasePanel);
+            this.Controls.Add(this.EvEPanel);
             this.Controls.Add(this.startingPanel);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox2);

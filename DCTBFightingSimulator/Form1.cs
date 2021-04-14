@@ -6857,6 +6857,105 @@ namespace DCTBFightingSimulator
             {
                 vanillaExports.Text = tweedleString;
             }
+                //Ground
+            if (comboBox1.Text == "Quake (GROUND)")
+            {
+                vanillaExports.Text = quakeString;
+            }
+            if (comboBox1.Text == "The Rock (GROUND)")
+            {
+                vanillaExports.Text = therockString;
+            }
+                //Electric
+            if (comboBox1.Text == "Zip (ELECTRIC)")
+            {
+                vanillaExports.Text = zipString;
+            }
+            if (comboBox1.Text == "Magnaur (ELECTRIC)")
+            {
+                vanillaExports.Text = magnaurString;
+            }
+                //Metal
+            if (comboBox1.Text == "Irode (METAL)")
+            {
+                vanillaExports.Text = irodeString;
+            }
+            if (comboBox1.Text == "Splarg (METAL)")
+            {
+                vanillaExports.Text = splargString;
+            }
+                //Intelligent
+            if (comboBox1.Text == "Doc (INTELLIGENT)")
+            {
+                vanillaExports.Text = docString;
+            }
+            if (comboBox1.Text == "Student (INTELLIGENT)")
+            {
+                vanillaExports.Text = studentString;
+            }
+                //Force
+            if (comboBox1.Text == "Martis (FORCE)")
+            {
+                vanillaExports.Text = martisString;
+            }
+            if (comboBox1.Text == "Discrinius (FORCE)")
+            {
+                vanillaExports.Text = discriniusString;
+            }
+                //Ice
+            if (comboBox1.Text == "Cicle (ICE)")
+            {
+                vanillaExports.Text = cicleString;
+            }
+            if (comboBox1.Text == "Blizerd (ICE)")
+            {
+                vanillaExports.Text = blizerdString;
+            }
+                //Fire
+            if (comboBox1.Text == "Solcore (FIRE)")
+            {
+                vanillaExports.Text = solcoreString;
+            }
+            if (comboBox1.Text == "Pyrocitus (FIRE)")
+            {
+                vanillaExports.Text = pyrocitusString;
+            }
+                //Natural
+            if (comboBox1.Text == "Lyfebud (NATURAL)")
+            {
+                vanillaExports.Text = lyfebudString;
+            }
+            if (comboBox1.Text == "Elementus (NATURAL)")
+            {
+                vanillaExports.Text = elementusString;
+            }
+                //Psychic
+            if (comboBox1.Text == "Forseer (PSYCHIC)")
+            {
+                vanillaExports.Text = forseerString;
+            }
+            if (comboBox1.Text == "Zodium (PSYCHIC)")
+            {
+                vanillaExports.Text = zodiumString;
+            }
+                //Mortal
+            if (comboBox1.Text == "Humanus (MORTAL)")
+            {
+                vanillaExports.Text = humanusString;
+            }
+            if (comboBox1.Text == "The Demon (MORTAL)")
+            {
+                vanillaExports.Text = thedemonString;
+            }
+                //Ghost
+            if (comboBox1.Text == "Spirtu (GHOST)")
+            {
+                vanillaExports.Text = spirtuString;
+            }
+            if (comboBox1.Text == "Duskan (GHOST)")
+            {
+                vanillaExports.Text = duskanString;
+            }
         }
             //NONE Type
         private void comboBox5_TextChanged(object sender, EventArgs e)
@@ -6923,17 +7022,141 @@ namespace DCTBFightingSimulator
             {
                 typeGroundExports.Text = quakeString;
             }
+            if (comboBox9.Text == "The Rock (Vanilla)")
+            {
+                typeGroundExports.Text = therockString;
+            }
         }
             //ELECTRIC Type
+        private void comboBox10_TextChanged(object sender, EventArgs e)
+        {
+            //Vanilla
+            if (comboBox10.Text == "Zip (Vanilla)")
+            {
+                typeElectricExports.Text = zipString;
+            }
+            if (comboBox10.Text == "Magnaur (Vanilla)")
+            {
+                typeElectricExports.Text = magnaurString;
+            }
+        }
             //METAL Type
+        private void comboBox11_TextChanged(object sender, EventArgs e)
+        {
+            //Vanilla
+            if (comboBox11.Text == "Irode (Vanilla)")
+            {
+                typeMetalExports.Text = irodeString;
+            }
+            if (comboBox11.Text == "Splarg (Vanilla)")
+            {
+                typeMetalExports.Text = splargString;
+            }
+        }
             //INTELLIGENT Type
+        private void comboBox12_TextChanged(object sender, EventArgs e)
+        {
+            //Vanilla
+            if (comboBox12.Text == "Doc (Vanilla)")
+            {
+                typeIntelligentExports.Text = docString;
+            }
+            if (comboBox12.Text == "Student (Vanilla)")
+            {
+                typeIntelligentExports.Text = studentString;
+            }
+        }
             //FORCE Type
+        private void comboBox13_TextChanged(object sender, EventArgs e)
+        {
+            //Vanilla
+            if (comboBox13.Text == "Martis (Vanilla)")
+            {
+                typeForceExports.Text = martisString;
+            }
+            if (comboBox13.Text == "Discrinius (Vanilla)")
+            {
+                typeForceExports.Text = discriniusString;
+            }
+        }
             //ICE Type
+        private void comboBox14_TextChanged(object sender, EventArgs e)
+        {
+            //Vanilla
+            if (comboBox14.Text == "Cicle (Vanilla)")
+            {
+                typeIceExports.Text = cicleString;
+            }
+            if (comboBox14.Text == "Blizerd (Vanilla)")
+            {
+                typeIceExports.Text = blizerdString;
+            }
+        }
             //FIRE Type
+        private void comboBox15_TextChanged(object sender, EventArgs e)
+        {
+            //Vanilla
+            if (comboBox15.Text == "Solcore (Vanilla)")
+            {
+                typeFireExports.Text = solcoreString;
+            }
+            if (comboBox15.Text == "Pyrocitus (Vanilla)")
+            {
+                typeFireExports.Text = pyrocitusString;
+            }
+        }
             //NATURAL Type
+        private void comboBox16_TextChanged(object sender, EventArgs e)
+        {
+            //Vanilla
+            if (comboBox16.Text == "Lyfebud (Vanilla)")
+            {
+                typeNaturalExports.Text = lyfebudString;
+            }
+            if (comboBox16.Text == "Elementus (Vanilla)")
+            {
+                typeNaturalExports.Text = elementusString;
+            }
+        }
             //PSYCHIC Type
+        private void comboBox17_TextChanged(object sender, EventArgs e)
+        {
+            //Vanilla
+            if (comboBox17.Text == "Forseer (Vanilla)")
+            {
+                typePsychicExports.Text = forseerString;
+            }
+            if (comboBox17.Text == "Zodium (Vanilla)")
+            {
+                typePsychicExports.Text = zodiumString;
+            }
+        }
             //MORTAL Type
+        private void comboBox18_TextChanged(object sender, EventArgs e)
+        {
+            //Vanilla
+            if (comboBox18.Text == "Humanus (Vanilla)")
+            {
+                typeMortalExports.Text = humanusString;
+            }
+            if (comboBox18.Text == "The Demon (Vanilla)")
+            {
+                typeMortalExports.Text = thedemonString;
+            }
+        }
             //GHOST Type
+        private void comboBox19_TextChanged(object sender, EventArgs e)
+        {
+            //Vanilla
+            if (comboBox19.Text == "Spirtu (Vanilla)")
+            {
+                typeGhostExports.Text = spirtuString;
+            }
+            if (comboBox19.Text == "Duskan (Vanilla)")
+            {
+                typeGhostExports.Text = duskanString;
+            }
+        }
 
         //UNEDITABLE/NON-REMOVABLE METHODS
         private void textBox1_TextChanged(object sender, EventArgs e)
