@@ -4127,6 +4127,9 @@ namespace DCTBFightingSimulator
             // comboBox19
             // 
             this.comboBox19.FormattingEnabled = true;
+            this.comboBox19.Items.AddRange(new object[] {
+            "Spirtu (Vanilla)",
+            "Duskan (Vanilla)"});
             this.comboBox19.Location = new System.Drawing.Point(822, 361);
             this.comboBox19.Name = "comboBox19";
             this.comboBox19.Size = new System.Drawing.Size(111, 21);
@@ -4169,6 +4172,9 @@ namespace DCTBFightingSimulator
             // comboBox18
             // 
             this.comboBox18.FormattingEnabled = true;
+            this.comboBox18.Items.AddRange(new object[] {
+            "Humanus (Vanilla)",
+            "The Demon (Vanilla)"});
             this.comboBox18.Location = new System.Drawing.Point(686, 361);
             this.comboBox18.Name = "comboBox18";
             this.comboBox18.Size = new System.Drawing.Size(111, 21);
@@ -4211,6 +4217,9 @@ namespace DCTBFightingSimulator
             // comboBox17
             // 
             this.comboBox17.FormattingEnabled = true;
+            this.comboBox17.Items.AddRange(new object[] {
+            "Forseer (Vanilla)",
+            "Zodium (Vanilla)"});
             this.comboBox17.Location = new System.Drawing.Point(550, 361);
             this.comboBox17.Name = "comboBox17";
             this.comboBox17.Size = new System.Drawing.Size(111, 21);
@@ -4253,6 +4262,9 @@ namespace DCTBFightingSimulator
             // comboBox16
             // 
             this.comboBox16.FormattingEnabled = true;
+            this.comboBox16.Items.AddRange(new object[] {
+            "Lyfebud (Vanilla)",
+            "Elementus (Vanilla)"});
             this.comboBox16.Location = new System.Drawing.Point(414, 361);
             this.comboBox16.Name = "comboBox16";
             this.comboBox16.Size = new System.Drawing.Size(111, 21);
@@ -4295,6 +4307,9 @@ namespace DCTBFightingSimulator
             // comboBox15
             // 
             this.comboBox15.FormattingEnabled = true;
+            this.comboBox15.Items.AddRange(new object[] {
+            "Solcore (Vanilla)",
+            "Pyrocitus (Vanilla)"});
             this.comboBox15.Location = new System.Drawing.Point(278, 361);
             this.comboBox15.Name = "comboBox15";
             this.comboBox15.Size = new System.Drawing.Size(111, 21);
@@ -4337,6 +4352,9 @@ namespace DCTBFightingSimulator
             // comboBox14
             // 
             this.comboBox14.FormattingEnabled = true;
+            this.comboBox14.Items.AddRange(new object[] {
+            "Cicle (Vanilla)",
+            "Blizerd (Vanilla)"});
             this.comboBox14.Location = new System.Drawing.Point(142, 361);
             this.comboBox14.Name = "comboBox14";
             this.comboBox14.Size = new System.Drawing.Size(111, 21);
@@ -4379,6 +4397,9 @@ namespace DCTBFightingSimulator
             // comboBox13
             // 
             this.comboBox13.FormattingEnabled = true;
+            this.comboBox13.Items.AddRange(new object[] {
+            "Martis (Vanilla)",
+            "Discrinius (Vanilla)"});
             this.comboBox13.Location = new System.Drawing.Point(6, 361);
             this.comboBox13.Name = "comboBox13";
             this.comboBox13.Size = new System.Drawing.Size(111, 21);
@@ -4421,6 +4442,9 @@ namespace DCTBFightingSimulator
             // comboBox12
             // 
             this.comboBox12.FormattingEnabled = true;
+            this.comboBox12.Items.AddRange(new object[] {
+            "Doc (Vanilla)",
+            "Student (Vanilla)"});
             this.comboBox12.Location = new System.Drawing.Point(958, 245);
             this.comboBox12.Name = "comboBox12";
             this.comboBox12.Size = new System.Drawing.Size(111, 21);
@@ -4463,6 +4487,9 @@ namespace DCTBFightingSimulator
             // comboBox11
             // 
             this.comboBox11.FormattingEnabled = true;
+            this.comboBox11.Items.AddRange(new object[] {
+            "Irode (Vanilla)",
+            "Splarg (Vanilla)"});
             this.comboBox11.Location = new System.Drawing.Point(822, 245);
             this.comboBox11.Name = "comboBox11";
             this.comboBox11.Size = new System.Drawing.Size(111, 21);
@@ -4505,6 +4532,9 @@ namespace DCTBFightingSimulator
             // comboBox10
             // 
             this.comboBox10.FormattingEnabled = true;
+            this.comboBox10.Items.AddRange(new object[] {
+            "Zip (Vanilla)",
+            "Magnaur (Vanilla)"});
             this.comboBox10.Location = new System.Drawing.Point(686, 245);
             this.comboBox10.Name = "comboBox10";
             this.comboBox10.Size = new System.Drawing.Size(111, 21);
@@ -4548,7 +4578,8 @@ namespace DCTBFightingSimulator
             // 
             this.comboBox9.FormattingEnabled = true;
             this.comboBox9.Items.AddRange(new object[] {
-            "Quake (Vanilla)"});
+            "Quake (Vanilla)",
+            "The Rock (Vanilla)"});
             this.comboBox9.Location = new System.Drawing.Point(550, 245);
             this.comboBox9.Name = "comboBox9";
             this.comboBox9.Size = new System.Drawing.Size(111, 21);
@@ -4868,7 +4899,29 @@ namespace DCTBFightingSimulator
             "Stone Golem (EARTHLY)",
             "Livern (EARTHLY)",
             "Albatross (AIR)",
-            "Tweedle (AIR)"});
+            "Tweedle (AIR)",
+            "Quake (GROUND)",
+            "The Rock (GROUND)",
+            "Zip (ELECTRIC)",
+            "Magnaur (ELECTRIC)",
+            "Irode (METAL)",
+            "Splarg (METAL)",
+            "Doc (INTELLIGENT)",
+            "Student (INTELLIGENT)",
+            "Martis (FORCE)",
+            "Discrinius (FORCE)",
+            "Cicle (ICE)",
+            "Blizerd (ICE)",
+            "Solcore (FIRE)",
+            "Pyrocitus (FIRE)",
+            "Lyfebud (NATURAL)",
+            "Elementus (NATURAL)",
+            "Forseer (PSYCHIC)",
+            "Zodium (PSYCHIC)",
+            "Humanus (MORTAL)",
+            "The Demon (MORTAL)",
+            "Spirtu (GHOST)",
+            "Duskan (GHOST)"});
             this.comboBox1.Location = new System.Drawing.Point(6, 126);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(111, 21);
@@ -5025,13 +5078,34 @@ namespace DCTBFightingSimulator
             this.player1SelectionEvE.Items.AddRange(new object[] {
             "Joseph (NONE) (Vanilla)",
             "David (NONE) (Vanilla)",
-            "Anomal (VOID) Vanilla)",
+            "Anomal (VOID) (Vanilla)",
             "Rig (VOID) (Vanilla)",
             "Stone Golem (EARTHLY) (Vanilla)",
             "Livern (EARTHLY) (Vanilla)",
             "Albatross (AIR) (Vanilla)",
             "Tweedle (AIR) (Vanilla)",
-            "Quake (GROUND) (Vanilla)"});
+            "Quake (GROUND) (Vanilla)",
+            "The Rock (GROUND) (Vanilla)",
+            "Zip (ELECTRIC) (Vanilla)",
+            "Magnaur (ELECTRIC) (Vanilla)",
+            "Irode (METAL) (Vanilla)",
+            "Splarg (METAL) (Vanilla)",
+            "Doc (INTELLIGENT) (Vanilla)",
+            "Student (INTELLIGENT) (Vanilla)",
+            "Martis (FORCE) (Vanilla)",
+            "Discrinius (FORCE) (Vanilla)",
+            "Cicle (ICE) (Vanilla)",
+            "Blizerd (ICE) (Vanilla)",
+            "Solcore (FIRE) (Vanilla)",
+            "Pyrocitus (FIRE) (Vanilla)",
+            "Lyfebud (NATURAL) (Vanilla)",
+            "Elementus (NATURAL) (Vanilla)",
+            "Forseer (PSYCHIC) (Vanilla)",
+            "Zodium (PSYCHIC) (Vanilla)",
+            "Humanus (MORTAL) (Vanilla)",
+            "The Demon (MORTAL) (Vanilla)",
+            "Spirtu (GHOST) (Vanilla)",
+            "Duskan (GHOST) (Vanilla)"});
             this.player1SelectionEvE.Location = new System.Drawing.Point(8, 150);
             this.player1SelectionEvE.Name = "player1SelectionEvE";
             this.player1SelectionEvE.Size = new System.Drawing.Size(94, 21);
@@ -5052,13 +5126,34 @@ namespace DCTBFightingSimulator
             this.player2SelectionEvE.Items.AddRange(new object[] {
             "Joseph (NONE) (Vanilla)",
             "David (NONE) (Vanilla)",
-            "Anomal (VOID) Vanilla)",
+            "Anomal (VOID) (Vanilla)",
             "Rig (VOID) (Vanilla)",
             "Stone Golem (EARTHLY) (Vanilla)",
             "Livern (EARTHLY) (Vanilla)",
             "Albatross (AIR) (Vanilla)",
             "Tweedle (AIR) (Vanilla)",
-            "Quake (GROUND) (Vanilla)"});
+            "Quake (GROUND) (Vanilla)",
+            "The Rock (GROUND) (Vanilla)",
+            "Zip (ELECTRIC) (Vanilla)",
+            "Magnaur (ELECTRIC) (Vanilla)",
+            "Irode (METAL) (Vanilla)",
+            "Splarg (METAL) (Vanilla)",
+            "Doc (INTELLIGENT) (Vanilla)",
+            "Student (INTELLIGENT) (Vanilla)",
+            "Martis (FORCE) (Vanilla)",
+            "Discrinius (FORCE) (Vanilla)",
+            "Cicle (ICE) (Vanilla)",
+            "Blizerd (ICE) (Vanilla)",
+            "Solcore (FIRE) (Vanilla)",
+            "Pyrocitus (FIRE) (Vanilla)",
+            "Lyfebud (NATURAL) (Vanilla)",
+            "Elementus (NATURAL) (Vanilla)",
+            "Forseer (PSYCHIC) (Vanilla)",
+            "Zodium (PSYCHIC) (Vanilla)",
+            "Humanus (MORTAL) (Vanilla)",
+            "The Demon (MORTAL) (Vanilla)",
+            "Spirtu (GHOST) (Vanilla)",
+            "Duskan (GHOST) (Vanilla)"});
             this.player2SelectionEvE.Location = new System.Drawing.Point(1016, 146);
             this.player2SelectionEvE.Name = "player2SelectionEvE";
             this.player2SelectionEvE.Size = new System.Drawing.Size(94, 21);
@@ -6838,8 +6933,8 @@ namespace DCTBFightingSimulator
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1432, 853);
             this.Controls.Add(this.EvEPanel);
-            this.Controls.Add(this.startingPanel);
             this.Controls.Add(this.characterDatabasePanel);
+            this.Controls.Add(this.startingPanel);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.charDatabaseButton);

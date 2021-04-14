@@ -334,6 +334,121 @@ namespace DCTBFightingSimulator
                 player1 = new Character(quakeString);
                 loadPlayer1VisualStats();
             }
+            if (player1SelectionEvE.Text == "The Rock (GROUND) (Vanilla)")
+            {
+                player1 = new Character(therockString);
+                loadPlayer1VisualStats();
+            }
+                //Electric
+            if (player1SelectionEvE.Text == "Zip (ELECTRIC) (Vanilla)")
+            {
+                player1 = new Character(zipString);
+                loadPlayer1VisualStats();
+            }
+            if (player1SelectionEvE.Text == "Magnaur (ELECTRIC) (Vanilla)")
+            {
+                player1 = new Character(magnaurString);
+                loadPlayer1VisualStats();
+            }
+                //Metal
+            if (player1SelectionEvE.Text == "Irode (METAL) (Vanilla)")
+            {
+                player1 = new Character(irodeString);
+                loadPlayer1VisualStats();
+            }
+            if (player1SelectionEvE.Text == "Splarg (METAL) (Vanilla)")
+            {
+                player1 = new Character(splargString);
+                loadPlayer1VisualStats();
+            }
+                //Intelligent
+            if (player1SelectionEvE.Text == "Doc (INTELLIGENT) (Vanilla)")
+            {
+                player1 = new Character(docString);
+                loadPlayer1VisualStats();
+            }
+            if (player1SelectionEvE.Text == "Student (INTELLIGENT) (Vanilla)")
+            {
+                player1 = new Character(studentString);
+                loadPlayer1VisualStats();
+            }
+                //Force
+            if (player1SelectionEvE.Text == "Martis (FORCE) (Vanilla)")
+            {
+                player1 = new Character(martisString);
+                loadPlayer1VisualStats();
+            }
+            if (player1SelectionEvE.Text == "Discrinius (FORCE) (Vanilla)")
+            {
+                player1 = new Character(discriniusString);
+                loadPlayer1VisualStats();
+            }
+                //Ice
+            if (player1SelectionEvE.Text == "Cicle (ICE) (Vanilla)")
+            {
+                player1 = new Character(cicleString);
+                loadPlayer1VisualStats();
+            }
+            if (player1SelectionEvE.Text == "Blizerd (ICE) (Vanilla)")
+            {
+                player1 = new Character(blizerdString);
+                loadPlayer1VisualStats();
+            }
+                //Fire
+            if (player1SelectionEvE.Text == "Solcore (FIRE) (Vanilla)")
+            {
+                player1 = new Character(solcoreString);
+                loadPlayer1VisualStats();
+            }
+            if (player1SelectionEvE.Text == "Pyrocitus (FIRE) (Vanilla)")
+            {
+                player1 = new Character(pyrocitusString);
+                loadPlayer1VisualStats();
+            }
+                //Natural
+            if (player1SelectionEvE.Text == "Lyfebud (NATURAL) (Vanilla)")
+            {
+                player1 = new Character(lyfebudString);
+                loadPlayer1VisualStats();
+            }
+            if (player1SelectionEvE.Text == "Elementus (NATURAL) (Vanilla)")
+            {
+                player1 = new Character(elementusString);
+                loadPlayer1VisualStats();
+            }
+                //Psychic
+            if (player1SelectionEvE.Text == "Forseer (PSYCHIC) (Vanilla)")
+            {
+                player1 = new Character(forseerString);
+                loadPlayer1VisualStats();
+            }
+            if (player1SelectionEvE.Text == "Zodium (PSYCHIC) (Vanilla)")
+            {
+                player1 = new Character(zodiumString);
+                loadPlayer1VisualStats();
+            }
+                //Mortal
+            if (player1SelectionEvE.Text == "Humanus (MORTAL) (Vanilla)")
+            {
+                player1 = new Character(humanusString);
+                loadPlayer1VisualStats();
+            }
+            if (player1SelectionEvE.Text == "The Demon (MORTAL) (Vanilla)")
+            {
+                player1 = new Character(thedemonString);
+                loadPlayer1VisualStats();
+            }
+                //Ghost
+            if (player1SelectionEvE.Text == "Spirtu (GHOST) (Vanilla)")
+            {
+                player1 = new Character(spirtuString);
+                loadPlayer1VisualStats();
+            }
+            if (player1SelectionEvE.Text == "Duskan (GHOST) (Vanilla)")
+            {
+                player1 = new Character(duskanString);
+                loadPlayer1VisualStats();
+            }
         }
                 //Player 2
         private void player2ImportStringImports(string importString)
@@ -345,7 +460,7 @@ namespace DCTBFightingSimulator
         private void player2DropdownImports()
         {
             //Vanilla
-                //None
+            //None
             if (player2SelectionEvE.Text == "Joseph (NONE) (Vanilla)")
             {
                 player2 = new Character(josephString);
@@ -356,7 +471,7 @@ namespace DCTBFightingSimulator
                 player2 = new Character(davidString);
                 loadPlayer2VisualStats();
             }
-                //Void
+            //Void
             if (player2SelectionEvE.Text == "Anomal (VOID) (Vanilla)")
             {
                 player2 = new Character(anomalString);
@@ -367,7 +482,7 @@ namespace DCTBFightingSimulator
                 player2 = new Character(rigString);
                 loadPlayer2VisualStats();
             }
-                //Earthly
+            //Earthly
             if (player2SelectionEvE.Text == "Stone Golem (EARTHLY) (Vanilla)")
             {
                 player2 = new Character(stoneGolemString);
@@ -378,7 +493,7 @@ namespace DCTBFightingSimulator
                 player2 = new Character(livernString);
                 loadPlayer2VisualStats();
             }
-                //Air
+            //Air
             if (player2SelectionEvE.Text == "Albatross (AIR) (Vanilla)")
             {
                 player2 = new Character(albatrossString);
@@ -389,11 +504,126 @@ namespace DCTBFightingSimulator
                 player2 = new Character(tweedleString);
                 loadPlayer2VisualStats();
             }
-                //Ground
+            //Ground
             if (player2SelectionEvE.Text == "Quake (GROUND) (Vanilla)")
             {
                 player2 = new Character(quakeString);
-                loadPlayer1VisualStats();
+                loadPlayer2VisualStats();
+            }
+            if (player2SelectionEvE.Text == "The Rock (GROUND) (Vanilla)")
+            {
+                player2 = new Character(therockString);
+                loadPlayer2VisualStats();
+            }
+            //Electric
+            if (player2SelectionEvE.Text == "Zip (ELECTRIC) (Vanilla)")
+            {
+                player2 = new Character(zipString);
+                loadPlayer2VisualStats();
+            }
+            if (player2SelectionEvE.Text == "Magnaur (ELECTRIC) (Vanilla)")
+            {
+                player2 = new Character(magnaurString);
+                loadPlayer2VisualStats();
+            }
+            //Metal
+            if (player2SelectionEvE.Text == "Irode (METAL) (Vanilla)")
+            {
+                player2 = new Character(irodeString);
+                loadPlayer2VisualStats();
+            }
+            if (player2SelectionEvE.Text == "Splarg (METAL) (Vanilla)")
+            {
+                player2 = new Character(splargString);
+                loadPlayer2VisualStats();
+            }
+            //Intelligent
+            if (player2SelectionEvE.Text == "Doc (INTELLIGENT) (Vanilla)")
+            {
+                player2 = new Character(docString);
+                loadPlayer2VisualStats();
+            }
+            if (player2SelectionEvE.Text == "Student (INTELLIGENT) (Vanilla)")
+            {
+                player2 = new Character(studentString);
+                loadPlayer2VisualStats();
+            }
+            //Force
+            if (player2SelectionEvE.Text == "Martis (FORCE) (Vanilla)")
+            {
+                player2 = new Character(martisString);
+                loadPlayer2VisualStats();
+            }
+            if (player2SelectionEvE.Text == "Discrinius (FORCE) (Vanilla)")
+            {
+                player2 = new Character(discriniusString);
+                loadPlayer2VisualStats();
+            }
+            //Ice
+            if (player2SelectionEvE.Text == "Cicle (ICE) (Vanilla)")
+            {
+                player2 = new Character(cicleString);
+                loadPlayer2VisualStats();
+            }
+            if (player2SelectionEvE.Text == "Blizerd (ICE) (Vanilla)")
+            {
+                player2 = new Character(blizerdString);
+                loadPlayer2VisualStats();
+            }
+            //Fire
+            if (player2SelectionEvE.Text == "Solcore (FIRE) (Vanilla)")
+            {
+                player2 = new Character(solcoreString);
+                loadPlayer2VisualStats();
+            }
+            if (player2SelectionEvE.Text == "Pyrocitus (FIRE) (Vanilla)")
+            {
+                player2 = new Character(pyrocitusString);
+                loadPlayer2VisualStats();
+            }
+            //Natural
+            if (player2SelectionEvE.Text == "Lyfebud (NATURAL) (Vanilla)")
+            {
+                player2 = new Character(lyfebudString);
+                loadPlayer2VisualStats();
+            }
+            if (player2SelectionEvE.Text == "Elementus (NATURAL) (Vanilla)")
+            {
+                player2 = new Character(elementusString);
+                loadPlayer2VisualStats();
+            }
+            //Psychic
+            if (player2SelectionEvE.Text == "Forseer (PSYCHIC) (Vanilla)")
+            {
+                player2 = new Character(forseerString);
+                loadPlayer2VisualStats();
+            }
+            if (player2SelectionEvE.Text == "Zodium (PSYCHIC) (Vanilla)")
+            {
+                player2 = new Character(zodiumString);
+                loadPlayer2VisualStats();
+            }
+            //Mortal
+            if (player2SelectionEvE.Text == "Humanus (MORTAL) (Vanilla)")
+            {
+                player2 = new Character(humanusString);
+                loadPlayer2VisualStats();
+            }
+            if (player2SelectionEvE.Text == "The Demon (MORTAL) (Vanilla)")
+            {
+                player2 = new Character(thedemonString);
+                loadPlayer2VisualStats();
+            }
+            //Ghost
+            if (player2SelectionEvE.Text == "Spirtu (GHOST) (Vanilla)")
+            {
+                player2 = new Character(spirtuString);
+                loadPlayer2VisualStats();
+            }
+            if (player2SelectionEvE.Text == "Duskan (GHOST) (Vanilla)")
+            {
+                player2 = new Character(duskanString);
+                loadPlayer2VisualStats();
             }
         }
             //EvE Simulation
@@ -6694,6 +6924,16 @@ namespace DCTBFightingSimulator
                 typeGroundExports.Text = quakeString;
             }
         }
+            //ELECTRIC Type
+            //METAL Type
+            //INTELLIGENT Type
+            //FORCE Type
+            //ICE Type
+            //FIRE Type
+            //NATURAL Type
+            //PSYCHIC Type
+            //MORTAL Type
+            //GHOST Type
 
         //UNEDITABLE/NON-REMOVABLE METHODS
         private void textBox1_TextChanged(object sender, EventArgs e)
