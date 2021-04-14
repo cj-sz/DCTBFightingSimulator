@@ -94,8 +94,8 @@ namespace DCTBFightingSimulator
             changelogText.AppendText(Environment.NewLine + "- Live stat changes and text window of events");
             changelogText.AppendText(Environment.NewLine + "- Character Database");
             changelogText.AppendText(Environment.NewLine + "- Character Creation feature (please submit builds to the github (use the 'View Page' link to go directly to the github; also see the wiki))");
-            changelogText.AppendText(Environment.NewLine + Environment.NewLine + "This is only the initial release with baseline simulations working; expect PvE and local PvP features to come soon (see the roadmap for details!) Please bring up any issues, questions, user-submitted builds, etc. on the github page.");
-            changelogText.AppendText(Environment.NewLine + "Additionally, every time there is an updated involving additional characters, new AI, or new gameplay features, an official tournament will be run. The link to view tournament results of the simulation between all characters will be found here. Custom-created, user-submitted builds will also be a part of the competition!");
+            changelogText.AppendText(Environment.NewLine + Environment.NewLine + "This is only the initial release with baseline simulations working; expect PvE and local PvP features to come soon (see the roadmap for details) Please bring up any issues, questions, user-submitted builds, etc. on the github page.");
+            changelogText.AppendText(Environment.NewLine + "Additionally, every time there is an update involving additional characters, new AI, or new gameplay features, an official tournament will be run. The link to view tournament results of the simulation between all characters will be found here. Custom-created, user-submitted builds will also be a part of the competition.");
             changelogText.AppendText(Environment.NewLine + Environment.NewLine + "View the most recent tournament(which may eventually be moved onto this program itself): https://challonge.com/bz19xyip");
             changelogText.AppendText(Environment.NewLine + "Tournament Archives:");
             changelogText.AppendText(Environment.NewLine + "No past tournaments to view.");
@@ -109,7 +109,7 @@ namespace DCTBFightingSimulator
             roadmapText.AppendText(Environment.NewLine + "- PvP functionality");
             roadmapText.AppendText(Environment.NewLine + "- New Computer AIs");
             roadmapText.AppendText(Environment.NewLine + "- Move strings and move databases; import pre-existing moves, export your moves to strings, etc.");
-            roadmapText.AppendText(Environment.NewLine + "- New Characters and other Features!");
+            roadmapText.AppendText(Environment.NewLine + "- New characters and other features");
             roadmapText.AppendText(Environment.NewLine + Environment.NewLine + "Additions:");
             roadmapText.AppendText(Environment.NewLine + "- Simplistic taskbar icon");
             roadmapText.AppendText(Environment.NewLine + "- Update EvE UI to show more stats/info at once");
@@ -121,7 +121,7 @@ namespace DCTBFightingSimulator
             roadmapText.AppendText(Environment.NewLine + Environment.NewLine + "Other/Random Additions:");
             roadmapText.AppendText(Environment.NewLine + "- Streamlining load times");
             roadmapText.AppendText(Environment.NewLine + "- Consolidating code / simplifying other events");
-            roadmapText.AppendText(Environment.NewLine + Environment.NewLine + "Don't hesitate to submit your builds! They will be implemented in the very next release after submission, and will show up in the tournament.");
+            roadmapText.AppendText(Environment.NewLine + Environment.NewLine + "User-submitted builds will be implemented in the very next release after submission, and will show up in the tournament.");
         }
 
         //Button methods
