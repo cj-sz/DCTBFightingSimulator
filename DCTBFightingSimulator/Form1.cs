@@ -64,6 +64,8 @@ namespace DCTBFightingSimulator
         //For use in-EvE-simulation:
         private Character player1;
         private Character player2;
+        private int player1OrigHPEve;
+        private int player2OrigHPEve;
         //Possibly deprecated
         int lastP1Move = 0;
         int lastP2Move = 0;
@@ -90,10 +92,12 @@ namespace DCTBFightingSimulator
             changelogText.AppendText(Environment.NewLine + Environment.NewLine + "v0.1.0 Changelog:"); //UPDATE NUMBER
             changelogText.AppendText(Environment.NewLine + "ADDITIONS:");
             changelogText.AppendText(Environment.NewLine + "- Added DCTBFSSeeding document, with tournament seeding for all existing characters");
+            changelogText.AppendText(Environment.NewLine + "- Added healthbars to EvE for visual representation of status");
             changelogText.AppendText(Environment.NewLine + "CHANGES:");
+            changelogText.AppendText(Environment.NewLine + "- Enlarged character selection for EvE for better accessibility");
             changelogText.AppendText(Environment.NewLine + "BALANCING:");
             //Post-Changes
-            changelogText.AppendText(Environment.NewLine + Environment.NewLine + "This is only the initial release with baseline simulations working; expect PvE and local PvP features to come soon (see the roadmap for details) Please bring up any issues, questions, user-submitted builds, etc. on the github page.");
+            changelogText.AppendText(Environment.NewLine + Environment.NewLine + "This is only an initial release with baseline simulations working; expect PvE and local PvP features to come soon (see the roadmap for details) Please bring up any issues, questions, user-submitted builds, etc. on the github page.");
             changelogText.AppendText(Environment.NewLine + "Additionally, every time there is an update involving additional characters, new AI, or new gameplay features, an official tournament will be run. The link to view tournament results of the simulation between all characters will be found here. Custom-created, user-submitted builds will also be a part of the competition.");
             changelogText.AppendText(Environment.NewLine + Environment.NewLine + "View the most recent tournament(which may eventually be moved onto this program itself): https://challonge.com/bz19xyip");
             changelogText.AppendText(Environment.NewLine + "Tournament Archives:"); //NEEDS CHANGING
@@ -268,6 +272,8 @@ namespace DCTBFightingSimulator
                 //Perform player 2 Imports based on the selected dropdown
                 player2DropdownImports();
             }
+            player1OrigHPEve = player1.getHP();
+            player2OrigHPEve = player2.getHP();
             loadPlayer1VisualStats();
             loadPlayer2VisualStats();
             EvESimulation();
@@ -4074,6 +4080,22 @@ namespace DCTBFightingSimulator
             {
                 p1Dizzy.Text = "NO";
             }
+            //Healthbar
+            if (player1.getHP() <= 0)
+            {
+                player1HealthBarEvE.Value = 0;
+                player1HealthBarEvE.Update();
+            }
+            else if (player1.getHP() >= player1OrigHPEve)
+            {
+                player1HealthBarEvE.Value = 100;
+                player1HealthBarEvE.Update();
+            }
+            else
+            {
+                player1HealthBarEvE.Value = player1.getHP() / player1OrigHPEve;
+                player1HealthBarEvE.Update();
+            }
             Application.DoEvents();
         }
                     //Player 2
@@ -4178,7 +4200,24 @@ namespace DCTBFightingSimulator
             {
                 p2Dizzy.Text = "NO";
             }
+            //Healthbar
+            if (player2.getHP() <= 0)
+            {
+                player2HealthBarEvE.Value = 0;
+                player2HealthBarEvE.Update();
+            }
+            else if (player2.getHP() >= player2OrigHPEve)
+            {
+                player2HealthBarEvE.Value = 100;
+                player2HealthBarEvE.Update();
+            }
+            else
+            {
+                player2HealthBarEvE.Value = player2.getHP() / player2OrigHPEve;
+                player2HealthBarEvE.Update();
+            }
             Application.DoEvents();
+
         }
 
         //Character Creation Methods
@@ -7378,6 +7417,9 @@ namespace DCTBFightingSimulator
             
         }
 
+        private void label45_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }

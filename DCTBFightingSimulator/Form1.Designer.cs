@@ -551,6 +551,8 @@ namespace DCTBFightingSimulator
             this.label55 = new System.Windows.Forms.Label();
             this.p1Def = new System.Windows.Forms.NumericUpDown();
             this.label53 = new System.Windows.Forms.Label();
+            this.player1HealthBarEvE = new System.Windows.Forms.ProgressBar();
+            this.player2HealthBarEvE = new System.Windows.Forms.ProgressBar();
             ((System.ComponentModel.ISupportInitialize)(this.CCN1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CCN2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CCN3)).BeginInit();
@@ -5076,11 +5078,12 @@ namespace DCTBFightingSimulator
             // label45
             // 
             this.label45.AutoSize = true;
-            this.label45.Location = new System.Drawing.Point(17, 128);
+            this.label45.Location = new System.Drawing.Point(73, 129);
             this.label45.Name = "label45";
             this.label45.Size = new System.Drawing.Size(78, 13);
             this.label45.TabIndex = 7;
             this.label45.Text = "Select Player 1";
+            this.label45.Click += new System.EventHandler(this.label45_Click);
             // 
             // player1SelectionEvE
             // 
@@ -5118,13 +5121,13 @@ namespace DCTBFightingSimulator
             "Duskan (GHOST) (Vanilla)"});
             this.player1SelectionEvE.Location = new System.Drawing.Point(8, 150);
             this.player1SelectionEvE.Name = "player1SelectionEvE";
-            this.player1SelectionEvE.Size = new System.Drawing.Size(94, 21);
+            this.player1SelectionEvE.Size = new System.Drawing.Size(206, 21);
             this.player1SelectionEvE.TabIndex = 9;
             // 
             // label46
             // 
             this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(1022, 128);
+            this.label46.Location = new System.Drawing.Point(956, 125);
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(78, 13);
             this.label46.TabIndex = 10;
@@ -5164,9 +5167,9 @@ namespace DCTBFightingSimulator
             "The Demon (MORTAL) (Vanilla)",
             "Spirtu (GHOST) (Vanilla)",
             "Duskan (GHOST) (Vanilla)"});
-            this.player2SelectionEvE.Location = new System.Drawing.Point(1016, 146);
+            this.player2SelectionEvE.Location = new System.Drawing.Point(888, 145);
             this.player2SelectionEvE.Name = "player2SelectionEvE";
-            this.player2SelectionEvE.Size = new System.Drawing.Size(94, 21);
+            this.player2SelectionEvE.Size = new System.Drawing.Size(212, 21);
             this.player2SelectionEvE.TabIndex = 11;
             // 
             // EvEStartButton
@@ -5182,7 +5185,7 @@ namespace DCTBFightingSimulator
             // label47
             // 
             this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(131, 128);
+            this.label47.Location = new System.Drawing.Point(250, 129);
             this.label47.Name = "label47";
             this.label47.Size = new System.Drawing.Size(53, 13);
             this.label47.TabIndex = 13;
@@ -5190,7 +5193,7 @@ namespace DCTBFightingSimulator
             // 
             // player1ImportEvE
             // 
-            this.player1ImportEvE.Location = new System.Drawing.Point(108, 150);
+            this.player1ImportEvE.Location = new System.Drawing.Point(220, 151);
             this.player1ImportEvE.Name = "player1ImportEvE";
             this.player1ImportEvE.Size = new System.Drawing.Size(100, 20);
             this.player1ImportEvE.TabIndex = 14;
@@ -5198,7 +5201,7 @@ namespace DCTBFightingSimulator
             // label48
             // 
             this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(1138, 128);
+            this.label48.Location = new System.Drawing.Point(1129, 130);
             this.label48.Name = "label48";
             this.label48.Size = new System.Drawing.Size(53, 13);
             this.label48.TabIndex = 15;
@@ -5206,7 +5209,7 @@ namespace DCTBFightingSimulator
             // 
             // player2ImportEvE
             // 
-            this.player2ImportEvE.Location = new System.Drawing.Point(1116, 146);
+            this.player2ImportEvE.Location = new System.Drawing.Point(1106, 146);
             this.player2ImportEvE.Name = "player2ImportEvE";
             this.player2ImportEvE.Size = new System.Drawing.Size(100, 20);
             this.player2ImportEvE.TabIndex = 16;
@@ -5214,7 +5217,7 @@ namespace DCTBFightingSimulator
             // label49
             // 
             this.label49.AutoSize = true;
-            this.label49.Location = new System.Drawing.Point(95, 196);
+            this.label49.Location = new System.Drawing.Point(30, 199);
             this.label49.Name = "label49";
             this.label49.Size = new System.Drawing.Size(35, 13);
             this.label49.TabIndex = 19;
@@ -5222,7 +5225,7 @@ namespace DCTBFightingSimulator
             // 
             // p1Name
             // 
-            this.p1Name.Location = new System.Drawing.Point(134, 193);
+            this.p1Name.Location = new System.Drawing.Point(69, 196);
             this.p1Name.Name = "p1Name";
             this.p1Name.ReadOnly = true;
             this.p1Name.Size = new System.Drawing.Size(100, 20);
@@ -5231,7 +5234,7 @@ namespace DCTBFightingSimulator
             // label50
             // 
             this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(95, 222);
+            this.label50.Location = new System.Drawing.Point(30, 225);
             this.label50.Name = "label50";
             this.label50.Size = new System.Drawing.Size(35, 13);
             this.label50.TabIndex = 21;
@@ -5239,7 +5242,7 @@ namespace DCTBFightingSimulator
             // 
             // p1Desc
             // 
-            this.p1Desc.Location = new System.Drawing.Point(134, 219);
+            this.p1Desc.Location = new System.Drawing.Point(69, 222);
             this.p1Desc.Multiline = true;
             this.p1Desc.Name = "p1Desc";
             this.p1Desc.ReadOnly = true;
@@ -5250,7 +5253,7 @@ namespace DCTBFightingSimulator
             // label51
             // 
             this.label51.AutoSize = true;
-            this.label51.Location = new System.Drawing.Point(95, 317);
+            this.label51.Location = new System.Drawing.Point(30, 320);
             this.label51.Name = "label51";
             this.label51.Size = new System.Drawing.Size(22, 13);
             this.label51.TabIndex = 23;
@@ -5258,7 +5261,7 @@ namespace DCTBFightingSimulator
             // 
             // p1Hp
             // 
-            this.p1Hp.Location = new System.Drawing.Point(137, 315);
+            this.p1Hp.Location = new System.Drawing.Point(72, 318);
             this.p1Hp.Maximum = new decimal(new int[] {
             1215752192,
             23,
@@ -5277,7 +5280,7 @@ namespace DCTBFightingSimulator
             // label52
             // 
             this.label52.AutoSize = true;
-            this.label52.Location = new System.Drawing.Point(95, 343);
+            this.label52.Location = new System.Drawing.Point(30, 346);
             this.label52.Name = "label52";
             this.label52.Size = new System.Drawing.Size(28, 13);
             this.label52.TabIndex = 25;
@@ -5285,7 +5288,7 @@ namespace DCTBFightingSimulator
             // 
             // p1Atk
             // 
-            this.p1Atk.Location = new System.Drawing.Point(137, 341);
+            this.p1Atk.Location = new System.Drawing.Point(72, 344);
             this.p1Atk.Maximum = new decimal(new int[] {
             1215752192,
             23,
@@ -5303,6 +5306,8 @@ namespace DCTBFightingSimulator
             // 
             // EvEPanel
             // 
+            this.EvEPanel.Controls.Add(this.player2HealthBarEvE);
+            this.EvEPanel.Controls.Add(this.player1HealthBarEvE);
             this.EvEPanel.Controls.Add(this.p2Mv5Desc);
             this.EvEPanel.Controls.Add(this.p2Mv5AtkM);
             this.EvEPanel.Controls.Add(this.label85);
@@ -5925,7 +5930,7 @@ namespace DCTBFightingSimulator
             // 
             // p2Dizzy
             // 
-            this.p2Dizzy.Location = new System.Drawing.Point(1091, 400);
+            this.p2Dizzy.Location = new System.Drawing.Point(1162, 399);
             this.p2Dizzy.Name = "p2Dizzy";
             this.p2Dizzy.ReadOnly = true;
             this.p2Dizzy.Size = new System.Drawing.Size(51, 20);
@@ -5934,7 +5939,7 @@ namespace DCTBFightingSimulator
             // label105
             // 
             this.label105.AutoSize = true;
-            this.label105.Location = new System.Drawing.Point(1032, 403);
+            this.label105.Location = new System.Drawing.Point(1103, 402);
             this.label105.Name = "label105";
             this.label105.Size = new System.Drawing.Size(38, 13);
             this.label105.TabIndex = 122;
@@ -5942,7 +5947,7 @@ namespace DCTBFightingSimulator
             // 
             // p2Weak
             // 
-            this.p2Weak.Location = new System.Drawing.Point(1091, 374);
+            this.p2Weak.Location = new System.Drawing.Point(1162, 373);
             this.p2Weak.Name = "p2Weak";
             this.p2Weak.ReadOnly = true;
             this.p2Weak.Size = new System.Drawing.Size(51, 20);
@@ -5951,7 +5956,7 @@ namespace DCTBFightingSimulator
             // label106
             // 
             this.label106.AutoSize = true;
-            this.label106.Location = new System.Drawing.Point(1032, 377);
+            this.label106.Location = new System.Drawing.Point(1103, 376);
             this.label106.Name = "label106";
             this.label106.Size = new System.Drawing.Size(42, 13);
             this.label106.TabIndex = 120;
@@ -5959,7 +5964,7 @@ namespace DCTBFightingSimulator
             // 
             // p2Stupefied
             // 
-            this.p2Stupefied.Location = new System.Drawing.Point(1091, 348);
+            this.p2Stupefied.Location = new System.Drawing.Point(1162, 347);
             this.p2Stupefied.Name = "p2Stupefied";
             this.p2Stupefied.ReadOnly = true;
             this.p2Stupefied.Size = new System.Drawing.Size(51, 20);
@@ -5968,7 +5973,7 @@ namespace DCTBFightingSimulator
             // label107
             // 
             this.label107.AutoSize = true;
-            this.label107.Location = new System.Drawing.Point(1032, 351);
+            this.label107.Location = new System.Drawing.Point(1103, 350);
             this.label107.Name = "label107";
             this.label107.Size = new System.Drawing.Size(58, 13);
             this.label107.TabIndex = 118;
@@ -5976,7 +5981,7 @@ namespace DCTBFightingSimulator
             // 
             // p2Bleeding
             // 
-            this.p2Bleeding.Location = new System.Drawing.Point(1091, 322);
+            this.p2Bleeding.Location = new System.Drawing.Point(1162, 321);
             this.p2Bleeding.Name = "p2Bleeding";
             this.p2Bleeding.ReadOnly = true;
             this.p2Bleeding.Size = new System.Drawing.Size(51, 20);
@@ -5985,7 +5990,7 @@ namespace DCTBFightingSimulator
             // label108
             // 
             this.label108.AutoSize = true;
-            this.label108.Location = new System.Drawing.Point(1032, 325);
+            this.label108.Location = new System.Drawing.Point(1103, 324);
             this.label108.Name = "label108";
             this.label108.Size = new System.Drawing.Size(54, 13);
             this.label108.TabIndex = 116;
@@ -5993,7 +5998,7 @@ namespace DCTBFightingSimulator
             // 
             // p2Frozen
             // 
-            this.p2Frozen.Location = new System.Drawing.Point(1091, 296);
+            this.p2Frozen.Location = new System.Drawing.Point(1162, 295);
             this.p2Frozen.Name = "p2Frozen";
             this.p2Frozen.ReadOnly = true;
             this.p2Frozen.Size = new System.Drawing.Size(51, 20);
@@ -6002,7 +6007,7 @@ namespace DCTBFightingSimulator
             // label109
             // 
             this.label109.AutoSize = true;
-            this.label109.Location = new System.Drawing.Point(1032, 299);
+            this.label109.Location = new System.Drawing.Point(1103, 298);
             this.label109.Name = "label109";
             this.label109.Size = new System.Drawing.Size(45, 13);
             this.label109.TabIndex = 114;
@@ -6010,7 +6015,7 @@ namespace DCTBFightingSimulator
             // 
             // p2Crippled
             // 
-            this.p2Crippled.Location = new System.Drawing.Point(1091, 270);
+            this.p2Crippled.Location = new System.Drawing.Point(1162, 269);
             this.p2Crippled.Name = "p2Crippled";
             this.p2Crippled.ReadOnly = true;
             this.p2Crippled.Size = new System.Drawing.Size(51, 20);
@@ -6019,7 +6024,7 @@ namespace DCTBFightingSimulator
             // label110
             // 
             this.label110.AutoSize = true;
-            this.label110.Location = new System.Drawing.Point(1032, 273);
+            this.label110.Location = new System.Drawing.Point(1103, 272);
             this.label110.Name = "label110";
             this.label110.Size = new System.Drawing.Size(51, 13);
             this.label110.TabIndex = 112;
@@ -6027,7 +6032,7 @@ namespace DCTBFightingSimulator
             // 
             // p2Burned
             // 
-            this.p2Burned.Location = new System.Drawing.Point(1091, 244);
+            this.p2Burned.Location = new System.Drawing.Point(1162, 243);
             this.p2Burned.Name = "p2Burned";
             this.p2Burned.ReadOnly = true;
             this.p2Burned.Size = new System.Drawing.Size(51, 20);
@@ -6036,7 +6041,7 @@ namespace DCTBFightingSimulator
             // label111
             // 
             this.label111.AutoSize = true;
-            this.label111.Location = new System.Drawing.Point(1032, 247);
+            this.label111.Location = new System.Drawing.Point(1103, 246);
             this.label111.Name = "label111";
             this.label111.Size = new System.Drawing.Size(47, 13);
             this.label111.TabIndex = 110;
@@ -6044,7 +6049,7 @@ namespace DCTBFightingSimulator
             // 
             // p2Poisoned
             // 
-            this.p2Poisoned.Location = new System.Drawing.Point(1091, 218);
+            this.p2Poisoned.Location = new System.Drawing.Point(1162, 217);
             this.p2Poisoned.Name = "p2Poisoned";
             this.p2Poisoned.ReadOnly = true;
             this.p2Poisoned.Size = new System.Drawing.Size(51, 20);
@@ -6053,7 +6058,7 @@ namespace DCTBFightingSimulator
             // label112
             // 
             this.label112.AutoSize = true;
-            this.label112.Location = new System.Drawing.Point(1032, 221);
+            this.label112.Location = new System.Drawing.Point(1103, 220);
             this.label112.Name = "label112";
             this.label112.Size = new System.Drawing.Size(57, 13);
             this.label112.TabIndex = 108;
@@ -6061,7 +6066,7 @@ namespace DCTBFightingSimulator
             // 
             // p2Stunned
             // 
-            this.p2Stunned.Location = new System.Drawing.Point(1091, 192);
+            this.p2Stunned.Location = new System.Drawing.Point(1162, 191);
             this.p2Stunned.Name = "p2Stunned";
             this.p2Stunned.ReadOnly = true;
             this.p2Stunned.Size = new System.Drawing.Size(51, 20);
@@ -6070,7 +6075,7 @@ namespace DCTBFightingSimulator
             // label113
             // 
             this.label113.AutoSize = true;
-            this.label113.Location = new System.Drawing.Point(1032, 195);
+            this.label113.Location = new System.Drawing.Point(1103, 194);
             this.label113.Name = "label113";
             this.label113.Size = new System.Drawing.Size(53, 13);
             this.label113.TabIndex = 106;
@@ -6249,7 +6254,7 @@ namespace DCTBFightingSimulator
             // 
             // p1Mv5Desc
             // 
-            this.p1Mv5Desc.Location = new System.Drawing.Point(144, 689);
+            this.p1Mv5Desc.Location = new System.Drawing.Point(79, 692);
             this.p1Mv5Desc.Multiline = true;
             this.p1Mv5Desc.Name = "p1Mv5Desc";
             this.p1Mv5Desc.ReadOnly = true;
@@ -6260,7 +6265,7 @@ namespace DCTBFightingSimulator
             // p1Mv5AtkM
             // 
             this.p1Mv5AtkM.DecimalPlaces = 2;
-            this.p1Mv5AtkM.Location = new System.Drawing.Point(292, 663);
+            this.p1Mv5AtkM.Location = new System.Drawing.Point(227, 666);
             this.p1Mv5AtkM.Maximum = new decimal(new int[] {
             1215752192,
             23,
@@ -6279,7 +6284,7 @@ namespace DCTBFightingSimulator
             // label81
             // 
             this.label81.AutoSize = true;
-            this.label81.Location = new System.Drawing.Point(250, 667);
+            this.label81.Location = new System.Drawing.Point(185, 670);
             this.label81.Name = "label81";
             this.label81.Size = new System.Drawing.Size(43, 13);
             this.label81.TabIndex = 89;
@@ -6287,7 +6292,7 @@ namespace DCTBFightingSimulator
             // 
             // p1Mv5Acc
             // 
-            this.p1Mv5Acc.Location = new System.Drawing.Point(292, 689);
+            this.p1Mv5Acc.Location = new System.Drawing.Point(227, 692);
             this.p1Mv5Acc.Maximum = new decimal(new int[] {
             1215752192,
             23,
@@ -6306,7 +6311,7 @@ namespace DCTBFightingSimulator
             // label82
             // 
             this.label82.AutoSize = true;
-            this.label82.Location = new System.Drawing.Point(251, 692);
+            this.label82.Location = new System.Drawing.Point(186, 695);
             this.label82.Name = "label82";
             this.label82.Size = new System.Drawing.Size(28, 13);
             this.label82.TabIndex = 87;
@@ -6315,7 +6320,7 @@ namespace DCTBFightingSimulator
             // label83
             // 
             this.label83.AutoSize = true;
-            this.label83.Location = new System.Drawing.Point(95, 693);
+            this.label83.Location = new System.Drawing.Point(30, 696);
             this.label83.Name = "label83";
             this.label83.Size = new System.Drawing.Size(35, 13);
             this.label83.TabIndex = 86;
@@ -6323,7 +6328,7 @@ namespace DCTBFightingSimulator
             // 
             // p1Mv5
             // 
-            this.p1Mv5.Location = new System.Drawing.Point(144, 663);
+            this.p1Mv5.Location = new System.Drawing.Point(79, 666);
             this.p1Mv5.Name = "p1Mv5";
             this.p1Mv5.ReadOnly = true;
             this.p1Mv5.Size = new System.Drawing.Size(100, 20);
@@ -6332,7 +6337,7 @@ namespace DCTBFightingSimulator
             // label84
             // 
             this.label84.AutoSize = true;
-            this.label84.Location = new System.Drawing.Point(95, 667);
+            this.label84.Location = new System.Drawing.Point(30, 670);
             this.label84.Name = "label84";
             this.label84.Size = new System.Drawing.Size(43, 13);
             this.label84.TabIndex = 84;
@@ -6340,7 +6345,7 @@ namespace DCTBFightingSimulator
             // 
             // p1Mv4Desc
             // 
-            this.p1Mv4Desc.Location = new System.Drawing.Point(144, 636);
+            this.p1Mv4Desc.Location = new System.Drawing.Point(79, 639);
             this.p1Mv4Desc.Multiline = true;
             this.p1Mv4Desc.Name = "p1Mv4Desc";
             this.p1Mv4Desc.ReadOnly = true;
@@ -6351,7 +6356,7 @@ namespace DCTBFightingSimulator
             // p1Mv4AtkM
             // 
             this.p1Mv4AtkM.DecimalPlaces = 2;
-            this.p1Mv4AtkM.Location = new System.Drawing.Point(292, 610);
+            this.p1Mv4AtkM.Location = new System.Drawing.Point(227, 613);
             this.p1Mv4AtkM.Maximum = new decimal(new int[] {
             1215752192,
             23,
@@ -6370,7 +6375,7 @@ namespace DCTBFightingSimulator
             // label77
             // 
             this.label77.AutoSize = true;
-            this.label77.Location = new System.Drawing.Point(250, 614);
+            this.label77.Location = new System.Drawing.Point(185, 617);
             this.label77.Name = "label77";
             this.label77.Size = new System.Drawing.Size(43, 13);
             this.label77.TabIndex = 81;
@@ -6378,7 +6383,7 @@ namespace DCTBFightingSimulator
             // 
             // p1Mv4Acc
             // 
-            this.p1Mv4Acc.Location = new System.Drawing.Point(292, 636);
+            this.p1Mv4Acc.Location = new System.Drawing.Point(227, 639);
             this.p1Mv4Acc.Maximum = new decimal(new int[] {
             1215752192,
             23,
@@ -6397,7 +6402,7 @@ namespace DCTBFightingSimulator
             // label78
             // 
             this.label78.AutoSize = true;
-            this.label78.Location = new System.Drawing.Point(251, 639);
+            this.label78.Location = new System.Drawing.Point(186, 642);
             this.label78.Name = "label78";
             this.label78.Size = new System.Drawing.Size(28, 13);
             this.label78.TabIndex = 79;
@@ -6406,7 +6411,7 @@ namespace DCTBFightingSimulator
             // label79
             // 
             this.label79.AutoSize = true;
-            this.label79.Location = new System.Drawing.Point(95, 640);
+            this.label79.Location = new System.Drawing.Point(30, 643);
             this.label79.Name = "label79";
             this.label79.Size = new System.Drawing.Size(35, 13);
             this.label79.TabIndex = 78;
@@ -6414,7 +6419,7 @@ namespace DCTBFightingSimulator
             // 
             // p1Mv4
             // 
-            this.p1Mv4.Location = new System.Drawing.Point(144, 610);
+            this.p1Mv4.Location = new System.Drawing.Point(79, 613);
             this.p1Mv4.Name = "p1Mv4";
             this.p1Mv4.ReadOnly = true;
             this.p1Mv4.Size = new System.Drawing.Size(100, 20);
@@ -6423,7 +6428,7 @@ namespace DCTBFightingSimulator
             // label80
             // 
             this.label80.AutoSize = true;
-            this.label80.Location = new System.Drawing.Point(95, 614);
+            this.label80.Location = new System.Drawing.Point(30, 617);
             this.label80.Name = "label80";
             this.label80.Size = new System.Drawing.Size(43, 13);
             this.label80.TabIndex = 76;
@@ -6431,7 +6436,7 @@ namespace DCTBFightingSimulator
             // 
             // p1Mv3Desc
             // 
-            this.p1Mv3Desc.Location = new System.Drawing.Point(144, 583);
+            this.p1Mv3Desc.Location = new System.Drawing.Point(79, 586);
             this.p1Mv3Desc.Multiline = true;
             this.p1Mv3Desc.Name = "p1Mv3Desc";
             this.p1Mv3Desc.ReadOnly = true;
@@ -6442,7 +6447,7 @@ namespace DCTBFightingSimulator
             // p1Mv3AtkM
             // 
             this.p1Mv3AtkM.DecimalPlaces = 2;
-            this.p1Mv3AtkM.Location = new System.Drawing.Point(292, 557);
+            this.p1Mv3AtkM.Location = new System.Drawing.Point(227, 560);
             this.p1Mv3AtkM.Maximum = new decimal(new int[] {
             1215752192,
             23,
@@ -6461,7 +6466,7 @@ namespace DCTBFightingSimulator
             // label73
             // 
             this.label73.AutoSize = true;
-            this.label73.Location = new System.Drawing.Point(250, 561);
+            this.label73.Location = new System.Drawing.Point(185, 564);
             this.label73.Name = "label73";
             this.label73.Size = new System.Drawing.Size(43, 13);
             this.label73.TabIndex = 73;
@@ -6469,7 +6474,7 @@ namespace DCTBFightingSimulator
             // 
             // p1Mv3Acc
             // 
-            this.p1Mv3Acc.Location = new System.Drawing.Point(292, 583);
+            this.p1Mv3Acc.Location = new System.Drawing.Point(227, 586);
             this.p1Mv3Acc.Maximum = new decimal(new int[] {
             1215752192,
             23,
@@ -6488,7 +6493,7 @@ namespace DCTBFightingSimulator
             // label74
             // 
             this.label74.AutoSize = true;
-            this.label74.Location = new System.Drawing.Point(251, 586);
+            this.label74.Location = new System.Drawing.Point(186, 589);
             this.label74.Name = "label74";
             this.label74.Size = new System.Drawing.Size(28, 13);
             this.label74.TabIndex = 71;
@@ -6497,7 +6502,7 @@ namespace DCTBFightingSimulator
             // label75
             // 
             this.label75.AutoSize = true;
-            this.label75.Location = new System.Drawing.Point(95, 587);
+            this.label75.Location = new System.Drawing.Point(30, 590);
             this.label75.Name = "label75";
             this.label75.Size = new System.Drawing.Size(35, 13);
             this.label75.TabIndex = 70;
@@ -6505,7 +6510,7 @@ namespace DCTBFightingSimulator
             // 
             // p1Mv3
             // 
-            this.p1Mv3.Location = new System.Drawing.Point(144, 557);
+            this.p1Mv3.Location = new System.Drawing.Point(79, 560);
             this.p1Mv3.Name = "p1Mv3";
             this.p1Mv3.ReadOnly = true;
             this.p1Mv3.Size = new System.Drawing.Size(100, 20);
@@ -6514,7 +6519,7 @@ namespace DCTBFightingSimulator
             // label76
             // 
             this.label76.AutoSize = true;
-            this.label76.Location = new System.Drawing.Point(95, 561);
+            this.label76.Location = new System.Drawing.Point(30, 564);
             this.label76.Name = "label76";
             this.label76.Size = new System.Drawing.Size(43, 13);
             this.label76.TabIndex = 68;
@@ -6522,7 +6527,7 @@ namespace DCTBFightingSimulator
             // 
             // p1Mv2Desc
             // 
-            this.p1Mv2Desc.Location = new System.Drawing.Point(144, 531);
+            this.p1Mv2Desc.Location = new System.Drawing.Point(79, 534);
             this.p1Mv2Desc.Multiline = true;
             this.p1Mv2Desc.Name = "p1Mv2Desc";
             this.p1Mv2Desc.ReadOnly = true;
@@ -6533,7 +6538,7 @@ namespace DCTBFightingSimulator
             // p1Mv2AtkM
             // 
             this.p1Mv2AtkM.DecimalPlaces = 2;
-            this.p1Mv2AtkM.Location = new System.Drawing.Point(292, 505);
+            this.p1Mv2AtkM.Location = new System.Drawing.Point(227, 508);
             this.p1Mv2AtkM.Maximum = new decimal(new int[] {
             1215752192,
             23,
@@ -6552,7 +6557,7 @@ namespace DCTBFightingSimulator
             // label69
             // 
             this.label69.AutoSize = true;
-            this.label69.Location = new System.Drawing.Point(250, 509);
+            this.label69.Location = new System.Drawing.Point(185, 512);
             this.label69.Name = "label69";
             this.label69.Size = new System.Drawing.Size(43, 13);
             this.label69.TabIndex = 65;
@@ -6560,7 +6565,7 @@ namespace DCTBFightingSimulator
             // 
             // p1Mv2Acc
             // 
-            this.p1Mv2Acc.Location = new System.Drawing.Point(292, 531);
+            this.p1Mv2Acc.Location = new System.Drawing.Point(227, 534);
             this.p1Mv2Acc.Maximum = new decimal(new int[] {
             1215752192,
             23,
@@ -6579,7 +6584,7 @@ namespace DCTBFightingSimulator
             // label70
             // 
             this.label70.AutoSize = true;
-            this.label70.Location = new System.Drawing.Point(251, 534);
+            this.label70.Location = new System.Drawing.Point(186, 537);
             this.label70.Name = "label70";
             this.label70.Size = new System.Drawing.Size(28, 13);
             this.label70.TabIndex = 63;
@@ -6588,7 +6593,7 @@ namespace DCTBFightingSimulator
             // label71
             // 
             this.label71.AutoSize = true;
-            this.label71.Location = new System.Drawing.Point(95, 535);
+            this.label71.Location = new System.Drawing.Point(30, 538);
             this.label71.Name = "label71";
             this.label71.Size = new System.Drawing.Size(35, 13);
             this.label71.TabIndex = 62;
@@ -6596,7 +6601,7 @@ namespace DCTBFightingSimulator
             // 
             // p1Mv2
             // 
-            this.p1Mv2.Location = new System.Drawing.Point(144, 505);
+            this.p1Mv2.Location = new System.Drawing.Point(79, 508);
             this.p1Mv2.Name = "p1Mv2";
             this.p1Mv2.ReadOnly = true;
             this.p1Mv2.Size = new System.Drawing.Size(100, 20);
@@ -6605,7 +6610,7 @@ namespace DCTBFightingSimulator
             // label72
             // 
             this.label72.AutoSize = true;
-            this.label72.Location = new System.Drawing.Point(95, 509);
+            this.label72.Location = new System.Drawing.Point(30, 512);
             this.label72.Name = "label72";
             this.label72.Size = new System.Drawing.Size(43, 13);
             this.label72.TabIndex = 60;
@@ -6613,7 +6618,7 @@ namespace DCTBFightingSimulator
             // 
             // p1Mv1Desc
             // 
-            this.p1Mv1Desc.Location = new System.Drawing.Point(144, 478);
+            this.p1Mv1Desc.Location = new System.Drawing.Point(79, 481);
             this.p1Mv1Desc.Multiline = true;
             this.p1Mv1Desc.Name = "p1Mv1Desc";
             this.p1Mv1Desc.ReadOnly = true;
@@ -6624,7 +6629,7 @@ namespace DCTBFightingSimulator
             // p1Mv1AtkM
             // 
             this.p1Mv1AtkM.DecimalPlaces = 2;
-            this.p1Mv1AtkM.Location = new System.Drawing.Point(292, 452);
+            this.p1Mv1AtkM.Location = new System.Drawing.Point(227, 455);
             this.p1Mv1AtkM.Maximum = new decimal(new int[] {
             1215752192,
             23,
@@ -6643,7 +6648,7 @@ namespace DCTBFightingSimulator
             // label68
             // 
             this.label68.AutoSize = true;
-            this.label68.Location = new System.Drawing.Point(250, 456);
+            this.label68.Location = new System.Drawing.Point(185, 459);
             this.label68.Name = "label68";
             this.label68.Size = new System.Drawing.Size(43, 13);
             this.label68.TabIndex = 57;
@@ -6651,7 +6656,7 @@ namespace DCTBFightingSimulator
             // 
             // p1Mv1Acc
             // 
-            this.p1Mv1Acc.Location = new System.Drawing.Point(292, 478);
+            this.p1Mv1Acc.Location = new System.Drawing.Point(227, 481);
             this.p1Mv1Acc.Maximum = new decimal(new int[] {
             1215752192,
             23,
@@ -6670,7 +6675,7 @@ namespace DCTBFightingSimulator
             // label67
             // 
             this.label67.AutoSize = true;
-            this.label67.Location = new System.Drawing.Point(251, 481);
+            this.label67.Location = new System.Drawing.Point(186, 484);
             this.label67.Name = "label67";
             this.label67.Size = new System.Drawing.Size(28, 13);
             this.label67.TabIndex = 55;
@@ -6679,7 +6684,7 @@ namespace DCTBFightingSimulator
             // label65
             // 
             this.label65.AutoSize = true;
-            this.label65.Location = new System.Drawing.Point(95, 482);
+            this.label65.Location = new System.Drawing.Point(30, 485);
             this.label65.Name = "label65";
             this.label65.Size = new System.Drawing.Size(35, 13);
             this.label65.TabIndex = 53;
@@ -6687,7 +6692,7 @@ namespace DCTBFightingSimulator
             // 
             // p1Mv1
             // 
-            this.p1Mv1.Location = new System.Drawing.Point(144, 452);
+            this.p1Mv1.Location = new System.Drawing.Point(79, 455);
             this.p1Mv1.Name = "p1Mv1";
             this.p1Mv1.ReadOnly = true;
             this.p1Mv1.Size = new System.Drawing.Size(100, 20);
@@ -6696,7 +6701,7 @@ namespace DCTBFightingSimulator
             // label66
             // 
             this.label66.AutoSize = true;
-            this.label66.Location = new System.Drawing.Point(95, 456);
+            this.label66.Location = new System.Drawing.Point(30, 459);
             this.label66.Name = "label66";
             this.label66.Size = new System.Drawing.Size(43, 13);
             this.label66.TabIndex = 51;
@@ -6857,7 +6862,7 @@ namespace DCTBFightingSimulator
             // 
             // p1Dge
             // 
-            this.p1Dge.Location = new System.Drawing.Point(137, 422);
+            this.p1Dge.Location = new System.Drawing.Point(72, 425);
             this.p1Dge.Maximum = new decimal(new int[] {
             1215752192,
             23,
@@ -6876,7 +6881,7 @@ namespace DCTBFightingSimulator
             // label54
             // 
             this.label54.AutoSize = true;
-            this.label54.Location = new System.Drawing.Point(95, 424);
+            this.label54.Location = new System.Drawing.Point(30, 427);
             this.label54.Name = "label54";
             this.label54.Size = new System.Drawing.Size(30, 13);
             this.label54.TabIndex = 31;
@@ -6884,7 +6889,7 @@ namespace DCTBFightingSimulator
             // 
             // p1Acc
             // 
-            this.p1Acc.Location = new System.Drawing.Point(137, 395);
+            this.p1Acc.Location = new System.Drawing.Point(72, 398);
             this.p1Acc.Maximum = new decimal(new int[] {
             1215752192,
             23,
@@ -6903,7 +6908,7 @@ namespace DCTBFightingSimulator
             // label55
             // 
             this.label55.AutoSize = true;
-            this.label55.Location = new System.Drawing.Point(95, 397);
+            this.label55.Location = new System.Drawing.Point(30, 400);
             this.label55.Name = "label55";
             this.label55.Size = new System.Drawing.Size(28, 13);
             this.label55.TabIndex = 29;
@@ -6911,7 +6916,7 @@ namespace DCTBFightingSimulator
             // 
             // p1Def
             // 
-            this.p1Def.Location = new System.Drawing.Point(137, 368);
+            this.p1Def.Location = new System.Drawing.Point(72, 371);
             this.p1Def.Maximum = new decimal(new int[] {
             1215752192,
             23,
@@ -6930,11 +6935,29 @@ namespace DCTBFightingSimulator
             // label53
             // 
             this.label53.AutoSize = true;
-            this.label53.Location = new System.Drawing.Point(95, 370);
+            this.label53.Location = new System.Drawing.Point(30, 373);
             this.label53.Name = "label53";
             this.label53.Size = new System.Drawing.Size(28, 13);
             this.label53.TabIndex = 27;
             this.label53.Text = "DEF";
+            // 
+            // player1HealthBarEvE
+            // 
+            this.player1HealthBarEvE.Location = new System.Drawing.Point(174, 317);
+            this.player1HealthBarEvE.MarqueeAnimationSpeed = 0;
+            this.player1HealthBarEvE.Name = "player1HealthBarEvE";
+            this.player1HealthBarEvE.Size = new System.Drawing.Size(134, 23);
+            this.player1HealthBarEvE.TabIndex = 164;
+            this.player1HealthBarEvE.Value = 100;
+            // 
+            // player2HealthBarEvE
+            // 
+            this.player2HealthBarEvE.Location = new System.Drawing.Point(951, 310);
+            this.player2HealthBarEvE.MarqueeAnimationSpeed = 0;
+            this.player2HealthBarEvE.Name = "player2HealthBarEvE";
+            this.player2HealthBarEvE.Size = new System.Drawing.Size(134, 23);
+            this.player2HealthBarEvE.TabIndex = 165;
+            this.player2HealthBarEvE.Value = 100;
             // 
             // DCTBFightingSimulator
             // 
@@ -6942,8 +6965,8 @@ namespace DCTBFightingSimulator
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1432, 853);
-            this.Controls.Add(this.characterDatabasePanel);
             this.Controls.Add(this.EvEPanel);
+            this.Controls.Add(this.characterDatabasePanel);
             this.Controls.Add(this.startingPanel);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox2);
@@ -7596,6 +7619,8 @@ namespace DCTBFightingSimulator
         private System.Windows.Forms.TextBox changelogText;
         private System.Windows.Forms.Label roadmapLabel;
         private System.Windows.Forms.TextBox roadmapText;
+        private System.Windows.Forms.ProgressBar player2HealthBarEvE;
+        private System.Windows.Forms.ProgressBar player1HealthBarEvE;
     }
 }
 
