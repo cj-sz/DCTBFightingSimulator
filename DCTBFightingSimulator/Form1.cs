@@ -82,6 +82,8 @@ namespace DCTBFightingSimulator
             //Fill in Changelog and Roadmap
             fillChangelog();
             fillRoadmap();
+            //Initialize Tooltips
+            initTooltips();
         }
         
         //Changelog and Roadmap
@@ -93,6 +95,7 @@ namespace DCTBFightingSimulator
             changelogText.AppendText(Environment.NewLine + "Version 0.1.1 Release (#2) of DCTBFightingSimulator!" + Environment.NewLine); //NEEDS UPDATE
             changelogText.AppendText(Environment.NewLine + Environment.NewLine + "v0.1.1 Changelog:"); //NEEDS UPDATING
             changelogText.AppendText(Environment.NewLine + "ADDITIONS:");
+            changelogText.AppendText(Environment.NewLine + "- Added tooltips; EvE Button, Character Creation and Database Button, and respective data.");
             changelogText.AppendText(Environment.NewLine + "CHANGES:");
             changelogText.AppendText(Environment.NewLine + "BALANCING (note that baseline balance changes are not reflected in the most recent tournament unless a major feature was changed, or character was added):");
             //Post-Changes
@@ -125,6 +128,17 @@ namespace DCTBFightingSimulator
             roadmapText.AppendText(Environment.NewLine + "- Streamlining load times");
             roadmapText.AppendText(Environment.NewLine + "- Consolidating code / simplifying other events");
             roadmapText.AppendText(Environment.NewLine + Environment.NewLine + "User-submitted builds will be implemented in the very next release after submission, and will show up in the tournament.");
+        }
+        //Tooltips
+        public void initTooltips()
+        {
+            //Overarching Button tooltips
+            ToolTip TT_simEvEButton = new ToolTip();
+            TT_simEvEButton.AutoPopDelay = 5000;
+            TT_simEvEButton.InitialDelay = 1000;
+            TT_simEvEButton.ReshowDelay = 500;
+            TT_simEvEButton.SetToolTip(this.simulateEveButton, "AI vs. AI battle simulator.");
+
         }
 
         //Button methods
