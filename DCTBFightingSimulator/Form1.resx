@@ -254,6 +254,9 @@
         ooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP//Z
 </value>
   </data>
+  <data name="label42.Text" xml:space="preserve">
+    <value>In this mode, select two different characters to battle in a simulated format. Different simulation speeds and AIs will be available in the future. Player 1 will always go first. For selecting builds, the dropdown has priority over import string.</value>
+  </data>
   <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEAAAAAAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB
@@ -310,8 +313,5 @@
         ooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoo
         ooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP//Z
 </value>
-  </data>
-  <data name="label42.Text" xml:space="preserve">
-    <value>In this mode, select two different characters to battle in a simulated format. Different simulation speeds and AIs will be available in the future. Player 1 will always go first. For selecting builds, the dropdown has priority over import string.</value>
   </data>
 </root>

@@ -88,5 +88,8 @@
   <ItemGroup>
     <None Include="Assets\Graphics\SeparationBarVertical.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Graphics\dctbhealthbar.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
