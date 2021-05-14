@@ -280,86 +280,112 @@ namespace DCTBFightingSimulator
             this.CCL120 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.characterCreationResetButton = new System.Windows.Forms.Button();
+            this.horizCharCreationBar = new System.Windows.Forms.PictureBox();
+            this.CCP6 = new System.Windows.Forms.PictureBox();
+            this.CCP1 = new System.Windows.Forms.PictureBox();
+            this.CCP5 = new System.Windows.Forms.PictureBox();
+            this.CCP2 = new System.Windows.Forms.PictureBox();
+            this.CCP4 = new System.Windows.Forms.PictureBox();
+            this.CCP3 = new System.Windows.Forms.PictureBox();
             this.startingPanel = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.changelogText = new System.Windows.Forms.TextBox();
             this.roadmapLabel = new System.Windows.Forms.Label();
             this.roadmapText = new System.Windows.Forms.TextBox();
             this.characterDatabasePanel = new System.Windows.Forms.Panel();
+            this.pictureBox22 = new System.Windows.Forms.PictureBox();
             this.label39 = new System.Windows.Forms.Label();
             this.typeGhostExports = new System.Windows.Forms.TextBox();
             this.label40 = new System.Windows.Forms.Label();
             this.comboBox19 = new System.Windows.Forms.ComboBox();
+            this.pictureBox21 = new System.Windows.Forms.PictureBox();
             this.label37 = new System.Windows.Forms.Label();
             this.typeMortalExports = new System.Windows.Forms.TextBox();
             this.label38 = new System.Windows.Forms.Label();
             this.comboBox18 = new System.Windows.Forms.ComboBox();
+            this.pictureBox20 = new System.Windows.Forms.PictureBox();
             this.label35 = new System.Windows.Forms.Label();
             this.typePsychicExports = new System.Windows.Forms.TextBox();
             this.label36 = new System.Windows.Forms.Label();
             this.comboBox17 = new System.Windows.Forms.ComboBox();
+            this.pictureBox19 = new System.Windows.Forms.PictureBox();
             this.label33 = new System.Windows.Forms.Label();
             this.typeNaturalExports = new System.Windows.Forms.TextBox();
             this.label34 = new System.Windows.Forms.Label();
             this.comboBox16 = new System.Windows.Forms.ComboBox();
+            this.pictureBox18 = new System.Windows.Forms.PictureBox();
             this.label31 = new System.Windows.Forms.Label();
             this.typeFireExports = new System.Windows.Forms.TextBox();
             this.label32 = new System.Windows.Forms.Label();
             this.comboBox15 = new System.Windows.Forms.ComboBox();
+            this.pictureBox17 = new System.Windows.Forms.PictureBox();
             this.label29 = new System.Windows.Forms.Label();
             this.typeIceExports = new System.Windows.Forms.TextBox();
             this.label30 = new System.Windows.Forms.Label();
             this.comboBox14 = new System.Windows.Forms.ComboBox();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.label27 = new System.Windows.Forms.Label();
             this.typeForceExports = new System.Windows.Forms.TextBox();
             this.label28 = new System.Windows.Forms.Label();
             this.comboBox13 = new System.Windows.Forms.ComboBox();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.label25 = new System.Windows.Forms.Label();
             this.typeIntelligentExports = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
             this.comboBox12 = new System.Windows.Forms.ComboBox();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.label23 = new System.Windows.Forms.Label();
             this.typeMetalExports = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
             this.comboBox11 = new System.Windows.Forms.ComboBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.label21 = new System.Windows.Forms.Label();
             this.typeElectricExports = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.comboBox10 = new System.Windows.Forms.ComboBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.label19 = new System.Windows.Forms.Label();
             this.typeGroundExports = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.comboBox9 = new System.Windows.Forms.ComboBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.label17 = new System.Windows.Forms.Label();
             this.typeAirExports = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.comboBox8 = new System.Windows.Forms.ComboBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.label15 = new System.Windows.Forms.Label();
             this.typeEarthlyExports = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.label13 = new System.Windows.Forms.Label();
             this.typeVoidExports = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.label11 = new System.Windows.Forms.Label();
             this.typeNoneExports = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.opExports = new System.Windows.Forms.Label();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.userCreatedExports = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.vanillaExports = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
@@ -384,6 +410,8 @@ namespace DCTBFightingSimulator
             this.label52 = new System.Windows.Forms.Label();
             this.p1Atk = new System.Windows.Forms.NumericUpDown();
             this.EvEPanel = new System.Windows.Forms.Panel();
+            this.player2HealthBarEvE = new System.Windows.Forms.PictureBox();
+            this.player1HealthBarEvE = new System.Windows.Forms.PictureBox();
             this.p2Mv5Desc = new System.Windows.Forms.TextBox();
             this.p2Mv5AtkM = new System.Windows.Forms.NumericUpDown();
             this.label85 = new System.Windows.Forms.Label();
@@ -520,41 +548,13 @@ namespace DCTBFightingSimulator
             this.label55 = new System.Windows.Forms.Label();
             this.p1Def = new System.Windows.Forms.NumericUpDown();
             this.label53 = new System.Windows.Forms.Label();
-            this.player2HealthBarEvE = new System.Windows.Forms.PictureBox();
-            this.player1HealthBarEvE = new System.Windows.Forms.PictureBox();
             this.pictureBox24 = new System.Windows.Forms.PictureBox();
             this.pictureBox23 = new System.Windows.Forms.PictureBox();
-            this.pictureBox22 = new System.Windows.Forms.PictureBox();
-            this.pictureBox21 = new System.Windows.Forms.PictureBox();
-            this.pictureBox20 = new System.Windows.Forms.PictureBox();
-            this.pictureBox19 = new System.Windows.Forms.PictureBox();
-            this.pictureBox18 = new System.Windows.Forms.PictureBox();
-            this.pictureBox17 = new System.Windows.Forms.PictureBox();
-            this.pictureBox16 = new System.Windows.Forms.PictureBox();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.horizCharCreationBar = new System.Windows.Forms.PictureBox();
-            this.CCP6 = new System.Windows.Forms.PictureBox();
-            this.CCP1 = new System.Windows.Forms.PictureBox();
-            this.CCP5 = new System.Windows.Forms.PictureBox();
-            this.CCP2 = new System.Windows.Forms.PictureBox();
-            this.CCP4 = new System.Windows.Forms.PictureBox();
-            this.CCP3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox25 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.SeparationBar = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox25 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.CCN1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CCN2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CCN3)).BeginInit();
@@ -596,11 +596,39 @@ namespace DCTBFightingSimulator
             ((System.ComponentModel.ISupportInitialize)(this.CCN33)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CCN40)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.horizCharCreationBar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CCP6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CCP1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CCP5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CCP2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CCP4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CCP3)).BeginInit();
             this.startingPanel.SuspendLayout();
             this.characterDatabasePanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.p1Hp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.p1Atk)).BeginInit();
             this.EvEPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.player2HealthBarEvE)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player1HealthBarEvE)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.p2Mv5AtkM)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.p2Mv5Acc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.p2Mv4AtkM)).BeginInit();
@@ -629,41 +657,13 @@ namespace DCTBFightingSimulator
             ((System.ComponentModel.ISupportInitialize)(this.p1Dge)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.p1Acc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.p1Def)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.player2HealthBarEvE)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.player1HealthBarEvE)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.horizCharCreationBar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CCP6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CCP1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CCP5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CCP2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CCP4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CCP3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SeparationBar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -683,7 +683,7 @@ namespace DCTBFightingSimulator
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(119, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Current Release: v0.1.0";
+            this.label1.Text = "Current Release: v0.1.1";
             // 
             // button2
             // 
@@ -3876,6 +3876,76 @@ namespace DCTBFightingSimulator
             this.characterCreationResetButton.UseVisualStyleBackColor = true;
             this.characterCreationResetButton.Click += new System.EventHandler(this.characterCreationResetButton_Click);
             // 
+            // horizCharCreationBar
+            // 
+            this.horizCharCreationBar.Image = ((System.Drawing.Image)(resources.GetObject("horizCharCreationBar.Image")));
+            this.horizCharCreationBar.Location = new System.Drawing.Point(20, 49);
+            this.horizCharCreationBar.Name = "horizCharCreationBar";
+            this.horizCharCreationBar.Size = new System.Drawing.Size(1026, 10);
+            this.horizCharCreationBar.TabIndex = 17;
+            this.horizCharCreationBar.TabStop = false;
+            // 
+            // CCP6
+            // 
+            this.CCP6.Image = ((System.Drawing.Image)(resources.GetObject("CCP6.Image")));
+            this.CCP6.InitialImage = null;
+            this.CCP6.Location = new System.Drawing.Point(1206, 59);
+            this.CCP6.Name = "CCP6";
+            this.CCP6.Size = new System.Drawing.Size(10, 564);
+            this.CCP6.TabIndex = 253;
+            this.CCP6.TabStop = false;
+            // 
+            // CCP1
+            // 
+            this.CCP1.Image = ((System.Drawing.Image)(resources.GetObject("CCP1.Image")));
+            this.CCP1.InitialImage = null;
+            this.CCP1.Location = new System.Drawing.Point(204, 60);
+            this.CCP1.Name = "CCP1";
+            this.CCP1.Size = new System.Drawing.Size(10, 564);
+            this.CCP1.TabIndex = 53;
+            this.CCP1.TabStop = false;
+            // 
+            // CCP5
+            // 
+            this.CCP5.Image = ((System.Drawing.Image)(resources.GetObject("CCP5.Image")));
+            this.CCP5.InitialImage = null;
+            this.CCP5.Location = new System.Drawing.Point(1002, 60);
+            this.CCP5.Name = "CCP5";
+            this.CCP5.Size = new System.Drawing.Size(10, 564);
+            this.CCP5.TabIndex = 213;
+            this.CCP5.TabStop = false;
+            // 
+            // CCP2
+            // 
+            this.CCP2.Image = ((System.Drawing.Image)(resources.GetObject("CCP2.Image")));
+            this.CCP2.InitialImage = null;
+            this.CCP2.Location = new System.Drawing.Point(404, 59);
+            this.CCP2.Name = "CCP2";
+            this.CCP2.Size = new System.Drawing.Size(10, 564);
+            this.CCP2.TabIndex = 93;
+            this.CCP2.TabStop = false;
+            this.CCP2.Click += new System.EventHandler(this.CCP2_Click);
+            // 
+            // CCP4
+            // 
+            this.CCP4.Image = ((System.Drawing.Image)(resources.GetObject("CCP4.Image")));
+            this.CCP4.InitialImage = null;
+            this.CCP4.Location = new System.Drawing.Point(801, 60);
+            this.CCP4.Name = "CCP4";
+            this.CCP4.Size = new System.Drawing.Size(10, 564);
+            this.CCP4.TabIndex = 173;
+            this.CCP4.TabStop = false;
+            // 
+            // CCP3
+            // 
+            this.CCP3.Image = ((System.Drawing.Image)(resources.GetObject("CCP3.Image")));
+            this.CCP3.InitialImage = null;
+            this.CCP3.Location = new System.Drawing.Point(602, 60);
+            this.CCP3.Name = "CCP3";
+            this.CCP3.Size = new System.Drawing.Size(10, 564);
+            this.CCP3.TabIndex = 133;
+            this.CCP3.TabStop = false;
+            // 
             // startingPanel
             // 
             this.startingPanel.Controls.Add(this.label8);
@@ -4028,6 +4098,15 @@ namespace DCTBFightingSimulator
             this.characterDatabasePanel.Size = new System.Drawing.Size(1225, 824);
             this.characterDatabasePanel.TabIndex = 261;
             // 
+            // pictureBox22
+            // 
+            this.pictureBox22.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
+            this.pictureBox22.Location = new System.Drawing.Point(939, 332);
+            this.pictureBox22.Name = "pictureBox22";
+            this.pictureBox22.Size = new System.Drawing.Size(10, 102);
+            this.pictureBox22.TabIndex = 114;
+            this.pictureBox22.TabStop = false;
+            // 
             // label39
             // 
             this.label39.AutoSize = true;
@@ -4064,6 +4143,15 @@ namespace DCTBFightingSimulator
             this.comboBox19.Size = new System.Drawing.Size(111, 21);
             this.comboBox19.TabIndex = 110;
             this.comboBox19.TextChanged += new System.EventHandler(this.comboBox19_TextChanged);
+            // 
+            // pictureBox21
+            // 
+            this.pictureBox21.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
+            this.pictureBox21.Location = new System.Drawing.Point(803, 332);
+            this.pictureBox21.Name = "pictureBox21";
+            this.pictureBox21.Size = new System.Drawing.Size(10, 102);
+            this.pictureBox21.TabIndex = 109;
+            this.pictureBox21.TabStop = false;
             // 
             // label37
             // 
@@ -4102,6 +4190,15 @@ namespace DCTBFightingSimulator
             this.comboBox18.TabIndex = 105;
             this.comboBox18.TextChanged += new System.EventHandler(this.comboBox18_TextChanged);
             // 
+            // pictureBox20
+            // 
+            this.pictureBox20.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
+            this.pictureBox20.Location = new System.Drawing.Point(667, 332);
+            this.pictureBox20.Name = "pictureBox20";
+            this.pictureBox20.Size = new System.Drawing.Size(10, 102);
+            this.pictureBox20.TabIndex = 104;
+            this.pictureBox20.TabStop = false;
+            // 
             // label35
             // 
             this.label35.AutoSize = true;
@@ -4138,6 +4235,15 @@ namespace DCTBFightingSimulator
             this.comboBox17.Size = new System.Drawing.Size(111, 21);
             this.comboBox17.TabIndex = 100;
             this.comboBox17.TextChanged += new System.EventHandler(this.comboBox17_TextChanged);
+            // 
+            // pictureBox19
+            // 
+            this.pictureBox19.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
+            this.pictureBox19.Location = new System.Drawing.Point(531, 332);
+            this.pictureBox19.Name = "pictureBox19";
+            this.pictureBox19.Size = new System.Drawing.Size(10, 102);
+            this.pictureBox19.TabIndex = 99;
+            this.pictureBox19.TabStop = false;
             // 
             // label33
             // 
@@ -4176,6 +4282,15 @@ namespace DCTBFightingSimulator
             this.comboBox16.TabIndex = 95;
             this.comboBox16.TextChanged += new System.EventHandler(this.comboBox16_TextChanged);
             // 
+            // pictureBox18
+            // 
+            this.pictureBox18.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
+            this.pictureBox18.Location = new System.Drawing.Point(395, 332);
+            this.pictureBox18.Name = "pictureBox18";
+            this.pictureBox18.Size = new System.Drawing.Size(10, 102);
+            this.pictureBox18.TabIndex = 94;
+            this.pictureBox18.TabStop = false;
+            // 
             // label31
             // 
             this.label31.AutoSize = true;
@@ -4212,6 +4327,15 @@ namespace DCTBFightingSimulator
             this.comboBox15.Size = new System.Drawing.Size(111, 21);
             this.comboBox15.TabIndex = 90;
             this.comboBox15.TextChanged += new System.EventHandler(this.comboBox15_TextChanged);
+            // 
+            // pictureBox17
+            // 
+            this.pictureBox17.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
+            this.pictureBox17.Location = new System.Drawing.Point(259, 332);
+            this.pictureBox17.Name = "pictureBox17";
+            this.pictureBox17.Size = new System.Drawing.Size(10, 102);
+            this.pictureBox17.TabIndex = 89;
+            this.pictureBox17.TabStop = false;
             // 
             // label29
             // 
@@ -4250,6 +4374,15 @@ namespace DCTBFightingSimulator
             this.comboBox14.TabIndex = 85;
             this.comboBox14.TextChanged += new System.EventHandler(this.comboBox14_TextChanged);
             // 
+            // pictureBox16
+            // 
+            this.pictureBox16.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
+            this.pictureBox16.Location = new System.Drawing.Point(123, 332);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(10, 102);
+            this.pictureBox16.TabIndex = 84;
+            this.pictureBox16.TabStop = false;
+            // 
             // label27
             // 
             this.label27.AutoSize = true;
@@ -4286,6 +4419,15 @@ namespace DCTBFightingSimulator
             this.comboBox13.Size = new System.Drawing.Size(111, 21);
             this.comboBox13.TabIndex = 80;
             this.comboBox13.TextChanged += new System.EventHandler(this.comboBox13_TextChanged);
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
+            this.pictureBox15.Location = new System.Drawing.Point(1075, 216);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(10, 102);
+            this.pictureBox15.TabIndex = 79;
+            this.pictureBox15.TabStop = false;
             // 
             // label25
             // 
@@ -4324,6 +4466,15 @@ namespace DCTBFightingSimulator
             this.comboBox12.TabIndex = 75;
             this.comboBox12.TextChanged += new System.EventHandler(this.comboBox12_TextChanged);
             // 
+            // pictureBox14
+            // 
+            this.pictureBox14.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
+            this.pictureBox14.Location = new System.Drawing.Point(939, 216);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(10, 102);
+            this.pictureBox14.TabIndex = 74;
+            this.pictureBox14.TabStop = false;
+            // 
             // label23
             // 
             this.label23.AutoSize = true;
@@ -4360,6 +4511,15 @@ namespace DCTBFightingSimulator
             this.comboBox11.Size = new System.Drawing.Size(111, 21);
             this.comboBox11.TabIndex = 70;
             this.comboBox11.TextChanged += new System.EventHandler(this.comboBox11_TextChanged);
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
+            this.pictureBox13.Location = new System.Drawing.Point(803, 216);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(10, 102);
+            this.pictureBox13.TabIndex = 69;
+            this.pictureBox13.TabStop = false;
             // 
             // label21
             // 
@@ -4398,6 +4558,15 @@ namespace DCTBFightingSimulator
             this.comboBox10.TabIndex = 65;
             this.comboBox10.TextChanged += new System.EventHandler(this.comboBox10_TextChanged);
             // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
+            this.pictureBox12.Location = new System.Drawing.Point(667, 216);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(10, 102);
+            this.pictureBox12.TabIndex = 64;
+            this.pictureBox12.TabStop = false;
+            // 
             // label19
             // 
             this.label19.AutoSize = true;
@@ -4434,6 +4603,15 @@ namespace DCTBFightingSimulator
             this.comboBox9.Size = new System.Drawing.Size(111, 21);
             this.comboBox9.TabIndex = 60;
             this.comboBox9.TextChanged += new System.EventHandler(this.comboBox9_TextChanged);
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
+            this.pictureBox11.Location = new System.Drawing.Point(531, 216);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(10, 102);
+            this.pictureBox11.TabIndex = 59;
+            this.pictureBox11.TabStop = false;
             // 
             // label17
             // 
@@ -4472,6 +4650,15 @@ namespace DCTBFightingSimulator
             this.comboBox8.TabIndex = 55;
             this.comboBox8.TextChanged += new System.EventHandler(this.comboBox8_TextChanged);
             // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
+            this.pictureBox10.Location = new System.Drawing.Point(395, 216);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(10, 102);
+            this.pictureBox10.TabIndex = 54;
+            this.pictureBox10.TabStop = false;
+            // 
             // label15
             // 
             this.label15.AutoSize = true;
@@ -4508,6 +4695,15 @@ namespace DCTBFightingSimulator
             this.comboBox7.Size = new System.Drawing.Size(111, 21);
             this.comboBox7.TabIndex = 50;
             this.comboBox7.TextChanged += new System.EventHandler(this.comboBox7_TextChanged);
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
+            this.pictureBox9.Location = new System.Drawing.Point(259, 216);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(10, 102);
+            this.pictureBox9.TabIndex = 49;
+            this.pictureBox9.TabStop = false;
             // 
             // label13
             // 
@@ -4546,6 +4742,15 @@ namespace DCTBFightingSimulator
             this.comboBox6.TabIndex = 45;
             this.comboBox6.TextChanged += new System.EventHandler(this.comboBox6_TextChanged);
             // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
+            this.pictureBox8.Location = new System.Drawing.Point(123, 216);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(10, 102);
+            this.pictureBox8.TabIndex = 44;
+            this.pictureBox8.TabStop = false;
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -4583,6 +4788,15 @@ namespace DCTBFightingSimulator
             this.comboBox5.TabIndex = 40;
             this.comboBox5.TextChanged += new System.EventHandler(this.comboBox5_TextChanged);
             // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
+            this.pictureBox7.Location = new System.Drawing.Point(395, 100);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(10, 102);
+            this.pictureBox7.TabIndex = 39;
+            this.pictureBox7.TabStop = false;
+            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -4616,6 +4830,15 @@ namespace DCTBFightingSimulator
             this.comboBox4.Size = new System.Drawing.Size(111, 21);
             this.comboBox4.TabIndex = 35;
             // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
+            this.pictureBox5.Location = new System.Drawing.Point(259, 100);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(10, 102);
+            this.pictureBox5.TabIndex = 29;
+            this.pictureBox5.TabStop = false;
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -4648,6 +4871,15 @@ namespace DCTBFightingSimulator
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(111, 21);
             this.comboBox2.TabIndex = 25;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
+            this.pictureBox4.Location = new System.Drawing.Point(123, 97);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(10, 102);
+            this.pictureBox4.TabIndex = 24;
+            this.pictureBox4.TabStop = false;
             // 
             // label5
             // 
@@ -4734,6 +4966,16 @@ namespace DCTBFightingSimulator
             this.label3.Text = "Welcome to the character database. Here you can find a list of all characters sor" +
     "ted by typing, vanilla or user-created, and also by strength. Select a character" +
     " to get its export string.";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarHorizontal;
+            this.pictureBox3.InitialImage = global::DCTBFightingSimulator.Properties.Resources.SeparationBarHorizontal;
+            this.pictureBox3.Location = new System.Drawing.Point(3, 55);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(1075, 10);
+            this.pictureBox3.TabIndex = 17;
+            this.pictureBox3.TabStop = false;
             // 
             // label2
             // 
@@ -5192,6 +5434,26 @@ namespace DCTBFightingSimulator
             this.EvEPanel.Name = "EvEPanel";
             this.EvEPanel.Size = new System.Drawing.Size(1225, 823);
             this.EvEPanel.TabIndex = 115;
+            // 
+            // player2HealthBarEvE
+            // 
+            this.player2HealthBarEvE.Image = global::DCTBFightingSimulator.Properties.Resources.dctbhealthbar;
+            this.player2HealthBarEvE.Location = new System.Drawing.Point(950, 313);
+            this.player2HealthBarEvE.Name = "player2HealthBarEvE";
+            this.player2HealthBarEvE.Size = new System.Drawing.Size(101, 20);
+            this.player2HealthBarEvE.TabIndex = 165;
+            this.player2HealthBarEvE.TabStop = false;
+            this.player2HealthBarEvE.Visible = false;
+            // 
+            // player1HealthBarEvE
+            // 
+            this.player1HealthBarEvE.Image = global::DCTBFightingSimulator.Properties.Resources.dctbhealthbar;
+            this.player1HealthBarEvE.Location = new System.Drawing.Point(174, 320);
+            this.player1HealthBarEvE.Name = "player1HealthBarEvE";
+            this.player1HealthBarEvE.Size = new System.Drawing.Size(100, 20);
+            this.player1HealthBarEvE.TabIndex = 164;
+            this.player1HealthBarEvE.TabStop = false;
+            this.player1HealthBarEvE.Visible = false;
             // 
             // p2Mv5Desc
             // 
@@ -6661,26 +6923,6 @@ namespace DCTBFightingSimulator
             this.label53.TabIndex = 27;
             this.label53.Text = "DEF";
             // 
-            // player2HealthBarEvE
-            // 
-            this.player2HealthBarEvE.Image = global::DCTBFightingSimulator.Properties.Resources.dctbhealthbar;
-            this.player2HealthBarEvE.Location = new System.Drawing.Point(950, 313);
-            this.player2HealthBarEvE.Name = "player2HealthBarEvE";
-            this.player2HealthBarEvE.Size = new System.Drawing.Size(101, 20);
-            this.player2HealthBarEvE.TabIndex = 165;
-            this.player2HealthBarEvE.TabStop = false;
-            this.player2HealthBarEvE.Visible = false;
-            // 
-            // player1HealthBarEvE
-            // 
-            this.player1HealthBarEvE.Image = global::DCTBFightingSimulator.Properties.Resources.dctbhealthbar;
-            this.player1HealthBarEvE.Location = new System.Drawing.Point(174, 320);
-            this.player1HealthBarEvE.Name = "player1HealthBarEvE";
-            this.player1HealthBarEvE.Size = new System.Drawing.Size(100, 20);
-            this.player1HealthBarEvE.TabIndex = 164;
-            this.player1HealthBarEvE.TabStop = false;
-            this.player1HealthBarEvE.Visible = false;
-            // 
             // pictureBox24
             // 
             this.pictureBox24.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarHorizontal;
@@ -6699,247 +6941,25 @@ namespace DCTBFightingSimulator
             this.pictureBox23.TabIndex = 1;
             this.pictureBox23.TabStop = false;
             // 
-            // pictureBox22
+            // pictureBox6
             // 
-            this.pictureBox22.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
-            this.pictureBox22.Location = new System.Drawing.Point(939, 332);
-            this.pictureBox22.Name = "pictureBox22";
-            this.pictureBox22.Size = new System.Drawing.Size(10, 102);
-            this.pictureBox22.TabIndex = 114;
-            this.pictureBox22.TabStop = false;
+            this.pictureBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox6.Location = new System.Drawing.Point(174, 318);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(100, 24);
+            this.pictureBox6.TabIndex = 166;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Visible = false;
             // 
-            // pictureBox21
+            // pictureBox25
             // 
-            this.pictureBox21.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
-            this.pictureBox21.Location = new System.Drawing.Point(803, 332);
-            this.pictureBox21.Name = "pictureBox21";
-            this.pictureBox21.Size = new System.Drawing.Size(10, 102);
-            this.pictureBox21.TabIndex = 109;
-            this.pictureBox21.TabStop = false;
-            // 
-            // pictureBox20
-            // 
-            this.pictureBox20.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
-            this.pictureBox20.Location = new System.Drawing.Point(667, 332);
-            this.pictureBox20.Name = "pictureBox20";
-            this.pictureBox20.Size = new System.Drawing.Size(10, 102);
-            this.pictureBox20.TabIndex = 104;
-            this.pictureBox20.TabStop = false;
-            // 
-            // pictureBox19
-            // 
-            this.pictureBox19.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
-            this.pictureBox19.Location = new System.Drawing.Point(531, 332);
-            this.pictureBox19.Name = "pictureBox19";
-            this.pictureBox19.Size = new System.Drawing.Size(10, 102);
-            this.pictureBox19.TabIndex = 99;
-            this.pictureBox19.TabStop = false;
-            // 
-            // pictureBox18
-            // 
-            this.pictureBox18.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
-            this.pictureBox18.Location = new System.Drawing.Point(395, 332);
-            this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(10, 102);
-            this.pictureBox18.TabIndex = 94;
-            this.pictureBox18.TabStop = false;
-            // 
-            // pictureBox17
-            // 
-            this.pictureBox17.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
-            this.pictureBox17.Location = new System.Drawing.Point(259, 332);
-            this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(10, 102);
-            this.pictureBox17.TabIndex = 89;
-            this.pictureBox17.TabStop = false;
-            // 
-            // pictureBox16
-            // 
-            this.pictureBox16.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
-            this.pictureBox16.Location = new System.Drawing.Point(123, 332);
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(10, 102);
-            this.pictureBox16.TabIndex = 84;
-            this.pictureBox16.TabStop = false;
-            // 
-            // pictureBox15
-            // 
-            this.pictureBox15.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
-            this.pictureBox15.Location = new System.Drawing.Point(1075, 216);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(10, 102);
-            this.pictureBox15.TabIndex = 79;
-            this.pictureBox15.TabStop = false;
-            // 
-            // pictureBox14
-            // 
-            this.pictureBox14.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
-            this.pictureBox14.Location = new System.Drawing.Point(939, 216);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(10, 102);
-            this.pictureBox14.TabIndex = 74;
-            this.pictureBox14.TabStop = false;
-            // 
-            // pictureBox13
-            // 
-            this.pictureBox13.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
-            this.pictureBox13.Location = new System.Drawing.Point(803, 216);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(10, 102);
-            this.pictureBox13.TabIndex = 69;
-            this.pictureBox13.TabStop = false;
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
-            this.pictureBox12.Location = new System.Drawing.Point(667, 216);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(10, 102);
-            this.pictureBox12.TabIndex = 64;
-            this.pictureBox12.TabStop = false;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
-            this.pictureBox11.Location = new System.Drawing.Point(531, 216);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(10, 102);
-            this.pictureBox11.TabIndex = 59;
-            this.pictureBox11.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
-            this.pictureBox10.Location = new System.Drawing.Point(395, 216);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(10, 102);
-            this.pictureBox10.TabIndex = 54;
-            this.pictureBox10.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
-            this.pictureBox9.Location = new System.Drawing.Point(259, 216);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(10, 102);
-            this.pictureBox9.TabIndex = 49;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
-            this.pictureBox8.Location = new System.Drawing.Point(123, 216);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(10, 102);
-            this.pictureBox8.TabIndex = 44;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
-            this.pictureBox7.Location = new System.Drawing.Point(395, 100);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(10, 102);
-            this.pictureBox7.TabIndex = 39;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
-            this.pictureBox5.Location = new System.Drawing.Point(259, 100);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(10, 102);
-            this.pictureBox5.TabIndex = 29;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarVertical;
-            this.pictureBox4.Location = new System.Drawing.Point(123, 97);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(10, 102);
-            this.pictureBox4.TabIndex = 24;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::DCTBFightingSimulator.Properties.Resources.SeparationBarHorizontal;
-            this.pictureBox3.InitialImage = global::DCTBFightingSimulator.Properties.Resources.SeparationBarHorizontal;
-            this.pictureBox3.Location = new System.Drawing.Point(3, 55);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(1075, 10);
-            this.pictureBox3.TabIndex = 17;
-            this.pictureBox3.TabStop = false;
-            // 
-            // horizCharCreationBar
-            // 
-            this.horizCharCreationBar.Image = ((System.Drawing.Image)(resources.GetObject("horizCharCreationBar.Image")));
-            this.horizCharCreationBar.Location = new System.Drawing.Point(20, 49);
-            this.horizCharCreationBar.Name = "horizCharCreationBar";
-            this.horizCharCreationBar.Size = new System.Drawing.Size(1026, 10);
-            this.horizCharCreationBar.TabIndex = 17;
-            this.horizCharCreationBar.TabStop = false;
-            // 
-            // CCP6
-            // 
-            this.CCP6.Image = ((System.Drawing.Image)(resources.GetObject("CCP6.Image")));
-            this.CCP6.InitialImage = null;
-            this.CCP6.Location = new System.Drawing.Point(1206, 59);
-            this.CCP6.Name = "CCP6";
-            this.CCP6.Size = new System.Drawing.Size(10, 564);
-            this.CCP6.TabIndex = 253;
-            this.CCP6.TabStop = false;
-            // 
-            // CCP1
-            // 
-            this.CCP1.Image = ((System.Drawing.Image)(resources.GetObject("CCP1.Image")));
-            this.CCP1.InitialImage = null;
-            this.CCP1.Location = new System.Drawing.Point(204, 60);
-            this.CCP1.Name = "CCP1";
-            this.CCP1.Size = new System.Drawing.Size(10, 564);
-            this.CCP1.TabIndex = 53;
-            this.CCP1.TabStop = false;
-            // 
-            // CCP5
-            // 
-            this.CCP5.Image = ((System.Drawing.Image)(resources.GetObject("CCP5.Image")));
-            this.CCP5.InitialImage = null;
-            this.CCP5.Location = new System.Drawing.Point(1002, 60);
-            this.CCP5.Name = "CCP5";
-            this.CCP5.Size = new System.Drawing.Size(10, 564);
-            this.CCP5.TabIndex = 213;
-            this.CCP5.TabStop = false;
-            // 
-            // CCP2
-            // 
-            this.CCP2.Image = ((System.Drawing.Image)(resources.GetObject("CCP2.Image")));
-            this.CCP2.InitialImage = null;
-            this.CCP2.Location = new System.Drawing.Point(404, 59);
-            this.CCP2.Name = "CCP2";
-            this.CCP2.Size = new System.Drawing.Size(10, 564);
-            this.CCP2.TabIndex = 93;
-            this.CCP2.TabStop = false;
-            this.CCP2.Click += new System.EventHandler(this.CCP2_Click);
-            // 
-            // CCP4
-            // 
-            this.CCP4.Image = ((System.Drawing.Image)(resources.GetObject("CCP4.Image")));
-            this.CCP4.InitialImage = null;
-            this.CCP4.Location = new System.Drawing.Point(801, 60);
-            this.CCP4.Name = "CCP4";
-            this.CCP4.Size = new System.Drawing.Size(10, 564);
-            this.CCP4.TabIndex = 173;
-            this.CCP4.TabStop = false;
-            // 
-            // CCP3
-            // 
-            this.CCP3.Image = ((System.Drawing.Image)(resources.GetObject("CCP3.Image")));
-            this.CCP3.InitialImage = null;
-            this.CCP3.Location = new System.Drawing.Point(602, 60);
-            this.CCP3.Name = "CCP3";
-            this.CCP3.Size = new System.Drawing.Size(10, 564);
-            this.CCP3.TabIndex = 133;
-            this.CCP3.TabStop = false;
+            this.pictureBox25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox25.Location = new System.Drawing.Point(949, 311);
+            this.pictureBox25.Name = "pictureBox25";
+            this.pictureBox25.Size = new System.Drawing.Size(103, 23);
+            this.pictureBox25.TabIndex = 167;
+            this.pictureBox25.TabStop = false;
+            this.pictureBox25.Visible = false;
             // 
             // pictureBox2
             // 
@@ -6969,26 +6989,6 @@ namespace DCTBFightingSimulator
             this.SeparationBar.TabIndex = 3;
             this.SeparationBar.TabStop = false;
             // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox6.Location = new System.Drawing.Point(174, 318);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(100, 24);
-            this.pictureBox6.TabIndex = 166;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Visible = false;
-            // 
-            // pictureBox25
-            // 
-            this.pictureBox25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox25.Location = new System.Drawing.Point(949, 311);
-            this.pictureBox25.Name = "pictureBox25";
-            this.pictureBox25.Size = new System.Drawing.Size(103, 23);
-            this.pictureBox25.TabIndex = 167;
-            this.pictureBox25.TabStop = false;
-            this.pictureBox25.Visible = false;
-            // 
             // DCTBFightingSimulator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -7011,7 +7011,7 @@ namespace DCTBFightingSimulator
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Name = "DCTBFightingSimulator";
-            this.Text = "DCTBFightingSimulator v0.1.0";
+            this.Text = "DCTBFightingSimulator v0.1.1";
             ((System.ComponentModel.ISupportInitialize)(this.CCN1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CCN2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CCN3)).EndInit();
@@ -7054,14 +7054,42 @@ namespace DCTBFightingSimulator
             ((System.ComponentModel.ISupportInitialize)(this.CCN40)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.horizCharCreationBar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CCP6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CCP1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CCP5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CCP2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CCP4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CCP3)).EndInit();
             this.startingPanel.ResumeLayout(false);
             this.startingPanel.PerformLayout();
             this.characterDatabasePanel.ResumeLayout(false);
             this.characterDatabasePanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.p1Hp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.p1Atk)).EndInit();
             this.EvEPanel.ResumeLayout(false);
             this.EvEPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.player2HealthBarEvE)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player1HealthBarEvE)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.p2Mv5AtkM)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.p2Mv5Acc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.p2Mv4AtkM)).EndInit();
@@ -7090,41 +7118,13 @@ namespace DCTBFightingSimulator
             ((System.ComponentModel.ISupportInitialize)(this.p1Dge)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.p1Acc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.p1Def)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.player2HealthBarEvE)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.player1HealthBarEvE)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.horizCharCreationBar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CCP6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CCP1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CCP5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CCP2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CCP4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CCP3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SeparationBar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
