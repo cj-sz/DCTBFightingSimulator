@@ -89,9 +89,9 @@ namespace DCTBFightingSimulator
         {
             //Current version: 0.0.1
             changelogText.Text = "";
-            changelogText.AppendText("VERSON: 0.1.0"); //NEEDS CHANGING
-            changelogText.AppendText(Environment.NewLine + "Initial release (#1) of DCTBFightingSimulator!" + Environment.NewLine); //NEEDS CHANGING
-            changelogText.AppendText(Environment.NewLine + Environment.NewLine + "v0.1.0 Changelog:"); //UPDATE NUMBER
+            changelogText.AppendText("VERSON: 0.1.1");
+            changelogText.AppendText(Environment.NewLine + "Version 0.1.1 Release (#2) of DCTBFightingSimulator!" + Environment.NewLine);
+            changelogText.AppendText(Environment.NewLine + Environment.NewLine + "v0.1.1 Changelog:");
             changelogText.AppendText(Environment.NewLine + "ADDITIONS:");
             changelogText.AppendText(Environment.NewLine + "- Added DCTBFSSeeding document, with tournament seeding for all existing characters");
             changelogText.AppendText(Environment.NewLine + "- Image files for healthbars");
@@ -107,13 +107,13 @@ namespace DCTBFightingSimulator
             changelogText.AppendText(Environment.NewLine + Environment.NewLine + "This is only an initial release with baseline simulations working; expect PvE and local PvP features to come soon (see the roadmap for details) Please bring up any issues, questions, user-submitted builds, etc. on the github page.");
             changelogText.AppendText(Environment.NewLine + "Additionally, every time there is an update involving additional characters, new AI, or new gameplay features, an official tournament will be run. The link to view tournament results of the simulation between all characters will be found here. Custom-created, user-submitted builds will also be a part of the competition.");
             changelogText.AppendText(Environment.NewLine + Environment.NewLine + "View the most recent tournament(which may eventually be moved onto this program itself): https://challonge.com/bz19xyip");
-            changelogText.AppendText(Environment.NewLine + "Tournament Archives:"); //NEEDS CHANGING
+            changelogText.AppendText(Environment.NewLine + "Tournament Archives:");
             changelogText.AppendText(Environment.NewLine + "No past tournaments to view.");
         }
         public void fillRoadmap()
         {
             roadmapText.Text = "";
-            roadmapText.AppendText("Roadmap (categorized):");
+            roadmapText.AppendText("Roadmap:");
             roadmapText.AppendText(Environment.NewLine + Environment.NewLine + "Overarching Additions:");
             roadmapText.AppendText(Environment.NewLine + "- PvE functionality");
             roadmapText.AppendText(Environment.NewLine + "- PvP functionality");
