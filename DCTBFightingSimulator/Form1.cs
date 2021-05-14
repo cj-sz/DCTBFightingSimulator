@@ -89,32 +89,12 @@ namespace DCTBFightingSimulator
         {
             //Current version: 0.0.1
             changelogText.Text = "";
-            changelogText.AppendText("VERSON: 0.1.1");
-            changelogText.AppendText(Environment.NewLine + "Version 0.1.1 Release (#2) of DCTBFightingSimulator!" + Environment.NewLine);
-            changelogText.AppendText(Environment.NewLine + Environment.NewLine + "v0.1.1 Changelog:");
+            changelogText.AppendText("VERSON: 0.1.1"); //NEEDS UPDATING
+            changelogText.AppendText(Environment.NewLine + "Version 0.1.1 Release (#2) of DCTBFightingSimulator!" + Environment.NewLine); //NEEDS UPDATE
+            changelogText.AppendText(Environment.NewLine + Environment.NewLine + "v0.1.1 Changelog:"); //NEEDS UPDATING
             changelogText.AppendText(Environment.NewLine + "ADDITIONS:");
-            changelogText.AppendText(Environment.NewLine + "- Added DCTBFSSeeding document, with tournament seeding for all existing characters");
-            changelogText.AppendText(Environment.NewLine + "- Image files for healthbars");
             changelogText.AppendText(Environment.NewLine + "CHANGES:");
-            changelogText.AppendText(Environment.NewLine + "- Enlarged character selection for EvE for better accessibility");
-            changelogText.AppendText(Environment.NewLine + "- Updated description for Quake");
             changelogText.AppendText(Environment.NewLine + "BALANCING (note that baseline balance changes are not reflected in the most recent tournament unless a major feature was changed, or character was added):");
-            changelogText.AppendText(Environment.NewLine + "|Tweedle: base DGE -20; base HP +150|");
-            changelogText.AppendText(Environment.NewLine + "|Zodium: base DEF +35; base HP +100|");
-            changelogText.AppendText(Environment.NewLine + "|Zip: MV 2 Atk. Mult -0.15; MV 5 Atk. Mult -0.2|");
-            changelogText.AppendText(Environment.NewLine + "|Lyfebud: MV 2 Heal -10; MV 4 Heal -5; MV 5 Heal -30|");
-            changelogText.AppendText(Environment.NewLine + "|Elementus: All positive move stat modifiers -2|");
-            changelogText.AppendText(Environment.NewLine + "|The Demon: HP +205; DEF +5|");
-            changelogText.AppendText(Environment.NewLine + "|Joseph: HP +100; ATK +30; DEF +30; DGE +5; MV 1 Atk. Mult +0.25; MV 2 ACC +35; MV 3 Atk. Mod. +5; MV 4 Atk. Mult. +0.3; MV 5 ACC +20|");
-            changelogText.AppendText(Environment.NewLine + "|David: HP +200; DEF -20|");
-            changelogText.AppendText(Environment.NewLine + "|The Rock: HP -100; DEF -10|");
-            changelogText.AppendText(Environment.NewLine + "|Anomal: ATK -25; DEF +25; HP -100; MV 5 Atk. Mult. -1, ACC +5, Heal -10, DEF mod. -5|");
-            changelogText.AppendText(Environment.NewLine + "|Martis: HP -150; DEF -10|");
-            changelogText.AppendText(Environment.NewLine + "|Quake: HP +150; ATK +25; ACC +5; MV 2 DEF mod. +5; Added Cripple Immunity|");
-            changelogText.AppendText(Environment.NewLine + "|Discrinius: HP +275; ATK +20|");
-            changelogText.AppendText(Environment.NewLine + "|Duskan: HP -100; MV 1 Heal -20; MV 2 ACC Mod. -3; MV 3 Atk. Mult. -0.2, Heal -5; MV 4 ATK Mod. -3; MV 5 Atk. Mult. -0.5, ACC -5|");
-            changelogText.AppendText(Environment.NewLine + "|Humanus: HP +215; DEF +20; MV 2 Atk. Mult. +0.1, DEF mod. +8; MV 3 Atk. Mult. +0.15; MV 4 Heal +5; MV 5 Heal +10|");
-            changelogText.AppendText(Environment.NewLine + "|Solcore: ATK -20; MV 2 Atk. Mult. -0.15; MV 5 Atk. Mult. -0.25|");
             //Post-Changes
             changelogText.AppendText(Environment.NewLine + Environment.NewLine + "This is only an initial release with baseline simulations working; expect PvE and local PvP features to come soon (see the roadmap for details) Please bring up any issues, questions, user-submitted builds, etc. on the github page.");
             changelogText.AppendText(Environment.NewLine + "Additionally, every time there is an update involving additional characters, new AI, or new gameplay features, an official tournament will be run. The link to view tournament results of the simulation between all characters will be found here. Custom-created, user-submitted builds will also be a part of the competition.");
