@@ -64,6 +64,8 @@ namespace DCTBFightingSimulator
         //For use in-EvE-simulation:
         private Character player1;
         private Character player2;
+        private int player1EvEMaxHP;
+        private int player2EvEMaxHP;
         private int player1OrigHPEve;
         private int player2OrigHPEve;
         //Possibly deprecated
@@ -92,7 +94,7 @@ namespace DCTBFightingSimulator
             changelogText.AppendText(Environment.NewLine + Environment.NewLine + "v0.1.0 Changelog:"); //UPDATE NUMBER
             changelogText.AppendText(Environment.NewLine + "ADDITIONS:");
             changelogText.AppendText(Environment.NewLine + "- Added DCTBFSSeeding document, with tournament seeding for all existing characters");
-            changelogText.AppendText(Environment.NewLine + "- Added healthbars to EvE for visual representation of status");
+            changelogText.AppendText(Environment.NewLine + "- ");
             changelogText.AppendText(Environment.NewLine + "CHANGES:");
             changelogText.AppendText(Environment.NewLine + "- Enlarged character selection for EvE for better accessibility");
             changelogText.AppendText(Environment.NewLine + "BALANCING:");
@@ -115,6 +117,7 @@ namespace DCTBFightingSimulator
             roadmapText.AppendText(Environment.NewLine + "- New characters and other features");
             roadmapText.AppendText(Environment.NewLine + Environment.NewLine + "Additions:");
             roadmapText.AppendText(Environment.NewLine + "- Simplistic taskbar icon");
+            roadmapText.AppendText(Environment.NewLine + "- Healthbars");
             roadmapText.AppendText(Environment.NewLine + "- Update EvE UI to show more stats/info at once");
             roadmapText.AppendText(Environment.NewLine + "- Update EvE to allow multiple game speeds/exiting/resets during play");
             roadmapText.AppendText(Environment.NewLine + "- Update information displayed when attacking (i.e. mentioning the specific attack, more specific details on effects, etc.");
@@ -635,6 +638,8 @@ namespace DCTBFightingSimulator
         private void EvESimulation()
         {
             disableAllButtons();
+            player1EvEMaxHP = player1.getHP();
+            player2EvEMaxHP = player2.getHP();
             eveSimText.Text = "";
             lastP1Move = 0;
             lastP2Move = 0;
@@ -2487,6 +2492,10 @@ namespace DCTBFightingSimulator
                     eveSimText.AppendText(Environment.NewLine + "Player 2 dodges the attack.");
                 }
             }
+            //Healthbar updates
+            player1HealthBarEvE.Width = (player1.getHP() / player1EvEMaxHP);
+            player2HealthBarEvE.Width = (player2.getHP() / player2EvEMaxHP);
+            Application.DoEvents();
         }
                 //Player 2 Checks and Methods
         private bool stunFrozenChecksP2(Character player2)
@@ -3976,6 +3985,10 @@ namespace DCTBFightingSimulator
                     eveSimText.AppendText(Environment.NewLine + "Player 1 dodges the attack.");
                 }
             }
+            //Healthbar updates
+            player1HealthBarEvE.Width = (player1.getHP() / player1EvEMaxHP);
+            player2HealthBarEvE.Width = (player2.getHP() / player2EvEMaxHP);
+            Application.DoEvents();
         }
                 //Visual Stats
                     //Player 1
@@ -4080,22 +4093,6 @@ namespace DCTBFightingSimulator
             {
                 p1Dizzy.Text = "NO";
             }
-            //Healthbar
-            if (player1.getHP() <= 0)
-            {
-                player1HealthBarEvE.Value = 0;
-                player1HealthBarEvE.Update();
-            }
-            else if (player1.getHP() >= player1OrigHPEve)
-            {
-                player1HealthBarEvE.Value = 100;
-                player1HealthBarEvE.Update();
-            }
-            else
-            {
-                player1HealthBarEvE.Value = player1.getHP() / player1OrigHPEve;
-                player1HealthBarEvE.Update();
-            }
             Application.DoEvents();
         }
                     //Player 2
@@ -4199,22 +4196,6 @@ namespace DCTBFightingSimulator
             else
             {
                 p2Dizzy.Text = "NO";
-            }
-            //Healthbar
-            if (player2.getHP() <= 0)
-            {
-                player2HealthBarEvE.Value = 0;
-                player2HealthBarEvE.Update();
-            }
-            else if (player2.getHP() >= player2OrigHPEve)
-            {
-                player2HealthBarEvE.Value = 100;
-                player2HealthBarEvE.Update();
-            }
-            else
-            {
-                player2HealthBarEvE.Value = player2.getHP() / player2OrigHPEve;
-                player2HealthBarEvE.Update();
             }
             Application.DoEvents();
 
