@@ -4818,9 +4818,9 @@ namespace DCTBFightingSimulator
             this.opExports.AutoSize = true;
             this.opExports.Location = new System.Drawing.Point(275, 113);
             this.opExports.Name = "opExports";
-            this.opExports.Size = new System.Drawing.Size(22, 13);
+            this.opExports.Size = new System.Drawing.Size(119, 13);
             this.opExports.TabIndex = 36;
-            this.opExports.Text = "OP";
+            this.opExports.Text = "OP (stronger than meta)";
             // 
             // comboBox4
             // 
@@ -5051,6 +5051,8 @@ namespace DCTBFightingSimulator
             this.player1SelectionEvE.Items.AddRange(new object[] {
             "Joseph (NONE) (Vanilla)",
             "David (NONE) (Vanilla)",
+            "Duncan (NONE) (Vanilla)",
+            "Firia (NONE) (Vanilla)",
             "Anomal (VOID) (Vanilla)",
             "Rig (VOID) (Vanilla)",
             "Stone Golem (EARTHLY) (Vanilla)",
@@ -5099,6 +5101,8 @@ namespace DCTBFightingSimulator
             this.player2SelectionEvE.Items.AddRange(new object[] {
             "Joseph (NONE) (Vanilla)",
             "David (NONE) (Vanilla)",
+            "Duncan (NONE) (Vanilla)",
+            "Firia (NONE) (Vanilla)",
             "Anomal (VOID) (Vanilla)",
             "Rig (VOID) (Vanilla)",
             "Stone Golem (EARTHLY) (Vanilla)",
@@ -6995,9 +6999,9 @@ namespace DCTBFightingSimulator
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1432, 853);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.EvEPanel);
             this.Controls.Add(this.characterDatabasePanel);
+            this.Controls.Add(this.EvEPanel);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.startingPanel);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.charDatabaseButton);
