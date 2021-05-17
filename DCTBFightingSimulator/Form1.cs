@@ -130,8 +130,7 @@ namespace DCTBFightingSimulator
             roadmapText.AppendText(Environment.NewLine + "- Update EvE UI to show more stats/info at once");
             roadmapText.AppendText(Environment.NewLine + "- Update EvE to allow multiple game speeds/exiting/resets during play");
             roadmapText.AppendText(Environment.NewLine + "- Update information displayed when attacking (i.e. mentioning the specific attack, more specific details on effects, etc.");
-            roadmapText.AppendText(Environment.NewLine + "- Incorporating any user-submitted builds");
-            roadmapText.AppendText(Environment.NewLine + "- Tooltips/Additional Info for all aspects of the editor, simulation, etc.");
+            roadmapText.AppendText(Environment.NewLine + "- Incorporating any user-submitted builds (recurring)");
             roadmapText.AppendText(Environment.NewLine + "- Balancing changes (recurring)");
             roadmapText.AppendText(Environment.NewLine + Environment.NewLine + "Other/Random Additions:");
             roadmapText.AppendText(Environment.NewLine + "- Streamlining load times");
