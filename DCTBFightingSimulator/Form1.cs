@@ -114,7 +114,7 @@ namespace DCTBFightingSimulator
             changelogText.AppendText(Environment.NewLine + "Additionally, every time there is an update involving additional characters, new AI, or new gameplay features, an official tournament will be run. The link to view tournament results of the simulation between all characters will be found here. Custom-created, user-submitted builds will also be a part of the competition.");
             changelogText.AppendText(Environment.NewLine + Environment.NewLine + "View the most recent tournament (which may eventually be moved onto this program itself): https://challonge.com/ozrjzhgm");
             changelogText.AppendText(Environment.NewLine + "Tournament Archives:");
-            changelogText.AppendText(Environment.NewLine + "Before version 0.2.0: https://challonge.com/bz19xyip");
+            changelogText.AppendText(Environment.NewLine + "Version 0.1.0 tourney: https://challonge.com/bz19xyip");
         }
         public void fillRoadmap()
         {
