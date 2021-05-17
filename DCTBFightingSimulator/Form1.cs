@@ -178,6 +178,46 @@ namespace DCTBFightingSimulator
             TT_CC.SetToolTip(this.CCT8, "Brief description of the move. Usually, effects of the move are also described.");
             TT_CC.SetToolTip(this.CCT10, "Brief description of the move. Usually, effects of the move are also described.");
             TT_CC.SetToolTip(this.CCT12, "Brief description of the move. Usually, effects of the move are also described.");
+            TT_CC.SetToolTip(this.CCc11, "This move's type. Can be different from the character's type.");
+            TT_CC.SetToolTip(this.CCc21, "This move's type. Can be different from the character's type.");
+            TT_CC.SetToolTip(this.CCc31, "This move's type. Can be different from the character's type.");
+            TT_CC.SetToolTip(this.CCc41, "This move's type. Can be different from the character's type.");
+            TT_CC.SetToolTip(this.CCc51, "This move's type. Can be different from the character's type.");
+            TT_CC.SetToolTip(this.CCN5, "The attack multiplier for this move (what ATK is multiplied by). Meta values: 0.5 - 5.");
+            TT_CC.SetToolTip(this.CCN12, "The attack multiplier for this move (what ATK is multiplied by). Meta values: 0.5 - 5.");
+            TT_CC.SetToolTip(this.CCN19, "The attack multiplier for this move (what ATK is multiplied by). Meta values: 0.5 - 5.");
+            TT_CC.SetToolTip(this.CCN26, "The attack multiplier for this move (what ATK is multiplied by). Meta values: 0.5 - 5.");
+            TT_CC.SetToolTip(this.CCN33, "The attack multiplier for this move (what ATK is multiplied by). Meta values: 0.5 - 5.");
+            TT_CC.SetToolTip(this.CCN6, "The accuracy of this move. Meta values: 20 - 80.");
+            TT_CC.SetToolTip(this.CCN13, "The accuracy of this move. Meta values: 20 - 80.");
+            TT_CC.SetToolTip(this.CCN20, "The accuracy of this move. Meta values: 20 - 80.");
+            TT_CC.SetToolTip(this.CCN27, "The accuracy of this move. Meta values: 20 - 80.");
+            TT_CC.SetToolTip(this.CCN34, "The accuracy of this move. Meta values: 20 - 80.");
+            TT_CC.SetToolTip(this.CCN7, "How much this move heals the character. Negative for self-damage. Meta values: -50 - 50.");
+            TT_CC.SetToolTip(this.CCN14, "How much this move heals the character. Negative for self-damage. Meta values: -50 - 50.");
+            TT_CC.SetToolTip(this.CCN21, "How much this move heals the character. Negative for self-damage. Meta values: -50 - 50.");
+            TT_CC.SetToolTip(this.CCN28, "How much this move heals the character. Negative for self-damage. Meta values: -50 - 50.");
+            TT_CC.SetToolTip(this.CCN35, "How much this move heals the character. Negative for self-damage. Meta values: -50 - 50.");
+            TT_CC.SetToolTip(this.CCN8, "How much this changes the character's base ATK value by. Meta values: -5 - 20.");
+            TT_CC.SetToolTip(this.CCN15, "How much this changes the character's base ATK value by. Meta values: -5 - 20.");
+            TT_CC.SetToolTip(this.CCN22, "How much this changes the character's base ATK value by. Meta values: -5 - 20.");
+            TT_CC.SetToolTip(this.CCN29, "How much this changes the character's base ATK value by. Meta values: -5 - 20.");
+            TT_CC.SetToolTip(this.CCN36, "How much this changes the character's base ATK value by. Meta values: -5 - 20.");
+            TT_CC.SetToolTip(this.CCN9, "How much this changes the character's base DEF value by. Meta values: -5 - 20.");
+            TT_CC.SetToolTip(this.CCN16, "How much this changes the character's base DEF value by. Meta values: -5 - 20.");
+            TT_CC.SetToolTip(this.CCN23, "How much this changes the character's base DEF value by. Meta values: -5 - 20.");
+            TT_CC.SetToolTip(this.CCN30, "How much this changes the character's base DEF value by. Meta values: -5 - 20.");
+            TT_CC.SetToolTip(this.CCN37, "How much this changes the character's base DEF value by. Meta values: -5 - 20.");
+            TT_CC.SetToolTip(this.CCN10, "How much this changes the character's base ACC value by. Meta values: -2 - 5.");
+            TT_CC.SetToolTip(this.CCN17, "How much this changes the character's base ACC value by. Meta values: -2 - 5.");
+            TT_CC.SetToolTip(this.CCN24, "How much this changes the character's base ACC value by. Meta values: -2 - 5.");
+            TT_CC.SetToolTip(this.CCN31, "How much this changes the character's base ACC value by. Meta values: -2 - 5.");
+            TT_CC.SetToolTip(this.CCN38, "How much this changes the character's base ACC value by. Meta values: -2 - 5.");
+            TT_CC.SetToolTip(this.CCN11, "How much this changes the character's base DGE value by. Meta values: -2 - 3.");
+            TT_CC.SetToolTip(this.CCN18, "How much this changes the character's base DGE value by. Meta values: -2 - 3.");
+            TT_CC.SetToolTip(this.CCN25, "How much this changes the character's base DGE value by. Meta values: -2 - 3.");
+            TT_CC.SetToolTip(this.CCN32, "How much this changes the character's base DGE value by. Meta values: -2 - 3.");
+            TT_CC.SetToolTip(this.CCN39, "How much this changes the character's base DGE value by. Meta values: -2 - 3.");
         }
 
         //Button methods
