@@ -219,11 +219,27 @@ namespace DCTBFightingSimulator
             CCTT_loadBuildTooltip.InitialDelay = 1000;
             CCTT_loadBuildTooltip.ReshowDelay = 500;
             CCTT_loadBuildTooltip.SetToolTip(this.loadBuildButton, "Load a build from the string in the text box.");
-                //Column 2; Move 1
-                //Column 3; Move 2
-                //Column 4; Move 3
-                //Column 5; Move 4
-                //Column 6; Move 5
+            //Column 2; Move 1
+
+            //Column 3; Move 2
+            //Column 4; Move 3
+            //Column 5; Move 4
+            //Column 6; Move 5
+            //Universal
+            ToolTip CCTT_nameMVTooltip = new ToolTip();
+            CCTT_nameMVTooltip.AutoPopDelay = 5000;
+            CCTT_nameMVTooltip.InitialDelay = 1000;
+            CCTT_nameMVTooltip.ReshowDelay = 500;
+            CCTT_nameMVTooltip.SetToolTip(this.CCT3, "Name of this move.");
+            CCTT_nameMVTooltip.SetToolTip(this.CCT5, "Name of this move.");
+            CCTT_nameMVTooltip.SetToolTip(this.CCT7, "Name of this move.");
+            CCTT_nameMVTooltip.SetToolTip(this.CCT8, "Name of this move.");
+            CCTT_nameMVTooltip.SetToolTip(this.CCT11, "Name of this move.");
+            ToolTip CCTT_descMVTooltip = new ToolTip();
+            CCTT_descMVTooltip.AutoPopDelay = 5000;
+            CCTT_descMVTooltip.InitialDelay = 1000;
+            CCTT_descMVTooltip.ReshowDelay = 500;
+            CCTT_descMVTooltip.SetToolTip(this.CCT2, "Brief description of the character. Usually, the type and any immunities are described here as well.");
         }
 
         //Button methods
