@@ -92,24 +92,26 @@ namespace DCTBFightingSimulator
         //Changelog and Roadmap
         public void fillChangelog()
         {
-            //Current version: 0.1.2 (this), 0.1.1 (old)
+            //Current version: 0.2.0 (this), 0.1.1 (old)
             changelogText.Text = "";
-            changelogText.AppendText("VERSON: 0.1.2");
-            changelogText.AppendText(Environment.NewLine + "Version 0.1.2 Release (#3) of DCTBFightingSimulator!" + Environment.NewLine);
-            changelogText.AppendText(Environment.NewLine + Environment.NewLine + "v0.1.2 Changelog:");
-            changelogText.AppendText(Environment.NewLine + "This is a very minor update, mainly focused on updating the clarity of the character creation section and the source code.");
+            changelogText.AppendText("VERSON: 0.2.0");
+            changelogText.AppendText(Environment.NewLine + "Version 0.2.0 Release (#3) of DCTBFightingSimulator!" + Environment.NewLine);
+            changelogText.AppendText(Environment.NewLine + Environment.NewLine + "v0.2.0 Changelog:");
+            changelogText.AppendText(Environment.NewLine + "Important update is here! New tooltips for clarity when creating a character, along with two new NORMAL-type characters and source code formatting changes.");
             changelogText.AppendText(Environment.NewLine + "ADDITIONS:");
             changelogText.AppendText(Environment.NewLine + "- Added tooltips for the main menu buttons");
+            changelogText.AppendText(Environment.NewLine + "- Added tooltips to the character creation screen with more information on various components");
+            changelogText.AppendText(Environment.NewLine + "- Two new NORMAL-type characters");
             changelogText.AppendText(Environment.NewLine + "CHANGES:");
-            changelogText.AppendText(Environment.NewLine + "- Minor formatting edits to the source code for clarity and conciseness");
+            changelogText.AppendText(Environment.NewLine + "- Formatting edits to the source code for clarity and conciseness");
             changelogText.AppendText(Environment.NewLine + "BALANCING:");
             changelogText.AppendText(Environment.NewLine + "- No balance changes this update.");
             //Post-Changes
             changelogText.AppendText(Environment.NewLine + Environment.NewLine + "This is only an initial release with baseline simulations working; expect PvE and local PvP features to come soon (see the roadmap for details) Please bring up any issues, questions, user-submitted builds, etc. on the github page.");
             changelogText.AppendText(Environment.NewLine + "Additionally, every time there is an update involving additional characters, new AI, or new gameplay features, an official tournament will be run. The link to view tournament results of the simulation between all characters will be found here. Custom-created, user-submitted builds will also be a part of the competition.");
-            changelogText.AppendText(Environment.NewLine + Environment.NewLine + "View the most recent tournament(which may eventually be moved onto this program itself): https://challonge.com/bz19xyip");
+            changelogText.AppendText(Environment.NewLine + Environment.NewLine + "View the most recent tournament(which may eventually be moved onto this program itself): "); //NEEDS UPDATING
             changelogText.AppendText(Environment.NewLine + "Tournament Archives:");
-            changelogText.AppendText(Environment.NewLine + "No past tournaments to view.");
+            changelogText.AppendText(Environment.NewLine + "Before version 0.2.0: https://challonge.com/bz19xyip");
         }
         public void fillRoadmap()
         {
@@ -3752,6 +3754,26 @@ namespace DCTBFightingSimulator
             Application.DoEvents();
         }
             //Player 2 Move subactions (recurring methods in p2Moves)
+        private void eveP2MV1Hits()
+        {
+
+        }
+        private void eveP2MV2Hits()
+        {
+
+        }
+        private void eveP2MV3Hits()
+        {
+
+        }
+        private void eveP2MV4Hits()
+        {
+            
+        }
+        private void eveP2MV5Hits()
+        {
+
+        }
             //Visual Stats
         private void loadPlayer1VisualStats()
         {
