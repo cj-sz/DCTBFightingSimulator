@@ -141,105 +141,43 @@ namespace DCTBFightingSimulator
         public void initTooltips()
         {
             //Overarching Button tooltips
-            ToolTip TT_simEvEButton = new ToolTip();
-            TT_simEvEButton.AutoPopDelay = 5000;
-            TT_simEvEButton.InitialDelay = 1000;
-            TT_simEvEButton.ReshowDelay = 500;
-            TT_simEvEButton.SetToolTip(this.simulateEveButton, "AI vs. AI battle simulator.");
-            ToolTip TT_simPvEButton = new ToolTip();
-            TT_simPvEButton.AutoPopDelay = 5000;
-            TT_simPvEButton.InitialDelay = 1000;
-            TT_simPvEButton.ReshowDelay = 500;
-            TT_simPvEButton.SetToolTip(this.pveButton, "Player vs. AI battle simulator.");
-            ToolTip TT_simPvPButton = new ToolTip();
-            TT_simPvPButton.AutoPopDelay = 5000;
-            TT_simPvPButton.InitialDelay = 1000;
-            TT_simPvPButton.ReshowDelay = 500;
-            TT_simPvPButton.SetToolTip(this.pvpButton, "Local (same computer) Player vs. Player battle simulator.");
-            ToolTip TT_charCreateButton = new ToolTip();
-            TT_charCreateButton.AutoPopDelay = 5000;
-            TT_charCreateButton.InitialDelay = 1000;
-            TT_charCreateButton.ReshowDelay = 500;
-            TT_charCreateButton.SetToolTip(this.createCharButton, "Character editor.");
-            ToolTip TT_charDatabaseButton = new ToolTip();
-            TT_charDatabaseButton.AutoPopDelay = 5000;
-            TT_charDatabaseButton.InitialDelay = 1000;
-            TT_charDatabaseButton.ReshowDelay = 500;
-            TT_charDatabaseButton.SetToolTip(this.charDatabaseButton, "Database of current characters.");
+            ToolTip TT_mainButtons = new ToolTip();
+            TT_mainButtons.AutoPopDelay = 5000;
+            TT_mainButtons.InitialDelay = 1000;
+            TT_mainButtons.ReshowDelay = 500;
+            TT_mainButtons.SetToolTip(this.simulateEveButton, "AI vs. AI battle simulator.");
+            TT_mainButtons.SetToolTip(this.pveButton, "Player vs. AI battle simulator.");
+            TT_mainButtons.SetToolTip(this.pvpButton, "Local (same computer) Player vs. Player battle simulator.");
+            TT_mainButtons.SetToolTip(this.createCharButton, "Character editor.");
+            TT_mainButtons.SetToolTip(this.charDatabaseButton, "Database of current characters.");
 
             //Character Creation tooltips
+            ToolTip TT_CC = new ToolTip();
+            TT_CC.AutoPopDelay = 5000;
+            TT_CC.InitialDelay = 1000;
+            TT_CC.ReshowDelay = 500;
                 //Column 1
-            ToolTip CCTT_nameTooltip = new ToolTip();
-            CCTT_nameTooltip.AutoPopDelay = 5000;
-            CCTT_nameTooltip.InitialDelay = 1000;
-            CCTT_nameTooltip.ReshowDelay = 500;
-            CCTT_nameTooltip.SetToolTip(this.CCT1, "Name of the character.");
-            ToolTip CCTT_descTooltip = new ToolTip();
-            CCTT_descTooltip.AutoPopDelay = 5000;
-            CCTT_descTooltip.InitialDelay = 1000;
-            CCTT_descTooltip.ReshowDelay = 500;
-            CCTT_descTooltip.SetToolTip(this.CCT2, "Brief description of the character. Usually, the type and any immunities are described here as well.");
-            ToolTip CCTT_typeTooltip = new ToolTip();
-            CCTT_typeTooltip.AutoPopDelay = 5000;
-            CCTT_typeTooltip.InitialDelay = 1000;
-            CCTT_typeTooltip.ReshowDelay = 500;
-            CCTT_typeTooltip.SetToolTip(this.CCc1, "The character's type. This list is in order of effectiveness; the previous is effective on the next, and weak to the one before it.");
-            ToolTip CCTT_hpTooltip = new ToolTip();
-            CCTT_hpTooltip.AutoPopDelay = 5000;
-            CCTT_hpTooltip.InitialDelay = 1000;
-            CCTT_hpTooltip.ReshowDelay = 500;
-            CCTT_hpTooltip.SetToolTip(this.CCN40, "The character's HP. Meta values: 1000 - 5000.");
-            ToolTip CCTT_atkTooltip = new ToolTip();
-            CCTT_atkTooltip.AutoPopDelay = 5000;
-            CCTT_atkTooltip.InitialDelay = 1000;
-            CCTT_atkTooltip.ReshowDelay = 500;
-            CCTT_atkTooltip.SetToolTip(this.CCN1, "The character's ATK. Meta values: 50 - 250.");
-            ToolTip CCTT_defTooltip = new ToolTip();
-            CCTT_defTooltip.AutoPopDelay = 5000;
-            CCTT_defTooltip.InitialDelay = 1000;
-            CCTT_defTooltip.ReshowDelay = 500;
-            CCTT_defTooltip.SetToolTip(this.CCN2, "The character's DEF. Meta values: 50 - 400.");
-            ToolTip CCTT_accTooltip = new ToolTip();
-            CCTT_accTooltip.AutoPopDelay = 5000;
-            CCTT_accTooltip.InitialDelay = 1000;
-            CCTT_accTooltip.ReshowDelay = 500;
-            CCTT_accTooltip.SetToolTip(this.CCN3, "The character's ACC. Meta values: 50 - 120.");
-            ToolTip CCTT_dgeTooltip = new ToolTip();
-            CCTT_dgeTooltip.AutoPopDelay = 5000;
-            CCTT_dgeTooltip.InitialDelay = 1000;
-            CCTT_dgeTooltip.ReshowDelay = 500;
-            CCTT_dgeTooltip.SetToolTip(this.CCN4, "The character's DGE. Meta values: 0 - 60.");
-            ToolTip CCTT_exportCharStringTooltip = new ToolTip();
-            CCTT_exportCharStringTooltip.AutoPopDelay = 5000;
-            CCTT_exportCharStringTooltip.InitialDelay = 1000;
-            CCTT_exportCharStringTooltip.ReshowDelay = 500;
-            CCTT_exportCharStringTooltip.SetToolTip(this.exportCharStringButton, "Export the string relating to the current values in the character creation board.");
-            ToolTip CCTT_loadBuildTooltip = new ToolTip();
-            CCTT_loadBuildTooltip.AutoPopDelay = 5000;
-            CCTT_loadBuildTooltip.InitialDelay = 1000;
-            CCTT_loadBuildTooltip.ReshowDelay = 500;
-            CCTT_loadBuildTooltip.SetToolTip(this.loadBuildButton, "Load a build from the string in the text box.");
-            //Column 2; Move 1
-
-            //Column 3; Move 2
-            //Column 4; Move 3
-            //Column 5; Move 4
-            //Column 6; Move 5
-            //Universal
-            ToolTip CCTT_nameMVTooltip = new ToolTip();
-            CCTT_nameMVTooltip.AutoPopDelay = 5000;
-            CCTT_nameMVTooltip.InitialDelay = 1000;
-            CCTT_nameMVTooltip.ReshowDelay = 500;
-            CCTT_nameMVTooltip.SetToolTip(this.CCT3, "Name of this move.");
-            CCTT_nameMVTooltip.SetToolTip(this.CCT5, "Name of this move.");
-            CCTT_nameMVTooltip.SetToolTip(this.CCT7, "Name of this move.");
-            CCTT_nameMVTooltip.SetToolTip(this.CCT8, "Name of this move.");
-            CCTT_nameMVTooltip.SetToolTip(this.CCT11, "Name of this move.");
-            ToolTip CCTT_descMVTooltip = new ToolTip();
-            CCTT_descMVTooltip.AutoPopDelay = 5000;
-            CCTT_descMVTooltip.InitialDelay = 1000;
-            CCTT_descMVTooltip.ReshowDelay = 500;
-            CCTT_descMVTooltip.SetToolTip(this.CCT2, "Brief description of the character. Usually, the type and any immunities are described here as well.");
+            TT_CC.SetToolTip(this.CCT1, "Name of the character.");
+            TT_CC.SetToolTip(this.CCT2, "Brief description of the character. Usually, the type and any immunities are described here as well.");
+            TT_CC.SetToolTip(this.CCc1, "The character's type. This list is in order of effectiveness; the previous is effective on the next, and weak to the one before it.");
+            TT_CC.SetToolTip(this.CCN40, "The character's HP. Meta values: 1000 - 5000.");
+            TT_CC.SetToolTip(this.CCN1, "The character's ATK. Meta values: 50 - 250.");
+            TT_CC.SetToolTip(this.CCN2, "The character's DEF. Meta values: 50 - 400.");
+            TT_CC.SetToolTip(this.CCN3, "The character's ACC. Meta values: 50 - 120.");
+            TT_CC.SetToolTip(this.CCN4, "The character's DGE. Meta values: 0 - 60.");
+            TT_CC.SetToolTip(this.exportCharStringButton, "Export the string relating to the current values in the character creation board.");
+            TT_CC.SetToolTip(this.loadBuildButton, "Load a build from the string in the text box.");
+                //Moves (Universal tooltips across all moves)
+            TT_CC.SetToolTip(this.CCT3, "Name of this move.");
+            TT_CC.SetToolTip(this.CCT5, "Name of this move.");
+            TT_CC.SetToolTip(this.CCT7, "Name of this move.");
+            TT_CC.SetToolTip(this.CCT8, "Name of this move.");
+            TT_CC.SetToolTip(this.CCT11, "Name of this move.");
+            TT_CC.SetToolTip(this.CCT4, "Brief description of the move. Usually, effects of the move are also described.");
+            TT_CC.SetToolTip(this.CCT6, "Brief description of the move. Usually, effects of the move are also described.");
+            TT_CC.SetToolTip(this.CCT8, "Brief description of the move. Usually, effects of the move are also described.");
+            TT_CC.SetToolTip(this.CCT10, "Brief description of the move. Usually, effects of the move are also described.");
+            TT_CC.SetToolTip(this.CCT12, "Brief description of the move. Usually, effects of the move are also described.");
         }
 
         //Button methods
