@@ -138,7 +138,27 @@ namespace DCTBFightingSimulator
             TT_simEvEButton.InitialDelay = 1000;
             TT_simEvEButton.ReshowDelay = 500;
             TT_simEvEButton.SetToolTip(this.simulateEveButton, "AI vs. AI battle simulator.");
-                
+            ToolTip TT_simPvEButton = new ToolTip();
+            TT_simPvEButton.AutoPopDelay = 5000;
+            TT_simPvEButton.InitialDelay = 1000;
+            TT_simPvEButton.ReshowDelay = 500;
+            TT_simPvEButton.SetToolTip(this.pveButton, "Player vs. AI battle simulator.");
+            ToolTip TT_simPvPButton = new ToolTip();
+            TT_simPvPButton.AutoPopDelay = 5000;
+            TT_simPvPButton.InitialDelay = 1000;
+            TT_simPvPButton.ReshowDelay = 500;
+            TT_simPvPButton.SetToolTip(this.pvpButton, "Local (same computer) Player vs. Player battle simulator.");
+            ToolTip TT_charCreateButton = new ToolTip();
+            TT_charCreateButton.AutoPopDelay = 5000;
+            TT_charCreateButton.InitialDelay = 1000;
+            TT_charCreateButton.ReshowDelay = 500;
+            TT_charCreateButton.SetToolTip(this.createCharButton, "Character editor.");
+            ToolTip TT_charDatabaseButton = new ToolTip();
+            TT_charDatabaseButton.AutoPopDelay = 5000;
+            TT_charDatabaseButton.InitialDelay = 1000;
+            TT_charDatabaseButton.ReshowDelay = 500;
+            TT_charDatabaseButton.SetToolTip(this.charDatabaseButton, "Database of current characters.");
+
         }
 
         //Button methods
