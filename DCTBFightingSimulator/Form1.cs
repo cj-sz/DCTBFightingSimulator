@@ -100,7 +100,7 @@ namespace DCTBFightingSimulator
             changelogText.AppendText(Environment.NewLine + "Important update is here! New tooltips for clarity when creating a character, along with two new NORMAL-type characters and source code formatting changes.");
             changelogText.AppendText(Environment.NewLine + "ADDITIONS:");
             changelogText.AppendText(Environment.NewLine + "- Added tooltips for the main menu buttons");
-            changelogText.AppendText(Environment.NewLine + "- Added tooltips to the character creation screen with more information on various components");
+            changelogText.AppendText(Environment.NewLine + "- Added tooltips to the character creation screen with more information on various components. Note: 'Meta Values' refers to a common range of values present in most vanilla characters. Not all vanilla characters follow this meta, and user-created builds do not have to either; this is just for balancing reference if desired.");
             changelogText.AppendText(Environment.NewLine + "- Two new NORMAL-type characters");
             changelogText.AppendText(Environment.NewLine + "CHANGES:");
             changelogText.AppendText(Environment.NewLine + "- Formatting edits to the source code for clarity and conciseness");
@@ -219,6 +219,11 @@ namespace DCTBFightingSimulator
             CCTT_loadBuildTooltip.InitialDelay = 1000;
             CCTT_loadBuildTooltip.ReshowDelay = 500;
             CCTT_loadBuildTooltip.SetToolTip(this.loadBuildButton, "Load a build from the string in the text box.");
+                //Column 2; Move 1
+                //Column 3; Move 2
+                //Column 4; Move 3
+                //Column 5; Move 4
+                //Column 6; Move 5
         }
 
         //Button methods
