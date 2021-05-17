@@ -138,7 +138,7 @@ namespace DCTBFightingSimulator
             TT_simEvEButton.InitialDelay = 1000;
             TT_simEvEButton.ReshowDelay = 500;
             TT_simEvEButton.SetToolTip(this.simulateEveButton, "AI vs. AI battle simulator.");
-
+                
         }
 
         //Button methods
