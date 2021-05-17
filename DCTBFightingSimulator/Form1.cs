@@ -92,15 +92,16 @@ namespace DCTBFightingSimulator
         //Changelog and Roadmap
         public void fillChangelog()
         {
-            //Current version: 0.0.1
+            //Current version: 0.1.2 (this), 0.1.1 (old)
             changelogText.Text = "";
-            changelogText.AppendText("VERSON: 0.1.1"); //NEEDS UPDATING
-            changelogText.AppendText(Environment.NewLine + "Version 0.1.1 Release (#2) of DCTBFightingSimulator!" + Environment.NewLine); //NEEDS UPDATE
-            changelogText.AppendText(Environment.NewLine + Environment.NewLine + "v0.1.1 Changelog:"); //NEEDS UPDATING
+            changelogText.AppendText("VERSON: 0.1.2");
+            changelogText.AppendText(Environment.NewLine + "Version 0.1.2 Release (#3) of DCTBFightingSimulator!" + Environment.NewLine);
+            changelogText.AppendText(Environment.NewLine + Environment.NewLine + "v0.1.2 Changelog:");
+            changelogText.AppendText(Environment.NewLine + "This is a very minor update, mainly focused on updating the clarity of the character creation section and the source code.");
             changelogText.AppendText(Environment.NewLine + "ADDITIONS:");
-            changelogText.AppendText(Environment.NewLine + "- Added tooltips for the main menu buttons and character creation for better clarity and more info.");
+            changelogText.AppendText(Environment.NewLine + "- Added tooltips for the main menu buttons");
             changelogText.AppendText(Environment.NewLine + "CHANGES:");
-            changelogText.AppendText(Environment.NewLine + "-");
+            changelogText.AppendText(Environment.NewLine + "- Minor formatting edits to the source code for clarity and conciseness");
             changelogText.AppendText(Environment.NewLine + "BALANCING:");
             changelogText.AppendText(Environment.NewLine + "- No balance changes this update.");
             //Post-Changes
@@ -115,6 +116,7 @@ namespace DCTBFightingSimulator
             roadmapText.Text = "";
             roadmapText.AppendText("Roadmap:");
             roadmapText.AppendText(Environment.NewLine + Environment.NewLine + "Overarching Additions:");
+            roadmapText.AppendText(Environment.NewLine + "- An installer (no more bypassing all system security)");
             roadmapText.AppendText(Environment.NewLine + "- PvE functionality");
             roadmapText.AppendText(Environment.NewLine + "- PvP functionality");
             roadmapText.AppendText(Environment.NewLine + "- New Computer AIs");
