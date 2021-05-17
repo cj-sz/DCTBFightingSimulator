@@ -106,6 +106,7 @@ namespace DCTBFightingSimulator
             changelogText.AppendText(Environment.NewLine + "- Two new NONE-type characters, Duncan and Firia");
             changelogText.AppendText(Environment.NewLine + "CHANGES:");
             changelogText.AppendText(Environment.NewLine + "- Fixed a typo on export instructions");
+            changelogText.AppendText(Environment.NewLine + "- Increased clarity for the 'OP' section of the character database");
             changelogText.AppendText(Environment.NewLine + "- Formatting edits to the source code for clarity and conciseness");
             changelogText.AppendText(Environment.NewLine + "BALANCING:");
             changelogText.AppendText(Environment.NewLine + "- No balance changes this update.");
@@ -6403,8 +6404,16 @@ namespace DCTBFightingSimulator
             {
                 vanillaExports.Text = davidString;
             }
-                //Void
-            if(comboBox1.Text == "Anomal (VOID)")
+            if (comboBox1.Text == "Duncan (NONE)")
+            {
+                vanillaExports.Text = duncanString;
+            }
+            if (comboBox1.Text == "Firia (NONE)")
+            {
+                vanillaExports.Text = firiaString;
+            }
+            //Void
+            if (comboBox1.Text == "Anomal (VOID)")
             {
                 vanillaExports.Text = anomalString;
             }
@@ -6542,6 +6551,14 @@ namespace DCTBFightingSimulator
             if (comboBox5.Text == "David (Vanilla)")
             {
                 typeNoneExports.Text = davidString;
+            }
+            if (comboBox5.Text == "Duncan (Vanilla)")
+            {
+                typeNoneExports.Text = duncanString;
+            }
+            if (comboBox5.Text == "Firia (Vanilla)")
+            {
+                typeNoneExports.Text = firiaString;
             }
         }
             //VOID Type

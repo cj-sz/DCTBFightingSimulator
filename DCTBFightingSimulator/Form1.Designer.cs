@@ -4781,7 +4781,9 @@ namespace DCTBFightingSimulator
             this.comboBox5.FormattingEnabled = true;
             this.comboBox5.Items.AddRange(new object[] {
             "Joseph (Vanilla)",
-            "David (Vanilla)"});
+            "David (Vanilla)",
+            "Duncan (Vanilla)",
+            "Firia (Vanilla)"});
             this.comboBox5.Location = new System.Drawing.Point(6, 245);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(111, 21);
@@ -4912,6 +4914,8 @@ namespace DCTBFightingSimulator
             this.comboBox1.Items.AddRange(new object[] {
             "Joseph (NONE)",
             "David (NONE)",
+            "Duncan (NONE)",
+            "Firia (NONE)",
             "Anomal (VOID)",
             "Rig (VOID)",
             "Stone Golem (EARTHLY)",
