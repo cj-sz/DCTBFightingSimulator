@@ -172,7 +172,7 @@ namespace DCTBFightingSimulator
             TT_CC.SetToolTip(this.CCT3, "Name of this move.");
             TT_CC.SetToolTip(this.CCT5, "Name of this move.");
             TT_CC.SetToolTip(this.CCT7, "Name of this move.");
-            TT_CC.SetToolTip(this.CCT8, "Name of this move.");
+            TT_CC.SetToolTip(this.CCT9, "Name of this move.");
             TT_CC.SetToolTip(this.CCT11, "Name of this move.");
             TT_CC.SetToolTip(this.CCT4, "Brief description of the move. Usually, effects of the move are also described.");
             TT_CC.SetToolTip(this.CCT6, "Brief description of the move. Usually, effects of the move are also described.");
