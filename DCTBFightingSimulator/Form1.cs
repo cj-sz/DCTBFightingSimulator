@@ -158,7 +158,6 @@ namespace DCTBFightingSimulator
             TT_charDatabaseButton.InitialDelay = 1000;
             TT_charDatabaseButton.ReshowDelay = 500;
             TT_charDatabaseButton.SetToolTip(this.charDatabaseButton, "Database of current characters.");
-
         }
 
         //Button methods
