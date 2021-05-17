@@ -101,7 +101,7 @@ namespace DCTBFightingSimulator
             changelogText.AppendText(Environment.NewLine + "ADDITIONS:");
             changelogText.AppendText(Environment.NewLine + "- Added tooltips for the main menu buttons");
             changelogText.AppendText(Environment.NewLine + "- Added tooltips to the character creation screen with more information on various components. Note: 'Meta Values' refers to a common range of values present in most vanilla characters. Not all vanilla characters follow this meta, and user-created builds do not have to either; this is just for balancing reference if desired.");
-            changelogText.AppendText(Environment.NewLine + "- Two new NORMAL-type characters");
+            changelogText.AppendText(Environment.NewLine + "- Two new NORMAL-type characters!");
             changelogText.AppendText(Environment.NewLine + "CHANGES:");
             changelogText.AppendText(Environment.NewLine + "- Fixed a typo on export instructions");
             changelogText.AppendText(Environment.NewLine + "- Formatting edits to the source code for clarity and conciseness");
