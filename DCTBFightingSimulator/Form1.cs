@@ -108,7 +108,7 @@ namespace DCTBFightingSimulator
             changelogText.AppendText(Environment.NewLine + "- Fixed a typo on export instructions");
             changelogText.AppendText(Environment.NewLine + "- Increased clarity for the 'OP' section of the character database");
             changelogText.AppendText(Environment.NewLine + "- Formatting edits to the source code for clarity and conciseness");
-            changelogText.AppendText(Environment.NewLine + "- Updated seeding based on tournament results");
+            changelogText.AppendText(Environment.NewLine + "- Updated seeding based on tournament results. All tournaments will now be compiled into the spreadsheet starting from v0.2.0 so that changes in seeding are easier to see.");
             changelogText.AppendText(Environment.NewLine + "BALANCING:");
             changelogText.AppendText(Environment.NewLine + "- No balance changes this update.");
             //Post-Changes
@@ -132,6 +132,7 @@ namespace DCTBFightingSimulator
             roadmapText.AppendText(Environment.NewLine + Environment.NewLine + "Additions (in no particular order):");
             roadmapText.AppendText(Environment.NewLine + "- Increased character creation user-friendliness");
             roadmapText.AppendText(Environment.NewLine + "- Run sim processes on a separate thread to enable simultaneous actions");
+            roadmapText.AppendText(Environment.NewLine + "- Variable sim speed");
             roadmapText.AppendText(Environment.NewLine + "- Simplistic taskbar icon");
             roadmapText.AppendText(Environment.NewLine + "- Healthbars");
             roadmapText.AppendText(Environment.NewLine + "- Update EvE UI to show more stats/info at once");
