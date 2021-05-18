@@ -18,6 +18,8 @@ namespace DCTBFightingSimulator
                 //None
         string josephString = "nX!wj@am!EJosephd@3MDMe#SCJoseph is a proficient melee fighter who is able to deal decent damage and adequately defend, but cannot easily dodge.t192y!@:PE22NONEh!*##p2@<#1600at1!@!W0k130d%%23eFF130a1;c';c80dj1g><e25imnSTRT@@_!nnnnnnnnnimnEND@@_!nDCMmv1@@Flurry PunchdDCMv1@@Joseph attacks with a volley of punches. Type:  NONEtDCMmv1@@NONEatmDCMmv1@@1.25accDCMmv1@@60hDCMmv1@@0atkDCMmv1@@0defDCMmv1@@0acmDCMmv1@@0dgeDCMmv1@@0indSTRTMmv1@@_!nnnnnnnnnindENDMmv1@@_!nDCMmv2@@MegapunchdDCMv2@@Joseph delivers a heavy punch, dealing significant damage. This attack is hard to land. Type: NONEtDCMmv2@@NONEatmDCMmv2@@1.75accDCMmv2@@55hDCMmv2@@0atkDCMmv2@@0defDCMmv2@@0acmDCMmv2@@0dgeDCMmv2@@0indSTRTMmv2@@_!nnnnnnnnnindENDMmv2@@_!nDCMmv3@@Flying KickdDCMv3@@Joseph attacks with a flying kick, dealing damage and raising his own attack. Type: NONEtDCMmv3@@NONEatmDCMmv3@@1.25accDCMmv3@@40hDCMmv3@@0atkDCMmv3@@30defDCMmv3@@0acmDCMmv3@@0dgeDCMmv3@@0indSTRTMmv3@@_!nnnnnnnnnindENDMmv3@@_!nDCMmv4@@RetaliatedDCMv4@@Joseph retaliates with a small amount of damage, but in doing so raises his own defense. Type: NONEtDCMmv4@@NONEatmDCMmv4@@1.3accDCMmv4@@60hDCMmv4@@0atkDCMmv4@@0defDCMmv4@@40acmDCMmv4@@0dgeDCMmv4@@0indSTRTMmv4@@_!nnnnnnnnnindENDMmv4@@_!nDCMmv5@@SkullcrusherdDCMv5@@Joseph crushes his opponent's skull, dealing heavy damage and crippling them. This attack is difficult to land. Type: NONEtDCMmv5@@NONEatmDCMmv5@@3.5accDCMmv5@@10hDCMmv5@@0atkDCMmv5@@0defDCMmv5@@0acmDCMmv5@@0dgeDCMmv5@@0indSTRTMmv5@@_!nnnynnnnnindENDMmv5@@_!";
         string davidString = "nX!wj@am!EDavidd@3MDMe#SCDavid is a sword-wielding fighter capable of inflicting bleeding on his opponents. He is strong when attacking but needs to be careful on defense.t192y!@:PE22NONEh!*##p2@<#1550at1!@!W0k150d%%23eFF90a1;c';c90dj1g><e30imnSTRT@@_!nnnnnnnnnimnEND@@_!nDCMmv1@@SlicedDCMv1@@David slices at his opponent, dealing a small amount of damage but inflicting bleeding. Type: NONEtDCMmv1@@NONEatmDCMmv1@@0.6accDCMmv1@@50hDCMmv1@@0atkDCMmv1@@0defDCMmv1@@0acmDCMmv1@@0dgeDCMmv1@@0indSTRTMmv1@@_!nnnnnynnnindENDMmv1@@_!nDCMmv2@@SharpendDCMv2@@David sharpens his swords, increasing his ATK. For this move, opponents' 'dodge' stat represents their ability to prevent him from doing so. Type: NONEtDCMmv2@@NONEatmDCMmv2@@0accDCMmv2@@200hDCMmv2@@0atkDCMmv2@@45defDCMmv2@@0acmDCMmv2@@0dgeDCMmv2@@0indSTRTMmv2@@_!nnnnnnnnnindENDMmv2@@_!nDCMmv3@@Super SlashdDCMv3@@David slashes at his opponent, dealing high amounts of damage. Type: NONEtDCMmv3@@NONEatmDCMmv3@@3accDCMmv3@@50hDCMmv3@@0atkDCMmv3@@0defDCMmv3@@0acmDCMmv3@@0dgeDCMmv3@@0indSTRTMmv3@@_!nnnnnnnnnindENDMmv3@@_!nDCMmv4@@Combo SwordsdDCMv4@@David unleashes a flurry of combos with his swords, dealing damage and slightly raising his own attack. Type: NONEtDCMmv4@@NONEatmDCMmv4@@0.6accDCMmv4@@50hDCMmv4@@0atkDCMmv4@@20defDCMmv4@@0acmDCMmv4@@0dgeDCMmv4@@0indSTRTMmv4@@_!nnnnnnnnnindENDMmv4@@_!nDCMmv5@@Flask AttackdDCMv5@@David uses a dual-utility flask to add attack to his sword and heal himself slightly. Type: NONEtDCMmv5@@NONEatmDCMmv5@@1.3accDCMmv5@@40hDCMmv5@@75atkDCMmv5@@15defDCMmv5@@0acmDCMmv5@@0dgeDCMmv5@@0indSTRTMmv5@@_!nnnnnnnnnindENDMmv5@@_!";
+        string duncanString = "nX!wj@am!EDuncand@3MDMe#SCDuncan is a heavy-hitting but defensively weak human.t192y!@:PE22NONEh!*##p2@<#1800at1!@!W0k295d%%23eFF50a1;c';c75dj1g><e10imnSTRT@@_!nnnnnnnnnimnEND@@_!nDCMmv1@@HandrocketdDCMv1@@Duncan fires a large rocket at the opponent, dealing devastating damage along with burning and weakening them. Type: NONEtDCMmv1@@NONEatmDCMmv1@@2accDCMmv1@@60hDCMmv1@@0atkDCMmv1@@0defDCMmv1@@0acmDCMmv1@@0dgeDCMmv1@@0indSTRTMmv1@@_!nnynnnnynindENDMmv1@@_!nDCMmv2@@Sword SlashdDCMv2@@Duncan slashes his handheld sword, inflicting bleeding. Type: NONEtDCMmv2@@NONEatmDCMmv2@@1accDCMmv2@@60hDCMmv2@@0atkDCMmv2@@0defDCMmv2@@0acmDCMmv2@@0dgeDCMmv2@@0indSTRTMmv2@@_!nnnnnynnnindENDMmv2@@_!nDCMmv3@@King's ClashdDCMv3@@Duncan deals a small amount of damage but raises his ATK slightly. Type: NONEtDCMmv3@@NONEatmDCMmv3@@0.5accDCMmv3@@60hDCMmv3@@0atkDCMmv3@@5defDCMmv3@@0acmDCMmv3@@0dgeDCMmv3@@0indSTRTMmv3@@_!nnnnnnnnnindENDMmv3@@_!nDCMmv4@@Bomb PlantdDCMv4@@Duncan plants a large bomb near the opponent, which explodes and deals devastating damage. Duncan takes recoil damage. Type: NONEtDCMmv4@@NONEatmDCMmv4@@3.25accDCMmv4@@50hDCMmv4@@-30atkDCMmv4@@0defDCMmv4@@0acmDCMmv4@@0dgeDCMmv4@@0indSTRTMmv4@@_!nnnnnnnnnindENDMmv4@@_!nDCMmv5@@The CripplerdDCMv5@@Duncan's signature move, which feigns high damage and instead cripples the opponent. Type: NONEtDCMmv5@@NONEatmDCMmv5@@0.3accDCMmv5@@70hDCMmv5@@0atkDCMmv5@@0defDCMmv5@@0acmDCMmv5@@0dgeDCMmv5@@0indSTRTMmv5@@_!nnnynnnnnindENDMmv5@@_!";
+        string firiaString = "nX!wj@am!EFiriad@3MDMe#SCFiria is a talented human healer, who doesn't dish out much damage but is capable of tanking hits and healing herself.t192y!@:PE22NONEh!*##p2@<#2875at1!@!W0k70d%%23eFF275a1;c';c60dj1g><e10imnSTRT@@_!nnnnnnnnnimnEND@@_!nDCMmv1@@Surge of LifedDCMv1@@Firia deals damage and heals herself. Type: NONEtDCMmv1@@NONEatmDCMmv1@@1accDCMmv1@@70hDCMmv1@@50atkDCMmv1@@0defDCMmv1@@0acmDCMmv1@@0dgeDCMmv1@@0indSTRTMmv1@@_!nnnnnnnnnindENDMmv1@@_!nDCMmv2@@Support BeamdDCMv2@@Firia deals high damage, then heals herself and raises her DEF slightly. Type: NONEtDCMmv2@@NONEatmDCMmv2@@1.5accDCMmv2@@65hDCMmv2@@30atkDCMmv2@@0defDCMmv2@@10acmDCMmv2@@0dgeDCMmv2@@0indSTRTMmv2@@_!nnnnnnnnnindENDMmv2@@_!nDCMmv3@@Fury SmashdDCMv3@@Firia deals damage and weakens the opponent. Type: NONEtDCMmv3@@NONEatmDCMmv3@@0.85accDCMmv3@@70hDCMmv3@@0atkDCMmv3@@0defDCMmv3@@0acmDCMmv3@@0dgeDCMmv3@@0indSTRTMmv3@@_!nnnnnnnynindENDMmv3@@_!nDCMmv4@@Aura of HealingdDCMv4@@Firia casts a spell that creates a ring which heals her while damaging the opponent. Type: VOIDtDCMmv4@@VOIDatmDCMmv4@@0.75accDCMmv4@@100hDCMmv4@@75atkDCMmv4@@0defDCMmv4@@0acmDCMmv4@@0dgeDCMmv4@@0indSTRTMmv4@@_!nnnnnnnnnindENDMmv4@@_!nDCMmv5@@Disc of HealingdDCMv5@@Firia fires a disc that heals her and deals high damage, but has low accuracy. Type: NONEtDCMmv5@@NONEatmDCMmv5@@2accDCMmv5@@45hDCMmv5@@50atkDCMmv5@@0defDCMmv5@@0acmDCMmv5@@0dgeDCMmv5@@0indSTRTMmv5@@_!nnnnnnnnnindENDMmv5@@_!";
                 //Void
         string anomalString = "nX!wj@am!EAnomald@3MDMe#SCAnomal is a void-blooded beast resembling a massive jaguar. What he lacks in defense, he makes up for in durability and attack, and is capable of weakening opponents.t192y!@:PE22VOIDh!*##p2@<#2000at1!@!W0k275d%%23eFF65a1;c';c80dj1g><e10imnSTRT@@_!nnnnnnnnnimnEND@@_!nDCMmv1@@Void FangdDCMv1@@Anomal bites his opponent with void-bearing fangs. Type: VOIDtDCMmv1@@VOIDatmDCMmv1@@1.5accDCMmv1@@30hDCMmv1@@0atkDCMmv1@@0defDCMmv1@@0acmDCMmv1@@0dgeDCMmv1@@0indSTRTMmv1@@_!nnnnnnnnnindENDMmv1@@_!nDCMmv2@@PouncedDCMv2@@Anomal pounces on the target, inflicting large damage. This attack also has high accuracy. Type: NONEtDCMmv2@@NONEatmDCMmv2@@2.25accDCMmv2@@80hDCMmv2@@0atkDCMmv2@@0defDCMmv2@@0acmDCMmv2@@0dgeDCMmv2@@0indSTRTMmv2@@_!nnnnnnnnnindENDMmv2@@_!nDCMmv3@@EnshrouddDCMv3@@Anomal encompasses the target in a dark void, dealing a low amount of damage, weakening them, and raising his own ATK. Type: VOIDtDCMmv3@@VOIDatmDCMmv3@@0.4accDCMmv3@@50hDCMmv3@@0atkDCMmv3@@30defDCMmv3@@0acmDCMmv3@@0dgeDCMmv3@@0indSTRTMmv3@@_!nnnnnnnynindENDMmv3@@_!nDCMmv4@@RetreatdDCMv4@@Anomal attacks with a short blow as he retreats backward. This move deals a very small amount of damage while giving Anomal some HP. However, it has a low chance to hit. Type: NONEtDCMmv4@@NONEatmDCMmv4@@1.5accDCMmv4@@30hDCMmv4@@75atkDCMmv4@@0defDCMmv4@@0acmDCMmv4@@0dgeDCMmv4@@0indSTRTMmv4@@_!nnnnnnnnnindENDMmv4@@_!nDCMmv5@@Throne of PredatorsdDCMv5@@If Anomal can manage to land this attack, it deals devastating damage, raises his DEF and ACC and heals him, but at the cost of a little ATK. Type: VOIDtDCMmv5@@VOIDatmDCMmv5@@4accDCMmv5@@-15hDCMmv5@@50atkDCMmv5@@-10defDCMmv5@@5acmDCMmv5@@0dgeDCMmv5@@0indSTRTMmv5@@_!nnnnnnnnnindENDMmv5@@_!";
         string rigString = "nX!wj@am!ERigd@3MDMe#SCRig is a manifestation of the void itself. It is immune to bleeding and stunning due to its properties.t192y!@:PE22VOIDh!*##p2@<#1900at1!@!W0k100d%%23eFF100a1;c';c90dj1g><e30imnSTRT@@_!ynnnnynnnimnEND@@_!nDCMmv1@@Void RaydDCMv1@@Rig fires a small ray of void, dealing damage. Type: VOIDtDCMmv1@@VOIDatmDCMmv1@@1.5accDCMmv1@@40hDCMmv1@@0atkDCMmv1@@0defDCMmv1@@0acmDCMmv1@@0dgeDCMmv1@@0indSTRTMmv1@@_!nnnnnnnnnindENDMmv1@@_!nDCMmv2@@Void BeamdDCMv2@@Rig fires a thicker version of the Void Ray, dealing more damage but with less accuracy. Type: VOIDtDCMmv2@@VOIDatmDCMmv2@@2.5accDCMmv2@@10hDCMmv2@@0atkDCMmv2@@0defDCMmv2@@0acmDCMmv2@@0dgeDCMmv2@@0indSTRTMmv2@@_!nnnnnnnnnindENDMmv2@@_!nDCMmv3@@ManifestationdDCMv3@@Rig manifests itself in a different form, increasing all of its stats. The opponent's 'dodge' value represents their ability to prevent this. Type: VOIDtDCMmv3@@VOIDatmDCMmv3@@0accDCMmv3@@80hDCMmv3@@0atkDCMmv3@@15defDCMmv3@@25acmDCMmv3@@5dgeDCMmv3@@5indSTRTMmv3@@_!nnnnnnnnnindENDMmv3@@_!nDCMmv4@@OverbeardDCMv4@@Rig uses the powers of the void to overbear its opponent, inflicting a weakened state upon them and dealing some damage. Type: VOIDtDCMmv4@@VOIDatmDCMmv4@@1.5accDCMmv4@@40hDCMmv4@@0atkDCMmv4@@0defDCMmv4@@0acmDCMmv4@@0dgeDCMmv4@@0indSTRTMmv4@@_!nnnnnnnynindENDMmv4@@_!nDCMmv5@@Void KamikazedDCMv5@@Rig flings itself at the opponent, dealing massive damage, raising its DEF, but harming itself. Type: VOIDtDCMmv5@@VOIDatmDCMmv5@@3.25accDCMmv5@@30hDCMmv5@@-50atkDCMmv5@@0defDCMmv5@@20acmDCMmv5@@0dgeDCMmv5@@0indSTRTMmv5@@_!nnnnnnnnnindENDMmv5@@_!";
@@ -68,6 +70,9 @@ namespace DCTBFightingSimulator
         private int player2EvEMaxHP;
         private int player1OrigHPEve;
         private int player2OrigHPEve;
+        private float atkStatModValPsn = 1f;
+        private float atkStatModValWk = 1f;
+        private float effectivenessModVal = 1f;
         //Possibly deprecated
         int lastP1Move = 0;
         int lastP2Move = 0;
@@ -82,69 +87,145 @@ namespace DCTBFightingSimulator
             //Fill in Changelog and Roadmap
             fillChangelog();
             fillRoadmap();
+            //Initialize Tooltips
+            initTooltips();
         }
         
         //Changelog and Roadmap
         public void fillChangelog()
         {
-            //Current version: 0.0.1
+            //Current version: 0.2.0 (this), 0.1.1 (old)
             changelogText.Text = "";
-            changelogText.AppendText("VERSON: 0.1.1");
-            changelogText.AppendText(Environment.NewLine + "Version 0.1.1 Release (#2) of DCTBFightingSimulator!" + Environment.NewLine);
-            changelogText.AppendText(Environment.NewLine + Environment.NewLine + "v0.1.1 Changelog:");
+            changelogText.AppendText("VERSON: 0.2.0");
+            changelogText.AppendText(Environment.NewLine + "Version 0.2.0 Release (#3) of DCTBFightingSimulator!" + Environment.NewLine);
+            changelogText.AppendText(Environment.NewLine + Environment.NewLine + "v0.2.0 Changelog:");
+            changelogText.AppendText(Environment.NewLine + "Important update is here! New tooltips for clarity when creating a character, along with two new NONE-type characters (and a new tournament!), source code reformatting and more.");
             changelogText.AppendText(Environment.NewLine + "ADDITIONS:");
-            changelogText.AppendText(Environment.NewLine + "- Added DCTBFSSeeding document, with tournament seeding for all existing characters");
-            changelogText.AppendText(Environment.NewLine + "- Image files for healthbars");
+            changelogText.AppendText(Environment.NewLine + "- Added tooltips for the main menu buttons");
+            changelogText.AppendText(Environment.NewLine + "- Added tooltips to the character creation screen with more information on various components. Note: 'Meta Values' refers to a common range of values present in most vanilla characters. Not all vanilla characters follow this meta, and user-created builds do not have to either; this is just for balancing reference if desired.");
+            changelogText.AppendText(Environment.NewLine + "- Two new NONE-type characters, Duncan and Firia");
             changelogText.AppendText(Environment.NewLine + "CHANGES:");
-            changelogText.AppendText(Environment.NewLine + "- Enlarged character selection for EvE for better accessibility");
-            changelogText.AppendText(Environment.NewLine + "- Updated description for Quake");
-            changelogText.AppendText(Environment.NewLine + "BALANCING (note that baseline balance changes are not reflected in the most recent tournament unless a major feature was changed, or character was added):");
-            changelogText.AppendText(Environment.NewLine + "|Tweedle: base DGE -20; base HP +150|");
-            changelogText.AppendText(Environment.NewLine + "|Zodium: base DEF +35; base HP +100|");
-            changelogText.AppendText(Environment.NewLine + "|Zip: MV 2 Atk. Mult -0.15; MV 5 Atk. Mult -0.2|");
-            changelogText.AppendText(Environment.NewLine + "|Lyfebud: MV 2 Heal -10; MV 4 Heal -5; MV 5 Heal -30|");
-            changelogText.AppendText(Environment.NewLine + "|Elementus: All positive move stat modifiers -2|");
-            changelogText.AppendText(Environment.NewLine + "|The Demon: HP +205; DEF +5|");
-            changelogText.AppendText(Environment.NewLine + "|Joseph: HP +100; ATK +30; DEF +30; DGE +5; MV 1 Atk. Mult +0.25; MV 2 ACC +35; MV 3 Atk. Mod. +5; MV 4 Atk. Mult. +0.3; MV 5 ACC +20|");
-            changelogText.AppendText(Environment.NewLine + "|David: HP +200; DEF -20|");
-            changelogText.AppendText(Environment.NewLine + "|The Rock: HP -100; DEF -10|");
-            changelogText.AppendText(Environment.NewLine + "|Anomal: ATK -25; DEF +25; HP -100; MV 5 Atk. Mult. -1, ACC +5, Heal -10, DEF mod. -5|");
-            changelogText.AppendText(Environment.NewLine + "|Martis: HP -150; DEF -10|");
-            changelogText.AppendText(Environment.NewLine + "|Quake: HP +150; ATK +25; ACC +5; MV 2 DEF mod. +5; Added Cripple Immunity|");
-            changelogText.AppendText(Environment.NewLine + "|Discrinius: HP +275; ATK +20|");
-            changelogText.AppendText(Environment.NewLine + "|Duskan: HP -100; MV 1 Heal -20; MV 2 ACC Mod. -3; MV 3 Atk. Mult. -0.2, Heal -5; MV 4 ATK Mod. -3; MV 5 Atk. Mult. -0.5, ACC -5|");
-            changelogText.AppendText(Environment.NewLine + "|Humanus: HP +215; DEF +20; MV 2 Atk. Mult. +0.1, DEF mod. +8; MV 3 Atk. Mult. +0.15; MV 4 Heal +5; MV 5 Heal +10|");
-            changelogText.AppendText(Environment.NewLine + "|Solcore: ATK -20; MV 2 Atk. Mult. -0.15; MV 5 Atk. Mult. -0.25|");
+            changelogText.AppendText(Environment.NewLine + "- Fixed a typo on export instructions");
+            changelogText.AppendText(Environment.NewLine + "- Increased clarity for the 'OP' section of the character database");
+            changelogText.AppendText(Environment.NewLine + "- Formatting edits to the source code for clarity and conciseness");
+            changelogText.AppendText(Environment.NewLine + "- Updated seeding based on tournament results. All tournaments will now be compiled into the spreadsheet starting from v0.2.0 so that changes in seeding are easier to see.");
+            changelogText.AppendText(Environment.NewLine + "BALANCING:");
+            changelogText.AppendText(Environment.NewLine + "- No balance changes this update.");
             //Post-Changes
             changelogText.AppendText(Environment.NewLine + Environment.NewLine + "This is only an initial release with baseline simulations working; expect PvE and local PvP features to come soon (see the roadmap for details) Please bring up any issues, questions, user-submitted builds, etc. on the github page.");
             changelogText.AppendText(Environment.NewLine + "Additionally, every time there is an update involving additional characters, new AI, or new gameplay features, an official tournament will be run. The link to view tournament results of the simulation between all characters will be found here. Custom-created, user-submitted builds will also be a part of the competition.");
-            changelogText.AppendText(Environment.NewLine + Environment.NewLine + "View the most recent tournament(which may eventually be moved onto this program itself): https://challonge.com/bz19xyip");
+            changelogText.AppendText(Environment.NewLine + Environment.NewLine + "View the most recent tournament (which may eventually be moved onto this program itself): https://challonge.com/ozrjzhgm");
             changelogText.AppendText(Environment.NewLine + "Tournament Archives:");
-            changelogText.AppendText(Environment.NewLine + "No past tournaments to view.");
+            changelogText.AppendText(Environment.NewLine + "Version 0.1.0 tournament: https://challonge.com/bz19xyip");
         }
         public void fillRoadmap()
         {
             roadmapText.Text = "";
             roadmapText.AppendText("Roadmap:");
             roadmapText.AppendText(Environment.NewLine + Environment.NewLine + "Overarching Additions:");
+            roadmapText.AppendText(Environment.NewLine + "- An installer (no more bypassing all system security)");
             roadmapText.AppendText(Environment.NewLine + "- PvE functionality");
             roadmapText.AppendText(Environment.NewLine + "- PvP functionality");
             roadmapText.AppendText(Environment.NewLine + "- New Computer AIs");
             roadmapText.AppendText(Environment.NewLine + "- Move strings and move databases; import pre-existing moves, export your moves to strings, etc.");
             roadmapText.AppendText(Environment.NewLine + "- New characters and other features");
             roadmapText.AppendText(Environment.NewLine + Environment.NewLine + "Additions (in no particular order):");
+            roadmapText.AppendText(Environment.NewLine + "- Increased character creation user-friendliness");
+            roadmapText.AppendText(Environment.NewLine + "- Run sim processes on a separate thread to enable simultaneous actions");
+            roadmapText.AppendText(Environment.NewLine + "- Variable sim speed");
             roadmapText.AppendText(Environment.NewLine + "- Simplistic taskbar icon");
             roadmapText.AppendText(Environment.NewLine + "- Healthbars");
             roadmapText.AppendText(Environment.NewLine + "- Update EvE UI to show more stats/info at once");
             roadmapText.AppendText(Environment.NewLine + "- Update EvE to allow multiple game speeds/exiting/resets during play");
             roadmapText.AppendText(Environment.NewLine + "- Update information displayed when attacking (i.e. mentioning the specific attack, more specific details on effects, etc.");
-            roadmapText.AppendText(Environment.NewLine + "- Incorporating any user-submitted builds");
-            roadmapText.AppendText(Environment.NewLine + "- Tooltips/Additional Info for all aspects of the editor, simulation, etc.");
+            roadmapText.AppendText(Environment.NewLine + "- Incorporating any user-submitted builds (recurring)");
             roadmapText.AppendText(Environment.NewLine + "- Balancing changes (recurring)");
             roadmapText.AppendText(Environment.NewLine + Environment.NewLine + "Other/Random Additions:");
             roadmapText.AppendText(Environment.NewLine + "- Streamlining load times");
             roadmapText.AppendText(Environment.NewLine + "- Consolidating code / simplifying other events");
             roadmapText.AppendText(Environment.NewLine + Environment.NewLine + "User-submitted builds will be implemented in the very next release after submission, and will show up in the tournament.");
+        }
+        //Tooltips
+        public void initTooltips()
+        {
+            //Overarching Button tooltips
+            ToolTip TT_mainButtons = new ToolTip();
+            TT_mainButtons.AutoPopDelay = 5000;
+            TT_mainButtons.InitialDelay = 1000;
+            TT_mainButtons.ReshowDelay = 500;
+            TT_mainButtons.SetToolTip(this.simulateEveButton, "AI vs. AI battle simulator.");
+            TT_mainButtons.SetToolTip(this.pveButton, "Player vs. AI battle simulator.");
+            TT_mainButtons.SetToolTip(this.pvpButton, "Local (same computer) Player vs. Player battle simulator.");
+            TT_mainButtons.SetToolTip(this.createCharButton, "Character editor.");
+            TT_mainButtons.SetToolTip(this.charDatabaseButton, "Database of current characters.");
+
+            //Character Creation tooltips
+            ToolTip TT_CC = new ToolTip();
+            TT_CC.AutoPopDelay = 5000;
+            TT_CC.InitialDelay = 1000;
+            TT_CC.ReshowDelay = 500;
+                //Column 1
+            TT_CC.SetToolTip(this.CCT1, "Name of the character.");
+            TT_CC.SetToolTip(this.CCT2, "Brief description of the character. Usually, the type and any immunities are described here as well.");
+            TT_CC.SetToolTip(this.CCc1, "The character's type. This list is in order of effectiveness; the previous is effective on the next, and weak to the one before it.");
+            TT_CC.SetToolTip(this.CCN40, "The character's HP. Meta values: 1000 - 5000.");
+            TT_CC.SetToolTip(this.CCN1, "The character's ATK. Meta values: 50 - 250.");
+            TT_CC.SetToolTip(this.CCN2, "The character's DEF. Meta values: 50 - 400.");
+            TT_CC.SetToolTip(this.CCN3, "The character's ACC. Meta values: 50 - 120.");
+            TT_CC.SetToolTip(this.CCN4, "The character's DGE. Meta values: 0 - 60.");
+            TT_CC.SetToolTip(this.exportCharStringButton, "Export the string relating to the current values in the character creation board.");
+            TT_CC.SetToolTip(this.loadBuildButton, "Load a build from the string in the text box.");
+                //Moves (Universal tooltips across all moves)
+            TT_CC.SetToolTip(this.CCT3, "Name of this move.");
+            TT_CC.SetToolTip(this.CCT5, "Name of this move.");
+            TT_CC.SetToolTip(this.CCT7, "Name of this move.");
+            TT_CC.SetToolTip(this.CCT9, "Name of this move.");
+            TT_CC.SetToolTip(this.CCT11, "Name of this move.");
+            TT_CC.SetToolTip(this.CCT4, "Brief description of the move. Usually, effects of the move are also described.");
+            TT_CC.SetToolTip(this.CCT6, "Brief description of the move. Usually, effects of the move are also described.");
+            TT_CC.SetToolTip(this.CCT8, "Brief description of the move. Usually, effects of the move are also described.");
+            TT_CC.SetToolTip(this.CCT10, "Brief description of the move. Usually, effects of the move are also described.");
+            TT_CC.SetToolTip(this.CCT12, "Brief description of the move. Usually, effects of the move are also described.");
+            TT_CC.SetToolTip(this.CCc11, "This move's type. Can be different from the character's type.");
+            TT_CC.SetToolTip(this.CCc21, "This move's type. Can be different from the character's type.");
+            TT_CC.SetToolTip(this.CCc31, "This move's type. Can be different from the character's type.");
+            TT_CC.SetToolTip(this.CCc41, "This move's type. Can be different from the character's type.");
+            TT_CC.SetToolTip(this.CCc51, "This move's type. Can be different from the character's type.");
+            TT_CC.SetToolTip(this.CCN5, "The attack multiplier for this move (what ATK is multiplied by). Meta values: 0.5 - 5.");
+            TT_CC.SetToolTip(this.CCN12, "The attack multiplier for this move (what ATK is multiplied by). Meta values: 0.5 - 5.");
+            TT_CC.SetToolTip(this.CCN19, "The attack multiplier for this move (what ATK is multiplied by). Meta values: 0.5 - 5.");
+            TT_CC.SetToolTip(this.CCN26, "The attack multiplier for this move (what ATK is multiplied by). Meta values: 0.5 - 5.");
+            TT_CC.SetToolTip(this.CCN33, "The attack multiplier for this move (what ATK is multiplied by). Meta values: 0.5 - 5.");
+            TT_CC.SetToolTip(this.CCN6, "The accuracy of this move. Meta values: 20 - 80.");
+            TT_CC.SetToolTip(this.CCN13, "The accuracy of this move. Meta values: 20 - 80.");
+            TT_CC.SetToolTip(this.CCN20, "The accuracy of this move. Meta values: 20 - 80.");
+            TT_CC.SetToolTip(this.CCN27, "The accuracy of this move. Meta values: 20 - 80.");
+            TT_CC.SetToolTip(this.CCN34, "The accuracy of this move. Meta values: 20 - 80.");
+            TT_CC.SetToolTip(this.CCN7, "How much this move heals the character. Negative for self-damage. Meta values: -50 - 50.");
+            TT_CC.SetToolTip(this.CCN14, "How much this move heals the character. Negative for self-damage. Meta values: -50 - 50.");
+            TT_CC.SetToolTip(this.CCN21, "How much this move heals the character. Negative for self-damage. Meta values: -50 - 50.");
+            TT_CC.SetToolTip(this.CCN28, "How much this move heals the character. Negative for self-damage. Meta values: -50 - 50.");
+            TT_CC.SetToolTip(this.CCN35, "How much this move heals the character. Negative for self-damage. Meta values: -50 - 50.");
+            TT_CC.SetToolTip(this.CCN8, "How much this changes the character's base ATK value by. Meta values: -5 - 20.");
+            TT_CC.SetToolTip(this.CCN15, "How much this changes the character's base ATK value by. Meta values: -5 - 20.");
+            TT_CC.SetToolTip(this.CCN22, "How much this changes the character's base ATK value by. Meta values: -5 - 20.");
+            TT_CC.SetToolTip(this.CCN29, "How much this changes the character's base ATK value by. Meta values: -5 - 20.");
+            TT_CC.SetToolTip(this.CCN36, "How much this changes the character's base ATK value by. Meta values: -5 - 20.");
+            TT_CC.SetToolTip(this.CCN9, "How much this changes the character's base DEF value by. Meta values: -5 - 20.");
+            TT_CC.SetToolTip(this.CCN16, "How much this changes the character's base DEF value by. Meta values: -5 - 20.");
+            TT_CC.SetToolTip(this.CCN23, "How much this changes the character's base DEF value by. Meta values: -5 - 20.");
+            TT_CC.SetToolTip(this.CCN30, "How much this changes the character's base DEF value by. Meta values: -5 - 20.");
+            TT_CC.SetToolTip(this.CCN37, "How much this changes the character's base DEF value by. Meta values: -5 - 20.");
+            TT_CC.SetToolTip(this.CCN10, "How much this changes the character's base ACC value by. Meta values: -2 - 5.");
+            TT_CC.SetToolTip(this.CCN17, "How much this changes the character's base ACC value by. Meta values: -2 - 5.");
+            TT_CC.SetToolTip(this.CCN24, "How much this changes the character's base ACC value by. Meta values: -2 - 5.");
+            TT_CC.SetToolTip(this.CCN31, "How much this changes the character's base ACC value by. Meta values: -2 - 5.");
+            TT_CC.SetToolTip(this.CCN38, "How much this changes the character's base ACC value by. Meta values: -2 - 5.");
+            TT_CC.SetToolTip(this.CCN11, "How much this changes the character's base DGE value by. Meta values: -2 - 3.");
+            TT_CC.SetToolTip(this.CCN18, "How much this changes the character's base DGE value by. Meta values: -2 - 3.");
+            TT_CC.SetToolTip(this.CCN25, "How much this changes the character's base DGE value by. Meta values: -2 - 3.");
+            TT_CC.SetToolTip(this.CCN32, "How much this changes the character's base DGE value by. Meta values: -2 - 3.");
+            TT_CC.SetToolTip(this.CCN39, "How much this changes the character's base DGE value by. Meta values: -2 - 3.");
         }
 
         //Button methods
@@ -320,7 +401,17 @@ namespace DCTBFightingSimulator
                 player1 = new Character(davidString);
                 loadPlayer1VisualStats();
             }
-                //Void
+            if (player1SelectionEvE.Text == "Duncan (NONE) (Vanilla)")
+            {
+                player1 = new Character(duncanString);
+                loadPlayer1VisualStats();
+            }
+            if (player1SelectionEvE.Text == "Firia (NONE) (Vanilla)")
+            {
+                player1 = new Character(firiaString);
+                loadPlayer1VisualStats();
+            }
+            //Void
             if (player1SelectionEvE.Text == "Anomal (VOID) (Vanilla)")
             {
                 player1 = new Character(anomalString);
@@ -494,6 +585,16 @@ namespace DCTBFightingSimulator
             if (player2SelectionEvE.Text == "David (NONE) (Vanilla)")
             {
                 player2 = new Character(davidString);
+                loadPlayer2VisualStats();
+            }
+            if (player2SelectionEvE.Text == "Duncan (NONE) (Vanilla)")
+            {
+                player2 = new Character(duncanString);
+                loadPlayer2VisualStats();
+            }
+            if (player2SelectionEvE.Text == "Firia (NONE) (Vanilla)")
+            {
+                player2 = new Character(firiaString);
                 loadPlayer2VisualStats();
             }
             //Void
@@ -674,7 +775,7 @@ namespace DCTBFightingSimulator
                 {
                     break;
                 }
-                System.Threading.Thread.Sleep(1000);
+                //System.Threading.Thread.Sleep(1000);
                 eveSimText.AppendText(Environment.NewLine);
                 EvERandomAI2(player2);
                 loadPlayer1VisualStats();
@@ -683,7 +784,7 @@ namespace DCTBFightingSimulator
                 {
                     break;
                 }
-                System.Threading.Thread.Sleep(1000);
+                //System.Threading.Thread.Sleep(1000);
                 eveSimText.AppendText(Environment.NewLine);
             }
             enableAllButtons();
@@ -1021,8 +1122,7 @@ namespace DCTBFightingSimulator
             System.Windows.Forms.MessageBox.Show("Coming Soon!");
         }
 
-        //General Simulation Methods
-        //Player 1 Checks and Methods
+            //Player 1 Checks and Methods (USEABLE FOR ALL SIMS)
         private bool stunFrozenChecksP1(Character player1)
         {
             //Bool returns if cannot move, true is yes, false is no
@@ -1128,9 +1228,9 @@ namespace DCTBFightingSimulator
         {
             int totalAcc1;
             //Modifiers
-            float atkStatModValPsn = 1f;
-            float atkStatModValWk = 1f;
-            float effectivenessModVal = 1f;
+            atkStatModValPsn = 1f;
+            atkStatModValWk = 1f;
+            effectivenessModVal = 1f;
             if(player1.getIsPoisoned() == true)
             {
                 atkStatModValPsn = 0.9f;
@@ -1270,67 +1370,7 @@ namespace DCTBFightingSimulator
                 if (totalAcc1 >= 100)
                 {
                     //The move lands
-                    eveSimText.AppendText(Environment.NewLine + "Player 1 lands their Move 1!");
-                    int totalAtk = (int)(player1.getAtk() * player1.getMv1M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
-                    int damageDealt = totalAtk ^ 2 / player2.getDef();
-                    eveSimText.AppendText(Environment.NewLine + "Player 1 deals " + damageDealt.ToString() + " damage to Player 2.");
-                    player2.modifyHP(-damageDealt);
-                    eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own HP by " + player1.getMv1Heal().ToString());
-                    player1.modifyHP(player1.getMv1Heal());
-                    eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own ATK by " + player1.getMv1AtkMod().ToString());
-                    player1.modifyATK(player1.getMv1AtkMod());
-                    eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own DEF by " + player1.getMv1DefMod().ToString());
-                    player1.modifyDEF(player1.getMv1DefMod());
-                    eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own ACC by " + player1.getMv1AccMod().ToString());
-                    player1.modifyACC(player1.getMv1AccMod());
-                    eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own DGE by " + player1.getMv1DgeMod().ToString());
-                    player1.modifyDGE(player1.getMv1DgeMod());
-                    //Induces effects?
-                    if(player1.getMv1indStun() == true && player2.getimnStun() == false && player2.getIsStunned() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 stuns Player 2!");
-                        player2.induceStun();
-                    }
-                    if (player1.getMv1indPsn() == true && player2.getimnPsn() == false && player2.getIsPoisoned() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 poisons Player 2!");
-                        player2.inducePoison();
-                    }
-                    if (player1.getMv1indBrn() == true && player2.getimnBrn() == false && player2.getIsBurned() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 burns Player 2!");
-                        player2.induceBurn();
-                    }
-                    if (player1.getMv1indCrpl() == true && player2.getimnCrpl() == false && player2.getIsCrippled() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 cripples Player 2!");
-                        player2.induceCripple();
-                    }
-                    if (player1.getMv1indFrzn() == true && player2.getimnFrzn() == false && player2.getIsFrozen() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 freezes Player 2!");
-                        player2.induceFrozen();
-                    }
-                    if (player1.getMv1indBld() == true && player2.getimnBld() == false && player2.getIsBleeding() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 slices Player 2, causing them to bleed!");
-                        player2.induceBleeding();
-                    }
-                    if (player1.getMv1indStpf() == true && player2.getimnStpf() == false && player2.getIsStupefied() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 stupefies Player 2!");
-                        player2.induceStupefy();
-                    }
-                    if (player1.getMv1indWk() == true && player2.getimnWk() == false && player2.getIsWeak() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 weakens Player 2!");
-                        player2.induceWeak();
-                    }
-                    if (player1.getMv1indDzz() == true && player2.getimnDzz() == false && player2.getIsDizzy() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 causes Player 2 to become dizzy!");
-                        player2.induceDizzy();
-                    }
+                    eveP1MV1Hits();
                 }
                 else if(totalAcc1 > 0 && totalAcc1 < 100)
                 {
@@ -1339,67 +1379,7 @@ namespace DCTBFightingSimulator
                     if(chance <= totalAcc1)
                     {
                         //The move lands
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 lands their Move 1!");
-                        int totalAtk = (int)(player1.getAtk() * player1.getMv1M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
-                        int damageDealt = totalAtk ^ 2 / player2.getDef();
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 deals " + damageDealt.ToString() + " damage to Player 2.");
-                        player2.modifyHP(-damageDealt);
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own HP by " + player1.getMv1Heal().ToString());
-                        player1.modifyHP(player1.getMv1Heal());
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own ATK by " + player1.getMv1AtkMod().ToString());
-                        player1.modifyATK(player1.getMv1AtkMod());
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own DEF by " + player1.getMv1DefMod().ToString());
-                        player1.modifyDEF(player1.getMv1DefMod());
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own ACC by " + player1.getMv1AccMod().ToString());
-                        player1.modifyACC(player1.getMv1AccMod());
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own DGE by " + player1.getMv1DgeMod().ToString());
-                        player1.modifyDGE(player1.getMv1DgeMod());
-                        //Induces effects?
-                        if (player1.getMv1indStun() == true && player2.getimnStun() == false && player2.getIsStunned() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 1 stuns Player 2!");
-                            player2.induceStun();
-                        }
-                        if (player1.getMv1indPsn() == true && player2.getimnPsn() == false && player2.getIsPoisoned() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 1 poisons Player 2!");
-                            player2.inducePoison();
-                        }
-                        if (player1.getMv1indBrn() == true && player2.getimnBrn() == false && player2.getIsBurned() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 1 burns Player 2!");
-                            player2.induceBurn();
-                        }
-                        if (player1.getMv1indCrpl() == true && player2.getimnCrpl() == false && player2.getIsCrippled() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 1 cripples Player 2!");
-                            player2.induceCripple();
-                        }
-                        if (player1.getMv1indFrzn() == true && player2.getimnFrzn() == false && player2.getIsFrozen() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 1 freezes Player 2!");
-                            player2.induceFrozen();
-                        }
-                        if (player1.getMv1indBld() == true && player2.getimnBld() == false && player2.getIsBleeding() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 1 slices Player 2, causing them to bleed!");
-                            player2.induceBleeding();
-                        }
-                        if (player1.getMv1indStpf() == true && player2.getimnStpf() == false && player2.getIsStupefied() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 1 stupefies Player 2!");
-                            player2.induceStupefy();
-                        }
-                        if (player1.getMv1indWk() == true && player2.getimnWk() == false && player2.getIsWeak() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 1 weakens Player 2!");
-                            player2.induceWeak();
-                        }
-                        if (player1.getMv1indDzz() == true && player2.getimnDzz() == false && player2.getIsDizzy() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 1 causes Player 2 to become dizzy!");
-                            player2.induceDizzy();
-                        }
+                        eveP1MV1Hits();
                     }
                     else
                     {
@@ -1544,67 +1524,7 @@ namespace DCTBFightingSimulator
                 if (totalAcc1 >= 100)
                 {
                     //The move lands
-                    eveSimText.AppendText(Environment.NewLine + "Player 1 lands their Move 2!");
-                    int totalAtk = (int)(player1.getAtk() * player1.getMv2M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
-                    int damageDealt = totalAtk ^ 2 / player2.getDef();
-                    eveSimText.AppendText(Environment.NewLine + "Player 1 deals " + damageDealt.ToString() + " damage to Player 2.");
-                    player2.modifyHP(-damageDealt);
-                    eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own HP by " + player1.getMv2Heal().ToString());
-                    player1.modifyHP(player1.getMv2Heal());
-                    eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own ATK by " + player1.getMv2AtkMod().ToString());
-                    player1.modifyATK(player1.getMv2AtkMod());
-                    eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own DEF by " + player1.getMv2DefMod().ToString());
-                    player1.modifyDEF(player1.getMv2DefMod());
-                    eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own ACC by " + player1.getMv2AccMod().ToString());
-                    player1.modifyACC(player1.getMv2AccMod());
-                    eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own DGE by " + player1.getMv2DgeMod().ToString());
-                    player1.modifyDGE(player1.getMv2DgeMod());
-                    //Induces effects?
-                    if (player1.getMv2indStun() == true && player2.getimnStun() == false && player2.getIsStunned() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 stuns Player 2!");
-                        player2.induceStun();
-                    }
-                    if (player1.getMv2indPsn() == true && player2.getimnPsn() == false && player2.getIsPoisoned() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 poisons Player 2!");
-                        player2.inducePoison();
-                    }
-                    if (player1.getMv2indBrn() == true && player2.getimnBrn() == false && player2.getIsBurned() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 burns Player 2!");
-                        player2.induceBurn();
-                    }
-                    if (player1.getMv2indCrpl() == true && player2.getimnCrpl() == false && player2.getIsCrippled() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 cripples Player 2!");
-                        player2.induceCripple();
-                    }
-                    if (player1.getMv2indFrzn() == true && player2.getimnFrzn() == false && player2.getIsFrozen() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 freezes Player 2!");
-                        player2.induceFrozen();
-                    }
-                    if (player1.getMv2indBld() == true && player2.getimnBld() == false && player2.getIsBleeding() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 slices Player 2, causing them to bleed!");
-                        player2.induceBleeding();
-                    }
-                    if (player1.getMv2indStpf() == true && player2.getimnStpf() == false && player2.getIsStupefied() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 stupefies Player 2!");
-                        player2.induceStupefy();
-                    }
-                    if (player1.getMv2indWk() == true && player2.getimnWk() == false && player2.getIsWeak() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 weakens Player 2!");
-                        player2.induceWeak();
-                    }
-                    if (player1.getMv2indDzz() == true && player2.getimnDzz() == false && player2.getIsDizzy() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 causes Player 2 to become dizzy!");
-                        player2.induceDizzy();
-                    }
+                    eveP1MV2Hits();
                 }
                 else if (totalAcc1 > 0 && totalAcc1 < 100)
                 {
@@ -1613,67 +1533,7 @@ namespace DCTBFightingSimulator
                     if (chance <= totalAcc1)
                     {
                         //The move lands
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 lands their Move 2!");
-                        int totalAtk = (int)(player1.getAtk() * player1.getMv2M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
-                        int damageDealt = totalAtk ^ 2 / player2.getDef();
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 deals " + damageDealt.ToString() + " damage to Player 2.");
-                        player2.modifyHP(-damageDealt);
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own HP by " + player1.getMv2Heal().ToString());
-                        player1.modifyHP(player1.getMv2Heal());
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own ATK by " + player1.getMv2AtkMod().ToString());
-                        player1.modifyATK(player1.getMv2AtkMod());
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own DEF by " + player1.getMv2DefMod().ToString());
-                        player1.modifyDEF(player1.getMv2DefMod());
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own ACC by " + player1.getMv2AccMod().ToString());
-                        player1.modifyACC(player1.getMv2AccMod());
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own DGE by " + player1.getMv2DgeMod().ToString());
-                        player1.modifyDGE(player1.getMv2DgeMod());
-                        //Induces effects?
-                        if (player1.getMv2indStun() == true && player2.getimnStun() == false && player2.getIsStunned() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 1 stuns Player 2!");
-                            player2.induceStun();
-                        }
-                        if (player1.getMv2indPsn() == true && player2.getimnPsn() == false && player2.getIsPoisoned() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 1 poisons Player 2!");
-                            player2.inducePoison();
-                        }
-                        if (player1.getMv2indBrn() == true && player2.getimnBrn() == false && player2.getIsBurned() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 1 burns Player 2!");
-                            player2.induceBurn();
-                        }
-                        if (player1.getMv2indCrpl() == true && player2.getimnCrpl() == false && player2.getIsCrippled() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 1 cripples Player 2!");
-                            player2.induceCripple();
-                        }
-                        if (player1.getMv2indFrzn() == true && player2.getimnFrzn() == false && player2.getIsFrozen() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 1 freezes Player 2!");
-                            player2.induceFrozen();
-                        }
-                        if (player1.getMv2indBld() == true && player2.getimnBld() == false && player2.getIsBleeding() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 1 slices Player 2, causing them to bleed!");
-                            player2.induceBleeding();
-                        }
-                        if (player1.getMv2indStpf() == true && player2.getimnStpf() == false && player2.getIsStupefied() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 1 stupefies Player 2!");
-                            player2.induceStupefy();
-                        }
-                        if (player1.getMv2indWk() == true && player2.getimnWk() == false && player2.getIsWeak() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 1 weakens Player 2!");
-                            player2.induceWeak();
-                        }
-                        if (player1.getMv2indDzz() == true && player2.getimnDzz() == false && player2.getIsDizzy() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 1 causes Player 2 to become dizzy!");
-                            player2.induceDizzy();
-                        }
+                        eveP1MV2Hits();
                     }
                     else
                     {
@@ -1818,67 +1678,7 @@ namespace DCTBFightingSimulator
                 if (totalAcc1 >= 100)
                 {
                     //The move lands
-                    eveSimText.AppendText(Environment.NewLine + "Player 1 lands their Move 3!");
-                    int totalAtk = (int)(player1.getAtk() * player1.getMv3M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
-                    int damageDealt = totalAtk ^ 2 / player2.getDef();
-                    eveSimText.AppendText(Environment.NewLine + "Player 1 deals " + damageDealt.ToString() + " damage to Player 2.");
-                    player2.modifyHP(-damageDealt);
-                    eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own HP by " + player1.getMv3Heal().ToString());
-                    player1.modifyHP(player1.getMv3Heal());
-                    eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own ATK by " + player1.getMv3AtkMod().ToString());
-                    player1.modifyATK(player1.getMv3AtkMod());
-                    eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own DEF by " + player1.getMv3DefMod().ToString());
-                    player1.modifyDEF(player1.getMv3DefMod());
-                    eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own ACC by " + player1.getMv3AccMod().ToString());
-                    player1.modifyACC(player1.getMv3AccMod());
-                    eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own DGE by " + player1.getMv3DgeMod().ToString());
-                    player1.modifyDGE(player1.getMv3DgeMod());
-                    //Induces effects?
-                    if (player1.getMv3indStun() == true && player2.getimnStun() == false && player2.getIsStunned() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 stuns Player 2!");
-                        player2.induceStun();
-                    }
-                    if (player1.getMv3indPsn() == true && player2.getimnPsn() == false && player2.getIsPoisoned() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 poisons Player 2!");
-                        player2.inducePoison();
-                    }
-                    if (player1.getMv3indBrn() == true && player2.getimnBrn() == false && player2.getIsBurned() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 burns Player 2!");
-                        player2.induceBurn();
-                    }
-                    if (player1.getMv3indCrpl() == true && player2.getimnCrpl() == false && player2.getIsCrippled() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 cripples Player 2!");
-                        player2.induceCripple();
-                    }
-                    if (player1.getMv3indFrzn() == true && player2.getimnFrzn() == false && player2.getIsFrozen() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 freezes Player 2!");
-                        player2.induceFrozen();
-                    }
-                    if (player1.getMv3indBld() == true && player2.getimnBld() == false && player2.getIsBleeding() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 slices Player 2, causing them to bleed!");
-                        player2.induceBleeding();
-                    }
-                    if (player1.getMv3indStpf() == true && player2.getimnStpf() == false && player2.getIsStupefied() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 stupefies Player 2!");
-                        player2.induceStupefy();
-                    }
-                    if (player1.getMv3indWk() == true && player2.getimnWk() == false && player2.getIsWeak() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 weakens Player 2!");
-                        player2.induceWeak();
-                    }
-                    if (player1.getMv3indDzz() == true && player2.getimnDzz() == false && player2.getIsDizzy() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 causes Player 2 to become dizzy!");
-                        player2.induceDizzy();
-                    }
+                    eveP1MV3Hits();
                 }
                 else if (totalAcc1 > 0 && totalAcc1 < 100)
                 {
@@ -1887,67 +1687,7 @@ namespace DCTBFightingSimulator
                     if (chance <= totalAcc1)
                     {
                         //The move lands
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 lands their Move 3!");
-                        int totalAtk = (int)(player1.getAtk() * player1.getMv3M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
-                        int damageDealt = totalAtk ^ 2 / player2.getDef();
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 deals " + damageDealt.ToString() + " damage to Player 2.");
-                        player2.modifyHP(-damageDealt);
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own HP by " + player1.getMv3Heal().ToString());
-                        player1.modifyHP(player1.getMv3Heal());
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own ATK by " + player1.getMv3AtkMod().ToString());
-                        player1.modifyATK(player1.getMv3AtkMod());
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own DEF by " + player1.getMv3DefMod().ToString());
-                        player1.modifyDEF(player1.getMv3DefMod());
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own ACC by " + player1.getMv3AccMod().ToString());
-                        player1.modifyACC(player1.getMv3AccMod());
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own DGE by " + player1.getMv3DgeMod().ToString());
-                        player1.modifyDGE(player1.getMv3DgeMod());
-                        //Induces effects?
-                        if (player1.getMv3indStun() == true && player2.getimnStun() == false && player2.getIsStunned() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 1 stuns Player 2!");
-                            player2.induceStun();
-                        }
-                        if (player1.getMv3indPsn() == true && player2.getimnPsn() == false && player2.getIsPoisoned() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 1 poisons Player 2!");
-                            player2.inducePoison();
-                        }
-                        if (player1.getMv3indBrn() == true && player2.getimnBrn() == false && player2.getIsBurned() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 1 burns Player 2!");
-                            player2.induceBurn();
-                        }
-                        if (player1.getMv3indCrpl() == true && player2.getimnCrpl() == false && player2.getIsCrippled() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 1 cripples Player 2!");
-                            player2.induceCripple();
-                        }
-                        if (player1.getMv3indFrzn() == true && player2.getimnFrzn() == false && player2.getIsFrozen() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 1 freezes Player 2!");
-                            player2.induceFrozen();
-                        }
-                        if (player1.getMv3indBld() == true && player2.getimnBld() == false && player2.getIsBleeding() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 1 slices Player 2, causing them to bleed!");
-                            player2.induceBleeding();
-                        }
-                        if (player1.getMv3indStpf() == true && player2.getimnStpf() == false && player2.getIsStupefied() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 1 stupefies Player 2!");
-                            player2.induceStupefy();
-                        }
-                        if (player1.getMv3indWk() == true && player2.getimnWk() == false && player2.getIsWeak() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 1 weakens Player 2!");
-                            player2.induceWeak();
-                        }
-                        if (player1.getMv3indDzz() == true && player2.getimnDzz() == false && player2.getIsDizzy() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 1 causes Player 2 to become dizzy!");
-                            player2.induceDizzy();
-                        }
+                        eveP1MV3Hits();
                     }
                     else
                     {
@@ -2092,67 +1832,7 @@ namespace DCTBFightingSimulator
                 if (totalAcc1 >= 100)
                 {
                     //The move lands
-                    eveSimText.AppendText(Environment.NewLine + "Player 1 lands their Move 4!");
-                    int totalAtk = (int)(player1.getAtk() * player1.getMv4M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
-                    int damageDealt = totalAtk ^ 2 / player2.getDef();
-                    eveSimText.AppendText(Environment.NewLine + "Player 1 deals " + damageDealt.ToString() + " damage to Player 2.");
-                    player2.modifyHP(-damageDealt);
-                    eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own HP by " + player1.getMv4Heal().ToString());
-                    player1.modifyHP(player1.getMv4Heal());
-                    eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own ATK by " + player1.getMv4AtkMod().ToString());
-                    player1.modifyATK(player1.getMv4AtkMod());
-                    eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own DEF by " + player1.getMv4DefMod().ToString());
-                    player1.modifyDEF(player1.getMv4DefMod());
-                    eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own ACC by " + player1.getMv4AccMod().ToString());
-                    player1.modifyACC(player1.getMv4AccMod());
-                    eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own DGE by " + player1.getMv4DgeMod().ToString());
-                    player1.modifyDGE(player1.getMv4DgeMod());
-                    //Induces effects?
-                    if (player1.getMv4indStun() == true && player2.getimnStun() == false && player2.getIsStunned() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 stuns Player 2!");
-                        player2.induceStun();
-                    }
-                    if (player1.getMv4indPsn() == true && player2.getimnPsn() == false && player2.getIsPoisoned() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 poisons Player 2!");
-                        player2.inducePoison();
-                    }
-                    if (player1.getMv4indBrn() == true && player2.getimnBrn() == false && player2.getIsBurned() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 burns Player 2!");
-                        player2.induceBurn();
-                    }
-                    if (player1.getMv4indCrpl() == true && player2.getimnCrpl() == false && player2.getIsCrippled() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 cripples Player 2!");
-                        player2.induceCripple();
-                    }
-                    if (player1.getMv4indFrzn() == true && player2.getimnFrzn() == false && player2.getIsFrozen() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 freezes Player 2!");
-                        player2.induceFrozen();
-                    }
-                    if (player1.getMv4indBld() == true && player2.getimnBld() == false && player2.getIsBleeding() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 slices Player 2, causing them to bleed!");
-                        player2.induceBleeding();
-                    }
-                    if (player1.getMv4indStpf() == true && player2.getimnStpf() == false && player2.getIsStupefied() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 stupefies Player 2!");
-                        player2.induceStupefy();
-                    }
-                    if (player1.getMv4indWk() == true && player2.getimnWk() == false && player2.getIsWeak() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 weakens Player 2!");
-                        player2.induceWeak();
-                    }
-                    if (player1.getMv4indDzz() == true && player2.getimnDzz() == false && player2.getIsDizzy() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 causes Player 2 to become dizzy!");
-                        player2.induceDizzy();
-                    }
+                    eveP1MV4Hits();
                 }
                 else if (totalAcc1 > 0 && totalAcc1 < 100)
                 {
@@ -2161,67 +1841,7 @@ namespace DCTBFightingSimulator
                     if (chance <= totalAcc1)
                     {
                         //The move lands
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 lands their Move 4!");
-                        int totalAtk = (int)(player1.getAtk() * player1.getMv4M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
-                        int damageDealt = totalAtk ^ 2 / player2.getDef();
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 deals " + damageDealt.ToString() + " damage to Player 2.");
-                        player2.modifyHP(-damageDealt);
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own HP by " + player1.getMv4Heal().ToString());
-                        player1.modifyHP(player1.getMv4Heal());
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own ATK by " + player1.getMv4AtkMod().ToString());
-                        player1.modifyATK(player1.getMv4AtkMod());
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own DEF by " + player1.getMv4DefMod().ToString());
-                        player1.modifyDEF(player1.getMv4DefMod());
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own ACC by " + player1.getMv4AccMod().ToString());
-                        player1.modifyACC(player1.getMv4AccMod());
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own DGE by " + player1.getMv4DgeMod().ToString());
-                        player1.modifyDGE(player1.getMv4DgeMod());
-                        //Induces effects?
-                        if (player1.getMv4indStun() == true && player2.getimnStun() == false && player2.getIsStunned() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 1 stuns Player 2!");
-                            player2.induceStun();
-                        }
-                        if (player1.getMv4indPsn() == true && player2.getimnPsn() == false && player2.getIsPoisoned() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 1 poisons Player 2!");
-                            player2.inducePoison();
-                        }
-                        if (player1.getMv4indBrn() == true && player2.getimnBrn() == false && player2.getIsBurned() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 1 burns Player 2!");
-                            player2.induceBurn();
-                        }
-                        if (player1.getMv4indCrpl() == true && player2.getimnCrpl() == false && player2.getIsCrippled() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 1 cripples Player 2!");
-                            player2.induceCripple();
-                        }
-                        if (player1.getMv4indFrzn() == true && player2.getimnFrzn() == false && player2.getIsFrozen() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 1 freezes Player 2!");
-                            player2.induceFrozen();
-                        }
-                        if (player1.getMv4indBld() == true && player2.getimnBld() == false && player2.getIsBleeding() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 1 slices Player 2, causing them to bleed!");
-                            player2.induceBleeding();
-                        }
-                        if (player1.getMv4indStpf() == true && player2.getimnStpf() == false && player2.getIsStupefied() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 1 stupefies Player 2!");
-                            player2.induceStupefy();
-                        }
-                        if (player1.getMv4indWk() == true && player2.getimnWk() == false && player2.getIsWeak() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 1 weakens Player 2!");
-                            player2.induceWeak();
-                        }
-                        if (player1.getMv4indDzz() == true && player2.getimnDzz() == false && player2.getIsDizzy() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 1 causes Player 2 to become dizzy!");
-                            player2.induceDizzy();
-                        }
+                        eveP1MV4Hits();
                     }
                     else
                     {
@@ -2366,67 +1986,7 @@ namespace DCTBFightingSimulator
                 if (totalAcc1 >= 100)
                 {
                     //The move lands
-                    eveSimText.AppendText(Environment.NewLine + "Player 1 lands their Move 5!");
-                    int totalAtk = (int)(player1.getAtk() * player1.getMv4M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
-                    int damageDealt = totalAtk ^ 2 / player2.getDef();
-                    eveSimText.AppendText(Environment.NewLine + "Player 1 deals " + damageDealt.ToString() + " damage to Player 2.");
-                    player2.modifyHP(-damageDealt);
-                    eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own HP by " + player1.getMv5Heal().ToString());
-                    player1.modifyHP(player1.getMv5Heal());
-                    eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own ATK by " + player1.getMv5AtkMod().ToString());
-                    player1.modifyATK(player1.getMv5AtkMod());
-                    eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own DEF by " + player1.getMv5DefMod().ToString());
-                    player1.modifyDEF(player1.getMv5DefMod());
-                    eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own ACC by " + player1.getMv5AccMod().ToString());
-                    player1.modifyACC(player1.getMv5AccMod());
-                    eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own DGE by " + player1.getMv5DgeMod().ToString());
-                    player1.modifyDGE(player1.getMv5DgeMod());
-                    //Induces effects?
-                    if (player1.getMv5indStun() == true && player2.getimnStun() == false && player2.getIsStunned() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 stuns Player 2!");
-                        player2.induceStun();
-                    }
-                    if (player1.getMv5indPsn() == true && player2.getimnPsn() == false && player2.getIsPoisoned() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 poisons Player 2!");
-                        player2.inducePoison();
-                    }
-                    if (player1.getMv5indBrn() == true && player2.getimnBrn() == false && player2.getIsBurned() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 burns Player 2!");
-                        player2.induceBurn();
-                    }
-                    if (player1.getMv5indCrpl() == true && player2.getimnCrpl() == false && player2.getIsCrippled() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 cripples Player 2!");
-                        player2.induceCripple();
-                    }
-                    if (player1.getMv5indFrzn() == true && player2.getimnFrzn() == false && player2.getIsFrozen() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 freezes Player 2!");
-                        player2.induceFrozen();
-                    }
-                    if (player1.getMv5indBld() == true && player2.getimnBld() == false && player2.getIsBleeding() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 slices Player 2, causing them to bleed!");
-                        player2.induceBleeding();
-                    }
-                    if (player1.getMv5indStpf() == true && player2.getimnStpf() == false && player2.getIsStupefied() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 stupefies Player 2!");
-                        player2.induceStupefy();
-                    }
-                    if (player1.getMv5indWk() == true && player2.getimnWk() == false && player2.getIsWeak() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 weakens Player 2!");
-                        player2.induceWeak();
-                    }
-                    if (player1.getMv5indDzz() == true && player2.getimnDzz() == false && player2.getIsDizzy() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 causes Player 2 to become dizzy!");
-                        player2.induceDizzy();
-                    }
+                    eveP1MV5Hits();
                 }
                 else if (totalAcc1 > 0 && totalAcc1 < 100)
                 {
@@ -2435,67 +1995,7 @@ namespace DCTBFightingSimulator
                     if (chance <= totalAcc1)
                     {
                         //The move lands
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 lands their Move 5!");
-                        int totalAtk = (int)(player1.getAtk() * player1.getMv4M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
-                        int damageDealt = totalAtk ^ 2 / player2.getDef();
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 deals " + damageDealt.ToString() + " damage to Player 2.");
-                        player2.modifyHP(-damageDealt);
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own HP by " + player1.getMv5Heal().ToString());
-                        player1.modifyHP(player1.getMv5Heal());
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own ATK by " + player1.getMv5AtkMod().ToString());
-                        player1.modifyATK(player1.getMv5AtkMod());
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own DEF by " + player1.getMv5DefMod().ToString());
-                        player1.modifyDEF(player1.getMv5DefMod());
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own ACC by " + player1.getMv5AccMod().ToString());
-                        player1.modifyACC(player1.getMv5AccMod());
-                        eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own DGE by " + player1.getMv5DgeMod().ToString());
-                        player1.modifyDGE(player1.getMv5DgeMod());
-                        //Induces effects?
-                        if (player1.getMv5indStun() == true && player2.getimnStun() == false && player2.getIsStunned() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 1 stuns Player 2!");
-                            player2.induceStun();
-                        }
-                        if (player1.getMv5indPsn() == true && player2.getimnPsn() == false && player2.getIsPoisoned() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 1 poisons Player 2!");
-                            player2.inducePoison();
-                        }
-                        if (player1.getMv5indBrn() == true && player2.getimnBrn() == false && player2.getIsBurned() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 1 burns Player 2!");
-                            player2.induceBurn();
-                        }
-                        if (player1.getMv5indCrpl() == true && player2.getimnCrpl() == false && player2.getIsCrippled() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 1 cripples Player 2!");
-                            player2.induceCripple();
-                        }
-                        if (player1.getMv5indFrzn() == true && player2.getimnFrzn() == false && player2.getIsFrozen() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 1 freezes Player 2!");
-                            player2.induceFrozen();
-                        }
-                        if (player1.getMv5indBld() == true && player2.getimnBld() == false && player2.getIsBleeding() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 1 slices Player 2, causing them to bleed!");
-                            player2.induceBleeding();
-                        }
-                        if (player1.getMv5indStpf() == true && player2.getimnStpf() == false && player2.getIsStupefied() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 1 stupefies Player 2!");
-                            player2.induceStupefy();
-                        }
-                        if (player1.getMv5indWk() == true && player2.getimnWk() == false && player2.getIsWeak() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 1 weakens Player 2!");
-                            player2.induceWeak();
-                        }
-                        if (player1.getMv5indDzz() == true && player2.getimnDzz() == false && player2.getIsDizzy() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 1 causes Player 2 to become dizzy!");
-                            player2.induceDizzy();
-                        }
+                        eveP1MV5Hits();
                     }
                     else
                     {
@@ -2514,7 +2014,329 @@ namespace DCTBFightingSimulator
             player2HealthBarEvE.Width = (player2.getHP() / player2EvEMaxHP);
             Application.DoEvents();
         }
-                //Player 2 Checks and Methods
+            //Player 1 Move subactions (recurring methods in p1Moves)
+        private void eveP1MV1Hits()
+        {
+            eveSimText.AppendText(Environment.NewLine + "Player 1 lands their Move 1!");
+            int totalAtk = (int)(player1.getAtk() * player1.getMv1M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
+            int damageDealt = totalAtk ^ 2 / player2.getDef();
+            eveSimText.AppendText(Environment.NewLine + "Player 1 deals " + damageDealt.ToString() + " damage to Player 2.");
+            player2.modifyHP(-damageDealt);
+            eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own HP by " + player1.getMv1Heal().ToString());
+            player1.modifyHP(player1.getMv1Heal());
+            eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own ATK by " + player1.getMv1AtkMod().ToString());
+            player1.modifyATK(player1.getMv1AtkMod());
+            eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own DEF by " + player1.getMv1DefMod().ToString());
+            player1.modifyDEF(player1.getMv1DefMod());
+            eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own ACC by " + player1.getMv1AccMod().ToString());
+            player1.modifyACC(player1.getMv1AccMod());
+            eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own DGE by " + player1.getMv1DgeMod().ToString());
+            player1.modifyDGE(player1.getMv1DgeMod());
+            //Induces effects?
+            if (player1.getMv1indStun() == true && player2.getimnStun() == false && player2.getIsStunned() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 1 stuns Player 2!");
+                player2.induceStun();
+            }
+            if (player1.getMv1indPsn() == true && player2.getimnPsn() == false && player2.getIsPoisoned() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 1 poisons Player 2!");
+                player2.inducePoison();
+            }
+            if (player1.getMv1indBrn() == true && player2.getimnBrn() == false && player2.getIsBurned() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 1 burns Player 2!");
+                player2.induceBurn();
+            }
+            if (player1.getMv1indCrpl() == true && player2.getimnCrpl() == false && player2.getIsCrippled() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 1 cripples Player 2!");
+                player2.induceCripple();
+            }
+            if (player1.getMv1indFrzn() == true && player2.getimnFrzn() == false && player2.getIsFrozen() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 1 freezes Player 2!");
+                player2.induceFrozen();
+            }
+            if (player1.getMv1indBld() == true && player2.getimnBld() == false && player2.getIsBleeding() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 1 slices Player 2, causing them to bleed!");
+                player2.induceBleeding();
+            }
+            if (player1.getMv1indStpf() == true && player2.getimnStpf() == false && player2.getIsStupefied() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 1 stupefies Player 2!");
+                player2.induceStupefy();
+            }
+            if (player1.getMv1indWk() == true && player2.getimnWk() == false && player2.getIsWeak() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 1 weakens Player 2!");
+                player2.induceWeak();
+            }
+            if (player1.getMv1indDzz() == true && player2.getimnDzz() == false && player2.getIsDizzy() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 1 causes Player 2 to become dizzy!");
+                player2.induceDizzy();
+            }
+        }
+        private void eveP1MV2Hits()
+        {
+            eveSimText.AppendText(Environment.NewLine + "Player 1 lands their Move 2!");
+            int totalAtk = (int)(player1.getAtk() * player1.getMv2M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
+            int damageDealt = totalAtk ^ 2 / player2.getDef();
+            eveSimText.AppendText(Environment.NewLine + "Player 1 deals " + damageDealt.ToString() + " damage to Player 2.");
+            player2.modifyHP(-damageDealt);
+            eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own HP by " + player1.getMv2Heal().ToString());
+            player1.modifyHP(player1.getMv2Heal());
+            eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own ATK by " + player1.getMv2AtkMod().ToString());
+            player1.modifyATK(player1.getMv2AtkMod());
+            eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own DEF by " + player1.getMv2DefMod().ToString());
+            player1.modifyDEF(player1.getMv2DefMod());
+            eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own ACC by " + player1.getMv2AccMod().ToString());
+            player1.modifyACC(player1.getMv2AccMod());
+            eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own DGE by " + player1.getMv2DgeMod().ToString());
+            player1.modifyDGE(player1.getMv2DgeMod());
+            //Induces effects?
+            if (player1.getMv2indStun() == true && player2.getimnStun() == false && player2.getIsStunned() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 1 stuns Player 2!");
+                player2.induceStun();
+            }
+            if (player1.getMv2indPsn() == true && player2.getimnPsn() == false && player2.getIsPoisoned() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 1 poisons Player 2!");
+                player2.inducePoison();
+            }
+            if (player1.getMv2indBrn() == true && player2.getimnBrn() == false && player2.getIsBurned() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 1 burns Player 2!");
+                player2.induceBurn();
+            }
+            if (player1.getMv2indCrpl() == true && player2.getimnCrpl() == false && player2.getIsCrippled() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 1 cripples Player 2!");
+                player2.induceCripple();
+            }
+            if (player1.getMv2indFrzn() == true && player2.getimnFrzn() == false && player2.getIsFrozen() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 1 freezes Player 2!");
+                player2.induceFrozen();
+            }
+            if (player1.getMv2indBld() == true && player2.getimnBld() == false && player2.getIsBleeding() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 1 slices Player 2, causing them to bleed!");
+                player2.induceBleeding();
+            }
+            if (player1.getMv2indStpf() == true && player2.getimnStpf() == false && player2.getIsStupefied() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 1 stupefies Player 2!");
+                player2.induceStupefy();
+            }
+            if (player1.getMv2indWk() == true && player2.getimnWk() == false && player2.getIsWeak() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 1 weakens Player 2!");
+                player2.induceWeak();
+            }
+            if (player1.getMv2indDzz() == true && player2.getimnDzz() == false && player2.getIsDizzy() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 1 causes Player 2 to become dizzy!");
+                player2.induceDizzy();
+            }
+        }
+        private void eveP1MV3Hits()
+        {
+            eveSimText.AppendText(Environment.NewLine + "Player 1 lands their Move 3!");
+            int totalAtk = (int)(player1.getAtk() * player1.getMv3M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
+            int damageDealt = totalAtk ^ 2 / player2.getDef();
+            eveSimText.AppendText(Environment.NewLine + "Player 1 deals " + damageDealt.ToString() + " damage to Player 2.");
+            player2.modifyHP(-damageDealt);
+            eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own HP by " + player1.getMv3Heal().ToString());
+            player1.modifyHP(player1.getMv3Heal());
+            eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own ATK by " + player1.getMv3AtkMod().ToString());
+            player1.modifyATK(player1.getMv3AtkMod());
+            eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own DEF by " + player1.getMv3DefMod().ToString());
+            player1.modifyDEF(player1.getMv3DefMod());
+            eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own ACC by " + player1.getMv3AccMod().ToString());
+            player1.modifyACC(player1.getMv3AccMod());
+            eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own DGE by " + player1.getMv3DgeMod().ToString());
+            player1.modifyDGE(player1.getMv3DgeMod());
+            //Induces effects?
+            if (player1.getMv3indStun() == true && player2.getimnStun() == false && player2.getIsStunned() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 1 stuns Player 2!");
+                player2.induceStun();
+            }
+            if (player1.getMv3indPsn() == true && player2.getimnPsn() == false && player2.getIsPoisoned() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 1 poisons Player 2!");
+                player2.inducePoison();
+            }
+            if (player1.getMv3indBrn() == true && player2.getimnBrn() == false && player2.getIsBurned() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 1 burns Player 2!");
+                player2.induceBurn();
+            }
+            if (player1.getMv3indCrpl() == true && player2.getimnCrpl() == false && player2.getIsCrippled() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 1 cripples Player 2!");
+                player2.induceCripple();
+            }
+            if (player1.getMv3indFrzn() == true && player2.getimnFrzn() == false && player2.getIsFrozen() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 1 freezes Player 2!");
+                player2.induceFrozen();
+            }
+            if (player1.getMv3indBld() == true && player2.getimnBld() == false && player2.getIsBleeding() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 1 slices Player 2, causing them to bleed!");
+                player2.induceBleeding();
+            }
+            if (player1.getMv3indStpf() == true && player2.getimnStpf() == false && player2.getIsStupefied() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 1 stupefies Player 2!");
+                player2.induceStupefy();
+            }
+            if (player1.getMv3indWk() == true && player2.getimnWk() == false && player2.getIsWeak() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 1 weakens Player 2!");
+                player2.induceWeak();
+            }
+            if (player1.getMv3indDzz() == true && player2.getimnDzz() == false && player2.getIsDizzy() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 1 causes Player 2 to become dizzy!");
+                player2.induceDizzy();
+            }
+        }
+        private void eveP1MV4Hits()
+        {
+            eveSimText.AppendText(Environment.NewLine + "Player 1 lands their Move 4!");
+            int totalAtk = (int)(player1.getAtk() * player1.getMv4M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
+            int damageDealt = totalAtk ^ 2 / player2.getDef();
+            eveSimText.AppendText(Environment.NewLine + "Player 1 deals " + damageDealt.ToString() + " damage to Player 2.");
+            player2.modifyHP(-damageDealt);
+            eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own HP by " + player1.getMv4Heal().ToString());
+            player1.modifyHP(player1.getMv4Heal());
+            eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own ATK by " + player1.getMv4AtkMod().ToString());
+            player1.modifyATK(player1.getMv4AtkMod());
+            eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own DEF by " + player1.getMv4DefMod().ToString());
+            player1.modifyDEF(player1.getMv4DefMod());
+            eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own ACC by " + player1.getMv4AccMod().ToString());
+            player1.modifyACC(player1.getMv4AccMod());
+            eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own DGE by " + player1.getMv4DgeMod().ToString());
+            player1.modifyDGE(player1.getMv4DgeMod());
+            //Induces effects?
+            if (player1.getMv4indStun() == true && player2.getimnStun() == false && player2.getIsStunned() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 1 stuns Player 2!");
+                player2.induceStun();
+            }
+            if (player1.getMv4indPsn() == true && player2.getimnPsn() == false && player2.getIsPoisoned() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 1 poisons Player 2!");
+                player2.inducePoison();
+            }
+            if (player1.getMv4indBrn() == true && player2.getimnBrn() == false && player2.getIsBurned() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 1 burns Player 2!");
+                player2.induceBurn();
+            }
+            if (player1.getMv4indCrpl() == true && player2.getimnCrpl() == false && player2.getIsCrippled() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 1 cripples Player 2!");
+                player2.induceCripple();
+            }
+            if (player1.getMv4indFrzn() == true && player2.getimnFrzn() == false && player2.getIsFrozen() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 1 freezes Player 2!");
+                player2.induceFrozen();
+            }
+            if (player1.getMv4indBld() == true && player2.getimnBld() == false && player2.getIsBleeding() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 1 slices Player 2, causing them to bleed!");
+                player2.induceBleeding();
+            }
+            if (player1.getMv4indStpf() == true && player2.getimnStpf() == false && player2.getIsStupefied() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 1 stupefies Player 2!");
+                player2.induceStupefy();
+            }
+            if (player1.getMv4indWk() == true && player2.getimnWk() == false && player2.getIsWeak() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 1 weakens Player 2!");
+                player2.induceWeak();
+            }
+            if (player1.getMv4indDzz() == true && player2.getimnDzz() == false && player2.getIsDizzy() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 1 causes Player 2 to become dizzy!");
+                player2.induceDizzy();
+            }
+        }
+        private void eveP1MV5Hits()
+        {
+            eveSimText.AppendText(Environment.NewLine + "Player 1 lands their Move 5!");
+            int totalAtk = (int)(player1.getAtk() * player1.getMv4M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
+            int damageDealt = totalAtk ^ 2 / player2.getDef();
+            eveSimText.AppendText(Environment.NewLine + "Player 1 deals " + damageDealt.ToString() + " damage to Player 2.");
+            player2.modifyHP(-damageDealt);
+            eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own HP by " + player1.getMv5Heal().ToString());
+            player1.modifyHP(player1.getMv5Heal());
+            eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own ATK by " + player1.getMv5AtkMod().ToString());
+            player1.modifyATK(player1.getMv5AtkMod());
+            eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own DEF by " + player1.getMv5DefMod().ToString());
+            player1.modifyDEF(player1.getMv5DefMod());
+            eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own ACC by " + player1.getMv5AccMod().ToString());
+            player1.modifyACC(player1.getMv5AccMod());
+            eveSimText.AppendText(Environment.NewLine + "Player 1 modifies their own DGE by " + player1.getMv5DgeMod().ToString());
+            player1.modifyDGE(player1.getMv5DgeMod());
+            //Induces effects?
+            if (player1.getMv5indStun() == true && player2.getimnStun() == false && player2.getIsStunned() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 1 stuns Player 2!");
+                player2.induceStun();
+            }
+            if (player1.getMv5indPsn() == true && player2.getimnPsn() == false && player2.getIsPoisoned() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 1 poisons Player 2!");
+                player2.inducePoison();
+            }
+            if (player1.getMv5indBrn() == true && player2.getimnBrn() == false && player2.getIsBurned() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 1 burns Player 2!");
+                player2.induceBurn();
+            }
+            if (player1.getMv5indCrpl() == true && player2.getimnCrpl() == false && player2.getIsCrippled() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 1 cripples Player 2!");
+                player2.induceCripple();
+            }
+            if (player1.getMv5indFrzn() == true && player2.getimnFrzn() == false && player2.getIsFrozen() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 1 freezes Player 2!");
+                player2.induceFrozen();
+            }
+            if (player1.getMv5indBld() == true && player2.getimnBld() == false && player2.getIsBleeding() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 1 slices Player 2, causing them to bleed!");
+                player2.induceBleeding();
+            }
+            if (player1.getMv5indStpf() == true && player2.getimnStpf() == false && player2.getIsStupefied() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 1 stupefies Player 2!");
+                player2.induceStupefy();
+            }
+            if (player1.getMv5indWk() == true && player2.getimnWk() == false && player2.getIsWeak() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 1 weakens Player 2!");
+                player2.induceWeak();
+            }
+            if (player1.getMv5indDzz() == true && player2.getimnDzz() == false && player2.getIsDizzy() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 1 causes Player 2 to become dizzy!");
+                player2.induceDizzy();
+            }
+        }
+
+            //Player 2 Checks and Methods (USEABLE FOR ALL SIMS)
         private bool stunFrozenChecksP2(Character player2)
         {
             //Bool returns if cannot move, true is yes, false is no
@@ -2621,9 +2443,9 @@ namespace DCTBFightingSimulator
         {
             int totalAcc1;
             //Modifiers
-            float atkStatModValPsn = 1f;
-            float atkStatModValWk = 1f;
-            float effectivenessModVal = 1f;
+            atkStatModValPsn = 1f;
+            atkStatModValWk = 1f;
+            effectivenessModVal = 1f;
             if (player2.getIsPoisoned() == true)
             {
                 atkStatModValPsn = 0.9f;
@@ -2763,67 +2585,7 @@ namespace DCTBFightingSimulator
                 if (totalAcc1 >= 100)
                 {
                     //The move lands
-                    eveSimText.AppendText(Environment.NewLine + "Player 2 lands their Move 1!");
-                    int totalAtk = (int)(player2.getAtk() * player2.getMv1M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
-                    int damageDealt = totalAtk ^ 2 / player1.getDef();
-                    eveSimText.AppendText(Environment.NewLine + "Player 2 deals " + damageDealt.ToString() + " damage to Player 1.");
-                    player1.modifyHP(-damageDealt);
-                    eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own HP by " + player2.getMv1Heal().ToString());
-                    player2.modifyHP(player2.getMv1Heal());
-                    eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own ATK by " + player2.getMv1AtkMod().ToString());
-                    player2.modifyATK(player2.getMv1AtkMod());
-                    eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own DEF by " + player2.getMv1DefMod().ToString());
-                    player2.modifyDEF(player2.getMv1DefMod());
-                    eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own ACC by " + player2.getMv1AccMod().ToString());
-                    player2.modifyACC(player2.getMv1AccMod());
-                    eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own DGE by " + player2.getMv1DgeMod().ToString());
-                    player2.modifyDGE(player2.getMv1DgeMod());
-                    //Induces effects?
-                    if (player2.getMv1indStun() == true && player1.getimnStun() == false && player1.getIsStunned() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 stuns Player 1!");
-                        player1.induceStun();
-                    }
-                    if (player2.getMv1indPsn() == true && player1.getimnPsn() == false && player1.getIsPoisoned() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 poisons Player 1!");
-                        player1.inducePoison();
-                    }
-                    if (player2.getMv1indBrn() == true && player1.getimnBrn() == false && player1.getIsBurned() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 burns Player 1!");
-                        player1.induceBurn();
-                    }
-                    if (player2.getMv1indCrpl() == true && player1.getimnCrpl() == false && player1.getIsCrippled() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 cripples Player 1!");
-                        player1.induceCripple();
-                    }
-                    if (player2.getMv1indFrzn() == true && player1.getimnFrzn() == false && player1.getIsFrozen() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 freezes Player 1!");
-                        player1.induceFrozen();
-                    }
-                    if (player2.getMv1indBld() == true && player1.getimnBld() == false && player1.getIsBleeding() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 slices Player 1, causing them to bleed!");
-                        player1.induceBleeding();
-                    }
-                    if (player2.getMv1indStpf() == true && player1.getimnStpf() == false && player1.getIsStupefied() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 stupefies Player 1!");
-                        player1.induceStupefy();
-                    }
-                    if (player2.getMv1indWk() == true && player1.getimnWk() == false && player1.getIsWeak() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 weakens Player 1!");
-                        player1.induceWeak();
-                    }
-                    if (player2.getMv1indDzz() == true && player1.getimnDzz() == false && player1.getIsDizzy() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 causes Player 1 to become dizzy!");
-                        player1.induceDizzy();
-                    }
+                    eveP2MV1Hits();
                 }
                 else if (totalAcc1 > 0 && totalAcc1 < 100)
                 {
@@ -2832,67 +2594,7 @@ namespace DCTBFightingSimulator
                     if (chance <= totalAcc1)
                     {
                         //The move lands
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 lands their Move 1!");
-                        int totalAtk = (int)(player2.getAtk() * player2.getMv1M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
-                        int damageDealt = totalAtk ^ 2 / player1.getDef();
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 deals " + damageDealt.ToString() + " damage to Player 1.");
-                        player1.modifyHP(-damageDealt);
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own HP by " + player2.getMv1Heal().ToString());
-                        player2.modifyHP(player2.getMv1Heal());
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own ATK by " + player2.getMv1AtkMod().ToString());
-                        player2.modifyATK(player2.getMv1AtkMod());
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own DEF by " + player2.getMv1DefMod().ToString());
-                        player2.modifyDEF(player2.getMv1DefMod());
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own ACC by " + player2.getMv1AccMod().ToString());
-                        player2.modifyACC(player2.getMv1AccMod());
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own DGE by " + player2.getMv1DgeMod().ToString());
-                        player2.modifyDGE(player2.getMv1DgeMod());
-                        //Induces effects?
-                        if (player2.getMv1indStun() == true && player1.getimnStun() == false && player1.getIsStunned() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 2 stuns Player 1!");
-                            player1.induceStun();
-                        }
-                        if (player2.getMv1indPsn() == true && player1.getimnPsn() == false && player1.getIsPoisoned() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 2 poisons Player 1!");
-                            player1.inducePoison();
-                        }
-                        if (player2.getMv1indBrn() == true && player1.getimnBrn() == false && player1.getIsBurned() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 2 burns Player 1!");
-                            player1.induceBurn();
-                        }
-                        if (player2.getMv1indCrpl() == true && player1.getimnCrpl() == false && player1.getIsCrippled() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 2 cripples Player 1!");
-                            player1.induceCripple();
-                        }
-                        if (player2.getMv1indFrzn() == true && player1.getimnFrzn() == false && player1.getIsFrozen() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 2 freezes Player 1!");
-                            player1.induceFrozen();
-                        }
-                        if (player2.getMv1indBld() == true && player1.getimnBld() == false && player1.getIsBleeding() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 2 slices Player 1, causing them to bleed!");
-                            player1.induceBleeding();
-                        }
-                        if (player2.getMv1indStpf() == true && player1.getimnStpf() == false && player1.getIsStupefied() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 2 stupefies Player 1!");
-                            player1.induceStupefy();
-                        }
-                        if (player2.getMv1indWk() == true && player1.getimnWk() == false && player1.getIsWeak() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 2 weakens Player 1!");
-                            player1.induceWeak();
-                        }
-                        if (player2.getMv1indDzz() == true && player1.getimnDzz() == false && player1.getIsDizzy() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 2 causes Player 1 to become dizzy!");
-                            player1.induceDizzy();
-                        }
+                        eveP2MV1Hits();
                     }
                     else
                     {
@@ -3037,67 +2739,7 @@ namespace DCTBFightingSimulator
                 if (totalAcc1 >= 100)
                 {
                     //The move lands
-                    eveSimText.AppendText(Environment.NewLine + "Player 2 lands their Move 2!");
-                    int totalAtk = (int)(player2.getAtk() * player2.getMv2M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
-                    int damageDealt = totalAtk ^ 2 / player1.getDef();
-                    eveSimText.AppendText(Environment.NewLine + "Player 2 deals " + damageDealt.ToString() + " damage to Player 1.");
-                    player1.modifyHP(-damageDealt);
-                    eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own HP by " + player2.getMv2Heal().ToString());
-                    player2.modifyHP(player2.getMv2Heal());
-                    eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own ATK by " + player2.getMv2AtkMod().ToString());
-                    player2.modifyATK(player2.getMv2AtkMod());
-                    eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own DEF by " + player2.getMv2DefMod().ToString());
-                    player2.modifyDEF(player2.getMv2DefMod());
-                    eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own ACC by " + player2.getMv2AccMod().ToString());
-                    player2.modifyACC(player2.getMv2AccMod());
-                    eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own DGE by " + player2.getMv2DgeMod().ToString());
-                    player2.modifyDGE(player2.getMv2DgeMod());
-                    //Induces effects?
-                    if (player2.getMv2indStun() == true && player1.getimnStun() == false && player1.getIsStunned() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 stuns Player 1!");
-                        player1.induceStun();
-                    }
-                    if (player2.getMv2indPsn() == true && player1.getimnPsn() == false && player1.getIsPoisoned() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 poisons Player 1!");
-                        player1.inducePoison();
-                    }
-                    if (player2.getMv2indBrn() == true && player1.getimnBrn() == false && player1.getIsBurned() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 burns Player 1!");
-                        player1.induceBurn();
-                    }
-                    if (player2.getMv2indCrpl() == true && player1.getimnCrpl() == false && player1.getIsCrippled() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 cripples Player 1!");
-                        player1.induceCripple();
-                    }
-                    if (player2.getMv2indFrzn() == true && player1.getimnFrzn() == false && player1.getIsFrozen() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 freezes Player 1!");
-                        player1.induceFrozen();
-                    }
-                    if (player2.getMv2indBld() == true && player1.getimnBld() == false && player1.getIsBleeding() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 slices Player 1, causing them to bleed!");
-                        player1.induceBleeding();
-                    }
-                    if (player2.getMv2indStpf() == true && player1.getimnStpf() == false && player1.getIsStupefied() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 stupefies Player 1!");
-                        player1.induceStupefy();
-                    }
-                    if (player2.getMv2indWk() == true && player1.getimnWk() == false && player1.getIsWeak() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 weakens Player 1!");
-                        player1.induceWeak();
-                    }
-                    if (player2.getMv2indDzz() == true && player1.getimnDzz() == false && player1.getIsDizzy() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 causes Player 1 to become dizzy!");
-                        player1.induceDizzy();
-                    }
+                    eveP2MV2Hits();
                 }
                 else if (totalAcc1 > 0 && totalAcc1 < 100)
                 {
@@ -3106,67 +2748,7 @@ namespace DCTBFightingSimulator
                     if (chance <= totalAcc1)
                     {
                         //The move lands
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 lands their Move 2!");
-                        int totalAtk = (int)(player2.getAtk() * player2.getMv2M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
-                        int damageDealt = totalAtk ^ 2 / player1.getDef();
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 deals " + damageDealt.ToString() + " damage to Player 1.");
-                        player1.modifyHP(-damageDealt);
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own HP by " + player2.getMv2Heal().ToString());
-                        player2.modifyHP(player2.getMv2Heal());
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own ATK by " + player2.getMv2AtkMod().ToString());
-                        player2.modifyATK(player2.getMv2AtkMod());
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own DEF by " + player2.getMv2DefMod().ToString());
-                        player2.modifyDEF(player2.getMv2DefMod());
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own ACC by " + player2.getMv2AccMod().ToString());
-                        player2.modifyACC(player2.getMv2AccMod());
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own DGE by " + player2.getMv2DgeMod().ToString());
-                        player2.modifyDGE(player2.getMv2DgeMod());
-                        //Induces effects?
-                        if (player2.getMv2indStun() == true && player1.getimnStun() == false && player1.getIsStunned() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 2 stuns Player 1!");
-                            player1.induceStun();
-                        }
-                        if (player2.getMv2indPsn() == true && player1.getimnPsn() == false && player1.getIsPoisoned() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 2 poisons Player 1!");
-                            player1.inducePoison();
-                        }
-                        if (player2.getMv2indBrn() == true && player1.getimnBrn() == false && player1.getIsBurned() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 2 burns Player 1!");
-                            player1.induceBurn();
-                        }
-                        if (player2.getMv2indCrpl() == true && player1.getimnCrpl() == false && player1.getIsCrippled() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 2 cripples Player 1!");
-                            player1.induceCripple();
-                        }
-                        if (player2.getMv2indFrzn() == true && player1.getimnFrzn() == false && player1.getIsFrozen() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 2 freezes Player 1!");
-                            player1.induceFrozen();
-                        }
-                        if (player2.getMv2indBld() == true && player1.getimnBld() == false && player1.getIsBleeding() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 2 slices Player 1, causing them to bleed!");
-                            player1.induceBleeding();
-                        }
-                        if (player2.getMv2indStpf() == true && player1.getimnStpf() == false && player1.getIsStupefied() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 2 stupefies Player 1!");
-                            player1.induceStupefy();
-                        }
-                        if (player2.getMv2indWk() == true && player1.getimnWk() == false && player1.getIsWeak() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 2 weakens Player 1!");
-                            player1.induceWeak();
-                        }
-                        if (player2.getMv2indDzz() == true && player1.getimnDzz() == false && player1.getIsDizzy() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 2 causes Player 1 to become dizzy!");
-                            player1.induceDizzy();
-                        }
+                        eveP2MV2Hits();
                     }
                     else
                     {
@@ -3311,67 +2893,7 @@ namespace DCTBFightingSimulator
                 if (totalAcc1 >= 100)
                 {
                     //The move lands
-                    eveSimText.AppendText(Environment.NewLine + "Player 2 lands their Move 3!");
-                    int totalAtk = (int)(player2.getAtk() * player2.getMv3M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
-                    int damageDealt = totalAtk ^ 2 / player1.getDef();
-                    eveSimText.AppendText(Environment.NewLine + "Player 2 deals " + damageDealt.ToString() + " damage to Player 1.");
-                    player1.modifyHP(-damageDealt);
-                    eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own HP by " + player2.getMv3Heal().ToString());
-                    player2.modifyHP(player2.getMv3Heal());
-                    eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own ATK by " + player2.getMv3AtkMod().ToString());
-                    player2.modifyATK(player2.getMv3AtkMod());
-                    eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own DEF by " + player2.getMv3DefMod().ToString());
-                    player2.modifyDEF(player2.getMv3DefMod());
-                    eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own ACC by " + player2.getMv3AccMod().ToString());
-                    player2.modifyACC(player2.getMv3AccMod());
-                    eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own DGE by " + player2.getMv3DgeMod().ToString());
-                    player2.modifyDGE(player2.getMv3DgeMod());
-                    //Induces effects?
-                    if (player2.getMv3indStun() == true && player1.getimnStun() == false && player1.getIsStunned() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 stuns Player 1!");
-                        player1.induceStun();
-                    }
-                    if (player2.getMv3indPsn() == true && player1.getimnPsn() == false && player1.getIsPoisoned() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 poisons Player 1!");
-                        player1.inducePoison();
-                    }
-                    if (player2.getMv3indBrn() == true && player1.getimnBrn() == false && player1.getIsBurned() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 burns Player 1!");
-                        player1.induceBurn();
-                    }
-                    if (player2.getMv3indCrpl() == true && player1.getimnCrpl() == false && player1.getIsCrippled() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 cripples Player 1!");
-                        player1.induceCripple();
-                    }
-                    if (player2.getMv3indFrzn() == true && player1.getimnFrzn() == false && player1.getIsFrozen() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 freezes Player 1!");
-                        player1.induceFrozen();
-                    }
-                    if (player2.getMv3indBld() == true && player1.getimnBld() == false && player1.getIsBleeding() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 slices Player 1, causing them to bleed!");
-                        player1.induceBleeding();
-                    }
-                    if (player2.getMv3indStpf() == true && player1.getimnStpf() == false && player1.getIsStupefied() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 stupefies Player 1!");
-                        player1.induceStupefy();
-                    }
-                    if (player2.getMv3indWk() == true && player1.getimnWk() == false && player1.getIsWeak() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 weakens Player 1!");
-                        player1.induceWeak();
-                    }
-                    if (player2.getMv3indDzz() == true && player1.getimnDzz() == false && player1.getIsDizzy() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 causes Player 1 to become dizzy!");
-                        player1.induceDizzy();
-                    }
+                    eveP2MV3Hits();
                 }
                 else if (totalAcc1 > 0 && totalAcc1 < 100)
                 {
@@ -3380,67 +2902,7 @@ namespace DCTBFightingSimulator
                     if (chance <= totalAcc1)
                     {
                         //The move lands
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 lands their Move 3!");
-                        int totalAtk = (int)(player2.getAtk() * player2.getMv3M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
-                        int damageDealt = totalAtk ^ 2 / player1.getDef();
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 deals " + damageDealt.ToString() + " damage to Player 1.");
-                        player1.modifyHP(-damageDealt);
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own HP by " + player2.getMv3Heal().ToString());
-                        player2.modifyHP(player2.getMv3Heal());
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own ATK by " + player2.getMv3AtkMod().ToString());
-                        player2.modifyATK(player2.getMv3AtkMod());
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own DEF by " + player2.getMv3DefMod().ToString());
-                        player2.modifyDEF(player2.getMv3DefMod());
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own ACC by " + player2.getMv3AccMod().ToString());
-                        player2.modifyACC(player2.getMv3AccMod());
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own DGE by " + player2.getMv3DgeMod().ToString());
-                        player2.modifyDGE(player2.getMv3DgeMod());
-                        //Induces effects?
-                        if (player2.getMv3indStun() == true && player1.getimnStun() == false && player1.getIsStunned() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 2 stuns Player 1!");
-                            player1.induceStun();
-                        }
-                        if (player2.getMv3indPsn() == true && player1.getimnPsn() == false && player1.getIsPoisoned() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 2 poisons Player 1!");
-                            player1.inducePoison();
-                        }
-                        if (player2.getMv3indBrn() == true && player1.getimnBrn() == false && player1.getIsBurned() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 2 burns Player 1!");
-                            player1.induceBurn();
-                        }
-                        if (player2.getMv3indCrpl() == true && player1.getimnCrpl() == false && player1.getIsCrippled() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 2 cripples Player 1!");
-                            player1.induceCripple();
-                        }
-                        if (player2.getMv3indFrzn() == true && player1.getimnFrzn() == false && player1.getIsFrozen() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 2 freezes Player 1!");
-                            player1.induceFrozen();
-                        }
-                        if (player2.getMv3indBld() == true && player1.getimnBld() == false && player1.getIsBleeding() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 2 slices Player 1, causing them to bleed!");
-                            player1.induceBleeding();
-                        }
-                        if (player2.getMv3indStpf() == true && player1.getimnStpf() == false && player1.getIsStupefied() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 2 stupefies Player 1!");
-                            player1.induceStupefy();
-                        }
-                        if (player2.getMv3indWk() == true && player1.getimnWk() == false && player1.getIsWeak() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 2 weakens Player 1!");
-                            player1.induceWeak();
-                        }
-                        if (player2.getMv3indDzz() == true && player1.getimnDzz() == false && player1.getIsDizzy() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 2 causes Player 1 to become dizzy!");
-                            player1.induceDizzy();
-                        }
+                        eveP2MV3Hits();
                     }
                     else
                     {
@@ -3585,67 +3047,7 @@ namespace DCTBFightingSimulator
                 if (totalAcc1 >= 100)
                 {
                     //The move lands
-                    eveSimText.AppendText(Environment.NewLine + "Player 2 lands their Move 4!");
-                    int totalAtk = (int)(player2.getAtk() * player2.getMv4M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
-                    int damageDealt = totalAtk ^ 2 / player1.getDef();
-                    eveSimText.AppendText(Environment.NewLine + "Player 2 deals " + damageDealt.ToString() + " damage to Player 1.");
-                    player1.modifyHP(-damageDealt);
-                    eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own HP by " + player2.getMv4Heal().ToString());
-                    player2.modifyHP(player2.getMv4Heal());
-                    eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own ATK by " + player2.getMv4AtkMod().ToString());
-                    player2.modifyATK(player2.getMv4AtkMod());
-                    eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own DEF by " + player2.getMv4DefMod().ToString());
-                    player2.modifyDEF(player2.getMv4DefMod());
-                    eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own ACC by " + player2.getMv4AccMod().ToString());
-                    player2.modifyACC(player2.getMv4AccMod());
-                    eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own DGE by " + player2.getMv4DgeMod().ToString());
-                    player2.modifyDGE(player2.getMv4DgeMod());
-                    //Induces effects?
-                    if (player2.getMv4indStun() == true && player1.getimnStun() == false && player1.getIsStunned() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 stuns Player 1!");
-                        player1.induceStun();
-                    }
-                    if (player2.getMv4indPsn() == true && player1.getimnPsn() == false && player1.getIsPoisoned() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 poisons Player 1!");
-                        player1.inducePoison();
-                    }
-                    if (player2.getMv4indBrn() == true && player1.getimnBrn() == false && player1.getIsBurned() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 burns Player 1!");
-                        player1.induceBurn();
-                    }
-                    if (player2.getMv4indCrpl() == true && player1.getimnCrpl() == false && player1.getIsCrippled() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 cripples Player 1!");
-                        player1.induceCripple();
-                    }
-                    if (player2.getMv4indFrzn() == true && player1.getimnFrzn() == false && player1.getIsFrozen() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 freezes Player 1!");
-                        player1.induceFrozen();
-                    }
-                    if (player2.getMv4indBld() == true && player1.getimnBld() == false && player1.getIsBleeding() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 slices Player 1, causing them to bleed!");
-                        player1.induceBleeding();
-                    }
-                    if (player2.getMv4indStpf() == true && player1.getimnStpf() == false && player1.getIsStupefied() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 stupefies Player 1!");
-                        player1.induceStupefy();
-                    }
-                    if (player2.getMv4indWk() == true && player1.getimnWk() == false && player1.getIsWeak() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 weakens Player 1!");
-                        player1.induceWeak();
-                    }
-                    if (player2.getMv4indDzz() == true && player1.getimnDzz() == false && player1.getIsDizzy() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 causes Player 1 to become dizzy!");
-                        player1.induceDizzy();
-                    }
+                    eveP2MV4Hits();
                 }
                 else if (totalAcc1 > 0 && totalAcc1 < 100)
                 {
@@ -3654,67 +3056,7 @@ namespace DCTBFightingSimulator
                     if (chance <= totalAcc1)
                     {
                         //The move lands
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 lands their Move 4!");
-                        int totalAtk = (int)(player2.getAtk() * player2.getMv4M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
-                        int damageDealt = totalAtk ^ 2 / player1.getDef();
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 deals " + damageDealt.ToString() + " damage to Player 1.");
-                        player1.modifyHP(-damageDealt);
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own HP by " + player2.getMv4Heal().ToString());
-                        player2.modifyHP(player2.getMv4Heal());
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own ATK by " + player2.getMv4AtkMod().ToString());
-                        player2.modifyATK(player2.getMv4AtkMod());
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own DEF by " + player2.getMv4DefMod().ToString());
-                        player2.modifyDEF(player2.getMv4DefMod());
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own ACC by " + player2.getMv4AccMod().ToString());
-                        player2.modifyACC(player2.getMv4AccMod());
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own DGE by " + player2.getMv4DgeMod().ToString());
-                        player2.modifyDGE(player2.getMv4DgeMod());
-                        //Induces effects?
-                        if (player2.getMv4indStun() == true && player1.getimnStun() == false && player1.getIsStunned() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 2 stuns Player 1!");
-                            player1.induceStun();
-                        }
-                        if (player2.getMv4indPsn() == true && player1.getimnPsn() == false && player1.getIsPoisoned() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 2 poisons Player 1!");
-                            player1.inducePoison();
-                        }
-                        if (player2.getMv4indBrn() == true && player1.getimnBrn() == false && player1.getIsBurned() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 2 burns Player 1!");
-                            player1.induceBurn();
-                        }
-                        if (player2.getMv4indCrpl() == true && player1.getimnCrpl() == false && player1.getIsCrippled() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 2 cripples Player 1!");
-                            player1.induceCripple();
-                        }
-                        if (player2.getMv4indFrzn() == true && player1.getimnFrzn() == false && player1.getIsFrozen() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 2 freezes Player 1!");
-                            player1.induceFrozen();
-                        }
-                        if (player2.getMv4indBld() == true && player1.getimnBld() == false && player1.getIsBleeding() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 2 slices Player 1, causing them to bleed!");
-                            player1.induceBleeding();
-                        }
-                        if (player2.getMv4indStpf() == true && player1.getimnStpf() == false && player1.getIsStupefied() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 2 stupefies Player 1!");
-                            player1.induceStupefy();
-                        }
-                        if (player2.getMv4indWk() == true && player1.getimnWk() == false && player1.getIsWeak() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 2 weakens Player 1!");
-                            player1.induceWeak();
-                        }
-                        if (player2.getMv4indDzz() == true && player1.getimnDzz() == false && player1.getIsDizzy() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 2 causes Player 1 to become dizzy!");
-                            player1.induceDizzy();
-                        }
+                        eveP2MV4Hits();
                     }
                     else
                     {
@@ -3859,67 +3201,7 @@ namespace DCTBFightingSimulator
                 if (totalAcc1 >= 100)
                 {
                     //The move lands
-                    eveSimText.AppendText(Environment.NewLine + "Player 2 lands their Move 5!");
-                    int totalAtk = (int)(player2.getAtk() * player2.getMv4M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
-                    int damageDealt = totalAtk ^ 2 / player1.getDef();
-                    eveSimText.AppendText(Environment.NewLine + "Player 2 deals " + damageDealt.ToString() + " damage to Player 1.");
-                    player1.modifyHP(-damageDealt);
-                    eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own HP by " + player2.getMv5Heal().ToString());
-                    player2.modifyHP(player2.getMv5Heal());
-                    eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own ATK by " + player2.getMv5AtkMod().ToString());
-                    player2.modifyATK(player2.getMv5AtkMod());
-                    eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own DEF by " + player2.getMv5DefMod().ToString());
-                    player2.modifyDEF(player2.getMv5DefMod());
-                    eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own ACC by " + player2.getMv5AccMod().ToString());
-                    player2.modifyACC(player2.getMv5AccMod());
-                    eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own DGE by " + player2.getMv5DgeMod().ToString());
-                    player2.modifyDGE(player2.getMv5DgeMod());
-                    //Induces effects?
-                    if (player2.getMv5indStun() == true && player1.getimnStun() == false && player1.getIsStunned() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 stuns Player 1!");
-                        player1.induceStun();
-                    }
-                    if (player2.getMv5indPsn() == true && player1.getimnPsn() == false && player1.getIsPoisoned() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 poisons Player 1!");
-                        player1.inducePoison();
-                    }
-                    if (player2.getMv5indBrn() == true && player1.getimnBrn() == false && player1.getIsBurned() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 burns Player 1!");
-                        player1.induceBurn();
-                    }
-                    if (player2.getMv5indCrpl() == true && player1.getimnCrpl() == false && player1.getIsCrippled() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 cripples Player 1!");
-                        player1.induceCripple();
-                    }
-                    if (player2.getMv5indFrzn() == true && player1.getimnFrzn() == false && player1.getIsFrozen() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 freezes Player 1!");
-                        player1.induceFrozen();
-                    }
-                    if (player2.getMv5indBld() == true && player1.getimnBld() == false && player1.getIsBleeding() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 slices Player 1, causing them to bleed!");
-                        player1.induceBleeding();
-                    }
-                    if (player2.getMv5indStpf() == true && player1.getimnStpf() == false && player1.getIsStupefied() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 stupefies Player 1!");
-                        player1.induceStupefy();
-                    }
-                    if (player2.getMv5indWk() == true && player1.getimnWk() == false && player1.getIsWeak() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 weakens Player 1!");
-                        player1.induceWeak();
-                    }
-                    if (player2.getMv5indDzz() == true && player1.getimnDzz() == false && player1.getIsDizzy() == false)
-                    {
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 causes Player 1 to become dizzy!");
-                        player1.induceDizzy();
-                    }
+                    eveP2MV5Hits();
                 }
                 else if (totalAcc1 > 0 && totalAcc1 < 100)
                 {
@@ -3928,67 +3210,7 @@ namespace DCTBFightingSimulator
                     if (chance <= totalAcc1)
                     {
                         //The move lands
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 lands their Move 5!");
-                        int totalAtk = (int)(player2.getAtk() * player2.getMv4M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
-                        int damageDealt = totalAtk ^ 2 / player1.getDef();
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 deals " + damageDealt.ToString() + " damage to Player 1.");
-                        player1.modifyHP(-damageDealt);
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own HP by " + player2.getMv5Heal().ToString());
-                        player2.modifyHP(player2.getMv5Heal());
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own ATK by " + player2.getMv5AtkMod().ToString());
-                        player2.modifyATK(player2.getMv5AtkMod());
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own DEF by " + player2.getMv5DefMod().ToString());
-                        player2.modifyDEF(player2.getMv5DefMod());
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own ACC by " + player2.getMv5AccMod().ToString());
-                        player2.modifyACC(player2.getMv5AccMod());
-                        eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own DGE by " + player2.getMv5DgeMod().ToString());
-                        player2.modifyDGE(player2.getMv5DgeMod());
-                        //Induces effects?
-                        if (player2.getMv5indStun() == true && player1.getimnStun() == false && player1.getIsStunned() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 2 stuns Player 1!");
-                            player1.induceStun();
-                        }
-                        if (player2.getMv5indPsn() == true && player1.getimnPsn() == false && player1.getIsPoisoned() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 2 poisons Player 1!");
-                            player1.inducePoison();
-                        }
-                        if (player2.getMv5indBrn() == true && player1.getimnBrn() == false && player1.getIsBurned() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 2 burns Player 1!");
-                            player1.induceBurn();
-                        }
-                        if (player2.getMv5indCrpl() == true && player1.getimnCrpl() == false && player1.getIsCrippled() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 2 cripples Player 1!");
-                            player1.induceCripple();
-                        }
-                        if (player2.getMv5indFrzn() == true && player1.getimnFrzn() == false && player1.getIsFrozen() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 2 freezes Player 1!");
-                            player1.induceFrozen();
-                        }
-                        if (player2.getMv5indBld() == true && player1.getimnBld() == false && player1.getIsBleeding() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 2 slices Player 1, causing them to bleed!");
-                            player1.induceBleeding();
-                        }
-                        if (player2.getMv5indStpf() == true && player1.getimnStpf() == false && player1.getIsStupefied() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 2 stupefies Player 1!");
-                            player1.induceStupefy();
-                        }
-                        if (player2.getMv5indWk() == true && player1.getimnWk() == false && player1.getIsWeak() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 2 weakens Player 1!");
-                            player1.induceWeak();
-                        }
-                        if (player2.getMv5indDzz() == true && player1.getimnDzz() == false && player1.getIsDizzy() == false)
-                        {
-                            eveSimText.AppendText(Environment.NewLine + "Player 2 causes Player 1 to become dizzy!");
-                            player1.induceDizzy();
-                        }
+                        eveP2MV5Hits();
                     }
                     else
                     {
@@ -4007,8 +3229,328 @@ namespace DCTBFightingSimulator
             player2HealthBarEvE.Width = (player2.getHP() / player2EvEMaxHP);
             Application.DoEvents();
         }
-                //Visual Stats
-                    //Player 1
+            //Player 2 Move subactions (recurring methods in p2Moves)
+        private void eveP2MV1Hits()
+        {
+            eveSimText.AppendText(Environment.NewLine + "Player 2 lands their Move 1!");
+            int totalAtk = (int)(player2.getAtk() * player2.getMv1M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
+            int damageDealt = totalAtk ^ 2 / player1.getDef();
+            eveSimText.AppendText(Environment.NewLine + "Player 2 deals " + damageDealt.ToString() + " damage to Player 1.");
+            player1.modifyHP(-damageDealt);
+            eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own HP by " + player2.getMv1Heal().ToString());
+            player2.modifyHP(player2.getMv1Heal());
+            eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own ATK by " + player2.getMv1AtkMod().ToString());
+            player2.modifyATK(player2.getMv1AtkMod());
+            eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own DEF by " + player2.getMv1DefMod().ToString());
+            player2.modifyDEF(player2.getMv1DefMod());
+            eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own ACC by " + player2.getMv1AccMod().ToString());
+            player2.modifyACC(player2.getMv1AccMod());
+            eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own DGE by " + player2.getMv1DgeMod().ToString());
+            player2.modifyDGE(player2.getMv1DgeMod());
+            //Induces effects?
+            if (player2.getMv1indStun() == true && player1.getimnStun() == false && player1.getIsStunned() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 2 stuns Player 1!");
+                player1.induceStun();
+            }
+            if (player2.getMv1indPsn() == true && player1.getimnPsn() == false && player1.getIsPoisoned() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 2 poisons Player 1!");
+                player1.inducePoison();
+            }
+            if (player2.getMv1indBrn() == true && player1.getimnBrn() == false && player1.getIsBurned() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 2 burns Player 1!");
+                player1.induceBurn();
+            }
+            if (player2.getMv1indCrpl() == true && player1.getimnCrpl() == false && player1.getIsCrippled() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 2 cripples Player 1!");
+                player1.induceCripple();
+            }
+            if (player2.getMv1indFrzn() == true && player1.getimnFrzn() == false && player1.getIsFrozen() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 2 freezes Player 1!");
+                player1.induceFrozen();
+            }
+            if (player2.getMv1indBld() == true && player1.getimnBld() == false && player1.getIsBleeding() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 2 slices Player 1, causing them to bleed!");
+                player1.induceBleeding();
+            }
+            if (player2.getMv1indStpf() == true && player1.getimnStpf() == false && player1.getIsStupefied() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 2 stupefies Player 1!");
+                player1.induceStupefy();
+            }
+            if (player2.getMv1indWk() == true && player1.getimnWk() == false && player1.getIsWeak() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 2 weakens Player 1!");
+                player1.induceWeak();
+            }
+            if (player2.getMv1indDzz() == true && player1.getimnDzz() == false && player1.getIsDizzy() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 2 causes Player 1 to become dizzy!");
+                player1.induceDizzy();
+            }
+        }
+        private void eveP2MV2Hits()
+        {
+            eveSimText.AppendText(Environment.NewLine + "Player 2 lands their Move 2!");
+            int totalAtk = (int)(player2.getAtk() * player2.getMv2M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
+            int damageDealt = totalAtk ^ 2 / player1.getDef();
+            eveSimText.AppendText(Environment.NewLine + "Player 2 deals " + damageDealt.ToString() + " damage to Player 1.");
+            player1.modifyHP(-damageDealt);
+            eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own HP by " + player2.getMv2Heal().ToString());
+            player2.modifyHP(player2.getMv2Heal());
+            eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own ATK by " + player2.getMv2AtkMod().ToString());
+            player2.modifyATK(player2.getMv2AtkMod());
+            eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own DEF by " + player2.getMv2DefMod().ToString());
+            player2.modifyDEF(player2.getMv2DefMod());
+            eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own ACC by " + player2.getMv2AccMod().ToString());
+            player2.modifyACC(player2.getMv2AccMod());
+            eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own DGE by " + player2.getMv2DgeMod().ToString());
+            player2.modifyDGE(player2.getMv2DgeMod());
+            //Induces effects?
+            if (player2.getMv2indStun() == true && player1.getimnStun() == false && player1.getIsStunned() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 2 stuns Player 1!");
+                player1.induceStun();
+            }
+            if (player2.getMv2indPsn() == true && player1.getimnPsn() == false && player1.getIsPoisoned() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 2 poisons Player 1!");
+                player1.inducePoison();
+            }
+            if (player2.getMv2indBrn() == true && player1.getimnBrn() == false && player1.getIsBurned() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 2 burns Player 1!");
+                player1.induceBurn();
+            }
+            if (player2.getMv2indCrpl() == true && player1.getimnCrpl() == false && player1.getIsCrippled() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 2 cripples Player 1!");
+                player1.induceCripple();
+            }
+            if (player2.getMv2indFrzn() == true && player1.getimnFrzn() == false && player1.getIsFrozen() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 2 freezes Player 1!");
+                player1.induceFrozen();
+            }
+            if (player2.getMv2indBld() == true && player1.getimnBld() == false && player1.getIsBleeding() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 2 slices Player 1, causing them to bleed!");
+                player1.induceBleeding();
+            }
+            if (player2.getMv2indStpf() == true && player1.getimnStpf() == false && player1.getIsStupefied() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 2 stupefies Player 1!");
+                player1.induceStupefy();
+            }
+            if (player2.getMv2indWk() == true && player1.getimnWk() == false && player1.getIsWeak() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 2 weakens Player 1!");
+                player1.induceWeak();
+            }
+            if (player2.getMv2indDzz() == true && player1.getimnDzz() == false && player1.getIsDizzy() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 2 causes Player 1 to become dizzy!");
+                player1.induceDizzy();
+            }
+        }
+        private void eveP2MV3Hits()
+        {
+            eveSimText.AppendText(Environment.NewLine + "Player 2 lands their Move 3!");
+            int totalAtk = (int)(player2.getAtk() * player2.getMv3M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
+            int damageDealt = totalAtk ^ 2 / player1.getDef();
+            eveSimText.AppendText(Environment.NewLine + "Player 2 deals " + damageDealt.ToString() + " damage to Player 1.");
+            player1.modifyHP(-damageDealt);
+            eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own HP by " + player2.getMv3Heal().ToString());
+            player2.modifyHP(player2.getMv3Heal());
+            eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own ATK by " + player2.getMv3AtkMod().ToString());
+            player2.modifyATK(player2.getMv3AtkMod());
+            eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own DEF by " + player2.getMv3DefMod().ToString());
+            player2.modifyDEF(player2.getMv3DefMod());
+            eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own ACC by " + player2.getMv3AccMod().ToString());
+            player2.modifyACC(player2.getMv3AccMod());
+            eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own DGE by " + player2.getMv3DgeMod().ToString());
+            player2.modifyDGE(player2.getMv3DgeMod());
+            //Induces effects?
+            if (player2.getMv3indStun() == true && player1.getimnStun() == false && player1.getIsStunned() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 2 stuns Player 1!");
+                player1.induceStun();
+            }
+            if (player2.getMv3indPsn() == true && player1.getimnPsn() == false && player1.getIsPoisoned() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 2 poisons Player 1!");
+                player1.inducePoison();
+            }
+            if (player2.getMv3indBrn() == true && player1.getimnBrn() == false && player1.getIsBurned() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 2 burns Player 1!");
+                player1.induceBurn();
+            }
+            if (player2.getMv3indCrpl() == true && player1.getimnCrpl() == false && player1.getIsCrippled() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 2 cripples Player 1!");
+                player1.induceCripple();
+            }
+            if (player2.getMv3indFrzn() == true && player1.getimnFrzn() == false && player1.getIsFrozen() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 2 freezes Player 1!");
+                player1.induceFrozen();
+            }
+            if (player2.getMv3indBld() == true && player1.getimnBld() == false && player1.getIsBleeding() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 2 slices Player 1, causing them to bleed!");
+                player1.induceBleeding();
+            }
+            if (player2.getMv3indStpf() == true && player1.getimnStpf() == false && player1.getIsStupefied() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 2 stupefies Player 1!");
+                player1.induceStupefy();
+            }
+            if (player2.getMv3indWk() == true && player1.getimnWk() == false && player1.getIsWeak() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 2 weakens Player 1!");
+                player1.induceWeak();
+            }
+            if (player2.getMv3indDzz() == true && player1.getimnDzz() == false && player1.getIsDizzy() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 2 causes Player 1 to become dizzy!");
+                player1.induceDizzy();
+            }
+        }
+        private void eveP2MV4Hits()
+        {
+            eveSimText.AppendText(Environment.NewLine + "Player 2 lands their Move 4!");
+            int totalAtk = (int)(player2.getAtk() * player2.getMv4M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
+            int damageDealt = totalAtk ^ 2 / player1.getDef();
+            eveSimText.AppendText(Environment.NewLine + "Player 2 deals " + damageDealt.ToString() + " damage to Player 1.");
+            player1.modifyHP(-damageDealt);
+            eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own HP by " + player2.getMv4Heal().ToString());
+            player2.modifyHP(player2.getMv4Heal());
+            eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own ATK by " + player2.getMv4AtkMod().ToString());
+            player2.modifyATK(player2.getMv4AtkMod());
+            eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own DEF by " + player2.getMv4DefMod().ToString());
+            player2.modifyDEF(player2.getMv4DefMod());
+            eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own ACC by " + player2.getMv4AccMod().ToString());
+            player2.modifyACC(player2.getMv4AccMod());
+            eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own DGE by " + player2.getMv4DgeMod().ToString());
+            player2.modifyDGE(player2.getMv4DgeMod());
+            //Induces effects?
+            if (player2.getMv4indStun() == true && player1.getimnStun() == false && player1.getIsStunned() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 2 stuns Player 1!");
+                player1.induceStun();
+            }
+            if (player2.getMv4indPsn() == true && player1.getimnPsn() == false && player1.getIsPoisoned() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 2 poisons Player 1!");
+                player1.inducePoison();
+            }
+            if (player2.getMv4indBrn() == true && player1.getimnBrn() == false && player1.getIsBurned() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 2 burns Player 1!");
+                player1.induceBurn();
+            }
+            if (player2.getMv4indCrpl() == true && player1.getimnCrpl() == false && player1.getIsCrippled() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 2 cripples Player 1!");
+                player1.induceCripple();
+            }
+            if (player2.getMv4indFrzn() == true && player1.getimnFrzn() == false && player1.getIsFrozen() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 2 freezes Player 1!");
+                player1.induceFrozen();
+            }
+            if (player2.getMv4indBld() == true && player1.getimnBld() == false && player1.getIsBleeding() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 2 slices Player 1, causing them to bleed!");
+                player1.induceBleeding();
+            }
+            if (player2.getMv4indStpf() == true && player1.getimnStpf() == false && player1.getIsStupefied() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 2 stupefies Player 1!");
+                player1.induceStupefy();
+            }
+            if (player2.getMv4indWk() == true && player1.getimnWk() == false && player1.getIsWeak() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 2 weakens Player 1!");
+                player1.induceWeak();
+            }
+            if (player2.getMv4indDzz() == true && player1.getimnDzz() == false && player1.getIsDizzy() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 2 causes Player 1 to become dizzy!");
+                player1.induceDizzy();
+            }
+        }
+        private void eveP2MV5Hits()
+        {
+            eveSimText.AppendText(Environment.NewLine + "Player 2 lands their Move 5!");
+            int totalAtk = (int)(player2.getAtk() * player2.getMv4M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
+            int damageDealt = totalAtk ^ 2 / player1.getDef();
+            eveSimText.AppendText(Environment.NewLine + "Player 2 deals " + damageDealt.ToString() + " damage to Player 1.");
+            player1.modifyHP(-damageDealt);
+            eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own HP by " + player2.getMv5Heal().ToString());
+            player2.modifyHP(player2.getMv5Heal());
+            eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own ATK by " + player2.getMv5AtkMod().ToString());
+            player2.modifyATK(player2.getMv5AtkMod());
+            eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own DEF by " + player2.getMv5DefMod().ToString());
+            player2.modifyDEF(player2.getMv5DefMod());
+            eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own ACC by " + player2.getMv5AccMod().ToString());
+            player2.modifyACC(player2.getMv5AccMod());
+            eveSimText.AppendText(Environment.NewLine + "Player 2 modifies their own DGE by " + player2.getMv5DgeMod().ToString());
+            player2.modifyDGE(player2.getMv5DgeMod());
+            //Induces effects?
+            if (player2.getMv5indStun() == true && player1.getimnStun() == false && player1.getIsStunned() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 2 stuns Player 1!");
+                player1.induceStun();
+            }
+            if (player2.getMv5indPsn() == true && player1.getimnPsn() == false && player1.getIsPoisoned() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 2 poisons Player 1!");
+                player1.inducePoison();
+            }
+            if (player2.getMv5indBrn() == true && player1.getimnBrn() == false && player1.getIsBurned() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 2 burns Player 1!");
+                player1.induceBurn();
+            }
+            if (player2.getMv5indCrpl() == true && player1.getimnCrpl() == false && player1.getIsCrippled() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 2 cripples Player 1!");
+                player1.induceCripple();
+            }
+            if (player2.getMv5indFrzn() == true && player1.getimnFrzn() == false && player1.getIsFrozen() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 2 freezes Player 1!");
+                player1.induceFrozen();
+            }
+            if (player2.getMv5indBld() == true && player1.getimnBld() == false && player1.getIsBleeding() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 2 slices Player 1, causing them to bleed!");
+                player1.induceBleeding();
+            }
+            if (player2.getMv5indStpf() == true && player1.getimnStpf() == false && player1.getIsStupefied() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 2 stupefies Player 1!");
+                player1.induceStupefy();
+            }
+            if (player2.getMv5indWk() == true && player1.getimnWk() == false && player1.getIsWeak() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 2 weakens Player 1!");
+                player1.induceWeak();
+            }
+            if (player2.getMv5indDzz() == true && player1.getimnDzz() == false && player1.getIsDizzy() == false)
+            {
+                eveSimText.AppendText(Environment.NewLine + "Player 2 causes Player 1 to become dizzy!");
+                player1.induceDizzy();
+            }
+        }
+            //Visual Stats
         private void loadPlayer1VisualStats()
         {
             p1Name.Text = player1.getName();
@@ -4112,7 +3654,6 @@ namespace DCTBFightingSimulator
             }
             Application.DoEvents();
         }
-                    //Player 2
         private void loadPlayer2VisualStats()
         {
             p2Name.Text = player2.getName();
@@ -6866,8 +6407,16 @@ namespace DCTBFightingSimulator
             {
                 vanillaExports.Text = davidString;
             }
-                //Void
-            if(comboBox1.Text == "Anomal (VOID)")
+            if (comboBox1.Text == "Duncan (NONE)")
+            {
+                vanillaExports.Text = duncanString;
+            }
+            if (comboBox1.Text == "Firia (NONE)")
+            {
+                vanillaExports.Text = firiaString;
+            }
+            //Void
+            if (comboBox1.Text == "Anomal (VOID)")
             {
                 vanillaExports.Text = anomalString;
             }
@@ -7005,6 +6554,14 @@ namespace DCTBFightingSimulator
             if (comboBox5.Text == "David (Vanilla)")
             {
                 typeNoneExports.Text = davidString;
+            }
+            if (comboBox5.Text == "Duncan (Vanilla)")
+            {
+                typeNoneExports.Text = duncanString;
+            }
+            if (comboBox5.Text == "Firia (Vanilla)")
+            {
+                typeNoneExports.Text = firiaString;
             }
         }
             //VOID Type

@@ -683,7 +683,7 @@ namespace DCTBFightingSimulator
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(119, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Current Release: v0.1.1";
+            this.label1.Text = "Current Release: v0.2.0";
             // 
             // button2
             // 
@@ -3569,7 +3569,7 @@ namespace DCTBFightingSimulator
             this.exportStringDescription.Name = "exportStringDescription";
             this.exportStringDescription.Size = new System.Drawing.Size(832, 13);
             this.exportStringDescription.TabIndex = 256;
-            this.exportStringDescription.Text = "Use CTRL-A and then CTRL-V to copy your export string. Click export again if you " +
+            this.exportStringDescription.Text = "Use CTRL-A and then CTRL-C to copy your export string. Click export again if you " +
     "believe you accidentally edited it. Please DO NOT edit the string, or it will no" +
     "t correctly import.";
             // 
@@ -4781,7 +4781,9 @@ namespace DCTBFightingSimulator
             this.comboBox5.FormattingEnabled = true;
             this.comboBox5.Items.AddRange(new object[] {
             "Joseph (Vanilla)",
-            "David (Vanilla)"});
+            "David (Vanilla)",
+            "Duncan (Vanilla)",
+            "Firia (Vanilla)"});
             this.comboBox5.Location = new System.Drawing.Point(6, 245);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(111, 21);
@@ -4818,9 +4820,9 @@ namespace DCTBFightingSimulator
             this.opExports.AutoSize = true;
             this.opExports.Location = new System.Drawing.Point(275, 113);
             this.opExports.Name = "opExports";
-            this.opExports.Size = new System.Drawing.Size(22, 13);
+            this.opExports.Size = new System.Drawing.Size(119, 13);
             this.opExports.TabIndex = 36;
-            this.opExports.Text = "OP";
+            this.opExports.Text = "OP (stronger than meta)";
             // 
             // comboBox4
             // 
@@ -4912,6 +4914,8 @@ namespace DCTBFightingSimulator
             this.comboBox1.Items.AddRange(new object[] {
             "Joseph (NONE)",
             "David (NONE)",
+            "Duncan (NONE)",
+            "Firia (NONE)",
             "Anomal (VOID)",
             "Rig (VOID)",
             "Stone Golem (EARTHLY)",
@@ -5051,6 +5055,8 @@ namespace DCTBFightingSimulator
             this.player1SelectionEvE.Items.AddRange(new object[] {
             "Joseph (NONE) (Vanilla)",
             "David (NONE) (Vanilla)",
+            "Duncan (NONE) (Vanilla)",
+            "Firia (NONE) (Vanilla)",
             "Anomal (VOID) (Vanilla)",
             "Rig (VOID) (Vanilla)",
             "Stone Golem (EARTHLY) (Vanilla)",
@@ -5099,6 +5105,8 @@ namespace DCTBFightingSimulator
             this.player2SelectionEvE.Items.AddRange(new object[] {
             "Joseph (NONE) (Vanilla)",
             "David (NONE) (Vanilla)",
+            "Duncan (NONE) (Vanilla)",
+            "Firia (NONE) (Vanilla)",
             "Anomal (VOID) (Vanilla)",
             "Rig (VOID) (Vanilla)",
             "Stone Golem (EARTHLY) (Vanilla)",
@@ -6995,10 +7003,10 @@ namespace DCTBFightingSimulator
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1432, 853);
-            this.Controls.Add(this.EvEPanel);
             this.Controls.Add(this.characterDatabasePanel);
-            this.Controls.Add(this.startingPanel);
+            this.Controls.Add(this.EvEPanel);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.startingPanel);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.charDatabaseButton);
             this.Controls.Add(this.createCharButton);
@@ -7011,7 +7019,7 @@ namespace DCTBFightingSimulator
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Name = "DCTBFightingSimulator";
-            this.Text = "DCTBFightingSimulator v0.1.1";
+            this.Text = "DCTBFightingSimulator v0.2.0";
             ((System.ComponentModel.ISupportInitialize)(this.CCN1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CCN2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CCN3)).EndInit();
