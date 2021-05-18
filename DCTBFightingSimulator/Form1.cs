@@ -131,6 +131,7 @@ namespace DCTBFightingSimulator
             roadmapText.AppendText(Environment.NewLine + "- New characters and other features");
             roadmapText.AppendText(Environment.NewLine + Environment.NewLine + "Additions (in no particular order):");
             roadmapText.AppendText(Environment.NewLine + "- Increased character creation user-friendliness");
+            roadmapText.AppendText(Environment.NewLine + "- Run sim processes on a separate thread to enable simultaneous actions");
             roadmapText.AppendText(Environment.NewLine + "- Simplistic taskbar icon");
             roadmapText.AppendText(Environment.NewLine + "- Healthbars");
             roadmapText.AppendText(Environment.NewLine + "- Update EvE UI to show more stats/info at once");
