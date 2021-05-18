@@ -99,7 +99,7 @@ namespace DCTBFightingSimulator
             changelogText.AppendText("VERSON: 0.2.0");
             changelogText.AppendText(Environment.NewLine + "Version 0.2.0 Release (#3) of DCTBFightingSimulator!" + Environment.NewLine);
             changelogText.AppendText(Environment.NewLine + Environment.NewLine + "v0.2.0 Changelog:");
-            changelogText.AppendText(Environment.NewLine + "Important update is here! New tooltips for clarity when creating a character, along with two new NONE-type characters and source code formatting changes.");
+            changelogText.AppendText(Environment.NewLine + "Important update is here! New tooltips for clarity when creating a character, along with two new NONE-type characters (and a new tournament!), source code reformatting and more.");
             changelogText.AppendText(Environment.NewLine + "ADDITIONS:");
             changelogText.AppendText(Environment.NewLine + "- Added tooltips for the main menu buttons");
             changelogText.AppendText(Environment.NewLine + "- Added tooltips to the character creation screen with more information on various components. Note: 'Meta Values' refers to a common range of values present in most vanilla characters. Not all vanilla characters follow this meta, and user-created builds do not have to either; this is just for balancing reference if desired.");
@@ -108,6 +108,7 @@ namespace DCTBFightingSimulator
             changelogText.AppendText(Environment.NewLine + "- Fixed a typo on export instructions");
             changelogText.AppendText(Environment.NewLine + "- Increased clarity for the 'OP' section of the character database");
             changelogText.AppendText(Environment.NewLine + "- Formatting edits to the source code for clarity and conciseness");
+            changelogText.AppendText(Environment.NewLine + "- Updated seeding based on tournament results");
             changelogText.AppendText(Environment.NewLine + "BALANCING:");
             changelogText.AppendText(Environment.NewLine + "- No balance changes this update.");
             //Post-Changes
@@ -772,7 +773,7 @@ namespace DCTBFightingSimulator
                 {
                     break;
                 }
-                System.Threading.Thread.Sleep(1000);
+                //System.Threading.Thread.Sleep(1000);
                 eveSimText.AppendText(Environment.NewLine);
                 EvERandomAI2(player2);
                 loadPlayer1VisualStats();
@@ -781,7 +782,7 @@ namespace DCTBFightingSimulator
                 {
                     break;
                 }
-                System.Threading.Thread.Sleep(1000);
+                //System.Threading.Thread.Sleep(1000);
                 eveSimText.AppendText(Environment.NewLine);
             }
             enableAllButtons();
