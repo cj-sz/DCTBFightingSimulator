@@ -89,39 +89,27 @@ namespace DCTBFightingSimulator
             fillRoadmap();
             //Initialize Tooltips
             initTooltips();
+            //Character Creation fll
+            fillCharacterCreation();
         }
         
         //Changelog and Roadmap
         public void fillChangelog()
         {
-            //Current version: 0.2.1 (this), 0.2.0 (old)
+            //Current version: 0.2.2 (this), 0.2.1 (old)
             changelogText.Text = "";
-            changelogText.AppendText("VERSON: 0.2.1");
-            changelogText.AppendText(Environment.NewLine + "Version 0.2.1 Release (#4) of DCTBFightingSimulator!" + Environment.NewLine);
-            changelogText.AppendText(Environment.NewLine + Environment.NewLine + "v0.2.1 Changelog:");
-            changelogText.AppendText(Environment.NewLine + "This update brings balance changes, a few minor edits, and an installer. No more bypassing system security!");
+            changelogText.AppendText("VERSON: 0.2.2");
+            changelogText.AppendText(Environment.NewLine + "Version 0.2.2 Release (#5) of DCTBFightingSimulator" + Environment.NewLine);
+            changelogText.AppendText(Environment.NewLine + Environment.NewLine + "v0.2.2 Changelog:");
+            changelogText.AppendText(Environment.NewLine + "This update makes character creation more user-friendly, along with adding variable simulation speed functionality for EvE sims.");
             changelogText.AppendText(Environment.NewLine + "ADDITIONS:");
-            changelogText.AppendText(Environment.NewLine + "- Installer added");
+            changelogText.AppendText(Environment.NewLine + "- Custom simulation speed");
             changelogText.AppendText(Environment.NewLine + "CHANGES:");
-            changelogText.AppendText(Environment.NewLine + "- Fixed that the final punctuation in the Create Character panel description did not show");
-            changelogText.AppendText(Environment.NewLine + "- Changed the grammar of the import string description on the Character Creation panel");
+            changelogText.AppendText(Environment.NewLine + "- Changed the opening UI message (removed version label)");
+            changelogText.AppendText(Environment.NewLine + "- Made Character Creation more user-friendly");
+            changelogText.AppendText(Environment.NewLine + "- Fixed that the program did not show the correct version number");
             changelogText.AppendText(Environment.NewLine + "BALANCING:");
-            changelogText.AppendText(Environment.NewLine + "|Anomal: HP -100; ATK -10; ACC -5; Pounce Atk. Mult. -0.15; Enshroud ACC +5; Throne of Predators Atk. Mult. -0.25|");
-            changelogText.AppendText(Environment.NewLine + "|Albatross: Plankton Swoop Atk. Mult. +0.1, ACC +5; Wing Blast ACC +5; Sustenance Atk. Mult. +0.15, ACC +5, DGE Mod. -3; Rain Atk. Mult. +0.05, ACC +5; Great Legend Heal +15|");
-            changelogText.AppendText(Environment.NewLine + "|Forseer: DEF +30; ACC +5|");
-            changelogText.AppendText(Environment.NewLine + "|Student: DEF -20; Psychoanalysis Atk. Mult. -0.25; Enigmatus Atk. Mult. -0.25; Studious DEF mod. -3|");
-            changelogText.AppendText(Environment.NewLine + "|Solcore: ATK -20; DGE -5; Solar Flare Atk. Mult. -0.15|");
-            changelogText.AppendText(Environment.NewLine + "|Lyfebud: ATK -10; Spore Atk. Mult. -0.25|");
-            changelogText.AppendText(Environment.NewLine + "|Stone Golem: Boulder Toss Atk. Mult. +0.1; Rock Plant DEF Mod. +15; Golem's Rage Atk. Mult. +0.1; Discombobulation Atk. Mult. +0.15, DEF Mod. +3|");
-            changelogText.AppendText(Environment.NewLine + "|Tweedle: HP +200; ATK +35; DEF +20|");
-            changelogText.AppendText(Environment.NewLine + "|Zip: ATK +40; LightningSpeed Atk. Mult. +0.05; Vanishing Zap DEF Mod. +5|");
-            changelogText.AppendText(Environment.NewLine + "|The Rock: HP -100; ATK -20|");
-            changelogText.AppendText(Environment.NewLine + "|Martis: ATK -5; DEF -15; Parry DEF Mod. -3; Creative Combo Atk. Mult. -0.25; Advanced Tactics Atk. Mult. -0.35|");
-            changelogText.AppendText(Environment.NewLine + "|Magnaur: HP +50; ATK +15|");
-            changelogText.AppendText(Environment.NewLine + "|Duskan: HP -234; ATK -34; DEF -34|");
-            changelogText.AppendText(Environment.NewLine + "|Doc: HP -250; Doctorate Atk. Mult. -0.5|");
-            changelogText.AppendText(Environment.NewLine + "|Elementus: HP-125; ATK -10; DEF -10; Halogen Attack Atk. Mult. -0.2, Heal -4, ATK Mod. -11; Lanthanide Attack Atk. Mult. -0.5|");
-            changelogText.AppendText(Environment.NewLine + "|The Demon: HP -50; ATK -5; Eternal Flame Atk. Mult. -0.5|");
+            changelogText.AppendText(Environment.NewLine + "No balance changes.");
             //Post-Changes
             changelogText.AppendText(Environment.NewLine + Environment.NewLine + "This is only an initial release with baseline simulations working; expect PvE and local PvP features to come soon (see the roadmap for details) Please bring up any issues, questions, user-submitted builds, etc. on the github page.");
             changelogText.AppendText(Environment.NewLine + "Additionally, every time there is an update involving additional characters, new AI, or new gameplay features, an official tournament will be run. The link to view tournament results of the simulation between all characters will be found here. Custom-created, user-submitted builds will also be a part of the competition.");
@@ -134,16 +122,13 @@ namespace DCTBFightingSimulator
             roadmapText.Text = "";
             roadmapText.AppendText("Roadmap:");
             roadmapText.AppendText(Environment.NewLine + Environment.NewLine + "Overarching Additions:");
-            roadmapText.AppendText(Environment.NewLine + "- An installer (no more bypassing all system security)");
             roadmapText.AppendText(Environment.NewLine + "- PvE functionality");
             roadmapText.AppendText(Environment.NewLine + "- PvP functionality");
             roadmapText.AppendText(Environment.NewLine + "- New Computer AIs");
             roadmapText.AppendText(Environment.NewLine + "- Move strings and move databases; import pre-existing moves, export your moves to strings, etc.");
             roadmapText.AppendText(Environment.NewLine + "- New characters and other features");
             roadmapText.AppendText(Environment.NewLine + Environment.NewLine + "Additions (in no particular order):");
-            roadmapText.AppendText(Environment.NewLine + "- Increased character creation user-friendliness");
             roadmapText.AppendText(Environment.NewLine + "- Run sim processes on a separate thread to enable simultaneous actions");
-            roadmapText.AppendText(Environment.NewLine + "- Variable sim speed");
             roadmapText.AppendText(Environment.NewLine + "- Simplistic taskbar icon");
             roadmapText.AppendText(Environment.NewLine + "- Healthbars");
             roadmapText.AppendText(Environment.NewLine + "- Update EvE UI to show more stats/info at once");
@@ -786,7 +771,7 @@ namespace DCTBFightingSimulator
                 {
                     break;
                 }
-                //System.Threading.Thread.Sleep(1000);
+                System.Threading.Thread.Sleep((int)(EvETimeBetweenMoves.Value * 1000));
                 eveSimText.AppendText(Environment.NewLine);
                 EvERandomAI2(player2);
                 loadPlayer1VisualStats();
@@ -795,7 +780,7 @@ namespace DCTBFightingSimulator
                 {
                     break;
                 }
-                //System.Threading.Thread.Sleep(1000);
+                System.Threading.Thread.Sleep((int)(EvETimeBetweenMoves.Value * 1000));
                 eveSimText.AppendText(Environment.NewLine);
             }
             enableAllButtons();
@@ -3775,6 +3760,64 @@ namespace DCTBFightingSimulator
         {
             disableAllElementalUI();
             enableCharButtonElementalUI();
+            fillCharacterCreation();
+        }
+        private void fillCharacterCreation()
+        {
+            CCc2.SelectedIndex = 0;
+            CCc3.SelectedIndex = 0;
+            CCc4.SelectedIndex = 0;
+            CCc5.SelectedIndex = 0;
+            CCc6.SelectedIndex = 0;
+            CCc7.SelectedIndex = 0;
+            CCc8.SelectedIndex = 0;
+            CCc9.SelectedIndex = 0;
+            CCc10.SelectedIndex = 0;
+            CCc12.SelectedIndex = 0;
+            CCc13.SelectedIndex = 0;
+            CCc14.SelectedIndex = 0;
+            CCc15.SelectedIndex = 0;
+            CCc16.SelectedIndex = 0;
+            CCc17.SelectedIndex = 0;
+            CCc18.SelectedIndex = 0;
+            CCc19.SelectedIndex = 0;
+            CCc20.SelectedIndex = 0;
+            CCc22.SelectedIndex = 0;
+            CCc23.SelectedIndex = 0;
+            CCc24.SelectedIndex = 0;
+            CCc25.SelectedIndex = 0;
+            CCc26.SelectedIndex = 0;
+            CCc27.SelectedIndex = 0;
+            CCc28.SelectedIndex = 0;
+            CCc29.SelectedIndex = 0;
+            CCc30.SelectedIndex = 0;
+            CCc32.SelectedIndex = 0;
+            CCc33.SelectedIndex = 0;
+            CCc34.SelectedIndex = 0;
+            CCc35.SelectedIndex = 0;
+            CCc36.SelectedIndex = 0;
+            CCc37.SelectedIndex = 0;
+            CCc38.SelectedIndex = 0;
+            CCc39.SelectedIndex = 0;
+            CCc40.SelectedIndex = 0;
+            CCc42.SelectedIndex = 0;
+            CCc43.SelectedIndex = 0;
+            CCc44.SelectedIndex = 0;
+            CCc45.SelectedIndex = 0;
+            CCc46.SelectedIndex = 0;
+            CCc47.SelectedIndex = 0;
+            CCc48.SelectedIndex = 0;
+            CCc49.SelectedIndex = 0;
+            CCc50.SelectedIndex = 0;
+            CCc52.SelectedIndex = 0;
+            CCc53.SelectedIndex = 0;
+            CCc54.SelectedIndex = 0;
+            CCc55.SelectedIndex = 0;
+            CCc56.SelectedIndex = 0;
+            CCc57.SelectedIndex = 0;
+            CCc58.SelectedIndex = 0;
+            CCc59.SelectedIndex = 0;
+            CCc60.SelectedIndex = 0;
         }
         private void characterCreationResetButton_Click(object sender, EventArgs e)
         {
