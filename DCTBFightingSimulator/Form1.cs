@@ -101,6 +101,7 @@ namespace DCTBFightingSimulator
             changelogText.AppendText(Environment.NewLine + Environment.NewLine + "v0.2.1 Changelog:");
             changelogText.AppendText(Environment.NewLine + "This update brings balance changes, a few minor edits, and an installer. No more bypassing system security!");
             changelogText.AppendText(Environment.NewLine + "ADDITIONS:");
+            changelogText.AppendText(Environment.NewLine + "- Installer added");
             changelogText.AppendText(Environment.NewLine + "CHANGES:");
             changelogText.AppendText(Environment.NewLine + "- Fixed that the final punctuation in the Create Character panel description did not show");
             changelogText.AppendText(Environment.NewLine + "- Changed the grammar of the import string description on the Character Creation panel");
