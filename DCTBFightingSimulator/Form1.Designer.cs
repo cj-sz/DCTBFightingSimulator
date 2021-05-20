@@ -3567,11 +3567,11 @@ namespace DCTBFightingSimulator
             this.exportStringDescription.AutoSize = true;
             this.exportStringDescription.Location = new System.Drawing.Point(14, 627);
             this.exportStringDescription.Name = "exportStringDescription";
-            this.exportStringDescription.Size = new System.Drawing.Size(832, 13);
+            this.exportStringDescription.Size = new System.Drawing.Size(789, 13);
             this.exportStringDescription.TabIndex = 256;
             this.exportStringDescription.Text = "Use CTRL-A and then CTRL-C to copy your export string. Click export again if you " +
     "believe you accidentally edited it. Please DO NOT edit the string, or it will no" +
-    "t correctly import.";
+    "t import.";
             // 
             // loadBuildButton
             // 
