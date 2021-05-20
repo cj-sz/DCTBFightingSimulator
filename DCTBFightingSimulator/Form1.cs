@@ -94,34 +94,15 @@ namespace DCTBFightingSimulator
         //Changelog and Roadmap
         public void fillChangelog()
         {
-            //Current version: 0.2.1 (this), 0.2.0 (old)
+            //Current version: 0.?.? (this), 0.2.1 (old)
             changelogText.Text = "";
-            changelogText.AppendText("VERSON: 0.2.1");
-            changelogText.AppendText(Environment.NewLine + "Version 0.2.1 Release (#4) of DCTBFightingSimulator!" + Environment.NewLine);
-            changelogText.AppendText(Environment.NewLine + Environment.NewLine + "v0.2.1 Changelog:");
-            changelogText.AppendText(Environment.NewLine + "This update brings balance changes, a few minor edits, and an installer. No more bypassing system security!");
+            changelogText.AppendText("VERSON: 0.2.1"); //NEEDS UPDATING
+            changelogText.AppendText(Environment.NewLine + "Version 0.2.1 Release (#4) of DCTBFightingSimulator!" + Environment.NewLine); //NEEDS UPDATING
+            changelogText.AppendText(Environment.NewLine + Environment.NewLine + "v0.2.1 Changelog:"); //NEEDS UPDATING
+            changelogText.AppendText(Environment.NewLine + "desc");
             changelogText.AppendText(Environment.NewLine + "ADDITIONS:");
-            changelogText.AppendText(Environment.NewLine + "- Installer added");
             changelogText.AppendText(Environment.NewLine + "CHANGES:");
-            changelogText.AppendText(Environment.NewLine + "- Fixed that the final punctuation in the Create Character panel description did not show");
-            changelogText.AppendText(Environment.NewLine + "- Changed the grammar of the import string description on the Character Creation panel");
             changelogText.AppendText(Environment.NewLine + "BALANCING:");
-            changelogText.AppendText(Environment.NewLine + "|Anomal: HP -100; ATK -10; ACC -5; Pounce Atk. Mult. -0.15; Enshroud ACC +5; Throne of Predators Atk. Mult. -0.25|");
-            changelogText.AppendText(Environment.NewLine + "|Albatross: Plankton Swoop Atk. Mult. +0.1, ACC +5; Wing Blast ACC +5; Sustenance Atk. Mult. +0.15, ACC +5, DGE Mod. -3; Rain Atk. Mult. +0.05, ACC +5; Great Legend Heal +15|");
-            changelogText.AppendText(Environment.NewLine + "|Forseer: DEF +30; ACC +5|");
-            changelogText.AppendText(Environment.NewLine + "|Student: DEF -20; Psychoanalysis Atk. Mult. -0.25; Enigmatus Atk. Mult. -0.25; Studious DEF mod. -3|");
-            changelogText.AppendText(Environment.NewLine + "|Solcore: ATK -20; DGE -5; Solar Flare Atk. Mult. -0.15|");
-            changelogText.AppendText(Environment.NewLine + "|Lyfebud: ATK -10; Spore Atk. Mult. -0.25|");
-            changelogText.AppendText(Environment.NewLine + "|Stone Golem: Boulder Toss Atk. Mult. +0.1; Rock Plant DEF Mod. +15; Golem's Rage Atk. Mult. +0.1; Discombobulation Atk. Mult. +0.15, DEF Mod. +3|");
-            changelogText.AppendText(Environment.NewLine + "|Tweedle: HP +200; ATK +35; DEF +20|");
-            changelogText.AppendText(Environment.NewLine + "|Zip: ATK +40; LightningSpeed Atk. Mult. +0.05; Vanishing Zap DEF Mod. +5|");
-            changelogText.AppendText(Environment.NewLine + "|The Rock: HP -100; ATK -20|");
-            changelogText.AppendText(Environment.NewLine + "|Martis: ATK -5; DEF -15; Parry DEF Mod. -3; Creative Combo Atk. Mult. -0.25; Advanced Tactics Atk. Mult. -0.35|");
-            changelogText.AppendText(Environment.NewLine + "|Magnaur: HP +50; ATK +15|");
-            changelogText.AppendText(Environment.NewLine + "|Duskan: HP -234; ATK -34; DEF -34|");
-            changelogText.AppendText(Environment.NewLine + "|Doc: HP -250; Doctorate Atk. Mult. -0.5|");
-            changelogText.AppendText(Environment.NewLine + "|Elementus: HP-125; ATK -10; DEF -10; Halogen Attack Atk. Mult. -0.2, Heal -4, ATK Mod. -11; Lanthanide Attack Atk. Mult. -0.5|");
-            changelogText.AppendText(Environment.NewLine + "|The Demon: HP -50; ATK -5; Eternal Flame Atk. Mult. -0.5|");
             //Post-Changes
             changelogText.AppendText(Environment.NewLine + Environment.NewLine + "This is only an initial release with baseline simulations working; expect PvE and local PvP features to come soon (see the roadmap for details) Please bring up any issues, questions, user-submitted builds, etc. on the github page.");
             changelogText.AppendText(Environment.NewLine + "Additionally, every time there is an update involving additional characters, new AI, or new gameplay features, an official tournament will be run. The link to view tournament results of the simulation between all characters will be found here. Custom-created, user-submitted builds will also be a part of the competition.");
