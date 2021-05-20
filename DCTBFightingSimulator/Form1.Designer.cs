@@ -3567,11 +3567,11 @@ namespace DCTBFightingSimulator
             this.exportStringDescription.AutoSize = true;
             this.exportStringDescription.Location = new System.Drawing.Point(14, 627);
             this.exportStringDescription.Name = "exportStringDescription";
-            this.exportStringDescription.Size = new System.Drawing.Size(832, 13);
+            this.exportStringDescription.Size = new System.Drawing.Size(789, 13);
             this.exportStringDescription.TabIndex = 256;
             this.exportStringDescription.Text = "Use CTRL-A and then CTRL-C to copy your export string. Click export again if you " +
     "believe you accidentally edited it. Please DO NOT edit the string, or it will no" +
-    "t correctly import.";
+    "t import.";
             // 
             // loadBuildButton
             // 
@@ -3862,7 +3862,7 @@ namespace DCTBFightingSimulator
             this.panel1.Controls.Add(this.CCL61);
             this.panel1.Location = new System.Drawing.Point(153, 9);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1225, 710);
+            this.panel1.Size = new System.Drawing.Size(1283, 710);
             this.panel1.TabIndex = 261;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -7003,9 +7003,9 @@ namespace DCTBFightingSimulator
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1432, 853);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.characterDatabasePanel);
             this.Controls.Add(this.EvEPanel);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.startingPanel);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.charDatabaseButton);
