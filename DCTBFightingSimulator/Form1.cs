@@ -89,6 +89,8 @@ namespace DCTBFightingSimulator
             fillRoadmap();
             //Initialize Tooltips
             initTooltips();
+            //Fill in default Character Creation values
+            fillCharacterCreation();
         }
         
         //Changelog and Roadmap
@@ -3757,6 +3759,64 @@ namespace DCTBFightingSimulator
         {
             disableAllElementalUI();
             enableCharButtonElementalUI();
+            fillCharacterCreation();
+        }
+        private void fillCharacterCreation()
+        {
+            CCc2.SelectedIndex = 0;
+            CCc3.SelectedIndex = 0;
+            CCc4.SelectedIndex = 0;
+            CCc5.SelectedIndex = 0;
+            CCc6.SelectedIndex = 0;
+            CCc7.SelectedIndex = 0;
+            CCc8.SelectedIndex = 0;
+            CCc9.SelectedIndex = 0;
+            CCc10.SelectedIndex = 0;
+            CCc12.SelectedIndex = 0;
+            CCc13.SelectedIndex = 0;
+            CCc14.SelectedIndex = 0;
+            CCc15.SelectedIndex = 0;
+            CCc16.SelectedIndex = 0;
+            CCc17.SelectedIndex = 0;
+            CCc18.SelectedIndex = 0;
+            CCc19.SelectedIndex = 0;
+            CCc20.SelectedIndex = 0;
+            CCc22.SelectedIndex = 0;
+            CCc23.SelectedIndex = 0;
+            CCc24.SelectedIndex = 0;
+            CCc25.SelectedIndex = 0;
+            CCc26.SelectedIndex = 0;
+            CCc27.SelectedIndex = 0;
+            CCc28.SelectedIndex = 0;
+            CCc29.SelectedIndex = 0;
+            CCc30.SelectedIndex = 0;
+            CCc32.SelectedIndex = 0;
+            CCc33.SelectedIndex = 0;
+            CCc34.SelectedIndex = 0;
+            CCc35.SelectedIndex = 0;
+            CCc36.SelectedIndex = 0;
+            CCc37.SelectedIndex = 0;
+            CCc38.SelectedIndex = 0;
+            CCc39.SelectedIndex = 0;
+            CCc40.SelectedIndex = 0;
+            CCc42.SelectedIndex = 0;
+            CCc43.SelectedIndex = 0;
+            CCc44.SelectedIndex = 0;
+            CCc45.SelectedIndex = 0;
+            CCc46.SelectedIndex = 0;
+            CCc47.SelectedIndex = 0;
+            CCc48.SelectedIndex = 0;
+            CCc49.SelectedIndex = 0;
+            CCc50.SelectedIndex = 0;
+            CCc52.SelectedIndex = 0;
+            CCc53.SelectedIndex = 0;
+            CCc54.SelectedIndex = 0;
+            CCc55.SelectedIndex = 0;
+            CCc56.SelectedIndex = 0;
+            CCc57.SelectedIndex = 0;
+            CCc58.SelectedIndex = 0;
+            CCc59.SelectedIndex = 0;
+            CCc60.SelectedIndex = 0;
         }
         private void characterCreationResetButton_Click(object sender, EventArgs e)
         {
