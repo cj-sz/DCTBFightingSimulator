@@ -683,7 +683,7 @@ namespace DCTBFightingSimulator
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(119, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Current Release: v0.2.0";
+            this.label1.Text = "Current Release: v0.2.1";
             // 
             // button2
             // 
@@ -754,7 +754,7 @@ namespace DCTBFightingSimulator
             this.welcomeLabel1.Name = "welcomeLabel1";
             this.welcomeLabel1.Size = new System.Drawing.Size(856, 51);
             this.welcomeLabel1.TabIndex = 10;
-            this.welcomeLabel1.Text = "Welcome to DCTBFightingSimulator v0.0.1!";
+            this.welcomeLabel1.Text = "Welcome to DCTBFightingSimulator v0.2.1!";
             // 
             // welcomeLabel2
             // 
@@ -7003,10 +7003,10 @@ namespace DCTBFightingSimulator
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1432, 853);
+            this.Controls.Add(this.startingPanel);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.characterDatabasePanel);
             this.Controls.Add(this.EvEPanel);
-            this.Controls.Add(this.startingPanel);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.charDatabaseButton);
             this.Controls.Add(this.createCharButton);
