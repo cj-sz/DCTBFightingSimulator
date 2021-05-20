@@ -555,6 +555,8 @@ namespace DCTBFightingSimulator
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.SeparationBar = new System.Windows.Forms.PictureBox();
+            this.simSpeedLabel = new System.Windows.Forms.Label();
+            this.eveTimeBetweenMoves = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.CCN1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CCN2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CCN3)).BeginInit();
@@ -664,6 +666,7 @@ namespace DCTBFightingSimulator
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SeparationBar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eveTimeBetweenMoves)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -683,7 +686,7 @@ namespace DCTBFightingSimulator
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(119, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Current Release: v0.2.0";
+            this.label1.Text = "Current Release: v0.2.1";
             // 
             // button2
             // 
@@ -754,7 +757,7 @@ namespace DCTBFightingSimulator
             this.welcomeLabel1.Name = "welcomeLabel1";
             this.welcomeLabel1.Size = new System.Drawing.Size(856, 51);
             this.welcomeLabel1.TabIndex = 10;
-            this.welcomeLabel1.Text = "Welcome to DCTBFightingSimulator v0.0.1!";
+            this.welcomeLabel1.Text = "Welcome to DCTBFightingSimulator!";
             // 
             // welcomeLabel2
             // 
@@ -5274,6 +5277,8 @@ namespace DCTBFightingSimulator
             // 
             // EvEPanel
             // 
+            this.EvEPanel.Controls.Add(this.eveTimeBetweenMoves);
+            this.EvEPanel.Controls.Add(this.simSpeedLabel);
             this.EvEPanel.Controls.Add(this.player2HealthBarEvE);
             this.EvEPanel.Controls.Add(this.player1HealthBarEvE);
             this.EvEPanel.Controls.Add(this.p2Mv5Desc);
@@ -6997,16 +7002,43 @@ namespace DCTBFightingSimulator
             this.SeparationBar.TabIndex = 3;
             this.SeparationBar.TabStop = false;
             // 
+            // simSpeedLabel
+            // 
+            this.simSpeedLabel.AutoSize = true;
+            this.simSpeedLabel.Location = new System.Drawing.Point(547, 611);
+            this.simSpeedLabel.Name = "simSpeedLabel";
+            this.simSpeedLabel.Size = new System.Drawing.Size(139, 13);
+            this.simSpeedLabel.TabIndex = 168;
+            this.simSpeedLabel.Text = "Time Between Moves (sec):";
+            // 
+            // eveTimeBetweenMoves
+            // 
+            this.eveTimeBetweenMoves.DecimalPlaces = 2;
+            this.eveTimeBetweenMoves.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            this.eveTimeBetweenMoves.Location = new System.Drawing.Point(555, 627);
+            this.eveTimeBetweenMoves.Maximum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.eveTimeBetweenMoves.Name = "eveTimeBetweenMoves";
+            this.eveTimeBetweenMoves.Size = new System.Drawing.Size(120, 20);
+            this.eveTimeBetweenMoves.TabIndex = 169;
+            // 
             // DCTBFightingSimulator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1432, 853);
+            this.Controls.Add(this.startingPanel);
+            this.Controls.Add(this.EvEPanel);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.characterDatabasePanel);
-            this.Controls.Add(this.EvEPanel);
-            this.Controls.Add(this.startingPanel);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.charDatabaseButton);
             this.Controls.Add(this.createCharButton);
@@ -7019,7 +7051,7 @@ namespace DCTBFightingSimulator
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Name = "DCTBFightingSimulator";
-            this.Text = "DCTBFightingSimulator v0.2.0";
+            this.Text = "DCTBFightingSimulator v0.2.1";
             ((System.ComponentModel.ISupportInitialize)(this.CCN1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CCN2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CCN3)).EndInit();
@@ -7133,6 +7165,7 @@ namespace DCTBFightingSimulator
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SeparationBar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eveTimeBetweenMoves)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -7665,6 +7698,8 @@ namespace DCTBFightingSimulator
         private System.Windows.Forms.PictureBox player1HealthBarEvE;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox25;
+        private System.Windows.Forms.NumericUpDown eveTimeBetweenMoves;
+        private System.Windows.Forms.Label simSpeedLabel;
     }
 }
 

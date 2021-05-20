@@ -107,6 +107,7 @@ namespace DCTBFightingSimulator
             changelogText.AppendText(Environment.NewLine + "CHANGES:");
             changelogText.AppendText(Environment.NewLine + "- More user-friendly character creation (all YES/NO values start at NO)");
             changelogText.AppendText(Environment.NewLine + "- Fixed that sim speed was infinite (no delay between moves)");
+            changelogText.AppendText(Environment.NewLine + "- Changed the opening UI message");
             changelogText.AppendText(Environment.NewLine + "BALANCING:");
             changelogText.AppendText(Environment.NewLine + "No balancing changes.");
             //Post-Changes
@@ -770,7 +771,7 @@ namespace DCTBFightingSimulator
                 {
                     break;
                 }
-                //System.Threading.Thread.Sleep(1000);
+                System.Threading.Thread.Sleep((int)(eveTimeBetweenMoves.Value * 1000));
                 eveSimText.AppendText(Environment.NewLine);
                 EvERandomAI2(player2);
                 loadPlayer1VisualStats();
@@ -779,7 +780,7 @@ namespace DCTBFightingSimulator
                 {
                     break;
                 }
-                //System.Threading.Thread.Sleep(1000);
+                System.Threading.Thread.Sleep((int)(eveTimeBetweenMoves.Value * 1000));
                 eveSimText.AppendText(Environment.NewLine);
             }
             enableAllButtons();
