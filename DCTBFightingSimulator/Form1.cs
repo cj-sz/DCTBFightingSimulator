@@ -94,15 +94,19 @@ namespace DCTBFightingSimulator
         //Changelog and Roadmap
         public void fillChangelog()
         {
-            //Current version: 0.?.? (this), 0.2.1 (old)
+            //Current version: 0.2.2 (this), 0.2.1 (old)
             changelogText.Text = "";
-            changelogText.AppendText("VERSON: 0.2.1"); //NEEDS UPDATING
-            changelogText.AppendText(Environment.NewLine + "Version 0.2.1 Release (#4) of DCTBFightingSimulator!" + Environment.NewLine); //NEEDS UPDATING
-            changelogText.AppendText(Environment.NewLine + Environment.NewLine + "v0.2.1 Changelog:"); //NEEDS UPDATING
-            changelogText.AppendText(Environment.NewLine + "desc");
+            changelogText.AppendText("VERSON: 0.2.2");
+            changelogText.AppendText(Environment.NewLine + "Version 0.2.2 Release (#5) of DCTBFightingSimulator!" + Environment.NewLine);
+            changelogText.AppendText(Environment.NewLine + Environment.NewLine + "v0.2.2 Changelog:");
+            changelogText.AppendText(Environment.NewLine + "This update increases the user-friendliness of character creation and adds variable speed functionality to the EvE simulation.");
             changelogText.AppendText(Environment.NewLine + "ADDITIONS:");
+            changelogText.AppendText(Environment.NewLine + "- You can now change the speed of the EvE simulation (time between moves)");
             changelogText.AppendText(Environment.NewLine + "CHANGES:");
+            changelogText.AppendText(Environment.NewLine + "- More user-friendly character creation (all YES/NO values start at NO)");
+            changelogText.AppendText(Environment.NewLine + "- Fixed that sim speed was infinite (no delay between moves)");
             changelogText.AppendText(Environment.NewLine + "BALANCING:");
+            changelogText.AppendText(Environment.NewLine + "No balancing changes.");
             //Post-Changes
             changelogText.AppendText(Environment.NewLine + Environment.NewLine + "This is only an initial release with baseline simulations working; expect PvE and local PvP features to come soon (see the roadmap for details) Please bring up any issues, questions, user-submitted builds, etc. on the github page.");
             changelogText.AppendText(Environment.NewLine + "Additionally, every time there is an update involving additional characters, new AI, or new gameplay features, an official tournament will be run. The link to view tournament results of the simulation between all characters will be found here. Custom-created, user-submitted builds will also be a part of the competition.");
@@ -115,16 +119,13 @@ namespace DCTBFightingSimulator
             roadmapText.Text = "";
             roadmapText.AppendText("Roadmap:");
             roadmapText.AppendText(Environment.NewLine + Environment.NewLine + "Overarching Additions:");
-            roadmapText.AppendText(Environment.NewLine + "- An installer (no more bypassing all system security)");
             roadmapText.AppendText(Environment.NewLine + "- PvE functionality");
             roadmapText.AppendText(Environment.NewLine + "- PvP functionality");
             roadmapText.AppendText(Environment.NewLine + "- New Computer AIs");
             roadmapText.AppendText(Environment.NewLine + "- Move strings and move databases; import pre-existing moves, export your moves to strings, etc.");
             roadmapText.AppendText(Environment.NewLine + "- New characters and other features");
             roadmapText.AppendText(Environment.NewLine + Environment.NewLine + "Additions (in no particular order):");
-            roadmapText.AppendText(Environment.NewLine + "- Increased character creation user-friendliness");
             roadmapText.AppendText(Environment.NewLine + "- Run sim processes on a separate thread to enable simultaneous actions");
-            roadmapText.AppendText(Environment.NewLine + "- Variable sim speed");
             roadmapText.AppendText(Environment.NewLine + "- Simplistic taskbar icon");
             roadmapText.AppendText(Environment.NewLine + "- Healthbars");
             roadmapText.AppendText(Environment.NewLine + "- Update EvE UI to show more stats/info at once");
