@@ -96,20 +96,16 @@ namespace DCTBFightingSimulator
         //Changelog and Roadmap
         public void fillChangelog()
         {
-            //Current version: 0.2.2 (this), 0.2.1 (old)
+            //Current version: 0.2.? (this), 0.2.2 (old)
             changelogText.Text = "";
-            changelogText.AppendText("VERSON: 0.2.2");
-            changelogText.AppendText(Environment.NewLine + "Version 0.2.2 Release (#5) of DCTBFightingSimulator" + Environment.NewLine);
-            changelogText.AppendText(Environment.NewLine + Environment.NewLine + "v0.2.2 Changelog:");
-            changelogText.AppendText(Environment.NewLine + "This update makes character creation more user-friendly, along with adding variable simulation speed functionality for EvE sims.");
+            changelogText.AppendText("VERSON: 0.2.2"); //Needs updating
+            changelogText.AppendText(Environment.NewLine + "Version 0.2.2 Release (#5) of DCTBFightingSimulator" + Environment.NewLine); //Needs updating
+            changelogText.AppendText(Environment.NewLine + Environment.NewLine + "v0.2.2 Changelog:"); //Needs updating
+            changelogText.AppendText(Environment.NewLine + "short desc");
             changelogText.AppendText(Environment.NewLine + "ADDITIONS:");
-            changelogText.AppendText(Environment.NewLine + "- Custom simulation speed");
             changelogText.AppendText(Environment.NewLine + "CHANGES:");
-            changelogText.AppendText(Environment.NewLine + "- Changed the opening UI message (removed version label)");
-            changelogText.AppendText(Environment.NewLine + "- Made Character Creation more user-friendly");
-            changelogText.AppendText(Environment.NewLine + "- Fixed that the program did not show the correct version number");
+            changelogText.AppendText(Environment.NewLine + "- Restructured Roadmap");
             changelogText.AppendText(Environment.NewLine + "BALANCING:");
-            changelogText.AppendText(Environment.NewLine + "No balance changes.");
             //Post-Changes
             changelogText.AppendText(Environment.NewLine + Environment.NewLine + "This is only an initial release with baseline simulations working; expect PvE and local PvP features to come soon (see the roadmap for details) Please bring up any issues, questions, user-submitted builds, etc. on the github page.");
             changelogText.AppendText(Environment.NewLine + "Additionally, every time there is an update involving additional characters, new AI, or new gameplay features, an official tournament will be run. The link to view tournament results of the simulation between all characters will be found here. Custom-created, user-submitted builds will also be a part of the competition.");
@@ -127,7 +123,7 @@ namespace DCTBFightingSimulator
             roadmapText.AppendText(Environment.NewLine + "- New Computer AIs");
             roadmapText.AppendText(Environment.NewLine + "- Move strings and move databases; import pre-existing moves, export your moves to strings, etc.");
             roadmapText.AppendText(Environment.NewLine + "- New characters and other features");
-            roadmapText.AppendText(Environment.NewLine + Environment.NewLine + "Additions (in no particular order):");
+            roadmapText.AppendText(Environment.NewLine + Environment.NewLine + "Changes and Additions:");
             roadmapText.AppendText(Environment.NewLine + "- Run sim processes on a separate thread to enable simultaneous actions");
             roadmapText.AppendText(Environment.NewLine + "- Simplistic taskbar icon");
             roadmapText.AppendText(Environment.NewLine + "- Healthbars");
@@ -136,7 +132,6 @@ namespace DCTBFightingSimulator
             roadmapText.AppendText(Environment.NewLine + "- Update information displayed when attacking (i.e. mentioning the specific attack, more specific details on effects, etc.");
             roadmapText.AppendText(Environment.NewLine + "- Incorporating any user-submitted builds (recurring)");
             roadmapText.AppendText(Environment.NewLine + "- Balancing changes (recurring)");
-            roadmapText.AppendText(Environment.NewLine + Environment.NewLine + "Other/Random Additions:");
             roadmapText.AppendText(Environment.NewLine + "- Streamlining load times");
             roadmapText.AppendText(Environment.NewLine + "- Consolidating code / simplifying other events");
             roadmapText.AppendText(Environment.NewLine + Environment.NewLine + "User-submitted builds will be implemented in the very next release after submission, and will show up in the tournament.");
