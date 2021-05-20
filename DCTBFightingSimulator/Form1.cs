@@ -99,7 +99,7 @@ namespace DCTBFightingSimulator
             //Current version: 0.2.2 (this), 0.2.1 (old)
             changelogText.Text = "";
             changelogText.AppendText("VERSON: 0.2.2");
-            changelogText.AppendText(Environment.NewLine + "Version 0.2.2 Release (#5) of DCTBFightingSimulator!" + Environment.NewLine);
+            changelogText.AppendText(Environment.NewLine + "Version 0.2.2 Release (#5) of DCTBFightingSimulator" + Environment.NewLine);
             changelogText.AppendText(Environment.NewLine + Environment.NewLine + "v0.2.2 Changelog:");
             changelogText.AppendText(Environment.NewLine + "This update makes character creation more user-friendly, along with adding variable simulation speed functionality for EvE sims.");
             changelogText.AppendText(Environment.NewLine + "ADDITIONS:");
