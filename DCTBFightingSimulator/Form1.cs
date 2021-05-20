@@ -94,23 +94,15 @@ namespace DCTBFightingSimulator
         //Changelog and Roadmap
         public void fillChangelog()
         {
-            //Current version: 0.2.0 (this), 0.1.1 (old)
+            //Current version: 0.2.? (this), 0.2.0 (old)
             changelogText.Text = "";
             changelogText.AppendText("VERSON: 0.2.0");
-            changelogText.AppendText(Environment.NewLine + "Version 0.2.0 Release (#3) of DCTBFightingSimulator!" + Environment.NewLine);
-            changelogText.AppendText(Environment.NewLine + Environment.NewLine + "v0.2.0 Changelog:");
-            changelogText.AppendText(Environment.NewLine + "Important update is here! New tooltips for clarity when creating a character, along with two new NONE-type characters (and a new tournament!), source code reformatting and more.");
+            changelogText.AppendText(Environment.NewLine + "Version 0.2.0 Release (#3) of DCTBFightingSimulator!" + Environment.NewLine); //NEEDS UPDATING
+            changelogText.AppendText(Environment.NewLine + Environment.NewLine + "v0.2.0 Changelog:"); //NEEDS UPDATING
+            changelogText.AppendText(Environment.NewLine + "short description");
             changelogText.AppendText(Environment.NewLine + "ADDITIONS:");
-            changelogText.AppendText(Environment.NewLine + "- Added tooltips for the main menu buttons");
-            changelogText.AppendText(Environment.NewLine + "- Added tooltips to the character creation screen with more information on various components. Note: 'Meta Values' refers to a common range of values present in most vanilla characters. Not all vanilla characters follow this meta, and user-created builds do not have to either; this is just for balancing reference if desired.");
-            changelogText.AppendText(Environment.NewLine + "- Two new NONE-type characters, Duncan and Firia");
             changelogText.AppendText(Environment.NewLine + "CHANGES:");
-            changelogText.AppendText(Environment.NewLine + "- Fixed a typo on export instructions");
-            changelogText.AppendText(Environment.NewLine + "- Increased clarity for the 'OP' section of the character database");
-            changelogText.AppendText(Environment.NewLine + "- Formatting edits to the source code for clarity and conciseness");
-            changelogText.AppendText(Environment.NewLine + "- Updated seeding based on tournament results. All tournaments will now be compiled into the spreadsheet starting from v0.2.0 so that changes in seeding are easier to see.");
             changelogText.AppendText(Environment.NewLine + "BALANCING:");
-            changelogText.AppendText(Environment.NewLine + "- No balance changes this update.");
             //Post-Changes
             changelogText.AppendText(Environment.NewLine + Environment.NewLine + "This is only an initial release with baseline simulations working; expect PvE and local PvP features to come soon (see the roadmap for details) Please bring up any issues, questions, user-submitted builds, etc. on the github page.");
             changelogText.AppendText(Environment.NewLine + "Additionally, every time there is an update involving additional characters, new AI, or new gameplay features, an official tournament will be run. The link to view tournament results of the simulation between all characters will be found here. Custom-created, user-submitted builds will also be a part of the competition.");
