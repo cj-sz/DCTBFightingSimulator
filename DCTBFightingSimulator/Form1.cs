@@ -94,14 +94,15 @@ namespace DCTBFightingSimulator
         //Changelog and Roadmap
         public void fillChangelog()
         {
-            //Current version: 0.2.? (this), 0.2.0 (old)
+            //Current version: 0.2.1 (this), 0.2.0 (old)
             changelogText.Text = "";
-            changelogText.AppendText("VERSON: 0.2.0");
-            changelogText.AppendText(Environment.NewLine + "Version 0.2.0 Release (#3) of DCTBFightingSimulator!" + Environment.NewLine); //NEEDS UPDATING
-            changelogText.AppendText(Environment.NewLine + Environment.NewLine + "v0.2.0 Changelog:"); //NEEDS UPDATING
-            changelogText.AppendText(Environment.NewLine + "short description");
+            changelogText.AppendText("VERSON: 0.2.1");
+            changelogText.AppendText(Environment.NewLine + "Version 0.2.1 Release (#4) of DCTBFightingSimulator!" + Environment.NewLine);
+            changelogText.AppendText(Environment.NewLine + Environment.NewLine + "v0.2.1 Changelog:");
+            changelogText.AppendText(Environment.NewLine + "This update brings balance changes, a few minor edits, and an installer. No more bypassing system security!");
             changelogText.AppendText(Environment.NewLine + "ADDITIONS:");
             changelogText.AppendText(Environment.NewLine + "CHANGES:");
+            changelogText.AppendText(Environment.NewLine + "- Fixed that the final punctuation in the Create Character panel description did not show");
             changelogText.AppendText(Environment.NewLine + "BALANCING:");
             changelogText.AppendText(Environment.NewLine + "|Anomal: HP -100; ATK -10; ACC -5; Pounce Atk. Mult. -0.15; Enshroud ACC +5; Throne of Predators Atk. Mult. -0.25|");
             changelogText.AppendText(Environment.NewLine + "|Albatross: Plankton Swoop Atk. Mult. +0.1, ACC +5; Wing Blast ACC +5; Sustenance Atk. Mult. +0.15, ACC +5, DGE Mod. -3; Rain Atk. Mult. +0.05, ACC +5; Great Legend Heal +15|");
