@@ -771,7 +771,7 @@ namespace DCTBFightingSimulator
                 {
                     break;
                 }
-                //System.Threading.Thread.Sleep(1000);
+                System.Threading.Thread.Sleep((int)(EvETimeBetweenMoves.Value * 1000));
                 eveSimText.AppendText(Environment.NewLine);
                 EvERandomAI2(player2);
                 loadPlayer1VisualStats();
@@ -780,7 +780,7 @@ namespace DCTBFightingSimulator
                 {
                     break;
                 }
-                //System.Threading.Thread.Sleep(1000);
+                System.Threading.Thread.Sleep((int)(EvETimeBetweenMoves.Value * 1000));
                 eveSimText.AppendText(Environment.NewLine);
             }
             enableAllButtons();
