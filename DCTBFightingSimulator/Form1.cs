@@ -107,6 +107,7 @@ namespace DCTBFightingSimulator
             changelogText.AppendText(Environment.NewLine + "- Restructured Roadmap");
             changelogText.AppendText(Environment.NewLine + "- Changed EvE UI to now show the specific character names during the simulation in the text window");
             changelogText.AppendText(Environment.NewLine + "BALANCING (note that user-submitted builds will never be actively balanced):");
+            changelogText.AppendText(Environment.NewLine + "No balancing changes this update.");
             //Post-Changes
             changelogText.AppendText(Environment.NewLine + Environment.NewLine + "This is only an initial release with baseline simulations working; expect PvE and local PvP features to come soon (see the roadmap for details) Please bring up any issues, questions, user-submitted builds, etc. on the github page.");
             changelogText.AppendText(Environment.NewLine + "Additionally, every time there is an update involving additional characters, new AI, or new gameplay features, an official tournament will be run. The link to view tournament results of the simulation between all characters will be found here. Custom-created, user-submitted builds will also be a part of the competition.");
@@ -123,7 +124,7 @@ namespace DCTBFightingSimulator
             roadmapText.AppendText(Environment.NewLine + "- PvP functionality");
             roadmapText.AppendText(Environment.NewLine + "- New Computer AIs");
             roadmapText.AppendText(Environment.NewLine + "- Move strings and move databases; import pre-existing moves, export your moves to strings, etc.");
-            roadmapText.AppendText(Environment.NewLine + "- New characters and other features");
+            roadmapText.AppendText(Environment.NewLine + "- New characters and other features!");
             roadmapText.AppendText(Environment.NewLine + Environment.NewLine + "Changes and Additions:");
             roadmapText.AppendText(Environment.NewLine + "- Run sim processes on a separate thread to enable simultaneous actions");
             roadmapText.AppendText(Environment.NewLine + "- Simplistic taskbar icon");
