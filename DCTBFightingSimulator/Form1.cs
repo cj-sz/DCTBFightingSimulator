@@ -105,7 +105,7 @@ namespace DCTBFightingSimulator
             changelogText.AppendText(Environment.NewLine + "ADDITIONS:");
             changelogText.AppendText(Environment.NewLine + "CHANGES:");
             changelogText.AppendText(Environment.NewLine + "- Restructured Roadmap");
-            changelogText.AppendText(Environment.NewLine + "- Changed EvE UI to now show the specific character names during the simulation in the text window");
+            changelogText.AppendText(Environment.NewLine + "- Changed EvE UI to now show the specific character names and move names during the simulation in the text window");
             changelogText.AppendText(Environment.NewLine + "BALANCING (note that user-submitted builds will never be actively balanced):");
             changelogText.AppendText(Environment.NewLine + "No balancing changes this update.");
             //Post-Changes
@@ -2009,7 +2009,7 @@ namespace DCTBFightingSimulator
             //Player 1 Move subactions (recurring methods in p1Moves)
         private void eveP1MV1Hits()
         {
-            eveSimText.AppendText(Environment.NewLine + player1.getName() + " lands their Move 1!");
+            eveSimText.AppendText(Environment.NewLine + player1.getName() + " lands " + player1.getMv1Name());
             int totalAtk = (int)(player1.getAtk() * player1.getMv1M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
             int damageDealt = totalAtk ^ 2 / player2.getDef();
             eveSimText.AppendText(Environment.NewLine + player1.getName() + " deals " + damageDealt.ToString() + " damage to " + player2.getName());
@@ -2073,7 +2073,7 @@ namespace DCTBFightingSimulator
         }
         private void eveP1MV2Hits()
         {
-            eveSimText.AppendText(Environment.NewLine + player1.getName() + " lands their Move 2!");
+            eveSimText.AppendText(Environment.NewLine + player1.getName() + " lands " + player1.getMv2Name());
             int totalAtk = (int)(player1.getAtk() * player1.getMv2M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
             int damageDealt = totalAtk ^ 2 / player2.getDef();
             eveSimText.AppendText(Environment.NewLine + player1.getName() + " deals " + damageDealt.ToString() + " damage to " + player2.getName());
@@ -2137,7 +2137,7 @@ namespace DCTBFightingSimulator
         }
         private void eveP1MV3Hits()
         {
-            eveSimText.AppendText(Environment.NewLine + player1.getName() + " lands their Move 3!");
+            eveSimText.AppendText(Environment.NewLine + player1.getName() + " lands " + player1.getMv3Name());
             int totalAtk = (int)(player1.getAtk() * player1.getMv3M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
             int damageDealt = totalAtk ^ 2 / player2.getDef();
             eveSimText.AppendText(Environment.NewLine + player1.getName() + " deals " + damageDealt.ToString() + " damage to " + player2.getName());
@@ -2201,7 +2201,7 @@ namespace DCTBFightingSimulator
         }
         private void eveP1MV4Hits()
         {
-            eveSimText.AppendText(Environment.NewLine + player1.getName() + " lands their Move 4!");
+            eveSimText.AppendText(Environment.NewLine + player1.getName() + " lands " + player1.getMv4Name());
             int totalAtk = (int)(player1.getAtk() * player1.getMv4M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
             int damageDealt = totalAtk ^ 2 / player2.getDef();
             eveSimText.AppendText(Environment.NewLine + player1.getName() + " deals " + damageDealt.ToString() + " damage to " + player2.getName());
@@ -2265,7 +2265,7 @@ namespace DCTBFightingSimulator
         }
         private void eveP1MV5Hits()
         {
-            eveSimText.AppendText(Environment.NewLine + player1.getName() + " lands their Move 5!");
+            eveSimText.AppendText(Environment.NewLine + player1.getName() + " lands " + player1.getMv5Name());
             int totalAtk = (int)(player1.getAtk() * player1.getMv4M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
             int damageDealt = totalAtk ^ 2 / player2.getDef();
             eveSimText.AppendText(Environment.NewLine + player1.getName() + " deals " + damageDealt.ToString() + " damage to " + player2.getName());
@@ -3224,7 +3224,7 @@ namespace DCTBFightingSimulator
             //Player 2 Move subactions (recurring methods in p2Moves)
         private void eveP2MV1Hits()
         {
-            eveSimText.AppendText(Environment.NewLine + player2.getName() + " lands their Move 1!");
+            eveSimText.AppendText(Environment.NewLine + player2.getName() + " lands " + player2.getMv1Name());
             int totalAtk = (int)(player2.getAtk() * player2.getMv1M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
             int damageDealt = totalAtk ^ 2 / player1.getDef();
             eveSimText.AppendText(Environment.NewLine + player2.getName() + " deals " + damageDealt.ToString() + " damage to " + player1.getName());
@@ -3288,7 +3288,7 @@ namespace DCTBFightingSimulator
         }
         private void eveP2MV2Hits()
         {
-            eveSimText.AppendText(Environment.NewLine + player2.getName() + " lands their Move 2!");
+            eveSimText.AppendText(Environment.NewLine + player2.getName() + " lands " + player2.getMv2Name());
             int totalAtk = (int)(player2.getAtk() * player2.getMv2M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
             int damageDealt = totalAtk ^ 2 / player1.getDef();
             eveSimText.AppendText(Environment.NewLine + player2.getName() + " deals " + damageDealt.ToString() + " damage to " + player1.getName());
@@ -3352,7 +3352,7 @@ namespace DCTBFightingSimulator
         }
         private void eveP2MV3Hits()
         {
-            eveSimText.AppendText(Environment.NewLine + player2.getName() + " lands their Move 3!");
+            eveSimText.AppendText(Environment.NewLine + player2.getName() + " lands " + player2.getMv3Name());
             int totalAtk = (int)(player2.getAtk() * player2.getMv3M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
             int damageDealt = totalAtk ^ 2 / player1.getDef();
             eveSimText.AppendText(Environment.NewLine + player2.getName() + " deals " + damageDealt.ToString() + " damage to " + player1.getName());
@@ -3416,7 +3416,7 @@ namespace DCTBFightingSimulator
         }
         private void eveP2MV4Hits()
         {
-            eveSimText.AppendText(Environment.NewLine + player2.getName() + " lands their Move 4!");
+            eveSimText.AppendText(Environment.NewLine + player2.getName() + " lands " + player2.getMv4Name());
             int totalAtk = (int)(player2.getAtk() * player2.getMv4M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
             int damageDealt = totalAtk ^ 2 / player1.getDef();
             eveSimText.AppendText(Environment.NewLine + player2.getName() + " deals " + damageDealt.ToString() + " damage to " + player1.getName());
@@ -3480,7 +3480,7 @@ namespace DCTBFightingSimulator
         }
         private void eveP2MV5Hits()
         {
-            eveSimText.AppendText(Environment.NewLine + player2.getName() + " lands their Move 5!");
+            eveSimText.AppendText(Environment.NewLine + player2.getName() + " lands " + player2.getMv5Name());
             int totalAtk = (int)(player2.getAtk() * player2.getMv4M() * atkStatModValPsn * atkStatModValWk * effectivenessModVal);
             int damageDealt = totalAtk ^ 2 / player1.getDef();
             eveSimText.AppendText(Environment.NewLine + player2.getName() + "deals " + damageDealt.ToString() + " damage to " + player1.getName());
