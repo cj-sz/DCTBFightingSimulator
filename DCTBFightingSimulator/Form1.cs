@@ -105,7 +105,8 @@ namespace DCTBFightingSimulator
             changelogText.AppendText(Environment.NewLine + "ADDITIONS:");
             changelogText.AppendText(Environment.NewLine + "CHANGES:");
             changelogText.AppendText(Environment.NewLine + "- Restructured Roadmap");
-            changelogText.AppendText(Environment.NewLine + "BALANCING:");
+            changelogText.AppendText(Environment.NewLine + "- Changed EvE UI to now show the specific character names during the simulation in the text window");
+            changelogText.AppendText(Environment.NewLine + "BALANCING (note that user-submitted builds will never be actively balanced):");
             //Post-Changes
             changelogText.AppendText(Environment.NewLine + Environment.NewLine + "This is only an initial release with baseline simulations working; expect PvE and local PvP features to come soon (see the roadmap for details) Please bring up any issues, questions, user-submitted builds, etc. on the github page.");
             changelogText.AppendText(Environment.NewLine + "Additionally, every time there is an update involving additional characters, new AI, or new gameplay features, an official tournament will be run. The link to view tournament results of the simulation between all characters will be found here. Custom-created, user-submitted builds will also be a part of the competition.");
@@ -127,8 +128,7 @@ namespace DCTBFightingSimulator
             roadmapText.AppendText(Environment.NewLine + "- Run sim processes on a separate thread to enable simultaneous actions");
             roadmapText.AppendText(Environment.NewLine + "- Simplistic taskbar icon");
             roadmapText.AppendText(Environment.NewLine + "- Healthbars");
-            roadmapText.AppendText(Environment.NewLine + "- Update EvE UI to show more stats/info at once");
-            roadmapText.AppendText(Environment.NewLine + "- Update EvE to allow multiple game speeds/exiting/resets during play");
+            roadmapText.AppendText(Environment.NewLine + "- Update EvE to allow exiting and resets during play");
             roadmapText.AppendText(Environment.NewLine + "- Update information displayed when attacking (i.e. mentioning the specific attack, more specific details on effects, etc.");
             roadmapText.AppendText(Environment.NewLine + "- Incorporating any user-submitted builds (recurring)");
             roadmapText.AppendText(Environment.NewLine + "- Balancing changes (recurring)");
