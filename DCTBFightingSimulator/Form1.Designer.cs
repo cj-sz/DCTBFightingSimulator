@@ -4508,7 +4508,8 @@ namespace DCTBFightingSimulator
             this.comboBox11.FormattingEnabled = true;
             this.comboBox11.Items.AddRange(new object[] {
             "Irode (Vanilla)",
-            "Splarg (Vanilla)"});
+            "Splarg (Vanilla)",
+            "Armaments (Vanilla)"});
             this.comboBox11.Location = new System.Drawing.Point(822, 245);
             this.comboBox11.Name = "comboBox11";
             this.comboBox11.Size = new System.Drawing.Size(111, 21);
@@ -4931,6 +4932,7 @@ namespace DCTBFightingSimulator
             "Magnaur (ELECTRIC)",
             "Irode (METAL)",
             "Splarg (METAL)",
+            "Armaments (METAL)",
             "Doc (INTELLIGENT)",
             "Student (INTELLIGENT)",
             "Martis (FORCE)",
@@ -7037,10 +7039,10 @@ namespace DCTBFightingSimulator
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1432, 853);
+            this.Controls.Add(this.characterDatabasePanel);
             this.Controls.Add(this.EvEPanel);
             this.Controls.Add(this.startingPanel);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.characterDatabasePanel);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.charDatabaseButton);
             this.Controls.Add(this.createCharButton);

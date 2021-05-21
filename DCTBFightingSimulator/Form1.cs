@@ -6531,7 +6531,11 @@ namespace DCTBFightingSimulator
             {
                 vanillaExports.Text = splargString;
             }
-                //Intelligent
+            if (comboBox1.Text == "Armaments (METAL)")
+            {
+                vanillaExports.Text = armamentsString;
+            }
+            //Intelligent
             if (comboBox1.Text == "Doc (INTELLIGENT)")
             {
                 vanillaExports.Text = docString;
@@ -6706,6 +6710,10 @@ namespace DCTBFightingSimulator
             if (comboBox11.Text == "Splarg (Vanilla)")
             {
                 typeMetalExports.Text = splargString;
+            }
+            if (comboBox11.Text == "Armaments (Vanilla)")
+            {
+                typeMetalExports.Text = armamentsString;
             }
         }
             //INTELLIGENT Type
