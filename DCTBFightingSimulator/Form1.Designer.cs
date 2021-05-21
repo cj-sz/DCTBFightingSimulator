@@ -5072,6 +5072,7 @@ namespace DCTBFightingSimulator
             "Magnaur (ELECTRIC) (Vanilla)",
             "Irode (METAL) (Vanilla)",
             "Splarg (METAL) (Vanilla)",
+            "Armaments (METAL) (Vanilla)",
             "Doc (INTELLIGENT) (Vanilla)",
             "Student (INTELLIGENT) (Vanilla)",
             "Martis (FORCE) (Vanilla)",
@@ -5122,6 +5123,7 @@ namespace DCTBFightingSimulator
             "Magnaur (ELECTRIC) (Vanilla)",
             "Irode (METAL) (Vanilla)",
             "Splarg (METAL) (Vanilla)",
+            "Armaments (METAL) (Vanilla)",
             "Doc (INTELLIGENT) (Vanilla)",
             "Student (INTELLIGENT) (Vanilla)",
             "Martis (FORCE) (Vanilla)",
@@ -7035,8 +7037,8 @@ namespace DCTBFightingSimulator
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1432, 853);
-            this.Controls.Add(this.startingPanel);
             this.Controls.Add(this.EvEPanel);
+            this.Controls.Add(this.startingPanel);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.characterDatabasePanel);
             this.Controls.Add(this.pictureBox2);

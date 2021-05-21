@@ -471,7 +471,12 @@ namespace DCTBFightingSimulator
                 player1 = new Character(splargString);
                 loadPlayer1VisualStats();
             }
-                //Intelligent
+            if (player1SelectionEvE.Text == "Armaments (METAL) (Vanilla)")
+            {
+                player1 = new Character(armamentsString);
+                loadPlayer1VisualStats();
+            }
+            //Intelligent
             if (player1SelectionEvE.Text == "Doc (INTELLIGENT) (Vanilla)")
             {
                 player1 = new Character(docString);
@@ -655,6 +660,11 @@ namespace DCTBFightingSimulator
             if (player2SelectionEvE.Text == "Splarg (METAL) (Vanilla)")
             {
                 player2 = new Character(splargString);
+                loadPlayer2VisualStats();
+            }
+            if (player2SelectionEvE.Text == "Armaments (METAL) (Vanilla)")
+            {
+                player2 = new Character(armamentsString);
                 loadPlayer2VisualStats();
             }
             //Intelligent
