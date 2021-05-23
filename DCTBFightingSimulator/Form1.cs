@@ -105,6 +105,7 @@ namespace DCTBFightingSimulator
             changelogText.AppendText(Environment.NewLine + "short desc");
             changelogText.AppendText(Environment.NewLine + Environment.NewLine + "ADDITIONS:");
             changelogText.AppendText(Environment.NewLine + "- New Vanilla METAL-type character, Armaments");
+            changelogText.AppendText(Environment.NewLine + "- The 3rd DCTBFightingSimulator Tournament is here! View it here: https://challonge.com/ek6taz1m");
             changelogText.AppendText(Environment.NewLine + Environment.NewLine + "CHANGES:");
             changelogText.AppendText(Environment.NewLine + "- Restructured Roadmap");
             changelogText.AppendText(Environment.NewLine + "- Expanded the UI size of the changelog and roadmap");
@@ -114,8 +115,9 @@ namespace DCTBFightingSimulator
             //Post-Changes
             changelogText.AppendText(Environment.NewLine + Environment.NewLine + "This is only an initial release with baseline simulations working; expect PvE and local PvP features to come soon (see the roadmap for details) Please bring up any issues, questions, user-submitted builds, etc. on the github page.");
             changelogText.AppendText(Environment.NewLine + "Additionally, every time there is an update involving additional characters, new AI, or new gameplay features, an official tournament will be run. The link to view tournament results of the simulation between all characters will be found here. Custom-created, user-submitted builds will also be a part of the competition.");
-            changelogText.AppendText(Environment.NewLine + Environment.NewLine + "View the most recent tournament (which may eventually be moved onto this program itself): https://challonge.com/ozrjzhgm");
+            changelogText.AppendText(Environment.NewLine + Environment.NewLine + "View the most recent tournament (which may eventually be moved onto this program itself): https://challonge.com/ek6taz1m");
             changelogText.AppendText(Environment.NewLine + "Tournament Archives:");
+            changelogText.AppendText(Environment.NewLine + "Version 0.2.3 tournament: https://challonge.com/ozrjzhgm");
             changelogText.AppendText(Environment.NewLine + "Version 0.1.0 tournament: https://challonge.com/bz19xyip");
         }
         public void fillRoadmap()
