@@ -102,7 +102,7 @@ namespace DCTBFightingSimulator
             changelogText.AppendText("VERSON: 0.2.3");
             changelogText.AppendText(Environment.NewLine + "Version 0.2.3 Release (#6) of DCTBFightingSimulator" + Environment.NewLine);
             changelogText.AppendText(Environment.NewLine + Environment.NewLine + "v0.2.3 Changelog:");
-            changelogText.AppendText(Environment.NewLine + "short desc");
+            changelogText.AppendText(Environment.NewLine + "This update brings a new METAL-type character along with some nice description changes.");
             changelogText.AppendText(Environment.NewLine + Environment.NewLine + "ADDITIONS:");
             changelogText.AppendText(Environment.NewLine + "- New Vanilla METAL-type character, Armaments");
             changelogText.AppendText(Environment.NewLine + "- The 3rd DCTBFightingSimulator Tournament is here! View it here: https://challonge.com/ek6taz1m");
