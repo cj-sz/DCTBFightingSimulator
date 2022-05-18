@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DCTBFightingSimulator
+﻿namespace DCTBFightingSimulator
 {
     class ImportExportString
     {
@@ -62,9 +56,9 @@ namespace DCTBFightingSimulator
         public void generateImmunitiesStringPart(bool[] immunities)
         {
             importExportString = importExportString + "imnSTRT@@_!";
-            for(int index = 0; index < immunities.Length; index++)
+            for (int index = 0; index < immunities.Length; index++)
             {
-                if(immunities[index] == true)
+                if (immunities[index] == true)
                 {
                     importExportString = importExportString + "y";
                 }
@@ -79,9 +73,9 @@ namespace DCTBFightingSimulator
         {
             importExportString = importExportString + "nDCMmv1@@" + n + "dDCMv1@@" + d + "tDCMmv1@@" + t + "atmDCMmv1@@" + atm.ToString() + "accDCMmv1@@" + acc.ToString() + "hDCMmv1@@" + h.ToString() + "atkDCMmv1@@" + atkM.ToString() + "defDCMmv1@@" + defM.ToString() + "acmDCMmv1@@" + accM.ToString() + "dgeDCMmv1@@" + dgeM.ToString();
             importExportString = importExportString + "indSTRTMmv1@@_!";
-            for(int i = 0; i < induces.Length; i++)
+            for (int i = 0; i < induces.Length; i++)
             {
-                if(induces[i] == true)
+                if (induces[i] == true)
                 {
                     importExportString = importExportString + "y";
                 }
