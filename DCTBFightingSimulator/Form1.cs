@@ -71,6 +71,7 @@ namespace DCTBFightingSimulator
         private int player2EvEMaxHP;
         private int player1OrigHPEve;
         private int player2OrigHPEve;
+
         private float atkStatModValPsn = 1f;
         private float atkStatModValWk = 1f;
         private float effectivenessModVal = 1f;
